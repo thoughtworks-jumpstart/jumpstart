@@ -1,0 +1,8 @@
+{
+  "plugins": ["todo", "toggle-chapters", "footer"],
+  "pluginsConfig": {
+    "layout": {
+      "footerPath": "footer.html"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<svg width="240" height="160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Handcrafted by Pravin Paratey -->
+ <g>
+  <g>
+   <circle r="75" cy="80" cx="80" stroke-width="2" stroke="#000" fill="none"/>
+  </g>
+  <g>
+   <circle r="75" cy="80" cx="160" stroke-width="2" stroke="#000" fill="none"/>
+  </g>
+  <g font-family="sans-serif" font-size="28px">
+    <text x="50" y="50">1</text>
+    <text x="50" y="125">2</text>
+    <text x="115" y="90">3</text>
+    <text x="175" y="50">4</text>
+    <text x="175" y="125">5</text>
+  </g>
+ </g>
+</svg>
