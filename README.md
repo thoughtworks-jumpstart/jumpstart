@@ -8,7 +8,7 @@ We are a community of passionate individuals whose purpose is to revolutionize s
 
 ### Some ground rules
 To ensure that you and your classmates get the most out of JumpStart!, we will be enforcing some ground rules:
-- **Attendance**. As stated in our enrolment agreemnet, our attendance policy for graduation is no more than 4 absences during the course. 15 minutes late will count as 1/3 absence. If you know you'll be late or absent, please inform us on the main slack channel.
+- **Attendance**. As stated in our enrolment agreement, our attendance policy for graduation is no more than 4 absences during the course. 15 minutes late will count as 1/3 absence. If you know you'll be late or absent, please inform us on the main slack channel.
 - **Be punctual**. If we say a class will start at 1.30pm, we mean it!
 - **Respect and help each other**. Everyone progresses at different paces on different topics, so when we know something well we offer to help those who are still learning it.
 - **Avoid cross-talking**. Having side conversations when someone else is talking is distracting for everyone else who's trying to listen.
