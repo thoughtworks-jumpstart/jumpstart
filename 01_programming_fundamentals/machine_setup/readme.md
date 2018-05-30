@@ -1,5 +1,9 @@
 # Machine Setup
 
+Note: During this session, if you see any errors saying the program is already installed, check the version of the program (by running `the_program -v` (e.g. `node -v`) or `the_program --version` and do one of the following:
+- If the latest version is installed, you can skip the installation/upgrade step.
+- Otherwise, you can upgrade the program to the latest version (e.g. e.g. `brew upgrade node` or `choco upgrade nodejs`)
+
 ## Common tools
 
 ### VS Code
@@ -23,40 +27,25 @@ Open up VS Code, and open the command palette (Mac: `Cmd`+`Shift`+`p`; Windows: 
 
 - Javascript
   - ESLint
-  - Jest Snippets
-  - JS JSX Snippets
   - Prettier
-  - vscode-js-import
 - HTML
   - Auto Rename Tag
   - Live Server
 - working with files/directories
   - advanced-new-file
   - Path Intellisense
-- git
-  - GitLens
 
 ### Slack
 
-We will be using slack to communicate throughout the course. If you haven't joined the channel, you can do so by clicking on this [link](https://join.slack.com/t/jumpstart-1/shared_invite/enQtMzA1OTcyMjU4NTk2LTFhZDc0NWQ4NThlODZiNDdiOGQzYzNhM2I5YjNlYjNkYWNlYWNiNzA0NzgwZTY0YWMyNjA3MjJhMTBjOTM2MTI). You can login via the web browser, but downloading / installing the app is highly recommended.
+We will be using slack to communicate throughout the course. If you haven't joined the channel, you can do so by clicking on this [link](https://join.slack.com/t/jumpstart-2/shared_invite/enQtMzYzODcwODMxNjA0LTkzOTA1M2UyNTRlNDZiNjdhY2I2OTk3NTU2NDI4YWM0NWJiZjYyMDUwMjEwYTg0YzNkZTRlYWE0NWU5ODE1YzA). You can login via the web browser, but we recommend downloading / installing the app.
 
 [Download Slack](https://slack.com/downloads)
 
 ### Sign up on Useful Websites
 
 - Create a github account at <https://www.github.com/>
-- Create a medium account at <https://www.medium.com/>
-- Create a heroku account at <https://www.heroku.com/>
-- Create a travisCI account at <https://www.travis-ci.org/>
 
 ## OS-specific tools
 
 - [Windows guide](./windows.html)
 - [Mac guide](./mac.html)
-<!-- TODO:
-- add instructions for `brew upgrade <package>` if `brew install <package>` complains that something is already installed
-- spell out instructions for verifying `git config`
-- add mac os and windows instructions for setting user (self) as admin
-- remove git SSH config
-- add note to ask trainee to upgrade package if installed. if the exact same version is installed, he/she can skip the installation/upgrade step
- -->

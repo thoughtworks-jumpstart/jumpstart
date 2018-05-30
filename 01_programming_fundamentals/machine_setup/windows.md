@@ -27,16 +27,6 @@ git config --global core.autocrlf true
 
 You can read more about what these commands are doing here: https://help.github.com/categories/setup/
 
-### (Optional) Setting up SSH Key with your GitHub account
-
-You might find your self having to re-authenticate GitHub multiple times when you work with a project cloned from GitHub. To avoid typing your password multiple times, you can setup SSH Keys to let Github remember your machine in the future.
-
-* [Github Generating SSH Keys](https://help.github.com/articles/generating-ssh-keys/)
-
-After this step, when you clone new projects from GitHub, you can choose the "SSH" version of the repository URL, in addition to the "HTTPS" option.
-
-This step is optional. If you skip this step, you can still clone the repository using HTTPS version of the URL.
-
 ## Node
 
 To install Node
@@ -55,17 +45,6 @@ For more details, see <https://chocolatey.org/packages/nodejs>
 
 Alternatively, you can also download nodejs and npm from <https://nodejs.org/en/>
 
-## Yarn
-
-We will use `yarn` as our node package manager.
-
-You can install it by following the instructions [here](https://yarnpkg.com/lang/en/docs/install/#windows-tab)
-
-In short, you need to run 
-
-```shell
-choco install yarn
-```
 
 ## VS Code Configurations
 
@@ -118,23 +97,3 @@ choco install googlechrome
 ```
 
 Or just [download it from Google official website](https://www.google.com/chrome/).
-
-## Insomnia
-
-Insomnia is a tool to interact with REST web APIs. Don't worry about this term if you are not familiar with it yet.
-
-We can either install it via Chocolatey
-
-```shell
-choco install insomnia-rest-api-client
-```
-
-Otherwise, you can always [download from their official website](https://insomnia.rest/download/)
-
-## MongoDB
-
-We will develop our applications based on MongoDB in this course. So let's install it now.
-
-Following the instructions on their [official website](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/) to install the latest release of Community Edition.
-
-If you would like to view the database content using a GUI tool, you can download and install [Robo 3T](https://robomongo.org/download)
