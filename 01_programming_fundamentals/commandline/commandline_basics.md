@@ -57,9 +57,9 @@ The **command line** is a program that enables us to send commands to the comput
 - [Bash cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet)
 
 ### In-class lab
-https://github.com/davified/learn-shell
-https://www.learnenough.com/command-line-tutorial#sec-exercises_manipulating
-https://www.learnenough.com/command-line-tutorial#sec-exercises_summary_manipulating
+- https://github.com/davified/learn-shell
+- https://www.learnenough.com/command-line-tutorial#sec-exercises_manipulating
+- https://www.learnenough.com/command-line-tutorial#sec-exercises_summary_manipulating
 
 ### Assignment
 Solve the [command line murder mystery](https://github.com/veltman/clmystery)
