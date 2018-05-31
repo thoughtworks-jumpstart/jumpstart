@@ -1,15 +1,5 @@
 # Unix command line
-<!-- TODO: add music album example throughout this session
-learn-shell/
-	pop/
-		adele/
-			hello.txt
-			skyfall.txt
-	rock/
-		etc...
-	jazz/
-		etc...
- -->
+
 The **command line** is a program that enables us to send commands to the computer and receive output. It is also referred to as the **terminal** or **shell**.
 
 ### Learning checklist
@@ -28,9 +18,6 @@ The **command line** is a program that enables us to send commands to the comput
 	- Use `mkdir` to create a directory for all projects used in this course
 - Working with files
 	- Create a file: `touch ./my-file.txt`
-	- Add stuff to a file:
-		- `echo 'hello world' >> ./my-file.txt` (append to the end of file)
-		- `echo 'hello world' > ./my-file.txt`  (overwrite file contents)
 	- Read a file: `cat <file>`, `less <file>`, `more <file>`
 - Use commands to manipulate files/directories (moving, copying, reading, editing, removing)
 	- `mv <source> <target>`
@@ -44,6 +31,10 @@ The **command line** is a program that enables us to send commands to the comput
 - `|` - pipe command
 - `grep`
 	- Useful for search for a string within a large file: `history | grep 'mkdir'`
+- `$PATH`
+	- example of how to add a directory path to $PATH: `export PATH=$PATH:/usr/local/share/google/google-cloud-sdk/bin/`
+	- for persistence, add it to `.bash_profile`, so that the export command is run everytime a shell session is started
+- `~/.bashrc` or `~/.zshrc`
 - Terminal shortcuts
 	- Ctrl + C - terminate process
 	- Ctrl + A - go to beginning of line
@@ -57,15 +48,7 @@ The **command line** is a program that enables us to send commands to the comput
 	- `man <command>`, or 
 	- `<command> --help`/`<command> -h`
 	- to exit the `man` page, hit `q`
-- TLDR (Too long, didn't read)
-	- [tldr](https://github.com/tldr-pages/tldr) contains shorter descriptions than `man` pages
-	- install via `npm install -g tldr`
-	- e.g. `tldr git`
-- `.bash_profile` or `.bashrc`
 - `which`
-- `$PATH`
-	- example of how to add a directory path to $PATH: `export PATH=$PATH:/usr/local/share/google/google-cloud-sdk/bin/`
-	- for persistence, add it to `.bash_profile`, so that the export command is run everytime a shell session is started
 
 - Apply commands towards everyday problems and workflows
 
@@ -74,6 +57,7 @@ The **command line** is a program that enables us to send commands to the comput
 - [Bash cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet)
 
 ### In-class lab
+https://github.com/davified/learn-shell
 https://www.learnenough.com/command-line-tutorial#sec-exercises_manipulating
 https://www.learnenough.com/command-line-tutorial#sec-exercises_summary_manipulating
 
