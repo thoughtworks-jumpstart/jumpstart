@@ -1,4 +1,4 @@
-# ES5 Javascript
+# Javascript
 
 ### Learning checklist
 
@@ -27,8 +27,8 @@ Part 3:
 - Bonus: `bind`, `apply` and `call`
 
 ### Getting started
-- Create a directory for our code-along session: `mkdir es5-javascript-sandbox`
-- Go into directory: `cd es5-javascript-sandbox`
+- Create a directory for our code-along session: `mkdir javascript-sandbox`
+- Go into directory: `cd javascript-sandbox`
 - Create a javascript file for our code along: `touch main.js`
 - Open javascript file in VS Code: `code .`
 - Whenever you want to run the javascript code: `node main.js`

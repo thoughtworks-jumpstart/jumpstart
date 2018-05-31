@@ -1,4 +1,4 @@
-#### Using ES6 in a project
+#### Using ES6 import system in a project
 
 Many ES6 features are supported by the Chrome V8 engine (i.e. it will work in the Chrome browser and your local `node` environment). However, one major ES6 feature is not supported - the ES6 module system.
 
