@@ -38,3 +38,9 @@ Javascript has its idiosyncracies and gotchas, which we will discover over the c
 - [ES6 Equivalents in ES5](https://github.com/addyosmani/es6-equivalents-in-es5)
 - [Javascript Cheat Sheet](https://github.com/krishnr/JavaScript-cheat-sheet)
 - [Modern JS Cheat Sheet](https://mbeaudru.github.io/modern-js-cheatsheet/)
+
+## Assignments
+- [Javasript basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
+- [Fun with arrays ](https://github.com/thoughtworks-jumpstart/array-practice-1)
+- [Fun with classes ](https://github.com/thoughtworks-jumpstart/javascript-classes)
+- [Fun with higher order functions](https://github.com/thoughtworks-jumpstart/higher-order-functions-exercises)
