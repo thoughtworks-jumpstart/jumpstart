@@ -35,6 +35,8 @@
 - [Developer Tools](08_developer_tools/readme.md)
 	- [ESLint](08_developer_tools/eslint.md)
 	- [VS Code Shortcuts](08_developer_tools/vs_code_shortcuts.md)
+	- [Node and NPM](08_developer_tools/node_and_npm.md)
+	- [Yarn](08_developer_tools/npm_vs_yarn.md)
 ----
 - [Javascript](01_programming_fundamentals/javascript/readme.md)
 	- [Getting Started](01_programming_fundamentals/javascript/javascript_getting_started.md)
@@ -142,7 +144,6 @@
 			<!-- - [Redux](02_web_development_front_end/react/redux.md) -->
 ----
 - [Back-end web development](02_web_development_back_end/readme.md)
-	- [Intro to Node](02_web_development_back_end/nodejs/nodejs_introduction.md)
 	- [Web 101](02_web_development_back_end/web_101.md)
 	- [REST API & CRUD](02_web_development_back_end/rest_api/readme.md)
 	- [Web Service with Express.js](02_web_development_back_end/express_rest_api/readme.md)

@@ -1,6 +1,6 @@
 # Node package managers
 
-For this course, we will use [`yarn`](https://yarnpkg.com/en/) (instead of `npm`) as our node package manager.
+Besides `npm`, there is another widely used node package manager called [`yarn`](https://yarnpkg.com/en/).
 
 Both of them are roughly equal in functionality (because `npm` is good at playing catch-up), but `yarn` is better in the following ways:
 * Speed. Yarn caches every package it downloads so it never needs to download it again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.
@@ -50,4 +50,3 @@ console.log(cow);
 #### Recommended reading
 
 * [yarn-npm mapping guide](https://yarnpkg.com/lang/en/docs/migrating-from-npm/)
-* [Everything You Wanted To Know About package-lock.json](https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8)
