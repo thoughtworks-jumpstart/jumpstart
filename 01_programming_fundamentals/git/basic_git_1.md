@@ -10,7 +10,7 @@ Type the following commands one by one in your terminal:
 - `git config --global rebase.autoStash true`
 - `git config --global core.editor 'code --wait'`
 
-### Assignment: Git Basics
+## Assignment: Git Basics
 
 https://classroom.github.com/a/RbkhEFJT
 
