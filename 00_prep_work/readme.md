@@ -26,7 +26,7 @@ If you are totally new to Javascript, here is an online course for beginners.
 The [tutorial on Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) is pretty good too.
 
 If you are keen to pick up a book, here is a good one:
-- [You Don't know JS: Up & Going](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going)
+- [Learn Enough Javascript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)
 
 From time to time, you may need to refer to the core concepts/APIs in Javascript. Here are some good references for you:
 - [Dev Docs](http://devdocs.io/javascript/)
