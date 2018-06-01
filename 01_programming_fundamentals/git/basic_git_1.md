@@ -47,12 +47,13 @@ https://classroom.github.com/a/RbkhEFJT
 - `git remote set-url origin <repo-url>`
 - `git push -u origin master`
 
-#### Take-home assignments
+## Take-home assignments
 
 - Try Git (~15 minutes): https://try.github.io/levels/1/challenges/1
 - Learn Git and Version Control: https://www.katacoda.com/courses/git
 
-### Resources
+## Resources
+
 - [Learn Just Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial)
 - [Git - the simple guide](http://rogerdudler.github.io/git-guide/)
 - [Git Cheat Sheet](https://gist.github.com/akras14/3d242d80af8388ebca60)
