@@ -74,6 +74,7 @@
 		- [Making any project ES6-compatible](01_programming_fundamentals/javascript/using_es6_import_system.md)
 	- [Asynchronous Javascript](01_programming_fundamentals/javascript/asynchronous/readme.md)
 		- [Understanding the event loop](01_programming_fundamentals/javascript/asynchronous/event_loop.md)
+		- [Event loop and asynchronous tasks](01_programming_fundamentals/javascript/asynchronous/event_loop_and_async_tasks.md)
 		- [Callback Hell](01_programming_fundamentals/javascript/asynchronous/callback_hell.md)
 		- [Promises](01_programming_fundamentals/javascript/asynchronous/promises.md)
 		- [`async` and `await`](01_programming_fundamentals/javascript/asynchronous/async_await.md)
