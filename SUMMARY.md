@@ -11,8 +11,8 @@
 	- [Instructor's resources](instructors_resources.md)
 ----
 - [Git](01_programming_fundamentals/git/readme.md)
-	- [Basic git: part 1](01_programming_fundamentals/git/basic_git_1.md)
-	- [Basic git: part 2](01_programming_fundamentals/git/basic_git_2.md)
+	- [Getting Started with Git](01_programming_fundamentals/git/basic_git_1.md)
+	- [Collaborating using Git](01_programming_fundamentals/git/basic_git_2.md)
 	- [Merge hell](01_programming_fundamentals/git/merge_hell.md)
 	<!-- - [Advanced git](01_programming_fundamentals/git/advanced_git.md) -->
 - [Unix commandline](01_programming_fundamentals/commandline/readme.md)

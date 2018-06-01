@@ -1,4 +1,4 @@
-# Git - getting started part 2
+# Collaborating Using Git
 
 ### Learning checklist
 
