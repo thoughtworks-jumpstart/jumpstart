@@ -6,7 +6,6 @@
 	- [Machine setup](01_programming_fundamentals/machine_setup/readme.md)
 		- [Mac](01_programming_fundamentals/machine_setup/mac.md)
 		- [Windows](01_programming_fundamentals/machine_setup/windows.md)
-		- [yarn > npm](02_web_development_back_end/nodejs/npm_vs_yarn.md)
 	- [How to learn effectively](01_programming_fundamentals/learning_to_learn.md)
 	- [Instructor's resources](instructors_resources.md)
 ----
@@ -22,8 +21,9 @@
 	- [Deployment](01_programming_fundamentals/devops/deployment/readme.md)
 		- [Back-end apps](01_programming_fundamentals/devops/deployment/back_end/readme.md)
 		- [Front-end apps](01_programming_fundamentals/devops/deployment/front_end/readme.md)
-			- [Github Pages](01_programming_fundamentals/devops/deployment/front_end/github_pages.md)
-			- [Heroku](01_programming_fundamentals/devops/deployment/front_end/react_heroku.md)
+			- [Deploy simple static websites](01_programming_fundamentals/devops/deployment/front_end/static_websites.md)
+			- [Deploy React Apps to Now or GitHub Pages](01_programming_fundamentals/devops/deployment/front_end/react_github_pages.md)
+			- [Deploy React Apps to Heroku](01_programming_fundamentals/devops/deployment/front_end/react_heroku.md)
 			- [TravisCI](01_programming_fundamentals/devops/deployment/front_end/travis_ci.md)
 	- [Container Technology](01_programming_fundamentals/devops/containers.md) -->
 		<!-- - [Managing Secrets](01_programming_fundamentals/devops/deployment/config_secrets.md) -->

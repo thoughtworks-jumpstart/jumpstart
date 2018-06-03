@@ -1,4 +1,4 @@
-#### Deploy `create-react-app` apps using create-react-app-buildpack
+# Deploy `create-react-app` apps using create-react-app-buildpack
 
 Assuming you have:
 - a React app created with `create-react-app` that (i) works locally when you run `yarn start` and (ii) is committed to github,
