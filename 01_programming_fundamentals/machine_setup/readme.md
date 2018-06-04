@@ -47,5 +47,4 @@ We will be using slack to communicate throughout the course. If you haven't join
 
 ## OS-specific tools
 
-- [Windows guide](./windows.html)
-- [Mac guide](./mac.html)
+Continue your setup by selecting on your OS (e.g. Mac / Windows) on the left panel
