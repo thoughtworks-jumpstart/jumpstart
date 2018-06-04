@@ -178,12 +178,12 @@
 	- [Presentation format](05_projects/presentation_format.md)
 	- [Resources](05_projects/resources.md)
 	<!-- - [Final project](05_projects/final_project.md) --> -->
-<!-- - [Career and productivity](04_career_and_productivity/readme.md) -->
-	<!-- - [After getting started](04_career_and_productivity/after_getting_started.md) -->
-	<!-- - [Job Hunt preparation](04_career_and_productivity/job_hunt_prep.md) -->
+- [Career](04_career/readme.md)
+	- [Job Hunt preparation](04_career/job_hunt_prep.md)
+	- [After getting started](04_career/after_getting_started.md)
+	<!-- - [Interview - Career Planning](...) -->
 	<!-- - [Career - Speed date with potential employers](...) -->
 	<!-- - [Career - Technology Trend](...) -->
-	<!-- - [Interview - Career Planning](...) -->
 	<!-- - [Interview - Mock Interviews](...) -->
 	<!-- - [Interview - Resume Review](...) -->
 	<!-- - [Career - Project showcase](...) -->

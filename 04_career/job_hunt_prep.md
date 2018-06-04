@@ -41,6 +41,7 @@ For more tips on software development, check out this [awesome guide](https://do
 ## Other useful resources:
 - [A retrospective on my tech job search](https://blog.safia.rocks/post/170800851750)
 - [Recognizing impostor syndrome and fixing it before it messes up your coding interview](https://dev.to/interviewcake/recognizing-impostor-syndrome-and-fixing-it-before-it-messes-up-your-coding-interview-2j12)
+- [How to Prepare for Behavioral Based Job Interview Questions](https://www.thebalancecareers.com/behavioral-job-interview-questions-2059620)
 - [What are system design questions?](https://www.hiredintech.com/classrooms/system-design/lesson/52)
 - [How I interviewed for 5 top companies in 5 days and got job offers from all of them](https://www.techinasia.com/talk/5-companines-5-days-5-offers)
 - http://blog.gainlo.co/
