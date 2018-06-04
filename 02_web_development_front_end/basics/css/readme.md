@@ -10,12 +10,16 @@
 
 ### Resources:
 
+#### Must-read:
+- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [Modern CSS Explained For Dinosaurs](https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525)
+
+
+#### Reference
 - Beginner materials:
 	- [CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 	- [CSS Fundamental](http://interactivepython.org/runestone/static/webfundamentals/index.html#cascading-style-sheets)
-	- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 	- [CSS Tricks](https://css-tricks.com/guides/beginner/)
-	- [Modern CSS Explained For Dinosaurs](https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525)
 	- [CSS Reference](https://tympanus.net/codrops/css_reference/)
 
 - Intermediate materials:
