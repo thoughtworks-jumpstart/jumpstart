@@ -95,10 +95,9 @@ Here are some of the CSS properties that you can use.
 - `font-family`
 - `font-size`
 
-There are many many many other CSS properties. Don't try to memorize them all. A good rule of thumb is to think about what you want to achieve and then look up how to achieve it. Here are some handy cheatsheets:
-- basic cheatsheet: http://www.lesliefranke.com/files/reference/csscheatsheet.html
-- advanced cheatsheet: https://css3clickchart.com
-- comprehensive cheatsheet: https://www.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf
+There are many many many other CSS properties. Don't try to memorize them all. A good rule of thumb is to think about what you want to achieve and then look up how to achieve it. Here is a handy reference:
+
+- MDN CSS Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference (**Bookmark this!**)
 
 #### How to use chrome devtools to edit CSS
 
