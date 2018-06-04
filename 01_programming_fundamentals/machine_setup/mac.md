@@ -39,6 +39,8 @@ You can read more about what these commands are doing here: https://help.github.
 
 ## Node
 
+> Warning: If you already installed node without using homebrew (e.g. using another installer), you may encounter errors while trying to re-install node using the homebrew command below. If the node version on your computer is relatively new, you can keep your current node installation and skip this step. Otherwise, you need to [uninstall your current node installation](https://stackoverflow.com/questions/11177954/how-do-i-completely-uninstall-node-js-and-reinstall-from-beginning-mac-os-x) before you install again using homebrew
+
 To install Node
 
 ```shell
