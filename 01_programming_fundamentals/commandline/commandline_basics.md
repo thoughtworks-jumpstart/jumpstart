@@ -2,6 +2,9 @@
 
 The **command line** is a program that enables us to send commands to the computer and receive output. It is also referred to as the **terminal** or **shell**.
 
+### Code along
+- Follow the instructions in this link: https://github.com/thoughtworks-jumpstart/learn-shell
+
 ### Learning checklist
 - Understand why it's important to know how to use Unix commands
 - Identify commands (and their options) used for navigating directories
@@ -53,11 +56,11 @@ The **command line** is a program that enables us to send commands to the comput
 - Apply commands towards everyday problems and workflows
 
 ### Resources
+- [explainshell.com](https://explainshell.com/)
 - [Learn enough command line to be dangerous](https://www.learnenough.com/command-line-tutorial)
 - [Bash cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet)
 
 ### In-class lab
-- https://github.com/thoughtworks-jumpstart/learn-shell
 - https://www.learnenough.com/command-line-tutorial#sec-exercises_manipulating
 - https://www.learnenough.com/command-line-tutorial#sec-exercises_summary_manipulating
 
