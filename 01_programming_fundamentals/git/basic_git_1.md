@@ -2,10 +2,13 @@
 
 ## Configure Git
 
+Verify that your name and email are set:
+
+- `git config user.name`
+- `git config user.email`
+
 Type the following commands one by one in your terminal:
 
-- `git config --global user.name 'your name'`
-- `git config --global user.email 'your email'`
 - `git config --global pull.rebase true`
 - `git config --global rebase.autoStash true`
 - `git config --global core.editor 'code --wait'`
