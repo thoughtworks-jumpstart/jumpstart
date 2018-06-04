@@ -166,6 +166,8 @@
 	
 ----
 - [Agile 101](03_agile_practices/readme.md)
+	- [Feedback](03_agile_practices/feedback.md)
+	- [Retrospectives](03_agile_practices/retrospectives.md)
 	
 ----
 <!-- - [Assignments](06_assignments/readme.md) -->
