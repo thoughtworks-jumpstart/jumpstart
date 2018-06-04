@@ -84,7 +84,6 @@ On Windows, we need to configure VS Code in user settings:
 git --version
 node -v
 npm -v
-yarn -v
 code -v
 ```
 

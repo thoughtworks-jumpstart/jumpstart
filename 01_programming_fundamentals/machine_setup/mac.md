@@ -95,7 +95,6 @@ Restart Terminal, and you should see a brand new and colorful command prompt.
 git --version
 node -v
 npm -v
-yarn -v
 code -v
 ```
 
