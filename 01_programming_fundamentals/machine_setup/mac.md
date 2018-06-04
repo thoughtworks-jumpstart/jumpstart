@@ -87,7 +87,7 @@ We'll be using a shell and configuration package called [Oh-My-Zsh](https://gith
 curl -L http://install.ohmyz.sh | sh
 ```
 
-Restart Terminal, and you should see a brand new and colorful command prompt.
+Now, restart Terminal, and you should see a new and more colorful command prompt.
 
 ## Verify installation for everything
 

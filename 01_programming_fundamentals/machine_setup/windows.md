@@ -52,20 +52,14 @@ Alternatively, you can also download nodejs and npm from <https://nodejs.org/en/
 
 ### Integrate VS Code with Bash Terminal
 
-You can open a terminal within VS Code by typing `ctrl + ~`, and that's very handy sometimes. 
+You can open a terminal within VS Code by typing `ctrl + ~`, and that's very handy sometimes. You can set this up by doing the following:
+- Open command palette (Hit `F1`)
+- Type 'Select default shell' and click on the suggestion that says 'Terminal: Select default shell'
+- Select Git Bash
+- Open terminal in VS Code (Hit Ctrl + `)
+- If it says 'bash', you're done! If it says otherwise, click on the trash bin icon and repeat the previous step
 
-By default, the VS Code on Windows would integrate with the PowerShell (or CMD) by default. If you prefer to use Bash shell, open User Settings (`Ctrl` + \`) and add this line:
-```json
-{
-  // ... other configuration
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"  
-}
-```
-You can read more about custom shell configuration for windows [here](https://code.visualstudio.com/docs/editor/integrated-terminal#_windows)
 
-### Enable opening of VS Code from Git Bash
-
-Follow instructions here: https://www.seangwright.me/blog/tools/how-to-open-visual-studio-code-from-git-bash-in-windows/
 
 ### Configure VS Code to use LF as end-of-line character
 
