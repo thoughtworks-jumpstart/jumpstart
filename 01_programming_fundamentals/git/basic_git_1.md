@@ -52,7 +52,6 @@ https://classroom.github.com/a/RbkhEFJT
 
 ## Take-home assignments
 
-- Try Git (~15 minutes): https://try.github.io/levels/1/challenges/1
 - Learn Git and Version Control: https://www.katacoda.com/courses/git
 
 ## Resources
