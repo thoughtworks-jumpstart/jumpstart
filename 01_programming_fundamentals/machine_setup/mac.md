@@ -33,6 +33,8 @@ git config --global credential.helper cache
 git config --global core.autocrlf input
 ```
 
+You can verify your git configuration by running: `git config --list | cat`. The values which you had keyed in earlier should be listed.
+
 You can read more about what these commands are doing here: https://help.github.com/categories/setup/
 
 ## Node

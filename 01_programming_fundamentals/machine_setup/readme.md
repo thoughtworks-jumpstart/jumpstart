@@ -41,7 +41,7 @@ We will be using slack to communicate throughout the course. If you haven't join
 
 [Download Slack](https://slack.com/downloads)
 
-### Sign up on Useful Websites
+### Sign up for a GitHub  account
 
 - Create a github account at <https://www.github.com/>
 
