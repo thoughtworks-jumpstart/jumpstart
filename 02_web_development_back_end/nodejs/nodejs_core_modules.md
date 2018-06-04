@@ -113,3 +113,4 @@ function replyWithIndexHtml(filepath, err, request, response) {
 ## Tutorial
 
 - [Learn You Node](https://github.com/workshopper/learnyounode)
+- [A beginner-focused half day workshop covering node.js](https://github.com/kwhinnery/node-workshop)
