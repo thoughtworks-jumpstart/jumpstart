@@ -47,7 +47,7 @@ To install Node
 brew install node
 ```
 
-If node is already installed, upgrade to the latest version of node using
+If node is already installed with homebrew, you can upgrade to the latest version of node using
 
 ```shell
 brew upgrade node
