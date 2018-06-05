@@ -1,20 +1,22 @@
 # Responsive Design with @media queries
 
 ### Learning checklist
+
+Ingredients of responsive design
+- fluid display
+  - using relative units (e.g. %, fr) rather than static units (e.g. px)
+- media queries (`@media`)
+  - media types
+    - `screen`
+    - `all`
+    - `print`
+    - `speech`
+  - media features (a.k.a. breakpoints)
+    - `@media (max-width: 12450px) { ... }`
+    - `@media (min-width: 300px) and (max-width: 12450px) and (orientation: landscape) { ... }`
+- thinking in containers (don't micromanage every single html element!)
 - mobile-first approach
-- [Example media query](https://codepen.io/davified/pen/PEMwOz)
-- media queries
-  - `@media`
-- media types
-  - `screen`
-  - `all`
-  - `print`
-  - `speech`
-- media features
-  - `@media (max-width: 12450px) { ... }`
-  - `@media (min-width: 300px) and (orientation: landscape) { ... }`
-
-
+- [Code-along template](https://codepen.io/davified/pen/PEMwOz)
 
 
 Example of a media query:

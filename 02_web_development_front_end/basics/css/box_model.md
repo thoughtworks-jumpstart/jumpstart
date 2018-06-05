@@ -65,7 +65,7 @@ Example:
 
 - `border-box`: This tells the browser to account for any **border** and **padding** in the values you specify for width and height. **If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.**
 
-Try it out!
+Try it out [here](https://codepen.io/davified/pen/bKprGY?editors=1100)!
 
 ```css
 /* index.html */

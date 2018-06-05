@@ -16,6 +16,10 @@ Example:
 }
 ```
 
+### Using css to load images
+
+You can use the `background-image: url("https://some.website.com/some_picture.jpg")` css proeprty. Try it out [here](https://codepen.io/davified/pen/YvqejJ)!
+
 ### float
 
 ### pseudo-selectors
