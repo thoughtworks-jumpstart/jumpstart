@@ -40,9 +40,9 @@
 ----
 - [Javascript](01_programming_fundamentals/javascript/readme.md)
 	- [Getting Started](01_programming_fundamentals/javascript/javascript_getting_started.md)
-		- [Variables and primitives](01_programming_fundamentals/javascript/variables_and_primitives.md)
-		- [Conditional statements](01_programming_fundamentals/javascript/conditional_statements.md)
+		- [Values and variables](01_programming_fundamentals/javascript/variables_and_primitives.md)
 		- [Functions](01_programming_fundamentals/javascript/functions.md)
+		- [Conditional statements](01_programming_fundamentals/javascript/conditional_statements.md)
 		- [Arrays](01_programming_fundamentals/javascript/arrays.md)
 		- [Loops](01_programming_fundamentals/javascript/loops.md)
 		- [Objects](01_programming_fundamentals/javascript/objects.md)
