@@ -42,6 +42,11 @@ body {
 
 ### Assignment
 
+#### Assignment 1
+https://github.com/thoughtworks-jumpstart/intro-to-responsive-css
+
+#### Assignment 2 (optional)
+
 Make your previous CSS Grid assignment mobile-responsive for the following:
 - iPad (portrait, landscape)
   - min-device-width: 768px
