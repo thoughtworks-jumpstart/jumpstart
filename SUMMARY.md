@@ -115,6 +115,7 @@
 		- [float](02_web_development_front_end/basics/css/float.md)
 		- [Responsive CSS](02_web_development_front_end/basics/css/css_responsive.md)
 		- [Additional topics](02_web_development_front_end/basics/css/additional_topics.md)
+		- [Miscellaneous](02_web_development_front_end/basics/css/miscellaneous.md)
 	- [DOM manipulation](02_web_development_front_end/basics/DOM.md)
 	<!-- - [HTTP requests with `fetch`](02_web_development_front_end/http_requests_with_fetch.md) -->
 	- [React](02_web_development_front_end/react/readme.md)
