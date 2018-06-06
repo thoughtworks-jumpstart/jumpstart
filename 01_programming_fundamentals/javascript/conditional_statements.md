@@ -37,7 +37,6 @@ if (food === "pizza") {
 - And: `&&`
 - Or: `||`
 - Not: `!`
-	- `!==`
 	- `! true` 	// returns false
 	- `! false`	// returns true
 	- `! 1===1`	// returns false
