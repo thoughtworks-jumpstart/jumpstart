@@ -29,7 +29,7 @@ On the console, you will see the URL where your website is deployed to.
 
 ## GitHub Pages
 
-You can find out to use GitHub Pages easily by following their step-by-step guide on the [landing page](https://pages.github.com/). All you need is one `index.html` file and configure your GitHub project to enable GitHub Pages.
+You can find out to use GitHub Pages easily by following their step-by-step guide on the [landing page](https://pages.github.com/) (**Note**: Scroll past the video and select "Project site" instead of "User or organization site"). All you need is one `index.html` file and configure your GitHub project to enable GitHub Pages.
 
 Caveat:
 
