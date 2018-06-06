@@ -1,4 +1,5 @@
-#### `if` conditional statements
+## `if` conditional statements
+
 ```javascript
 if (someCondition === "a") {
   // code to run if someCondition === "a"
@@ -10,6 +11,7 @@ if (someCondition === "a") {
 ```
 
 Another example:
+
 ```javascript
 var food = "pizza" // change this value and see the different log messages
 
@@ -24,8 +26,26 @@ if (food === "pizza") {
 }
 ```
 
-#### ternary conditional statements
-dictionary definition of tern: "a set of three"
+## Comparison operators
+
+- `===` and `!==` (vs. `==` and `=`)
+- `<` and `>`
+- `<=` and `>=`
+
+## Logical operators and combining conditions
+
+- And: `&&`
+- Or: `||`
+- Not: `!`
+	- `!==`
+	- `! true` 	// returns false
+	- `! false`	// returns true
+	- `! 1===1`	// returns false
+
+
+## ternary conditional statements
+
+Dictionary definition of tern: "a set of three"
 
 ```javascript
 // Syntax:
