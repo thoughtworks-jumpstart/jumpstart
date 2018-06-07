@@ -48,6 +48,7 @@
       * [reduce](javascript/getting-started/higher-order-functions/reduce.md)
       * [some](javascript/getting-started/higher-order-functions/some.md)
       * [every](javascript/getting-started/higher-order-functions/every.md)
+      * [method chaining](javascript/getting-started/higher-order-functions/method_chaining.md)
     * [Scope](javascript/getting-started/scope.md)
     * [Closures](javascript/getting-started/closures.md)
     * [Classes](javascript/getting-started/classes.md)
