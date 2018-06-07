@@ -20,7 +20,7 @@ Code-along: https://github.com/thoughtworks-jumpstart/fetch-react-code-along
 
 #### Recommended reading
 - https://developers.google.com/web/fundamentals/primers/async-functions
-
+- [MDN docs on promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 
 ### Assignment
 

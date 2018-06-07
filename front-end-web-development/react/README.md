@@ -49,5 +49,4 @@ When working with React, you will undoubtedly face new and scary jargon. An impo
 
 ### Assignment
 
-Build to do list
-
+Build to do list: https://github.com/thoughtworks-jumpstart/react-todo-list

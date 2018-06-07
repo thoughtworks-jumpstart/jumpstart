@@ -189,5 +189,4 @@ Rules of thumb by [Geoffroy Warin](https://github.com/airbnb/enzyme/issues/465):
 
 ## Assignment
 
-[https://github.com/thoughtworks-jumpstart/tdd-todo-list](https://github.com/thoughtworks-jumpstart/tdd-todo-list)
 
