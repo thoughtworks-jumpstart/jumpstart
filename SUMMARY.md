@@ -109,6 +109,7 @@
     * [Additional topics](front-end-web-development/css/additional-topics.md)
     * [Miscellaneous](front-end-web-development/css/miscellaneous.md)
   * [DOM manipulation](front-end-web-development/dom-manipulation.md)
+  * [Fetching data](front-end-web-development/fetch_get_requests.md)
   * [React](front-end-web-development/react/README.md)
     * [Setup](front-end-web-development/react/setup.md)
     * [JSX](front-end-web-development/react/jsx.md)

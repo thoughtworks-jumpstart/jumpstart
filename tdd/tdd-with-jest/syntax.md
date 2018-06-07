@@ -85,11 +85,23 @@ it('should work', function() {
 
 ## Assertion syntax
 
+### Basic matcher methods
+
 * `expect()` returns an 'expectation' object, which has several `matcher` methods \(see full list of matcher methods on the [jest docs](https://facebook.github.io/jest/docs/en/using-matchers.html)\)
   * `expect(actual).toEqual(someValue)`
-  * `expect(actual).toBe(someObject)`
-    * `toBe()` uses `Object.is` to test object equality. If you want to check the value of an object, use `toEqual()` instead:
-    * Example:
+  * `expect(actual).toHaveLength(number)`
+  
+### Some other matcher methods (which you won't need for the first session on jest)
+
+* `expect(actual).not.toEqual(someValue)` & `expect(actual).not.toBe(someObject)`
+* `expect(actual).toBeGreaterThan(number)`
+* `expect(actual).toBeLessThan(number)`
+* `expect(actual).toContain(item)`
+* `expect(actual).toContainEqual(item)`
+* `expect(actual).toHaveProperty(keyPath, value)`
+* `expect(actual).toBe(someObject)`
+  * Note: `toBe()` uses `Object.is` to test object equality. If you want to check the value of an object, use `toEqual()` instead:
+  * Example:
 
 ```javascript
 it('we should use toEqual() when checking object value equality', function() {
@@ -104,13 +116,6 @@ it('we should use toEqual() when checking object value equality', function() {
 })
 ```
 
-* `expect(actual).not.toEqual(someValue)` & `expect(actual).not.toBe(someObject)`
-* `expect(actual).toBeGreaterThan(number)`
-* `expect(actual).toBeLessThan(number)`
-* `expect(actual).toContain(item)`
-* `expect(actual).toContainEqual(item)`
-* `expect(actual).toHaveLength(number)`
-* `expect(actual).toHaveProperty(keyPath, value)`
 * truthiness tests
 
 ```javascript
