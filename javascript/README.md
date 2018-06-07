@@ -43,7 +43,6 @@ Javascript has its idiosyncracies and gotchas, which we will discover over the c
 ## Assignments
 
 * [Javasript basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
-* [Fun with arrays ](https://github.com/thoughtworks-jumpstart/array-practice-1)
 * [Fun with classes ](https://github.com/thoughtworks-jumpstart/javascript-classes)
 * [Fun with higher order functions](https://github.com/thoughtworks-jumpstart/higher-order-functions-exercises)
 
