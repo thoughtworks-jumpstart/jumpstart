@@ -21,6 +21,7 @@
       * [Deploy simple static websites](devops/deployment/front-end-apps/deploy-simple-static-websites.md)
       * [Deploy React Apps to Now or GitHub Pages](devops/deployment/front-end-apps/deploy-react-apps-to-now-or-github-pages.md)
       * [Deploy React Apps to Heroku](devops/deployment/front-end-apps/deploy-react-apps-to-heroku.md)
+      * [CircleCI](devops/deployment/front-end-apps/circleci.md)
       * [TravisCI](devops/deployment/front-end-apps/travisci.md)
   * [Container Technology](devops/container-technology.md)
 * [Debugging](debugging/README.md)
