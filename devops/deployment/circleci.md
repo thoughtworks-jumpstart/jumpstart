@@ -7,14 +7,16 @@ In this example, we are deploying to Heroku, but we're going run tests on Circle
 **Pre-requisites**:
 
 * a [CircleCI account](https://circleci.com/dashboard)
-* a react app that's committed to git and github on the master branch
+* a project/app with a `npm test` and `npm start` command
+* the project should be committed to git and github on the master branch
 * heroku cli tool. Check if it's installed: `heroku -v` (if not, install it with: `brew install heroku` (mac) or `choco install heroku-cli` (windows))
 
 **Steps**:
 - On https://circleci.com/dashboard, click on 'set up project' on the left bar, and search for your git repo (you may need to refresh your page), and click 'Set up project'
 - follow the instructions on the 'Set Up Project' page
 - [Skip this step if you've already created your heroku app] Create heroku app
-	- heroku create --buildpack https://github.com/mars/create-react-app-buildpack.git
+	- heroku create 
+	- [Use this instead if you're deploying a `create-react-app` app] heroku create --buildpack https://github.com/mars/create-react-app-buildpack.git
 - Go to https://dashboard.heroku.com/ to complete the Heroku-Github integration
   - Click on your project
   - Click on Deploy tab → Deployment method → select GitHub
