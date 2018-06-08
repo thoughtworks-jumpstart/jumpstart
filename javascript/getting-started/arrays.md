@@ -58,7 +58,7 @@ Creating arrays from strings
 Joining arrays to form strings
 
 ```javascript
-// syntax: someArray.split(someDelimiter)
+// syntax: someArray.join(someDelimiter)
 
 ['hello', 'who', 'are', 'you'].join('_') // 'hello_who_are_you'
 ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'].join('') // returns 'hello world'
