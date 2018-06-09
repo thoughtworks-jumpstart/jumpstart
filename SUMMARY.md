@@ -158,6 +158,7 @@
   * [Feedback](agile-101/feedback.md)
   * [Retrospectives](agile-101/retrospectives.md)
 * [Independent learning week](independent-learning-week.md)
+* [Labs and Assignments](labs-assignments/README.md)
 * [Projects](projects/README.md)
   * [Evaluation criteria checklist](projects/evaluation-criteria-checklist.md)
   * [Presentation format](projects/presentation-format.md)
