@@ -1,3 +1,5 @@
+# Labs and assignments
+
 ## Week 1
 
 - https://github.com/thoughtworks-jumpstart/apple-css-lab
