@@ -14,13 +14,74 @@ Code along template: [https://github.com/thoughtworks-jumpstart/dom-manipulation
     * `event.preventDefault()`
   * Recipes for creating/adding/removing HTML elements using javascript
 
-### What is the DOM
+## What is the DOM
 
-The Document Object Model \(DOM\) is a programming interface for HTML \(and XML\) documents. It represents the web page as a javascript object \(`document`\) so that javascript programs can **change the document structure, style, and content**.
+Imagine an HTML page with the following structure:
 
-This may sound boring now, but basically all interactive webpages that you've visited \(e.g. facebook, spotify, [pac-man](https://www.google.com.sg/search?q=pacman+online&oq=pacman+online&aqs=chrome.0.0l6.2669j0j7&sourceid=chrome&ie=UTF-8)\) are possible because the DOM interface lets us manipulate the contents of a webpage without refreshing a page!
+```html
+<html>
+<head>
+	<title>Some title</title>
+</head>
+<body>
+	<p>First paragraph</p>
+	<p>Second paragraph</p>
+</body>
+</html>
+```
 
-### How to select elements from the DOM using selectors
+The browser exposes a JavaScript interface to query and manipulate this HTML
+using a global variable called `document`. Using plain JS objects and arrays,
+the DOM can be thought to resemble a structure similar to the following:
+
+```javascript
+document = {
+	querySelector() { ... },
+	querySelectorAll() { ... },
+	createElement() { ... },
+	children: [
+		{
+			tagName: 'HTML',
+			textContent: '...',
+			children: [
+				{
+					tagName: 'head',
+					children: [ ... ],
+				},
+				{
+					tagName: 'body',
+					children: [
+						{
+							tagName: 'p',
+							textContent: 'First paragraph',
+						},
+						{
+							tagName: 'p',
+							textContent: 'Second paragraph',
+						},
+					]
+				}
+			]
+		}
+	]
+};
+```
+
+Note that this is a model of the DOM, but not how the DOM is actually
+implemented in the browser.
+
+The Document Object Model \(DOM\) is a programming interface for HTML \(and
+XML\) documents. It represents the web page as a javascript object
+\(`document`\) so that javascript programs can **change the document structure,
+style, and content**.
+
+This may sound boring now, but basically all interactive webpages that you've
+visited \(e.g. facebook, spotify,
+[pac-man](https://www.google.com.sg/search?q=pacman+online&oq=pacman+online&aqs=chrome.0.0l6.2669j0j7&sourceid=chrome&ie=UTF-8)\)
+are possible because the DOM interface lets us manipulate the contents of a
+webpage without refreshing a page!
+
+## How to select elements from the DOM using selectors
 
 [Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 
