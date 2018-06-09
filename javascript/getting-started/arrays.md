@@ -1,7 +1,5 @@
 # Arrays
 
-## Arrays - `[]`
-
 An array is a data structure that allows us to store a collection of values in a single variable.
 
 ## Syntax
@@ -9,7 +7,7 @@ An array is a data structure that allows us to store a collection of values in a
 Defining an array:
 
 ```javascript
-var myArray = [1, 5, 10, 42];
+const myArray = [1, 5, 10, 42];
 ```
 
 Accessing array element\(s\)
@@ -36,14 +34,24 @@ Removing array elements
   * `j` \(optional\) is the ending index \(non-inclusive of the element at index `j`\). If excluded, the ending index is
   * this method does not mutate myArray. Rather, it returns a new array
 
+	```javascript
+	const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+	animals.slice(2);  // returns ["camel", "duck", "elephant"]
+
+	animals.slice(2, 4); // returns ["camel", "duck"]
+
+	animals.slice(1, 5); // returns ["bison", "camel", "duck", "elephant"]
+	```
+
+Joining arrays to form strings
+
 ```javascript
-var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+// syntax: someArray.split(someDelimiter)
 
-animals.slice(2);  // returns ["camel", "duck", "elephant"]
-
-animals.slice(2, 4); // returns ["camel", "duck"]
-
-animals.slice(1, 5); // returns ["bison", "camel", "duck", "elephant"]
+['hello', 'who', 'are', 'you'].join('_') // 'hello_who_are_you'
+['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'].join('') // returns 'hello world'
+>>>>>>> Stashed changes:01_programming_fundamentals/javascript/arrays.md
 ```
 
 Creating arrays from strings
@@ -55,17 +63,7 @@ Creating arrays from strings
 'hello world'.split('') // returns ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
 ```
 
-Joining arrays to form strings
-
-```javascript
-// syntax: someArray.join(someDelimiter)
-
-['hello', 'who', 'are', 'you'].join('_') // 'hello_who_are_you'
-['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'].join('') // returns 'hello world'
-```
-
 ## Resources
 
 * [Array Explorer](https://sdras.github.io/array-explorer/)
 * [MDN Array docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
-
