@@ -51,7 +51,6 @@ Joining arrays to form strings
 
 ['hello', 'who', 'are', 'you'].join('_') // 'hello_who_are_you'
 ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'].join('') // returns 'hello world'
->>>>>>> Stashed changes:01_programming_fundamentals/javascript/arrays.md
 ```
 
 Creating arrays from strings
