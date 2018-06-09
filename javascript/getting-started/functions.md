@@ -115,3 +115,30 @@ const areaOfRectangle = (width, height) => {
 const areaOfCircle = lengthOfSide => lengthOfSide * lengthOfSide;
 ```
 
+### Functions can be used just like any other variable
+
+They can be elements of an array:
+
+```javascript
+const things = [1, 'hello', true, function (a, b) { return a + b} ];
+
+// things[3] is a function and can be invoked like this:
+things[3](5, 6);
+
+// i.e. get the fourth element of the array, invoke it (since it is a function)
+// with two arguments: 5 and 6
+```
+
+They can be passed as arguments to another function:
+
+```javascript
+const logger = (f) => {
+	console.log('f is', f);
+}
+
+const sum = (a, b) => a + b;
+
+// note that we're passing the "sum" function to logger, not invoking it
+// (notice the lack of parentheses after the name 'sum')
+logger(sum); // outputs the body of the 'sum' function to the console
+```
