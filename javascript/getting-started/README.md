@@ -42,13 +42,6 @@ Part 3:
 
 ## Resources
 
-### Reference
-
-* [MDN Docs explorer](http://devdocs.io/)
-* [Mozilla Developers' Network \(MDN\) Javascript documentation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
-* [Eloquent Javascript](http://eloquentjavascript.net/)
-* [Awesome Javascript learning resources](https://github.com/micromata/awesome-javascript-learning)
-
 ## Assignment
 
 * [Javascript basics](https://github.com/davified/javascript-basics)
