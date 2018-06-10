@@ -38,6 +38,10 @@ Javascript has its idiosyncracies and gotchas, which we will discover over the c
 * [Minimalist examples of ES6 functionalities](https://github.com/hemanth/paws-on-es6)
 * [ES6 Equivalents in ES5](https://github.com/addyosmani/es6-equivalents-in-es5)
 * [Javascript Cheat Sheet](https://github.com/krishnr/JavaScript-cheat-sheet)
+* [MDN Docs explorer](http://devdocs.io/)
+* [Mozilla Developers' Network \(MDN\) Javascript documentation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+* [Eloquent Javascript](http://eloquentjavascript.net/)
+* [Awesome Javascript learning resources](https://github.com/micromata/awesome-javascript-learning)
 * [Modern JS Cheat Sheet](https://mbeaudru.github.io/modern-js-cheatsheet/)
 
 ## Assignments

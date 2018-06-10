@@ -15,7 +15,7 @@ ES6 uses a different syntax for exporting and importing modules, as compared to 
 
 **Named exports** vs. **default exports**
 
-* default export 
+* default export
   * the name of the variable being imported/exported can be different
   * Each module can only have **one** default export
 
@@ -70,9 +70,27 @@ Some browsers don't support ES6 module yet. You can find the latest status [here
 
 ## ES6 Module Support in Node.JS Environment
 
-Node.JS is built on top of CommonJS since day one and CommonJS is still the default module system used by Node.JS. Most of the modules written for Node.JS environment still use the CommonJS `module.exports` and `require` syntax instead of ES6 modules.
+Node.JS is built on top of CommonJS since day one and CommonJS is still the
+default module system used by Node.JS. Most of the modules written for Node.JS
+environment still use the CommonJS `module.exports` and `require` syntax
+instead of ES6 modules.
 
-The support on ES6 modules is currently [an experimental feature](https://nodejs.org/api/esm.html). Rumors saying that will be enabled by default in Node 10 release. However, in order to use ES6 modules in your codes, you have to change your file extension to `.mjs` so that Node is aware the module is written using ES6 modules. Some descriptions of the current status can be found [here](https://github.com/nodejs/node-eps/blob/master/002-es-modules.md)
+The support on ES6 modules is currently [an experimental
+feature](https://nodejs.org/api/esm.html).  However, in order to use ES6 modules in your
+codes, you have to change your file extension to `.mjs` so that Node is aware
+the module is written using ES6 modules. Some descriptions of the current
+status can be found
+[here](https://github.com/nodejs/node-eps/blob/master/002-es-modules.md)
+
+For Node.js applications running, you have two choices:
+
+1. Use the ES5 CommonJS syntax \(`const a = require('a')`\), or
+2. Compile ES6 code down to ES5 syntax using the `babel` library. To include
+   `babel` in our project, do the following:
+   * `npm install babel-cli babel-preset-es2015`
+   * replace the `start` script in `package.json` to use: `babel-node --presets es2015 app.js` \(instead of `node app.js`\)
+
+See example: [https://github.com/thoughtworks-jumpstart/basic-es6-template/](https://github.com/thoughtworks-jumpstart/basic-es6-template/)
 
 ## Resources
 
@@ -81,4 +99,3 @@ The support on ES6 modules is currently [an experimental feature](https://nodejs
 * [ES6 module system](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
 * [ES6 `import` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 * [Bridging CommonJS and ES6 module system](https://medium.com/web-on-the-edge/es-modules-in-node-today-32cff914e4b)
-
