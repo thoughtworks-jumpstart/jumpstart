@@ -2,6 +2,10 @@
 
 An array is a data structure that allows us to store a collection of values in a single variable.
 
+## Lab
+
+https://github.com/thoughtworks-jumpstart/js-basics-3
+
 ## Syntax
 
 Defining an array:

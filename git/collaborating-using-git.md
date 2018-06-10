@@ -1,5 +1,9 @@
 # Collaborating using Git
 
+## Lab
+
+[https://github.com/thoughtworks-jumpstart/git-newsroom](https://github.com/thoughtworks-jumpstart/git-newsroom)
+
 ## Learning checklist
 
 * Collaborating on git

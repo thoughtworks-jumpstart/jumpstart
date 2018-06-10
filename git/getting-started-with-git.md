@@ -15,7 +15,7 @@ Type the following commands one by one in your terminal:
 
 ## Assignment: Git Basics
 
-[https://classroom.github.com/a/RbkhEFJT](https://classroom.github.com/a/RbkhEFJT)
+[https://github.com/thoughtworks-jumpstart/git-basics](https://github.com/thoughtworks-jumpstart/git-basics)
 
 ## Using Git
 

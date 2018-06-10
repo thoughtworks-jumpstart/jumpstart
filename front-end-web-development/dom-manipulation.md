@@ -2,6 +2,12 @@
 
 Code along template: [https://github.com/thoughtworks-jumpstart/dom-manipulation](https://github.com/thoughtworks-jumpstart/dom-manipulation)
 
+## Labs
+
+- https://github.com/thoughtworks-jumpstart/page-styler
+- https://github.com/thoughtworks-jumpstart/displayer
+- https://github.com/thoughtworks-jumpstart/dice
+
 ## Learning objectives
 
 * What is the DOM?

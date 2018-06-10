@@ -8,6 +8,10 @@ Objects can store 2 types of things: **data** \(i.e. values - like strings, numb
 
 ![](../../.gitbook/assets/oven_object.jpg)
 
+## Lab
+
+https://github.com/thoughtworks-jumpstart/js-basics-2
+
 ## Syntax
 
 How to define an object

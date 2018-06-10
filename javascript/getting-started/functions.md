@@ -27,6 +27,10 @@ function alertName() {
 <button onclick="alertName();">Submit</button>
 ```
 
+## Lab
+
+https://github.com/thoughtworks-jumpstart/js-basics-1
+
 ## Syntax
 
 ### Simple declaration

@@ -9,6 +9,8 @@
   * Live Server \(ritwickdey.liveserver\)
   * On the blue panel on the bottom of your screen, click on 'Go Live'
 
+Repo URL: https://github.com/thoughtworks-jumpstart/intro-to-css
+
 ## Resources:
 
 ### Must-read:
@@ -40,7 +42,7 @@
 
 ## Labs
 
-* [Recreate Apple Landing Page](https://github.com/davified/apple-css-lab)
+* [Recreate Apple Landing Page](https://github.com/thoughtworks-jumpstart/apple-css-lab)
 * [CSS Diner](https://flukeout.github.io/)
 
 ## Additional practice

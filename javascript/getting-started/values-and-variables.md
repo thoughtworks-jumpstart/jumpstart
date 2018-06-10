@@ -1,5 +1,9 @@
 # Values and variables
 
+## Lab
+
+https://github.com/thoughtworks-jumpstart/js-basics-1
+
 ## Types of Values
 
 * Numbers

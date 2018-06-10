@@ -497,7 +497,8 @@ This is a useful feature in Javascript to write more reusable functions.
 Let's try to doing some modeling exercises:
 
 * Mars Rover
-* [MatchMaker](https://www.github.com/davified/oo-matchmaker)?
+* [MatchMaker](https://www.github.com/thoughtworks-jumpstart/oo-matchmaker)
+* [Starbucks](https://www.github.com/thoughtworks-jumpstart/oo-starbucks)
 * Lift
 * Parking Lot
 * Hospital Appointment System

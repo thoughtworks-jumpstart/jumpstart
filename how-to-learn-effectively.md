@@ -82,5 +82,4 @@ One of the most important things we impart at JumpStart is effective learning. W
 
 ## Assignment
 
-* [https://github.com/davified/moment-lab](https://github.com/davified/moment-lab)
-
+* [https://github.com/thoughtworks-jumpstart/moment-lab](https://github.com/thoughtworks-jumpstart/moment-lab)
