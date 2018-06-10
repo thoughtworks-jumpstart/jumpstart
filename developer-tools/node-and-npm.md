@@ -15,11 +15,11 @@ Node.js is a platform for building fast and scalable server applications using J
 
 * [History of NodeJS](https://blog.risingstack.com/history-of-node-js/)
 
-## Why using NodeJS?
+## Why use NodeJS?
 
 Many of the frontend developer tools \(e.g. webpack, gulp, etc\) are built on top of NodeJS.
 
-For server side applications, it's a good idea to use NodJS when you know the application is I/O bound. For example,
+For server side applications, it's a good idea to use NodeJS when you know the application is I/O bound. For example,
 
 * Building dynamic websites
 * Building a blog system
@@ -28,32 +28,32 @@ For server side applications, it's a good idea to use NodJS when you know the ap
 Don't use NodeJS to build your server side application under the following cases:
 
 * The application is CPU bound \(i.e. it needs to do heavy computation\)
-* The application is memory bound \(e.g. it takes to loads serveral GBs of data into memory\)
+* The application is memory bound \(e.g. it takes to loads several GBs of data into memory\)
 
 ## Dev Environment Setup
 
 ### Installing NodeJS on your computer
 
-In case you haven't setup NodeJS environment on your computer yet, you can download it from [the offical website](https://nodejs.org/en/download/)
+In case you haven't setup NodeJS environment on your computer yet, you can download it from [the official website](https://nodejs.org/en/download/)
 
-For people using Mac and `homebrew`, you can [install it via homebrew](https://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/)
+For people using Mac and `homebrew`, you can [install it via Homebrew](https://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/)
 
 You can also try to install it via the [Node Version Manager](https://github.com/creationix/nvm). The benefit of using Node Version Manager is you can easily switch between multiple versions of node.
 
 Tip: To test that you've got Node.js correctly installed on your computer, open a new terminal and type `node --help` and you should see the usage documentation.
 
-## The commandline tools for NodeJS
+## The command-line tools for NodeJS
 
 * node
 * npm
 
-## Executing javascript codes with `node` command
+## Executing JavaScript with `node`
 
-```text
+```bash
 node app.js
 ```
 
-## Node Package Manager: npm
+## Package management with npm
 
 ### What is it?
 
@@ -68,23 +68,24 @@ node app.js
 
 ### Important commands for npm
 
-* how to create a yarn project
+* Create a new project
   * `npm init`
   * This creates a `package.json` file \(our project configuration file\)
-* how to add a package in your project for your production code
+* Add a package as a runtime dependency
   * `npm install <package-name>`
-* how to add a package in your project for development purpose only 
+* Add a package as a development dependency
   * `npm install --save-dev <package-name>`
-* how to add a global package \(so that you can use it as a command line tool everywhere\)
+* Install a package globally
   * `npm install -g <package-name>`
-* how to remove packages used in your project
+  * NOTE: This is rarely needed. Prefer local dependencies and `npx` where possible.
+* Remove packages used in your project
   * `npm uninstall <package-name>`
-* How to install all libraries declared in the `package.json` \(or `package-lock.json`\) file
+* Install all libraries declared in the `package.json` \(or `package-lock.json`\) file
   * `npm install`
 
 ### Understanding package.json
 
-Tools like `npm` and `yarn` need some configuration file called `package.json`
+Tools like `npm` and `yarn` need some configuration file called `package.json`.
 
 Here is a sample `package.json`:
 
@@ -142,12 +143,12 @@ After you initialise your project with `npm init` and install a few packages wit
 
 Note:
 
-* don't modify `package-lock.json` file manually, run `yarn upgrade` to update the dependencies
+* don't modify `package-lock.json` file manually, run `npm update` to update the dependencies
 * commit `package-lock.json` file into your code repository so that everyone in your team use the same version of libraries as specified in the `package-lock.json` file \(when they run `npm install` command\)
 
 ### NPM registry
 
-[NPM registry](https://www.npmjs.com/) is the place where javascript libraries can be published and downloaded.
+[NPM registry](https://www.npmjs.com/) is the place where JavaScript libraries can be published and downloaded.
 
 * [How to manage a node module with npm](https://github.com/workshopper/how-to-npm)
 
