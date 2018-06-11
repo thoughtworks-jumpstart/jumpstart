@@ -23,3 +23,8 @@
 - https://github.com/thoughtworks-jumpstart/dice
 	- Solution: https://github.com/thoughtworks-jumpstart/dice/tree/solution
 
+
+## Week 2
+
+- https://github.com/thoughtworks-jumpstart/map-reduce-filter
+	- Solution: https://github.com/thoughtworks-jumpstart/map-reduce-filter/tree/solution
