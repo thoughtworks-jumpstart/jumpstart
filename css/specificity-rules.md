@@ -20,7 +20,7 @@ p#fish { /* 101 points */
 
 The selector with the highest points will win and its styles will override those of other selectors
 
-![](../../.gitbook/assets/specificity_score.png)
+![](../.gitbook/assets/specificity_score.png)
 
 ## Overriding specificity scores
 

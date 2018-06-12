@@ -3,9 +3,10 @@
 There are scenarios where you want to pass data to a callback function. The code sample below demonstrates how you can achieve this.
 
 Note:
-- Both event handlers are doing the same thing, just using slightly different syntax for 
-  - (i) using `.bind()` 
-  - (ii) using an ES6 arrow function
+
+* Both event handlers are doing the same thing, just using slightly different syntax for 
+  * \(i\) using `.bind()` 
+  * \(ii\) using an ES6 arrow function
 
 ```javascript
 import React, { Component } from "react";
@@ -37,7 +38,6 @@ class App extends Component {
 
 export default App;
 ```
-
 
 read more: [https://medium.freecodecamp.org/reactjs-pass-parameters-to-event-handlers-ca1f5c422b9](https://medium.freecodecamp.org/reactjs-pass-parameters-to-event-handlers-ca1f5c422b9)
 

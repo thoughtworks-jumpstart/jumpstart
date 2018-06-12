@@ -2,7 +2,7 @@
 
 ## Lab
 
-https://github.com/thoughtworks-jumpstart/js-basics-1
+[https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
 
 ## Types of Values
 
@@ -13,7 +13,7 @@ https://github.com/thoughtworks-jumpstart/js-basics-1
 * Strings
   * `'hi!'`
   * `"this is another string"`
-  * \`this is a special string called a "template string". It can span  
+  * \`this is a special string called a "template string". It can span
 
     across multiple lines\`
 * Booleans

@@ -90,8 +90,8 @@ it('should work', function() {
 * `expect()` returns an 'expectation' object, which has several `matcher` methods \(see full list of matcher methods on the [jest docs](https://facebook.github.io/jest/docs/en/using-matchers.html)\)
   * `expect(actual).toEqual(someValue)`
   * `expect(actual).toHaveLength(number)`
-  
-### Some other matcher methods (which you won't need for the first session on jest)
+
+### Some other matcher methods \(which you won't need for the first session on jest\)
 
 * `expect(actual).not.toEqual(someValue)` & `expect(actual).not.toBe(someObject)`
 * `expect(actual).toBeGreaterThan(number)`

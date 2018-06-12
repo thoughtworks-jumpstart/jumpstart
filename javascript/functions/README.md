@@ -29,7 +29,7 @@ function alertName() {
 
 ## Lab
 
-https://github.com/thoughtworks-jumpstart/js-basics-1
+[https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
 
 ## Syntax
 
@@ -137,7 +137,7 @@ They can be passed as arguments to another function:
 
 ```javascript
 const logger = (f) => {
-	console.log('f is', f);
+    console.log('f is', f);
 }
 
 const sum = (a, b) => a + b;
@@ -146,3 +146,4 @@ const sum = (a, b) => a + b;
 // (notice the lack of parentheses after the name 'sum')
 logger(sum); // outputs the body of the 'sum' function to the console
 ```
+

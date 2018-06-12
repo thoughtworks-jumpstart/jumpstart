@@ -189,4 +189,3 @@ Rules of thumb by [Geoffroy Warin](https://github.com/airbnb/enzyme/issues/465):
 
 ## Assignment
 
-

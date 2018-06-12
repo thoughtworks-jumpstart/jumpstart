@@ -1,4 +1,4 @@
-# Node and NPM
+# Node and npm
 
 ## What's NodeJS
 

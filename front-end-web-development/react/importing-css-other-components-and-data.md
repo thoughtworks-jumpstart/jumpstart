@@ -1,4 +1,4 @@
-# Importing css, other components and data
+# Importing CSS, other components and data
 
 Importing other React components and css styles:
 

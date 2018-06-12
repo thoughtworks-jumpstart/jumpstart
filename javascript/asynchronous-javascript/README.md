@@ -1,4 +1,4 @@
-# Asynchronous Javascript
+# Asynchronous JavaScript
 
 One of the major challenges for javascript beginners is to learn how to write codes in asynchronous style.
 

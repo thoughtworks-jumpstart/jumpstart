@@ -1,6 +1,6 @@
-### Method chaining
+# method chaining
 
-Because `.map()` and `filter()` returns arrays, we can chain on other Array methods (e.g. `.map()`, `.filter()`, `.reduce()`, `.every()`, `.some()`) to create elegant one-line solutions!
+Because `.map()` and `filter()` returns arrays, we can chain on other Array methods \(e.g. `.map()`, `.filter()`, `.reduce()`, `.every()`, `.some()`\) to create elegant one-line solutions!
 
 ```javascript
 // Task:
@@ -40,3 +40,4 @@ var discountedItems = groceries.filter(element => element['isOnDiscount'])
 var pricesWithGST = discountedItems.map(element => element.price * 1.09)
 var totalPrice = pricesWithGST.reduce((accumulator, element) => accumulator + element)
 ```
+

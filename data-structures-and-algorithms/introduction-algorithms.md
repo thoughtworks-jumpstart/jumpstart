@@ -1,4 +1,4 @@
-# Inroduction: Algorithms
+# Introduction: Algorithms
 
 ## What is an algorithm?
 

@@ -9,7 +9,7 @@
   * Live Server \(ritwickdey.liveserver\)
   * On the blue panel on the bottom of your screen, click on 'Go Live'
 
-Repo URL: https://github.com/thoughtworks-jumpstart/intro-to-css
+Repo URL: [https://github.com/thoughtworks-jumpstart/intro-to-css](https://github.com/thoughtworks-jumpstart/intro-to-css)
 
 ## Resources:
 
