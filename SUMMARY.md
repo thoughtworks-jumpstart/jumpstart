@@ -51,6 +51,7 @@
     * [some](javascript/getting-started/higher-order-functions/some.md)
     * [every](javascript/getting-started/higher-order-functions/every.md)
     * [method chaining](javascript/getting-started/higher-order-functions/method_chaining.md)
+    * [Which method to use?](javascript/getting-started/higher-order-functions/which-method-to-use.md)
   * [Loops](javascript/getting-started/loops.md)
   * [Classes](javascript/getting-started/classes.md)
     * [More about classes](javascript/getting-started/more-about-classes.md)
