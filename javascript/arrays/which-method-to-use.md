@@ -4,4 +4,6 @@ Not sure whether to use `.map`, `.filter`, or `.reduce`? This flowchart should h
 
 ![](../../images/map-reduce-filter.png)
 
+## Lab
 
+https://github.com/thoughtworks-jumpstart/map-reduce-filter
