@@ -28,7 +28,7 @@ export default someVar
 
 // file2.js
 import iCanNameThisAnything from './file1'
-console.log(iCanNameThisAnything)
+console.log(iCanNameThisAnything) // prints 'abc'
 ```
 
 * named export
