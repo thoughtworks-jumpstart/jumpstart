@@ -158,6 +158,7 @@
 * [Independent learning week](independent-learning-week.md)
 * [Labs and Assignments](labs-and-assignments.md)
 * [Projects](projects/README.md)
+  * [Project #1](projects/project-1.md)
   * [Evaluation criteria checklist](projects/evaluation-criteria-checklist.md)
   * [Presentation format](projects/presentation-format.md)
   * [Resources](projects/resources.md)
