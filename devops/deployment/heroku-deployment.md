@@ -49,7 +49,8 @@ With every push to GitHub, your code is **automatically deployed** and accessibl
 * For deploying `create-react-app` apps
   * [https://blog.heroku.com/deploying-react-with-zero-configuration](https://blog.heroku.com/deploying-react-with-zero-configuration)
   * [`create-react-app-buildpack`](https://github.com/mars/create-react-app-buildpack) \(Browse the docs to understand what's going on and how you can add custom configuration\)
-* For deploying other nodejs apps
+* For deploying other node.js apps \(e.g. server-side applications created with `express`\)
+  * [https://devcenter.heroku.com/articles/getting-started-with-nodejs\#introduction](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
   * [https://devcenter.heroku.com/articles/deploying-nodejs](https://devcenter.heroku.com/articles/deploying-nodejs)
   * [https://devcenter.heroku.com/articles/node-best-practices](https://devcenter.heroku.com/articles/node-best-practices)
 
