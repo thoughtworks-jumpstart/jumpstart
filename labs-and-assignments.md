@@ -16,12 +16,13 @@
   * Solution: [https://github.com/thoughtworks-jumpstart/displayer/tree/solution](https://github.com/thoughtworks-jumpstart/displayer/tree/solution)
 * [https://github.com/thoughtworks-jumpstart/dice](https://github.com/thoughtworks-jumpstart/dice)
   * Solution: [https://github.com/thoughtworks-jumpstart/dice/tree/solution](https://github.com/thoughtworks-jumpstart/dice/tree/solution)
-* https://github.com/thoughtworks-jumpstart/dom-todo-list
-  - Solution: https://github.com/thoughtworks-jumpstart/dom-todo-list/tree/solution
+* [https://github.com/thoughtworks-jumpstart/dom-todo-list](https://github.com/thoughtworks-jumpstart/dom-todo-list)
+  * Solution: [https://github.com/thoughtworks-jumpstart/dom-todo-list/tree/solution](https://github.com/thoughtworks-jumpstart/dom-todo-list/tree/solution)
 
 ## Week 2
 
 * [https://github.com/thoughtworks-jumpstart/map-reduce-filter](https://github.com/thoughtworks-jumpstart/map-reduce-filter)
   * Solution: [https://github.com/thoughtworks-jumpstart/map-reduce-filter/tree/solution](https://github.com/thoughtworks-jumpstart/map-reduce-filter/tree/solution)
 * [https://github.com/thoughtworks-jumpstart/javascript-basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
-  - Solution: https://github.com/thoughtworks-jumpstart/javascript-basics/tree/solution 
+  * Solution: [https://github.com/thoughtworks-jumpstart/javascript-basics/tree/solution](https://github.com/thoughtworks-jumpstart/javascript-basics/tree/solution) 
+

@@ -27,6 +27,6 @@ Your projects will be evaluated and graded based on the following criteria:
     * functions are used to reduce redundancy
     * functions and classes are small and adhere to Single Responsibility Principle
 * Deployment
-  * Continuous integration (e.g. CircleCI, TravisCI)
+  * Continuous integration \(e.g. CircleCI, TravisCI\)
   * Deployment of application to cloud provider of choice \(e.g. GitHub Pages, Heroku, AWS, etc\)
 
