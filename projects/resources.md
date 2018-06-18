@@ -1,6 +1,19 @@
 # Resources
 
-Here are list of lists of APIs which you can get data for your front-end projects. For most APIs, you probably need to sign up to get an API key \(remember to \(i\) keep your API key\(s\) in a `.env` file, \(ii\) add `.env` to `.gitignore`, \(iii\) add the api key as a config/environment variable in wherever you're deploying your app to\)
+Here are list of lists of APIs which you can get data for your front-end
+projects.
+
+If you need to sign up to get an API key, remember to follow these rules when
+using the key:
+
+1. Treat the key as a secret, like you would a password
+2. Don't bundle the API key with the frontend code (it can be read by any
+   visitor to the site!)
+3. Keep your API keys in an `.env` file in your server code
+4. Add the `.env` file to `.gitignore` to prevent it from being accidentally
+   committed
+5. Add the API key as a config or environment variable on the server where your
+   app is deployed
 
 * [https://www.quora.com/What-are-some-cool-fun-random-APIs-such-as-BreweryDB](https://www.quora.com/What-are-some-cool-fun-random-APIs-such-as-BreweryDB)
 * [https://any-api.com/](https://any-api.com/)
