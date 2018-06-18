@@ -30,8 +30,26 @@ That's all! You can now visit the URL: [https://randomly-generated-app-name.hero
 
 With every push to GitHub, your code is **automatically deployed** and accessible by anyone with internet access. Awesome!
 
+### Other useful `heroku` CLI commands
+
+* Open app in browser:
+  * From your project directory, run `heroku open`
+* Rename your app:
+  * `heroku apps:rename newname --app oldname`
+* View logs
+  * view last 42 lines of logs: `heroku logs -n 42`\(you can replace 42 with any number\)
+  * view logs live: `heroku logs --tail`
+* View app locally before deploying
+  * `heroku local web`
+* General help
+  * `heroku --help`
+
 ### Resources
 
-* [https://blog.heroku.com/deploying-react-with-zero-configuration](https://blog.heroku.com/deploying-react-with-zero-configuration)
-* [`create-react-app-buildpack`](https://github.com/mars/create-react-app-buildpack) \(Browse the docs to understand what's going on and how you can add custom configuration\)
+* For deploying `create-react-app` apps
+  * [https://blog.heroku.com/deploying-react-with-zero-configuration](https://blog.heroku.com/deploying-react-with-zero-configuration)
+  * [`create-react-app-buildpack`](https://github.com/mars/create-react-app-buildpack) \(Browse the docs to understand what's going on and how you can add custom configuration\)
+* For deploying other nodejs apps
+  * [https://devcenter.heroku.com/articles/deploying-nodejs](https://devcenter.heroku.com/articles/deploying-nodejs)
+  * [https://devcenter.heroku.com/articles/node-best-practices](https://devcenter.heroku.com/articles/node-best-practices)
 
