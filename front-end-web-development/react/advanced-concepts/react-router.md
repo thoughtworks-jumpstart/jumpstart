@@ -6,7 +6,7 @@ React Router is the standard routing library for React. From the docs:
 
 ## Learning checklist
 
-* how to install: `yarn add react-router-dom`
+* how to install: `npm install react-router-dom`
 * concept of client-side routing
 * concept of Master-Detail views
 * concept `<BrowserRouter></BrowserRouter>` and `<Router></Router>` in general
@@ -28,7 +28,7 @@ The following chapter shows you how to get started with `react-router-dom`, and 
 
 ### Installing react-router-dom
 
-Navigate into your project directory and run `yarn add react-router-dom`
+Navigate into your project directory and run `npm install react-router-dom`
 
 ### `react-router-dom` components
 
@@ -160,7 +160,7 @@ const TacoDetailPage = (props) => {
 
 The creators of `react-router-dom` made a conscious decision not to support query string in the library because there have been requests over the years to support different implementation. With that, the team decided it would be best for users to decide what that implementation looks like.
 
-You can use the `query-string` yarn package for parsing query strings. In the example below, I will parse the following URL: `https://localhost:3000?searchTerm=obama&year=2016&topic=anything`
+You can use the `query-string` npm package for parsing query strings. In the example below, I will parse the following URL: `https://localhost:3000?searchTerm=obama&year=2016&topic=anything`
 
 ```jsx
 import queryString from 'query-string';

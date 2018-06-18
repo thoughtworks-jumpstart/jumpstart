@@ -195,7 +195,7 @@ We have created a sample project in the course material repository. Let's clone 
 ```text
 git clone https://github.com/thoughtworks-jumpstart/express_passport_mongoose_example.git
 cd express_passport_mongoose_example
-yarn install
+npm install
 ```
 
 There is a `models` folder which contains the models defined using Mongoose schema API. Take a look at `User.js`.
@@ -239,7 +239,7 @@ const URL = mongoose.model('URL', urlSchema);
 
 #### Remember to start your MongoDB server before you start your Express application
 
-Tips: If you are trying to run the express application locally, you need to start the local MongoDB instance before you call `yarn start`. Otherwise, you will see the following error on your console when you try to call `mongoose.connect()`.
+Tips: If you are trying to run the express application locally, you need to start the local MongoDB instance before you call `npm start`. Otherwise, you will see the following error on your console when you try to call `mongoose.connect()`.
 
 ```text
 UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]

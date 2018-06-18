@@ -6,7 +6,7 @@ The `prop-types` library gives us 2 things: \(i\) prop validation and \(ii\) def
 
 ## Learning checklist
 
-* `yarn add prop-types`
+* `npm install prop-types`
 * how to assign the special propTypes property to a React component
 * the difference between `PropTypes.number` and `PropTypes.number.isRequired`
 * how to set default property values
@@ -82,7 +82,7 @@ export default Page;
 
 ## Assignment
 
-* Install `prop-types` yarn package and add propTypes validation in your existing react project
+* Install `prop-types` npm package and add propTypes validation in your existing react project
 * For each component that uses `props` or `this.props`, add propTypes validation
 * Try setting default values for certain properties where you think it's appropriate
 

@@ -2,7 +2,7 @@
 
 Assuming you have:
 
-* a React app created with `create-react-app` that \(i\) works locally when you run `yarn start` and \(ii\) is committed to github,
+* a React app created with `create-react-app` that \(i\) works locally when you run `npm start` and \(ii\) is committed to github,
 * `heroku` installed on your commandline \(check by running `heroku -v`. if not installed, install it using: `brew install heroku`\)
 
 You simply need to run the following:

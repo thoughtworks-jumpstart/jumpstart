@@ -29,8 +29,8 @@ cache:
   directories:
   - node_modules
 script:
-  - yarn test
-  - yarn build
+  - npm test
+  - npm run build
 deploy:
   provider: heroku
   app: swift-waters-95000 # replace this with the name of your heroku app

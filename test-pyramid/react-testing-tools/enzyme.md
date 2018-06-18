@@ -19,7 +19,7 @@ Enzyme is a JavaScript Testing utility for React that makes it easier to assert,
 
 Steps
 
-* `yarn add enzyme enzyme-adapter-react-16 --dev`
+* `npm install enzyme enzyme-adapter-react-16 --dev`
 * define a file called `setupTests.js` in `src/` and paste the following:
 
 ```javascript

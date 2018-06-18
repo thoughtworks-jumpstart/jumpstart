@@ -2,7 +2,7 @@
 
 ## Learning checklist
 
-* `yarn add @types/jest` to enable autocomplete for jest in vscode
+* `yanpm install add @types/jest` to enable autocomplete for jest in vscode
 * unit testing with `jest` and `enzyme`
 * mocks and stubs
 

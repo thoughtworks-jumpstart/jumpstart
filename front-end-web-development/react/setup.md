@@ -4,11 +4,10 @@
 
 `create-react-app` is a commandline tool that helps us take care of the configuration of react applications so that we can focus on writing code, rather than configuration. It also takes care of the bundling of JSX and ES6 syntax into ES5 javascript which any browser can support. `create-react-app` vastly simplifies the creation and deployment of React applications, and is useful for getting started with React.
 
-* Installation: `yarn global add create-react-app`
 * Docs: [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 * How to create a react app:
   * `cd the-folder-where-you-want-your-app` \(there's no need to create the app directory first. `create-react-app` will create it for you\)
-  * `create-react-app my-awesome-app`
+  * `npx create-react-app my-awesome-app`
 
 ## VS Code Extensions
 

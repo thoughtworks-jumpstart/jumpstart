@@ -101,7 +101,7 @@ git clone https://github.com/thoughtworks-jumpstart/node_app_starter_project.git
 
 cd node_app_starter_project
 
-yarn install
+npm install
 ```
 
 ## Resources

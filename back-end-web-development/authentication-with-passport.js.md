@@ -114,7 +114,7 @@ We have created a sample project in the course material repository. Let's clone 
 ```text
 git clone https://github.com/thoughtworks-jumpstart/express_passport_mongoose_example.git
 cd express_passport_mongoose_example
-yarn install
+npm install
 ```
 
 This sample codes show how to configure passport.js to allow username and password based authentication.

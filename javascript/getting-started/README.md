@@ -37,7 +37,7 @@ Part 3:
 * Open javascript file in VS Code: `code .`
 * Whenever you want to run the javascript code: `node main.js`
   * When you get tired of running `node main.js` everytime, you can install and use nodemon:
-    * Install nodemon: `yarn add global nodemon`
+    * Install nodemon: `npm install -g nodemon`
     * Run javascript code using nodemon: `nodemon main.js`
 
 ## Resources

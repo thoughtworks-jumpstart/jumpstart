@@ -15,7 +15,7 @@ You can take a look at [the type of issues that can be detected by ESLint](https
 To install ESLint, simply run the following command in your project root folder:
 
 ```text
-yarn add --dev eslint
+npm install --save-dev eslint
 ```
 
 Note that the ESLint documentation recommends to install the tool globally, but that's a bad idea. We may use different linter tools for different projects, so it's a good practice to install such project-specific tools at project level.
@@ -41,7 +41,7 @@ Specifically, we recommend to configure ESLint to follow the rules defined by [P
 To integrate the two tools, run the following command in your project root folder:
 
 ```text
-yarn add --dev prettier eslint-plugin-prettier eslint-config-prettier
+npm install --save-dev prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
 And then add `plugin:prettier/recommend` to your `.eslintrc.json` file in `extends` field.
@@ -53,7 +53,7 @@ ESLint has a plugin which contains some useful rules for writing Jest based test
 To install that plugin, run
 
 ```text
-yarn add --dev eslint-plugin-jest
+npm install --save-dev eslint-plugin-jest
 ```
 
 ### Sample Configuration

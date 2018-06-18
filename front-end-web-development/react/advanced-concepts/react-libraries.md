@@ -2,7 +2,7 @@
 
 One of the great things about using React is the rich ecosystem of open-source libraries and components. For almost anything you can think of \(mobile responsive components, data visualisation, geo visualisation, state management, rich text editing, etc\), there is probably already an existing react component.
 
-For example, to create a chart, we could simply install a library \(e.g. `yarn add recharts`\) and use the components defined in the `recharts` library like so:
+For example, to create a chart, we could simply install a library \(e.g. `npm install recharts`\) and use the components defined in the `recharts` library like so:
 
 ```jsx
 import React from "react";

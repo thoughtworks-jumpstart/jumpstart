@@ -22,7 +22,7 @@ Some recommended languages:
   * classes
 * code organisation
   * how do i import/export variables between files?
-  * how do i install project dependencies \(i.e. what's the equivalent of yarn, package.json and node\_modules?\)
+  * how do i install project dependencies \(i.e. what's the equivalent of npm, package.json and node\_modules?\)
   * how do i execute 1 file/program?
 * IDE setup
   * what's a good IDE?

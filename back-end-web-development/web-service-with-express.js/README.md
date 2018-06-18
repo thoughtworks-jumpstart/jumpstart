@@ -19,7 +19,7 @@ git clone https://github.com/thoughtworks-jumpstart/express-playground.git
 After you clone the project, get into the project directory, and run
 
 ```text
-yarn install
+npm install
 ```
 
 ## Assignment

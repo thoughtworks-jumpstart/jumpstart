@@ -32,7 +32,7 @@ You need to create a web application using create-react-app.
 
 ![](../.gitbook/assets/react_breakpoint.png)
 
-4\) Start your server: `yarn start`. This will open a new browser instance. 5\) Press `F5` to go into debug mode, and manually refresh the page. The source code where the breakpoint is set runs on startup before the debugger was attached so we won't hit the breakpoint until we refresh the web page. Refresh the page and you will hit your breakpoint. 6\) You can now use the debugger to inspect variables in the Debug console, step through/over code, etc. On the debug console, try entering any variable which you know should exist during this breakpoint \(e.g. `props` or `this`, if they exist\) 7\) Refer to the gitbook chapter on using the VSCode debugger to refresh your memory on how to work with the debugger
+4\) Start your server: `npm start`. This will open a new browser instance. 5\) Press `F5` to go into debug mode, and manually refresh the page. The source code where the breakpoint is set runs on startup before the debugger was attached so we won't hit the breakpoint until we refresh the web page. Refresh the page and you will hit your breakpoint. 6\) You can now use the debugger to inspect variables in the Debug console, step through/over code, etc. On the debug console, try entering any variable which you know should exist during this breakpoint \(e.g. `props` or `this`, if they exist\) 7\) Refer to the gitbook chapter on using the VSCode debugger to refresh your memory on how to work with the debugger
 
 ### Resources
 

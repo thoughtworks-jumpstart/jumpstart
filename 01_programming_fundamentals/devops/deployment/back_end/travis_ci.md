@@ -24,7 +24,7 @@ cache:
 services:
   - mongodb
 script:
-  - yarn test
+  - npm test
 deploy:
   provider: heroku
   app: swift-waters-95000 # replace this with the name of your heroku app

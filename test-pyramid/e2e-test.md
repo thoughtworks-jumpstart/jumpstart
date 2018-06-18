@@ -15,8 +15,8 @@ libraries: [`cypress`](https://www.cypress.io/), `selenium`
 
 Install and run cypress
 
-* Create yarn project: `mkdir learn-cypress & cd learn-cypress`
-* Install cypress: `yarn add cypress`
+* Create npm project: `mkdir learn-cypress & cd learn-cypress`
+* Install cypress: `npm install cypress`
 * Add the cypress open script to package json:
 
 ```javascript
@@ -26,7 +26,7 @@ Install and run cypress
 }
 ```
 
-* Run cypress demo script: `yarn test:cypress`
+* Run cypress demo script: `npm run test:cypress`
 
 Write our own cypress tests to test www.google.com!
 

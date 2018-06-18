@@ -11,14 +11,14 @@ There is npm package \(`express-generator`\) that can help us with the creation 
 
 Here's are the steps for using it to create an express app
 
-* Install express-generator: `yarn global add express-generator`
+* Install express-generator: `npm install -g express-generator`
 * Read about this program and how to use it on the commandline: `express --help`
 * Create a directory for your express app and go into it: `mkdir my-express-app && cd $_`
 * Generate express app!: `express --git -e`
   * Here's some explanation of the options
     * `--git`: this tells the `express` command line app to create a `.gitignore` file
     * `-e`: this tells `express` to add add ejs template engine support \(ejs stands for Embedded Javascript and it's a views templating engine\)
-* Install depdencies: `yarn install`
+* Install depdencies: `npm install`
 * Start application: `nodemon bin/www`
 
 `express` generates a file which is hard to read and potentially confusing if you are just getting started with express:

@@ -18,8 +18,8 @@ Relevant docs:
 
 * Fork and clone [https://github.com/thoughtworks-jumpstart/express-books-api](https://github.com/thoughtworks-jumpstart/express-books-api) 
 * Go into directory: `cd express-books-api`
-* Install dependencies: `yarn install`
-* Smoke test: `yarn start` and you should see a valid response on [http://localhost:3000](http://localhost:3000)
+* Install dependencies: `npm install`
+* Smoke test: `npm start` and you should see a valid response on [http://localhost:3000](http://localhost:3000)
 
 ### Task
 
@@ -30,8 +30,8 @@ Steps:
 * Create a test directory: `mkdir -p tests/integration-tests`
 * Create a test file: `touch tests/integration-tests/books.test.js`
 * Install test dependencies:
-  * `yarn add jest --dev`
-  * `yarn add supertest --dev`
+  * `npm install jest --save-dev`
+  * `npm install supertest --save-dev`
 * One by one, write a test for each route handler. An example for GET /books is written below
 
 ```javascript
@@ -57,9 +57,9 @@ describe("routes/books", () => {
 
 * Fork and clone [https://github.com/thoughtworks-jumpstart/express-blog-api-mongoose-and-tests](https://github.com/thoughtworks-jumpstart/express-blog-api-mongoose-and-tests)
 * Go into directory: `cd express-blog-api-mongoose-and-tests`
-* Install dependencies: `yarn install`
+* Install dependencies: `npm install`
 * Start mongoDB: `mongod` \(or the equivalent of this command on windows\)
-* Run tests: `yarn test:watch` and all tests should pass
+* Run tests: `npm run test:watch` and all tests should pass
 
 ### Task
 
