@@ -12,20 +12,24 @@
 
 ### Steps for deployment
 
-- create a heroku application from the command line
-```bash
-$ heroku create --buildpack https://github.com/mars/create-react-app-buildpack.git
-```
+* create a heroku application from the command line
 
-- Go to https://dashboard.heroku.com/ to complete the Heroku-Github integration
-- Click on the project you created in the first step
-- Click on Deploy tab → Deployment method → select GitHub
-![heroku_1](../../../images/heroku_1.png)
-- Search for the repo of the application that you’re deploying → click Connect
-![heroku_2](../../../images/heroku_2.png)
-- Further below, click on 'Enable Automatic Deploy'
-- [Only for the first time deploying this app], click on “Deploy branch” at the end of the page
+  ```bash
+  $ heroku create --buildpack https://github.com/mars/create-react-app-buildpack.git
+  ```
 
+* Go to [https://dashboard.heroku.com/](https://dashboard.heroku.com/) to complete the Heroku-Github integration
+* Click on the project you created in the first step
+* Click on Deploy tab → Deployment method → select GitHub
+
+  ![heroku\_1](../../../.gitbook/assets/heroku_1%20%281%29.png)
+
+* Search for the repo of the application that you’re deploying → click Connect
+
+  ![heroku\_2](../../../.gitbook/assets/heroku_2.png)
+
+* Further below, click on 'Enable Automatic Deploy'
+* \[Only for the first time deploying this app\], click on “Deploy branch” at the end of the page
 
 That's all! You can now visit the URL that's displayed in your console: [https://randomly-generated-name.herokuapp.com/](https://randomly-generated-name.herokuapp.com/). With every push to GitHub, your code is **automatically deployed** and accessible by anyone with internet access. Awesome!
 

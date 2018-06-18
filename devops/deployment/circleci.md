@@ -26,7 +26,7 @@ In this example, we are deploying to Heroku, but we're going run tests on Circle
 
   * Search for the repo of the application that you’re deploying → click Connect
 
-    ![heroku\_2](../../.gitbook/assets/heroku_2.png)
+    ![heroku\_2](../../.gitbook/assets/heroku_2%20%281%29.png)
 
   * Further below, click on ‘Wait for CI to pass before deploy’ and ‘Enable Automatic Deploy’
 * Lastly, add any database add-ons that you're using on heroku and add the necessary config vars \(if any\) on the heroku dashboard
