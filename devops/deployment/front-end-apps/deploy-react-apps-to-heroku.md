@@ -1,6 +1,6 @@
 # Deploy React Apps to Heroku
 
-Assuming you have:
+### Pre-requisites:
 
 * a React app created with `create-react-app` that \(i\) works locally when you run `npm start` and \(ii\) is committed and pushed to github,
 * `heroku` installed on your commandline \(check by running `heroku -v`. if not installed, install it using:
@@ -10,23 +10,24 @@ Assuming you have:
   * linux:  `curl https://cli-assets.heroku.com/install.sh | sh`
     * If this fails because of permission errors, try running it again with the `sudo` prefix: `sudo curl https://cli-assets.heroku.com/install.sh | sh`
 
- You simply need to run the following:
+### Steps for deployment
 
+- create a heroku application from the command line
 ```bash
-$ heroku create -b https://github.com/mars/create-react-app-buildpack.git
-
-# verify heroku remote exists
-$ git remote -v 
-
-# if there is not remote by the name of heroku, run: 
-git remote add heroku <your heroku.git url>
-
-$ git push heroku master
+$ heroku create --buildpack https://github.com/mars/create-react-app-buildpack.git
 ```
 
+- Go to https://dashboard.heroku.com/ to complete the Heroku-Github integration
+- Click on the project you created in the first step
+- Click on Deploy tab → Deployment method → select GitHub
+![heroku_1](../../../images/heroku_1.png)
+- Search for the repo of the application that you’re deploying → click Connect
+![heroku_2](../../../images/heroku_2.png)
+- Further below, click on 'Enable Automatic Deploy'
+- [Only for the first time deploying this app], click on “Deploy branch” at the end of the page
 
 
-That's all! You can now visit the URL that's displayed in your console: [https://some-random-name.herokuapp.com/](https://some-random-name.herokuapp.com/) \(do NOT click on the link that looks like this: [https://git.heroku.com/some-random-name.git](https://git.heroku.com/some-random-name.git) - this is the link to where heroku stores your source code, not your app.\)
+That's all! You can now visit the URL that's displayed in your console: [https://randomly-generated-name.herokuapp.com/](https://randomly-generated-name.herokuapp.com/). With every push to GitHub, your code is **automatically deployed** and accessible by anyone with internet access. Awesome!
 
 ## Resources
 
