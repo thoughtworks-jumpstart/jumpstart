@@ -14,7 +14,7 @@ Code-along: [https://github.com/thoughtworks-jumpstart/fetch-react-code-along](h
   * you must `await` promise objects
 * how to use async await
 * handling rejected promises
-* contrast with old-style callbacks \(add link to 3 styles comparison\)
+* [contrast with old-style callbacks](../javascript/asynchronous-javascript/comparing-3-approaches.md)
 * unit testing
 
 ## Resources
