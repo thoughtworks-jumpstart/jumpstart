@@ -4,8 +4,8 @@ In this example, we are deploying to Heroku, but we're going run tests on Travis
 
 **Pre-requisites**:
 - a [travisCI account](http://www.travis-ci.org/)
-- an express app (with all tests passing) that's committed to git and github on the master branch
-- heroku cli tool. Check if it's installed: `heroku -v` (if not, install it with: `brew install heroku` (mac) or `choco install heroku-cli` (windows))
+- Generic [heroku deployment pre-requisites](./heroku_setup.md)
+- an `npm test` command in `package.json`
 
 **Steps**:
 
@@ -21,8 +21,6 @@ node_js:
 cache:
   directories:
   - node_modules
-services:
-  - mongodb
 script:
   - npm test
 deploy:
@@ -37,11 +35,11 @@ deploy:
 - Go to https://dashboard.heroku.com/ to complete the Heroku-Github integration
   - Click on your project
   - Click on Deploy tab → Deployment method → select GitHub
-  ![heroku_1](../../../../images/heroku_1.png)
+  ![heroku_connect_github](../../images/heroku_connect_github.png)
   - Search for the repo of the application that you’re deploying → click Connect
-  ![heroku_2](../../../../images/heroku_2.png)
+  ![heroku_ci](../../images/heroku_ci.png)
   - Further below, click on ‘Wait for CI to pass before deploy’ and ‘Enable Automatic Deploy’
-- Lastly, add any database add-ons that you're using on heroku and add the necessary config vars (if any) on the heroku dashboard
+- Lastly, add any add-ons services (e.g. mlab) that you're using on heroku and add the necessary config vars (if any) on the heroku dashboard
 
 #### Resources
 - [Demo app on TravisCI](https://github.com/davified/temp_heroku_travis)
