@@ -87,7 +87,7 @@ it('should work', function() {
 
 ### Basic matcher methods
 
-* `expect()` returns an 'expectation' object, which has several `matcher` methods \(see full list of matcher methods on the [jest docs](https://facebook.github.io/jest/docs/en/using-matchers.html)\)
+* `expect()` returns an 'expectation' object, which has several `matcher` methods \(see full list of matcher methods on the [Jest expect reference](https://facebook.github.io/jest/docs/en/expect.html)\)
   * `expect(actual).toEqual(someValue)`
   * `expect(actual).toHaveLength(number)`
 
