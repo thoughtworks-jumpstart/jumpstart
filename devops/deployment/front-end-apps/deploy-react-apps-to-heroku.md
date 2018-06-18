@@ -3,7 +3,7 @@
 Assuming you have:
 
 * a React app created with `create-react-app` that \(i\) works locally when you run `npm start` and \(ii\) is committed to github,
-* `heroku` installed on your commandline \(check by running `heroku -v`. if not installed, install it using: `brew install heroku`\)
+* `heroku` installed on your commandline \(check by running `heroku -v`. if not installed, install it using: `brew install heroku` (mac) or `choco install heroku-cli` (windows)
 
 You simply need to run the following:
 
