@@ -22,15 +22,16 @@ In this example, we are deploying to Heroku, but we're going run tests on Circle
   * Click on your project
   * Click on Deploy tab → Deployment method → select GitHub
 
-    ![heroku\_1](../../.gitbook/assets/heroku_connect_github.png)
+    ![heroku\_1](https://github.com/thoughtworks-jumpstart/jumpstart/tree/991a75cbd7f25d8b40252519d6074901b571a77a/.gitbook/assets/heroku_connect_github.png)
 
   * Search for the repo of the application that you’re deploying → click Connect
 
+```text
+![heroku\_ci](../../.gitbook/assets/heroku_ci.png)
+```
 
-    ![heroku\_ci](../../.gitbook/assets/heroku_ci.png)
-
-  * Further below, click on ‘Wait for CI to pass before deploy’ and ‘Enable Automatic Deploy’
-* Lastly, add any database add-ons that you're using on heroku and add the necessary config vars \(if any\) on the heroku dashboard
+* Further below, click on ‘Wait for CI to pass before deploy’ and ‘Enable Automatic Deploy’
+  * Lastly, add any database add-ons that you're using on heroku and add the necessary config vars \(if any\) on the heroku dashboard
 
 ## Part 2: Complete automation \(from `git push` to a heroku deployment\)
 
