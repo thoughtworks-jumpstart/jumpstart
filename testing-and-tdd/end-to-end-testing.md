@@ -1,4 +1,4 @@
-# E2E Test
+# End-to-end Testing
 
 Also known as 'e2e tests', 'functional tests', '\(automated\) acceptance tests'.
 

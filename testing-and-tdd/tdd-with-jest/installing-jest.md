@@ -4,9 +4,9 @@
 
 **Project-specific installation**
 
-- Create a project: `npm init -y`
-- Install jest in the project: `npm install --save-dev jest`
-- Add the test script to `package.json`:
+* Create a project: `npm init -y`
+* Install jest in the project: `npm install --save-dev jest`
+* Add the test script to `package.json`:
 
 ```javascript
 {
@@ -21,8 +21,7 @@
 }
 ```
 
-- Run tests with `npm test`
-
+* Run tests with `npm test`
 
 ## VS Code Extension
 

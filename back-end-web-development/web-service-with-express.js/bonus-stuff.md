@@ -33,7 +33,7 @@ Here's are the steps for using it to create an express app
 
   const server = app.listen\(process.env.PORT \|\| 3000, function\(\) { console.log\(`Listening on port ${server.address().port}...`\); }\); \`\`\`
 
-* Now, update `package.json` to use `"start": "node server.js"` instead 
+* Now, update `package.json` to use `"start": "node server.js"` instead
 * Now you can implement your CRUD routes in `./routes`! \(feel free to delete any file that you don't need in your application. You can look at [this commit](https://github.com/thoughtworks-jumpstart/express-books-api/commit/550579b034ed03ebe2ed9af5e28447d01ed7b2d1) to see the changes\)
 
 ## Using Express + template engine to create CRUD app with views
