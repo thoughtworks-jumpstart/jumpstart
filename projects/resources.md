@@ -14,6 +14,7 @@ If you need to sign up to get an API key, remember to follow these rules when us
 5. Add the API key as a config or environment variable on the server where your app is deployed
 
 6. Here are some collections of APIs that you might find useful
+   * [Data.gov (Singapore)](https://data.gov.sg/developer)
    * [https://www.quora.com/What-are-some-cool-fun-random-APIs-such-as-BreweryDB](https://www.quora.com/What-are-some-cool-fun-random-APIs-such-as-BreweryDB)
    * [https://any-api.com/](https://any-api.com/)
    * [https://github.com/toddmotto/public-apis](https://github.com/toddmotto/public-apis)
