@@ -3,6 +3,7 @@
 ### In-class exercises:
 beginner 
 - https://www.codewars.com/kata/sum-of-positive/javascript
+- https://www.codewars.com/kata/sum-without-highest-and-lowest-number/javascript
 - https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/javascript
 - https://www.codewars.com/kata/maximum-product/javascript
 - https://www.codewars.com/kata/list-filtering/javascript
