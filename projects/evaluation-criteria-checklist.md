@@ -30,7 +30,7 @@ Your projects will be evaluated and graded based on the following criteria:
       - [what a good README looks like](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 - Project organization
 	- [x] All required dependencies (e.g. jest) are included
-- [x] Deployment
+- Deployment
   - [x] Continuous integration \(e.g. CircleCI, TravisCI\)
   - [x] Deployment of application to cloud provider of choice \(e.g. GitHub Pages, Heroku, AWS, etc\)
 
