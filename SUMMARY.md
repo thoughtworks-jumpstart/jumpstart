@@ -157,7 +157,7 @@
   * [Feedback](agile-101/feedback.md)
   * [Retrospectives](agile-101/retrospectives.md)
 * [Independent learning week](independent-learning-week.md)
-* [Labs and Assignments](labs-and-assignments.md)
+* [Labs and Assignments](assignments/labs-and-assignments.md)
   * [Assignment Grading Rubric](assignments/readme.md)
   * [katas](assignments/katas.md)
 * [Projects](projects/README.md)
