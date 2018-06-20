@@ -6,7 +6,8 @@ You can \(and should\) check out other awesome react components: [https://github
 
 ### General process for finding and using component libraries
 
-Steps:
+#### Steps
+
 - Figure out what you're trying to do (e.g. display charts based on some data, or display a loading spinner)
 - Search for a react library that might do the job ([this](https://github.com/brillout/awesome-react-components) is a great place to start)
 - For each promising library, explore its documentation, and try to answer the following questions: 
@@ -26,6 +27,14 @@ Steps:
   - If not, look for another library
 
 
+#### What to look out for in a library
+- Last commit date
+- Number of GitHub stars
+- Simple installation (1-2 steps ideally)
+- A demo webpage
+- A quick start guide
+- Good documentation
+- Detailed API reference
 
 ## Interesting components which we can cover in class
 
