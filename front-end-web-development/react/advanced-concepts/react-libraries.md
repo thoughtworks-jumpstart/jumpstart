@@ -21,7 +21,8 @@ You can \(and should\) check out other awesome react components: [https://github
   - Load a component from the library? (e.g. `var Loader = require('react-loader'); // and I can use <Loader /> in my own components`)
   - Understand how to use the library's various components (e.g. `<Loader loaded={false} className="spinner" />`)
   - In your browser, see what the components look like
-  - For each example that you try, read the code and make sure you understand roughly what's going on
+  - For each example that you try, **don't blindly copy and paste!** read the code and make sure you understand roughly what's going on
+  - Note that their examples may contain outdated examples of React code, so whatever you read, try to map it back to the equivalent React syntax that you've learned in this course
 - Read the detailed API reference and try out a few more components
 - Decide: does this library do what I need it to do?
   - If yes, incorporate it into your app!
