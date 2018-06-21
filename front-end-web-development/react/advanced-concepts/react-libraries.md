@@ -17,10 +17,11 @@ You can \(and should\) check out other awesome react components: [https://github
   - is there a detailed API reference/documentation?
 - Check out the library's demo websites (if there's one), and see if it meets your needs
 - Try out the code snippets in the Quick Start/Getting Started/Examples section in a sandbox (e.g. a new `create-react-app` app) and get familiar with the library
-  - Follow the installation / setup steps in the documentation (usually, it's just `npm install`, but sometimes more configuration is needed - e.g. loading a custom CSS file, etc.)
+  - Follow the installation / setup steps in the documentation (usually, it's just `npm install`, but sometimes more configuration is needed - e.g. loading a custom CSS file, obtain API key, etc.)
   - Load a component from the library? (e.g. `var Loader = require('react-loader'); // and I can use <Loader /> in my own components`)
   - Understand how to use the library's various components (e.g. `<Loader loaded={false} className="spinner" />`)
   - In your browser, see what the components look like
+  - For each example that you try, read the code and make sure you understand roughly what's going on
 - Read the detailed API reference and try out a few more components
 - Decide: does this library do what I need it to do?
   - If yes, incorporate it into your app!
@@ -35,6 +36,7 @@ You can \(and should\) check out other awesome react components: [https://github
 - A quick start guide
 - Good documentation
 - Detailed API reference
+- Number of open (i.e. unresolved) issues
 
 ## Interesting components which we can cover in class
 
