@@ -70,6 +70,10 @@ Short Explanation: [https://stackoverflow.com/questions/10376740/what-exactly-do
 
 Long Explanation: [https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)
 
+More Explanation:
+
+* <http://discrete.gr/complexity/>
+
 [Big-O cheatsheet of common algorithms](http://bigocheatsheet.com/)
 
 ## Exercises
