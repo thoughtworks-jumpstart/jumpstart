@@ -162,7 +162,7 @@
   * [katas](assignments/katas.md)
 * [Projects](projects/README.md)
   * [Project \#1](projects/project-1.md)
-  * [Evaluation criteria checklist](projects/general-evaluation-criteria.md)
+  <!-- * [Evaluation criteria checklist](projects/general-evaluation-criteria.md) -->
   * [Presentation format](projects/presentation-format.md)
   * [Resources](projects/resources.md)
 * [Career](career/README.md)
