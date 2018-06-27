@@ -72,7 +72,7 @@ Long Explanation: [https://www.khanacademy.org/computing/computer-science/algori
 
 More Explanation:
 
-* <http://discrete.gr/complexity/>
+* [http://discrete.gr/complexity/](http://discrete.gr/complexity/)
 
 [Big-O cheatsheet of common algorithms](http://bigocheatsheet.com/)
 

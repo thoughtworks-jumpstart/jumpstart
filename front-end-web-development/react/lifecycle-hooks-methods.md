@@ -19,8 +19,10 @@
     * `componentDidCatch()`
 * Methods prefixed with **will** are called right **before** something happens
 * Methods prefixed with **did** are called right **after** something happens.
-* ![](../../images/react_lifecycle_hooks.jpeg)
+* ![](../../.gitbook/assets/react_lifecycle_hooks.jpeg)
 
-### Resources
-- https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d
-- [2 new React lifecycle methods in React 16.3+](https://medium.com/@baphemot/understanding-react-react-16-3-component-life-cycle-23129bc7a705)
+## Resources
+
+* [https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d](https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d)
+* [2 new React lifecycle methods in React 16.3+](https://medium.com/@baphemot/understanding-react-react-16-3-component-life-cycle-23129bc7a705)
+

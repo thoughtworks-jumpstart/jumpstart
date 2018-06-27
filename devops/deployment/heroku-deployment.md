@@ -26,7 +26,7 @@ heroku create
 
 * \[Only for the first time deploying this app\] click on “Deploy branch” at the end of the page
 
-That's all! You can now visit the URL: [https://randomly-generated-app-name.herokuapp.com/](https://randomly-generated-name.herokuapp.com/). 
+That's all! You can now visit the URL: [https://randomly-generated-app-name.herokuapp.com/](https://randomly-generated-name.herokuapp.com/).
 
 With every push to GitHub, your code is **automatically deployed** and accessible by anyone with internet access. Awesome!
 

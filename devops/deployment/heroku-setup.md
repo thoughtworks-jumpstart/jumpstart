@@ -12,3 +12,4 @@ Before deploying the heroku, you will need 2 things:
   * Note: you will have to restart `Git Bash` after the installation is completed
 * linux:  `curl https://cli-assets.heroku.com/install.sh | sh`
   * If this fails because of permission errors, try running it again with the `sudo` prefix: `sudo curl https://cli-assets.heroku.com/install.sh | sh`
+
