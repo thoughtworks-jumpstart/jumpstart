@@ -277,14 +277,14 @@ You can [explore GitHub using their GraphQL API](https://developer.github.com/v4
 
 Let's use a REST API client called [Insomnia](https://insomnia.rest/) to play with one sample REST API.
 
-The sample REST API can be found at [http://jumpstart-blogging-api.herokuapp.com/](http://jumpstart-blogging-api.herokuapp.com/)
+The sample REST API can be found at [https://jumpstart-blogging-api.herokuapp.com/](https://jumpstart-blogging-api.herokuapp.com/)
 
 The API supports CRUD operations on two resources
 
 * blogpost
 * user
 
-If you try to `GET http://jumpstart-blogging-api.herokuapp.com/`, you can find the supported CRUD operations.
+If you try to `GET https://jumpstart-blogging-api.herokuapp.com/`, you can find the supported CRUD operations.
 
 ```javascript
 {
