@@ -16,7 +16,7 @@ Steps for getting started:
 * Install dependencies: `npm install express`
 * Make current project a git repo: `git init`
 * Create a `.gitignore` file and add node\_modules to it: `echo "node_modules" >> .gitignore`
-* Start coding!
+* Start coding! Open the project in VS code:  \`code .\`
 
 Run the following steps if you're including tests in your project:
 
