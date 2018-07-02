@@ -8,24 +8,27 @@ Express is a javascript library that allows you to create server-side web applic
 
 ## Getting started
 
-Steps for getting started: 
-- Create a new directory for your project: `mkdir my-express-app`
-- `cd my-express-app`
-- Create an empty project: `npm init -y`
-- Install dependencies: `npm install express`
-- Make current project a git repo: `git init`
-- Create a `.gitignore` file and add node_modules to it: `echo "node_modules" >> .gitignore`
-- Start coding!
+Steps for getting started:
+
+* Create a new directory for your project: `mkdir my-express-app`
+* `cd my-express-app`
+* Create an empty project: `npm init -y`
+* Install dependencies: `npm install express`
+* Make current project a git repo: `git init`
+* Create a `.gitignore` file and add node\_modules to it: `echo "node_modules" >> .gitignore`
+* Start coding!
 
 Run the following steps if you're including tests in your project:
-- Install libraries which we'll use for writing tests: `npm install jest supertest`
-- In `package.json` add the following scripts: 
-```json
-"scripts": {
+
+* Install libraries which we'll use for writing tests: `npm install jest supertest`
+* In `package.json` add the following scripts: 
+
+  ```javascript
+  "scripts": {
   "test": "jest",
   "test:watch": "jest --watch"
-},
-```
+  },
+  ```
 
 ## Workshop
 

@@ -124,14 +124,9 @@ There are quite a few tools in the market now that can help you to document your
 
 ### REST API Anti-Patterns
 
-Let's look at some of the bad examples on designing APIs.\(There examples are
-shamelessly copied from
-[here](http://www.restapitutorial.com/lessons/restfulresourcenaming.html)\)
+Let's look at some of the bad examples on designing APIs.\(There examples are shamelessly copied from [here](http://www.restapitutorial.com/lessons/restfulresourcenaming.html)\)
 
-First up, often services use a single URI to specify the service interface,
-using query-string parameters to specify the requested operation and/or HTTP
-verb. For example to update customer with ID 12345, the request for a JSON body
-might be:
+First up, often services use a single URI to specify the service interface, using query-string parameters to specify the requested operation and/or HTTP verb. For example to update customer with ID 12345, the request for a JSON body might be:
 
 ```text
 // bad
@@ -141,10 +136,7 @@ GET http://api.example.com/services?op=update_customer&id=12345&format=json
 PUT http://api.example.com/customers/12345
 ```
 
-Even though the 'services' URL node is a noun, this URL is not self-
-descriptive as the URI hierarchy is the same for all requests. Plus, it uses
-GET as the HTTP verb even though we're performing an update. This is
-counter-intuitive and is painful \(even dangerous\) to use as a client.
+Even though the 'services' URL node is a noun, this URL is not self- descriptive as the URI hierarchy is the same for all requests. Plus, it uses GET as the HTTP verb even though we're performing an update. This is counter-intuitive and is painful \(even dangerous\) to use as a client.
 
 Here's another example following the same operation of updating a customer:
 

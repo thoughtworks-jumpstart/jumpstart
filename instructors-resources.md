@@ -24,5 +24,5 @@
 
 ## Helper shell scripts
 
-We've written some helper shell scripts to make life easier for instructors \(cloning and installing dependencies in 10 repos is not fun\). You can check it out here: [https://github.com/thoughtworks-jumpstart/helper-scripts](https://github.com/thoughtworks-jumpstart/helper-scripts)
+We've written some helper shell scripts to make life easier for instructors \(cloning and installing dependencies in 10 repos is not fun\). You can check it out here: [https://github.com/thoughtworks-jumpstart/assignment-grading-helper](https://github.com/thoughtworks-jumpstart/assignment-grading-helper)
 

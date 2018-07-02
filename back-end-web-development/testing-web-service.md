@@ -2,7 +2,7 @@
 
 In this section, we are going to learn how to test the web services built with express framework.
 
-Here's a simple demo on how to write tests for API endpoints: https://github.com/thoughtworks-jumpstart/express-testing-demo
+Here's a simple demo on how to write tests for API endpoints: [https://github.com/thoughtworks-jumpstart/express-testing-demo](https://github.com/thoughtworks-jumpstart/express-testing-demo)
 
 ## Learning Checklist
 
