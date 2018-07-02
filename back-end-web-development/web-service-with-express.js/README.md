@@ -16,7 +16,9 @@ Steps for getting started:
 * Install dependencies: `npm install express`
 * Make current project a git repo: `git init`
 * Create a `.gitignore` file and add node\_modules to it: `echo "node_modules" >> .gitignore`
+* Create a file which will serve as the entry point to your app: \`touch app.js\`
 * Start coding! Open the project in VS code:  \`code .\`
+* To start your express app, run: \`npx nodemon app.js\`
 
 Run the following steps if you're including tests in your project:
 
