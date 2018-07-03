@@ -110,7 +110,7 @@
     * [Parsing request params](back-end-web-development/web-service-with-express.js/parsing-request-params.md)
     * [Middleware](back-end-web-development/web-service-with-express.js/middleware.md)
     * [Handling errors](back-end-web-development/web-service-with-express.js/handling-errors.md)
-    * [API Documentaion with Swagger](back-end-web-development/web-service-with-express.js/api-documentation-with-swagger.md)
+    * [API Documentation with Swagger](back-end-web-development/web-service-with-express.js/api-documentation-with-swagger.md)
     * [Bonus stuff](back-end-web-development/web-service-with-express.js/bonus-stuff.md)
     * [Using Async Functions with Express.js](back-end-web-development/web-service-with-express.js/using-async-functions-with-express.js.md)
   * [Authentication with Passport.js](back-end-web-development/authentication-with-passport.js.md)
