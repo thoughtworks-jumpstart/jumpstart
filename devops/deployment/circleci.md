@@ -27,7 +27,6 @@ In this example, we are deploying to Heroku, but we're going run tests on Circle
   * Search for the repo of the application that you’re deploying → click Connect
 
     ![heroku\_ci](../../.gitbook/assets/heroku_ci.png)
-
 * Further below, click on ‘Wait for CI to pass before deploy’ and ‘Enable Automatic Deploy’
   * Lastly, add any database add-ons that you're using on heroku and add the necessary config vars \(if any\) on the heroku dashboard
 
@@ -36,7 +35,7 @@ In this example, we are deploying to Heroku, but we're going run tests on Circle
 Now, you might have found the previous steps quite troublesome. Good news! Most CI tools \(including CircleCI\) allows us to configure the deployment via code \(in `.circleci/config.yml`\). To do this, do the following steps
 
 1. Update config.yml to include \(i\) a deploy stage and \(ii\) a workflow \(you can copy the `config.yml` example below\)
-2. [Skip this step if you've already created a heroku app for this proejct] Create heroku application: `heroku create`
+2. \[Skip this step if you've already created a heroku app for this proejct\] Create heroku application: `heroku create`
 3. If you look at the 'Deploy Master to Heroku' step, there are 2 environment variables. We need to define these in CircleCI, or else they will be undefined and the deployment will fail. To add environment variables on CircleCI:
    * Go to your projects page \([https://circleci.com/gh/YOUR\_USERNAME](https://circleci.com/gh/YOUR_USERNAME)\)
    * Go to project settings \(click on the gear icon next to the project name\)
@@ -44,7 +43,7 @@ Now, you might have found the previous steps quite troublesome. Good news! Most 
    * Click on **Add Variables**
      * HEROKU\_APP\_NAME : random-something-12345 \(replace with your heroku app name\)
      * HEROKU\_API\_KEY : 
-       * To generate heroku api key, in your shell terminal, run `heroku auth:token`, and copy and paste the value here. (alternatively, get it at the bottom of your heroku [account settings](https://dashboard.heroku.com/account))
+       * To generate heroku api key, in your shell terminal, run `heroku auth:token`, and copy and paste the value here. \(alternatively, get it at the bottom of your heroku [account settings](https://dashboard.heroku.com/account)\)
 4. Commit and push, and you'll see your app deployed automatically to Heroku, even if you 'Disable Automatic Deploy' on the heroku dashboard!
 
 ```yaml
@@ -91,4 +90,5 @@ workflows:
 
 * [CircleCI 2.0 docs](https://circleci.com/docs/2.0/)
 * [CircleCI - some useful articles](https://circleci.com/docs/2.0/#further-resources-and-links)
+* [https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/](https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/)
 
