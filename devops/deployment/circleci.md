@@ -9,7 +9,7 @@ In this example, we are deploying to Heroku, but we're going run tests on Circle
 * a [CircleCI account](https://circleci.com/dashboard)
 * a project/app with a `npm test` and `npm start` command
 * the project should be committed to git and github on the master branch
-* heroku cli tool. Check if it's installed: `heroku -v` \(if not, install it with: `brew install heroku` \(mac\) or `choco install heroku-cli` \(windows\)\)
+* heroku cli tool. Check if it's installed: `heroku -v`
 
 **Steps**:
 
@@ -31,20 +31,21 @@ In this example, we are deploying to Heroku, but we're going run tests on Circle
 * Further below, click on ‘Wait for CI to pass before deploy’ and ‘Enable Automatic Deploy’
   * Lastly, add any database add-ons that you're using on heroku and add the necessary config vars \(if any\) on the heroku dashboard
 
-## Part 2: Complete automation \(from `git push` to a heroku deployment\)
+## Part 2: 100% automation using `.circleci/config.yml` \(from `git push` to a heroku deployment\)
 
 Now, you might have found the previous steps quite troublesome. Good news! Most CI tools \(including CircleCI\) allows us to configure the deployment via code \(in `.circleci/config.yml`\). To do this, do the following steps
 
 1. Update config.yml to include \(i\) a deploy stage and \(ii\) a workflow \(you can copy the `config.yml` example below\)
-2. If you look at the 'Deploy Master to Heroku' step, there are 2 environment variables. We need to define these in CircleCI, or else they will be undefined and the deployment will fail. To add environment variables on CircleCI:
+2. [Skip this step if you've already created a heroku app for this proejct] Create heroku application: `heroku create`
+3. If you look at the 'Deploy Master to Heroku' step, there are 2 environment variables. We need to define these in CircleCI, or else they will be undefined and the deployment will fail. To add environment variables on CircleCI:
    * Go to your projects page \([https://circleci.com/gh/YOUR\_USERNAME](https://circleci.com/gh/YOUR_USERNAME)\)
    * Go to project settings \(click on the gear icon next to the project name\)
    * Under Build Settings, click on **Environment Variables**
    * Click on **Add Variables**
      * HEROKU\_APP\_NAME : random-something-12345 \(replace with your heroku app name\)
-     * HEROKU_APIKEY : \__
-       * To generate heroku api key, in your shell terminal, run `heroku auth:token`, and copy and paste the value here.
-3. Commit and push, and you'll see your app deployed automatically to Heroku, even if you 'Disable Automatic Deploy' on the heroku dashboard!
+     * HEROKU\_API\_KEY : 
+       * To generate heroku api key, in your shell terminal, run `heroku auth:token`, and copy and paste the value here. (alternatively, get it at the bottom of your heroku [account settings](https://dashboard.heroku.com/account))
+4. Commit and push, and you'll see your app deployed automatically to Heroku, even if you 'Disable Automatic Deploy' on the heroku dashboard!
 
 ```yaml
 # .circleci/config.yml
@@ -74,8 +75,7 @@ jobs:
       - checkout
       - run:
           name: Deploy Master to Heroku
-          command: |
-            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
 
 workflows:
   version: 2
@@ -85,12 +85,10 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: master
 ```
 
 ## Resources
 
 * [CircleCI 2.0 docs](https://circleci.com/docs/2.0/)
+* [CircleCI - some useful articles](https://circleci.com/docs/2.0/#further-resources-and-links)
 
