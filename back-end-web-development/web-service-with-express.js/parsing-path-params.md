@@ -1,4 +1,4 @@
-# Parsing request params
+# Parsing path params
 
 ## You can use parameters in your route path
 

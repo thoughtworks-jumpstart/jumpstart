@@ -1,4 +1,4 @@
-# Parsing query parameters
+# Parsing query params
 
 ## Filtering in Express when there are multiple query parameters
 
@@ -49,3 +49,4 @@ app.get("/food", (req, res) => {
   res.json(results);
 });
 ```
+
