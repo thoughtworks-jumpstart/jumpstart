@@ -33,9 +33,6 @@ Mock and stubs enable a different style of testing. They encourage testing based
 
 * [Jest getting started guide for mock](https://facebook.github.io/jest/docs/en/mock-functions.html)
 * [Jest Mocks API docs](https://facebook.github.io/jest/docs/en/mock-function-api.html)
-* [Mocking, stubbing and spying with Sinon.js](http://sinonjs.org/releases/v4.1.4/)
 
-## Assignment
 
-Add mock functions to your existing react application\(s\)
 
