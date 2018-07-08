@@ -12,20 +12,16 @@ Mock and stubs enable a different style of testing. They encourage testing based
 
 ### Verifying that the mock function has been called
 
-* `expect(mockFunc).toBeCalled()`
-* Checking the specific number of times that a mock function has been called: `expect(myMockFunction.mock.calls.length).toBe(2)`
+* `expect(myMockFunction).toBeCalled()`
+* Checking the specific number of times that a mock function has been called: `expect(myMockFunction).toHaveBeenCallTimes(2)`
 
 ### Verifying the arguments that were supplied to the mock
 
-* `expect(myMockFunction.mock.calls[0][0]).toBe(0)`
-  * In this example, the first argument of the **first** call to the function was 0
-* `expect(myMockFunction.mock.calls[1][0]).toBe(1)`
-  * In this example, the first argument of the **second** call to the function was 1
-* `expect(mockFunc).toBeCalledWith(arg1, arg2)` or `expect(mockFunc).lastCalledWith(arg1, arg2)`
-  * Another way to verify arguments supplied to the mock function
+* `expect(mockFunc).toBeCalledWith(arg1, arg2)`
 
 ### Stubbing a mock function's return value
 
+* `const myMockFunction = jest.fn(() => 42)`
 * `myMockFunction.mockReturnValue(42)`
   * make `myMockFunction()` return 42 everytime you call myMockFunction\(\)
 * `myMockFunction.mockReturnValueOnce('you can return anything!')` 
