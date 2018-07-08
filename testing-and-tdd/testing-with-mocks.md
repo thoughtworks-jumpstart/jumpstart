@@ -4,6 +4,8 @@ Mocking is a technique to isolate test subjects by replacing dependencies with o
 
 Mock and stubs enable a different style of testing. They encourage testing based on behaviour verification.
 
+## Jest syntax
+
 ### Creating a mock
 
 * Creating a mock: `const myMockFunction = jest.fn()`
@@ -26,6 +28,20 @@ Mock and stubs enable a different style of testing. They encourage testing based
   * make `myMockFunction()` return 42 everytime you call myMockFunction\(\)
 * `myMockFunction.mockReturnValueOnce('you can return anything!')` 
   * make `myMockFunction()` return this value only once \(it returns `undefined` the next time it's called\)
+
+## Mocks, stubs, dummies, spies, whaaaat?
+
+**Mocks** are objects/functions that can be used to \(i\) replace actual object/functions in test cases and \(ii\) verify that objects/functions are called/used \(optionally with a specific number of calls and specific arguments\) 
+
+**Stubs** provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test.
+
+**Dummy** objects are passed around but never actually used. Usually they are just used to fill parameter lists. 
+
+**Spies** are objects which are wrapped around the actual object of interest. Spies allow us to to "spy on" actual objects and record some information on how they were called \(e.g. specific number of calls and specific arguments\)
+
+#### 
+
+## Resources
 
 ### Recommended reading
 
