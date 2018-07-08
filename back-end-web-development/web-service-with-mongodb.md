@@ -42,37 +42,35 @@ And here is [a good comparison between MongoDB and relational DB \(e.g. Postgres
 
 ### macOS with Homebrew
 
-    brew install mongodb
+```text
+brew install mongodb
+```
 
 ### Windows and Linux
 
-Download the Community Server from https://www.mongodb.com/download-center#community
-for your specific OS version.
+Download the Community Server from [https://www.mongodb.com/download-center\#community](https://www.mongodb.com/download-center#community) for your specific OS version.
 
-If you're running Windows, please add the MongoDB `bin` folder to your System
-PATH (e.g. `C:\Program Files\MongoDB\Server\4.0\bin`).
+If you're running Windows, please add the MongoDB `bin` folder to your System PATH \(e.g. `C:\Program Files\MongoDB\Server\4.0\bin`\).
 
 **Verify** the installation by running the following command:
 
-    mongod --version
+```text
+mongod --version
+```
 
 You should see the version information printed on your console.
 
 ## Start your MongoDB server
 
-    mongod --dbpath /data/mongodb
+```text
+mongod --dbpath /data/mongodb
+```
 
-The `--dbpath` option specifies the location where MongoDB should store data.
-It can be any folder you create. `/data/mongodb` is just one example.
+The `--dbpath` option specifies the location where MongoDB should store data. It can be any folder you create. `/data/mongodb` is just one example.
 
-Note that the path to `mongod.exe` and the path to your data folder could be
-different on your system.
+Note that the path to `mongod.exe` and the path to your data folder could be different on your system.
 
-Depending on the security level of your system, Windows may pop up a Security
-Alert dialog box about blocking “some features” of C:\Program
-Files\MongoDB\Server\3.6\bin\mongod.exe from communicating on networks. All
-users should select Private Networks, such as my home or work network and click
-Allow access.
+Depending on the security level of your system, Windows may pop up a Security Alert dialog box about blocking “some features” of C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe from communicating on networks. All users should select Private Networks, such as my home or work network and click Allow access.
 
 Once the MongoDB server is started, you should see the following line on your console:
 
@@ -87,34 +85,25 @@ Once the MongoDB server is started, you should see the following line on your co
 3. Install it and Reload vscode once the installation completes
 4. Click the new Azure icon in the left sidebar
 5. Create a new MongoDB connection by clicking the 'plug' icon and selecting
+
    'MongoDB' from the dropdown
 
 ## Tutorial: Learn Mongoose API
 
-[Mongoose](http://mongoosejs.com/) is an **Object Document Mapper \(ODM\)**.
-This means that Mongoose allows you to define objects with a strongly-typed
-[schema](http://mongoosejs.com/docs/guide.html) that is mapped to a MongoDB
-document.
+[Mongoose](http://mongoosejs.com/) is an **Object Document Mapper \(ODM\)**. This means that Mongoose allows you to define objects with a strongly-typed [schema](http://mongoosejs.com/docs/guide.html) that is mapped to a MongoDB document.
 
-Firstly, read the ['Get Started' section on Mongoose
-Documentation](http://mongoosejs.com/docs/index.html) to get an overview of
-Mongoose API.
+Firstly, read the ['Get Started' section on Mongoose Documentation](http://mongoosejs.com/docs/index.html) to get an overview of Mongoose API.
 
-Then you can see a few more examples on the API in [this
-article](https://coursework.vschool.io/mongoose-crud/)
+Then you can see a few more examples on the API in [this article](https://coursework.vschool.io/mongoose-crud/)
 
-Now, let's follow [this
-tutorial](https://code.tutsplus.com/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527)
-to play with the Mongoose API.
+Now, let's follow [this tutorial](https://code.tutsplus.com/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527) to play with the Mongoose API.
 
 Caveat on this tutorial:
 
 * There are some syntax error in the code \(in the part that create new instance of models\)
 * Many Mongoose APIs are asynchronous in nature. We need to refactor the codes with async/await syntax to avoid callback hell
 
-A copy of the codes for the tutorial is checked into [our course material
-repository as well](https://github.com/thoughtworks-jumpstart/mongoose-basics).
-You can take it as a reference.
+A copy of the codes for the tutorial is checked into [our course material repository as well](https://github.com/thoughtworks-jumpstart/mongoose-basics). You can take it as a reference.
 
 There are a few other good tutorials on Mongoose, you can try them out as well:
 
@@ -123,31 +112,21 @@ There are a few other good tutorials on Mongoose, you can try them out as well:
 
 ### 3 Ways to Call Mongoose API
 
-Most of the Mongoose APIs allow you to call them with callbacks. But if you
-don't pass in callback, those APIs would return either a Promise or a Query
-instead. Both Promise and Query have `.then()` function, which means you can
-get the resolved value \(from the Promise or the Query\) by calling them with
-`await`.
+Most of the Mongoose APIs allow you to call them with callbacks. But if you don't pass in callback, those APIs would return either a Promise or a Query instead. Both Promise and Query have `.then()` function, which means you can get the resolved value \(from the Promise or the Query\) by calling them with `await`.
 
-More details can be found in [the
-documentation](http://mongoosejs.com/docs/promises.html)
+More details can be found in [the documentation](http://mongoosejs.com/docs/promises.html)
 
 We recommend using the `async/await` style.
 
 ## Lab: Adding MongoDB to a simple CRUD REST API
 
-In this lab, you will start from a project without a database yet. There are
-some skeleton codes written for an API to create/update/read/delete books. You
-need to implement those API and store the data in a local Mongo database.
+In this lab, you will start from a project without a database yet. There are some skeleton codes written for an API to create/update/read/delete books. You need to implement those API and store the data in a local Mongo database.
 
-Here is the [project
-repo](https://github.com/thoughtworks-jumpstart/express-books-api) for you to
-fork and work on.
+Here is the [project repo](https://github.com/thoughtworks-jumpstart/express-books-api) for you to fork and work on.
 
 ## Example: REST API with Express + Mongoose
 
-We have created a sample project in the course material repository. Let's clone
-this repository and study the codes related to mongodb access.
+We have created a sample project in the course material repository. Let's clone this repository and study the codes related to mongodb access.
 
 ```text
 git clone https://github.com/thoughtworks-jumpstart/express_passport_mongoose_example.git
@@ -155,17 +134,13 @@ cd express_passport_mongoose_example
 npm install
 ```
 
-There is a `models` folder which contains the models defined using Mongoose
-schema API. Take a look at `User.js`.
+There is a `models` folder which contains the models defined using Mongoose schema API. Take a look at `User.js`.
 
-The codes making use of the models can be found in the `middlewares` folder.
-For example, the `user_middleware.js` has functions to create/save/update
-users.
+The codes making use of the models can be found in the `middlewares` folder. For example, the `user_middleware.js` has functions to create/save/update users.
 
 ## Assignment
 
-Update the `express-url-shortener` project to store the URLs into a MongoDB,
-instead of storing them in memory.
+Update the `express-url-shortener` project to store the URLs into a MongoDB, instead of storing them in memory.
 
 You can create two collections to store the data you need
 

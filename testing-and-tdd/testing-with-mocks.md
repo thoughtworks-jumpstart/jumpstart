@@ -1,6 +1,8 @@
 # Testing with Mocks
 
-Mock and stubs enable a different style of testing. They encourage testing based on behavior verification.
+Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do. 
+
+Mock and stubs enable a different style of testing. They encourage testing based on behaviour verification.
 
 ### Creating a mock
 
@@ -28,6 +30,11 @@ Mock and stubs enable a different style of testing. They encourage testing based
   * make `myMockFunction()` return 42 everytime you call myMockFunction\(\)
 * `myMockFunction.mockReturnValueOnce('you can return anything!')` 
   * make `myMockFunction()` return this value only once \(it returns `undefined` the next time it's called\)
+
+### Recommended reading
+
+* [A great explanation on how to use mocks in jest](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
+* [What are mocks, stubs, spies, dummies?](https://martinfowler.com/articles/mocksArentStubs.html)
 
 ### References
 

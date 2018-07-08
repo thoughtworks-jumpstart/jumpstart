@@ -32,3 +32,4 @@ Once you start the service, create a POST request to the URL [http://localhost:3
 You can send the request using tools like [postman](https://www.getpostman.com/) or [insomnia](https://insomnia.rest/).
 
 You should also see response from the server side claiming the user is created successfully.
+
