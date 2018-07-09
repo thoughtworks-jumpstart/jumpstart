@@ -4,7 +4,7 @@ Mocking is a technique to isolate test subjects by replacing dependencies with o
 
 Mock and stubs enable a different style of testing. They encourage testing based on behaviour verification.
 
-## Jest syntax
+## Creating and using mock functions
 
 ### Creating a mock
 
@@ -28,6 +28,56 @@ Mock and stubs enable a different style of testing. They encourage testing based
   * make `myMockFunction()` return 42 everytime you call myMockFunction\(\)
 * `myMockFunction.mockReturnValueOnce('you can return anything!')` 
   * make `myMockFunction()` return this value only once \(it returns `undefined` the next time it's called\)
+
+### Resetting mocks
+
+* Mock functions keep track of various things \(e.g. how many times it has been called\). You'll need to reset mocks beforeEach test case, so that each test case is kept independent.
+* `myMockFunction.mockClear()`
+* If you find yourself calling .mockClear\(\) on multiple mocks, there is a command that let you clear all mocks in one line: `jest.clearAllMocks()`
+
+## Creating and using mock modules
+
+### Mocking a module
+
+* Mocking the contents of a module
+
+```javascript
+const myMockFunction = jest.fn();
+jest.doMock("./someModule", () => {
+  return myMockFunction; 
+  // Note: what you return here should match the exports in './someModule.js'
+});
+
+// Note: it's crucial that you put this next line after jest.doMock() statements
+const anotherModule = require("./anotherModule.js"); 
+
+/*
+now, inside anotherModule.js, any line that says `const x = require('./someModule')
+will be replaced with whatever you return from the factory function inside
+jest.doMock('./someModule', factoryFunction)
+*/
+```
+
+* The exact same thing that can be done, even for external libraries that we install!
+
+```javascript
+const myMockFunction = jest.fn();
+jest.doMock("mathjs", () => {
+  return {
+    randomInt: () => 42 // always return 42 when math.randomInt() is called
+  }; 
+});
+
+// Note: it's crucial that you put this next line after jest.doMock() statements
+const anotherModule = require("./anotherModule.js"); 
+
+/*
+// inside anotherModule.js:
+
+const math = require('mathjs')
+math.randomInt() // this will always return the stubbed value of 42
+*/
+```
 
 ## Mocks, stubs, dummies, spies, whaaaat?
 
@@ -55,7 +105,7 @@ Mock and stubs enable a different style of testing. They encourage testing based
   * [getting started with mocks](https://facebook.github.io/jest/docs/en/mock-functions.html)
   * [`jest.fn()` API docs](https://facebook.github.io/jest/docs/en/mock-function-api.html)
   * [`jest` object API docs](https://jestjs.io/docs/en/jest-object)
-* * [The `jest` object \(good documentation on mocks\)](https://jestjs.io/docs/en/jest-object.html)
+* [The `jest` object \(good documentation on mocks\)](https://jestjs.io/docs/en/jest-object.html)
 
 
 
