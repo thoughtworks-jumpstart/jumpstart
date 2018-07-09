@@ -51,8 +51,11 @@ Mock and stubs enable a different style of testing. They encourage testing based
 ### References
 
 * [Jest getting started guide for mock](https://facebook.github.io/jest/docs/en/mock-functions.html)
-* [Jest Mocks API docs](https://facebook.github.io/jest/docs/en/mock-function-api.html)
-* [The `jest` object \(good documentation on mocks\)](https://jestjs.io/docs/en/jest-object.html)
+* jest docs
+  * [getting started with mocks](https://facebook.github.io/jest/docs/en/mock-functions.html)
+  * [`jest.fn()` API docs](https://facebook.github.io/jest/docs/en/mock-function-api.html)
+  * [`jest` object API docs](https://jestjs.io/docs/en/jest-object)
+* * [The `jest` object \(good documentation on mocks\)](https://jestjs.io/docs/en/jest-object.html)
 
 
 
