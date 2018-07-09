@@ -79,6 +79,42 @@ math.randomInt() // this will always return the stubbed value of 42
 */
 ```
 
+## Putting it altogether
+
+Lab: [https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab](https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab)
+
+Solutions: [https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab/tree/solution](https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab/tree/solution)  \(don't peek unless you have to!\)
+
+In the solutions repo, you can find examples on how to 
+
+1. Create mock functions 
+   * Using `jest.fn()`
+2. Make mock functions return specific values \(i.e. stubbing\)
+   * Using `myMockFunction.mockReturnValue('any value')` 
+   * or       `myMockFunction.mockReturnValueOnce('any value')`
+3. Make expectations/assertions on mock functions
+   * Using `expect(myMockFunction).toBeCalled()`
+   * or       `expect(myMockFunction).toHaveBeenCalledTimes(42)`
+4. Clear mocks
+   * Using `myMockFunction.mockClear()`
+   * or       `jest.clearAllMocks()`
+5. Mock functions imported from another module \(i.e. javascript file or javascript library\)
+   * Using 
+   * ```text
+     jest.doMock("../src/queueService.js", () => {
+       return mockGenerateQueue;
+     });
+     ```
+   * or
+   * ```text
+     const mockRandomInt = jest.fn()
+     jest.doMock("mathjs", () => {
+       return {
+         randomInt: mockRandomInt
+       };
+     });
+     ```
+
 ## Mocks, stubs, dummies, spies, whaaaat?
 
 **Mocks** are objects/functions that can be used to \(i\) replace actual object/functions in test cases and \(ii\) verify that objects/functions are called/used \(optionally with a specific number of calls and specific arguments\) 
