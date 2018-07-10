@@ -48,13 +48,15 @@ brew install mongodb
 
 ### Windows and Linux
 
-Download the Community Server from [https://www.mongodb.com/download-center\#community](https://www.mongodb.com/download-center#community) for your specific OS version.
+Download the **Community Server** from [https://www.mongodb.com/download-center\#community](https://www.mongodb.com/download-center#community) for your specific OS version.
 
 If you're running Windows, please add the MongoDB `bin` folder to your System PATH \(e.g. `C:\Program Files\MongoDB\Server\4.0\bin`\).
 
-**Verify** the installation by running the following command:
+### Verify the installation
 
-```text
+Run the following command in a fresh terminal window to verify that Mongo has been installed successfully:
+
+```bash
 mongod --version
 ```
 
