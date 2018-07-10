@@ -16,6 +16,7 @@
 * [Get Started with Debugging JavaScript in Chrome DevTools\(8-min video\)](https://developers.google.com/web/tools/chrome-devtools/javascript/)
 * [Chrome Devtools for Troubleshooting HTML and CSS](http://www.richfinelli.com/troubleshooting-html-and-css/)
 * [10 Tips for Javascript Debugging Like a PRO with Console](https://medium.com/appsflyer/10-tips-for-javascript-debugging-like-a-pro-with-console-7140027eb5f6)
+* [https://apsdehal.in/blog/chrome-developer-tools-to-master](https://apsdehal.in/blog/chrome-developer-tools-to-master)
 
 ### References
 
