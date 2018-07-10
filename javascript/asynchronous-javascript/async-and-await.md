@@ -4,9 +4,7 @@
 
 Although Promise API helps to avoid the callback hell, it's still requires you to think in asynchronous style. How nice if we could write those asynchronous functions in synchronous style!
 
-If you feel that way, you are not alone.
-
-There is a proposal called `async/await` which allows you to do exactly that kind of stuff.
+If you feel that way, you are not alone: `async/await` allows you to do exactly that.
 
 > Async function make it possible to treat functions returning Promise objects as if they were synchronous.
 
@@ -47,11 +45,11 @@ Note the two new keywords we use above:
 * `async`: it marks the function as an async function
 * `await`: it means we want to wait for the Promise \(returned by the function after await\) is resolved before the next line is executed
 
-## What is returned from Async Function, actually?
+## What is returned from an `async` function?
 
 In the example above, you may think the async function return a string \(which is the user name\), but remember the async function above is the same as the promise version, and the promise version returns an instance of Promise to the caller.
 
-An Async functions return an instance of Promise that resolves to the return value as you put in the `return` statement of the function.
+An Async function returns an instance of a Promise that resolves to the return value as you put in the `return` statement of the function.
 
 ## Error Handling within Async Functions
 
@@ -136,9 +134,28 @@ async function doesThisWork() {
 }
 ```
 
+## `await`ing at the top level
+
+Since `await` can only appear inside a function that is marked as `async`, you can't have `await` in top-level code (i.e. code that is not inside any other function and is invoked directly when the program runs).
+
+```javascript
+// syntax error in top-level code
+const response = await fetch('/path/to/some/json');
+```
+
+It needs to be wrapped in another function marked as `async`, which is then invoked:
+
+```javascript
+async function getData() {
+  const response = await fetch('/path/to/some/json');
+}
+
+getData();
+```
+
 ## Can I use it now?
 
-The proposal now is part of ES7, and it's [supported by latest version of main-stream browsers already](https://caniuse.com/#feat=async-functions). It's also supported by Node.JS platform since 7.6.0 release.
+`async/await` is a part of ES7, and is [supported in the latest versions of main-stream browsers](https://caniuse.com/#feat=async-functions). It's also supported by Node.JS platform since 7.6.0 release.
 
 ## Resources
 
