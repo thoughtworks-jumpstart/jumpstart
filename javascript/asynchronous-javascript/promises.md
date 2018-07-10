@@ -335,13 +335,39 @@ result.then(data => {
 })
 ```
 
-## Promisify - How to convert API that only support callbacks to return Promise instead
+## How to convert API that only support callbacks to return a Promise instead
 
-Now we see promises are useful tools to handle asynchronous tasks, but how can we deal with existing functions that are written in a way to take callback as arguments?
+We see promises are useful tools to handle asynchronous tasks, but how can we deal with existing functions that are written in a way to take callback as arguments?
 
-There is a concept called Promisify, which is the process to convert functions that takes callbacks to functions that return promises.
+Node.js comes with a utility function called `promisify`, which takes a regular callback-taking function as an argument and returns its promisified version. e.g.
 
-[Here is a library](https://github.com/digitaldesignlabs/es6-promisify) that implements this idea.
+```javascript
+const { promisify } = require("util");
+const { readFile } = require("fs");
+const readFilePromise = promisify(readFile);
+
+// Original callback-style readFile
+readFile("path/to/file", "utf8", (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  console.log(data);
+});
+
+// Promisified version
+readFilePromise("path/to/file", "utf8")
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+```
+
+- util.promisify docs: https://nodejs.org/api/util.html#util_util_promisify_original
+- More information on how util.promisify works: http://2ality.com/2017/05/util-promisify.html
 
 ## Resources
 
