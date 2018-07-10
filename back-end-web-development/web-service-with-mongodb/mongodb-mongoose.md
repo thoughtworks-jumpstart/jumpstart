@@ -1,12 +1,72 @@
 **Make sure your MongoDB server is running!**
 
-## Tutorial: Learn Mongoose API
+## Learn Mongoose API
 
 [Mongoose](http://mongoosejs.com/) is an **Object Document Mapper \(ODM\)**. This means that Mongoose allows you to define objects with a strongly-typed [schema](http://mongoosejs.com/docs/guide.html) that is mapped to a MongoDB document.
 
-Firstly, read the ['Get Started' section on Mongoose Documentation](http://mongoosejs.com/docs/index.html) to get an overview of Mongoose API.
+Let's explore a few common operations using Mongoose:
 
-Then you can see a few more examples on the API in [this article](https://coursework.vschool.io/mongoose-crud/)
+1. Creating schemas
+2. Creating models
+3. Using models to query and save data
+
+This code is similar to the ['Getting Started' section on Mongoose Documentation](http://mongoosejs.com/docs/index.html)
+but uses modern JS syntax including `async/await`.
+
+```javascript
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost/jumpstart");
+const db = mongoose.connection;
+
+// Add an error handler to show mongo errors in the Node.js console
+db.on("error", error => {
+  console.error("An error occurred!", error);
+});
+
+// Create a schema
+const pizzaSchema = mongoose.Schema({
+  name: String,
+  flavour: String
+});
+
+// Use the schema to create a model
+const Pizza = mongoose.model("Pizza", pizzaSchema);
+
+async function insertData() {
+  // Create a new instance of the model
+  const margarita = new Pizza({
+    name: "margarita"
+  });
+
+  // Save it to the DB
+  margarita.save();
+
+  const pepperoni = new Pizza({
+    name: "pepperoni"
+  });
+
+  pepperoni.save();
+}
+
+async function queryData() {
+  // .find without any arguments returns all the data
+  const pizzas = await Pizza.find();
+  console.log(pizzas);
+}
+
+async function init() {
+  await insertData();
+  await queryData();
+
+  // Close the connection to the db
+  db.close();
+}
+
+init();
+```
+
+Then you can see a few more examples on the API in [this article](https://coursework.vschool.io/mongoose-crud/).
 
 Now, let's follow [this tutorial](https://code.tutsplus.com/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527) to play with the Mongoose API.
 
