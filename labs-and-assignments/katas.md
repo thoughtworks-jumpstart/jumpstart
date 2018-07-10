@@ -20,6 +20,15 @@ intermediate
 * [x] [https://www.codewars.com/kata/split-the-bill/javascript](https://www.codewars.com/kata/split-the-bill/javascript)
 * [x] [https://www.codewars.com/kata/most-frequent-elements/javascript](https://www.codewars.com/kata/most-frequent-elements/javascript)
 * [x] [https://www.codewars.com/kata/title-case](https://www.codewars.com/kata/title-case)
+* [ ] https://www.codewars.com/kata/sort-my-animals/javascript
+* [ ] https://www.codewars.com/kata/find-the-unique-number/javascript
+* [ ] https://www.codewars.com/kata/sum-of-prime-indexed-elements/javascript
+* [ ] https://www.codewars.com/kata/delete-occurrences-of-an-element-if-it-occurs-more-than-n-times/javascript
+* [ ] https://www.codewars.com/kata/climbers-rankings/javascript
+* [ ] https://www.codewars.com/kata/consonant-value/javascript
+* [ ] https://www.codewars.com/kata/english-beggars/javascript
+* [ ] https://www.codewars.com/kata/distribute-server-workload/javascript
+* [ ] https://www.codewars.com/kata/disgruntled-employee/javascript
 
 ### Other lists of katas
 
