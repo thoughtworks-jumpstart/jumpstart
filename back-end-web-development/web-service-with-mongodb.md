@@ -120,58 +120,11 @@ More details can be found in [the documentation](http://mongoosejs.com/docs/prom
 
 We recommend using the `async/await` style.
 
-## Lab: Adding MongoDB to a simple CRUD REST API
+## Lab: Adding MongoDB to a CRUD REST API
 
-In this lab, you will start from a project without a database yet. There are some skeleton codes written for an API to create/update/read/delete books. You need to implement those API and store the data in a local Mongo database.
+In this lab, you will start from a project without a database. There are some skeleton codes written for an API to create/update/read/delete books. You need to implement those APIs and store the data in a local Mongo database.
 
 Here is the [project repo](https://github.com/thoughtworks-jumpstart/express-books-api) for you to fork and work on.
-
-## Example: REST API with Express + Mongoose
-
-We have created a sample project in the course material repository. Let's clone this repository and study the codes related to mongodb access.
-
-```text
-git clone https://github.com/thoughtworks-jumpstart/express_passport_mongoose_example.git
-cd express_passport_mongoose_example
-npm install
-```
-
-There is a `models` folder which contains the models defined using Mongoose schema API. Take a look at `User.js`.
-
-The codes making use of the models can be found in the `middlewares` folder. For example, the `user_middleware.js` has functions to create/save/update users.
-
-## Assignment
-
-Update the `express-url-shortener` project to store the URLs into a MongoDB, instead of storing them in memory.
-
-You can create two collections to store the data you need
-
-* A collection to store the URLs and their dynamically generated ID
-
-![image](../.gitbook/assets/url-shortener-service-mongodb-collection-1.png)
-
-* A collection to maintain the counter that will be auto-incremented when a new URL is stored in the previous collection. A new document is created in the previous collection with this newly incremented counter.
-
-![image](../.gitbook/assets/url-shortener-service-mongodb-collection-2.png)
-
-A sample Mongoose schema definition is given below
-
-```javascript
-const countersSchema = new mongoose.Schema({
-    _id: { type: String, required: true },
-    count: { type: Number, default: 0 }
-});
-
-const Counter = mongoose.model('Counter', countersSchema);
-
-const urlSchema = new mongoose.Schema({
-    _id: {type: Number},
-    url: '',
-    created_at: ''
-});
-
-const URL = mongoose.model('URL', urlSchema);
-```
 
 ### Tips
 
