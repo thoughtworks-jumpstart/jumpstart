@@ -40,13 +40,13 @@ async function insertData() {
   });
 
   // Save it to the DB
-  margarita.save();
+  await margarita.save();
 
   const pepperoni = new Pizza({
     name: "pepperoni"
   });
 
-  pepperoni.save();
+  await pepperoni.save();
 }
 
 async function queryData() {
