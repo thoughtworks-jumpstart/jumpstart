@@ -1,3 +1,5 @@
+# Installing MongoDB
+
 ## Installing MongoDB
 
 Install MongoDB for your operating system.
@@ -14,12 +16,11 @@ Download the **Community Server** from [https://www.mongodb.com/download-center\
 
 If you're running Windows, please add the MongoDB `bin` folder to your System PATH \(e.g. `C:\Program Files\MongoDB\Server\4.0\bin`\).
 
-### Linux (Ubuntu)
+### Linux \(Ubuntu\)
 
 Find the instructions for your specific OS and version for the **Community Server** from [https://www.mongodb.com/download-center\#community](https://www.mongodb.com/download-center#community).
 
-If the installation step complains of an incompatible `libcurl`, check the
-section in the guide on how to update it.
+If the installation step complains of an incompatible `libcurl`, check the section in the guide on how to update it.
 
 ### Verify the installation
 
@@ -38,7 +39,7 @@ You should see the version information printed on your console.
 3. Install it and Reload vscode once the installation completes
 4. Click the new Azure icon in the left sidebar
 5. Create a new MongoDB connection by clicking the 'plug' icon and selecting 'MongoDB' from the dropdown
-	- Make sure to start the server before connecting to it
+   * Make sure to start the server before connecting to it
 
 ## Start your MongoDB server
 
@@ -57,3 +58,4 @@ Once the MongoDB server is started, you should see the following line on your co
 ```text
 [initandlisten] waiting for connections on port 27017
 ```
+

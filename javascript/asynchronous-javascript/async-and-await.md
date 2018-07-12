@@ -136,7 +136,7 @@ async function doesThisWork() {
 
 ## `await`ing at the top level
 
-Since `await` can only appear inside a function that is marked as `async`, you can't have `await` in top-level code (i.e. code that is not inside any other function and is invoked directly when the program runs).
+Since `await` can only appear inside a function that is marked as `async`, you can't have `await` in top-level code \(i.e. code that is not inside any other function and is invoked directly when the program runs\).
 
 ```javascript
 // syntax error in top-level code

@@ -366,8 +366,8 @@ readFilePromise("path/to/file", "utf8")
   });
 ```
 
-- util.promisify docs: https://nodejs.org/api/util.html#util_util_promisify_original
-- More information on how util.promisify works: http://2ality.com/2017/05/util-promisify.html
+* util.promisify docs: [https://nodejs.org/api/util.html\#util\_util\_promisify\_original](https://nodejs.org/api/util.html#util_util_promisify_original)
+* More information on how util.promisify works: [http://2ality.com/2017/05/util-promisify.html](http://2ality.com/2017/05/util-promisify.html)
 
 ## Resources
 

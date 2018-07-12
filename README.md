@@ -1,4 +1,12 @@
+---
+description: >-
+  Copyright (c) 2018 ThoughtWorks; for individual use for training purposes and
+  not to be distributed or sublicensed without further authorisation.
+---
+
 # Introduction
+
+
 
 ![JumpStart](.gitbook/assets/jumpstartlogo1.png)
 
@@ -55,6 +63,4 @@ To ensure that you and your classmates get the most out of JumpStart!, we will b
   * Install dependencies listed in `./book.json`: `gitbook install`
   * To see gitbook locally, run `gitbook serve`
 * Table of contents \(the left toolbar\) can be found in `SUMMARY.md`
-
-Copyright \(c\) 2018 ThoughtWorks; for individual use for training purposes and not to be distributed or sublicensed without further authorisation.
 

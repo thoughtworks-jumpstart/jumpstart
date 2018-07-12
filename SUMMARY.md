@@ -117,7 +117,7 @@
   * [Authentication with Passport.js](back-end-web-development/authentication-with-passport.js.md)
   * [Web Service with MongoDB](back-end-web-development/web-service-with-mongodb/README.md)
     * [Installing MongoDB](back-end-web-development/web-service-with-mongodb/installing-mongodb.md)
-    * [Using MongoDB with Mongoose](back-end-web-development/web-service-with-mongodb/mongodb-mongoose.md)
+    * [Using MongoDB with Mongoose](back-end-web-development/web-service-with-mongodb/using-mongodb-with-mongoose.md)
   * [Testing Web Service](back-end-web-development/testing-web-service.md)
   * [Integration Testing Lab](back-end-web-development/integration-testing-lab.md)
   * [Production Quality Web Service](back-end-web-development/production-quality-web-service.md)

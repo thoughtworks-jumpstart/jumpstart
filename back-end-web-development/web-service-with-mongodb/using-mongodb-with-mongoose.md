@@ -1,3 +1,5 @@
+# Using MongoDB with Mongoose
+
 **Make sure your MongoDB server is running!**
 
 ## Learn Mongoose API
@@ -10,8 +12,7 @@ Let's explore a few common operations using Mongoose:
 2. Creating models
 3. Using models to query and save data
 
-This code is similar to the ['Getting Started' section on Mongoose Documentation](http://mongoosejs.com/docs/index.html)
-but uses modern JS syntax including `async/await`.
+This code is similar to the ['Getting Started' section on Mongoose Documentation](http://mongoosejs.com/docs/index.html) but uses modern JS syntax including `async/await`.
 
 ```javascript
 const mongoose = require("mongoose");
@@ -84,11 +85,7 @@ There are a few other good tutorials on Mongoose, you can try them out as well:
 
 ### 3 Ways to Call Mongoose API
 
-Most of the Mongoose APIs allow you to call them with callbacks. But if you
-don't pass in callback, those APIs would return either a Promise or a Query
-instead. Both Promise and Query have `.then()` function, which means you can
-get the resolved value \(from the Promise or the Query\) by calling them with
-`await`.
+Most of the Mongoose APIs allow you to call them with callbacks. But if you don't pass in callback, those APIs would return either a Promise or a Query instead. Both Promise and Query have `.then()` function, which means you can get the resolved value \(from the Promise or the Query\) by calling them with `await`.
 
 More details can be found in [the documentation](http://mongoosejs.com/docs/promises.html)
 
@@ -133,3 +130,4 @@ In case you need to do some operation before a model is saved:
 
 * [M101JS: MongoDB for Node.js Developers](https://university.mongodb.com/courses/M101JS/about)
 * Try this tutorial: [How to Build a URL Shortener with Node.js and MongoDB](https://scalegrid.io/blog/how-to-build-a-url-shortener-with-node-js-and-mongodb/).
+
