@@ -10,6 +10,7 @@
 
 * [passportjs docs](http://www.passportjs.org/)
 * [passport-jwt docs](https://github.com/themikenicholson/passport-jwt)
+* [demo application with token-based authentication implemented](https://github.com/thoughtworks-jumpstart/express-auth-demo)
 
 #### Steps for implementing token-based authentication in an express app
 
@@ -78,7 +79,7 @@ Given that you have a simple express app,
       router.post("/signup", async (req, res, next) => {
         const { username, password } = req.body;
         const user = new User({ username, bio: "some bio" });
-        user.setPassword(password);
+        user.setHashedPassword(password);
         try {
           await user.save();
           res.json({ user });
@@ -96,7 +97,7 @@ Given that you have a simple express app,
           res.status(401).json({ message: "no such user found" });
         }
 
-        if (user.validPassword(password)) {
+        if (user.validatePassword(password)) {
           const userId = { id: user.id, anything: "whatever" };
           const token = jwt.sign(userId, jwtOptions.secretOrKey);
           res.json({ message: "ok", token: token });
@@ -105,7 +106,7 @@ Given that you have a simple express app,
         }
       });
       ```
-6. Now, you might notice a two new methods which are used on the `user` object \(namely, `user.setPassword(password)` and `user.validPassword(password)`\). These are instance methods which we will define in the user model in this step
+6. Now, you might notice a two new methods which are used on the `user` object \(namely, `user.setHashedPassword(password)` and `user.validPassword(password)`\). These are instance methods which we will define in the user model in this step
    1. ```javascript
       // in models/user.js
 
@@ -133,7 +134,7 @@ Given that you have a simple express app,
       UserSchema.plugin(uniqueValidator, { message: "should be unique" });
 
       // use ES5 function to prevent `this` from becoming undefined
-      UserSchema.methods.setPassword = function(password) {
+      UserSchema.methods.setHashedPassword = function(password) {
         this.salt = generateSalt();
         this.hash = hashPassword(password, this.salt);
       };
@@ -159,8 +160,8 @@ Given that you have a simple express app,
       module.exports = User;
       ```
    2. There's a lot going on in this file, so let's break it down:
-      1. `setPassword(password)` - this function takes a password, and adds 2 attributes \(`this.hash` and `this.salt`\) on the user object. Hence, instead of saving the password in the database \(which is something you should never do!\), we save an **encrypted hash** of the password in the database
-      2. `validPassword(password)` - this function \(i\) takes a password, computes an **encrypted hash**, based on the password passed in as an argument and the `this.salt` of the current user, and \(ii\) returns true if this generated hash matches the `this.hash` of the user \(which was previously saved in the database\)
+      1. `setHashedPassword(password)` - this function takes a password, and adds 2 attributes \(`this.hash` and `this.salt`\) on the user object. Hence, instead of saving the password in the database \(which is something you should never do!\), we save an **encrypted hash** of the password in the database
+      2. `validatePassword(password)` - this function \(i\) takes a password, computes an **encrypted hash**, based on the password passed in as an argument and the `this.salt` of the current user, and \(ii\) returns true if this generated hash matches the `this.hash` of the user \(which was previously saved in the database\)
       3. `generateSalt()` uses node's built-in `crypto` to generate a cryptographically strong pseudo-random string \(e.g. `b1b52e1d4494819f3433fa66554f73f1`\)
       4. `hashPassword()` uses node's built-in `crypto` to generate a cryptographically strong hash. Given the same password and same salt, this function will always return the same hash.
 
