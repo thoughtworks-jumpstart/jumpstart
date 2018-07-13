@@ -6,6 +6,11 @@
 * How JSON Web Tokens are generated
 * Express and mongoose
 
+#### References
+
+* [passportjs docs](http://www.passportjs.org/)
+* [passport-jwt docs](https://github.com/themikenicholson/passport-jwt)
+
 #### Steps for implementing token-based authentication in an express app
 
 Given that you have a simple express app, 
