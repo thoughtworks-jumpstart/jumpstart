@@ -43,6 +43,8 @@ With every push to GitHub, your code is **automatically deployed** and accessibl
   * `heroku local web`
 * General help
   * `heroku --help`
+* Add mlab service into heroku project
+  * `heroku addons:create mongolab:sandbox`
 
 ### Resources
 
