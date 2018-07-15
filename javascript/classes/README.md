@@ -103,6 +103,7 @@ tom.writeCode();         // new method
 
 * [MDN Class docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 * [Understanding this](http://javascript.info/object-methods)
+* [What is 'this' in Javascript](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
 
 ## Assignment
 
