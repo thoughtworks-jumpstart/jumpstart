@@ -19,8 +19,7 @@ This demo shows how to write Express API tests using supertest and Jest:
 
 ## Reference
 
-* [SuperAgent API for making requests](http://visionmedia.github.io/superagent/),
-  which is used by supertest
+* [SuperAgent API for making requests](http://visionmedia.github.io/superagent/), which is used by supertest
 * [Unit testing express routers](http://evanshortiss.com/development/javascript/2016/04/15/express-testing-using-ioc.html)
 
 [supertest]: https://github.com/visionmedia/supertest
