@@ -134,6 +134,7 @@
     * [Enzyme](testing-and-tdd/react-testing-tools/enzyme.md)
     * [Snapshot Testing](testing-and-tdd/react-testing-tools/snapshot-testing.md)
   * [End-to-end Testing](testing-and-tdd/end-to-end-testing.md)
+  * [Useful libraries](testing-and-tdd/useful-libraries.md)
 * [Debugging](debugging/README.md)
   * [Debug with Jest](debugging/debug-with-jest.md)
   * [Debug with React](debugging/debug-with-react.md)

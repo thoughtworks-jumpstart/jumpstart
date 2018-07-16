@@ -1,19 +1,14 @@
 # Testing Web Service
 
-In this section, we are going to learn how to test the web services built with express framework.
+In this section, we are going to learn how to test the web services built with
+express framework.
 
-Here's a simple demo on how to write tests for API endpoints: [https://github.com/thoughtworks-jumpstart/express-testing-demo](https://github.com/thoughtworks-jumpstart/express-testing-demo)
+Here's a simple demo on how to write tests for API endpoints:
+[https://github.com/thoughtworks-jumpstart/express-testing-demo](https://github.com/thoughtworks-jumpstart/express-testing-demo)
 
-## Learning Checklist
-
-* What should we test?
-* Different type of tests
-  * Unit Test
-  * Integration Test
-  * Contract Test
-* What are the tools/libraries available for testing?
-* Our testing strategy
-
+But we have a better solution: thanks to the libraries like
+[mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server), we
+could setup 
 ## What should we test
 
 In a web service implemented using Express framework, there are the following components:
@@ -29,107 +24,10 @@ We can write **unit tests** for each of those components. However, there are som
 
 We should also write tests to verify our API endpoints works as we designed \(e.g. sending requests to those API endpoints and verify the responses are the same as expected.\) This kind of tests can be considered as **Contract Tests** because they check if the APIs work according to the contract agreed with the API consumers. They can also be considered as **Integration Test** because we usually test all the components \(route handlers, middlewares, models, and even databases\) as a whole and see if they work correctly together.
 
-## Useful Tools/Libraries For Unit Testing
-
-### Creating Mocking Objects \(spy/mock/stub\)
-
-When you write unit tests, often you need to mock out some of the dependencies. The following libraries could be useful for this purpose
-
-* [sinon](http://sinonjs.org/): this is a very popular library that you need to be familiar with.
-
-### Fool Node.JS require\(\) to load mock objects
-
-* [mockery](https://github.com/mfncooper/mockery)
-* [proxyrequire](https://github.com/thlorenz/proxyquire)
-* [really-need](https://github.com/bahmutov/really-need)
-
-### Intercepting HTTP requests from your code and generate mock responses
-
-* [fetch-mock](https://github.com/wheresrhys/fetch-mock): allows mocking http requests made using fetch
-* [nock](https://github.com/node-nock/nock): test modules that perform HTTP requests in isolation
-
-### Mocking the request and response parameters in Express route-handlers/middlewares
-
-* [express-unit](https://github.com/thebearingedge/express-unit)
-* [node-mocks-http](https://github.com/howardabrams/node-mocks-http)
-
-### Intercepting calls to MongoDB \(via Mongoose API\) and generate mock results
-
-* [sinon-mongoose](https://github.com/underscopeio/sinon-mongoose): mocking Mongoose model objects
-* [mongoose-mock](https://github.com/JohanObrink/mongoose-mock)
-* [mockgoose](https://github.com/alonronin/mockingoose)
-
-### Generating Test Data
-
-* [Faker.js](https://github.com/marak/Faker.js/): generate massive amounts of fake data in the browser and node.js
-
-## Useful Tools/Libraries For Integration Testing
-
-### Generating Fixtures in Test Database
-
-When you test with a real database, usually you need to populate the database with some data to meet the pre-condition for running your tests.
-
-The following libraries help to create fixtures:
-
-* [monky](https://www.npmjs.com/package/monky)
-* [donky](https://www.npmjs.com/package/donky)
-* [devhouse-fixtures](https://www.npmjs.com/package/devhouse-fixtures)
-
-But sometimes it's not difficult to load data to database just using the `save()` API provided by Mongoose.
-
-### Creating Dedicated MongoDB Instance for Each Test
-
-If you are using MongoDB, the following libraries help you to create a dedicated MongoDB instance just for your tests. Then you have full control on the data in the database, and you can throw away the database after running the test.
-
-* [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server)
-* [mongodb-prebuilt](https://github.com/winfinit/mongodb-prebuilt)
-
-### Sending HTTP Requests and Verify Responses
-
-To verify your API works as expected, usually you need to send some requests to a running instance of your application, and check the responses.
-
-This can be done manually using tools like postman or insomnia, but we prefer to automate those tests.
-
-To automate those tests, the tests need to act as API consumers, issuing requests and verify responses. For this purpose, you can use library like [supertest](https://github.com/visionmedia/supertest), or [axios](https://github.com/axios/axios)
-
-## Testing Coverage
+## Test Coverage
 
 * [istanbul](https://istanbul.js.org/)
 * many test library like [jest](https://facebook.github.io/jest/) has built-in support to generate test coverage reports
-
-## Testing Strategies
-
-On almost all of the projects, we have limited time and budgets, and we don't have a lot of time to spend on writing and maintaining tests. So sometimes we need to make a choice on what kind of tests to write and maintain by considering the cost and benefits of those tests.
-
-### Unit Test vs Integration Test / Contract Test
-
-Firstly, let's talk about unit test.
-
-Usually we prefer to have a lot of unit tests because they are easier to write, fast to run and easier to troubleshoot when they fail. However, one challenge of writing unit tests is to isolate the function/class under test from their environment.
-
-Typically this requires us to mockup the dependencies, but too many mock objects lead to its own problems
-
-* Firstly, setting up mock objects for each test case could be tedious and makes the test cases harder to read
-* Secondly, setting up mock objects sometimes requires knowledge on internal implementation of the functions under test \(e.g. the implementation depends on some global object that is not passed as function arguments\). If a test case is tightly coupled with the implementation, then we are forced to change the test case when implementation changes. 
-  * One way to address this concern is to follow [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) approach, by declaring all dependencies in the function arguments or constructor arguments.
-
-Now, let's consider integration test and contract test.
-
-Usually we prefer to have less integration test, especially integration test that depends on external systems \(e.g. dependency on a real database or another web service\). Because of those external dependencies, it could be difficult to setup the test environment, and the test cases may fail because of external reasons.
-
-Having said that, one type of integration test for a web service is very helpful, which is called **Contract Test**. Those test cases basically defines how the APIs should behave under each scenario. When ever we make new changes, as long as all contract tests pass, we can be pretty confident that the API consumers are not affected by the change.
-
-When you build a system of multiple web services \(e.g. using the [micro-service](https://en.wikipedia.org/wiki/Microservices) architecture\), it's critical that each service has its own API contract test so that every service can be released/upgraded independently and be confident that their changes do not break existing API consumers. In that scenario, the contract tests can also be written as [Consumer Driven Contracts](https://www.martinfowler.com/articles/consumerDrivenContracts.html)
-
-### Mock database vs real database
-
-If we are writing unit test, by definition we need to mock the interaction with database and we don't depend on a real database.
-
-For integration test/contract test \(e.g. on web service build using Express + MongoDB\), we need to make the server up and running before we can send requests to it. Most of the time, that would require us to have a real database.
-
-If somehow your tests need to depend on a real database, you need to make sure each test case has a clean database to start with. One solution is to set up and tear down all the collections in the database is necessary for ensuring there are no side effects between unit tests. In practice, this means a beforeEach\(\) where you reconnect to the database and drop all collections, and an afterEach\(\) where you disconnect from the database.
-
-But we have a better solution: thanks to the libraries like [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server), we could setup an in-memory database for each test case programmatically, so we can avoid some of the troubles for setting up a real database and sharing one database with all tests.
 
 ## An Example Project
 
