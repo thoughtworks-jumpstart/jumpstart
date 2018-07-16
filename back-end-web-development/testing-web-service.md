@@ -24,11 +24,6 @@ We can write **unit tests** for each of those components. However, there are som
 
 We should also write tests to verify our API endpoints works as we designed \(e.g. sending requests to those API endpoints and verify the responses are the same as expected.\) This kind of tests can be considered as **Contract Tests** because they check if the APIs work according to the contract agreed with the API consumers. They can also be considered as **Integration Test** because we usually test all the components \(route handlers, middlewares, models, and even databases\) as a whole and see if they work correctly together.
 
-## Test Coverage
-
-* [istanbul](https://istanbul.js.org/)
-* many test library like [jest](https://facebook.github.io/jest/) has built-in support to generate test coverage reports
-
 ## An Example Project
 
 We have created a sample project in the course material repository. Let's clone this repository and study the codes related to tests.
