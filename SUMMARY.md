@@ -115,7 +115,7 @@
     * [Bonus stuff](back-end-web-development/web-service-with-express.js/bonus-stuff.md)
     * [Using Async Functions with Express.js](back-end-web-development/web-service-with-express.js/using-async-functions-with-express.js.md)
   * [Token-based authentication](back-end-web-development/token-based-authentication.md)
-  * [Advanced: More authentication with Passport.js](back-end-web-development/authentication-with-passport.js.md)
+  * [Advanced: More authentication with Passport.js](back-end-web-development/advanced-more-authentication-with-passport.js.md)
   * [Web Service with MongoDB](back-end-web-development/web-service-with-mongodb/README.md)
     * [Installing MongoDB](back-end-web-development/web-service-with-mongodb/installing-mongodb.md)
     * [Using MongoDB with Mongoose](back-end-web-development/web-service-with-mongodb/using-mongodb-with-mongoose.md)
