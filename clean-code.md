@@ -21,7 +21,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
   * error handling \(fail loudly and quickly\)
   * don't modify arguments of a function
   * avoid return null
-* Kent Beck's 4 rules of simple design:
+* Kent Beck's [4 rules of simple design](https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design):
   * Pass the tests
   * Reveal intention \(i.e. make your code readable\)
   * No duplication

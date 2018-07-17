@@ -1,7 +1,6 @@
 # Testing Web Services
 
-In this section, we are going to learn how to test web services built with
-Express.
+In this section, we are going to learn how to test web services built with Express.
 
 ## What should we test
 
@@ -11,19 +10,12 @@ In a web service implemented using Express framework, there are the following co
 * middlewares
 * models
 
-We can write **unit tests** for each of those components. However, there are
-some challenges we need to address when writing unit tests:
+We can write **unit tests** for each of those components. However, there are some challenges we need to address when writing unit tests:
 
 * The models usually have a dependency on some database API \(e.g. Mongoose\). How do we handle that dependency during testing?
 * The route handlers or middlewares usually have dependencies on the models \(and some of them may have dependency on other web services\). How can we handle those dependencies?
 
-We should also write tests to verify our API endpoints work as we designed
-\(e.g. sending requests to those API endpoints and verify the responses are the
-same as expected.\) This kind of tests can be considered as **Contract Tests**
-because they check if the APIs work according to the contract agreed with the
-API consumers. They can also be considered as **Integration Test** because we
-usually test all the components \(route handlers, middlewares, models, and even
-databases\) as a whole and see if they work correctly together.
+We should also write tests to verify our API endpoints work as we designed \(e.g. sending requests to those API endpoints and verify the responses are the same as expected.\) This kind of tests can be considered as **Contract Tests** because they check if the APIs work according to the contract agreed with the API consumers. They can also be considered as **Integration Test** because we usually test all the components \(route handlers, middlewares, models, and even databases\) as a whole and see if they work correctly together.
 
 ## References
 
@@ -63,3 +55,4 @@ Here are more articles talking about different ways to testing Express based web
 ### Misc References
 
 [A workshop for learning how to test JavaScript applications](https://github.com/kentcdodds/testing-workshop)
+

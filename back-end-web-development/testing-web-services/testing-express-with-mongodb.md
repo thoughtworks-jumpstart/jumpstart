@@ -1,11 +1,8 @@
 # Testing Express with MongoDB
 
-To write API tests for an Express app that uses MongoDB as the database, we are
-going to use a library called [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server).
-It spins up an in-memory instance of MongoDB, which is faster than running a
-separate MongoDB instance.
+To write API tests for an Express app that uses MongoDB as the database, we are going to use a library called [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server). It spins up an in-memory instance of MongoDB, which is faster than running a separate MongoDB instance.
 
-Here is an example on using it with Jest: https://github.com/nodkz/mongodb-memory-server#simple-jest-test-example
+Here is an example on using it with Jest: [https://github.com/nodkz/mongodb-memory-server\#simple-jest-test-example](https://github.com/nodkz/mongodb-memory-server#simple-jest-test-example)
 
 ## Adding tests to the Books API
 
@@ -13,7 +10,9 @@ In this example, we'll be adding tests to the [express-books-api](https://github
 
 Install the testing libraries as dev dependencies:
 
-    npm install --save-dev jest supertest mongodb-memory-server
+```text
+npm install --save-dev jest supertest mongodb-memory-server
+```
 
 Create an `app.test.js` file and initialize Mongodb Memory Server:
 
@@ -27,13 +26,11 @@ Add assertions based on the fake data added:
 
 Clean up the database between test runs:
 
-Each test should be independent of the others - importantly, the order in which
-the tests run shouldn't affect whether they pass or fail.
+Each test should be independent of the others - importantly, the order in which the tests run shouldn't affect whether they pass or fail.
 
-## An advanced example (uses Express, MongoDB, and Passport)
+## An advanced example \(uses Express, MongoDB, and Passport\)
 
-We have created a sample project in the course material repository. Let's clone
-this repository and study the codes related to tests.
+We have created a sample project in the course material repository. Let's clone this repository and study the codes related to tests.
 
 ```text
 git clone https://github.com/thoughtworks-jumpstart/express_passport_mongoose_example
