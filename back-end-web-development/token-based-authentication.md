@@ -76,6 +76,10 @@ Given that you have a simple express app,
 5. Now, it's time to issue tokens! We should only issue tokens to users who can authenticate themselves using the right username and password. To do that, we need 2 route handlers for `POST /signup` and `POST /signin` 
    1. ```javascript
       // in router file
+
+      const jwt = require("jsonwebtoken")
+      const { jwtOptions } = require("../config/passport")
+
       router.post("/signup", async (req, res, next) => {
         const { username, password } = req.body;
         const user = new User({ username, bio: "some bio" });

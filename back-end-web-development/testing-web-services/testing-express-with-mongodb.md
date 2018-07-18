@@ -71,7 +71,7 @@ test("GET /authors", async () => {
   const response = await request(app).get("/authors");
 
   expect(response.status).toBe(200);
-  
+
   // Assert based on the fake data added
   expect(response.body.length).toBe(2);
 });
