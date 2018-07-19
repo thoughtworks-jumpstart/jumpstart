@@ -101,7 +101,11 @@ There's a lot more to CSS Grid. We have only covered the bare essentials to get 
 * [Mozilla CSS Grid Tutorial](https://mozilladevelopers.github.io/playground/css-grid)
 * [MDN CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 * [A complete guide to Grid layout](https://css-tricks.com/snippets/css/complete-guide-grid/)
-* [CSS grids does not replace flexboxes](https://css-tricks.com/css-grid-replace-flexbox/)
+
+### About Flexbox
+
+* [A complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [CSS grids does not replace flexbox](https://css-tricks.com/css-grid-replace-flexbox/)
 
 ### References
 
