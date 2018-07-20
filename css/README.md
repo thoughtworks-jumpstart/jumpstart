@@ -38,7 +38,6 @@ Repo URL: [https://github.com/thoughtworks-jumpstart/intro-to-css](https://githu
   * [CSS Tricks Gallery](https://css-tricks.com/gallery/)
   * [30 Seconds of CSS](https://atomiks.github.io/30-seconds-of-css/)
   * [CSS Playgrounds](https://css-playground.com/)
-  
 * Useful Tools
   * [Can I Use](https://caniuse.com/)
   * [CSS Specificity calculator](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)

@@ -2,7 +2,11 @@
 
 ## What is an algorithm?
 
-[https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/v/what-are-algorithms](https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/v/what-are-algorithms)
+An algorithm is a set of steps for accomplishing a task. For example, a recipe for baking a cake is an algorithm - because a recipe is a series of steps for transforming the input to the desired output.
+
+ In code, even a simple function \(`doubleNumbers(array)`\) can be considered an algorithm. On this page, we highlight some of the more useful and commonly known algorithms. 
+
+Before you dive in, check out this 5-minute [video](https://www.khanacademy.org/computing/computer-science/algorithms/intro-to-algorithms/v/what-are-algorithms) which gives a nice introduction to algorithms.
 
 ## Use cases of algorithms
 
