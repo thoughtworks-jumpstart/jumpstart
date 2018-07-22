@@ -13,6 +13,7 @@
       * make a decision on what lines to keep, and what lines to delete 
     * `git add .`
     * `git rebase --continue`
+    * If anything gets messed up during rebase, and you want to start over, run: `git rebase --abort`
 * Making good commits
   * small commits
   * clear commit messages
