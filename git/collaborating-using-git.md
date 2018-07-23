@@ -25,11 +25,17 @@
     * how to ignore files and directories
   * how to ignore wildcards
     * comments in .gitignore must start with \# and must start at beginning of the line
-* Pull requests
+* Git checkout
+  * `git checkout branch`
+  * `git checkout <sha-id>`
+  * `git checkout directory_or_files`
 * Some useful commands
   * `git reset --hard`
   * `git show <commit-sha>`
   * `git stash` , `git stash pop`, `git stash list`
+  * `git log [--oneline]`
+  * `git diff`
+  * `git revert <commit-sha>`
 * Explain what these terms mean
   * `repository`
   * `master` branch
