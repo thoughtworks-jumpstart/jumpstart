@@ -17,6 +17,9 @@
 * Making good commits
   * small commits
   * clear commit messages
+* How to avoid merge conflicts
+  * Pull/push frequently
+  * Avoid editing the same files at the same time
 * Ignoring files with `.gitignore`
   * why do we need .gitignore
     * how to ignore files and directories
@@ -26,7 +29,7 @@
 * Some useful commands
   * `git reset --hard`
   * `git show <commit-sha>`
-  * `git stash` and `git stash pop`
+  * `git stash` , `git stash pop`, `git stash list`
 * Explain what these terms mean
   * `repository`
   * `master` branch
