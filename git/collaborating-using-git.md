@@ -44,9 +44,20 @@
   * `commit`
 * `git config`
   * to see all current configuration: `git config -l`
+* Getting help
+  * Use search engines
+  * `git [subcommand] --help`
+    * Examples:
+      * `git --help`
+      * `git status --help`
+      * `git commit --help`
+  * [Git documentation](https://git-scm.com/doc)
+    * 
 * [Remove Sensitive Data from a Repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 
 ## Resources
 
+* [Git cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 * git stash: [https://www.atlassian.com/git/tutorials/git-stash](https://www.atlassian.com/git/tutorials/git-stash)
+* [Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)
 
