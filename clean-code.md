@@ -96,8 +96,25 @@ The idea of writing clean code is to ensure that the software is: readable, main
 Instructions:
 
 * Pair up and refactor each other's code
-* Identify code smells and apply the refactoring techniques that you've learnt to make it better
+* Jot down code smells \(see list of code smells [here](https://github.com/ryanmcdermott/clean-code-javascript)\) and apply the refactoring techniques that you've learnt to make it better
 * If you have any doubts, clarify it with your pair
+
+Steps:
+
+* Add your pair to your repo
+* Clone your pair's repo
+* set up
+  * Install dependencies
+
+    `npm install`
+
+  * check test coverage first and write tests first if necessary:`npm test -- --coverage`
+* Read each other's code and list down code smells
+* Start refactoring!
+  * Pair up, and refactor one repo at a time
+  * Keep tests \(watch mode\) in sight
+  * Commit often
+  * Communicate - ask questions when in doubt
 
 ### 2. Refactoring video store
 
