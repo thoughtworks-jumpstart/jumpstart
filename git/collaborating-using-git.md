@@ -52,7 +52,6 @@
       * `git status --help`
       * `git commit --help`
   * [Git documentation](https://git-scm.com/doc)
-    * 
 * [Remove Sensitive Data from a Repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 
 ## Resources
