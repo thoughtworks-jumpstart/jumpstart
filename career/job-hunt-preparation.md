@@ -49,9 +49,15 @@ Past JumpStart! graduates shared that preparation on the following topics helped
 
 For more tips on software development, check out this [awesome guide](https://docs.google.com/document/d/1tMgtfyHz31x2Mtnp9TvlpE2V1S8iQ32nNx-NxJIIpkI/edit) by Gabe Hollombe
 
+## Jobs boards:
+
+* [https://www.techinasia.com/jobs](https://www.techinasia.com/jobs)
+* [https://e27.co/jobs](https://e27.co/jobs)
+
 ## Other useful resources:
 
 * [A retrospective on my tech job search](https://blog.safia.rocks/post/170800851750)
+* [A list of tech companies in Singapore](http://walkabout.sg/)
 * [Recognizing impostor syndrome and fixing it before it messes up your coding interview](https://dev.to/interviewcake/recognizing-impostor-syndrome-and-fixing-it-before-it-messes-up-your-coding-interview-2j12)
 * [How to Prepare for Behavioral Based Job Interview Questions](https://www.thebalancecareers.com/behavioral-job-interview-questions-2059620)
 * [What are system design questions?](https://www.hiredintech.com/classrooms/system-design/lesson/52)
