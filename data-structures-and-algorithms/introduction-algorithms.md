@@ -98,6 +98,20 @@ More Exercises
 * [https://app.codility.com/programmers/lessons/1-iterations/](https://app.codility.com/programmers/lessons/1-iterations/)
 * [https://github.com/Vintharas/AlgorithmsAndDataStructuresInJavaScript](https://github.com/Vintharas/AlgorithmsAndDataStructuresInJavaScript)
 
+## jumpstart-2 algos learning roadmap
+
+* What are algorithms
+* Recursion
+  * `countdown(n)`
+  * `recursiveSum(n)`
+  * `factorial(n)`
+  * `isPalindrome(str)`
+* binary search \(vs. simple search\)
+  * `binarySearch(sortedArr, target)`
+  * intro to big O notation - O\(n\) and O\(log n\)
+* Sorting
+  * selection sort
+
 ## Resources
 
 ### Books
