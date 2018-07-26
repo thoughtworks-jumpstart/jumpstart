@@ -110,7 +110,7 @@ More Exercises
   * `binarySearch(sortedArr, target)`
   * intro to big O notation - O\(n\) and O\(log n\)
 * Sorting
-  * selection sort
+  * selection sort \([video](https://www.youtube.com/watch?v=alh3Jme9LZs&list=PLtkAfVCgA693fNJCZkdFqs0awgynxmcAa&index=21)\)
 
 ## Resources
 
