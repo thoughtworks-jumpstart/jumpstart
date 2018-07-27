@@ -134,6 +134,7 @@
   * [Testing with Mocks](testing-and-tdd/testing-with-mocks.md)
   * [Testing React apps](testing-and-tdd/react-testing-tools/README.md)
 	* [Using ShallowRenderer and Jest snapshots](testing-and-tdd/react-testing-tools/shallow-renderer-and-jest-snapshots.md)
+	* [Mocking Fetch](testing-and-tdd/react-testing-tools/mocking-fetch.md)
     * [Enzyme](testing-and-tdd/react-testing-tools/enzyme.md)
     * [Snapshot Testing](testing-and-tdd/react-testing-tools/snapshot-testing.md)
   * [End-to-end Testing](testing-and-tdd/end-to-end-testing.md)
