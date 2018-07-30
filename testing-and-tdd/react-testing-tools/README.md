@@ -1,4 +1,4 @@
-# React Testing Tools
+# Testing React apps
 
 ## Learning checklist
 

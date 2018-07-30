@@ -1,7 +1,6 @@
 # Mocking Fetch
 
-Network requests made using the `fetch` API can be mocked in tests, either
-manually or by using a library. Mocking `fetch` manually requires a few steps:
+Network requests made using the `fetch` API can be mocked in tests, either manually or by using a library. Mocking `fetch` manually requires a few steps:
 
 ```javascript
 // src/App.test.js
@@ -32,17 +31,15 @@ afterAll(() => {
 });
 ```
 
-This method works for mocking simple fetch requests but can be a little tedious
-when multiple requests and responses need to be handled. We can use the
-`jest-fetch-mock` library for such cases.
+This method works for mocking simple fetch requests but can be a little tedious when multiple requests and responses need to be handled. We can use the `jest-fetch-mock` library for such cases.
 
 ## jest-fetch-mock
 
-[Jest Fetch Mock][jest-fetch-mock] is a Jest plugin to mock the `fetch`
-function when running tests with Jest. To use it in React projects created with
-`create-react-app`, first install it:
+[Jest Fetch Mock](https://github.com/jefflau/jest-fetch-mock) is a Jest plugin to mock the `fetch` function when running tests with Jest. To use it in React projects created with `create-react-app`, first install it:
 
-    npm install --save-dev jest-fetch-mock
+```text
+npm install --save-dev jest-fetch-mock
+```
 
 Then create a file `src/setupTests.js` with the following contents:
 
@@ -52,8 +49,7 @@ Then create a file `src/setupTests.js` with the following contents:
 global.fetch = require("jest-fetch-mock");
 ```
 
-This will configure Jest to mock the global `fetch` function. This applies only
-to tests run with Jest, not the actual production app.
+This will configure Jest to mock the global `fetch` function. This applies only to tests run with Jest, not the actual production app.
 
 Finally, use the mocked `fetch` instance in the test:
 
@@ -74,7 +70,5 @@ test("fetches some data", async () => {
 });
 ```
 
-Note that the body provided using `mockResponseOnce` has to be converted to a
-JSON string using the built-in `JSON.stringify` method.
+Note that the body provided using `mockResponseOnce` has to be converted to a JSON string using the built-in `JSON.stringify` method.
 
-[jest-fetch-mock]: https://github.com/jefflau/jest-fetch-mock
