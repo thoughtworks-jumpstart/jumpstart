@@ -141,7 +141,38 @@ fetch(${URL}/signInOrAnyAuthenticatedRoute, {
     credentials: 'include' 
   }
 )
+```
 
+### Testing Express routes that are protected using cookies
+
+By default, supertest does not pass on cookies set by one response into subsequent requests. Since we need this ability when testing protected routes, we can use the [`agent`](http://visionmedia.github.io/superagent/#agents-for-global-state) functionality in supertest, which _does_ pass on cookies. Here is an example test:
+
+```javascript
+test("POST /secret returns a success response", async () => {
+  const user = { username: 'newuser', password: 'password' };
+
+  // Create an `agent` instead of using `request(app)` directly
+  const agent = request.agent(app)
+  
+  // Use the agent to sign up
+  await agent
+    .post("/users/signup")
+    .send(user);
+
+  // Use the agent to sign in - this sets the JWT token in 
+  // the response cookie
+  await agent
+    .post("/users/signin")
+    .send(user)
+  
+  // Use the agent to request the protected route - this 
+  // will include the cookie from the previous response
+  const response = await agent
+    .post("/secret")
+    .send({ data: 'some data' });
+  
+  expect(response.status).toBe(201);
+});
 ```
 
 ## Resources
@@ -150,4 +181,3 @@ fetch(${URL}/signInOrAnyAuthenticatedRoute, {
 * [cookies in detail \(long and seemingly hard to read, but very clear explanation of cookies\)](https://tools.ietf.org/html/rfc6265#section-3)
 * [how to extract jwt from cookies](https://github.com/themikenicholson/passport-jwt)
 * [how to tell fetch to include credentials in cookies \(search for: credentials: ‘include’\)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch%20)
-
