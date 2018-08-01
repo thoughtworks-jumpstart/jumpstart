@@ -125,6 +125,7 @@
     * [Integration Testing Lab](back-end-web-development/testing-web-services/integration-testing-lab.md)
   * [Production Quality Web Service](back-end-web-development/production-quality-web-service.md)
   * [Web Service Security](back-end-web-development/web-service-security.md)
+  * [Storing credentials in cookies](back-end-web-development/storing-credentials-in-cookies.md)
 * [Testing and TDD](testing-and-tdd/README.md)
   * [Test Pyramid](testing-and-tdd/test-pyramid.md)
   * [TDD with Jest](testing-and-tdd/tdd-with-jest/README.md)
