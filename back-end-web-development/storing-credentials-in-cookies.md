@@ -6,7 +6,7 @@ Now that you've learned how to generate JWTs and use JWTs to authenticate reques
 
 Before we dive into implementation details, let's understand some fundamental concepts.
 
-### A 2-minute crash course on cookies
+## A 2-minute crash course on cookies
 
 TL;DR: A cookie is a string that we can send from a server to a client \(and vice versa\), just like your request or response body, headers, params, query parameters. It lives under the **Headers** of a request and response.
 
