@@ -25,7 +25,7 @@ When the client receives a cookie in the `Set-Cookie` header, the client stores 
 Set-Cookie: sessionId=31d4d96e407aad42
 Set-Cookie: userType=guest
 
-// User Agent -> Server 
+// Client -> Server 
 Cookie:     sessionId=31d4d96e407aad42 
 Cookie:     userType=guest
 ```
