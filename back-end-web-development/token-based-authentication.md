@@ -169,10 +169,12 @@ Given that you have a simple express app,
       3. `generateSalt()` uses node's built-in `crypto` to generate a cryptographically strong pseudo-random string \(e.g. `b1b52e1d4494819f3433fa66554f73f1`\)
       4. `hashPassword()` uses node's built-in `crypto` to generate a cryptographically strong hash. Given the same password and same salt, this function will always return the same hash.
 
-
-
 ### Resources
 
 * [https://github.com/thoughtworks-jumpstart/express-jwt-lab](https://github.com/thoughtworks-jumpstart/express-jwt-lab)
 * [https://github.com/thoughtworks-jumpstart/how-jwt-works](https://github.com/thoughtworks-jumpstart/how-jwt-works)
+
+### Recomended reading
+
+* [Session-less authentication with jwt and passport](https://blog.usejournal.com/sessionless-authentication-withe-jwts-with-node-express-passport-js-69b059e4b22c)
 

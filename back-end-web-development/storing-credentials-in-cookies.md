@@ -2,7 +2,7 @@
 
 Now that you've learned how to generate JWTs and use JWTs to authenticate requests on the server-side, let's learn how to securely store the JWTs on the client-side using cookies!
 
-\(Note: Despite what 3/4 of the internet is saying, we are **not** going to store credentials and secrets in `sessionStorage` or  `localStorage`. While doing that would be convenient, our users' credentials would be [leaked](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage) in the event of an XSS attack.\)
+\(Note: Despite what 3/4 of the internet is saying, we are **not** going to store credentials and secrets in `sessionStorage` or `localStorage`. While doing that would be convenient, our users' credentials would be [leaked](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage) in the event of an XSS attack.\)
 
 Before we dive into implementation details, let's understand some fundamental concepts.
 
@@ -15,10 +15,10 @@ A cookie is a string beginning with a name-value pair, followed by zero or more 
 ```text
 Example:
 
-Set-Cookie: sessionId=31d4d96e407aad42; Path=/; Domain=abc.com 
+Set-Cookie: sessionId=31d4d96e407aad42; Path=/; Domain=abc.com
 ```
 
-When the client receives a cookie in the `Set-Cookie` header, the client stores the cookie together with its attributes. Subsequently, when the client makes a HTTP request, the client includes the applicable, non-expired cookies in the `Cookie` header. 
+When the client receives a cookie in the `Set-Cookie` header, the client stores the cookie together with its attributes. Subsequently, when the client makes a HTTP request, the client includes the applicable, non-expired cookies in the `Cookie` header.
 
 ```text
 // Server -> Client
@@ -78,7 +78,7 @@ router.post("/signin", async (req, res) => {
   if (user.validatePassword(password)) {
     const userId = { id: user.id };
     const token = jwt.sign(userId, jwtOptions.secretOrKey);
-    
+
     // send token via res.cookie()
     res.cookie("jwt", token, {
       httpOnly: true
@@ -126,7 +126,6 @@ var corsOptions = {
 
 const app = express();
 app.use(cors(corsOptions));
-
 ```
 
 ### Client-side: how to include cookies in fetch\(\) requests
@@ -153,7 +152,7 @@ test("POST /secret returns a success response", async () => {
 
   // Create an `agent` instead of using `request(app)` directly
   const agent = request.agent(app)
-  
+
   // Use the agent to sign up
   await agent
     .post("/users/signup")
@@ -164,13 +163,13 @@ test("POST /secret returns a success response", async () => {
   await agent
     .post("/users/signin")
     .send(user)
-  
+
   // Use the agent to request the protected route - this 
   // will include the cookie from the previous response
   const response = await agent
     .post("/secret")
     .send({ data: 'some data' });
-  
+
   expect(response.status).toBe(201);
 });
 ```
@@ -181,3 +180,4 @@ test("POST /secret returns a success response", async () => {
 * [cookies in detail \(long and seemingly hard to read, but very clear explanation of cookies\)](https://tools.ietf.org/html/rfc6265#section-3)
 * [how to extract jwt from cookies](https://github.com/themikenicholson/passport-jwt)
 * [how to tell fetch to include credentials in cookies \(search for: credentials: ‘include’\)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch%20)
+

@@ -5,7 +5,7 @@ The route handler usually needs to call a method on the response object to send 
 Here are a few common ways to send back responses:
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | res.status\(yourResponseStatusCode\) | Send HTTP status response code \(e.g. 200, 404, etc\) |
 | res.json\(yourResponse\) | Send a JSON response. |
 | res.send\(yourResponse\) | Send a response of various types. |
@@ -13,7 +13,7 @@ Here are a few common ways to send back responses:
 Here are some other ways to send back responses:
 
 | Method | Description |
-| --- | --- |
+| :--- | :--- |
 | res.write\(\) | Write some data to the response buffer, but don't send it until you call res.end\(\) |
 | res.end\(\) | End the response process. |
 | res.redirect\(\) | Redirect a request. |

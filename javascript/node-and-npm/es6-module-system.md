@@ -7,7 +7,7 @@ The javascript module system is essentially in helping us build javascript progr
 ES6 uses a different syntax for exporting and importing modules, as compared to the CommonJS system \(Node uses two core modules for managing module dependencies: `module` and `require`\)
 
 |  | CommonJS | ES6 |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | exporting modules \(in `./someFile.js`\) | `module.exports = myFunction` | `export default myFunction` |
 | importing modules \(in `./anotherFile.js`\) | `var myFunction = require('./someFile')` | `import myFunction from "./someFile";` |
 
