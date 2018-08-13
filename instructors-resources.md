@@ -8,6 +8,7 @@
   * [Make learning whole](http://www.fast.ai/2016/10/08/teaching-philosophy/)
   * Pragmatic Thinking and Learning - Andrew Hunt
   * [Recommended reading for TWU coaches \(internal document\)](https://docs.google.com/document/d/11p02yq7T01QiyaTxg4S95JKTdw_dl4QpWyrkH1p4VUI/edit#)
+  * [The curse of knowledge](https://en.m.wikipedia.org/wiki/Curse_of_knowledge)
 
 ## Tips
 

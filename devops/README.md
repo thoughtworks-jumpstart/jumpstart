@@ -43,7 +43,7 @@ Here are some key DevOps principles:
     * Overly tight architecture
 * Eliminate hardships and waste in the value stream, such as:
   * Partially done work
-  * Extra processes \(\)
+  * Extra processes \(e.g. unnecessary manual approvals\)
   * Extra features \(e.g., “gold plating”\)
   * Task switching
   * Waiting
