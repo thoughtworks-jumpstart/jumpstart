@@ -46,11 +46,24 @@ The key thing to remember is that each data structure has it own advantages and 
 
 ![stack](../.gitbook/assets/stack.jpg)
 
+A Stack class needs to support these methods: `.push(someItem)` , `.pop()` , `isEmpty()`, `size()`
+
+Practice exercises:
+
+* Model a Stack
+* Use the Stack object to implement a new function: `reverseString(inputString)`
+
 ### Queue
 
 > A Queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal operations are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the Queue a First-In-First-Out \(FIFO\) data structure. In a FIFO data structure, the first element added to the Queue will be the first one to be removed.
 
 ![queue](../.gitbook/assets/queue%20%281%29.jpg)
+
+A Queue class needs to support these methods: `enqueue(someItem)`, `dequeue()`, `isEmpty()`, `size()` .
+
+Practice exercises:
+
+* Model a Queue using 2 stacks
 
 ### Tree
 
