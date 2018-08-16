@@ -71,4 +71,5 @@ git log
 * [Most commonly used git tips and tricks](https://github.com/git-tips/tips)
 * [Git documentation](https://git-scm.com/docs)
 * [Git katas](http://blog.schauderhaft.de/gitkata/)
+* [Visualising Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/)
 
