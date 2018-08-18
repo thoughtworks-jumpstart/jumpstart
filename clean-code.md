@@ -83,6 +83,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
   * [SOLID OO Design in Javascript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 * [Kent Beck's 4 rules of simple design](https://martinfowler.com/bliki/BeckDesignRules.html)
 * [Clean code in Javascript](https://github.com/ryanmcdermott/clean-code-javascript/)
+* [How to write unmaintainable codes](https://github.com/Droogans/unmaintainable-code)
 * [Clean Code Cheat Sheet](https://www.planetgeek.ch/2014/11/18/clean-code-cheat-sheet-v-2-4/)
 * [Object calisthenics](http://aimforsimplicity.com/post/objectcalisthenicsgameoflifekata/)
 * [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
