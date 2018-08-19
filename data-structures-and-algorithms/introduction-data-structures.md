@@ -109,6 +109,11 @@ This data structure can be used in [version control systems like Git](http://eri
 
 ## Resources
 
+### More Fancy Data Structures
+
+* [Trie](http://blog.xebia.in/index.php/2015/09/28/applications-of-trie-data-structure/)
+* [Bloom Filter](https://llimllib.github.io/bloomfilter-tutorial/)
+
 ### Sample Implementations
 
 * [Data Structures with Javascript](https://www.codeproject.com/Articles/669131/Data-Structures-with-JavaScript)
