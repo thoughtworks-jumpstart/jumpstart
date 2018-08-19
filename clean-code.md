@@ -39,7 +39,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
   * Keep it stupid, simple \(KISS\) 
     * [YAGNI](https://martinfowler.com/bliki/Yagni.html) \(You are not going to need it\)
     * [Do the simplest thing that could possibly work](http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork)
-    * Avoid [Accential Complexity](http://wiki.c2.com/?AccidentalComplexity)
+    * Avoid [Accidental Complexity](http://wiki.c2.com/?AccidentalComplexity)
     * Avoid [Big Design Up Front](http://wiki.c2.com/?BigDesignUpFront)
     * "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
 * [The Boy Scout Rule](http://programmer.97things.oreilly.com/wiki/index.php/The_Boy_Scout_Rule)
