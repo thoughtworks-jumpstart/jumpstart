@@ -126,6 +126,9 @@ Note how we specify **what** data we need, without worrying about **how** that d
 * Pure &gt; Side Effects
   * Calling the same function with same input, you always get back the same result
   * This leads to [referential transparency](https://www.sitepoint.com/what-is-referential-transparency/)
+* Composition &gt; Inheritance
+  * In order to reuse a piece of functionality, you should prefer to define it as a function ans reuse it.
+  * Build a complex system by composing more basic components/functions.
 * Immutability/Stateless &gt; State Mutation
   * Objects with mutable state are harder to analyze when they don't behave well
   * Prefer [Immutable Objects](https://facebook.github.io/immutable-js/)
@@ -229,18 +232,20 @@ You can find some [help](https://codeburst.io/learn-and-understand-recursion-in-
 
 * [What is functional programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
 * [List processing with map, filter and reduce](https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce)
-* [Functional programming in ES6 \(youtube video\)](https://www.youtube.com/watch?v=HvMemAgOw6I)
+* [Video: Functional programming in ES6](https://www.youtube.com/watch?v=HvMemAgOw6I)
 * [Immutable Javascript using ES6 & Beyond](https://wecodetheweb.com/2016/02/12/immutable-javascript-using-es6-and-beyond/)
 * [Don't be afraid of functional programming](https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/)
 * [Functional Programming with Javascript](https://stephen-young.me.uk/2013/01/20/functional-programming-with-javascript.html)
+* [Video: Functional Programming in Javascript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+* [Practical Functional Programming](https://www.youtube.com/watch?v=I_uIXgSmkDo&index=7&t=0s&list=WL)
+* [Functional Light Javascript](https://github.com/getify/Functional-Light-JS)
+* [Professor Frisby's Mostly Adequate Guide to Functional Programming](https://drboolean.gitbooks.io/mostly-adequate-guide/content/)
 
 ## References
 
 * [First Class Function](https://en.wikipedia.org/wiki/First-class_function)
 * [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
 * [Functional programming jargons explained](https://functional.works-hub.com/learn/Functional-Programming-Jargon)
-* [Professor Frisby's Mostly Adequate Guide to Functional Programming](https://drboolean.gitbooks.io/mostly-adequate-guide/content/)
-* [Functional Light Javascript](https://github.com/getify/Functional-Light-JS)
 
 ## Assignment
 
