@@ -132,9 +132,9 @@ Note how we specify **what** data we need, without worrying about **how** that d
 * Immutability/Stateless &gt; State Mutation
   * Objects with mutable state are harder to analyze when they don't behave well
   * Prefer [Immutable Objects](https://facebook.github.io/immutable-js/)
-* Recursion &gt; for/while loops 
-  * again, for/while loops are more imperative style
-    * But watch out for [stack overflow problem](https://en.wikipedia.org/wiki/Stack_overflow)
+* Recursion &gt; Loops/Iteration 
+  * for/while loops are more imperative style
+  * Warning: watch out for [stack overflow problem](https://en.wikipedia.org/wiki/Stack_overflow) because there is a [max limit on stack size in Javascript engines](http://2ality.com/2014/04/call-stack-size.html). When stack overflow happens, either you need to rewrite your function as [tail-recursive](http://2ality.com/2015/06/tail-call-optimization.html) or fall back to iteration.
 * Treat functions as first class objects \(i.e. functions are just like everyone else - numbers, strings, objects, booleans\). They may be stored in arrays, passed around as function parameters and assigned to variables\)
   * Higher order functions \(i.e. functions that return/take in functions\)
 
