@@ -66,15 +66,20 @@ The idea of writing clean code is to ensure that the software is: readable, main
 * **Seiketsu**, or standardization: The group agrees about how to keep the workplace clean. Do you think this book says anything about having a consistent coding style and set of practices within the group? Where do those standards come from? Read on.
 * **Shutsuke**, or discipline \(self-discipline\). This means having the discipline to follow the practices and to frequently reflect on one’s work and be willing to change.
 
-## Refactoring Dojo
+## Tips on Doing Refactoring Safely
 
-[Refactoring a JavaScript video store](https://github.com/thoughtworks-jumpstart/videostore-refactoring-exercise)
+* **Make sure you have automated tests in place to cover the system you are going to change.** If there is no test cases yet, you need to write [Characterization Test](https://michaelfeathers.silvrback.com/characterization-testing) or generate [Golden Master Test](http://blog.thecodewhisperer.com/permalink/surviving-legacy-code-with-golden-master-and-sampling) first.
+* **Don't change system behavior (e.g. fixing bugs, adding new features, etc) during refactoring**
+* **Make small changes, step by step**. If you need to do a big refactor it is better to do multiple small changes
+* **Commit frequently**. You can make a commit after each small change, when all the tests are still passing.
+* **Track the issues in a todo list**. If you notice some issues and you cannot work on it right away, you need to track it in the issue system.
+* **Add unit tests along the way**. If you only have Golden Master Test and no Unit Tests, you should start adding Unit Tests while you do refactoring.
 
-## Learning checklist Resources
+## Learning Resources
 
 * Code Smells
   * [List of code smells](https://refactoring.guru/refactoring/smells)
-    * [Another list of code smells](http://wiki.c2.com/?CodeSmell)
+  * [Another list of code smells](http://wiki.c2.com/?CodeSmell)
 * Refactoring Techniques
   * [Martin Fowler's refactoring techniques catalogue](https://www.refactoring.com/catalog/index.html)
   * [List of refactoring techniques](https://sourcemaking.com/refactoring)
@@ -90,7 +95,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
 * [Clean Coders](https://cleancoders.com/)
 * [The worst mistake of computer science](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
 
-## Assignment
+## Labs
 
 ### 1. Refactoring Kata
 
@@ -119,11 +124,25 @@ Steps:
 
 ### 2. Refactoring video store
 
-For the [Refactoring a JavaScript video store](https://github.com/thoughtworks-jumpstart/videostore-refactoring-exercise) and refactor the codes by applying the principals learned in this session.
+Fork the [Refactoring a JavaScript video store](https://github.com/thoughtworks-jumpstart/videostore-refactoring-exercise) and refactor the codes by applying the principals learned in this session.
+
+### 3. Refactoring the-ugly-trivia-game
+
+Fork the [Refactoring the ugly trivia game](https://github.com/thoughtworks-jumpstart/trivia_refactoring_kata) and refactoring the codes.
+
+Note that in the repository there is a `golden_master` folder which contains Golden Master Test for the game. 
+
+Golden Master Test (a.k.a Characterization Test) is a technique used to record the existing behavior of the system under test and make sure your modifications do not cause behavior changes.
+
+For more information on this technique, check out these two blog posts:
+
+* [Surviving Legacy Code with Golden Master and Sampling](http://blog.thecodewhisperer.com/permalink/surviving-legacy-code-with-golden-master-and-sampling)
+* [Legacy Coderetreat: Part 3 – Golden Master](http://blog.adrianbolboaca.ro/2014/05/golden-master/)
 
 ### 3. Code Retreat
 
 * List of Problems to Choose From
-  * Mars Rover
-    * [Bowling Game](http://codingdojo.org/kata/Bowling/)
+  * [Mars Rover](http://kata-log.rocks/mars-rover-kata)
+  * [Bowling Game](http://codingdojo.org/kata/Bowling/)
+  * [Game of Life](https://codingdojo.org/kata/GameOfLife/)
 
