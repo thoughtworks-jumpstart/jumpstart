@@ -20,29 +20,6 @@
 - Firebase
 
 ### Relational Databases
-
-- Common Brands
-  - SQL Server
-  - Oracle
-  - MySQL 
-  - PostgresSQL
-
-- Concepts
-  - Table/Row/Column
-  - Schema
-  - Key
-  - Selection
-  - Index
-  - Join
-  - View
-  - Transactions
-    - ACID property
-  - Lock  
-
-- SQL 
-  - tutorial: http://www.sqlcourse.com/
-
-- Schema Migration
   
 ### Firebase
 

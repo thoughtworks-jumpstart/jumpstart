@@ -125,6 +125,7 @@
     * [Integration Testing Lab](back-end-web-development/testing-web-services/integration-testing-lab.md)
   * [Production Quality Web Service](back-end-web-development/production-quality-web-service.md)
   * [Web Service Security](back-end-web-development/web-service-security.md)
+  * [Introduction to Relational Database](02_web_development_back_end/introduction_to_relational_database.md)
 * [Testing and TDD](testing-and-tdd/README.md)
   * [Test Pyramid](testing-and-tdd/test-pyramid.md)
   * [TDD with Jest](testing-and-tdd/tdd-with-jest/README.md)
