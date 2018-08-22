@@ -6,7 +6,6 @@
   * [Mac](machine-setup/mac.md)
   * [Windows](machine-setup/windows.md)
 * [How to learn effectively](how-to-learn-effectively.md)
-* [Instructor's resources](instructors-resources.md)
 * [Unix commandline](unix-commandline/README.md)
   * [Basic commandline](unix-commandline/basic-commandline.md)
   * [Shell scripting](unix-commandline/shell-scripting.md)
