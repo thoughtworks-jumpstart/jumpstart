@@ -32,6 +32,7 @@ Warning: you can be flooded by information if you subscribe to too many news sou
 * [Awesome Talks](https://awesometalks.party/)
 * [More Awesome Talks](https://github.com/JanVanRyswyck/awesome-talks)
 * [Martin Fowler](https://martinfowler.com/bliki/)
+* [Listening to TED Talks](https://www.ted.com/)
 
 ### Follow what senior developers do
 
@@ -77,18 +78,20 @@ Warning: you can be flooded by information if you subscribe to too many news sou
 
 ### If you like reading books
 
-* You can find [the list of highly recommended books](http://www.communitypicks.com/)
+* Here is [a list of highly recommended books](http://www.communitypicks.com/)
 
 ### If you join a company that does not give you proper training, you can do it yourself
 
 * [The Orione Team Learning Path](https://github.com/xpeppers/starway-to-orione)
 * [The Novoda Craft University](https://blog.novoda.com/ncu-part-2-the-teaching/)
 
-### Learn Productivity Tricks
+### Learn tools to make you more productive
 
 * [Vim](https://vimawesome.com/)
 * [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 * [Inbox Zero](https://flow-e.com/inbox-zero/gmail/)
+* [The Seven Habits of Highly Effective People](https://www.franklincovey.com/the-7-habits.html)
+* [Getting Things Done](https://gettingthingsdone.com/)
 
 ### Build up your soft skills too
 
