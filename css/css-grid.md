@@ -111,6 +111,7 @@ There's a lot more to CSS Grid. We have only covered the bare essentials to get 
 
 * [Recreating YouTube Layout with CSS grid and flexbox](https://codepen.io/GeorgePark/pen/oEwYYy)
 * [CSS Grid by Example](https://gridbyexample.com/examples/)
+* [CSS Grid Cheat Sheet](http://grid.malven.co/)
 
 ## Assignment
 
