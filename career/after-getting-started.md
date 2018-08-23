@@ -1,4 +1,4 @@
-# After getting started
+# Life after JumpStart
 
 You're nearing the end of the course, but you're just getting started! This is an exciting journey of continuous learning, challenge and growth.
 
