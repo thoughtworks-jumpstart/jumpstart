@@ -200,6 +200,8 @@ If you prefer to work with GUI tools, you can try out the following ones:
 
 Here is a [tutorial](http://www.postgresqltutorial.com/) for learning PostgreSQL. It's written for windows users, but the same commands (like `psql`) is available in other platforms too.
 
+You can find another [guide for beginner here](http://postgresguide.com/)
+
 ## Object Relational Mapping (ORM) Tool: Sequelize
 
 If you are tired of using SQL to interact with your database, you can also use [Object Relational Mapping(ORM)](https://en.wikipedia.org/wiki/Object-relational_mapping) tools, which helps to convert your information from the database to your JavaScript application without performing SQL statements yourself.
