@@ -32,6 +32,10 @@ git clone <repo-url>
   * `git reset <path/to/file>` - Remove file from staging    
 * `git commit` - Commit the file to git
 
+You need to write **good** commit messages. What is a good commit message then? You can follow the tip below:
+
+![image](../images/git_commit_message.png)
+
 ### Pushing local commits to the remote repository
 
 ```text
