@@ -75,7 +75,7 @@ Warning: you can be flooded by information if you subscribe to too many news sou
 * There are tons of good [online courses](https://www.class-central.com/) such as [Harvard CS50X](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x)
 * You can also [teach yourself CS](https://teachyourselfcs.com/) but I would recommend you to find some friends and do it together.
 
-### If you like to read books
+### If you like reading books
 
 * You can find [the list of highly recommended books](http://www.communitypicks.com/)
 
