@@ -38,10 +38,12 @@ Fundamentally, the goal of object-oriented design patterns are aimed at creating
 
 ### Recommended reading
 
-* [https://refactoring.guru/design-patterns/catalog](https://refactoring.guru/design-patterns/catalog)
+* [Design Patterns Catalog](https://refactoring.guru/design-patterns/catalog)
 * [Head first design patterns](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)
-* [https://github.com/fbeline/Design-Patterns-JS](https://github.com/fbeline/Design-Patterns-JS)
-* [http://www.dofactory.com/javascript/design-patterns](http://www.dofactory.com/javascript/design-patterns)
+* [GoF Design Patterns Implemented in Javascript](https://github.com/fbeline/Design-Patterns-JS)
+* [Design Patterns in ES6](http://loredanacirstea.github.io/es6-design-patterns/)
+* [Design Patterns with Examples in Javascript](http://www.dofactory.com/javascript/design-patterns)
+* [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
 
 ## Assignment
 
