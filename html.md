@@ -129,9 +129,11 @@ code .
 
 ## Resources
 
+### HTML Tag Reference
+
 * [MDN Docs on HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* [A Visual Guide to HTML tags](https://htmlreference.io/)
 
 ## Assignment
 
 * Create a github page with HTML and CSS
-

@@ -72,6 +72,7 @@ git log
 * [Git - the simple guide](http://rogerdudler.github.io/git-guide/)
 * [Git Cheat Sheet](https://gist.github.com/akras14/3d242d80af8388ebca60)
 * [Another git Cheat Sheet](https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/)
+* [Git Tutorial: 10 Common Git Problems and How to Fix Them](https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
 * [Most commonly used git tips and tricks](https://github.com/git-tips/tips)
 * [Git documentation](https://git-scm.com/docs)
 * [Git katas](http://blog.schauderhaft.de/gitkata/)

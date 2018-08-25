@@ -23,8 +23,8 @@ Repo URL: [https://github.com/thoughtworks-jumpstart/intro-to-css](https://githu
 * Beginner materials:
   * [CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
   * [CSS Fundamental](http://interactivepython.org/runestone/static/webfundamentals/index.html#cascading-style-sheets)
+  * [The CSS Guide](https://flaviocopes.com/css/)
   * [CSS Tricks](https://css-tricks.com/guides/beginner/)
-  * [CSS Reference](https://tympanus.net/codrops/css_reference/)
 * Intermediate materials:
   * [A to Z CSS](https://www.sitepoint.com/tag/atoz-css/)
   * [Learn CSS Layout](http://learnlayout.com/)
@@ -41,6 +41,9 @@ Repo URL: [https://github.com/thoughtworks-jumpstart/intro-to-css](https://githu
 * Useful Tools
   * [Can I Use](https://caniuse.com/)
   * [CSS Specificity calculator](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+* CSS Property Reference
+  * [CSS Reference](https://tympanus.net/codrops/css_reference/)
+  * [A Visual Guide to CSS](https://cssreference.io/)
 
 ## Labs
 

@@ -228,5 +228,6 @@ More Tutorials on Sequelize
 ## Resources
 
 - [Reference on PostgreSQL](https://goalkicker.com/PostgreSQLBook/)
+- [SQL Learning Track on Bento.io](https://bento.io/topic/sql)
 
 ## Assignment
