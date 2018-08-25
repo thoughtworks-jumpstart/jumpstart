@@ -300,6 +300,7 @@ document.body.appendChild(img)
 ### References
 
 * [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+* [Document Object Model](https://flaviocopes.com/dom/)
 * [DOM manipulation tutorial](https://www.digitalocean.com/community/tutorials/how-to-make-changes-to-the-dom)
 * [You might not need jQuery](http://youmightnotneedjquery.com/)
 
