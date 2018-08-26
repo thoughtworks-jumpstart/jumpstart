@@ -54,34 +54,40 @@ h1 {
     font-family: Helvetica Neue;
 } 
 
-/* select all HTML elements with class='chicken' */
-.chicken {
-    background: red;
+/* select all HTML elements with class='fish' */
+.fish {
+    background: green;
 }
 
-/* select all HTML elements with id='fish' */
-#fish {
+/* select all HTML elements with id='night' */
+#night {
     background: black;
 }
 
-/* select all <p> elements with class='chicken' */
-p.chicken {
+/* select all <p> elements with class='fish' */
+p.fish {
     background: blue;
 }
 
-/* select all <p> elements with class='chicken' and id='fish'*/
-p.chicken#fish {
-    background: blue;
+/* select all <p> elements with class='fish' and id='salmon'*/
+p.fish#salmon {
+    background: pink;
 }
 
 /* applying css to multiple HTML elements at once */
-h1, h2, p.chicken {
+h1, h2, p.fish {
     text-align: center;
     color: red;
 }
 
-/* select all <p> elements that are nested within div.chicken */
-div.chicken p {
+/* select all <p> elements that are nested within a div with class='fish' */
+div.fish p {
+    text-align: center;
+    color: red;
+}
+
+/* select all <p> elements that are immediate child of a div with class='fish' */
+div.fish > p {
     text-align: center;
     color: red;
 }
