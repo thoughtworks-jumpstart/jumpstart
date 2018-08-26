@@ -43,7 +43,7 @@ Here are some CSS properties that are not inherited by default:
 - border
 - border-block-start
 
-If you check the documentation of any CSS property in the [reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference), you can find out if that property can be inhertied by default.
+If you check the documentation of any CSS property in the [reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference), you can find out if that property can be inherited by default.
 
 ## What happens when some property is inherited
 
