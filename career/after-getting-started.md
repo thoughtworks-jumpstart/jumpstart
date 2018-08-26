@@ -74,6 +74,7 @@ Warning: you can be flooded by information if you subscribe to too many news sou
 ### If you feel you need more training in computer science
 
 * There are tons of good [online courses](https://www.class-central.com/) such as [Harvard CS50X](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x)
+* You can also check out these [awesome courses](https://github.com/prakhar1989/awesome-courses)
 * You can also [teach yourself CS](https://teachyourselfcs.com/) but I would recommend you to find some friends and do it together.
 
 ### If you like reading books
