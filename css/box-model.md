@@ -26,12 +26,14 @@ div {
 }
 ```
 
+To try this example, view the `box-model` folder in [intro-to-css project](https://github.com/thoughtworks-jumpstart/intro-to-css)
+
 ## Other possible values for `padding` and `margin`
 
 CSS offers multiple ways for specifying values for `padding` and `margin` \(referred below as `X`\)
 
 * `X-top/right/bottom/left` suffixes \(e.g. `margin-left: 50px`\)  \(this applies to `border` too, e.g. `border-left`\)
-* `X: topbottom leftright` \(e.g. `margin: 10px 100px`\)
+* `X: top-and-bottom left-and-right` \(e.g. `margin: 10px 100px`\)
 * `X: North East South West` \(e.g. `margin: 10px 50px 100px 200px`\)
 
   Example:
@@ -66,8 +68,6 @@ CSS offers multiple ways for specifying values for `padding` and `margin` \(refe
   * This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is really **unintuitive**, and that's why we can use the `box-sizing: border-box` css property. 
 * `border-box`: This tells the browser to account for any **border** and **padding** in the values you specify for width and height. **If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.**
 
-Try it out [here](https://codepen.io/davified/pen/bKprGY?editors=1100)!
-
 ```css
 /* index.html */
 <div class='main'>
@@ -92,4 +92,6 @@ Try it out [here](https://codepen.io/davified/pen/bKprGY?editors=1100)!
   height: 100%;
 }
 ```
+
+To try this example, view the `box-sizing` folder in [intro-to-css project](https://github.com/thoughtworks-jumpstart/intro-to-css)
 
