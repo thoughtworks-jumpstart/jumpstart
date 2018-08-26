@@ -22,6 +22,7 @@
 * [CSS](css/README.md)
   * [CSS Basics](css/css-basics.md)
   * [Specificity Rules](css/specificity-rules.md)
+  * [CSS Property Inheritance](css/css-inheritance.md)
   * [Box Model](css/box-model.md)
   * [block vs inline elements](css/block-vs-inline-elements.md)
   * [Centering elements](css/centering-elements.md)
