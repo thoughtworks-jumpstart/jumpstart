@@ -23,6 +23,7 @@
   * [CSS Basics](css/css-basics.md)
   * [Specificity Rules](css/specificity-rules.md)
   * [Box Model](css/box-model.md)
+  * [block vs inline elements](css/block-vs-inline-elements.md)
   * [Centering elements](css/centering-elements.md)
   * [CSS Grid](css/css-grid.md)
   * [float](css/float.md)
