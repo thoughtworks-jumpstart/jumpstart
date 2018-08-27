@@ -109,7 +109,7 @@ There are many many many other CSS properties. Don't try to memorize them all. A
 
 * MDN CSS Reference: [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) \(**Bookmark this!**\)
 
-
 ## How to use Chrome Devtools to edit CSS
 
 You can experiment with CSS rules easily with Chrome Devtools. More materials on Chrome Devtools can be found under the [developer tools section](../developer-tools/chrome-devtools.md)
+

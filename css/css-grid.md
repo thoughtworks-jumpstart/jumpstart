@@ -97,6 +97,7 @@ There's a lot more to CSS Grid. We have only covered the bare essentials to get 
 
 * [MDN docs on grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout)
 * [Great explanation on CSS Grid](http://varun.ca/css-grid/)
+* [Complete guide to CSS Grid](https://cssgrid.cc/)
 * [CSS Grid starter layouts](https://css-tricks.com/snippets/css/css-grid-starter-layouts/)
 * [Mozilla CSS Grid Tutorial](https://mozilladevelopers.github.io/playground/css-grid)
 * [MDN CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)

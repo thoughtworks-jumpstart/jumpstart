@@ -1,21 +1,21 @@
-# When multiple CSS rules are applicable for a given element
+# Specificity Rules
 
 Two or more competing rules might be applicable to a given element in one HTML page. And the rules may define different property values for the same element. In such cases, which should be applied?
 
 CSS standard has defined three ways to resolve conflicts.
 
-- Specificity rules
-- Importance hint
-- The order of rules when they are loaded by browser
+* Specificity rules
+* Importance hint
+* The order of rules when they are loaded by browser
 
 ## Specificity Rules
 
 All css selectors are assigned a weight, and the heaviest selector takes precedence when conflicting CSS rules exist.
 
-- Inline styles are worth 1,000 points;
-- IDs are worth 100 points;
-- classes are worth 10 points;
-- elements are worth 1 point each. 
+* Inline styles are worth 1,000 points;
+* IDs are worth 100 points;
+* classes are worth 10 points;
+* elements are worth 1 point each. 
 
 For example:
 
@@ -53,7 +53,7 @@ p {
 }
 ```
 
-## The order of rules (as when they are loaded by browser) also matters
+## The order of rules \(as when they are loaded by browser\) also matters
 
 If a rule is defined after one with same specificity, the second rule wins:
 
@@ -71,8 +71,9 @@ p {
 
 The rule that wins is `color: white`.
 
-In general, the browser loads rules one by one, and the rules loaded later takes precedence over the rules loaded earlier (when they have the same specificity)
+In general, the browser loads rules one by one, and the rules loaded later takes precedence over the rules loaded earlier \(when they have the same specificity\)
 
 ## Resources
 
-- Specificity score calculator: [https://specificity.keegan.st/](https://specificity.keegan.st/)
+* Specificity score calculator: [https://specificity.keegan.st/](https://specificity.keegan.st/)
+

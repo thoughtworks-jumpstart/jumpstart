@@ -19,4 +19,5 @@ We are a community of passionate individuals whose purpose is to revolutionize s
 
 ## Copyright of This Material
 
-Copyright (c) 2018 ThoughtWorks; for individual use for training purposes and not to be distributed or sublicensed without further authorisation by ThoughtWorks.
+Copyright \(c\) 2018 ThoughtWorks; for individual use for training purposes and not to be distributed or sublicensed without further authorisation by ThoughtWorks.
+

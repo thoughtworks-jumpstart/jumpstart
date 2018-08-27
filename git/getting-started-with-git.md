@@ -34,7 +34,7 @@ git clone <repo-url>
 
 You need to write **good** commit messages. What is a good commit message then? You can follow the tip below:
 
-![image](../images/git_commit_message.png)
+![image](../.gitbook/assets/git_commit_message.png)
 
 ### Pushing local commits to the remote repository
 

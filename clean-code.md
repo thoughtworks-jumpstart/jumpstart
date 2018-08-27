@@ -69,7 +69,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
 ## Tips on Doing Refactoring Safely
 
 * **Make sure you have automated tests in place to cover the system you are going to change.** If there is no test cases yet, you need to write [Characterization Test](https://michaelfeathers.silvrback.com/characterization-testing) or generate [Golden Master Test](http://blog.thecodewhisperer.com/permalink/surviving-legacy-code-with-golden-master-and-sampling) first.
-* **Don't change system behavior (e.g. fixing bugs, adding new features, etc) during refactoring**
+* **Don't change system behavior \(e.g. fixing bugs, adding new features, etc\) during refactoring**
 * **Make small changes, step by step**. If you need to do a big refactor it is better to do multiple small changes
 * **Commit frequently**. You can make a commit after each small change, when all the tests are still passing.
 * **Make good use of IDE support on refactoring**. For VS Code, there are some good plugins like [Javascript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster) and [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround) which helps you to automate some of the code changes.
@@ -131,9 +131,9 @@ Fork the [Refactoring a JavaScript video store](https://github.com/thoughtworks-
 
 Fork the [Refactoring the ugly trivia game](https://github.com/thoughtworks-jumpstart/trivia_refactoring_kata) and refactoring the codes.
 
-Note that in the repository there is a `golden_master` folder which contains Golden Master Test for the game. 
+Note that in the repository there is a `golden_master` folder which contains Golden Master Test for the game.
 
-Golden Master Test (a.k.a Characterization Test) is a technique used to record the existing behavior of the system under test and make sure your modifications do not cause behavior changes.
+Golden Master Test \(a.k.a Characterization Test\) is a technique used to record the existing behavior of the system under test and make sure your modifications do not cause behavior changes.
 
 For more information on this technique, check out these two blog posts:
 

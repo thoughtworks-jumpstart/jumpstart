@@ -1,4 +1,4 @@
-# `block` vs `inline` elements
+# block vs inline elements
 
 All HTML elements can have a css property of `display: block | inline | inline-block`:
 
@@ -41,3 +41,4 @@ div {
 ```
 
 You can also test this out using the `inline-block-elements.html` in the [intro-to-css project](https://github.com/thoughtworks-jumpstart/intro-to-css)
+
