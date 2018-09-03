@@ -75,6 +75,6 @@ git log
 * [Git Tutorial: 10 Common Git Problems and How to Fix Them](https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
 * [Most commonly used git tips and tricks](https://github.com/git-tips/tips)
 * [Git documentation](https://git-scm.com/docs)
-* [Git katas](http://blog.schauderhaft.de/gitkata/)
-* [Visualising Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/)
+* [Git katas](https://github.com/praqma-training/git-katas/blob/master/Overview.md)
+* [Visualizing Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/)
 
