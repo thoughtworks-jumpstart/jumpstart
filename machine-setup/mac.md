@@ -93,6 +93,21 @@ curl -L http://install.ohmyz.sh | sh
 
 Now, restart Terminal, and you should see a new and more colorful command prompt.
 
+### **Optional plugins**
+
+Install zsh-autosuggestions for better productivity when using command line
+
+* **zsh-autosuggestions**
+
+**Steps**
+
+1. Clone this repository into `~/.oh-my-zsh/plugins`
+2. `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions`
+3. Add the plugin to the list of plugins for Oh My Zsh to load\(inside ~/.zshrc\):
+4. `plugins=(zsh-autosuggestions)`
+5.  Start a new terminal session by typing:
+6.  `source ~/.zshrc`
+
 ## Verify installation for everything
 
 ```text
