@@ -1,38 +1,29 @@
 # Centering elements
 
-Centering elements horizontally or vertically in CSS is notoriously unstraightforward. Here's a non-exhaustive list of recipes for centering HTML elements
+Centering elements horizontally or vertically in CSS is notoriously unstraightforward. Here is a simple example on how to center text horizontally and vertically in a box.
 
-Assuming you have a block HTML element which you want to center:
+HTML:
 
 ```markup
-<div>hello world</div>
+<div class="parent">
+  <div class="child">hello world</div>
+</div>
 ```
+
+CSS:
 
 ```css
-/* HORIZONTAL CENTERING */
-/* centering text*/
-div {
-    text-align: center
+.parent {
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: red;
 }
 
-/* centering block elements horizontally */
-div {
-    max-width: 600px; /* some arbitrary width */
-    margin: 0 auto;
-    background: red; /* let's give it an obvious colour so we can observe the effects of our css styling*/
+.child {
+  text-align: center;
+  line-height: 100px; /* Note this needs to be set same as the height of parent */
 }
-
-/* VERTICAL CENTERING */
-
-div {
-    /* for vertical centering */
-    vertical-align: middle;    
-  line-height: 500px;          /* the same as the parent div's height */
-
-    /* for horizontal centering */
-  text-align: center;          
-}
-
-/* for more recipes on vertical centering, refer to : http://vanseodesign.com/css/vertical-centering/ */
 ```
 
+For more recipes on vertical centering, refer to [this tutorial](http://vanseodesign.com/css/vertical-centering/)
