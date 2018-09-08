@@ -17,23 +17,25 @@ Ingredients of responsive design
     * `@media (min-width: 300px) and (max-width: 12450px) and (orientation: landscape) { ... }`
 * thinking in containers \(don't micromanage every single html element!\)
 * mobile-first approach
-* [Code-along template](https://codepen.io/davified/pen/PEMwOz)
 
-Example of a media query:
+## Example
+
+Let's look at an example where the media query helps to change the layout of a website when browser window size changes.
+
+To start with, here is [the template](https://codepen.io/gordonsong/pen/EebMwZ)
+
+Now let's apply the media query and re-size the browser window:
 
 ```css
-/* no media query */
-body {
-  background-color: lightblue;
-}
-
-/* media query */
-@media only screen and (orientation: landscape) {
-  body {
-    background-color: lightblue;
+@media all and (max-width: 400px) {
+  .sidebar-left, .sidebar-right, .article {
+    grid-column: 1 / 4;
+    background: gold
   }
 }
 ```
+
+What did you observe when the windows's width is less than 400 pixels?
 
 ## Resources
 
