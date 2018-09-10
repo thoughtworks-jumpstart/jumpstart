@@ -65,6 +65,7 @@
     * [Comparing 3 approaches](javascript/asynchronous-javascript/comparing-3-approaches.md)
   * [What is ES6?](javascript/what-is-es6.md)
 * [Front-end web development](front-end-web-development/README.md)
+  * [How browser works](front-end-web-development/browser.md)
   * [HTML](front-end-web-development/html.md)
   * [CSS](front-end-web-development/css/README.md)
     * [CSS Basics](front-end-web-development/css/css-basics.md)
