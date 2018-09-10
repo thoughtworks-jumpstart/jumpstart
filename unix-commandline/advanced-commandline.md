@@ -1,10 +1,9 @@
-# Advanced command line
+# Advanced Unix command line skills
 
-### users and permissions
+## File/Directory Permissions
 
 <img src="../../images/unix_permissions.jpg_large">
 
-
-### Resources
+## Resources
 
 [Commandline Text Processing](https://github.com/learnbyexample/Command-line-text-processing)
