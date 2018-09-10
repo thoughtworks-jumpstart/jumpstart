@@ -2,23 +2,26 @@
 
 **C** ascading **S** tyle **S** heets \(CSS\) power the colors, fonts, layout and animations that you see in your browser. In the next few pages, we'll learn how to get good at it.
 
-## Getting started for code along
 
-* In the directory containing the `index.html` file that you created previously, create a CSS file:`touch  style.css`
-* Install VS Code Extension:
-  * Live Server \(ritwickdey.liveserver\)
-  * On the blue panel on the bottom of your screen, click on 'Go Live'
+## An overview of CSS history
 
-Repo URL: [https://github.com/thoughtworks-jumpstart/intro-to-css](https://github.com/thoughtworks-jumpstart/intro-to-css)
+If you are new to CSS, you can read the article blow to get an overview:
 
-## Resources:
-
-### Must-read:
-
-* [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 * [Modern CSS Explained For Dinosaurs](https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525)
 
-### Reference
+## CSS Tutorial
+
+We will briefly cover the most important topics in this material, however, if you have more time to go-through a tutorial that covers the topics thoroughly, I can recommend the one on Mozilla Development Network:
+
+* [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
+
+## CSS Reference
+
+Bookmark the link below, you need to refer to it frequently.
+
+* [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+## Resources:
 
 * Beginner materials:
   * [CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
@@ -57,4 +60,3 @@ Repo URL: [https://github.com/thoughtworks-jumpstart/intro-to-css](https://githu
 * [A set of simple html and css exercises](https://github.com/ashleygwilliams/introHTMLCSS)
 * [Step by step creation of a website](https://openclassrooms.com/courses/build-your-website-with-html5-and-css3/practical-exercise-step-by-step-creation-of-a-website)
 * Play with [the CSS rules to simulate instagram filters](https://github.com/picturepan2/instagram.css)
-

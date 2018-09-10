@@ -1,5 +1,14 @@
 # CSS Basics
 
+## Getting started for code along
+
+* In the directory containing the `index.html` file that you created previously, create a CSS file:`touch  style.css`
+* Install VS Code Extension:
+  * Live Server \(ritwickdey.liveserver\)
+  * On the blue panel on the bottom of your screen, click on 'Go Live'
+
+Repo URL: [https://github.com/thoughtworks-jumpstart/intro-to-css](https://github.com/thoughtworks-jumpstart/intro-to-css)
+
 ## How to link an external style sheet to a HTML file
 
 Add the following link tag to your HTML file
