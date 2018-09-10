@@ -36,6 +36,13 @@ You need to write **good** commit messages. What is a good commit message then? 
 
 ![image](../.gitbook/assets/git_commit_message.png)
 
+### Ignoring files with `.gitignore`
+
+* why do we need .gitignore
+  * how to ignore files and directories
+* how to ignore wildcards
+  * comments in .gitignore must start with \# and must start at beginning of the line
+
 ### Pushing local commits to the remote repository
 
 ```text
