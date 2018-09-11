@@ -37,8 +37,18 @@ The **command line** is a program that enables us to send commands to the comput
 * `grep`
   * Useful for search for a string within a large file: `history | grep 'mkdir'`
 * `$PATH`
+  * The shell path for a user in macOS or OSX is a set of locations in the filing system whereby the user has permissions to use certain applications, commands and programs without the need to specify the full path to that command or program in the Terminal
+  * Your shell path is a bunch of absolute paths of the filing system separated by colons :
+  * Check your `$PATH`by using command `echo $PATH`
+    * Example of a path `/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin`
+    * This is stating that you can run Unix style applications located in 5 default locations of path
+      * /usr/bin
+      * /bin
+      * /usr/sbin
+      * /sbin
+      * /usr/local/bin
   * example of how to add a directory path to $PATH: `export PATH=$PATH:/usr/local/share/google/google-cloud-sdk/bin/`
-  * for persistence, add it to `.bash_profile`, so that the export command is run everytime a shell session is started
+  * for persistence, add it to `.bash_profile` or `.zshrc` file, so that the export command is run everytime a shell session is started
 * `~/.bashrc` or `~/.zshrc`
 * Terminal shortcuts
   * Ctrl + C - terminate process
@@ -50,7 +60,7 @@ The **command line** is a program that enables us to send commands to the comput
   * up / down - scroll through previous commands
 * Distinguish between absolute and relative paths
 * RTFM \(Read the friendly manual\)
-  * `man <command>`, or 
+  * `man <command>`, or
   * `<command> --help`/`<command> -h`
   * to exit the `man` page, hit `q`
 * `which`
