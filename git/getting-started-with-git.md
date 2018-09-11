@@ -13,6 +13,29 @@ Type the following commands one by one in your terminal:
 * `git config --global rebase.autoStash true`
 * `git config --global core.editor 'code --wait'`
 
+## Code-along to understand basics of Git
+* Create a base directory on your local machine with the following:
+* Create directory `mkdir` called `myapp`
+  * `touch` two files in the directory
+    * `app.js`
+    * `index.html`
+* `git init` - Initialize folder as a git repository
+* `git add <file>` - Add selected files to staging area
+  * `git add .` - Add all files to staging area
+  * `git rm --cached <file>` - Remove selected file from staging area
+* `git status` - Check status of the working directory and staging area
+* `git commit` - Make a commit to git
+  * `git commit -m` - Make a commit with a message flag to git
+* `git log` - Check previous commits made in the repository
+* `git remote add origin` - This is to link the local repo to the remote repo with the name origin
+* `git push -u origin master` - This is to push the local repo code to the origin master branch
+* `git clone` - Clone remote repo to your local machine
+* `git pull` - Pull latest changes down to your local machine
+
+## Life cycle of file status
+
+![](../.gitbook/assets/file_status_lifecycle.png)
+
 ## Assignment: Git Basics
 
 [https://github.com/thoughtworks-jumpstart/git-basics](https://github.com/thoughtworks-jumpstart/git-basics)
@@ -29,7 +52,7 @@ git clone <repo-url>
 
 * `git status` - See status of changes and commits
 * `git add <path/to/file>` - Add a file to staging
-  * `git reset <path/to/file>` - Remove file from staging    
+  * `git reset <path/to/file>` - Remove file from staging
 * `git commit` - Commit the file to git
 
 You need to write **good** commit messages. What is a good commit message then? You can follow the tip below:
