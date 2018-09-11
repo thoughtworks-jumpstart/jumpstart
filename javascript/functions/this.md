@@ -38,7 +38,7 @@ Here are 3 typical scenarios where `this` will lose its reference:
 * when a method is assigned to a function
 * when used inside closures
 
-When this happens, there are strategies \(e.g. [bind, apply, call](https://github.com/thoughtworks-jumpstart/jumpstart/tree/e9e6f724f6a404a7ef165f66abc22b3debc74dc1/01_programming_fundamentals/javascript/es5/bind_apply_call.html)\) for binding `this` to a specific object of your choice
+When this happens, there are strategies \(e.g. [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind), [apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply), [call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) \) for binding `this` to a specific object of your choice
 
 ## Resources
 

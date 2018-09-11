@@ -103,10 +103,6 @@ I am pretty bad at this so I don't know what to put here...
 
 Bon Voyage!!!
 
-## Recommended reading/watching in this book
-
-In addition to the links that we've embedded in each chapter of this gitbook, here are some additional books/videos that we've found useful. As a rule of thumb, if you want to get good at a topic \(e.g. git\), look at the **Recommended reading** section under that topic's chapter \(see [example](https://thoughtworks-jumpstart.gitbooks.io/jumpstart/content/01_programming_fundamentals/git/basic_git_1.html)\)
-
 ### Software development
 
 * [Javascript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about Javascript - rather it's about how to navigate the road to expertise/mastery\)

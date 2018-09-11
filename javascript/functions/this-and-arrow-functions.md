@@ -16,7 +16,7 @@ Before we see examples of when we should **not** use arrow functinos, let's go t
 ### The 'this' in arrow functions is inherited from the containing scope
 
 * Arrow functions do not have their own `this` value. The value of `this` inside an arrow function is always inherited from the value of `this` in its enclosing scope.
-* This is known as **lexical scoping**, which just means that it uses the 'author-time' value of `this`, rather than a dynamically determined value of `this` during 'invoke-time' \(or runtime\). \(see [ES5 - this](https://github.com/thoughtworks-jumpstart/jumpstart/tree/cd82250b08f3e75062c5e694931d768e5801a4d7/01_programming_fundamentals/javascript/es5/this.html) for a discussion on `this`\) 
+* This is known as **lexical scoping**, which just means that it uses the 'author-time' value of `this`, rather than a dynamically determined value of `this` during 'invoke-time' \(or runtime\). 
 * This particular way of treating `this` makes arrow functions an elegant solution to problems relating to `this` becoming undefined at runtime.
 
 ```javascript

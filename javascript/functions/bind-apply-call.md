@@ -1,6 +1,6 @@
 # Bind Apply Call
 
-`.bind()`, `.apply()` and `.call()` help us fix the problems caused by `this` losing its reference \(explained [here](https://github.com/thoughtworks-jumpstart/jumpstart/tree/cd82250b08f3e75062c5e694931d768e5801a4d7/01_programming_fundamentals/javascript/es5/this.html)\) by allowing us **fix the value of** `this` in functions
+`.bind()`, `.apply()` and `.call()` help us fix the problems when `this` loses its reference due to its dynamic scoping rules. These few functions allows us to **fix the value of** `this` before those functions are invoked.
 
 ### .bind\(\)
 

@@ -2,7 +2,7 @@
 
 ## Jest Test Cases for Server Side Node Application
 
-Debugging when using the `jest` runner requires a bit more configuration. Repeat the process in the [previous chapter](https://github.com/thoughtworks-jumpstart/jumpstart/tree/cd82250b08f3e75062c5e694931d768e5801a4d7/01_programming_fundamentals/debugging/readme.html) to create a project, and place the following configuration in `launch.json`
+Debugging when using the `jest` runner requires a bit more configuration. Once you create a new project in VS Code, you need to place the following configuration in `launch.json`
 
 ```javascript
 {
