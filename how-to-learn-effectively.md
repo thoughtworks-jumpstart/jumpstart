@@ -79,6 +79,8 @@ One of the most important things we impart at JumpStart is effective learning. W
 * [Myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
 * [The genius fallacy](http://jxyzabc.blogspot.sg/2017/09/the-genius-fallacy.html)
 * [Jargon.js](http://jargon.js.org/)
+* [Javascript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about Javascript - rather it's about how to navigate the road to expertise/mastery\)
+
 
 ## Assignment
 

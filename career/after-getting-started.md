@@ -81,6 +81,9 @@ Warning: you can be flooded by information if you subscribe to too many news sou
 ### If you like reading books
 
 * Here is [a list of highly recommended books](http://www.communitypicks.com/)
+* [Pragmatic programmer](https://pragprog.com/the-pragmatic-programmer/extracts/tips)
+* Pragmatic Thinking and Learning - Andrew Hunt
+* The passionate programmer - Chad Fowler
 
 ### If you join a company that does not give you proper training, you can do it yourself
 
@@ -102,15 +105,3 @@ I am pretty bad at this so I don't know what to put here...
 ### Last but not least, it's a long journey. Take care of yourself
 
 Bon Voyage!!!
-
-### Software development
-
-* [Javascript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about Javascript - rather it's about how to navigate the road to expertise/mastery\)
-* [Pragmatic programmer](https://pragprog.com/the-pragmatic-programmer/extracts/tips)
-* Pragmatic Thinking and Learning - Andrew Hunt
-* The passionate programmer - Chad Fowler
-
-### Agile
-
-* [https://www.thoughtworks.com/agile-project-management](https://www.thoughtworks.com/agile-project-management)
-

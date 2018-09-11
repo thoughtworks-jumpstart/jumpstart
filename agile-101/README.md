@@ -75,6 +75,7 @@ Essentially, the goal of agile practices is to allow teams to:
 * [Modern Agile](https://www.youtube.com/watch?v=ChTDwUK3Fw0)
 * [https://jessefewell.com/agile-vs-agile/](https://jessefewell.com/agile-vs-agile/)
 * [Retrospectives Wiki](http://retrospectivewiki.org/index.php?title=Retrospective_Plans)
+* [Some resources on ThoughtWorks website](https://www.thoughtworks.com/agile-project-management)
 
 ## Topics to cover
 
