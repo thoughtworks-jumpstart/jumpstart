@@ -10,7 +10,7 @@ mkdir html-css-sandbox
 cd html-css-sandbox
 
 # 3. create a html file
-touch index.html                
+touch index.html
 
 # 4. open file in vs code
 code .
@@ -110,6 +110,28 @@ code .
           <input type="submit" value="Submit">
       </form>
     ```
+  * labels
+    * Add captions to our forms
+    * Labels are important for making our site accessible
+      * Someone that is visually impaired or blind and they are accessing our form trying to sign up, their screen reading software are going to look for label tags and it's going to use the labels to know what each part of the form corresponds to
+
+    ```markup
+      <form action="/sign-in-url" method="post">
+        <label>Username: <input type="text"></label>
+        <label>Password: <input type="password"></label>
+        <button>Login</button>
+      </form>
+    ```
+
+    ```markup
+      <form action="/sign-in-url" method="post">
+        <label for="username">Username: </label>
+        <input id="username" type="text">
+        <label for="password">Password: </label>
+        <input id="password" type="password">
+        <button>Login</button>
+      </form>
+    ```
 * Accessibility \(a11y\)
   * To enhance the accessibility of our HTML page, we should use the correct HTML elements for their correct purpose as much as possible.
   * HTML5 gives us **semantic tags** that have built-in keyboard accessibility — they can be tabbed between, and activated using Return/Enter.
@@ -133,6 +155,9 @@ code .
 
 * [MDN Docs on HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 * [A Visual Guide to HTML tags](https://htmlreference.io/)
+
+## Class Labs
+* [HTML Lab](https://github.com/thoughtworks-jumpstart/learn-html)
 
 ## Assignment
 
