@@ -4,7 +4,7 @@
 
 Node.js is a platform for building fast and scalable server applications using JavaScript.
 
-![What is NodeJS](https://www.safaribooksonline.com/library/view/nodejs-design-patterns/9781785885587/graphics/B05259_01_04.jpg)
+![What is NodeJS](../../.gitbook/assets/what_is_node.jpg)
 
 * libuv: the low-level I/O engine of Node.js. it encapsulate the details of different I/O APIs on various operating systems
 * V8, the JavaScript engine originally developed by Google for the Chrome browser.
