@@ -60,7 +60,9 @@ One of the most important things we impart at JumpStart is effective learning. W
     * it's better to eat one proper meal than to eat 10 of the same junk snacks
     * it's better to spend 1 hour training a routine deliberately than to spend 10 hours mindlessly whacking
 * Learn enough to be dangerous
-* Take it one step at a time \(try the improvement kata\) ![](.gitbook/assets/improvement_kata.png)
+* Take it one step at a time \(try the improvement kata\) 
+
+![imrovement kata](.gitbook/assets/improvement_kata.png)
 
   > “Writing a novel is like driving a car at night. You can see only as far as your headlights, but you can make the whole trip that way.” - E.L. Doctorow
 
