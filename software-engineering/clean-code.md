@@ -1,6 +1,6 @@
 # Clean Code
 
-![martin fowler quote](.gitbook/assets/martin_fowler_code_readability_quote.jpg)
+![martin fowler quote](../.gitbook/assets/martin_fowler_code_readability_quote.jpg)
 
 > Poorly factored code is a problem because it's hard to understand. Code that's hard to understand is hard to modify, whether to add new features or to debug - Martin Fowler
 
