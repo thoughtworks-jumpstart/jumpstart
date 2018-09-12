@@ -24,7 +24,8 @@ Code-along: [https://github.com/thoughtworks-jumpstart/fetch-react-code-along](h
 
 * [https://developers.google.com/web/fundamentals/primers/async-functions](https://developers.google.com/web/fundamentals/primers/async-functions)
 * [MDN docs on promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
-* [MDN docs on fetching data with XHR and Fetch](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)
+* [MDN docs on using fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+* [MDN tutorial on fetching data with XHR and Fetch](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data)
 
 ## Assignment
 
