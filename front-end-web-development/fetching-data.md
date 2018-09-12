@@ -7,6 +7,7 @@ Code-along: [https://github.com/thoughtworks-jumpstart/fetch-react-code-along](h
 ## Learning checklist
 
 * What `fetch` is used for
+* What is [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 * how to use `fetch()`
 * what it returns \(a promise!\)
 * what are promises
