@@ -132,6 +132,68 @@ code .
         <button>Login</button>
       </form>
     ```
+  * radio button & checkbox
+    * Radio button is usually used when there is only one choice (example: male or female)
+    * Checkbox allows users to check more than one option (example: selecting skills in a job profile page)
+
+    ```markup
+      <form>
+        <p>Choose gender: </p>
+        <label for="male">Male: </label>
+        <input name="genderChoice" id="male" type="radio" value="male">
+
+        <label for="female">Female: </label>
+        <input name="genderChoice" id="female" type="radio" value="female">
+
+        <p> Choose skills: </p>
+        <input type="checkbox" id="js" name="skills" value="javascript">
+        <label for="js">Javascript </label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS </label>
+
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML </label>
+
+        <button>Submit</button>
+      </form>
+    ```
+
+  * select tag
+    * Creates nice dropdown menu
+
+    ```markup
+      <form>
+        <p>Select birthday month: </p>
+        <select name="month">
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>Mar</option>
+          <option>Apr</option>
+          <option>May</option>
+          <option>Jun</option>
+          <option>Aug</option>
+          <option>Sep</option>
+          <option>Oct</option>
+          <option>Nov</option>
+          <option>Dec</option>
+        </select>
+
+        <button>Submit</button>
+      </form>
+    ```
+
+  * textarea tag
+    * Create inputs that are more than one line (example: input a profile bio)
+    * We can specify how big the textarea should be by using the `rows` and `cols` attributes
+
+    ```markup
+      <form>
+        <textarea name="paragraph" rows="10" cols="10"></textarea>
+        <button>Submit</button>
+      </form>
+    ```
+    
 * Accessibility \(a11y\)
   * To enhance the accessibility of our HTML page, we should use the correct HTML elements for their correct purpose as much as possible.
   * HTML5 gives us **semantic tags** that have built-in keyboard accessibility — they can be tabbed between, and activated using Return/Enter.
