@@ -1,26 +1,24 @@
 # DOM manipulation
 
-Code along template: [https://github.com/thoughtworks-jumpstart/dom-manipulation](https://github.com/thoughtworks-jumpstart/dom-manipulation)
-
-## Labs
-
-* [https://github.com/thoughtworks-jumpstart/page-styler](https://github.com/thoughtworks-jumpstart/page-styler)
-* [https://github.com/thoughtworks-jumpstart/displayer](https://github.com/thoughtworks-jumpstart/displayer)
-* [https://github.com/thoughtworks-jumpstart/dice](https://github.com/thoughtworks-jumpstart/dice)
-
 ## Learning objectives
 
-* What is the DOM?
-* Why do we need it?
-* How do we use it?
-  * How to select elements from the DOM using selectors
-  * How to manipulate elements using `.textContent` and `.classList`
-  * How to add event listeners
-  * how to trigger and respond to events
-    * `event.preventDefault()`
-  * Recipes for creating/adding/removing HTML elements using javascript
+- What is the DOM?
+- Why do we need it?
+- How do we use it?
+  - How to select elements from the DOM using selectors
+  - How to manipulate elements using `.textContent` and `.classList`
+  - How to add event listeners
+  - how to trigger and respond to events
+    - `event.preventDefault()`
+  - Recipes for creating/adding/removing HTML elements using javascript
+
+## Code along template
+
+[https://github.com/thoughtworks-jumpstart/dom-manipulation](https://github.com/thoughtworks-jumpstart/dom-manipulation)
 
 ## What is the DOM
+
+The Document Object Model \(DOM\) is a programming interface for HTML \(and XML\) documents. It represents the web page as a javascript object \(`document`\) so that javascript programs can **change the document structure, style, and content**.
 
 Imagine an HTML page with the following structure:
 
@@ -73,49 +71,75 @@ document = {
 
 Note that this is a model of the DOM, but not how the DOM is actually implemented in the browser.
 
-The Document Object Model \(DOM\) is a programming interface for HTML \(and XML\) documents. It represents the web page as a javascript object \(`document`\) so that javascript programs can **change the document structure, style, and content**.
+We can also try to visualize the DOM tree of a given HTML document using [this tool](http://bioub.github.io/d3.DOMVisualizer/).
+
+As you can see, there are different types of nodes in a DOM tree:
+
+- Element Nodes
+- Text Nodes
+
+## DOM manipulation with JavaScript
+
+In this session, we are going to learn how to manipulate a DOM object using the API it offers.
+
+To start with, let's have a glance with the APIs we need to be familiar with:
+
+- [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+  - [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+  - [querySelectorForAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+- [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+  - [parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
+  - [childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
+- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+  - [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+  - [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+  - [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+
+Some of the APIs may return multiple nodes as [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList). It's an array-like object that you can iterate through and get the nodes one-by-one.
 
 This may sound boring now, but basically all interactive webpages that you've visited \(e.g. facebook, spotify, [pac-man](https://www.google.com.sg/search?q=pacman+online&oq=pacman+online&aqs=chrome.0.0l6.2669j0j7&sourceid=chrome&ie=UTF-8)\) are possible because the DOM interface lets us manipulate the contents of a webpage without refreshing a page!
 
-## How to select elements from the DOM using selectors
-
-[Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+### How to select elements from the DOM using selectors
 
 ```markup
 <div id="greeting">Hello World!</div>
 ```
 
 ```javascript
-var greeting_div = document.getElementById("greeting");
-console.log(greeting)
+let greeting_div = document.getElementById("greeting");
+console.log(greeting);
 ```
+
+Note: to refer to the current document object, you can use the global variable `document`.
 
 Other element selectors:
 
 ```javascript
 // by css query selector syntax
-document.querySelector('li.my-specific-class')
-document.querySelector('li#my-specific-id')
+document.querySelector("li.my-specific-class");
+document.querySelector("li#my-specific-id");
 
-// by class name 
+// by class name
 // (Note: methods which say getElements... (instead of getElement...) return an array)
-document.getElementsByClassName('some-class')
+document.getElementsByClassName("some-class");
 
 // by HTML tag name (this returns an array)
-document.getElementsByTagName('h1')
+document.getElementsByTagName("h1");
 
 // selecting more than 1 element (this returns an array of all html elements meeting the criteria)
-document.querySelectorAll('li')
-document.querySelectorAll('li.my-specific-class')
+document.querySelectorAll("li");
+document.querySelectorAll("li.my-specific-class");
 ```
 
-### DOM manipulation
+### How to change the content of one HTML element
 
 You can change the content of the HTML element
 
 ```javascript
-greeting_div.textContent = 'Howdy world!'
+greeting_div.textContent = "Howdy world!";
 ```
+
+### How to change the style of one HTML element
 
 You can change the style too!
 
@@ -128,7 +152,7 @@ greeting_div.style.color = "white";
 
 \(Warning: `.style` is not supported in every browser. This example is for the purpose of illustrating what you can do. A better way to change the style would be via the `.classList` attribute\)
 
-### How to add CSS attributes
+### How to update CSS attributes of one HTML element
 
 We can access/update a html element's css class via the `.classList` attribute
 
@@ -136,23 +160,65 @@ We can access/update a html element's css class via the `.classList` attribute
 
 ```javascript
 //list classes
-greeting_div.classList
+greeting_div.classList;
 
 //add a class
-greeting_div.classList.add('my-new-class');
+greeting_div.classList.add("my-new-class");
 
 //remove a class
-greeting_div.classList.remove('my-new-class');
+greeting_div.classList.remove("my-new-class");
 
 //check if greeting_div has a class (returns true or false)
-greeting_div.classList.contains('my-new-class');
+greeting_div.classList.contains("my-new-class");
 ```
 
 ```css
 .my-new-class {
-  text-align: center
+  text-align: center;
 }
 ```
+
+### How to add html elements
+
+The recipe for add a new element to the DOM is as follows: 1. create a new element and save it to a variable 2. modify any properties of the element 3. attach the element to an existing element on the page
+
+Example:
+
+```javascript
+// step 1
+let img = document.createElement("img");
+
+// step 2
+img.src = "https://media.giphy.com/media/9gISqB3tncMmY/giphy.gif";
+img.width = "400";
+
+// step 3
+document.body.appendChild(img);
+```
+
+### How to remove html elements
+
+To remove an element from the DOM tree, you can call one of the two APIs:
+
+- [remove](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
+- [removeChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
+
+## Handle Events
+
+When users interact with a website (such as moving the mouse around, clicking on a link, etc), some events are generated and can be handled with JavaScripts.
+
+Here is a list of commonly used events:
+
+- `click`
+- `dblclick`
+- `mouseover`
+- `mouseout`
+- `focus` and `blur` \(try this on a input box or a button\)
+- `keypress`
+
+MDN has a nice list of [all DOM events](https://developer.mozilla.org/en-US/docs/Web/Events) that we can listen for.
+
+Let's look at some examples on handling those events.
 
 ### How to add event listeners
 
@@ -161,15 +227,15 @@ We can hook up custom javascript code \(e.g. the lines of code that we've just w
 We do this by adding an event listener to a DOM element \(by calling `.addEventListener('the-event-we-want', callbackFunction)`\) and specifying what we want to happen in a callback function
 
 ```javascript
-var greeting_div = document.querySelector('div')
-greeting_div.addEventListener('click', function() {
-  greeting_div.textContent = 'bye bye'
+let greeting_div = document.querySelector("div");
+greeting_div.addEventListener("click", function() {
+  greeting_div.textContent = "bye bye";
 
   greeting_div.style.backgroundColor = "gold";
   greeting_div.style.fontFamily = "Helvetica Neue";
   greeting_div.style.fontSize = "3em";
   greeting_div.style.color = "white";
-})
+});
 ```
 
 ### Using the `event` object in our callback function
@@ -180,11 +246,26 @@ When we add an event listener, the callback function that comes after can take i
 
 The event object contains several attributes which can be useful. For example:
 
-* `event.screenX` and `event.screenY` tells us the coordinates of the mouse when the event happened.
-* `event.charCode` - when listening for `keypress` event, we have an `event.charCode` attribute which tells us which key was pressed \(e.g. Enter, Space, 'a', 's', 'd', up, down, left, right, etc\). 
-* `event.target` - is an object which represents the HTML element on which the event was triggered.
+- `event.screenX` and `event.screenY` tells us the coordinates of the mouse when the event happened.
+- `event.charCode` - when listening for `keypress` event, we have an `event.charCode` attribute which tells us which key was pressed \(e.g. Enter, Space, 'a', 's', 'd', up, down, left, right, etc\).
+- `event.target` - is an object which represents the HTML element on which the event was triggered.
 
-The following example demonstrates how to \(i\) listen for keypress, \(ii\) execute conditional logic using specific keypress event.charCode value, and \(iii\) get value from input:
+Example 1: using `event`'s properties \(e.g. `screenX` and `screenY`\) \(Note that `event` has been shortened to `e`\)
+
+```javascript
+let body = document.querySelector("body");
+body.addEventListener("mouseover", function(e) {
+  rgbColor1 = Math.ceil((e.screenY / 2000) * 256);
+  rgbColor2 = Math.ceil((e.screenX / 2000) * 256);
+  body.style.backgroundColor =
+    "rgb(" + [rgbColor1, 100, rgbColor2].join(",") + ")";
+  console.log(rgbColor1, rgbColor2);
+});
+
+// try hovering around your screen!
+```
+
+Example 2: how to \(i\) listen for keypress, \(ii\) execute conditional logic using specific keypress event.charCode value, and \(iii\) get value from input:
 
 ```markup
 <!-- in your html file -->
@@ -195,7 +276,7 @@ The following example demonstrates how to \(i\) listen for keypress, \(ii\) exec
 
 ```javascript
 // in your javascript file
-var inputDiv = document.getElementById("some-input");
+let inputDiv = document.getElementById("some-input");
 
 inputDiv.addEventListener("keypress", function(event) {
   if (event.charCode === 13) {
@@ -210,6 +291,11 @@ inputDiv.addEventListener("keypress", function(event) {
 
 #### `event` methods
 
+On the `event` object, there are some useful methods as well. You will encounter the following two sometimes.
+
+- [event.preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+- [event.stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
+
 `event.preventDefault()` is a useful method to prevent the default action of the event. For example, when you click on a link, the default action opens a new page. When you submit a form, the default action refreshes the page. That can be irritating, and `event.preventDefault()` allows you to stop that so that you can define how you want to handle the event.
 
 Example:
@@ -219,39 +305,16 @@ Example:
 ```
 
 ```javascript
-var linkElement = document.querySelector('a')
-linkElement.addEventListener('click', function(event) {
-  event.preventDefault() // this prevents the default behaviour of clicking a link (i.e. go to link URL)
-  console.log(event)     // let's see what exactly is an event object
-})
+let linkElement = document.querySelector("a");
+linkElement.addEventListener("click", function(event) {
+  event.preventDefault(); // this prevents the default behaviour of clicking a link (i.e. go to link URL)
+  console.log(event); // let's see what exactly is an event object
+});
 ```
 
-A list of commonly used events:
+The usage of `event.stopPropagation` is related to a concept called [Event Bubbling and Capture](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). You can also find some discussion on the concept [here](http://javascript.info/bubbling-and-capturing)
 
-* `click`
-* `dblclick`
-* `mouseover`
-* `mouseout`
-* `focus` and `blur` \(try this on a input box or a button\)
-* `keypress`
-
-MDN has a nice list of [all DOM events](https://developer.mozilla.org/en-US/docs/Web/Events) that we can listen for
-
-Example of using `event`'s properties \(e.g. `screenX` and `screenY`\) \(Note that `event` has been shortened to `e`\)
-
-```javascript
-var body = document.querySelector('body')
-body.addEventListener('mouseover', function(e) {
-  rgbColor1 = Math.ceil(e.screenY / 2000 * 256)
-  rgbColor2 = Math.ceil(e.screenX / 2000 * 256)
-  body.style.backgroundColor = 'rgb(' + [rgbColor1,100,rgbColor2].join(',') + ')';
-  console.log(rgbColor1,rgbColor2)
-})
-
-// try hovering around your screen!
-```
-
-### `DOMContentLoaded`
+## How to make sure some Javascript codes are only executed after the HTML document is fully loaded
 
 HTML and javascript are both loaded sequentially. If your javascript runs to completion before the HTML elements are fully loaded, all of your event listeners and event handlers will not be hooked up. There are 2 ways to make sure this doesn't happen:
 
@@ -263,48 +326,46 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 ```
 
-1. Place your javascript code at the bottom of your html body
+2. Place your javascript code at the bottom of your html body
 
-   ```markup
-   <html>
-   <head>
-    <!-- ... -->
-   </head>
-   <body>
-    <!-- all your html code -->
-    <script src="./my-javascript-code.js"></script>  // place your DOM manipulation javascript code here
-   </body>
-   </html>
-   ```
-
-### How to add/remove html elements
-
-The recipe for add a new element to the DOM is as follows: 1. create a new element and save it to a variable 2. modify any properties of the element 3. attach the element to an existing element on the page
-
-Example:
-
-```javascript
-// step 1
-var img = document.createElement("img")   
-
-// step 2
-img.src = "https://media.giphy.com/media/9gISqB3tncMmY/giphy.gif"
-img.width = "400"
-
-// step 3
-document.body.appendChild(img)
+```markup
+<html>
+<head>
+<!-- ... -->
+</head>
+<body>
+<!-- all your html code -->
+<script src="./my-javascript-code.js"></script>  // place your DOM manipulation javascript code here
+</body>
+</html>
 ```
 
-## Resources
+## Labs
 
-### References
-
-* [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-* [Document Object Model](https://flaviocopes.com/dom/)
-* [DOM manipulation tutorial](https://www.digitalocean.com/community/tutorials/how-to-make-changes-to-the-dom)
-* [You might not need jQuery](http://youmightnotneedjquery.com/)
+- [https://github.com/thoughtworks-jumpstart/page-styler](https://github.com/thoughtworks-jumpstart/page-styler)
+- [https://github.com/thoughtworks-jumpstart/displayer](https://github.com/thoughtworks-jumpstart/displayer)
+- [https://github.com/thoughtworks-jumpstart/dice](https://github.com/thoughtworks-jumpstart/dice)
 
 ## Assignment
 
 [https://github.com/thoughtworks-jumpstart/dom-todo-list](https://github.com/thoughtworks-jumpstart/dom-todo-list)
 
+## Resources
+
+### Tutorials on DOM
+
+- [JavaScript Info: DOM](http://javascript.info/document)
+- [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+- [MDN: Manipulating DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Document Object Model](https://flaviocopes.com/dom/)
+- [DOM manipulation tutorial](https://www.digitalocean.com/community/tutorials/how-to-make-changes-to-the-dom)
+- [You might not need jQuery](http://youmightnotneedjquery.com/)
+
+### Tutorials on Events
+
+- [JavaScript Info: Events](http://javascript.info/events)
+- [MDN: Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
+### References
+
+- [MDN docs on DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
