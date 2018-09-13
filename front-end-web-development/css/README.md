@@ -50,6 +50,7 @@ Bookmark the link below, you need to refer to it frequently.
 
 ## Labs
 
+* [Recreate Blog article Page](https://github.com/thoughtworks-jumpstart/blog-article-css)
 * [Recreate Apple Landing Page](https://github.com/thoughtworks-jumpstart/apple-css-lab)
 * [CSS Diner](https://flukeout.github.io/)
 
