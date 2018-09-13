@@ -49,7 +49,7 @@ Now we understand the importance of asynchronous tasks, how can we write code to
 * [MDN docs on the event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 * [What is the event loop](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40)
 * [What the hack is event loop anyway](https://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html)
-* [How JavaScript works: Event loop and the rise of Async programming ](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
+* [How JavaScript works: Event loop and the rise of Async programming](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
 * [How Javascript works in browser and node](https://itnext.io/how-javascript-works-in-browser-and-node-ab7d0d09ac2f)
 * [The JavaScript event loop explained](https://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/)
 * [What you should know to really understand the Node.js Event Loop](https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c)
