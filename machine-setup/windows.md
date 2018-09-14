@@ -1,5 +1,12 @@
 # Windows
 
+**Note**, run the commands below in a CMD or PowerShell window with admin privilege.
+
+If you don't know how to open a CMD or PowerShell with admin privilege, checkout the tutorials here:
+
+- [CMD with Admin Privilege](https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/)
+- [PowerShell with Admin Privilege](https://www.thewindowsclub.com/how-to-open-an-elevated-powershell-prompt-in-windows-10)
+
 ## Chocolatey \(package manager\)
 
 Following the instructions at the page below. Note that you need to run the installation commands on a PowerShell \(or CMD window\) with administrator privilege.
