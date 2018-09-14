@@ -11,6 +11,7 @@
     * [Basic commandline](unix-commandline/basic-commandline.md)
     * [Advanced commandline](unix-commandline/advanced-commandline.md)
     * [Shell scripting](unix-commandline/shell-scripting.md)
+    * [Useful Commandline Tools](unix-commandline/commandline-tools.md)
   * [Git](git/README.md)
     * [Getting Started with Git](git/getting-started-with-git.md)
     * [Working with Github](git/github-cheat-sheet.md)
