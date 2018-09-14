@@ -32,6 +32,9 @@ git config --global user.email "YOUR-EMAIL-ADDRESS"
 git config --global push.default simple
 git config --global credential.helper cache
 git config --global core.autocrlf input
+git config --global pull.rebase true
+git config --global rebase.autoStash true
+git config --global core.editor 'code --wait'
 ```
 
 You can verify your git configuration by running: `git config --list | cat`. The values which you had keyed in earlier should be listed.

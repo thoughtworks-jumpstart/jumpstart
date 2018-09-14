@@ -7,12 +7,6 @@ Verify that your name and email are set:
 * `git config user.name`
 * `git config user.email`
 
-Type the following commands one by one in your terminal:
-
-* `git config --global pull.rebase true`
-* `git config --global rebase.autoStash true`
-* `git config --global core.editor 'code --wait'`
-
 ## Code-along to understand basics of Git
 * Create a base directory on your local machine with the following:
 * Create directory `mkdir` called `myapp`
