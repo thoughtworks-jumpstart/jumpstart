@@ -85,3 +85,4 @@ Now that you're more comfortable with git, it's time to take it to the next leve
 - [Git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 - [Git cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 - [Git Stash](https://www.atlassian.com/git/tutorials/git-stash)
+- [Another Git Stash Tutorial](http://www.gitguys.com/topics/temporarily-stashing-your-work/)
