@@ -126,6 +126,11 @@ const ComponentTwo = React.createElement("div", { className: "red" }, "Children 
 const ComponentThree = React.createElement(MyCounter, { count: 3 + 5, startingPoint: someFunction() });
 ```
 
+For more details of JSX, checkout the official guide:
+
+* [JSX Introduction](https://reactjs.org/docs/introducing-jsx.html)
+* [JSX in Depth](https://reactjs.org/docs/jsx-in-depth.html)
+
 ## Babel compiles JSX to regular JavaScript codes
 
 * Babel compiles JSX down to React.createElement\(\) calls. To see what JSX compiles to in ES5, try out your JSX syntax here: [https://babeljs.io/repl/](https://babeljs.io/repl/)
