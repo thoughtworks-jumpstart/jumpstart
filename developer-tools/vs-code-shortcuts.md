@@ -36,6 +36,13 @@
 
 ## Resources
 
+### Enable automatic JavaScript type checking 
+
+VS Code allows you to leverage some of TypeScript's advanced type checking and error reporting functionality in regular JavaScript files. This is a great way to catch common programming mistakes. These type checks also enable some exciting Quick Fixes for JavaScript, including Add missing import and Add missing property.
+
+This is disabled by default. If you like the feature, read [the documentation](https://code.visualstudio.com/docs/languages/javascript#_type-checking) on how to enable it per-file, per-project, or always.
+
+
 ### Recommended reading
 
 * [How to customize your keybindings](https://code.visualstudio.com/docs/getstarted/keybindings)
