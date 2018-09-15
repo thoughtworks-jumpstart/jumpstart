@@ -118,14 +118,6 @@ const ComponentTwo = <div className="red" id="some-awesome-id">Children Text</di
 const ComponentThree = <MyCounter count={3 + 5} startingPoint={someFunction()}/>;
 ```
 
-The above gets compiled to the following javascript code without JSX. I hope you will agree JSX syntax reads more naturally.
-
-```javascript
-const ComponentOne = React.createElement("div", null, "Hello World");
-const ComponentTwo = React.createElement("div", { className: "red" }, "Children Text");
-const ComponentThree = React.createElement(MyCounter, { count: 3 + 5, startingPoint: someFunction() });
-```
-
 For more details of JSX, checkout the official guide:
 
 * [JSX Introduction](https://reactjs.org/docs/introducing-jsx.html)
@@ -133,4 +125,14 @@ For more details of JSX, checkout the official guide:
 
 ## Babel compiles JSX to regular JavaScript codes
 
-* Babel compiles JSX down to React.createElement\(\) calls. To see what JSX compiles to in ES5, try out your JSX syntax here: [https://babeljs.io/repl/](https://babeljs.io/repl/)
+JSX is an extension to regular JavaScript syntax? How can browsers recognize this new syntax? The answer is: they don't need to know about JSX at all.
+
+Babel compiles JSX down to React.createElement\(\) calls. To see what JSX compiles to in ES5, try out your JSX syntax here: [https://babeljs.io/repl/](https://babeljs.io/repl/)
+
+For example, the JSX snippets above gets compiled to the following javascript code without JSX. I hope you will agree JSX syntax reads more naturally.
+
+```javascript
+const ComponentOne = React.createElement("div", null, "Hello World");
+const ComponentTwo = React.createElement("div", { className: "red" }, "Children Text");
+const ComponentThree = React.createElement(MyCounter, { count: 3 + 5, startingPoint: someFunction() });
+```
