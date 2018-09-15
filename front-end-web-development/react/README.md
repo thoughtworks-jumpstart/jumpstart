@@ -41,7 +41,7 @@ Benefits with React approach in this demo:
 When working with React, you will undoubtedly face new and scary jargon. An important way to learn and be effective with React is to:
 
 * Understand its building blocks \(e.g. JSX, components, `props`, `state`, etc\)
-* Build on what you have learnt about Javascript \(functions, classes, ES6 syntax, static methods, modules, etc.\)
+* Build on what you have learnt about Javascript \(functions, classes, ES6 syntax, static methods, modules, etc.\). Make sure you know those [Javascript fundamental](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/).
 * Build applications with React.
 
 ## Resources
