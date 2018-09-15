@@ -1,10 +1,10 @@
 # React
 
-### What is React?
+## What is React?
 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It allows you to create front-end applications through the creation of reusable, decoupled and testable components.
 
-### What can I build with React?
+## What can I build with React?
 
 To get some ideas of what you can build with React, check out:
 
@@ -13,17 +13,19 @@ To get some ideas of what you can build with React, check out:
 * [http://facebook.github.io/react-native/showcase.html](http://facebook.github.io/react-native/showcase.html) \(React Native also uses the same syntax and patterns as React for building mobile applications\)
 * [https://facebook.github.io/react-vr/](https://facebook.github.io/react-vr/) \(React VR also uses the same syntax and patterns as React for building VR applications!\)
 
-### Why can't I do it without React?
+## What's the benefit of using React?
+
+React allows you to build interactive/dynamic UI in declarative style.
 
 Demo: Simple page \([without React](https://codepen.io/davified/pen/KQodXj) vs [with React](https://codepen.io/davified/pen/jZzPpK)\)
 
-### How do I get good at React?
+## How to learn React?
 
 When working with React, you will undoubtedly face new and scary jargon. An important way to learn and be effective with React is to:
 
-* understand its building blocks \(e.g. JSX, components, `props`, `state`, etc\)
-* build on what you have learnt about Javascript \(functions, classes, ES6 syntax, static methods, modules, etc.\)
-* build applications with React. 
+* Understand its building blocks \(e.g. JSX, components, `props`, `state`, etc\)
+* Build on what you have learnt about Javascript \(functions, classes, ES6 syntax, static methods, modules, etc.\)
+* Build applications with React.
 
 ## Resources
 
@@ -34,7 +36,7 @@ When working with React, you will undoubtedly face new and scary jargon. An impo
 
 * [Thinking in React \(must read!\)](https://reactjs.org/docs/thinking-in-react.html)
 * [Why React's stateless functional components are awesome](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
-* [http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html](http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html)
+* [Best practices for component state in React](http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html)
 * [How and when to use lifecycle hooks](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1)
 * [using props to set initial state is not always an anti-pattern](https://zhenyong.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html)
 * [The difference between brackets and curly braces in fat arrow functions](https://stackoverflow.com/questions/39629962/arrow-function-without-curly-braces)
