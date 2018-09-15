@@ -6,8 +6,12 @@
 
 * Docs: [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 * How to create a react app:
-  * `cd the-folder-where-you-want-your-app` \(there's no need to create the app directory first. `create-react-app` will create it for you\)
+  * `cd your-workspace-folder`
   * `npx create-react-app my-awesome-app`
+    * 'my-awesome-app' folder will be created under 'your-workspace-folder'.
+  * `cd my-awesome-app`
+  * `npm run start` or `yarn start`.
+    * This command will start a [webpack dev server](https://survivejs.com/webpack/developing/webpack-dev-server/) that serves your application. You can visit your React application at http://localhost:3000
 
 ## VS Code Extensions
 
