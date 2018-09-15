@@ -1,8 +1,50 @@
 # JSX
 
+## What is JSX
+
 * JSX is a syntax extension to JavaScript. It allows us to write HTML-like syntax that compiled to React elements \(i.e. real javascript objects\)
-* Babel compiles JSX down to React.createElement\(\) calls. To see what JSX compiles to in ES5, try out your JSX syntax here: [https://babeljs.io/repl/](https://babeljs.io/repl/)
-* Try out the following examples in `App.js` and see what's rendered on [http://localhost:3000](http://localhost:3000)
+
+Create a new React app with `create-react-app` and try out the following examples. 
+
+### First React App: Hello World!
+
+Firstly, let's print Hello World on the page!
+
+* edit `App.js` with the example given below 
+* starting the React app with `npm run start` or `yarn start`, 
+* see what's rendered on [http://localhost:3000](http://localhost:3000)
+
+```javascript
+// App.js
+
+class App extends Component {
+  render() {
+    return <h1>Hello World!</h1>; // HTML-like syntax 
+  }
+}
+```
+
+This looks simple but there are lots of the things going on behind the sense:
+
+In public/index.html, the line below defines the root of a DOM tree that React manipulate according to what you declare in index.js. 
+
+```html
+  <div id="root"></div>
+```
+
+In index.js, we declare the React app should be rendered in the <div> element with id="root".
+
+```javascript
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+What is this `App`? It's the React component you define in App.js
+
+### Your First React Component
+
+We can extract the reusable JSX snippets into their own React component. 
+
+Edit `App.js` with the example below:
 
 ```javascript
 // App.js
@@ -17,7 +59,9 @@ class App extends Component {
 }
 ```
 
-This allows us to use javascript logic in creating UI elements
+Here, we define a new React component called `HelloWorld` (note that the first letter `H` needs to be capitalized) and display it in App.
+
+We can make the `HelloWorld` component more complicated.
 
 ```javascript
 // App.js
@@ -33,7 +77,9 @@ class App extends Component {
 }
 ```
 
-Components are usually placed in their own files so that our code is neatly organised
+### One separate file for each React component
+
+Components are usually placed in their own files so that our code is neatly organized. Let's move the `HelloWorld` component into it's own file `HelloWorld.js`.
 
 ```javascript
 // HelloWorld.js
@@ -80,3 +126,6 @@ const ComponentTwo = React.createElement("div", { className: "red" }, "Children 
 const ComponentThree = React.createElement(MyCounter, { count: 3 + 5, startingPoint: someFunction() });
 ```
 
+## Babel compiles JSX to regular JavaScript codes
+
+* Babel compiles JSX down to React.createElement\(\) calls. To see what JSX compiles to in ES5, try out your JSX syntax here: [https://babeljs.io/repl/](https://babeljs.io/repl/)
