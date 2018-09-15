@@ -19,6 +19,23 @@ React allows you to build interactive/dynamic UI in declarative style.
 
 Demo: Simple page \([without React](https://codepen.io/davified/pen/KQodXj) vs [with React](https://codepen.io/davified/pen/jZzPpK)\)
 
+Problems with direct DOM manipulation with JavaScript:
+
+1. **Imperative**. We have to specify line by line what the HTML should look like, and our javascript code is tightly coupled to the HTML layout (e.g. i need to get the second paragraph to do xyz)
+2. The tight coupling leads to unexpected breaking changes. If somebody adds a paragraph to the top of the html page, our javascript code with break
+3. Imperative style is awkward and verbose. we have to reach inside the DOM, get the node, change the node in javascript, and then stick it back in the DOM.
+4. Not unit-testable
+5. Difficult to modularize. As this app grows, the javascript/HTML file is likely to grow longer and longer.
+
+Benefits with React approach in this demo:
+
+1. **Declarative**. We declare (using JSX) what the HTML should look like and React makes it so!
+2. Only 1 line of HTML!
+3. Ability to use javascript logic makes code less verbose
+4. Easy to unit-test
+5. Easy to modularize
+6. Easy to read ==> Easy to scale and maintain
+
 ## How to learn React?
 
 When working with React, you will undoubtedly face new and scary jargon. An important way to learn and be effective with React is to:
