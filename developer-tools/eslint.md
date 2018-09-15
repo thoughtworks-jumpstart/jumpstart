@@ -26,7 +26,7 @@ Here is a [good reading on this topic](http://ericlathrop.com/2017/05/the-proble
 
 To configure how ESLint works, you can add a configuration file `.eslintrc.json` in your project root directory.
 
-You can create a initial copy of the file by running the following command:
+You can create a initial copy of the file by running the following command and answer a few simple questions, but to save you some trouble, we have a sample eslintrc.json file at the end of this document. You can use that sample file if you follow the instructions below to configure eslint/jest/prettier integration.
 
 ```text
 ./node_modules/.bin/eslint --init
@@ -53,7 +53,7 @@ ESLint has a plugin which contains some useful rules for writing Jest based test
 To install that plugin, run
 
 ```text
-npm install --save-dev eslint-plugin-jest
+npm install --save-dev jest eslint-plugin-jest
 ```
 
 ### Sample Configuration
@@ -83,7 +83,7 @@ There is a very useful extension in VS Code that automatically run ESLint to che
 
 After installing the extension, you might want to add some configurations in your VS Code User Settings:
 
-* "eslint.packageManager". Set it to "yarn" since we use yarn as our default package manager in projects.
+* "eslint.packageManager". Set it to "yarn" if you use `yarn` as our default package manager instead of `npm`
 * "eslint.run". Set it to "onSave" if you don't want to trigger ESLint while you are typing.
 
 For other possible configurations, refer to the documentation of the extension.
