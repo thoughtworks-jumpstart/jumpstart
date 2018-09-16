@@ -1,8 +1,6 @@
-# React core ideas
+# React Tips
 
-## [React core ideas](https://reactjs.org/docs/thinking-in-react.html)
-
-### Core principles
+## Core Principles of React 
 
 * **DRY \(Don't Repeat Yourself\)**. If you spot duplicate code, extract the duplicated bits into a component that can be reused
 * **Single Responsibility Principle \(SRP\)**. If a component is doing more than 1 thing and if it's getting large, it should be decomposed into multiple smaller components
@@ -11,7 +9,7 @@
 * **Lift state up**: When you want to aggregate data from multiple children or to have two child components communicate with each other, move the state upwards so that it lives in the parent component. The parent can then pass the state back down to the children via props, so that the child components are always in sync with each other and with the parent. 
 * [**Favour composition over inheritance**](https://reactjs.org/docs/composition-vs-inheritance.html) \(i.e. put components when defining a new component in your `render()` definition. Avoid `extend`ing your own components to make new components.\) \([https://www.codementor.io/imbhargav5/extending-react-components-inheritance-composition-qo59dqili](https://www.codementor.io/imbhargav5/extending-react-components-inheritance-composition-qo59dqili)\)
 
-### Some rules of thumb
+## Some rules of thumb
 
 * Use functional components \(instead of class components\) if the component doesn't need to have state
 * `props` are read-only. don't update/change the value of `props` \(that's what `state` is for\)
@@ -46,18 +44,8 @@ render() {
 }
 ```
 
-### Exercise
-
-* [**Think in React**](https://reactjs.org/docs/thinking-in-react.html)
-  * Step 1: Break The UI Into A Component Hierarchy
-  * Step 2: Build A Static Version in React \(i.e. no event handlers or `state`. only `props`\)
-    * You can build top-down or bottom-up
-  * Step 3: Identify The Minimal \(but complete\) Representation Of UI State
-    * List all the sources of data in your app \(e.g. seed data, user input data\)
-  * Step 4: Identify Which Component Should Own The State
-  * Step 5: Add Inverse Data Flow
-
 ## Resources
 
 * [React.js Frequently Faced Problems](https://dev.to/samerbuna/reactjs-frequently-facedproblems--l5g)
+* [Tips to learn React and Redux](https://www.robinwieruch.de/tips-to-learn-react-redux/)
 

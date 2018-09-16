@@ -224,4 +224,7 @@ To find out whether a piece of data should reside in `state` or in `props`, simp
 
 * [https://reactjs.org/docs/faq-state.html](https://reactjs.org/docs/faq-state.html)
 * [setState() API](https://reactjs.org/docs/react-component.html#setstate)
+* [Best practices for component state in React](http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html)
+* [using props to set initial state is not always an anti-pattern](https://zhenyong.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html)
+* [Why immutability is important](https://reactjs.org/tutorial/tutorial.html#why-immutability-is-important)
 

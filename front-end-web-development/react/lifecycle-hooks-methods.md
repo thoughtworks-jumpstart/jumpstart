@@ -27,4 +27,5 @@
 
 * [Understanding React Component Life Cycle](https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d)
 * [2 new React lifecycle methods in React 16.3+](https://medium.com/@baphemot/understanding-react-react-16-3-component-life-cycle-23129bc7a705)
+* [How and when to use lifecycle hooks](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1)
 

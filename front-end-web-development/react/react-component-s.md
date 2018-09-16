@@ -94,3 +94,8 @@ const Welcome = () => {
 ## A note on multi-line element
 
 If an element span-across multiple lines, you need to wrap it with a bracket (e.g. what you see in the example above)
+
+## Resources
+
+* [Why React's stateless functional components are awesome](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
+* [Why do I see this kind of pattern: ({...})](https://stackoverflow.com/questions/39629962/arrow-function-without-curly-braces)

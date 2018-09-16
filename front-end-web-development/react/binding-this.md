@@ -93,3 +93,4 @@ class MyComponent extends Component {
 ## Recommended Readings
 
 * [https://reactjs.org/docs/faq-functions.html](https://reactjs.org/docs/faq-functions.html)
+* [5 Approaches for handling `this` in React](https://medium.freecodecamp.org/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56)
