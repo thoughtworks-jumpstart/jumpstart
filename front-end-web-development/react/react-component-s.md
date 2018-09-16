@@ -23,6 +23,8 @@ You create a component by **defining a function**. Example:
   );
 ```
 
+Note that usually the variable names in Javascript start with lower case letter. However, in JSX syntax, the name of components **must** start with upper case letter (`Welcome` instead of `welcome`).
+
 ## Class components
 
 You create a component by **defining a class**. Example:
