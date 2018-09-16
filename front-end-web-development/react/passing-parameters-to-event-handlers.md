@@ -1,6 +1,8 @@
 # Passing parameters to event handlers
 
-There are scenarios where you want to pass data to a callback function. The code sample below demonstrates how you can achieve this.
+Most of the event handlers only need to take in one argument, which is the event to be handled. That argument is usually supplied by React when the handler function is called, so you don't need to worry about it.
+
+However, there are scenarios where you want to pass some additional parameters to an event handler function. The code sample below demonstrates how you can achieve this.
 
 Note:
 
@@ -39,5 +41,4 @@ class App extends Component {
 export default App;
 ```
 
-read more: [https://medium.freecodecamp.org/reactjs-pass-parameters-to-event-handlers-ca1f5c422b9](https://medium.freecodecamp.org/reactjs-pass-parameters-to-event-handlers-ca1f5c422b9)
-
+Read more discussions: [ReactJS - Parameterized Event Handlers](https://medium.freecodecamp.org/reactjs-pass-parameters-to-event-handlers-ca1f5c422b9) 
