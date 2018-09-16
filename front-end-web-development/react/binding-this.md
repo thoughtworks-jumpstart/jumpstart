@@ -1,10 +1,14 @@
 # Binding this
 
-You have to be careful about the meaning of `this` in JSX callbacks. In JavaScript, the value of `this` is not bound in class methods \(see gitbook chapter on `this` at ES6 -&gt; Javascript -&gt; `this` and arrow functions\). If you forget to bind this.handleClick and pass it to onClick, this will be undefined when the function is actually called.
+You have to be careful about the meaning of `this` in JSX callbacks.
 
-This is not React-specific behavior; it is a part of how functions work in JavaScript. Generally, you must bind that method in the constructor if: 1. you are passing functions/methods around \(instead of invoking them\) \(e.g. `onClick={this.handleClick}`\), **and** 2. your function/method uses `this`
+Remember, in a normal JavaScript function, the value of `this` is resolved at run time (i.e. "Dynamic Scoping") \(see the chapter on `this` at Javascript -&gt; Functions -&gt; `this` and arrow functions\).
 
-* Think about "Gordon's Marker" example
+In such cases, if you forget to bind the value of `this` when passing the `handleClick` function to `onClick` property, `this` will be undefined when the function is actually called.
+
+This is not React-specific behavior; it is a part of how functions work in JavaScript. 
+
+Generally, you must bind `this` to the event handler functions in the constructor if: 1. you are passing functions/methods around \(instead of invoking them\) \(e.g. `onClick={this.handleClick}`\), **and** 2. your function/method uses `this` in its implementation.
 
 ## Three ways of ensuring that `this` doesn't become `undefined`
 
@@ -44,6 +48,8 @@ class MyComponent extends Component {
 }
 ```
 
+The drawback of this approach is the `bind()` function is called every time when the `render` function is called. There are some performance concern with this approach.
+
 3\) Use ES6 arrow functions
 
 ```javascript
@@ -58,7 +64,32 @@ class MyComponent extends Component {
 }
 ```
 
-Further reading:
+The drawback of this approach is a new event handler function is created each time when the `render()` function is called. Again, there are some performance conern with this approach.
+
+## Actually, there is yet another way
+
+You could define `handleClick()` function as an arrow function. As we know, the value of `this` in arrow functions follow Lexical Scoping rule (which is the value of this where the arrow function is defined).
+
+With lexical scoping rule, the value of `this` in arrow function is already bound when it's defined. You don't need to bind it anymore.
+
+However, this implementation relies on [some experimental feature in JavaScript](https://github.com/tc39/proposal-class-fields).
+
+```javascript
+class MyComponent extends Component {
+  constructor() {
+    // no need to bind here
+  }
+
+  render() {
+    return <div onClick={this.handleClick}></div>;
+  }
+
+  handleClick = (event) => {
+    // do something with `this`, which is resolved to the instance of React component by lexical scoping rule
+  }
+}
+```
+
+## Recommended Readings
 
 * [https://reactjs.org/docs/faq-functions.html](https://reactjs.org/docs/faq-functions.html)
-
