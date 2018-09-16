@@ -99,7 +99,7 @@
     * [Forms](front-end-web-development/react/forms.md)
     * [React core ideas](front-end-web-development/react/react-core-ideas.md)
     * [Advanced concepts](front-end-web-development/react/advanced-concepts/README.md)
-      * [React libraries](front-end-web-development/react/advanced-concepts/react-libraries.md)
+      * [Virtual DOM](front-end-web-development/react/advanced-concepts/virtual-dom.md)
       * [Type Checking](front-end-web-development/react/advanced-concepts/type-checking.md)
       * [Default props](front-end-web-development/react/advanced-concepts/default-props.md)
       * [React Router](front-end-web-development/react/advanced-concepts/react-router.md)
