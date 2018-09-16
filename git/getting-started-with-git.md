@@ -21,16 +21,20 @@ Verify that your name and email are set:
 * `git commit` - Make a commit to git
   * `git commit -m` - Make a commit with a message flag to git
 * `git log` - Check previous commits made in the repository
-* `git remote add origin` - This is to link the local repo to the remote repo with the name origin
+* `git remote add origin https://github.com/user/repo.git` - This is to link the local repo to the remote repo with the name origin and the given repository URL.
 * `git push -u origin master` - This is to push the local repo code to the origin master branch
 * `git clone` - Clone remote repo to your local machine
 * `git pull` - Pull latest changes down to your local machine
 
+## Working Directory, Staging Area, Local Repository and Remote Repository
+
+![git overview](../.gitbook/assets/git-overview.jpg)
+
 ## Life cycle of file status
 
-![](../.gitbook/assets/file_status_lifecycle.png)
+![file status life cycle](../.gitbook/assets/file_status_lifecycle.png)
 
-## Assignment: Git Basics
+## Exercise: Git Basics
 
 [https://github.com/thoughtworks-jumpstart/git-basics](https://github.com/thoughtworks-jumpstart/git-basics)
 
