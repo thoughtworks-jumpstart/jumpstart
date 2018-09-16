@@ -3,8 +3,8 @@
 Rules of thumb:
 
 * For simple applications:
-  * keep all components under `./src/components`
-  * Create a directory for each component. For example, if you're creating `MyComponent.js`, it should be stored as such:
+  * Keep all components under `./src/components`
+  * Create a directory for each component, and put all files for the component in that folder. For example, if you're creating `MyComponent.js`, it should be stored as such:
 
 ```text
 src
