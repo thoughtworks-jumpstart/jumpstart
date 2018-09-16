@@ -1,4 +1,4 @@
-# Passing data to callbacks
+# Passing parameters to event handlers
 
 There are scenarios where you want to pass data to a callback function. The code sample below demonstrates how you can achieve this.
 
