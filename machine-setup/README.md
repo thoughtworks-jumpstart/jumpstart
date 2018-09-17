@@ -24,6 +24,7 @@ Open up VS Code, and open the command palette \(Mac: `Cmd`+`Shift`+`p`; Windows:
 * Javascript
   * ESLint
   * Prettier
+    * Use the one made by Esben Petersen
 * HTML
   * Auto Rename Tag
   * Live Server
