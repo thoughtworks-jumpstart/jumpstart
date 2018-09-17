@@ -80,15 +80,6 @@ On Windows, we need to configure VS Code in user settings:
 * Open user settings with shortcut `ctrl` + `,`
 * In user settings, set `"files.eol": "\n"`
 
-## Verify installation for everything
-
-```text
-git --version
-node -v
-npm -v
-code -v
-```
-
 ## Chrome Browser
 
 We will need the developer tools come with Google Chrome browser.
@@ -101,3 +92,11 @@ choco install googlechrome
 
 Or just [download it from Google official website](https://www.google.com/chrome/).
 
+## Verify installation for everything
+
+```text
+git --version
+node -v
+npm -v
+code -v
+```
