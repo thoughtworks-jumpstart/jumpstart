@@ -63,7 +63,10 @@ The **command line** is a program that enables us to send commands to the comput
   * `man <command>`, or
   * `<command> --help`/`<command> -h`
   * to exit the `man` page, hit `q`
+* TLDR
+  * If you don't like to read the long man pages, install a tool called [tldr](https://tldr.sh/)
 * `which`
+  * Search installation directory of a command/tool
 * Apply commands towards everyday problems and workflows
 
 ## Resources
