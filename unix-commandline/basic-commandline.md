@@ -1,4 +1,4 @@
-# Basic commandline
+# Basic Commandline
 
 The **command line** is a program that enables us to send commands to the computer and receive output. It is also referred to as the **terminal** or **shell**.
 
@@ -49,7 +49,8 @@ The **command line** is a program that enables us to send commands to the comput
       * /usr/local/bin
   * example of how to add a directory path to $PATH: `export PATH=$PATH:/usr/local/share/google/google-cloud-sdk/bin/`
   * for persistence, add it to `.bash_profile` or `.zshrc` file, so that the export command is run everytime a shell session is started
-* `~/.bashrc` or `~/.zshrc`
+* `~/.bash_profile` or `~/.zshrc`
+  * If you need some shell commands to run automatically when you launch a new shell, put them into these files. For example, you can setup your `PATH` environment variable automatically in this way.
 * Terminal shortcuts
   * Ctrl + C - terminate process
   * Ctrl + A - go to beginning of line
@@ -80,7 +81,7 @@ The **command line** is a program that enables us to send commands to the comput
 * [https://www.learnenough.com/command-line-tutorial\#sec-exercises\_manipulating](https://www.learnenough.com/command-line-tutorial#sec-exercises_manipulating)
 * [https://www.learnenough.com/command-line-tutorial\#sec-exercises\_summary\_manipulating](https://www.learnenough.com/command-line-tutorial#sec-exercises_summary_manipulating)
 
-## Assignment
+## (Optional) Assignment
 
 Solve the [command line murder mystery](https://github.com/veltman/clmystery)
 
