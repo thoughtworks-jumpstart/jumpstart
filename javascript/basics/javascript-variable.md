@@ -1,9 +1,5 @@
 # Values and variables
 
-## Lab
-
-[https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
-
 ## Types of Values
 
 * Numbers
@@ -101,4 +97,10 @@ console.log(42);
 * As a convention in our class, we will use the 'prettier' style guide, which
 
   includes semi-colons by default
+
+## Lab
+
+If you are totally new to JavaScript, you can try the following simple library (just the first exercise):
+
+[https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
 
