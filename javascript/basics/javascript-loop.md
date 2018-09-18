@@ -31,6 +31,23 @@ while (n < 3) {     // n < 3 returns true or false
 }
 ```
 
+* `for...of` statement
+
+```javascript
+for (variable of iterable) {
+  statement
+}
+```
+
+```javascript
+var iterable = [10, 20, 30];
+
+for (var value of iterable) {
+  value += 1;
+  console.log(value);
+}
+```
+
 * `for...in` statement
 
 ```javascript
@@ -50,3 +67,4 @@ for (var thing in car) {
 };
 ```
 
+Make sure you remember the difference between 'for...of' and 'for...in'!
