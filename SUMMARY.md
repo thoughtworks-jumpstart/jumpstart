@@ -24,6 +24,7 @@
   * [Yarn](developer-tools/yarn.md)
 * [JavaScript](javascript/README.md)
   * [What is ES6?](javascript/what-is-es6.md)
+  * [What is Babel?](javascript/what-is-babel.md)
   * [JavaScript basics](javascript/basics/README.md)
     * [JavaScript variable](javascript/basics/javascript-variable.md)
     * [Conditional statements](javascript/basics/conditional-statements.md)
