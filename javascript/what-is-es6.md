@@ -6,7 +6,7 @@ ES6 features offer solutions to many of the pains and quirks of working with Jav
 
 Are you confused by the terms like "ES6", "ECMAScript 2015"? Are they the same thing as "Javascript"? Read on [article](https://medium.freecodecamp.org/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5) to find more details.
 
-In this section, we are going to cover the following ES6 features:
+Some of the features introduced in ES6 include:
 
 * let and const
 * new methods on String
@@ -16,7 +16,6 @@ In this section, we are going to cover the following ES6 features:
 * destructuring
 * rest and spread operator
 * ES6 module system
-* using ES6 features in your codes
 
 ## Resources
 
