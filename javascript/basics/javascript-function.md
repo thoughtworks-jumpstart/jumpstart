@@ -27,10 +27,6 @@ function alertName() {
 <button onclick="alertName();">Submit</button>
 ```
 
-## Lab
-
-[https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
-
 ## Syntax
 
 ### Simple declaration
@@ -147,3 +143,6 @@ const sum = (a, b) => a + b;
 logger(sum); // outputs the body of the 'sum' function to the console
 ```
 
+## Lab
+
+[https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
