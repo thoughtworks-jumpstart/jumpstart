@@ -31,6 +31,8 @@ Here is a good overview of the Javascript landscape as of 2018:
 
 ## Books
 
+* [Learn Enough Javascript to be dangerous](https://www.learnenough.com/javascript-tutorial)
+* [Eloquent Javascript](http://eloquentjavascript.net/)
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 
 ## References
@@ -44,13 +46,12 @@ Here is a good overview of the Javascript landscape as of 2018:
 * [Javascript Cheat Sheet](https://github.com/krishnr/JavaScript-cheat-sheet)
 * [MDN Docs explorer](http://devdocs.io/)
 * [Mozilla Developers' Network \(MDN\) Javascript documentation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
-* [Eloquent Javascript](http://eloquentjavascript.net/)
 * [Awesome Javascript learning resources](https://github.com/micromata/awesome-javascript-learning)
 * [Modern JS Cheat Sheet](https://mbeaudru.github.io/modern-js-cheatsheet/)
 
 ## Assignments
 
-* [Javasript basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
-* [Fun with classes ](https://github.com/thoughtworks-jumpstart/javascript-classes)
+* [JavaScript basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
+* [Fun with classes](https://github.com/thoughtworks-jumpstart/javascript-classes)
 * [Fun with higher order functions](https://github.com/thoughtworks-jumpstart/higher-order-functions-exercises)
 
