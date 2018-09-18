@@ -11,9 +11,10 @@ If you are new to CSS, you can read the article blow to get an overview:
 
 ## CSS Tutorial
 
-We will briefly cover the most important topics in this material, however, if you have more time to go-through a tutorial that covers the topics thoroughly, I can recommend the one on Mozilla Development Network:
+We will briefly cover the most important topics in this material, however, if you have more time to go-through a tutorial that covers the topics thoroughly, I can recommend the two below:
 
 * [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
+* [HTML & CSS is Hard (and It Shouldn't Be)](https://internetingishard.com/html-and-css/)
 
 ## CSS Reference
 
