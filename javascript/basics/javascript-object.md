@@ -6,7 +6,7 @@ Objects can store 2 types of things: **data** \(i.e. values - like strings, numb
 
 > An object is a hard shell that hides the gooey complexity inside it and instead offers us a few knobs and connectors \(such as methods\) that present an interface through which the object is to be used. The idea is that the interface is relatively simple and all the complex things going on inside the object can be ignored when working with it. \(Eloquent JavaScript\)
 
-![oven](../.gitbook/assets/oven_object.jpg)
+![oven](../../.gitbook/assets/oven_object.jpg)
 
 ## Lab
 
