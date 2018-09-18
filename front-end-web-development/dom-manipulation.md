@@ -95,9 +95,9 @@ To start with, let's have a glance with the APIs we need to be familiar with:
   - [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
   - [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 
-Some of the APIs may return multiple nodes as [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList). It's an array-like object that you can iterate through and get the nodes one-by-one.
+Some of the APIs may return multiple nodes as [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList). It's an [array-like object](http://2ality.com/2013/05/quirk-array-like-objects.html) that you can iterate through and get the nodes one-by-one.
 
-This may sound boring now, but basically all interactive webpages that you've visited \(e.g. facebook, spotify, [pac-man](https://www.google.com.sg/search?q=pacman+online&oq=pacman+online&aqs=chrome.0.0l6.2669j0j7&sourceid=chrome&ie=UTF-8)\) are possible because the DOM interface lets us manipulate the contents of a webpage without refreshing a page!
+This may sound boring now, but basically all interactive webpages that you've visited \(e.g. [Stripe Connect](https://stripe.com/blog/connect-front-end-experience), [pac-man](https://codepen.io/hellokatili/pen/xwKRmo), [Fancy Checkout](https://github.com/gabriellamas/Fancy-Checkout) \) are possible because the DOM interface lets us manipulate the contents of a webpage without refreshing a page!
 
 ### How to select elements from the DOM using selectors
 
@@ -180,7 +180,11 @@ greeting_div.classList.contains("my-new-class");
 
 ### How to add html elements
 
-The recipe for add a new element to the DOM is as follows: 1. create a new element and save it to a variable 2. modify any properties of the element 3. attach the element to an existing element on the page
+The recipe for add a new element to the DOM is as follows: 
+
+1. create a new element and save it to a variable 
+2. modify any properties of the element 
+3. attach the element to an existing element on the page
 
 Example:
 
@@ -301,10 +305,14 @@ On the `event` object, there are some useful methods as well. You will encounter
 Example:
 
 ```markup
+<!-- in your html file -->
+
 <a href="www.google.com">google</a>
 ```
 
 ```javascript
+
+// in your javascript file
 let linkElement = document.querySelector("a");
 linkElement.addEventListener("click", function(event) {
   event.preventDefault(); // this prevents the default behaviour of clicking a link (i.e. go to link URL)
