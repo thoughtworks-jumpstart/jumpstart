@@ -8,10 +8,6 @@ Objects can store 2 types of things: **data** \(i.e. values - like strings, numb
 
 ![oven](../../.gitbook/assets/oven_object.jpg)
 
-## Lab
-
-[https://github.com/thoughtworks-jumpstart/js-basics-2](https://github.com/thoughtworks-jumpstart/js-basics-2)
-
 ## Syntax
 
 How to define an object
@@ -92,3 +88,6 @@ myObject.awesomeMethod = function () {
 * [Understanding the `this` keyword](https://hackernoon.com/understanding-javascript-the-this-keyword-4de325d77f68)
 * [MDN Object docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 
+## Lab
+
+[https://github.com/thoughtworks-jumpstart/js-basics-2](https://github.com/thoughtworks-jumpstart/js-basics-2)
