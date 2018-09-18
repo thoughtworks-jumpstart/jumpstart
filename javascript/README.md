@@ -19,6 +19,10 @@ Now, Javascript has become the language of the web. To date, JavaScript is the o
 
 Javascript has its idiosyncracies and gotchas, which we will discover over the course of working with it. But it can also be a very powerful tool in our toolkit, if we understand it and use it well.
 
+Here is a good overview of the Javascript landscape as of 2018:
+
+* [Modern JavaScript Explained For Dinosaurs](https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70)
+
 ## Tutorials
 
 * [The Modern Javascript Tutorial](http://javascript.info/)
