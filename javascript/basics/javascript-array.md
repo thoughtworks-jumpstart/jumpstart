@@ -2,10 +2,6 @@
 
 An array is a data structure that allows us to store a collection of values in a single variable.
 
-## Lab
-
-[https://github.com/thoughtworks-jumpstart/js-basics-3](https://github.com/thoughtworks-jumpstart/js-basics-3)
-
 ## Syntax
 
 Defining an array:
@@ -72,3 +68,6 @@ Creating arrays from strings
 * [MDN Array docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype)
 * [Array iteration methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Iteration_methods)
 
+## Lab
+
+[https://github.com/thoughtworks-jumpstart/js-basics-3](https://github.com/thoughtworks-jumpstart/js-basics-3)
