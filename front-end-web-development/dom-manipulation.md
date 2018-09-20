@@ -246,6 +246,8 @@ greeting_div.addEventListener("click", function() {
 
 When we add an event listener, the callback function that comes after can take in an `event` objet as its first parameter. In the previous example we've left it out and essentially thrown it away because we didn't use it. In some cases, we do want to access the `event` object's methods or attributes. Here are some example use cases:
 
+Now we can do the [page-styler​ exercise](https://github.com/thoughtworks-jumpstart/page-styler).
+
 #### `event` attributes
 
 The event object contains several attributes which can be useful. For example:
