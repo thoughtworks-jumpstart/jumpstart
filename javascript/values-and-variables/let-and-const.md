@@ -137,7 +137,7 @@ for (let i = 0; i < 10; i++ ) {
 
 **Rule of thumb**: use `const` by default. use `let` otherwise.
 
-**Note**: In this ES6 chapter, we use a lot of `let` and very few `const` in our examples. This is not recommended and it's simply to allow you to experiment with the syntax again and again without getting errors for trying to redefine variables \(this happens when you use `const`\). In your projects/assignments, use `const` unless you intend to reassign another value to your variable.
+**Note**: You should prefer `const` to `let` when you have a choice. In this section, we use a lot of `let` and very few `const` in our examples. This is to allow you to experiment with the syntax again and again without getting errors for trying to redefine variables \(this happens when you use `const`\). In your projects/assignments, use `const` unless you intend to reassign another value to your variable.
 
 ## Recommended Reading
 
