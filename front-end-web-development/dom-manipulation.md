@@ -91,6 +91,7 @@ To start with, let's have a glance with the APIs we need to be familiar with:
   - [parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
   - [childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
 - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+  - [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
   - [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
   - [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
   - [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
