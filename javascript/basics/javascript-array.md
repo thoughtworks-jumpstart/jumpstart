@@ -70,4 +70,5 @@ Creating arrays from strings
 
 ## Lab
 
-[https://github.com/thoughtworks-jumpstart/js-basics-3](https://github.com/thoughtworks-jumpstart/js-basics-3)
+* [https://github.com/thoughtworks-jumpstart/js-basics-3](https://github.com/thoughtworks-jumpstart/js-basics-3)
+* [https://github.com/thoughtworks-jumpstart/javascript-basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
