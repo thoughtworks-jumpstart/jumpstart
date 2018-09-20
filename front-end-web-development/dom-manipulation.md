@@ -261,9 +261,9 @@ Example 1: using `event`'s properties \(e.g. `screenX` and `screenY`\) \(Note th
 
 ```javascript
 let body = document.querySelector("body");
-body.addEventListener("mouseover", function(e) {
-  rgbColor1 = Math.ceil((e.screenY / 2000) * 256);
-  rgbColor2 = Math.ceil((e.screenX / 2000) * 256);
+body.addEventListener("mouseover", function(event) {
+  let rgbColor1 = Math.ceil((event.screenY / 200) * 256);
+  let rgbColor2 = Math.ceil((event.screenX / 200) * 256);
   body.style.backgroundColor =
     "rgb(" + [rgbColor1, 100, rgbColor2].join(",") + ")";
   console.log(rgbColor1, rgbColor2);
