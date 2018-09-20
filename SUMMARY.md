@@ -35,7 +35,7 @@
   * [JavaScript in Depth](javascript/in-depth/README.md)
     * [Values and variables](javascript/values-and-variables/README.md)
       * [let and const](javascript/values-and-variables/let-and-const.md)
-      * [Scope](javascript/values-and-variables/scope.md)
+      * [Some notes on "scope"](javascript/values-and-variables/scope.md)
     * [Functions](javascript/functions/README.md)
       * [Arrow functions](javascript/functions/arrow-functions.md)
       * [Callback functions](javascript/functions/callback-functions.md)
