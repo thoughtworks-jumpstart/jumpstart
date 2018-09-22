@@ -95,6 +95,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
 * [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 * [Clean Coders](https://cleancoders.com/)
 * [The worst mistake of computer science](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
+* [23 guidelines for writing readable code](https://alemil.com/guidelines-for-writing-readable-code)
 
 ## Labs
 
