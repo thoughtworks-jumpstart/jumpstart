@@ -78,6 +78,7 @@ One of the most important things we impart at JumpStart is effective learning. W
 * [Teach yourself programming in 10 years](http://norvig.com/21-days.html)
 * [What I learned about learning](https://medium.com/@davified/what-i-learned-in-2017-about-learning-d185f1f38772)
 * [Carol Dweck - Growth Mindset](https://www.youtube.com/watch?v=hiiEeMN7vbQ)
+* [How to teach yourself hard things](https://jvns.ca/blog/2018/09/01/learning-skills-you-can-practice/)
 * [Myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
 * [The genius fallacy](http://jxyzabc.blogspot.sg/2017/09/the-genius-fallacy.html)
 * [Jargon.js](http://jargon.js.org/)
