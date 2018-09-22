@@ -28,6 +28,11 @@ Follow the instructions at [https://github.com/thoughtworks-jumpstart/fetch-reac
 
 ### Recommended reading
 
+* [Fetching Data with React](https://www.robinwieruch.de/react-fetching-data/)
+* [Testing Async JavaScript & API Calls](http://frontend.turing.io/lessons/module-3/testing-async.html)
+
+### References
+
 * [Async functions - making promises friendly](https://developers.google.com/web/fundamentals/primers/async-functions)
 * [MDN docs on promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 * [MDN docs on using fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
