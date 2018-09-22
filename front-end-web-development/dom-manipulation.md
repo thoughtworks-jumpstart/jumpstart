@@ -376,6 +376,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 - [JavaScript Info: Events](http://javascript.info/events)
 - [MDN: Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+- [Eloquent JavaScript: Handling Events](https://eloquentjavascript.net/15_event.html)
 
 ### References
 
