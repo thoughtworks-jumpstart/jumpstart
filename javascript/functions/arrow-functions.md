@@ -7,32 +7,24 @@ ES6 arrow functions give us several benefits over ES5 functions:
 
 ## Syntax
 
-Named functions:
+This is how we used to declare functions before ES6:
 
 ```javascript
-// ES6
-const awesomeFunction = (someParam) => { ... }
-
-// ES5
 function awesomeFunction(someParam) { ... }
-// also ES5
+
 var awesomeFunction = function(someParam) { ... }
 ```
 
-Anonymous functions \(usually you use them when you need to pass them as callback functions\):
+ES6 introduced arrow-function:
 
 ```javascript
-// ES5
-function(someParam) {
-    // do something
-}
+const awesomeFunction = (someParam, anotherParam) => { ... }
+```
 
-// ES6
-(someParam, someOtherParam) => { ... }
+e.g.
 
-someParam => { ... } // brackets are optional when there's only 1 argument
-
-someParam => do something   // for single-line statements, the curly braces {} and return keyword can be removed thanks to implicit returns
+```javascript
+const add = (x,y) => x + y;
 ```
 
 ## Pro-tips
@@ -65,6 +57,8 @@ someParam => do something   // for single-line statements, the curly braces {} a
 ['a', 'b', 'c'].map((alphabet, index) => ({alphabet:index}))
 ```
 
+* You don't need brackets \(`()`\) when there is only one argument to the function.
+
 * Brackets \(`()`\) are needed when your function has one of the following:
   * multiple arguments
   * no arguments
@@ -74,7 +68,7 @@ someParam => do something   // for single-line statements, the curly braces {} a
 
 ## Recommended reading
 
-* [Arrow functiosn in depth](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
+* [Arrow functions in depth](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)
 * [MDN docs on arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 * [http://exploringjs.com/es6/ch\_arrow-functions.html](http://exploringjs.com/es6/ch_arrow-functions.html) \(explains `this` and ES6 arrow functions very well\)
 * On the use of arrow functions in React, see [https://reactjs.org/docs/handling-events.html](https://reactjs.org/docs/handling-events.html)
