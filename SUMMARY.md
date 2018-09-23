@@ -56,7 +56,7 @@
       * [Understanding this](javascript/classes/this.md)
       * [Bind Apply Call](javascript/functions/bind-apply-call.md)
       * [When not to use this in arrow functions](javascript/classes/this-and-arrow-functions.md)
-      * [Prototype inheritance](javascript/classes/prototype-inheritance.md)
+      * [Prototype based inheritance](javascript/classes/prototype-inheritance.md)
     * [Syntactic sugar](javascript/syntactic-sugar/README.md)
       * [Template strings](javascript/syntactic-sugar/template-strings.md)
       * [Destructuring](javascript/syntactic-sugar/destructuring.md)
