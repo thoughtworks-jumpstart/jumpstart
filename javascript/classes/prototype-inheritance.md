@@ -1,5 +1,7 @@
 # Prototype Inheritance
 
+> Factoid: Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations. JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sugar over JavaScript's existing prototype-based inheritance.
+
 ## Prototype based Inheritance
 
 In ES6, we can define classes and extend one from another. Then a child class can reuse the logic defined in its parent class.
@@ -8,7 +10,7 @@ However, this is just `syntax sugar` to make Javascript more look like other obj
 
 The picture below explains how does the `prototype-chain` works.
 
-![IMAGE](https://i.stack.imgur.com/KFzI3.png)
+![prototype-inheritance](../../.gitbook/assets/prototype-inheritance.png)
 
 All constructor function has `prototype` property.
 
