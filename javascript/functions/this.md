@@ -42,5 +42,6 @@ When this happens, there are strategies \(e.g. [bind](https://developer.mozilla.
 
 ## Resources
 
-* [http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
-
+* [Understanding this](http://javascript.info/object-methods)
+* [What is 'this' in Javascript](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
+* [Understand JavaScript’s “this” With Clarity, and Master It](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/) 
