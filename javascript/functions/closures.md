@@ -4,23 +4,22 @@ Official definition on MDN: A **closure** is the combination of **a function** a
 
 > Human readable definition: A closure === **a function** + **the variables defined outside of itself** \(like the 'enclosure' around the function, e.g. another function, or a .js file\)
 >
-> Do **NOT** confuse callbacks and closures! Callbacks can also be closures, but are not always.
 
 ```javascript
 // Example: b() is a closure because it's a function that has access to variable (`message`) outside its function scope 
 function a() {
   var message = 'hello world'
-  return function b() {
+  return function logMessage() {
     console.log(message) 
   }
 }
 
 console.log(message) // undefined
-b = a()
-b() // prints 'hello world'
+const logMessage = a()
+logMessage() // prints 'hello world'
 ```
 
-Fun trivia: By the official defintion of closures on MDN, even the function below is a closure! \#shook
+Fun trivia: By the official definition of closures on MDN, even the function below is a closure! \#shook
 
 ```javascript
 var name = "alice"
@@ -32,8 +31,9 @@ function greeting() {
 
 ## Use cases of closures
 
-* Encapsulating \(i.e. hiding data\) within a module
-* Otherwise, not much \(see  [https://stackoverflow.com/questions/2622421/what-are-the-use-cases-for-closures-callback-functions-in-javascript](https://stackoverflow.com/questions/2622421/what-are-the-use-cases-for-closures-callback-functions-in-javascript)\) 
+Closure is a very important concepts in functional programing paradigm. It allows a function to remember its context where it's defined.
+
+One of the use case is to implement the `private variable`. In the example above, the variable `message` is considered private in the function and only accessible by the `logMessage` function.
 
 ## Lab
 
