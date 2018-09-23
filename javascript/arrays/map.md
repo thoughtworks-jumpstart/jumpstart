@@ -15,9 +15,9 @@ someArray.map(function(element[, index, array]) {
 **Example**
 
 ```javascript
-var numbers = [1,2,3]
+const numbers = [1,2,3]
 
-var doubledNumbers = numbers.map(function (number) {
+const doubledNumbers = numbers.map(function (number) {
   return number * 2
 });
 
@@ -31,9 +31,9 @@ console.log(doubledNumbers)
 * Like `.forEach()`, `map` takes in a callback function that can receive 3 positional parameters: `element`, `index`, `container`. 
 
 ```javascript
-var numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5]
 
-var numberMultipliedByItsPositionalIndex = numbers.map(function(element, index) { 
+const numberMultipliedByItsPositionalIndex = numbers.map(function(element, index) { 
   return element * index
 })
 console.log(numberMultipliedByItsPositionalIndex)

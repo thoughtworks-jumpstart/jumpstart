@@ -7,7 +7,7 @@ Because `.map()` and `filter()` returns arrays, we can chain on other Array meth
 // 1. filter groceries to get an array containing only items on discount
 // 2. map over filtered array to get an array of prices including GST
 // 3. reduce array of prices with GST to get total price 
-groceries = [{
+const groceries = [{
   itemName: 'eggs',
   isOnDiscount: true,
   price: 2
@@ -36,8 +36,8 @@ groceries
 
 // let's break it down
 
-var discountedItems = groceries.filter(element => element['isOnDiscount'])
-var pricesWithGST = discountedItems.map(element => element.price * 1.09)
-var totalPrice = pricesWithGST.reduce((accumulator, element) => accumulator + element)
+const discountedItems = groceries.filter(element => element['isOnDiscount'])
+const pricesWithGST = discountedItems.map(element => element.price * 1.09)
+const totalPrice = pricesWithGST.reduce((accumulator, element) => accumulator + element)
 ```
 

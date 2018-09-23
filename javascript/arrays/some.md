@@ -17,13 +17,13 @@ someArray.some(function(element[, index, array]) {
 Imagine we have a group of users that are the following age who have all signed up for some sort of tour through our application.
 
 ```javascript
-var ages = [ 23, 32, 17, 19, 34 ]
+const ages = [ 23, 32, 17, 19, 34 ]
 ```
 
 We want to show an ad that displays delicious beer but don't want to do so if any of the group members are under 21. A function that just tests whether or not a value is less than 21 might look like this:
 
 ```javascript
-var lessThan21 = function (age) {
+const lessThan21 = function (age) {
   return (age < 21)
 };
 
@@ -34,7 +34,7 @@ var lessThan21 = function (age) {
 We can use `some` to check if any of the values are less than 21 in just one go:
 
 ```javascript
-var anyLessThan21 = function (ages) {
+const anyLessThan21 = function (ages) {
   return ages.some(function (age) {
     return age < 21;
   });

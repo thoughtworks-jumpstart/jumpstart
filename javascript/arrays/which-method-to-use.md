@@ -2,7 +2,7 @@
 
 Not sure whether to use `.map`, `.filter`, or `.reduce`? This flowchart should help to guide you:
 
-![](../../.gitbook/assets/map-reduce-filter.png)
+![map-reduce-filter](../../.gitbook/assets/map-reduce-filter.png)
 
 ## Lab
 

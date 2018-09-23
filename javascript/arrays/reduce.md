@@ -49,8 +49,8 @@ someArray.reduce(function(accumulator, element[, index, array]) {
 Not only can you accumulate numbers, you can also accumulate strings!
 
 ```javascript
-var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
-epic.reduce(function (accumulator, element) {
+const epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+const result = epic.reduce(function (accumulator, element) {
   return accumulator + ' ' + element;
 }); // returns 'a long time ago in a galaxy far far away'
 ```
@@ -58,7 +58,7 @@ epic.reduce(function (accumulator, element) {
 It may take a minute to get your mind wrapped around what's happening. However, by simply logging the values it \(hopefully!\) becomes much more clear what's going on.
 
 ```javascript
-epic.reduce(function (accumulator, element) {
+const result = epic.reduce(function (accumulator, element) {
   console.log('logging -- element: "' + element + '", ' + 'accumulator: "' + accumulator + '"');
   return accumulator + ' ' + element;
 });
@@ -80,12 +80,12 @@ You can also reduce objects!
 Example: We want to change up the structure of our users so that we can use the users' full name as the key and have their email as the value. Normally, this would take a lot of looping and initializing some variables. However, with reduce we can set an empty object as our starting point \(i.e. previous\) and do it all in a single go!
 
 ```javascript
-var users = [{ fullName: 'George Washington', email: 'george@us.gov' },
+const users = [{ fullName: 'George Washington', email: 'george@us.gov' },
              { fullName: 'John Adams', email: 'john@us.gov' },
              { fullName: 'Thomas Jefferson', email: 'thomas@us.gov' },
              { fullName: 'James Madison', email: 'james@us.gov' }];
 
-users.reduce(function (usersObj, user) {
+const result = users.reduce(function (usersObj, user) {
   usersObj[user.fullName] = user.email;
   return usersObj;
 }, {});

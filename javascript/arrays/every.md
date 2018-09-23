@@ -17,7 +17,7 @@ someArray.every(function(element[, index, array]) {
 Consider the same example above, but instead of checking if any of the values are less than 21, we want to check that all of the values are equal to or greater than 21. A simple function to return if a single age is 21 or older would look like:
 
 ```javascript
-var twentyOneOrAbove = function (age) {
+const twentyOneOrAbove = function (age) {
   return age >= 21;
 };
 
@@ -28,7 +28,7 @@ var twentyOneOrAbove = function (age) {
 We can use `every` to check for all the values in the array.
 
 ```javascript
-var twentyOneOrAbove = function (ages) {
+const twentyOneOrAbove = function (ages) {
   return ages.every(function (age) {
     return age >= 21;
   });

@@ -19,16 +19,16 @@ someArray.filter(function(element[, index, array]) {
 **Example**
 
 ```javascript
-var numbers = [1,2,3,4,5,6]
+const numbers = [1,2,3,4,5,6]
 
-var evenNumbers = numbers.filter(function (number) {
+const evenNumbers = numbers.filter(function (number) {
   return number % 2 == 0  // this returns true if the number has no remainder when divided by 2
 });
 
 console.log(evenNumbers)
 // [2, 4, 6]
 
-var oddNumbers = numbers.filter(function (number) {
+const oddNumbers = numbers.filter(function (number) {
   return number % 2 == 1  // this returns true if the number has a remainder of 1 when divided by 2
 });
 console.log(oddNumbers)

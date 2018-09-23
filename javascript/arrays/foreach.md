@@ -15,10 +15,10 @@ someArray.forEach(function(element[, index, array]) {
 **Example**
 
 ```javascript
-var friends = ["bob", "alice", "tim", "june"];
+const friends = ["bob", "alice", "tim", "june"];
 
 // using the old for loop
-for (var i = 0; i < friends.length; i++) {
+for (let i = 0; i < friends.length; i++) {
   console.log("Hello, " + friends[i] + "!");
 }
 
