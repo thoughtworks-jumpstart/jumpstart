@@ -32,6 +32,16 @@ const result = someArray.reduce(function(accumulator, element[, index, array]) {
 
 ```
 
+What's going on here? 
+
+The best way to understand the process is to visualize it with a picture:
+
+![reduce](../../.gitbook/assets/reduce.svg)
+
+(credit: the image is taken from this blog entry: [understanding fold](https://sidburn.github.io/blog/2017/03/19/understanding-fold))
+
+Now, let's change our focus on that `accumulator initial value`.
+
 We didn't supply the initial accumulator value in the example above. In that case, the first element of the array (which is `1`) is used as the initial accumulator value and `2` is used as the first element to process.
 
 We could supply the initial accumulator value explicitly, and we need to supply one that **makes sense**, depending on the operation we are doing. In this case, since we want to calculate the sum of the numbers in the array, we can supply the initial accumulator value as `0`.
