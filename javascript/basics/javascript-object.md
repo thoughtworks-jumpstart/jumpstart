@@ -10,7 +10,7 @@ Objects can store 2 types of things: **data** \(i.e. values - like strings, numb
 
 ## Syntax
 
-How to define an object
+How to define an object using object-literal
 
 ```javascript
 const myObject = {};
@@ -51,7 +51,7 @@ const yetAnotherObject = {
 yetAnotherObject.printMessage();
 ```
 
-* Use the `this` keyword to refer to the object \(e.g. `this.myKey`\)
+Use the `this` keyword to refer to the object \(e.g. `this.myKey`\)
 
 ```javascript
 const someObject = {
@@ -79,6 +79,20 @@ cat.name = 'Fluffy';
 // Add a new method
 myObject.awesomeMethod = function () {
     console.log("i'm an awesome method!");
+}
+```
+
+In ES6, you can also using a shorthand for referring to key values if the key and value have the same name
+
+```javascript
+// In ES5
+function createMonster(name, power) {
+  return { type: 'Monster', name: name, power: power };
+}
+
+// In ES6
+function createMonster(name, power) {
+  return { type: 'Monster', name, power }; // note the object literal property value shorthand
 }
 ```
 

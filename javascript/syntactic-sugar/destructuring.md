@@ -56,7 +56,7 @@ function myFunc({name, age, gender, jobTitle}) {
 
 myFunc({ name: 'John', age: 25, gender: 'male', jobTitle: 'runner' })
 
-// ES5 (this is much more verbose!)
+// Compare it with what we used to do in ES5 (much more verbose!!!)
 function myFunc(options) {
   options = options === undefined ? {} : options;
   var name = options.name === undefined ? 'John' : options.name;
@@ -70,19 +70,6 @@ function myFunc(options) {
 myFunc({ name: 'John', age: 25, gender: 'male', jobTitle: 'runner' })
 ```
 
-**Fun fact**: In ES6, you can also using a shorthand for referring to key values if the key and value have the same name
-
-```javascript
-// ES5
-function createMonster(name, power) {
-  return { type: 'Monster', name: name, power: power };
-}
-
-// ES6
-function createMonster(name, power) {
-  return { type: 'Monster', name, power }; // note the object literal property value shorthand
-}
-```
 
 ## Destructuring arrays
 
