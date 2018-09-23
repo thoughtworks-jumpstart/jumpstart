@@ -51,7 +51,7 @@
       * [Default Function Parameters](javascript/functions/default-function-parameters.md)
       * [Closures](javascript/functions/closures.md)
     * [Object Oriented Javascript](javascript/classes/README.md)
-      * [More about classes](javascript/classes/more-about-classes.md)
+      * [class](javascript/classes/more-about-classes.md)
       * [this](javascript/classes/this.md)
       * [this & arrow functions](javascript/classes/this-and-arrow-functions.md)
       * [Bind Apply Call](javascript/functions/bind-apply-call.md)
