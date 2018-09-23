@@ -4,7 +4,7 @@ Although in general arrow functions make it easy to resolve the value of `this`,
 
 ## We shouldn't use arrow functions in object literal
 
-In the example below, the `this` reference in `whatIsThis` function becomes `undefined` when you assign it to `whatAmI` variable.
+In the example below, the `this` is bound to `dog` at run time.
 
 ```javascript
 const dog = {
@@ -22,17 +22,14 @@ const dog = {
 
 console.log(dog.makeSound()); // returns 'woof!' 
 console.log(dog.whatIsThis()); // this is bound to the dog object
-
-const whatAmI = dog.whatIsThis;
-console.log(whatAmI()); // this becomes an global object (https://nodejs.org/api/globals.html)
 ```
 
-What if you try to define those methods with arrow function? It's worse. The value of `this` is always bound to an empty object.
+What if you try to define those methods with arrow functions? The value of `this` is bound to an empty object.
 
 ```javascript
-const dog = { name: 'fluffy', 
-    type: 'dog', 
-    sound: 'woof!', 
+const dog = { name: 'fluffy',
+    type: 'dog',
+    sound: 'woof!',
     makeSound: () => {          // this line is changed to use arrow function syntax
         // value of this is {}
         return this.sound
