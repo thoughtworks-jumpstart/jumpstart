@@ -14,7 +14,7 @@ const result = someArray.reduce(function(accumulator, element[, index, array]) {
 
 [Check out the docs.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
-**Example**: Reducing numbers
+**Example**: Calculating sum of an array of integers
 
 ```javascript
 [1, 2, 3, 4, 5].reduce(function(accumulator, element, index) {
@@ -30,21 +30,32 @@ const result = someArray.reduce(function(accumulator, element[, index, array]) {
 // 10 5 4
 // returns 15
 
+```
+
+We didn't supply the initial accumulator value in the example above. In that case, the first element of the array (which is `1`) is used as the initial accumulator value and `2` is used as the first element to process.
+
+We could supply the initial accumulator value explicitly, and we need to supply one that **makes sense**, depending on the operation we are doing. In this case, since we want to calculate the sum of the numbers in the array, we can supply the initial accumulator value as `0`.
+
+For example, the code below would return the same result as the one above, but the initial accumulator value is set to `0`.
+
+```javascript
 [1, 2, 3, 4, 5].reduce(function(accumulator, element, index) {
     console.log(accumulator, element, index);
     return accumulator + element;
-}, 10); // note that we can specify a different initialValue. if not supplied, this defaults to 0
+}, 0);
 
 // prints:
-// 10 1 0
-// 11 2 1
-// 13 3 2
-// 16 4 3
-// 20 5 4
-// returns 25
+// 0 1 0
+// 1 2 1
+// 3 3 2
+// 6 4 3
+// 10 5 4
+// returns 15
 ```
 
-**Example**: Reducing strings
+Exercise: can you calculate the multiplication of numbers in the array with `reduce`?
+
+**Example**: Reducing array of strings into one string
 
 Not only can you accumulate numbers, you can also accumulate strings!
 
@@ -73,9 +84,7 @@ const result = epic.reduce(function (accumulator, element) {
 // >> 'a long time ago in a galaxy far far away'
 ```
 
-**Example**: Reducing objects
-
-You can also reduce objects!
+**Example**: Changing the structure of an object
 
 Example: We want to change up the structure of our users so that we can use the users' full name as the key and have their email as the value. Normally, this would take a lot of looping and initializing some variables. However, with reduce we can set an empty object as our starting point \(i.e. previous\) and do it all in a single go!
 
