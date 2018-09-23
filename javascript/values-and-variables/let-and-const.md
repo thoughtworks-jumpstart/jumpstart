@@ -1,13 +1,41 @@
 # let and const
 
+Before ES6, the only way to declare variables is to use `var`.
+
 ES6 offers us 2 new \(and preferred ways\) to define variables:
 
 * `const`   - for variables with values that should not be reassigned
 * `let`     - for variables with values that can be reassigned
 
-## Understanding Scope of `var` and `let`/`const`
+What are the differences?
+
+## Difference between `let` and `const`
+
+While you can assign a `let` variable to different values, once you assign a `const` variable to some initial value, you cannot changes its value.
+
+```javascript
+const a = 1
+
+a = 2; // Error: ​Assignment to constant variable
+```
+
+However, if `const` variable points to an object, you can still modify the properties of that object, as the example below shows:
+
+```javascript
+const a = { b: 1};
+
+a["b"] = 2;
+
+console.log(a)
+```
+
+## Understanding scope of `var` and `let`/`const`
+
+### What is scope?
 
 Scope of a variable is the area of codes where the variable can be used.
+
+### Global Scope and Function Scope
 
 In ES5, there are only two type of scopes:
 
@@ -18,21 +46,50 @@ In ES5, there are only two type of scopes:
 * function scope
   * When you define `var` inside a function.
 
+In the following example, the variable `b` is defined in the function, so it cannot be accessed from outside the function.
+
+```javascript
+// example of function scope. b exists only within the function
+function a() {
+  var b = 2
+}
+
+console.log(b) // ReferenceError: b is not defined
+```
+
+### Understanding Variable Hoisting Effect with `var`
+
+The `var` variables has an [hoisting effect](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting): they can be used before their declaration, although the value you get is always `undefined` until you properly set the variable value.
+
 In the following example, the variable `animalToFeed` is actually available through the whole function although it's define in a block:
 
 ```javascript
 function feedPet() {
-  {
-    var animalToFeed = "cat";
-  } 
+  console.log("The value of animalToFeed at the beginning of function: " + animalToFeed);
 
-  console.log("I am feeding my " + animalToFeed);
+  if (true) {
+    var animalToFeed = "cat";
+  }
+
+  console.log("The value of animalToFeed at the end of function: " + animalToFeed);
 }
 
-feedPet(); // log "I am feeding my cat"
+feedPet();
 ```
 
-In ES6, there is one more scope added
+In this case, the variable `animalToFeed` is considered as declared since the beginning of the function. It remained undefined until it's assigned a value.
+
+Try the example above and see if the output matches your understanding.
+
+For `let` and `const`, if you try to use them before the declaration, you would get `ReferenceError`.
+
+More details can be found [here](https://medium.freecodecamp.org/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d)
+
+### Block Scope
+
+The variable hoisting effect confused many people. In the example above, the variable `animalToFeed` is declared within the if-block, shouldn't it only be visible within that if-block?
+
+That's not possible in ES5, but in ES6, there is one more scope added
 
 * block scope:
   * When you define a variable with `let`. The variable belong to the scope defined by the closest enclosing `{}`
@@ -41,25 +98,19 @@ In the following example, the variable `animalToFeed` is not available outside t
 
 ```javascript
 function feedPet() {
-  {
-    let animalToFeed = "cat";
-  } 
+  console.log("The value of animalToFeed at the beginning of function: " + animalToFeed);
 
-  console.log("I am feeding my " + animalToFeed);
+  if (true) {
+    let animalToFeed = "cat";
+  }
+
+  console.log("The value of animalToFeed at the end of function: " + animalToFeed);
 }
 
 feedPet(); // ReferenceError: animalToFeed is not defined
 ```
 
-## Understanding Variable Hoisting
-
-The `var` variables has an hoisting effect: they can be used before their declaration, although the value you get is always `undefined` until you properly set the variable value.
-
-For `let` and `const`, if you try to use them before the declaration, you would get `ReferenceError`.
-
-More details can be found [here](https://medium.freecodecamp.org/what-is-variable-hoisting-differentiating-between-var-let-and-const-in-es6-f1a70bb43d)
-
-## When should we prefer let/const to var?
+## We should prefer let/const to var
 
 * why `let` and `const` &gt; `var`:
   * prevent \(accidental\) variable reassignment
@@ -135,11 +186,8 @@ for (let i = 0; i < 10; i++ ) {
 };
 ```
 
-**Rule of thumb**: use `const` by default. use `let` otherwise.
-
-**Note**: You should prefer `const` to `let` when you have a choice. In this section, we use a lot of `let` and very few `const` in our examples. This is to allow you to experiment with the syntax again and again without getting errors for trying to redefine variables \(this happens when you use `const`\). In your projects/assignments, use `const` unless you intend to reassign another value to your variable.
+**Rule of thumb**: use `const` by default. use `let` otherwise. In your projects/assignments, use `const` unless you intend to reassign another value to your variable.
 
 ## Recommended Reading
 
 More differences of let vs var are discussed [here](http://www.jstips.co/en/javascript/keyword-var-vs-let/)
-
