@@ -9,7 +9,7 @@ However, unlike `.forEach()` and `.map()`, the callback function **must** return
 Syntax:
 
 ```javascript
-someArray.filter(function(element[, index, array]) {
+const newArray = someArray.filter(function(element[, index, array]) {
 
 })
 ```

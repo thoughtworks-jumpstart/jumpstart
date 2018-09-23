@@ -5,7 +5,7 @@
 Syntax:
 
 ```javascript
-someArray.some(function(element[, index, array]) {
+const result = someArray.some(function(element[, index, array]) {
 
 })
 ```

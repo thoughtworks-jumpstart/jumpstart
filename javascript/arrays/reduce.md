@@ -7,7 +7,7 @@
 Syntax:
 
 ```javascript
-someArray.reduce(function(accumulator, element[, index, array]) {
+const result = someArray.reduce(function(accumulator, element[, index, array]) {
 
 }, accumulatorInitialValue)
 ```

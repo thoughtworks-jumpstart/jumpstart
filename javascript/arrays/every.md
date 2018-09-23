@@ -5,7 +5,7 @@
 Syntax:
 
 ```javascript
-someArray.every(function(element[, index, array]) {
+const result = someArray.every(function(element[, index, array]) {
 
 })
 ```

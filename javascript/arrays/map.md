@@ -5,7 +5,7 @@
 Syntax:
 
 ```javascript
-someArray.map(function(element[, index, array]) {
+const newArray = someArray.map(function(element[, index, array]) {
 
 })
 ```
