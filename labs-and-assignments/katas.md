@@ -1,10 +1,10 @@
-# katas
+# Programming Katas
 
-## Katas
+## training on Javascript core APIs
 
-### In-class exercises:
+* [https://github.com/myjinxin2015/Katas-list-of-Training-JS-series](https://github.com/myjinxin2015/Katas-list-of-Training-JS-series)
 
-beginner
+## beginner level
 
 * [https://www.codewars.com/kata/sum-of-positive/javascript](https://www.codewars.com/kata/sum-of-positive/javascript)
 * [https://www.codewars.com/kata/sum-without-highest-and-lowest-number/javascript](https://www.codewars.com/kata/sum-without-highest-and-lowest-number/javascript)
@@ -13,7 +13,7 @@ beginner
 * [https://www.codewars.com/kata/list-filtering/javascript](https://www.codewars.com/kata/list-filtering/javascript)
 * [https://www.codewars.com/kata/abbreviate-a-two-word-name/javascript](https://www.codewars.com/kata/abbreviate-a-two-word-name/javascript)
 
-intermediate
+## intermediate level
 
 * [x] [https://www.codewars.com/kata/sum-of-a-sequence/javascript](https://www.codewars.com/kata/sum-of-a-sequence/javascript)
 * [x] [https://www.codewars.com/kata/get-the-middle-character/javascript](https://www.codewars.com/kata/get-the-middle-character/javascript)
@@ -30,7 +30,7 @@ intermediate
 * [ ] [https://www.codewars.com/kata/distribute-server-workload/javascript](https://www.codewars.com/kata/distribute-server-workload/javascript)
 * [ ] [https://www.codewars.com/kata/disgruntled-employee/javascript](https://www.codewars.com/kata/disgruntled-employee/javascript)
 
-### Other lists of katas
+## Other lists of katas
 
 * Beginner level katas: [https://www.codewars.com/collections/beginners](https://www.codewars.com/collections/beginners)
 * More beginner level katas: [https://www.codewars.com/collections/fun-javascript-practice](https://www.codewars.com/collections/fun-javascript-practice)
@@ -39,7 +39,7 @@ intermediate
 * Data structures: [https://www.codewars.com/collections/fun-with-lists](https://www.codewars.com/collections/fun-with-lists)
 * All katas: [https://www.codewars.com/collections/](https://www.codewars.com/collections/)
 
-### Other coding challenge platforms
+## Other coding challenge platforms
 
 * [https://leetcode.com/](https://leetcode.com/)
 * [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/)
