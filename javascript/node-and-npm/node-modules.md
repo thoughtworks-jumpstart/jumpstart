@@ -75,6 +75,17 @@ console.log(utils.add(1,100));
 console.log(utils.sub(100,1));
 ```
 
+In module `main.js`, we could also import the `add` and `sub` function explicitly:
+
+```javascript
+var {add, sub} = require('./utils');
+
+console.log(add(1,100));
+console.log(sub(100,1));
+```
+
+Note that this is not a new magic, we are just applying the object destructuring feature we have talked about in this case.
+
 ### A Shortcut for `module.exports`
 
 The above example in `calculator.js` can also be re-written as
