@@ -34,6 +34,7 @@
     * [Javascript loop](javascript/basics/javascript-loop.md)
   * [JavaScript in Depth](javascript/in-depth/README.md)
     * [Variable and Scope](javascript/values-and-variables/README.md)
+      * [What is stored in a variable?](javascript/values-and-variables/what-is-stored-in-variable.md)
       * [let and const](javascript/values-and-variables/let-and-const.md)
       * [Some notes on "scope"](javascript/values-and-variables/scope.md)
     * [Functions](javascript/functions/README.md)

@@ -52,6 +52,19 @@
 
 * Use `camelCase` for names instead of `snake_case` or `kebab-case`
 
+## Primitive Types and Objects 
+
+In JavaScript, there are 6 types of [primitive types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values):
+
+* Boolean
+* null
+* undefined
+* String
+* Number
+* Symbol (this is introduced in ES6)
+
+Using values of primitive types, you can construct **Objects**.
+
 ## Printing output
 
 ```javascript
