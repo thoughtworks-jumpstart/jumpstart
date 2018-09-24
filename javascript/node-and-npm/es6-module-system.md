@@ -74,10 +74,10 @@ Node.JS is built on top of CommonJS since day one and CommonJS is still the defa
 
 The support on ES6 modules is currently [an experimental feature](https://nodejs.org/api/esm.html). However, in order to use ES6 modules in your codes, you have to change your file extension to `.mjs` so that Node is aware the module is written using ES6 modules. Some descriptions of the current status can be found [here](https://github.com/nodejs/node-eps/blob/master/002-es-modules.md)
 
-For Node.js applications running, you have two choices:
+For Node.js applications, you have two choices:
 
-1. Use the ES5 CommonJS syntax \(`const a = require('a')`\), or
-2. Compile ES6 code down to ES5 syntax using the `babel` library. To include
+1. Use the CommonJS syntax \(`const a = require('a')`\), or
+2. Use `babel-node` command to run your codes (which uses ES6 module system)
 
    `babel` in our project, do the following:
 
@@ -86,6 +86,8 @@ For Node.js applications running, you have two choices:
 
 See example: [https://github.com/thoughtworks-jumpstart/basic-es6-template/](https://github.com/thoughtworks-jumpstart/basic-es6-template/)
 
+However, the documentation for [babel-node](https://babeljs.io/docs/en/babel-node) says "Not meant for production use". For now, we should still stay with the CommonJS module system when we develop applications running on NodeJS.
+
 ## Resources
 
 * [JS Modules](http://jsmodules.io/)
@@ -93,4 +95,5 @@ See example: [https://github.com/thoughtworks-jumpstart/basic-es6-template/](htt
 * [ES6 module system](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
 * [ES6 `import` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 * [Bridging CommonJS and ES6 module system](https://medium.com/web-on-the-edge/es-modules-in-node-today-32cff914e4b)
+* [Using ES6 modules on the web](https://developers.google.com/web/fundamentals/primers/modules)
 
