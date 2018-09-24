@@ -62,7 +62,7 @@ ES6 offers flexible ways of [exporting](https://developer.mozilla.org/en-US/docs
 
 ## ES6 Module Support in Browsers Environment
 
-Traditionally browsers don't support Javascript modules. Although you write your Javascript codes in modules in your development environment, you typically bundle all the javascript code into one file like `bundle.js` when you serve them in production environment. \(The bundling task is usually done using `bundlers` like Webpack\).
+Traditionally browsers don't support Javascript modules at all. Although you write your Javascript codes in modules in your development environment, you typically bundle all the javascript code into one file like `bundle.js` when you serve them in production environment. \(The bundling task is usually done using some tools called `bundlers` like Webpack\).
 
 After browsers start supporting ES6 modules, it's possible to add a new attribute `type=module` to your `<script>` tag, to denote the script to be loaded is an ES6 module. More examples can be found in [this article](https://www.contentful.com/blog/2017/04/04/es6-modules-support-lands-in-browsers-is-it-time-to-rethink-bundling/)
 
@@ -74,19 +74,22 @@ Node.JS is built on top of CommonJS since day one and CommonJS is still the defa
 
 The support on ES6 modules is currently [an experimental feature](https://nodejs.org/api/esm.html). However, in order to use ES6 modules in your codes, you have to change your file extension to `.mjs` so that Node is aware the module is written using ES6 modules. Some descriptions of the current status can be found [here](https://github.com/nodejs/node-eps/blob/master/002-es-modules.md)
 
-For Node.js applications, you have two choices:
+To run JavaScript applications on NodeJS platform, you have three choices:
 
 1. Use the CommonJS syntax \(`const a = require('a')`\), or
-2. Use `babel-node` command to run your codes (which uses ES6 module system)
+2. Use ES6 module syntax in your JavaScript code and use [babel plugin](https://babeljs.io/docs/en/babel-plugin-transform-es2015-modules-commonjs) to transpile the codes into CommonJS module syntax and run it on NodeJS platform.
+3. Use `babel-node` command to run your codes written in ES6 module system
 
-   `babel` in our project, do the following:
+For the last choice using 'babel-node', you need to do the following:
 
    * `npm install babel-cli babel-preset-es2015`
    * replace the `start` script in `package.json` to use: `babel-node --presets es2015 app.js` \(instead of `node app.js`\)
 
 See example: [https://github.com/thoughtworks-jumpstart/basic-es6-template/](https://github.com/thoughtworks-jumpstart/basic-es6-template/)
 
-However, the documentation for [babel-node](https://babeljs.io/docs/en/babel-node) says "Not meant for production use". For now, we should still stay with the CommonJS module system when we develop applications running on NodeJS.
+However, the documentation for [babel-node](https://babeljs.io/docs/en/babel-node) says it's "not meant for production use". 
+
+For now, to keep it simple, we should still stay with the CommonJS module system when we develop applications running on NodeJS.
 
 ## Resources
 
