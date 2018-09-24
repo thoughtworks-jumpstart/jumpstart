@@ -21,16 +21,21 @@ const newArray = someArray.filter(function(element[, index, array]) {
 ```javascript
 const numbers = [1,2,3,4,5,6]
 
-const evenNumbers = numbers.filter(function (number) {
+function isEvenNumber( number) {
   return number % 2 == 0  // this returns true if the number has no remainder when divided by 2
-});
+}
+
+const evenNumbers = numbers.filter(isEvenNumber);
 
 console.log(evenNumbers)
 // [2, 4, 6]
 
-const oddNumbers = numbers.filter(function (number) {
-  return number % 2 == 1  // this returns true if the number has a remainder of 1 when divided by 2
-});
+function isOddNumber( number) {
+  return !isEvenNumber(number);
+}
+
+const oddNumbers = numbers.filter(isOddNumber);
+
 console.log(oddNumbers)
 // [1, 3, 5]
 ```

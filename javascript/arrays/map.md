@@ -17,9 +17,11 @@ const newArray = someArray.map(function(element[, index, array]) {
 ```javascript
 const numbers = [1,2,3]
 
-const doubledNumbers = numbers.map(function (number) {
-  return number * 2
-});
+function multiplyBy2 (number) {
+  return number * 2;
+}
+
+const doubledNumbers = numbers.map(multiplyBy2);
 
 console.log(doubledNumbers)
 // [2, 4, 6]
