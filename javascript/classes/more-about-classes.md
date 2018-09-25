@@ -15,6 +15,8 @@
 
 Classes are blueprints for instantiating \(i.e. creating\) Javascript objects. 
 
+Note that this is only one of the ways to create objects in JavaScript. Another way is to use [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+
 ![classes](../../.gitbook/assets/class_inheritance.png)
 
 ## How to define a class in JavaScript
