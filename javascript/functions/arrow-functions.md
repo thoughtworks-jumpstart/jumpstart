@@ -51,10 +51,10 @@ const add = (x,y) => x + y;
 
 ```javascript
 // bad. won't work
-['a', 'b', 'c'].map((alphabet, index) => {alphabet:index})
+['a', 'b', 'c'].map((alphabet, index) => {[alphabet]:index})
 
 // good. will return the object as we expected
-['a', 'b', 'c'].map((alphabet, index) => ({alphabet:index}))
+['a', 'b', 'c'].map((alphabet, index) => ({[alphabet]:index}))
 ```
 
 * You don't need brackets \(`()`\) when there is only one argument to the function.
