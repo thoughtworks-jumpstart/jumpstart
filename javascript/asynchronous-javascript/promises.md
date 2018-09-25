@@ -29,7 +29,7 @@ Another important property about this promise is, after this Friday, once it's r
 It also worths highlighting that there are two parties/roles in this story:
 
 * One party that creates a promise and finally decide if the promise should be fulfilled or rejected.
-* The other party that receives the promise, observe on the outcome, and take actions accordingly.
+* The other party that receives the promise, observes on the outcome, and takes actions accordingly.
 
 ## ES6 Promise API
 
