@@ -23,7 +23,6 @@ const result = someArray.reduce(function(accumulator, element[, index, array]) {
 });
 
 // prints:
-// 0 1 0
 // 1 2 1
 // 3 3 2
 // 6 4 3
@@ -36,7 +35,7 @@ What's going on here?
 
 The best way to understand the process is to visualize it with a picture:
 
-![reduce](../../.gitbook/assets/reduce.svg)
+![reduce_explanation](../../.gitbook/assets/reduce.svg)
 
 (credit: the image is taken from this blog entry: [understanding fold](https://sidburn.github.io/blog/2017/03/19/understanding-fold))
 
