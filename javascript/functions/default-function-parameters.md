@@ -20,7 +20,7 @@ In ES6, you can write the same code as:
 ```javascript
 // ES6
 const hello = (name='world') => {
-    return `hello ${name}`
+    return 'hello ' + name
 }
 
 console.log(hello('bob'))   // 'hello bob'
