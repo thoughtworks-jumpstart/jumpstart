@@ -446,4 +446,3 @@ readFilePromise("path/to/file", "utf8")
 Here is a useful workshop that illustrates the basics of promises. Follow the instructions step by step to get some hands-on exercises on Promise.
 
 * [Promise it won't hurt](https://github.com/stevekane/promise-it-wont-hurt)
-
