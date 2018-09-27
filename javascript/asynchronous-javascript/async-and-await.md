@@ -49,7 +49,19 @@ Note the two new keywords we use above:
 
 In the example above, you may think the async function return a string \(which is the user name\), but remember the async function above is the same as the promise version, and the promise version returns an instance of Promise to the caller.
 
-An Async function returns an instance of a Promise that resolves to the return value as you put in the `return` statement of the function.
+An `async` function returns an instance of a Promise that resolves to the return value as you put in the `return` statement of the function.
+
+That means, if you call an `async` function, then you need to either call `.then()` on the returned result (because it's a promise), or you need to use `await` to extract the value from the promise object.
+
+For example,
+
+```javascript
+getUserSkills("gordon").then((skills) => ...)
+```
+
+```javascript
+const skills = await getUserSkills("gordon");
+```
 
 ## Error Handling within Async Functions
 
@@ -73,6 +85,8 @@ async function getUserSkills(userId) {
   }
 }
 ```
+
+In this case, if the promise returned by `users.get(userId)` or `users.getMetaDataFor(user)` is rejected, `await` will translate that into normal Error that you can `catch` hand handle.
 
 ## What if there are errors thrown from an Async Function?
 
