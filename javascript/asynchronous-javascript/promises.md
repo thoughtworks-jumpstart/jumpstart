@@ -30,8 +30,9 @@ Compare the following code, written in the more traditional idiom of asynchronou
 And the much more elegant Promise workflow, with first-class error handling:
 
 ```javascript
-    User.logIn('user', 'pass').then(function (user) {
-      return query.find();
+    User.logIn('user', 'pass')
+      .then(function (user) {
+      return query.find(user);
     }).then(function (results) {
       return results[0].save({ key: value });
     }).then(function (result) {
