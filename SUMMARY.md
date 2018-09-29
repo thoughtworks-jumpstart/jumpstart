@@ -201,5 +201,6 @@
   * [Group project](projects/group-project.md)
 * [Career](career/README.md)
   * [Job Hunt preparation](career/job-hunt-preparation.md)
+  * [Advices for Junior Developers](career/advices-for-junior-dev.md)
   * [After getting started](career/after-getting-started.md)
 
