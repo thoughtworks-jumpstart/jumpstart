@@ -173,7 +173,7 @@ When the promise is in `rejected` state, the red LED light flashes. There might 
 
 When you call `.then` or `.catch` on the promise, you actually create another gift box like the picture shown below:
 
-![creating a bigger gift box](../../.gitbook/assets/promise-gift-box-chaining.png)
+![creating another gift box](../../.gitbook/assets/promise-gift-box-chaining.png)
 
 What the picture above shows are:
 
@@ -205,7 +205,7 @@ Note that the `onRejected` handler is optional when you call `then()`. If that i
 
 Now you have a new gift box, you can pass it on to your friend, and similarly, they can create their own gift box by wrapping around your gift box, which result in a chain of gift boxes:
 
-![creating a bigger gift box](../../.gitbook/assets/promise-gift-box-chaining-2.png)
+![gift box chaining](../../.gitbook/assets/promise-gift-box-chaining-2.png)
 
 ### Promise Chaining Example
 
