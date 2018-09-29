@@ -4,12 +4,13 @@
 
 > The `Promise` object represents the eventual completion \(or failure\) of an asynchronous operation, and its resulting value.
 
-In its most basic terms, a promise is an object that defines a method called `then`. The promise object represents a value that may be available some time
-in the future. It greatly simplifies asynchronous logic in JavaScript.
+In its most basic terms, a promise is an object that defines a method called `then`. The promise object represents a value that may be available some time in the future. It greatly simplifies asynchronous logic in JavaScript.
 
 ### Promise vs Callback
 
-In the example below, there are three asynchronous tasks, and each task depends on the previous task (i.e. the output of one task becomes the input of the previous task.)
+Before we discuss Promise in more details, I would like you to see how it's used.
+
+In the example below, there are three asynchronous tasks, and each task depends on the previous task (i.e. the output of one task becomes the input of the next task.)
 
 ![asynchronous tasks in a chain](../../.gitbook/assets/async-task.png)
 
@@ -22,9 +23,9 @@ If these tasks were synchronous tasks (i.e. if they do not involve any asynchron
   // make use of the result
 ```
 
-However, suppose the 3 tasks (login/find/save) are all asynchronous tasks, you cannot get the result right away. You need to provide some callbacks to process the results when they are ready. 
+However, suppose the 3 tasks (login/find/save) are all asynchronous tasks, you cannot get the results right away after start executing a task. You have to provide some callbacks to process the results becomes ready. 
 
-We could do that using the callback-hell approach:
+The nested callbacks easily leads to the callback-hell approach:
 
 ```javascript
     User.logIn('user', 'pass', {
@@ -46,59 +47,14 @@ Compare that with the following code with the much more elegant Promise workflow
 
 ```javascript
     User.logIn('user', 'pass')
-      .then(function (user) {
-      return query.find(user);
-    }).then(function (results) {
-      return results[0].save({ key: value });
-    }).then(function (result) {
-      // the object was saved
-    }).catch(function (err) {
-      // an error happened somewhere in the process
-    });
+      .then(function (user) { return query.find(user); })
+      .then(function (results) { return results[0].save({ key: value }); })
+      .then(function (result) { // the object was saved })
+      .catch(function (err) { // an error happened somewhere in the process });
 ```
 
-Note: you still need to use callbacks when you use Promise. The only difference is now the callbacks are not nested within each other anymore!!!
+Note: you still need to use callbacks with Promise. However, now the callbacks are not nested within each other anymore!!!
 
-## A Use Case Study
-
-Many operations in Javascript are asynchronous - for example: fetching data via HTTP, reading from a file, event handlers, etc.
-
-In this example, we will use the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) provided by the browsers to fetch some data from a web service. The web service returns real time car park status information in Singapore.
-
-Firstly visit [https://carparks-sg.herokuapp.com/api](https://carparks-sg.herokuapp.com/api) on your browser to see what the HTTP request should return.
-
-Then look at this piece of code below, what do you think the value of `result` will be? Is it the list of available car park slots?
-
-Run this in the Chrome console. Did it match your expectation?
-
-```javascript
-const result = fetch('https://carparks-sg.herokuapp.com/api')
-console.log(result)
-```
-
-In the above example, `fetch` returns a `Promise`, i.e. `result` is a `Promise` object.
-
-What can we do with this `result`? Since it's a Promise object, you can call the `then` function to receive the data once the browser receives data in the response.
-
-```javascript
-let result = fetch('https://carparks-sg.herokuapp.com/api')
-
-result.then(response => {
-  console.log(response)
-})
-```
-
-Hmm...if you look at the console log, the `response` retrieved from the `result` is still a Promise. That's because the response actually represents a data stream, and reading data stream is still an asynchronous task (because it can take some time).
-
-So, it turns out that we need to call `then` a few times to load that data stream into a variable for us to use.
-
-```javascript
-let result = fetch('https://carparks-sg.herokuapp.com/api')
-
-result
-  .then(response => response.json())
-  .then(json => console.log(JSON.stringify(json)));
-```
 
 ## ES6 Promise API
 
@@ -272,6 +228,48 @@ setTimeout(handler,0);
 That means those handlers supplied to `then` or `catch` call \(in the example above\) would NOT be called in the same call stack as then `then` or `catch` function.
 
 Why? Because The ECMA 2015 spec declares that promises must not fire their resolution/rejection function on the same turn of the event loop that they are created on. This is very important because it eliminates the possibility of execution order varying and resulting in indeterminate outcomes.
+
+## A Use Case Study
+
+Now, let's try some code with Promise API.
+
+Many operations in Javascript are asynchronous - for example: fetching data via HTTP, reading from a file, event handlers, etc.
+
+In this example, we will use the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) provided by the browsers to fetch some data from a web service. The web service returns real time car park status information in Singapore.
+
+Firstly visit [https://carparks-sg.herokuapp.com/api](https://carparks-sg.herokuapp.com/api) on your browser to see what the HTTP request should return.
+
+Then look at this piece of code below, what do you think the value of `result` will be? Is it the list of available car park slots?
+
+Run this in the Chrome Developer console. Did the console output match your expectation?
+
+```javascript
+const result = fetch('https://carparks-sg.herokuapp.com/api')
+console.log(result)
+```
+
+In the above example, you should find that `fetch` returns a `Promise`, i.e. `result` is a `Promise` object.
+
+If you read the documentation of the [fetch() API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), you can find that the returned value from the fetch API is "A Promise that resolves to a Response object.".
+
+How can we retrieve data out of this [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response)? Again, based on the documentation of the Response, you can call the [response.json()](https://developer.mozilla.org/en-US/docs/Web/API/Body/json) method to retrieve data sent in the response, assuming the data is in JSON format.
+
+Let's try to call the `.json` method on the response object.
+
+```javascript
+fetch('https://carparks-sg.herokuapp.com/api')
+  .then(response => console.log(response.json()))
+```
+
+Hmm...if you look at the console log, the value returned from the `json()` method is still a Promise. If you read the [response.json() documentastion](https://developer.mozilla.org/en-US/docs/Web/API/Body/json) again, it says it returns "A promise that resolves with the result of parsing the body text as JSON."
+
+OK, now we know that we need to chain the promise call together, like the codes below:
+
+```javascript
+fetch('https://carparks-sg.herokuapp.com/api')
+  .then(response => response.json())
+  .then(json => console.log(JSON.stringify(json)));
+```
 
 ## Common Mistakes
 
