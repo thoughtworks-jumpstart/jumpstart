@@ -88,9 +88,18 @@ async function getUserSkills(userId) {
 
 In this case, if the promise returned by `users.get(userId)` or `users.getMetaDataFor(user)` is rejected, `await` will translate that into normal Error that you can `catch` hand handle.
 
-## What if there are errors thrown from an Async Function?
+### Understanding `await` using the Gift Box model
 
-If there is an error thrown out of the Async function, can it be handled with try-catch? The answer is 'No'.
+The gift box model we introduced in the last section can also help us to understand the effect of `await` on a Promise object.
+
+`await` basically unwrap the gift box and shows you what's inside.
+
+* If the promise is fulfilled, you will see the hidden secret value.
+* If the promise is rejected, then you open a box with a bomb and the bomb blows when the box opens. To protect yourself against such scenario, you need to use try...catch block to catch the errors.
+
+## What if there are errors thrown directly from an Async Function?
+
+If you try to throw error from an Async function, can it be handled with try-catch when you call that async function? The answer is 'No'.
 
 For example, the async function below contains a throw statement:
 
@@ -148,7 +157,7 @@ async function doesThisWork() {
 }
 ```
 
-## `await`ing at the top level
+## `await` can ony be used within a function
 
 Since `await` can only appear inside a function that is marked as `async`, you can't have `await` in top-level code \(i.e. code that is not inside any other function and is invoked directly when the program runs\).
 
