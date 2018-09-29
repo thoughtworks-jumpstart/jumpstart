@@ -55,7 +55,6 @@ Compare that with the following code with the much more elegant Promise workflow
 
 Note: you still need to use callbacks with Promise. However, now the callbacks are not nested within each other anymore!!!
 
-
 ## ES6 Promise API
 
 To fully understand the Promise API, let's take one example.
@@ -82,8 +81,8 @@ Another important property about this promise is, after this Friday, once it's r
 
 It also worths highlighting that there are two parties/roles in this story:
 
-* One party that creates a promise and finally decides if the promise should be fulfilled or rejected.
-* The other party that receives the promise, observes on the outcome, and takes actions accordingly.
+* One party that creates a promise and finally decides when to resolve the promise, and if the promise should be fulfilled or rejected.
+* The other party that receives the promise can register their action plans and wait to be notified on the outcome. The recipient/observer of a promise have no influence on whether the promise is fulfilled or rejected, nor can they decide when the promise would be resolved. 
 
 Let's write some codes using the promise API in ES6 to represent the example above.
 
@@ -95,14 +94,14 @@ We will first learn:
 ### Creating a new Promise
 
 ```javascript
-const dinnerPromise = new Promise(function(resolve, reject) {
+const dinnerPromise = new Promise(function(fulfill, reject) {
   const waitTillThisFriday = 5000;
   setTimeout(() => {
     try {
       finishMyWorkOnFriday();
       const restaurant = bookRestaurant();
       const flower = buyFlower();
-      resolve({ restaurant, flower });
+      fulfill({ restaurant, flower });
     } catch (badNews) {
       reject(badNews);
     }
@@ -110,11 +109,13 @@ const dinnerPromise = new Promise(function(resolve, reject) {
 });
 ```
 
-Note that this Promise constructor takes in one callback function \(called **executor**\). The executor function basically does some **asynchronous task**, and invoke either `resolve` or `reject` based on the result of that asynchronous task.
+Note that this Promise constructor takes in one callback function \(called **executor**\). The executor function basically does some **asynchronous task**, and invoke either `fulfill` or `reject` based on the result of that asynchronous task.
 
-What is this `resolve` and `reject` parameter? Those two are callbacks supplied by the Promise constructor implementation. When one of those callbacks is called, the promise is changed from `pending` state to either `fulfilled` state, or `rejected` state.
+What is this `fulfill` and `reject` parameter? Those two are callbacks supplied by the Promise constructor implementation.  When one of those callbacks is called, the promise is changed from `pending` state to either `fulfilled` state, or `rejected` state.
 
-Note that we can pass some parameters to the `resolve` callback. Those parameters would be available to those who subscribe to the success resolution event of the promise. We can also pass the error to the `reject` callback, which is then available to those who subscribe to the error notification of the promise.
+Since these two callbacks are supplied by the Promise library, you don't need to implement these two functions, your job is to call them at a proper time!
+
+Note that we can pass some parameters to the `fulfill` callback. Those parameters would be available to those who subscribe to the success resolution event of the promise. We can also pass the error to the `reject` callback, which is then available to those who subscribe to the error notification of the promise.
 
 Note that this Promise constructor calls the executor function right away \(before the Promise constructor function returns\). So typically you should not call any blocking API inside the executor function implementation. Otherwise, the Promise constructor call would be blocked.
 
@@ -135,8 +136,8 @@ dinnerPromise.then(onFulfilled, onRejected);
 
 The `then` function takes two arguments:
 
-* The first argument is called `onFulfilled`, which is a callback function to handle the case when the promise is resolved. Note that the `onFulfilled` function receives the same list of arguments as received by the `resolve` function in executor function.
-* The second argument is called `onRejected`, which is a callback function to handle the case when the promise is rejected. Note that the `onRejected` function receives the same list of arguments as received by the `reject` function in executor function.
+* The first argument is called `onFulfilled`, which is a callback function to handle the case when the promise is resolved. Note that the `onFulfilled` function receives the same list of arguments as received by the `fulfill` function in executor function.
+* The second argument is called `onRejected`, which is a callback function to handle the case when the promise is rejected. The main purpose of this callback function is to handle the error scenario and bring the system back to normal state. Note that the `onRejected` function receives the same list of arguments as received by the `reject` function in executor function.
 
 Although the `then` function can take in the `onRejected` event handler, sometimes people prefer to call `then` function with one argument only. In that case, the reject event needs to be caught by a call to `catch` function. e.g.
 
@@ -150,12 +151,72 @@ You may notice that in the code example above the calls on the promise instance 
 
 That's because all methods supported by this promise object returns another promise as return value. Specifically, those methods \(e.g. `then` and `catch`\) all behave in this way:
 
-* If it finds a proper handler for the `resolve` or `reject` event, it return a new promise which eventually resolves to the return value of the handler.
-* If it does not find a proper handler for the `resolve` or `reject` event \(e.g. when a promise is rejected and a call to `then` function does not supply `onRejected` callback\), the method would return the original promise.
+* If it finds a proper handler for the `fulfill` or `reject` event, it return a new promise which eventually resolves to the return value of the handler.
+* If it does not find a proper handler for the `fulfill` or `reject` event \(e.g. when a promise is rejected and a call to `then` function does not supply `onRejected` callback\), the method would return the original promise.
 
-Let's look at another example.
+### Treating a Promise as a gift box
 
-In the example below, the `users.get(userId)` returns an instance of Promise object, so that we can call `then` function on it.
+OK, this sounds pretty abstract, even after you have seen the codes itself. I have another mental model for you.
+
+If you receive Promise object, you can think a promise as a gift box. It's wrapped nicely, and you don't know what's inside. All you can see is there are two LED lights on the surface:
+
+* A green LED light
+* A red LED light
+
+![promise as a gift box](../../.gitbook/assets/promise-gift-box.png)
+
+When the promise is in `pending` state, neither LED light flashes.
+
+When the promise is in `fulfilled` state, the green LED light flashes. There might be some value displayed on the panel, which reveals the secret hidden in the box.
+
+When the promise is in `rejected` state, the red LED light flashes. There might be some vlalue displayed on the panel, which shows some error has happened.
+
+When you call `.then` or `.catch` on the promise, you actually create another gift box like the picture shown below:
+
+![creating a bigger gift box](../../.gitbook/assets/promise-gift-box-chaining.png)
+
+What the picture above shows are:
+
+* When you call a `then` or `catch` method on a Promise, the function returns a new instance of Promise object (i.e. a new gift box is created).
+* On the newly created gift box, there are also two LED lights, a green one and a red one.
+
+The green LED light of the second gift box would flash under one of the two conditions:
+
+1. If the green LED light of the first gift box flashes, and the `onFulfilled` handler run to completion with no problem, or
+2. If the red LED light of the first gift box flashes, and the `onRejected` handler run to completion with no problem. 
+
+You might wonder why the successful running of the `onRejected` handler lead to the green LED light of the second gift box to flash. Remember, the purpose of the `onRejected` handler is to handle the error and bring the system back to normal state. After the erratic behavior is detected and corrected by the `onRejected` handler, the error is fixed and the green LED light of the second box should flash.
+
+The red LED light of the new box would flash under one of the two conditions:
+
+1. If the green LED light of the first gift box flashes, and the `onFulfilled` handler throws error during execution, or
+2. If the red LED light of the first gift box flashes, and the `onRejected` handler throws error during execution.
+
+Could the `onFulfilled` and `onRejected` handle throw error? Yes! 
+
+I can give you two examples here:
+
+* The `onFulfilled` handler may return another promise object, which is eventually rejected. In that case, this is considered as error situation.
+* The `onRejected` handler may encounter an error that it does not know how to handle, so it just throws it again and wishes another error handler can catch and handle it.
+
+In either case, the red LED light of the second box would flash.
+
+Note that the `onRejected` handler is optional when you call `then()`. If that is not specified, then the error reported by the first box cause the red LED light of the second box to flash right away.
+
+Now you have a new gift box, you can pass it on to your friend, and similarly, they can create their own gift box by wrapping around your gift box, which result in a chain of gift boxes:
+
+![creating a bigger gift box](../../.gitbook/assets/promise-gift-box-chaining-2.png)
+
+### Promise Chaining Example
+
+Let's look at another Promise chaining example using ES6 Promise API.
+
+In the example below, we try to retrieve the skills of a user. There are two asynchronous operations involved:
+
+1. find users by calling the `get()` API, which returns a Promise.
+2. get a user's meta data by calling `getMetaDataFor()`, which also returns a Promise.
+
+Since the second asynchronous operation depends on the output of the first asynchronous operation, we can chain them up using the Promise API.
 
 ```javascript
 function getUserSkills(userId) {
@@ -456,7 +517,7 @@ readFilePromise("path/to/file", "utf8")
 * [Write your own promise library from scratch](http://thecodebarbarian.com/write-your-own-node-js-promise-library-from-scratch.html)
 * [Master the Javascript Interview: What's a Promise](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
-## Assignments
+## Lab
 
 Here is a useful workshop that illustrates the basics of promises. Follow the instructions step by step to get some hands-on exercises on Promise.
 
