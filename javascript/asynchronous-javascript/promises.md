@@ -9,7 +9,22 @@ in the future. It greatly simplifies asynchronous logic in JavaScript.
 
 ### Promise vs Callback
 
-Compare the following code, written in the more traditional idiom of asynchronous callbacks, with no error handling:
+In the example below, there are three asynchronous tasks, and each task depends on the previous task (i.e. the output of one task becomes the input of the previous task.)
+
+![asynchronous tasks in a chain](../../.gitbook/assets/async-task.png)
+
+If these tasks were synchronous tasks (i.e. if they do not involve any asynchronous operations), we could have written the codes like below:
+
+```javascript
+  let user = User.login('user', 'pass');
+  let results = query.find(user);
+  let result = results[0].save({key: value});
+  // make use of the result
+```
+
+However, suppose the 3 tasks (login/find/save) are all asynchronous tasks, you cannot get the result right away. You need to provide some callbacks to process the results when they are ready. 
+
+We could do that using the callback-hell approach:
 
 ```javascript
     User.logIn('user', 'pass', {
@@ -27,7 +42,7 @@ Compare the following code, written in the more traditional idiom of asynchronou
     });
 ```
 
-And the much more elegant Promise workflow, with first-class error handling:
+Compare that with the following code with the much more elegant Promise workflow, with first-class error handling:
 
 ```javascript
     User.logIn('user', 'pass')
