@@ -13,3 +13,13 @@ This [article](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/) o
 
 Both the controlled and uncontrolled form fields have their merit. Evaluate your specific situation and pick the approach — what works for you is good enough.
 
+## Tips
+
+* Don't forget to declare the "onChange" event handler on the input field if you follow the Controlled Component approach.
+* Don't forget to call `event.preventDefault()` in the `onSubmit` event handler. Otherwise, the browser will try to submit the form and reload the current page.
+
+## Build complicated forms with Formik
+
+Although React provides the basic building blocks for us to build HTML forms, it's still hard to get the codes organized properly when you build complicated forms.
+
+In such cases, you can check out existing React components that can help you out, like [formik](https://github.com/jaredpalmer/formik)
