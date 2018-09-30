@@ -23,6 +23,16 @@ You create a component by **defining a function**. Example:
   );
 ```
 
+The function takes in one argument, which is the `props` object. It contains all the properties passed down from the containing component.
+
+A common variation of the example is to apply object-destructuring on the `props` argument to extract the properties you are interested,e.g.
+
+```javascript
+  const Welcome = ({name}) => {
+      return <h1>Hello world! I like {name}</h1>;
+  }
+```
+
 Note that usually the variable names in Javascript start with lower case letter. However, in JSX syntax, the name of components **must** start with upper case letter (`Welcome` instead of `welcome`).
 
 ## Class components
@@ -47,6 +57,22 @@ You create a component by **defining a class**. Example:
       document.getElementById('root')
   );
 ```
+
+Note that in this case the `props` are passed to the constructor. Typically you should also call `super(props)` to initialize the `React.Component` class properly. In contrast, the `render` function does not take any arguments. If you need to refer to the `props` of the component, you need to refer to it via `this.props`.
+
+When you don't have much logic inside the constructor, you can choose to skip it and put the `state` initialization in the class property fields, e.g.
+
+```javascript
+  class Welcome extends Component {
+      state = {};// initialize local state
+
+      render() {
+        return <h1>Hello world! I like {this.props.name}</h1>; // notice the that we're using this.props instead of props
+      }
+  }
+```
+
+Note that this relies on [an experimental feature in JavaScript](https://tc39.github.io/proposal-class-public-fields/), which is currently enabled by the Babel plugin.
 
 ## When to use which?
 
