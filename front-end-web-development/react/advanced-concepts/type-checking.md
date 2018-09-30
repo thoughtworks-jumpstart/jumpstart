@@ -99,7 +99,7 @@ export default AppButton;
 
 ## Lab
 
-* Install `prop-types` npm package and add propTypes validation in your existing react project
+* Install `prop-types` npm package and add propTypes validation in your [React Todo List](https://github.com/thoughtworks-jumpstart/react-todo-list)
 * For each component that uses `props` or `this.props`, add propTypes validation
 * Try setting default values for certain properties where you think it's appropriate
 
