@@ -11,9 +11,9 @@ The `prop-types` library gives us 2 things: \(i\) prop validation and \(ii\) def
 * the difference between `PropTypes.number` and `PropTypes.number.isRequired`
 * how to set default property values
 
-### PropTypes validation help us catch bugs
+## PropTypes validation help us catch bugs
 
-Example of a component **without** PropTypes validation \(this is bad! you'll see why\)
+The example below shows a component **without** PropTypes validation \(this is bad! you'll see why\)
 
 ```javascript
 // Content.js
@@ -24,7 +24,6 @@ const Content = props => {
 };
 
 export default Content;
-
 
 // Page.js (a Page contains a Content component)
 import React from "react";
@@ -40,11 +39,12 @@ const Page = props => {
 export default Page;
 ```
 
-Example of a component **with** PropTypes validation
+To fix the problem, we can declare the property types for the `Content` component and enable PropTypes validation.
 
 ```javascript
 // Content.js
 import React from "react";
+import PropTypes from 'prop-types';
 
 const Content = props => {
   return <h1>{props.title}</h1>;  // Content needs a 'title' property
@@ -72,6 +72,37 @@ const Page = props => {
 export default Page;
 ```
 
+## Default Prop Values
+
+You can also set default values for props using `YourComponent.defaultProps`.
+
+For example:
+
+```javascript
+import React, { Component } from "react";
+
+class AppButton extends Component {
+  render() {
+    return <button onClick={this.props.onClick}>{this.props.message}</button>;
+  }
+}
+
+AppButton.defaultProps = {
+  message: "Hello",
+  onClick: function() {
+    alert("Hello");
+  }
+};
+
+export default AppButton;
+```
+
+## Lab
+
+* Install `prop-types` npm package and add propTypes validation in your existing react project
+* For each component that uses `props` or `this.props`, add propTypes validation
+* Try setting default values for certain properties where you think it's appropriate
+
 ## Resources
 
 ### Recommended reading
@@ -80,9 +111,7 @@ export default Page;
 * [Type checking with PropTypes\(must read\)](https://reactjs.org/docs/typechecking-with-proptypes.html) 
 * [Custom prop type validation utilities provided by AirBnB](https://github.com/airbnb/prop-types)
 
-## Assignment
+### Extended reading
 
-* Install `prop-types` npm package and add propTypes validation in your existing react project
-* For each component that uses `props` or `this.props`, add propTypes validation
-* Try setting default values for certain properties where you think it's appropriate
-
+* [Adding static type checking for JavaScript with Flow.js](https://flow.org/)
+* [TypeScript is a super set of JavaScript that comes with static type checking](https://www.typescriptlang.org/)
