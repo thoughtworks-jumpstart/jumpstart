@@ -121,6 +121,10 @@ const Welcome = () => {
 
 If an element span-across multiple lines, you need to wrap it with a bracket (e.g. what you see in the example above)
 
+## Create React Components with VS Code Plugin
+
+You can quickly create new components using [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
 ## Resources
 
 * [Why React's stateless functional components are awesome](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
