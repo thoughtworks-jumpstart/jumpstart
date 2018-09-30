@@ -116,6 +116,7 @@
       * [Virtual DOM](front-end-web-development/react/advanced-concepts/virtual-dom.md)
       * [React Design Patterns](front-end-web-development/react/advanced-concepts/react-design-patterns.md)
       * [Context](front-end-web-development/react/advanced-concepts/context.md)
+      * [Webpack](front-end-web-development/react/advanced-concepts/webpack.md)
       * [Progressive Web Applications](front-end-web-development/react/advanced-concepts/progressive-web-app.md)
 * [Back-end web development](back-end-web-development/README.md)
   * [Web 101](back-end-web-development/web-101.md)
