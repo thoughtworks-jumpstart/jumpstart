@@ -1,8 +1,10 @@
 # Testing with Mocks
 
-Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do. 
+Every system/module has its dependencies: it could be another module written by you, or it could be a module loaded from some 3rd party libraries.
 
-Mock and stubs enable a different style of testing. They encourage testing based on behaviour verification.
+When you try to test this system/module, sometimes you need to simulate some test scenarios where the dependencies need to behave in a controlled way. For this purpose, you need to mock the behavior of those modules/functions that your current module depend on.
+
+Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do. 
 
 ## Creating and using mock functions
 
@@ -61,7 +63,6 @@ jest.doMock('./someModule', factoryFunction)
 * The exact same thing that can be done, even for external libraries that we install!
 
 ```javascript
-const myMockFunction = jest.fn();
 jest.doMock("mathjs", () => {
   return {
     randomInt: () => 42 // always return 42 when math.randomInt() is called
@@ -78,6 +79,14 @@ const math = require('mathjs')
 math.randomInt() // this will always return the stubbed value of 42
 */
 ```
+
+* You can also put the mock implementations into a __mocks__ directory
+
+Besides putting the mock implementation in the test case itself, you can also put some mock implementation in a directory `__mocks__` and inform jest to load that mock implementation when `require` is called.
+
+The benefit of this approach is that the mock implementation can be shared/reused by multiple test cases.
+
+More details can be found in [Jest documentation on manual mocks](https://jestjs.io/docs/en/manual-mocks)
 
 ## Putting it altogether
 
@@ -115,7 +124,22 @@ In the solutions repo, you can find examples on how to
      });
      ```
 
-## Mocks, stubs, dummies, spies, whaaaat?
+## Resources
+
+### Recommended reading
+
+* [A great explanation on how to use mocks in jest](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
+* [Understanding Jest Mocks](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
+
+### References
+
+* [Jest documentation on mocking functions](https://jestjs.io/docs/en/mock-functions)
+* [Jest documentation on manual mocks](https://jestjs.io/docs/en/manual-mocks)
+* [Jest documentation on mocking ES6 classes](https://jestjs.io/docs/en/es6-class-mocks)
+* [Jest Mock API reference](https://jestjs.io/docs/en/mock-function-api.html)
+* [The `jest` object API](https://jestjs.io/docs/en/jest-object.html)
+
+### Mocks, stubs, dummies, spies, whaaaat?
 
 **Mocks** are objects/functions that can be used to \(i\) replace actual object/functions in test cases and \(ii\) verify that objects/functions are called/used \(optionally with a specific number of calls and specific arguments\) 
 
@@ -125,23 +149,4 @@ In the solutions repo, you can find examples on how to
 
 **Spies** are objects which are wrapped around the actual object of interest. Spies allow us to to "spy on" actual objects and record some information on how they were called \(e.g. specific number of calls and specific arguments\)
 
-#### 
-
-## Resources
-
-### Recommended reading
-
-* [A great explanation on how to use mocks in jest](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
-* [What are mocks, stubs, spies, dummies?](https://martinfowler.com/articles/mocksArentStubs.html)
-
-### References
-
-* [Jest getting started guide for mock](https://facebook.github.io/jest/docs/en/mock-functions.html)
-* jest docs
-  * [getting started with mocks](https://facebook.github.io/jest/docs/en/mock-functions.html)
-  * [`jest.fn()` API docs](https://facebook.github.io/jest/docs/en/mock-function-api.html)
-  * [`jest` object API docs](https://jestjs.io/docs/en/jest-object)
-* [The `jest` object \(good documentation on mocks\)](https://jestjs.io/docs/en/jest-object.html)
-
-
-
+Continue reading: [What are mocks, stubs, spies, dummies?](https://martinfowler.com/articles/mocksArentStubs.html)

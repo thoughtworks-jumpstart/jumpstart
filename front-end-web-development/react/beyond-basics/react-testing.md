@@ -36,21 +36,6 @@ This basically requires your test cases treat the component under test as a blac
 
 In this course, we recommend to use `react-testing-library` instead.
 
-### Mock Objects/Functions with Jest
-
-Every system under test has its dependencies: it could be another module written by you, or it could be a module loaded from some 3rd party libraries.
-
-Sometimes you need to simulate some test scenarios where the dependencies need to behave in a controlled way. For this purpose, you need to mock the behavior of those modules/functions that your current module depend on.
-
-Jest provides pretty good support on mocking objects/functions/modules:
-
-- [Jest documentation on mocking functions](https://jestjs.io/docs/en/mock-functions)
-- [Jest documentation on manual mocks](https://jestjs.io/docs/en/manual-mocks)
-- [Jest documentation on mocking ES6 classes](https://jestjs.io/docs/en/es6-class-mocks)
-- [Jest Mock API reference](https://jestjs.io/docs/en/mock-function-api.html)
-
-Let's look at some sample codes with [this tutorial on mocking](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
-
 ### Snapshot Testing with Jest
 
 Jest provides a feature called [snapshot testing](https://jestjs.io/docs/en/snapshot-testing). You can use snapshot testing to prevent unexpected changes to the DOM structure of a React component.
