@@ -53,6 +53,8 @@ If you find yourself calling .mockClear\(\) on multiple mocks, there is a comman
 
 Sometimes, a mock function needs to behave differently in each test case, then you can call `myMockFunction.mockReset()` to remove the current mock return values / implementations. Then you can provide new mocked behavior.
 
+If you find yourself calling .mockReset\(\) on multiple mocks, there is a command that let you reset all mocks in one line: `jest.resetAllMocks()`.
+
 ## Creating spies on existing functions
 
 Sometimes, you may not need to change the implementation/behavior of some function, you just want to keep an eye on it and check if it's called as expected.
