@@ -96,7 +96,7 @@ math.randomInt() // this will always return the stubbed value of 42
 
 * You can also put the mock implementations into a __mocks__ directory
 
-Besides putting the mock implementation in the test case itself, you can also put some mock implementation in a directory `__mocks__` and inform jest to load that mock implementation when `require` is called.
+Besides putting the mock implementation in the test case itself, you can also put some mock implementation in a directory `__mocks__` and inform jest to load that mock implementation when `require` is called to load the module.
 
 The benefit of this approach is that the mock implementation can be shared/reused by multiple test cases.
 
