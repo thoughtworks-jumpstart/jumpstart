@@ -53,6 +53,56 @@ If you find yourself calling .mockClear\(\) on multiple mocks, there is a comman
 
 Sometimes, a mock function needs to behave differently in each test case, then you can call `myMockFunction.mockReset()` to remove the current mock return values / implementations. Then you can provide new mocked behavior.
 
+## Create spy on existing functions
+
+Sometimes, you may not need to change the implementation/behavior of some function, you just want to keep an eye on it and check if it's called as expected.
+
+In that case, you can use [`jest.spyOn`](https://jestjs.io/docs/en/jest-object#jestspyonobject-methodname) to create a spy on the given function. After you finish testing, you can also call `mockRestore` to restore the original implementation.
+
+Example (in video.js)
+
+```javascript
+const video = {
+  play() {
+    return true;
+  },
+};
+
+module.exports = video;
+```
+
+Example (in mediaPlayer.js)
+
+```javascript
+
+const video = require("./video");
+
+function playMovie() {
+  return video.play();
+}
+
+module.exports = {
+  playMovie;
+}
+```
+
+Example (in mediaPlayer.test.js) 
+
+```javascript
+const video = require('./video');
+const player = require('./moviePlayer');
+
+test('plays video', () => {
+  const spy = jest.spyOn(video, 'play');
+  const isPlaying = player.playMovie();
+
+  expect(spy).toHaveBeenCalled();
+  expect(isPlaying).toBe(true);
+
+  spy.mockRestore();
+});
+```
+
 ## Creating and using mock modules
 
 You can also mock a whole JavaScript module with `jest.mock()` or `jest.doMock()`
