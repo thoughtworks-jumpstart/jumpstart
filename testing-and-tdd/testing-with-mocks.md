@@ -153,22 +153,6 @@ math.randomInt() // this will always return the stubbed value of 42
 */
 ```
 
-### You may not need to supply your mock implementation if the result of the mocked function is not checked
-
-In the example above, we provide our mock implementation of the function, but if the return value of the function is not really checked in your test case, you can rely on the default mock function provided by Jest. i.e. you can write it as
-
-```javascript
-jest.doMock("./someModule");
-
-// Note: it's crucial that you put this next line after jest.doMock() statements
-const anotherModule = require("./anotherModule.js"); 
-
-/*
-now, inside anotherModule.js, when a line says `const x = require('./someModule'), 
-x is a mock function created via jest.fn().
-*/
-```
-
 ### Difference between `jest.mock()` and `jest.doMock()`
 
 Based on the [Jest Documentation](https://jestjs.io/docs/en/jest-object.html#jestdomockmodulename-factory-options):
