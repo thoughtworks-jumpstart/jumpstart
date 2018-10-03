@@ -37,11 +37,17 @@ There are also cases when you need to pass a callback to the function you need t
 * `myMockFunction.mockReturnValueOnce('you can return anything!')` 
   * make `myMockFunction()` return this value only once \(it returns `undefined` the next time it's called\)
 
-### Resetting mocks
+### Sharing the same mock across test cases
 
-* Mock functions keep track of various things \(e.g. how many times it has been called\). You'll need to reset mocks beforeEach test case, so that each test case is kept independent.
-* `myMockFunction.mockClear()`
-* If you find yourself calling .mockClear\(\) on multiple mocks, there is a command that let you clear all mocks in one line: `jest.clearAllMocks()`
+#### Clearing a mock
+
+Each mock functions keep track of various things \(e.g. how many times it has been called\). 
+
+You'll need to clear those information beforeEach test case, so that each test case is kept independent. You can achieve this by calling `myMockFunction.mockClear()` in beforeEach.
+
+If you find yourself calling .mockClear\(\) on multiple mocks, there is a command that let you clear all mocks in one line: `jest.clearAllMocks()`.
+
+#### Resetting a mock function needs to behave differently in each test case, then you can call `myMockFunction.mockReset()` to remove the current mock return values / implementations. Then you can provide new mocked behavior.
 
 ## Creating and using mock modules
 
