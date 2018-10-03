@@ -14,6 +14,8 @@ There are also cases when you need to pass a callback to the function you need t
 
 ## Creating and using mock functions
 
+In order to mock a function, you use `jest.fn()`.
+
 ### Creating a mock
 
 * Creating a mock: `const myMockFunction = jest.fn()`
@@ -53,28 +55,35 @@ Sometimes, a mock function needs to behave differently in each test case, then y
 
 ## Creating and using mock modules
 
-### Mocking a module
+You can also mock a whole JavaScript module with `jest.mock()` or `jest.doMock()`
 
-* Mocking the contents of a module
+In the example below, there are two modules:
+
+* `someModule`, a module written by you, which exports a function
+* `mathjs`, a module installed into `node_modules`, which exports a object with a function called `randomInt`
+* `anotherModule` which internally calls `require("./someModule")` and `require("mathjs")`
+
+When you write tests for `anotherModule`, you may want to mock the behavior of `someModule` so that you can simulate different test scenarios.
+
+### Mocking a module written by you
 
 ```javascript
-const myMockFunction = jest.fn();
+const myMockFunction = jest.fn(() => "dummy value");
 jest.doMock("./someModule", () => {
-  return myMockFunction; 
-  // Note: what you return here should match the exports in './someModule.js'
+  return myMockFunction; // Note: what you return here should match the exports in './someModule.js'
 });
 
 // Note: it's crucial that you put this next line after jest.doMock() statements
 const anotherModule = require("./anotherModule.js"); 
 
 /*
-now, inside anotherModule.js, any line that says `const x = require('./someModule')
-will be replaced with whatever you return from the factory function inside
+now, inside anotherModule.js, when a line says `const x = require('./someModule'), 
+x is the mock function returned from the factory function inside
 jest.doMock('./someModule', factoryFunction)
 */
 ```
 
-* The exact same thing that can be done, even for external libraries that we install!
+### Mocking a module in node_modules
 
 ```javascript
 jest.doMock("mathjs", () => {
@@ -94,7 +103,44 @@ math.randomInt() // this will always return the stubbed value of 42
 */
 ```
 
-* You can also put the mock implementations into a __mocks__ directory
+### You may not need to supply your mock implementation if the result of the mocked function is not checked
+
+In the example above, we provide our mock implementation of the function, but if the return value of the function is not really checked in your test case, you can rely on the default mock function provided by Jest. i.e. you can write it as
+
+```javascript
+jest.doMock("./someModule");
+
+// Note: it's crucial that you put this next line after jest.doMock() statements
+const anotherModule = require("./anotherModule.js"); 
+
+/*
+now, inside anotherModule.js, when a line says `const x = require('./someModule'), 
+x is a mock function created via jest.fn().
+*/
+```
+
+### Difference between `jest.mock()` and `jest.doMock()`
+
+Based on the [Jest Documentation](https://jestjs.io/docs/en/jest-object.html#jestdomockmodulename-factory-options):
+
+> calls to jest.mock() will automatically be hoisted to the top of the code block
+
+Using the same example we gave above, you can rewrite it using `jest.mock()` and you don't need to put it before the `require` statement.
+
+```javascript
+// Note: it's crucial that you put this next line after jest.doMock() statements
+const anotherModule = require("./anotherModule.js"); 
+
+jest.mock("mathjs", () => {
+  return {
+    randomInt: () => 42 // always return 42 when math.randomInt() is called
+  }; 
+});
+```
+
+Note that here we swap the order of `mock` and `require`, and it still works.
+
+### You can also put the mock implementations into a __mocks__ directory
 
 Besides putting the mock implementation in the test case itself, you can also put some mock implementation in a directory `__mocks__` and inform jest to load that mock implementation when `require` is called to load the module.
 
@@ -144,6 +190,12 @@ In the solutions repo, you can find examples on how to
 
 * [A great explanation on how to use mocks in jest](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
 * [Understanding Jest Mocks](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
+* [But really, what is a JavaScript mock?](https://blog.kentcdodds.com/but-really-what-is-a-javascript-mock-10d060966f7d)
+
+### Other JavaScript libraries for mocking
+
+* [testdouble](https://github.com/testdouble/testdouble.js)
+* [sinon](https://sinonjs.org/)
 
 ### References
 
