@@ -8,6 +8,21 @@ Every system/module has its dependencies: it could be another module written by 
 
 When you try to test this system/module, sometimes you need to simulate some test scenarios where the dependencies need to behave in a controlled way. For this purpose, you need to mock the behavior of those modules/functions that your current module depend on.
 
+For example, we have a function below that generate some random arrays. It relies on the `randomInt` function from the `mathjs` module. If you need to test different scenarios, you need to control the return values from the `randomInt` function. But how can you do that? You can mock that `randomInt` function!
+
+```javascript
+const math = require("mathjs");
+
+const generateQueue = () => {
+  const randomInteger = math.randomInt(1, 10);
+  const output = Array(randomInteger)
+    .fill()
+    .map(number => math.randomInt(-20, 50));
+
+  return output;
+};
+```
+
 ## Use Case: Mocking Callbacks
 
 There are also cases when you need to pass a callback to the function you need to test, and you need to check if the callback is indeed invoked by the function. In this case, you can also pass a mock function as callback and verify it's called correctly.
