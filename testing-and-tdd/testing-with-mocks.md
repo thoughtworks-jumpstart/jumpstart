@@ -1,10 +1,16 @@
 # Testing with Mocks
 
+Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do. 
+
+## Use Case: Mocking Dependencies
+
 Every system/module has its dependencies: it could be another module written by you, or it could be a module loaded from some 3rd party libraries.
 
 When you try to test this system/module, sometimes you need to simulate some test scenarios where the dependencies need to behave in a controlled way. For this purpose, you need to mock the behavior of those modules/functions that your current module depend on.
 
-Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do. 
+## Use Case: Mocking Callbacks
+
+There are also cases when you need to pass a callback to the function you need to test, and you need to check if the callback is indeed invoked by the function. In this case, you can also pass a mock function as callback and verify it's called correctly.
 
 ## Creating and using mock functions
 
