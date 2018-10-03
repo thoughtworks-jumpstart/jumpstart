@@ -47,7 +47,9 @@ You'll need to clear those information beforeEach test case, so that each test c
 
 If you find yourself calling .mockClear\(\) on multiple mocks, there is a command that let you clear all mocks in one line: `jest.clearAllMocks()`.
 
-#### Resetting a mock function needs to behave differently in each test case, then you can call `myMockFunction.mockReset()` to remove the current mock return values / implementations. Then you can provide new mocked behavior.
+#### Resetting a mock 
+
+Sometimes, a mock function needs to behave differently in each test case, then you can call `myMockFunction.mockReset()` to remove the current mock return values / implementations. Then you can provide new mocked behavior.
 
 ## Creating and using mock modules
 
