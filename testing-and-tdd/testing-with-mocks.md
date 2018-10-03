@@ -76,6 +76,8 @@ Sometimes, you may not need to change the implementation/behavior of some functi
 
 In that case, you can use [`jest.spyOn`](https://jestjs.io/docs/en/jest-object#jestspyonobject-methodname) to create a spy on the given function. After you finish testing, you can also call `mockRestore` to restore the original implementation.
 
+In the example below, you can put a spy on `play` function in the video and check it's called with you call `playMovie` function.
+
 Example (in video.js)
 
 ```javascript
