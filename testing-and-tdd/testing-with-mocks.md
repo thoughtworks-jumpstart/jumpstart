@@ -1,6 +1,8 @@
 # Testing with Mocks
 
-Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do. 
+Mocking is a technique to isolate test subjects by replacing dependencies with objects that you can control and inspect. 
+
+**The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do.**
 
 ## Use Case: Mocking Dependencies
 
@@ -15,9 +17,7 @@ const math = require("mathjs");
 
 const generateQueue = () => {
   const randomInteger = math.randomInt(1, 10);
-  const output = Array(randomInteger)
-    .fill()
-    .map(number => math.randomInt(-20, 50));
+  const output = Array(randomInteger).map(number => math.randomInt(-20, 50));
 
   return output;
 };
