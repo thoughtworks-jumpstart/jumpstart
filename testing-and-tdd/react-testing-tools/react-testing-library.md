@@ -34,7 +34,7 @@ Here are some of the links you can keep as a reference:
 
 Now [watch the video](https://www.youtube.com/watch?v=kCR3JAR7CHE&list=PLV5CVI1eNcJgCrPH_e6d57KRUTiDZgs0u) that the author demonstrate how to use this library.
 
-If you like to see some examples of using react-testing-library, you can find it [here](https://codesandbox.io/s/github/kentcdodds/react-testing-library-examples). The test cases can be found under "src/__tests__" folder.
+If you like to see some examples of using react-testing-library, you can find it [here](https://github.com/kentcdodds/react-testing-library-course). The test cases can be found under "src/__tests__" folder.
 
 The github page of the project also includes a few useful links with examples:
 
