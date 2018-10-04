@@ -205,7 +205,7 @@ More details can be found in [Jest documentation on manual mocks](https://jestjs
 
 Lab: [https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab](https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab)
 
-Solutions: [https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab/tree/solution](https://github.com/thoughtworks-jumpstart/mocks-and-stubs-lab/tree/solution)  \(don't peek unless you have to!\)
+Solutions: [https://github.com/songguoqiang/mocks-and-stubs-lab](https://github.com/songguoqiang/mocks-and-stubs-lab)  \(don't peek unless you have to!\)
 
 In the solutions repo, you can find examples on how to 
 
