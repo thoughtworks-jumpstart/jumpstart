@@ -221,7 +221,12 @@ However, sometimes this policy is a bit too restrictive and we do have genuine r
 
 CORS is designed to address these needs.
 
-You can find more information [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [here](https://www.html5rocks.com/en/tutorials/cors/) and [here](https://medium.com/@baphemot/understanding-cors-18ad6b478e2b)
+You can find more information in the links below:
+
+* [MDN doc on CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+* [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) 
+* [Understanding CORS](https://medium.com/@baphemot/understanding-cors-18ad6b478e2b)
+* [Do You Really Know CORS?](http://performantcode.com/web/do-you-really-know-cors)
 
 #### Hiding server side exceptions in production environment
 
