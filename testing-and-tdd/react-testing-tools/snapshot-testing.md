@@ -52,13 +52,11 @@ Then you need to check in the updated snapshots to code repository.
 
 **Important**: Snapshot tests are a complement to, **not** a replacement for, unit tests!
 
-**The rule of thumb is, don't use snapshot testing by default. You should write a lot of unit test to verify the behavior of the React components.**
+ It's essentially a tool for regression testing (i.e. validating the system under test is still behave as it was before). When you get a legacy codebase without any tests, and you want to quickly add some regression tests before you start major refactoring on the codebase, you can use snapshot tests.
 
-There are only a few scenarios when snapshot might make sense:
+However, don't use snapshot tests to validate the behavior of the components. If you want to test how a component react to user interactions, you have to write proper unit tests for the component.
 
-* When a component is purely presentational (i.e. there is no behavior at all). You can write one snapshot test once you are happy with what it presents.
-
-* When you get a legacy codebase without any tests, and you want to quickly add some regression tests before you start major refactoring on the codebase.
+The rule of thumb is, use snapshot testing for regression tests only. You should write a lot of unit test to verify the behavior of the React components.
 
 ## Exercise for SnapShot Testing
 
