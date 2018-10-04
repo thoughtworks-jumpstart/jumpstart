@@ -121,6 +121,7 @@
       * [Webpack](front-end-web-development/react/advanced-concepts/webpack.md)
       * [Progressive Web Applications](front-end-web-development/react/advanced-concepts/progressive-web-app.md)
     * [Testing React apps](testing-and-tdd/react-testing-tools/README.md)
+      * [react-testing-library](testing-and-tdd/react-testing-tools/react-testing-library.md)
       * [Mocking Fetch](testing-and-tdd/react-testing-tools/mocking-fetch.md)
       * [Snapshot Testing](testing-and-tdd/react-testing-tools/snapshot-testing.md)
       * [Enzyme](testing-and-tdd/react-testing-tools/enzyme.md)

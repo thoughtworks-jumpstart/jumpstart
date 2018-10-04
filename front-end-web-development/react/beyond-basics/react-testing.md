@@ -1,14 +1,5 @@
 
-### Test Driven Development with react-testing-library
 
-- [react-testing-library]
-- [jest-dom]
-
-#### Exercises for Testing with react-testing-library
-
-- Extend the [React Todo List](https://github.com/thoughtworks-jumpstart/react-todo-list) and add unit tests for your components. After you finish adding unit tests to the components, you can start from scratch again by implementing the components following Test Driven Development style.
-
-- [Here is a project](https://github.com/pinglinh/tutorial-the-guardian-search-app/tree/functional-app). The author showed how you can write unit test with a library called Enzyme. You can try to convert the unit tests to use `react-testing-library`.
 
 ### Testing Async Functions with Jest
 
