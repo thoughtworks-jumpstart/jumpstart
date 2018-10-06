@@ -4,7 +4,6 @@ Once we learn to fetch data using javascript, we can build front-end application
 
 ## Learning checklist
 
-* What is [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 * HTTP requests and responses
 * What is fetch() API and how to use it
 * How to handle the Promise returned from fetch() API call
@@ -19,6 +18,7 @@ The most relevant section is to understand [HTTP Request and Response Messages](
 
 There are some related knowledge you will also need to know:
 
+* What is [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 * [HTTP get vs post](https://www.w3schools.com/tags/ref_httpmethods.asp)
 * [HTTP request/response headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 * [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
@@ -43,7 +43,7 @@ Note that this API returns a Promise. So you also need to know how to handle Pro
   * You can `await` on promise objects
   * [contrast with old-style callbacks](../../../javascript/asynchronous-javascript/comparing-3-approaches.md)
 
-## Sample Project
+## Demo
 
 We have a sample project that shows you how to call a web service that returns car park information in Singapore.
 
