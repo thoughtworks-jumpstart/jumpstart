@@ -4,7 +4,7 @@ Mocking is a technique to isolate test subjects by replacing dependencies with o
 
 **The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do.**
 
-## What is dependency?
+## What is a dependency?
 
 Every system/module has its dependencies: it could be another module written by you, or it could be a module loaded from some 3rd party libraries.
 
