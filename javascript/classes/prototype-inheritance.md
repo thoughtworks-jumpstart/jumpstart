@@ -43,4 +43,5 @@ Here are some [sample codes](https://github.com/thoughtworks-jumpstart/prototype
 * [https://stackoverflow.com/questions/572897/how-does-javascript-prototype-work](https://stackoverflow.com/questions/572897/how-does-javascript-prototype-work)
 * [https://stackoverflow.com/questions/650764/how-does-proto-differ-from-constructor-prototype](https://stackoverflow.com/questions/650764/how-does-proto-differ-from-constructor-prototype)
 * [https://stackoverflow.com/questions/9959727/proto-vs-prototype-in-javascript?noredirect=1&lq=1](https://stackoverflow.com/questions/9959727/proto-vs-prototype-in-javascript?noredirect=1&lq=1)
+* [A Beginner's Guide to JavaScript's Prototype](https://tylermcginnis.com/beginners-guide-to-javascript-prototype/)
 
