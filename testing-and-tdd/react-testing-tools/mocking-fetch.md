@@ -72,3 +72,7 @@ test("fetches some data", async () => {
 
 Note that the body provided using `mockResponseOnce` has to be converted to a JSON string using the built-in `JSON.stringify` method.
 
+
+## Recommended Reading
+
+* [Testing Async JavaScript & API Calls](http://frontend.turing.io/lessons/module-3/testing-async.html)
