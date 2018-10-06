@@ -1,4 +1,4 @@
-# Debug with Jest
+# Debug Jest Test Cases with VS Code
 
 ## Jest Test Cases for Server Side Node Application
 

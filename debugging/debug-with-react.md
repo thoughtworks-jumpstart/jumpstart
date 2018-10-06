@@ -1,4 +1,4 @@
-# Debug with React
+# Debug React App with VS Code
 
 ## Before you start
 
