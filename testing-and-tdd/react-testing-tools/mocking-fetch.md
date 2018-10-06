@@ -72,6 +72,19 @@ test("fetches some data", async () => {
 
 Note that the body provided using `mockResponseOnce` has to be converted to a JSON string using the built-in `JSON.stringify` method.
 
+### Demo with jest-fetch-mock
+
+Check out how we can test the [react-fetch-demo](https://github.com/thoughtworks-jumpstart/react-fetch-demo/tree/test-with-jest-fetch-mock) with this `jest-fetch-mock` library.
+
+One problem with this approach is the test case assumes the implementation of `carparkAvailability.js` uses `fetch` function. If we ever change the implementation of that module to use `axios` instead, the test case would fail.
+
+## Put the data fetching logic into its own module
+
+Another way to make testing fetching data easier is to put the logic for fetching data into its own module. Then the whole module can be mocked easily with jest.
+
+Check out how we can test the [react-fetch-demo](https://github.com/thoughtworks-jumpstart/react-fetch-demo/tree/test-with-mocking-module) by extracting the data fetching logic into its own module and mock the module with jest.
+
+The benefit of this approach is we can easily change the implementation of that `carparkAvailability.js` module. We could switch from `fetch` to `axios` without failing the test case.
 
 ## Recommended Reading
 
