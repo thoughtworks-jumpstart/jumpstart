@@ -19,6 +19,7 @@ The most relevant section is to understand [HTTP Request and Response Messages](
 
 There are some related knowledge you will also need to know:
 
+* [HTTP get vs post](https://www.w3schools.com/tags/ref_httpmethods.asp)
 * [HTTP request/response headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 * [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 * [cross origin HTTP requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
