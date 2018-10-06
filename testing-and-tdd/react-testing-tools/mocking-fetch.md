@@ -86,6 +86,11 @@ Check out how we can test the [react-fetch-demo](https://github.com/thoughtworks
 
 The benefit of this approach is we can easily change the implementation of that `carparkAvailability.js` module. We could switch from `fetch` to `axios` without failing the test case.
 
+## Lab
+
+Test the data fetching logic in your [https://github.com/thoughtworks-jumpstart/fetch-react-lab](https://github.com/thoughtworks-jumpstart/fetch-react-lab) project using one of the approaches.
+
 ## Recommended Reading
 
 * [Testing Async JavaScript & API Calls](http://frontend.turing.io/lessons/module-3/testing-async.html)
+* [How to test React components using Jest and Enzyme](https://github.com/pinglinh/tutorial-the-guardian-search-app)
