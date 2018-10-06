@@ -4,9 +4,15 @@ Mocking is a technique to isolate test subjects by replacing dependencies with o
 
 **The goal for mocking is to replace something we don’t control \(e.g. a http request which may or may not succeed\) with something we do.**
 
-## Use Case: Mocking Dependencies
+## What is dependency?
 
 Every system/module has its dependencies: it could be another module written by you, or it could be a module loaded from some 3rd party libraries.
+
+Every time when you use `import` or `require` in your JavaScript code, you introduce a new `dependency` to the current JavaScript module.
+
+## Why do we need mocking?
+
+### Use Case: Mocking dependencies to simulate various test scenarios
 
 When you try to test this system/module, sometimes you need to simulate some test scenarios where the dependencies need to behave in a controlled way. For this purpose, you need to mock the behavior of those modules/functions that your current module depend on.
 
@@ -23,9 +29,35 @@ const generateQueue = () => {
 };
 ```
 
-## Use Case: Mocking Callbacks
+### Use Case: Mocking dependencies to make test run faster and reliable
+
+If a test case depends on a real database instance as dependency, it may fail randomly (e.g. when the database server is not reachable for some reason), and it may run very slowly.
+
+To avoid those issues, we can mock the dependencies so that our test case do not depend on the status of real servers.
+
+### Use Case: Mocking Callbacks
 
 There are also cases when you need to pass a callback to the function you need to test, and you need to check if the callback is indeed invoked by the function. In this case, you can also pass a mock function as callback and verify it's called correctly.
+
+## Common patterns in a test case with mocked dependencies
+
+### Mocking dependencies with your own implementation
+
+When you write a test case with mock objects, the test case usually follow the steps below:
+
+1. Mock the dependencies of system under test
+2. Setup the system under test (e.g create required object instances). Hook it up with mocked dependencies.
+3. Call the API on the system under test.
+4. Verify the result/behavior of the system under test
+5. Verify the mocked dependencies are called as expected
+
+![mocked dependencies](../.gitbook/assets/mock-objects.png)
+
+### Monitor the interaction between components with a spy
+
+Sometimes, you may not need to change the implementation/behavior of some function, you just want to keep an eye on it and check if it's called as expected.
+
+![spy](../.gitbook/assets/spy.png)
 
 ## Creating and using mock functions
 
@@ -70,11 +102,10 @@ Sometimes, a mock function needs to behave differently in each test case, then y
 
 If you find yourself calling .mockReset\(\) on multiple mocks, there is a command that let you reset all mocks in one line: `jest.resetAllMocks()`.
 
-## Creating spies on existing functions
+## Creating spies on existing functions 
 
-Sometimes, you may not need to change the implementation/behavior of some function, you just want to keep an eye on it and check if it's called as expected.
+In order to monitor the interaction between the system under tests and its dependencies (without mocking), you can use [`jest.spyOn`](https://jestjs.io/docs/en/jest-object#jestspyonobject-methodname) to create a spy on the given function. After you finish testing, you can also call `mockRestore` to restore the original implementation.
 
-In that case, you can use [`jest.spyOn`](https://jestjs.io/docs/en/jest-object#jestspyonobject-methodname) to create a spy on the given function. After you finish testing, you can also call `mockRestore` to restore the original implementation.
 
 In the example below, you can put a spy on `play` function in the video and check it's called with you call `playMovie` function.
 
@@ -124,7 +155,7 @@ test('plays video', () => {
 
 ## Creating and using mock modules
 
-You can also mock a whole JavaScript module with `jest.mock()` or `jest.doMock()`
+Besides mocking a function, you can also mock a whole JavaScript module with `jest.mock()` or `jest.doMock()`
 
 In the example below, there are two modules:
 
