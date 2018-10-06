@@ -12,3 +12,7 @@ Your task is to write a test case for the App.js:
 
 - You need to mock the implementation of `fetchArticles()` in `api/index.js` to control what articles are return
 - You need to write a test case to verify the returned articles are displayed properly by the App.js component
+
+## Recommended Reading
+
+* [Testing Async JavaScript & API Calls](http://frontend.turing.io/lessons/module-3/testing-async.html)

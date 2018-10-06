@@ -83,7 +83,6 @@ On the web, you can find many tutorials that teach you how to use axios. Here is
 ### Recommended reading
 
 * [Fetching Data with React](https://www.robinwieruch.de/react-fetching-data/)
-* [Testing Async JavaScript & API Calls](http://frontend.turing.io/lessons/module-3/testing-async.html)
 
 ### References
 
