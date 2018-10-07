@@ -84,7 +84,7 @@ One variation of this approach is, instead of calling `setState` directly in `co
 
 ## How to update `state` of a component?
 
-The only way to change state is by calling `this.setState()`. You can't assign value to the `state` variable directly except when you declare the initial value of that variable.
+The only way to change state is by calling `this.setState()`.
 
 ### setState API
 
@@ -209,6 +209,36 @@ First one, the lifecycle method `componentDidUpdate` would be called when the `s
 Second one, the `setState()` API actually can take in a callback, which is called when the `state` is updated. 
 
 Out of these two solutions, the first solution is preferred.
+
+## Pitfalls 
+
+### Don't update the `state` object directly!!!!
+
+The only way to change state is by calling `this.setState()`. You can't assign value to the `state` variable directly except when you declare the initial value of that variable.
+
+For example, the following code won't work (except in constructor):
+
+```javascript
+this.state.value = "new value";
+```
+
+Why? Because React is not aware that the state is updated if you update the `state` object directly. Hence React won't re-render the component after you update the `state` object by yourself.
+
+In contrast, when you call `setState`, React is aware of the state update and re-render the component correctly.
+
+### Don't mutate existing state directly (even if you call setState later on)
+
+Why? If you mutating existing state (instead of creating new ones), the UI may not be re-rendered as expected. One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/)
+
+Hence is generally a good practice to avoid mutating existing state.
+
+If you need to update any field/value in the state, you should create a new copy of the value and call `setState`.
+How can you create new values from the current one? For simple cases, you can make good use of the built-in JavaScript functions like [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) and [Array's spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+
+For more complicated object updates, use the following libraries:
+
+* [immer](https://github.com/mweststrate/immer)
+* [microstate](https://github.com/microstates/microstates.js/)
 
 ## What is the difference between state and props?
 

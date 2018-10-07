@@ -1,6 +1,10 @@
 # React.PureComponent
 
-## What problem does it solve?
+By default, React components (both the function type and the class type, if it extends React.Component) will re-render whenever their parent re-renders, or whenever you change their state with setState.
+
+An easy way to optimize a React component for performance is to make it a class, and make it extend React.PureComponent instead of React.Component. This way, **the pure component will only re-render if it’s state is changed or if it’s props have changed.** It will no longer mindlessly re-render every single time its parent re-renders; it will ONLY re-render if one of its props has changed since the last render.
+
+## More detailed explanation on the need for PureComponent
 
 By default, a plain React.Component has shouldComponentUpdate set to always return true. This is good because it means React errs on the side of always updating the component in case there’s any new data to show. However, it’s bad because it means React might trigger unnecessary re-renders. 
 
@@ -98,6 +102,14 @@ class Message extends PureComponent {
 }
 
 ```
+
+## Immutable props/state should be used when PureComponent is used
+
+if you’re passing props into a PureComponent, you have to make sure that those props are updated in an immutable way. That means, if they’re objects or arrays, you’ve gotta replace the entire value with a new (modified) object or array. 
+
+If you modify the internals of an object or array – by changing a property, or pushing a new item, or even modifying an item inside an array – then the object or array is referentially equal to its old self, and a PureComponent will not notice that it has changed, and will not re-render. Weird rendering bugs will ensue.
+
+This is explained in more details in [this article](https://daveceddia.com/react-redux-immutability-guide/)
 
 ## References
 

@@ -118,6 +118,7 @@
       * [Virtual DOM](front-end-web-development/react/advanced-concepts/virtual-dom.md)
       * [React Design Patterns](front-end-web-development/react/advanced-concepts/react-design-patterns.md)
       * [Context](front-end-web-development/react/advanced-concepts/context.md)
+      * [Context](front-end-web-development/react/advanced-concepts/react-state-management.md)
       * [Webpack](front-end-web-development/react/advanced-concepts/webpack.md)
       * [Progressive Web Applications](front-end-web-development/react/advanced-concepts/progressive-web-app.md)
     * [Testing React apps](testing-and-tdd/react-testing-tools/README.md)
