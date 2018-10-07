@@ -7,8 +7,8 @@ React Router is the standard routing library for React. From the docs:
 ## Learning checklist
 
 * how to install: `npm install react-router-dom`
-* concept of client-side routing
-* concept of Master-Detail views
+* concept of [client-side routing](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f)
+* concept of [Master-Detail views](https://en.wikipedia.org/wiki/Master%E2%80%93detail_interface)
 * concept `<BrowserRouter></BrowserRouter>` and `<Router></Router>` in general
 * how to use router components provided by `react-router-dom`
   * `BrowserRouter`
@@ -19,6 +19,7 @@ React Router is the standard routing library for React. From the docs:
   * `props.match.params` - an object containing all params
   * `props.match.url`
   * `props.match.path`
+* `props.location` object
 * Query string
 * Deployment configuration
 
@@ -207,7 +208,7 @@ Doing this in conjunction with the `create-react-app` buildpack is easy. In the 
 * [`react-router` library](https://github.com/ReactTraining/react-router)
 * [Testing components containing `react-router` components](https://reacttraining.com/react-router/core/guides/testing)
 
-### Assignment
+### Lab
 
 * [https://github.com/thoughtworks-jumpstart/react-router-lab](https://github.com/thoughtworks-jumpstart/react-router-lab)
 * [https://github.com/thoughtworks-jumpstart/react-news-headlines-reader](https://github.com/thoughtworks-jumpstart/react-news-headlines-reader) \(part 2\)
