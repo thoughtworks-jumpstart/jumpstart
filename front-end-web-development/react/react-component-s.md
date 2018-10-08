@@ -23,7 +23,7 @@ You create a component by **defining a function**. Example:
   );
 ```
 
-The function takes in one argument, which is the `props` object. It contains all the properties passed down from the containing component.
+The function takes in **one argument**, which is the `props` object. It contains all the properties passed down from the containing component.
 
 A common variation of the example is to apply object-destructuring on the `props` argument to extract the properties you are interested,e.g.
 
@@ -34,6 +34,16 @@ A common variation of the example is to apply object-destructuring on the `props
 ```
 
 Note that usually the variable names in Javascript start with lower case letter. However, in JSX syntax, the name of components **must** start with upper case letter (`Welcome` instead of `welcome`).
+
+**Note: If you define a function that takes in more than one argument, React won't treat it as a React component!!!**
+
+The following definition of React component is wrong:
+
+```javascript
+  const Welcome = (petName1, petName2) => {
+      return <h1>Hello world! I like {petName1} and {petName2}</h1>;
+  }
+```
 
 ## Class components
 
