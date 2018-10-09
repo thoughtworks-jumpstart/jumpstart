@@ -114,4 +114,5 @@ npm install
 ### References
 
 * [VS Code Debugging guide](https://code.visualstudio.com/docs/editor/debugging)
+* [Introduction on VS Code Debugger](https://vscode.rocks/debugging/)
 
