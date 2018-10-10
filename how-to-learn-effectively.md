@@ -87,5 +87,6 @@ One of the most important things we impart at JumpStart is effective learning. W
 
 ## Assignment
 
-* [https://github.com/thoughtworks-jumpstart/moment-lab](https://github.com/thoughtworks-jumpstart/moment-lab)
+* [Follow this example, track what you learned everyday](https://github.com/jbranchaud/til)
+* [Take the challenge to write code for 100 days](https://www.100daysofcode.com/)
 
