@@ -52,6 +52,7 @@ This is disabled by default. If you like the feature, read [the documentation](h
 
 * Keyboard shortcuts for [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf), [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf), [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 * [VS Code Can Do That?!](https://vscodecandothat.com/)
+* [VS Code Rocks](https://vscode.rocks/)
 
 ### Lab
 
