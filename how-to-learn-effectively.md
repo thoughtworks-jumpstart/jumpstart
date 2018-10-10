@@ -73,6 +73,7 @@ One of the most important things we impart at JumpStart is effective learning. W
 
 ## Resources
 
+* [How to Learn Programming Skills](https://www.codingblocks.net/podcast/how-to-learn-programming-skills/)
 * [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
 * [Stop saying coding is easy](https://www.hanselman.com/blog/StopSayingLearningToCodeIsEasy.aspx)
 * [Teach yourself programming in 10 years](http://norvig.com/21-days.html)
@@ -83,7 +84,6 @@ One of the most important things we impart at JumpStart is effective learning. W
 * [The genius fallacy](http://jxyzabc.blogspot.sg/2017/09/the-genius-fallacy.html)
 * [Jargon.js](http://jargon.js.org/)
 * [Javascript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about Javascript - rather it's about how to navigate the road to expertise/mastery\)
-
 
 ## Assignment
 
