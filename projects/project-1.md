@@ -49,3 +49,6 @@ Your projects will be evaluated and graded based on the following criteria:
 * [https://react.rocks/](https://react.rocks/)
 * [http://builtwithreact.io/](http://builtwithreact.io/)
 
+## Resources
+
+* [A long list of public APIs](https://github.com/toddmotto/public-apis)
