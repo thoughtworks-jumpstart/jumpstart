@@ -72,7 +72,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
 * **Don't change system behavior \(e.g. fixing bugs, adding new features, etc\) during refactoring**
 * **Make small changes, step by step**. If you need to do a big refactor it is better to do multiple small changes
 * **Commit frequently**. You can make a commit after each small change, when all the tests are still passing.
-* **Make good use of IDE support on refactoring**. For VS Code, there are some good plugins like [Javascript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster) and [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround) which helps you to automate some of the code changes.
+* **Make good use of IDE support on refactoring**. For VS Code, there are some good plugins like [Javascript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster), [glean](https://marketplace.visualstudio.com/items?itemName=wix.glean) and [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround) which helps you to automate some of the code changes.
 * **Track the issues in a todo list**. If you notice some issues and you cannot work on it right away, you need to track it in the issue system.
 * **Add unit tests along the way**. If you only have Golden Master Test and no Unit Tests, you should start adding Unit Tests while you do refactoring.
 
