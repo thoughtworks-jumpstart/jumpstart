@@ -1,21 +1,17 @@
-# Heroku: Deployment
+# Deploy a create-react-app to Heroku
 
-## Deployment to Heroku
+## Create a new application on Heroku website
 
-To deploy your app to heroku, run the following steps:
+On [your application dashboard](https://dashboard.heroku.com/apps), click the "New" button on top right corner and select "Create new app".
 
-* create a heroku application from the command line
+## Configure the buildpack for the application
 
-```text
-# run this command if you're deploying create-react-app app
-heroku create --buildpack https://github.com/mars/create-react-app-buildpack.git
+Under the "Settings" -> "Buildpacks", add a buildpack for create-react-app with the following URL "https://github.com/mars/create-react-app-buildpack.git".
 
-# run this command if you're deploying any other app
-heroku create
-```
+What is a "buildpack"? Check the explanation [here](https://devcenter.heroku.com/articles/buildpacks)
 
-* Go to [https://dashboard.heroku.com/](https://dashboard.heroku.com/) to complete the Heroku-Github integration
-  * Click on the project you created in the first step
+## Connect your Heroku app to the Github repository
+
   * Click on Deploy tab → Deployment method → select GitHub
   * Search for the repo of the application that you’re deploying → click Connect
 
@@ -24,27 +20,13 @@ heroku create
 
   ![heroku\_no\_ci](../../.gitbook/assets/heroku_no_ci.png)
 
-* \[Only for the first time deploying this app\] click on “Deploy branch” at the end of the page
+## Trigger a manual depoly
+
+(Only for the first time deploying this app) click on “Deploy branch” at the end of the page
 
 That's all! You can now visit the URL: [https://randomly-generated-app-name.herokuapp.com/](https://randomly-generated-name.herokuapp.com/).
 
-With every push to GitHub, your code is **automatically deployed** and accessible by anyone with internet access. Awesome!
-
-### Other useful `heroku` CLI commands
-
-* Open app in browser:
-  * From your project directory, run `heroku open`
-* Rename your app:
-  * `heroku apps:rename newname --app oldname`
-* View logs
-  * view last 42 lines of logs: `heroku logs -n 42`\(you can replace 42 with any number\)
-  * view logs live: `heroku logs --tail`
-* View app locally before deploying
-  * `heroku local web`
-* General help
-  * `heroku --help`
-* Add mlab service into heroku project
-  * `heroku addons:create mongolab:sandbox`
+Subsequently, with every push to GitHub, your code is **automatically deployed** and accessible by anyone with internet access. Awesome!
 
 ### Resources
 
