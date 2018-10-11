@@ -10,7 +10,29 @@ There are many other platforms for deploying your applications. For React apps, 
 
 ## Now
 
-You can follow the instructions [here](https://zeit.co/docs/examples/create-react-app)
+If you are building a web application using create-react-app, you need to `build` the application first before you can deploy it to `now`.
+
+There are two ways.
+
+### Build the application by yourself 
+
+In your project root directory (created by create-react-app):
+
+Run the following commands:
+
+```shell
+npm run build
+cd build
+now
+```
+
+On the console, you will see the URL where your website is deployed to.
+
+### Build the application on now's platform
+
+For this approach, you need to provide a configuration file called `now.json` which tells `now` how to build your application.
+
+The detailed steps can be found [here](https://zeit.co/docs/examples/create-react-app)
 
 ## GitHub Pages
 
