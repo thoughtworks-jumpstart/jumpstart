@@ -49,6 +49,14 @@ There are a few things to highlight here:
 * Another important detail is **the call** `app.use(middleware)` **must be called before an API endpoint declaration if that middleware should be called for the API endpoint**.
 * You can declare multiple middlewares for the same API endpoint, and the order of execution is same as order of their declaration.
 
+## Middleware levels
+In Express you can attach middleware at the app level so that it affects all routes, or you can also attach it at a router level so that it is only applicable to the routes under that router.
+
+The following diagram illustrates the flow of a request passing through app level and router level middleware:
+
+![middleware levels](https://s3.amazonaws.com/acadgildsite/wordpress_images/android/An+EnterPrise+Application_work_overflow/006.png) \(image source: [https://acadgild.com](https://acadgild.com)\)
+
+
 To get more details about middleware, you can refer to the following materials:
 
 * [Official Express Documentation on Middleware](https://expressjs.com/en/guide/using-middleware.html)
