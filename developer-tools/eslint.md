@@ -1,4 +1,4 @@
-# ESLint
+# ESLint and Prettier
 
 ## What is ESLint
 
@@ -44,7 +44,7 @@ To integrate the two tools, run the following command in your project root folde
 npm install --save-dev prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
-And then add `plugin:prettier/recommend` to your `.eslintrc.json` file in `extends` field.
+And then add `plugin:prettier/recommend` to your `.eslintrc.json` file in `extends` field (a sample configuration file is shown below)
 
 ### ESLint + Jest
 
@@ -56,9 +56,20 @@ To install that plugin, run
 npm install --save-dev jest eslint-plugin-jest
 ```
 
-### Sample Configuration
+### Sample .eslintrc.json for create-react-app
 
-A sample `.eslintrc.json` file is provided below:
+```javascript
+{
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
+  ]
+}
+```
+
+### Sample .eslintrc.json for node based app
 
 ```javascript
 {
@@ -95,6 +106,13 @@ With the ESLint extension installed, VS Code would highlight the lint errors. Yo
 Since we configure ESLint to follow the rules defined by Prettier, ESLint would highlight codes that do not follow Prettier coding style.
 
 For those kind of issues, we can quickly format the code with [Prettier plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+There is a VS Code configuration to automatically format the file upon save. 
+
+```json
+"editor.formatOnSave": true
+"prettier.eslintIntegration": true
+```
 
 ## Disable ESLint `no-console` Rule Temporarily
 

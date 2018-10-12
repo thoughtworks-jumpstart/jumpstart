@@ -19,7 +19,7 @@
     * [Merge hell](git/merge-hell.md)
     * [Advanced Git Commands](git/advanced-git.md)
   * [Chrome DevTools](developer-tools/chrome-devtools.md)
-  * [ESLint](developer-tools/eslint.md)
+  * [ESLint and Prettier](developer-tools/eslint.md)
   * [VS Code Shortcuts](developer-tools/vs-code-shortcuts.md)
   * [Yarn](developer-tools/yarn.md)
 * [JavaScript](javascript/README.md)
