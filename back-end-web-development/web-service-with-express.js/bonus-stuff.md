@@ -38,6 +38,8 @@ Here's are the steps for using it to create an express app
 
 ## Using Express + template engine to create CRUD app with views
 
+In this course, we mainly teach you how to generate JSON responses and build REST APIs. Actually you can generate full HTML pages from the responses and build web applications. Checkout the resources below on examples:
+
 * embedded javascript \(ejs\) \([docs 1](http://ejs.co/) and [docs 2](https://github.com/tj/ejs)\)
 * [tutorial](https://scotch.io/tutorials/use-ejs-to-template-your-node-application)
 
@@ -47,3 +49,12 @@ If you plan to build web service with Express, you can also consider to use some
 
 For example, [Kraken](http://krakenjs.com/) is a secure and scalable layer that extends express by providing structure and convention
 
+## Alternatives to Express
+
+Express is not the only web application framework built on top of NodeJS. 
+
+Other popular ones include:
+- [Koa](https://koajs.com/)
+- [HAPI](https://hapijs.com/)
+- [Restify](http://restify.com/)
+- [Loopback](https://loopback.io/)
