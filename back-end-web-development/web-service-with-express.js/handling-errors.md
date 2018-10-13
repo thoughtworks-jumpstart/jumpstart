@@ -4,7 +4,35 @@ As a good developer, you should not only think about happy path. There are many 
 
 How can you handle those error scenarios?
 
-The Express Framework offers one solution on this. As a developer, you just need to call `next(error)` when some error happens. That is, you call the `next` callback \(which is an argument of every middleware and route handler\) with an instance of Error.
+The Express Framework offers one solution on this.
+
+## Handle errors in synchronous route handlers
+
+Errors that occur in synchronous code inside route handlers and middleware require no extra work. If synchronous code throws an error, then Express will catch and process it. For example:
+
+```javascript
+app.get("/", function(req, res) {
+  throw new Error("BROKEN"); // Express will catch this on its own.
+});
+```
+
+## Handle errors in synchronous route handlers
+
+If you call an asynchronous API in a route handler and you would like to handle errors returned/thrown by those asynchronous operations, you just need to call `next(error)` when some error happens. That is, you call the `next` callback \(which is an argument of every middleware and route handler\) with an instance of Error.
+
+e.g.
+
+```javascript
+app.get("/", function(req, res, next) {
+  fs.readFile("/file-does-not-exist", function(err, data) {
+    if (err) {
+      next(err); // Pass errors to Express.
+    } else {
+      res.send(data);
+    }
+  });
+});
+```
 
 Once Express Framework detects the argument to `next` call is an `Error`, it would skip all the other non-error-handling middlewares and route handlers on the happy path, and call `Error Handlers` for that request. The `Error Handler` can examine the error situation and return proper responses to the client side.
 
@@ -19,8 +47,8 @@ function (err, req, res, next) {
 
 Within an error handler, you typically need to do one of two things:
 
-* call `res.send()` to generate a response, or
-* call `next(err)` to pass the execution to the next error handler 
+- call `res.send()` to generate a response, or
+- call `next(err)` to pass the execution to the next error handler
 
 These error handlers are actually just middlewares. They can be registered to an `app` instance using the same `app.use(path, middleware_function)` call.
 
@@ -38,9 +66,8 @@ If you visit [http://localhost:3000](http://localhost:3000), you should see the 
 
 For more information on error handling, you can refer to the materials below:
 
-* [Official Express Documentation on Error Handling](https://expressjs.com/en/guide/error-handling.html)
-* [Robust Node Applications Error Handling](https://strongloop.com/strongblog/robust-node-applications-error-handling/)
-* [Best Practices of NodJS Error Handling](http://goldbergyoni.com/checklist-best-practices-of-node-js-error-handling/)
+- [Official Express Documentation on Error Handling](https://expressjs.com/en/guide/error-handling.html)
+- [Robust Node Applications Error Handling](https://strongloop.com/strongblog/robust-node-applications-error-handling/)
+- [Best Practices of NodJS Error Handling](http://goldbergyoni.com/checklist-best-practices-of-node-js-error-handling/)
 
 There are also open-sourced error handler implementations like [this one](https://github.com/ericelliott/express-error-handler)
-
