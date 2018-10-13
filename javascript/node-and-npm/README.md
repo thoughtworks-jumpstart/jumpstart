@@ -11,6 +11,8 @@ Node.js is a platform for building fast and scalable server applications using J
 * bindings, responsible for wrapping and exposing libuv and other low-level functionality to JavaScript.
 * node-core, a core JavaScript library that implements the high-level Node.js API.
 
+NodeJS supports [most of the latest features in ECMAScript specification](https://node.green/).
+
 ## History of NodeJS
 
 * [History of NodeJS](https://blog.risingstack.com/history-of-node-js/)
