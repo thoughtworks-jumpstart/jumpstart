@@ -21,7 +21,7 @@ const server = app.listen(PORT, () => {
 To see the first example, run the following command in project root directory:
 
 ```text
-npm install -g nodemon 
+npm install -g nodemon
 nodemon helloworld.js
 ```
 
@@ -43,15 +43,14 @@ app.METHOD(PATH, CALLBACK_FUNCTION);
 
 Where:
 
-* app is an instance of the express module
-* METHOD is an HTTP request method \(GET, POST, PUT or DELETE\)
-* PATH is a path on the server \(e.g. '/', '/books', '/books/:id'\).
-* CALLBACK\_FUNCTION is the function executed when the route is matched.
+- app is an instance of the express module
+- METHOD is an HTTP request method \(GET, POST, PUT or DELETE\)
+- PATH is a path on the server \(e.g. '/', '/books', '/books/:id'\).
+- CALLBACK_FUNCTION is a callback function executed when the route is matched. The callback function usually has a signature like the one below:
 
 ```javascript
-function handler(request, response) {
+function xxxHandler(request, response) {
   // get useful information from request
-  // write response 
+  // generate response
 }
 ```
-
