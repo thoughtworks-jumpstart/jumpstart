@@ -49,9 +49,9 @@ node express_basic_example_2.js
 
 If you send a request to \`[http://localhost:3000/students](http://localhost:3000/students)", you should see the output of both route handlers, printed in the right sequence.
 
-There are something to take note in the example:
+There are something to take note when there are multiple handlers are used for the same route:
 
-* how an route handler passes the request to the next route handler via next\(\) call
-* we use `response.write()` method instead of `response.send()` method.
-* if a route handler does not handle the request to the next handler, it should call `response.end()` method.
+* How an route handler passes the request to the next route handler via next\(\) call
+* When we are not ready to send back the response yet, we use `response.write()` method to update the response, instead of using `response.send()` method
+* If a route handler needs to send the response back to client, it should call `response.end()` method.
 
