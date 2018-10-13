@@ -34,6 +34,16 @@ For this approach, you need to provide a configuration file called `now.json` wh
 
 The detailed steps can be found [here](https://zeit.co/docs/examples/create-react-app)
 
+### Configuring environment variables on Now
+
+If you cannot put the environment variables into `.env` file for some reason, you can also set it via Now.
+
+Check out their [documentation](https://zeit.co/docs/getting-started/environment-variables).
+
+If the environment variable is a secret, you should also be careful and don't check it into your public code repository.
+
+Here is how you can [manage secrets on the Now platform](https://zeit.co/docs/getting-started/secrets)
+
 ## GitHub Pages
 
 You can follow instructions [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#github-pages)
