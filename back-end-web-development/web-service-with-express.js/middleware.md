@@ -2,6 +2,8 @@
 
 Now we understand how to write functions to handle requests. But the Express Framework offers something more powerful called `Middleware`.
 
+## What is it?
+
 **Middleware** is any number of functions that are invoked by the Express.js routing layer before your final request handler is, and thus sits in the middle between a raw request and the final intended route. We often refer to these functions as the middleware stack since they are always invoked in the order they are added.
 
 The following diagram shows how the middlewares work together:
@@ -9,6 +11,18 @@ The following diagram shows how the middlewares work together:
 ![middleware explained](https://manuel-rauber.com/content/images/2016/03/Middleware-1.png) 
 
 \(image source: [https://manuel-rauber.com](https://manuel-rauber.com)\)
+
+## Why do we need middlewares?
+
+Middlewares allow us to put logic with cross-cutting concerns (i.e. the logic that can be shared by multiple route handlers) into a common place and avoid duplicating the same logic in each route handler.
+
+Examples of cross cutting concerns include: 
+`
+* parsing requests
+* logging request details
+* authenticating the client sending the request
+
+## Example
 
 Let's take a look an example middleware in `middleware_example.js`
 
@@ -32,6 +46,8 @@ If you visit URL `http://localhost:3000/books`, you should see only one line in 
 ```text
 GET /books
 ```
+
+## How to implement a middleware
 
 Now let's take a closer look at the signature of middleware functions
 
@@ -59,8 +75,6 @@ In order to use a middleware, you write in your `app.js`:
 app.use(middleware);
 ```
 
-You can also declare multiple middlewares for the same API endpoint, and the order of execution is same as order of their declaration.
-
 Note that **the call** `app.use(middleware)` **must be called before an API endpoint declaration so that middleware would be called for the API endpoint**.
 
 In the following example, if you move the line `app.use(myLogger)` below `app.get('/', ...)`, then the middleware `myLogger` won't be used when someone call GET on the '/' path.
@@ -79,7 +93,9 @@ app.get('/', function (req, res) {
 
 ```
 
-## Middleware levels
+You can also declare multiple middlewares for the same API endpoint, and the order of execution is same as order of their declaration.
+
+## Middleware can be declared for the whole application, or a specific router
 
 In Express you can attach middleware at the app level so that it affects all routes, or you can also attach it at a router level so that it is only applicable to the routes under that router.
 
