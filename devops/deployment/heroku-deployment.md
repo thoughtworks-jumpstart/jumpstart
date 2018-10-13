@@ -10,6 +10,14 @@ Under the "Settings" -> "Buildpacks", add a buildpack for create-react-app with 
 
 What is a "buildpack"? Check the explanation [here](https://devcenter.heroku.com/articles/buildpacks)
 
+## Configure the environment variables used by your application
+
+If your application needs some environment variables (e.g. the secret keys for calling those APIs), and you cannot put them into the `.env` files (because they are secret and should not be checked into code repository), you should declare those variables in Heroku.
+
+On Heroku dashbaord, you can set this under "Settings" -> "Config Variables"
+
+More documentation can be found [here](https://devcenter.heroku.com/articles/config-vars)
+
 ## Connect your Heroku app to the Github repository
 
   * Click on Deploy tab → Deployment method → select GitHub
