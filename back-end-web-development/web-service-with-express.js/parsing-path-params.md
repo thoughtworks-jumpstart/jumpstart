@@ -1,6 +1,6 @@
 # Parsing path params
 
-## You can use parameters in your route path
+## You can capture parameters in your route path
 
 Route parameters are named URL segments that are used to capture the values specified at their position in the URL. The captured values are populated in the req.params object, with the name of the route parameter specified in the path as their respective keys.
 
