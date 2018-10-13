@@ -13,3 +13,8 @@ const db_password = process.env.DB_PASSWORD
 // in local env, define DB_PASSWORD='sup3r_secr3t' and load your environment variables (e.g. using foreman)
 // in staging/production env, define DB_PASSWORD='sup3r_secr3t' as a environment variable
 ```
+
+These environment variables should be declared on the web server (which hosts and run your applications)
+
+- For Heroku, check out their [documentation](https://devcenter.heroku.com/articles/config-vars)
+- For Now, check out their [documentation](https://zeit.co/docs/getting-started/secrets)
