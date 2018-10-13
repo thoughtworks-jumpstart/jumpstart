@@ -38,7 +38,7 @@ Using those tools, compose a POST or PUT request to "[http://localhost:3000/](ht
 ## Syntax for defining a route handler
 
 ```text
-app.METHOD(PATH, CALLBACK_FUNCTION);
+app.METHOD(PATH, ROUTE_HANDLER);
 ```
 
 Where:
@@ -46,11 +46,21 @@ Where:
 - app is an instance of the express module
 - METHOD is an HTTP request method \(GET, POST, PUT or DELETE\)
 - PATH is a path on the server \(e.g. '/', '/books', '/books/:id'\).
-- CALLBACK_FUNCTION is a callback function executed when the route is matched. It's usually called `route handler`. A route handler function usually has a signature like the one below:
+- ROUTE_HANDLER is a callback function executed when the route is matched. A route handler function usually has a signature like the one below:
 
 ```javascript
 function xxxHandler(request, response) {
   // get useful information from request
   // generate response
+}
+```
+
+Sometimes, you may define multiple route handlers for the same route. In that case, the route handlers can take one more argument called  `next`. A route handler can call `next()` within the body of the function to hand off control to the next callback defined for the same route.
+
+```javascript
+function xxxHandler(request, response, next) {
+  // get useful information from request
+  // update response with response.write()
+  // delegate to the next route handler by calling next()
 }
 ```
