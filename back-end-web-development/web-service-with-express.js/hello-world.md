@@ -46,7 +46,7 @@ Where:
 - app is an instance of the express module
 - METHOD is an HTTP request method \(GET, POST, PUT or DELETE\)
 - PATH is a path on the server \(e.g. '/', '/books', '/books/:id'\).
-- CALLBACK_FUNCTION is a callback function executed when the route is matched. The callback function usually has a signature like the one below:
+- CALLBACK_FUNCTION is a callback function executed when the route is matched. It's usually called `route handler`. A route handler function usually has a signature like the one below:
 
 ```javascript
 function xxxHandler(request, response) {
