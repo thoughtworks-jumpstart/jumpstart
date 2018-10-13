@@ -6,7 +6,9 @@ Now we understand how to write functions to handle requests. But the Express Fra
 
 The following diagram shows how the middlewares work together:
 
-![middleware explained](https://manuel-rauber.com/content/images/2016/03/Middleware-1.png) \(image source: [https://manuel-rauber.com](https://manuel-rauber.com)\)
+![middleware explained](https://manuel-rauber.com/content/images/2016/03/Middleware-1.png) 
+
+\(image source: [https://manuel-rauber.com](https://manuel-rauber.com)\)
 
 Let's take a look an example middleware in `middleware_example.js`
 
@@ -42,20 +44,50 @@ function(req, res, next) {
 }
 ```
 
-There are a few things to highlight here:
+Not surprisingly, the signature of middleware functions is the same as route handlers!!!
 
-* The middleware function has same signature as route handlers, but we need to pay special attention to the `next` argument. This is a callback function for each middleware to tell the Express framework that "Hey, my job is done. Now pass the request to the next middleware or route handler that should handle this request."
+However, there are a few things to highlight:
+
+* We need to pay special attention to the `next` argument. This is a callback function for each middleware to tell the Express framework that "Hey, my job is done. Now pass the request to the next middleware or route handler that should handle this request."
 * **It's critical that you don't forget calling the** `next` **function after a middleware finishes its task. Otherwise, the Express Framework will keep waiting for the call to** `next()`**, and the API client side would not receive any response!!!**
-* Another important detail is **the call** `app.use(middleware)` **must be called before an API endpoint declaration if that middleware should be called for the API endpoint**.
-* You can declare multiple middlewares for the same API endpoint, and the order of execution is same as order of their declaration.
+
+## How to use a middleware
+
+In order to use a middleware, you write in your `app.js`:
+
+```javascript
+app.use(middleware);
+```
+
+You can also declare multiple middlewares for the same API endpoint, and the order of execution is same as order of their declaration.
+
+Note that **the call** `app.use(middleware)` **must be called before an API endpoint declaration so that middleware would be called for the API endpoint**.
+
+In the following example, if you move the line `app.use(myLogger)` below `app.get('/', ...)`, then the middleware `myLogger` won't be used when someone call GET on the '/' path.
+
+```javascript
+var myLogger = function (req, res, next) {
+  console.log('LOGGED')
+  next()
+}
+
+app.use(myLogger)
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+```
 
 ## Middleware levels
+
 In Express you can attach middleware at the app level so that it affects all routes, or you can also attach it at a router level so that it is only applicable to the routes under that router.
 
 The following diagram illustrates the flow of a request passing through app level and router level middleware:
 
-![middleware levels](https://s3.amazonaws.com/acadgildsite/wordpress_images/android/An+EnterPrise+Application_work_overflow/006.png) \(image source: [https://acadgild.com](https://acadgild.com)\)
+![middleware levels](https://s3.amazonaws.com/acadgildsite/wordpress_images/android/An+EnterPrise+Application_work_overflow/006.png) 
 
+\(image source: [https://acadgild.com](https://acadgild.com)\)
 
 To get more details about middleware, you can refer to the following materials:
 
