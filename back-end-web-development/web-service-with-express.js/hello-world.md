@@ -49,7 +49,7 @@ Where:
 - ROUTE_HANDLER is a callback function executed when the route is matched. A route handler function usually has a signature like the one below:
 
 ```javascript
-(request, response) => {
+function xxxHandler(request, response) {
   // get useful information from request
   // generate response
 }
@@ -58,9 +58,15 @@ Where:
 Sometimes, you may define multiple route handlers for the same route. In that case, the route handlers can take one more argument called  `next`. A route handler can call `next()` within the body of the function to hand off control to the next callback defined for the same route.
 
 ```javascript
-(request, response, next) => {
+function xxxHandler(request, response, next) {
   // get useful information from request
   // update response with response.write()
   // delegate to the next route handler by calling next()
 }
+```
+
+To see the a multi route handler example, run the following command:
+
+```text
+nodemon express_basic_example_2.js
 ```
