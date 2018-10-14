@@ -16,7 +16,7 @@ app.get("/", function(req, res) {
 });
 ```
 
-## Handle errors in synchronous route handlers
+## Handle errors in asynchronous route handlers
 
 If you call an asynchronous API in a route handler and you would like to handle errors returned/thrown by those asynchronous operations, you just need to call `next(error)` when some error happens. That is, you call the `next` callback \(which is an argument of every middleware and route handler\) with an instance of Error.
 
