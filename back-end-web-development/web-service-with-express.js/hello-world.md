@@ -49,7 +49,7 @@ Where:
 - ROUTE_HANDLER is a callback function executed when the route is matched. A route handler function usually has a signature like the one below:
 
 ```javascript
-function xxxHandler(request, response) {
+(request, response) => {
   // get useful information from request
   // generate response
 }
