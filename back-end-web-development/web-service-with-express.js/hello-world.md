@@ -58,7 +58,7 @@ Where:
 Sometimes, you may define multiple route handlers for the same route. In that case, the route handlers can take one more argument called  `next`. A route handler can call `next()` within the body of the function to hand off control to the next callback defined for the same route.
 
 ```javascript
-function xxxHandler(request, response, next) {
+(request, response, next) => {
   // get useful information from request
   // update response with response.write()
   // delegate to the next route handler by calling next()
