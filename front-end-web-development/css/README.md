@@ -21,6 +21,7 @@ We will briefly cover the most important topics in this material, however, if yo
 Bookmark the link below, you need to refer to it frequently.
 
 * [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+* [Codrops CSS Reference](https://tympanus.net/codrops/css_reference/)
 
 ## Resources:
 
