@@ -65,3 +65,21 @@ this.handleClick = this.handleClick.bind(this);
 ```
 
 This is a convention in case your event handler need to refer to `this` within its implementation. We will cover the details in the next section.
+
+## Deboucing and Throttling the event handlers
+
+Sometimes, the event handlers can be called too frequently due to fast input rate from the user. If you would like to reduce the rate that your event handlers are called, you can use some library to do debouncing and throttling.
+
+Here are some articles explaining the concept:
+
+* https://css-tricks.com/debouncing-throttling-explained-examples/
+* http://demo.nimius.net/debounce_throttle/
+
+And some articles showing you the usage of this technique:
+
+* https://arianacosta.com/js/react/easy-event-throttling-in-react/
+
+For React applications, you can use libraries like:
+
+* https://github.com/nkbt/react-debounce-input
+* https://github.com/niksy/throttle-debounce
