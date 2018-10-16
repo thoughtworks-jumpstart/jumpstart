@@ -112,7 +112,7 @@ Reference
 
 - [Queries](https://mongoosejs.com/docs/queries.html)
 
-### (Optional) Concept: Schema Validation
+### Concept: Schema Validation
 
 If we define schema validation rules in Mongoose schema, we can validate a document before it's saved/updated in the database. That helps to ensure all documents in the database confirm to well defined schema.
 
@@ -123,7 +123,11 @@ Read Mongoose API documentation to answer the following questions:
 - What's the difference between ValidationError and ValidatorError?
 - What's the structure of a ValidationError object?
 
-Note:
+Reference
+
+- [Schema validation](https://mongoosejs.com/docs/validation.html)
+
+Caveats:
 
 - [The unique option is not a validator](https://mongoosejs.com/docs/validation.html#the-unique-option-is-not-a-validator). If you need to validate some document field contains unique values, you can use some Mongoose plugins like [mongoose-unique-validator](https://github.com/blakehaswell/mongoose-unique-validator).
 - There are [quite a few caveats](https://mongoosejs.com/docs/validation.html#update-validators) when you need to do schema validation when updating a document.
@@ -132,7 +136,7 @@ Note:
 
 Besides using the schema validation capability from Mongoose, we can also use other libraries for validating object schema in general. One of the good libraries is called [JOI](https://github.com/hapijs/joi).
 
-### (Optional) How to "join" documents from multiple collections
+### How to "join" documents from multiple collections
 
 Each document may have some field that refers to documents in other collections. Using those references, we can retrieve the related documents when we retrieve a specific document.
 
