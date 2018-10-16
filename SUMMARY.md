@@ -143,7 +143,7 @@
     * [Middleware](back-end-web-development/web-service-with-express.js/middleware.md)
     * [Handling errors](back-end-web-development/web-service-with-express.js/handling-errors.md)
     * [Using Async Functions with Express.js](back-end-web-development/web-service-with-express.js/using-async-functions-with-express.js.md)
-    * [API Documentation with Swagger](back-end-web-development/web-service-with-express.js/serving-static-response.md)
+    * [Serving static files with Express.js](back-end-web-development/web-service-with-express.js/serving-static-response.md)
     * [API Documentation with Swagger](back-end-web-development/web-service-with-express.js/api-documentation-with-swagger.md)
     * [Bonus stuff](back-end-web-development/web-service-with-express.js/bonus-stuff.md)
   * [Token-based authentication](back-end-web-development/token-based-authentication.md)
