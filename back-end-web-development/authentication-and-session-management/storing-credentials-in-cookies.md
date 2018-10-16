@@ -30,7 +30,7 @@ Cookie:     sessionId=31d4d96e407aad42
 Cookie:     userType=guest
 ```
 
-Some clients \(e.g. Insomnia, Chrome\) will do this automatically, but we will later learn that in a front-end web applocation, `fetch()` won't do this automatically. We have to specify the `{ credentials: 'include' }` option in the fetch requests for which we want to include cookies.
+Some clients \(e.g. Insomnia, Chrome\) will do this automatically, but we will later learn that in a front-end web application, `fetch()` won't do this automatically. We have to specify the `{ credentials: 'include' }` option in the fetch requests for which we want to include cookies.
 
 ## How to store/retrieve JWTs in a cookie in a back-end and front-end app
 
