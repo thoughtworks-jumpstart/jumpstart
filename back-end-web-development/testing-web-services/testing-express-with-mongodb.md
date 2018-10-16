@@ -2,6 +2,8 @@
 
 To write API tests for an Express app that uses MongoDB as the database, we are going to use a library called [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server). It spins up an in-memory instance of MongoDB, which is faster than running a separate MongoDB instance.
 
+The library helps to give us a clean/empty database for each test case, so that the test cases do not interfere with each other (e.g. if a test case fail and leave some garbage data in its copy of database, that failure will not affect other test cases because each test case starts with a clean database). 
+
 Here is an example on using it with Jest: [https://github.com/nodkz/mongodb-memory-server\#simple-jest-test-example](https://github.com/nodkz/mongodb-memory-server#simple-jest-test-example)
 
 ## Adding tests to the Books API
@@ -79,26 +81,8 @@ test("GET /authors", async () => {
 
 Each test should be independent of the others - importantly, the order in which the tests run shouldn't affect whether they pass or fail.
 
-## An advanced example \(uses Express, MongoDB, and Passport\)
+## Another strategy for doing integration testing with database
 
-We have created a sample project in the course material repository. Let's clone this repository and study the codes related to tests.
+In the example above, we make use of the `mongodb-memory-server` to automatically give us a fresh database in each test case. 
 
-```text
-git clone https://github.com/thoughtworks-jumpstart/express_passport_mongoose_example
-cd express_passport_mongoose_example
-npm install
-```
-
-In this project we mainly rely on Contract Tests.
-
-Take a look at the tests in the `integration-test` folder.
-
-* For those test cases we are using the [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server) to create an empty database before each test case.
-* We write our own helper function to load fixtures to the database. Check out the `fixtures.js` file in `test_helper` folder. We could use a proper library to load fixtures if we have more complicated fixtures to load.
-* We use `supertest` library to send requests and verify responses.
-* We separate `app.js` and `server.js` to make it easier to test API endpoints. This best practice is explained [here](https://github.com/i0natan/nodebestpractices/blob/master/sections/projectstructre/separateexpress.md)
-
-We also have some unit test for the models. You can find them in the `models` folder. Note that for those model tests, they depend on the in-memory instance of MongoDB too. When the cost of depending on a real database is cheap, I didn't bother to mock the database dependency, even for unit tests.
-
-Currently, we don't have unit test for middlewares yet, because the Contract Test already covers the behavior of those middlewares. If we do have some logic that's hard to verify with Contract Test, we could write unit test for middlewares as well, but we would need libraries to mock the interactions with the Mongoose API.
-
+Without that library, another possible solution is to explicitly delete all data in the test database after each test finishes running. That's a bit tedious but still works. Here is a [sample project](https://github.com/thoughtworks-jumpstart/express-blog-api-mongoose-and-tests) showing this approach. Checkout the test cases in `tests/integration-tests` to see the sample tests.
