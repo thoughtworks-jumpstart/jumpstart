@@ -155,7 +155,6 @@
   * [Testing Web Services](back-end-web-development/testing-web-services/README.md)
     * [Testing REST API without database](back-end-web-development/testing-web-services/testing-handlers-and-routers.md)
     * [Testing REST API with MongoDB](back-end-web-development/testing-web-services/testing-express-with-mongodb.md)
-    * [Integration Testing Lab](back-end-web-development/testing-web-services/integration-testing-lab.md)
   * [Production Quality Web Service](back-end-web-development/production-quality-web-service.md)
   * [Web Service Security](back-end-web-development/web-service-security.md)
   * [Introduction to Relational Database](back-end-web-development/introduction_to_relational_database.md)
