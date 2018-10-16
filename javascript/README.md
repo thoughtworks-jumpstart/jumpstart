@@ -27,6 +27,7 @@ Here is a good overview of the Javascript landscape as of 2018:
 
 * [The Modern Javascript Tutorial](http://javascript.info/)
 * [Javascript Concepts](https://github.com/divyanshu-rawat/Javascript-Concepts)
+* [33 concepts every JavaScript developer should know](https://github.com/leonardomso/33-js-concepts)
 * [Learning ES6](https://github.com/ericdouglas/ES6-Learning)
 
 ## Books
