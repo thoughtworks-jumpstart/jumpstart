@@ -225,6 +225,22 @@ mongoose.connect(uri, function(error) {
 
  That callback parameter is still supported, but not required with this `operation buffering` feature.
 
+### Monitor connection status changes
+
+If you would like to be notified when there is a status change in the underlying connection (e.g. connection established, dis-connected, etc), you can register some event handlers.
+
+For example:
+
+```javascript
+const mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost/jumpstart");
+const conn = mongoose.connection;
+
+conn.on('connected', callback);
+conn.on('disconnected', callback);
+conn.on('error', callback);
+```
+
 ## Lab: Adding MongoDB to a CRUD REST API
 
 In this lab, you will start from a project without a database. There are some skeleton codes written for an API to create/update/read/delete books. You need to implement those APIs and store the data in a local Mongo database.
