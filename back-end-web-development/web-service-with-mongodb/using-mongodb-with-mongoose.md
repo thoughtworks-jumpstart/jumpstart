@@ -247,6 +247,16 @@ In this lab, you will start from a project without a database. There are some sk
 
 Here is the [project repo](https://github.com/thoughtworks-jumpstart/express-books-api) for you to fork and work on.
 
+Tasks:
+
+- Fork and clone the project
+- Create a new branch `checkout -b with_mongodb`
+- Make sure your local MongoDB is up and running
+- Install Mongoose package in your project `npm install mongoose`
+- Create a Mongoose schema/model for `Book`, and implement the API using this model
+- Create another model called `Author`, and update the `Book` schema to include one author for each book.
+- Implement new REST APIs for author, e.g. creating a new author, search author by name, getting books written by an author, etc
+
 ## Resources
 
 - [M101JS: MongoDB for Node.js Developers](https://university.mongodb.com/courses/M101JS/about)
