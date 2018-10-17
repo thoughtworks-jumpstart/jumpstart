@@ -22,6 +22,8 @@ Examples of cross cutting concerns include:
 * logging request details
 * authenticating the client sending the request
 
+Middleware also give you a chance to do some pre-processing on a request before the route handlers handle it. For instance, after a user has logged in, you could fetch their user details from a database, and then store those details in res.user.
+
 ## Example
 
 Let's take a look an example middleware in `middleware_example.js`
@@ -129,3 +131,6 @@ Why do we need middleware? They are often used to handle `cross-cutting concerns
 * [Error Logging in Development Environment](https://github.com/expressjs/errorhandler)
 * [Compressing responses](https://github.com/expressjs/compression)
 
+## Recommended Reading
+
+* [What is a middleware?](https://medium.com/@jamischarles/what-is-middleware-a-simple-explanation-bb22d6b41d01)
