@@ -14,9 +14,10 @@ Given that you have a simple express app,
 2. Configure passport jwt strategy
 
    1. `mkdir config`
-   2. `touch config/passport.js` \(you can name this folder and file anything you want\)
+   2. `touch config/passport.js` 
    3. Configure passport with passport-jwt strategy:
-   4. ```javascript
+
+   ```javascript
       // in config/passport.js
       const passport = require("passport");
       const passportJWT = require("passport-jwt");
@@ -50,14 +51,14 @@ Given that you have a simple express app,
       ```
 
 3. Add initialize passport in `app.js`
-   1. ```javascript
+    ```javascript
       // in app.js
       const { passport } = require("./config/passport");
       app.use(passport.initialize());
-      ```
+    ```
 4. Protect your routes by including the `passport.authenticate()` middleware in your route handlers
 
-   1. ```javascript
+    ```javascript
       // in app.js (or any router file)
       // protected routes
       app.use(
@@ -68,11 +69,11 @@ Given that you have a simple express app,
 
       // public routes
       app.use("/", indexRouter);
-      ```
+    ```
 
 5. Now, it's time to issue tokens! We should only issue tokens to users who can authenticate themselves using the right username and password. To do that, we need 2 route handlers for `POST /signup` and `POST /signin`
 
-   1. ```javascript
+    ```javascript
       // in router file
 
       const jwt = require("jsonwebtoken");
@@ -107,11 +108,11 @@ Given that you have a simple express app,
           res.status(401).json({ message: "passwords did not match" });
         }
       });
-      ```
+    ```
 
 6. Now, you might notice a two new methods which are used on the `user` object \(namely, `user.setHashedPassword(password)` and `user.validPassword(password)`\). These are instance methods which we will define in the user model in this step
 
-   1. ```javascript
+   ```javascript
       // in models/user.js
 
       const mongoose = require("mongoose");
@@ -137,7 +138,7 @@ Given that you have a simple express app,
 
       UserSchema.plugin(uniqueValidator, { message: "should be unique" });
 
-      // use ES5 function to prevent `this` from becoming undefined
+      // Note: we need to use ES5 function to prevent `this` from becoming undefined
       UserSchema.methods.setHashedPassword = function(password) {
         this.salt = generateSalt();
         this.hash = hashPassword(password, this.salt);
@@ -162,9 +163,9 @@ Given that you have a simple express app,
       const User = mongoose.model("User", UserSchema);
 
       module.exports = User;
-      ```
+    ```
 
-   2. There's a lot going on in this file, so let's break it down:
+   There's a lot going on in this file, so let's break it down:
       1. `setHashedPassword(password)` - this function takes a password, and adds 2 attributes \(`this.hash` and `this.salt`\) on the user object. Hence, instead of saving the password in the database \(which is something you should never do!\), we save an **encrypted hash** of the password in the database
       2. `validatePassword(password)` - this function \(i\) takes a password, computes an **encrypted hash**, based on the password passed in as an argument and the `this.salt` of the current user, and \(ii\) returns true if this generated hash matches the `this.hash` of the user \(which was previously saved in the database\)
       3. `generateSalt()` uses node's built-in `crypto` to generate a cryptographically strong pseudo-random string \(e.g. `b1b52e1d4494819f3433fa66554f73f1`\)
