@@ -151,7 +151,7 @@ When you define a model, there are many functions available for you to use, such
 - [findOne](https://mongoosejs.com/docs/api.html#model_Model.findOne)
 - [remove](https://mongoosejs.com/docs/api.html#model_Model.remove)
 
-When you crate a document (i.e. creating an instance of a model), there are many functions on that document object as well:
+When you create a document (i.e. creating an instance of a model), there are many functions on that document object as well:
 
 - [save](https://mongoosejs.com/docs/api.html#document_Document-save)
 - [update](https://mongoosejs.com/docs/api.html#document_Document-update)
