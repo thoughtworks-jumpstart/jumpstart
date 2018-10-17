@@ -153,6 +153,7 @@
     * [Testing REST API without database](back-end-web-development/testing-web-services/testing-handlers-and-routers.md)
     * [Testing REST API with MongoDB](back-end-web-development/testing-web-services/testing-express-with-mongodb.md)
   * [Authentication and session management](back-end-web-development/authentication-and-session-management/README.md)
+    * [Cryptography 101](back-end-web-development/authentication-and-session-management/cryptography-primer.md)
     * [Token-based authentication](back-end-web-development/authentication-and-session-management/token-based-authentication.md)
     * [Storing credentials in cookies](back-end-web-development/authentication-and-session-management/storing-credentials-in-cookies.md)
     * [Authentication with Passport.js](back-end-web-development/authentication-and-session-management/authentication-with-passport.md)
