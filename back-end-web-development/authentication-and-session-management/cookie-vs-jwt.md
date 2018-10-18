@@ -22,3 +22,4 @@ Here are some considerations when you need to choose between the two:
 
 - A token issued by one service (e.g. Facebook/Google) can be trusted by other websites. In construct, a cookie issued by one website can only be used with the same website. So it's easier to implement [Single-Sign-On](https://en.wikipedia.org/wiki/Single_sign-on) across different websites with token based approach.
 
+- You don't need to implement your own logic for issuing/verifying tokens. You can use service provided by [Auth0](https://auth0.com/). 
