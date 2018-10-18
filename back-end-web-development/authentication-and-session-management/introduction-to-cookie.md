@@ -1,8 +1,10 @@
 # Introduction to cookies
 
+TL;DR: A cookie is a string that we can send from a server to a client (and vice versa), just like your request or response body, headers, params, query parameters. It lives under the Headers of a request and response.
+
 ## What is a cookie?
 
-Cookies are small bits of data, \(maximum of 4KB long\), which hold data in a key=value pairs:
+Cookies are small bits of data, \(maximum of 4KB long\), which hold data in a string of key=value pairs:
 
 ```text
 name=value; name2=value2
@@ -13,10 +15,17 @@ These are set either by JavaScript in browser, or by the server side application
 Here is one example showing the 'Set-Cookie' in HTTP response headers:
 
 ```text
-Set-Cookie: name2=value2; Expires=Tue, 2 April 2018 10:18:14 GMT
+Set-Cookie: name2=value2; Expires=Tue, 2 April 2018 10:18:14 GMT; Path=/; Domain=abc.com
 ```
 
-Upon receiving this response, the browser would set a cookie named `name2` with a value of `value2`, which would expire at the specified time. 
+When the client receives a cookie in the `Set-Cookie` header, the client stores the cookie together with its attributes.
+In the example above, the browser would set a cookie named `name2` with a value of `value2`, which would expire at the specified time. 
+
+Subsequently, when the client makes a HTTP request, the client includes the applicable, non-expired cookies in the Cookie header.
+
+Some clients (e.g. Insomnia, Chrome) will do this automatically, but when you call the `fetch` API from your frontend application, the `fetch` API won't do this automatically. You have to specify the { credentials: 'include' } option in the fetch requests for which we want to include cookies.
+
+## How are cookies saved in browser?
 
 Where does the browser save cookies it receives from server side? It depends on the type of cookie:
 

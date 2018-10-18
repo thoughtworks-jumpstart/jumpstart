@@ -4,34 +4,6 @@ Now that you've learned how to generate JWTs and use JWTs to authenticate reques
 
 \(Note: Despite what 3/4 of the internet is saying, we are **not** going to store credentials and secrets in `sessionStorage` or `localStorage`. While doing that would be convenient, our users' credentials would be [leaked](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage) in the event of an XSS attack.\)
 
-Before we dive into implementation details, let's understand some fundamental concepts.
-
-## A 2-minute crash course on cookies
-
-TL;DR: A cookie is a string that we can send from a server to a client \(and vice versa\), just like your request or response body, headers, params, query parameters. It lives under the **Headers** of a request and response.
-
-A cookie is a string beginning with a name-value pair, followed by zero or more attribute-value pairs. When the cookie is sent from the server to the client, it is sent in the response **headers** with a key of `Set-Cookie`.
-
-```text
-Example:
-
-Set-Cookie: sessionId=31d4d96e407aad42; Path=/; Domain=abc.com
-```
-
-When the client receives a cookie in the `Set-Cookie` header, the client stores the cookie together with its attributes. Subsequently, when the client makes a HTTP request, the client includes the applicable, non-expired cookies in the `Cookie` header.
-
-```text
-// Server -> Client
-Set-Cookie: sessionId=31d4d96e407aad42
-Set-Cookie: userType=guest
-
-// Client -> Server 
-Cookie:     sessionId=31d4d96e407aad42 
-Cookie:     userType=guest
-```
-
-Some clients \(e.g. Insomnia, Chrome\) will do this automatically, but we will later learn that in a front-end web application, `fetch()` won't do this automatically. We have to specify the `{ credentials: 'include' }` option in the fetch requests for which we want to include cookies.
-
 ## How to store/retrieve JWTs in a cookie in a back-end and front-end app
 
 To skip straight to the code, see this [repo](https://github.com/thoughtworks-jumpstart/express-auth-demo).
