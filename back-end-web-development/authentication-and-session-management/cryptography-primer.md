@@ -63,7 +63,7 @@ The ideal hash function has three main properties:
 Common cryptographic hash functions including:
 
 - [MD5](https://en.wikipedia.org/wiki/MD5). Warning: this one is not strong enough anymore!
-- [SHA-1](https://en.wikipedia.org/wiki/SHA-1). Warning: this one is not strong enough anymore!
+- [SHA-2](https://en.wikipedia.org/wiki/SHA-2)
 - [HMAC](https://en.wikipedia.org/wiki/HMAC)
 - [bcrypt](https://en.wikipedia.org/wiki/Bcrypt). This one is commonly used to store users' passwords in database.
 
