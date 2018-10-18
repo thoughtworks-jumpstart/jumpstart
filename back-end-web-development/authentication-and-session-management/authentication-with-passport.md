@@ -8,18 +8,24 @@ In this section, we will learn how to protect your APIs using a middleware calle
 
 Passport is authentication middleware for Node. It is designed to serve a singular purpose: authenticate requests.
 
-In modern web applications, authentication can take a variety of forms. Traditionally, users log in by providing a username and password. With the rise of social networking, single sign-on using an OAuth provider such as Facebook or Twitter has become a popular authentication method. Services that expose an API often require token-based credentials to protect access.
+In modern web applications, authentication can take a variety of forms. Traditionally, users log in by providing a username and password. With the rise of social networking, single sign-on using an [OAuth](https://oauth.io/) provider such as Facebook or Twitter has become a popular authentication method. Services that expose an API often require token-based credentials to protect access.
 
-Passport recognizes that each application has unique authentication requirements. Authentication mechanisms, known as strategies, are packaged as individual modules. Applications can choose which strategies to employ, without creating unnecessary dependencies.
+Passport recognizes that each application has unique authentication requirements. [Authentication mechanisms, known as strategies](http://www.passportjs.org/packages/), are packaged as individual modules. Applications can choose which strategies to employ, without creating unnecessary dependencies.
 
-In this workshop, we will see a few examples:
+In this workshop, we will see two examples:
 
 * Authentication with username and password
 * Authentication with Facebook/Github account
 
-Now let's take a look at how we can use Passport.js to protect your API.
+## Example 1: Authentication with username and password
 
-## Example: Authentication with username and password
+What you can learn from this example:
+
+* how to configure passport.js to allow username and password based authentication.
+* how to issue JWT token upon successful authentication
+* how to keep JWT token in client side (saving in memory)
+* how to send JWT token in HTTP request headers 
+* how does server side (the Express based application) extract JWT token from HTTP headers and perform authorization
 
 We have created a sample project in the course material repository. Let's clone this repository and study the codes related to authentication.
 
@@ -28,8 +34,6 @@ git clone https://github.com/thoughtworks-jumpstart/express_passport_mongoose_ex
 cd express_passport_mongoose_example
 npm install
 ```
-
-This sample codes show how to configure passport.js to allow username and password based authentication.
 
 Before we start, read the documentation of the following libraries used in this project:
 
@@ -101,7 +105,12 @@ The route handlers after this `jwt.required` middleware can assume the `req.jwt`
 
 ## Example 2: Session Tracking with Cookies
 
-To see an example of configuring Passport.js to use username/password authentication, and use cookies for session tracking, you can take a look at two examples:
+What you can learn in this example:
+
+* How to configure Passport.js to use username/password authentication
+* How to use cookies for session tracking
+
+We actually have at two tutorials:
 
 * [Example provided in Passport repository](https://github.com/passport/express-4.x-local-example)
 * [Node.js Authentication using Passport.js](https://blog.risingstack.com/node-hero-node-js-authentication-passport-js/)
