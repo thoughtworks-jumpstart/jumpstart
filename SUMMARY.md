@@ -156,6 +156,7 @@
     * [Cryptography 101](back-end-web-development/authentication-and-session-management/cryptography-primer.md)
     * [Introduction to Cookie](back-end-web-development/authentication-and-session-management/introduction-to-cookie.md)
     * [Introduction to JSON Web Token](back-end-web-development/authentication-and-session-management/introduction-to-jwt.md)
+    * [Cookie vs JWT](back-end-web-development/authentication-and-session-management/cookie-vs-jwt.md)
     * [Authentication with Passport.js](back-end-web-development/authentication-and-session-management/authentication-with-passport.md)
     * [Token-based authentication](back-end-web-development/authentication-and-session-management/token-based-authentication.md)
     * [Storing credentials in cookies](back-end-web-development/authentication-and-session-management/storing-credentials-in-cookies.md)

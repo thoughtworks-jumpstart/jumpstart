@@ -92,18 +92,6 @@ In authentication, when the user successfully logs in using their credentials, a
 
 Whenever the user wants to access a protected route or resource, the JWT token in the requests help to identify who the user is, and the server side application can decide if the request on the resource should be allowed (this is called **authorization**).
 
-## Cookie vs JWT for authorization 
-
-Previously we learnt that we can use cookie to track a session and identify the user in that session, so that a user only need to authenticate once in a session. In subsequent requests, a session cookie attached in each request can help to identify the user and allow the server to grant access to the user.
-
-What's the difference the two approaches?
-
-The diagram below highlights the workflow of the two approaches:
-
-![cookie vs token](https://cdn.auth0.com/blog/cookies-vs-tokens/cookie-token-auth.png)
-
-If you are interested in the difference between these two approaches, here is a good article [Cookies vs Tokens: The Definitive Guide](https://auth0.com/blog/cookies-vs-tokens-definitive-guide/)
-
 ## How to submit JWT tokens to web servers
 
 There are two ways for the client side to submit JWT tokens to the server side:
@@ -156,7 +144,7 @@ There are limitations and concerns to be addressed for each storage choice:
 
 - If you store JWT tokens in browser memory only, that token is lost whenever the user refresh the browser page (and they need to authenticate again with the server side)
 
-- If you store JWT tokens in cookies, you need to worry about security attacks like [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery). The good new is, this CSRF attack can be resolved by using [some middleware on Express application](https://github.com/expressjs/csurf), or setting the "SameSite=strict" flag in the session cookie (however, [some browsers don't support this SameSite attribute](https://caniuse.com/#feat=same-site-cookie-attribute)).
+- If you store JWT tokens in cookies, you need to worry about security attacks like [CSRF](https://github.com/pillarjs/understanding-csrf). The good new is, this CSRF attack can be resolved by using [some middleware on Express application](https://github.com/expressjs/csurf), or setting the "SameSite=strict" flag in the session cookie (however, [some browsers don't support this SameSite attribute](https://caniuse.com/#feat=same-site-cookie-attribute)).
 
 There are two other choices for storing JWT tokens but they are not recommended:
 

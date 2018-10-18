@@ -56,7 +56,7 @@ If you use cookies, you need to turn on some cookie configuration, e.g. "Secure"
 
 * A cookie with "Secure=true" is only sent to the server with a encrypted request over the HTTPS protocol.
 * A cookie with "HttpOnly=true" is inaccessible to JavaScript in the browser
-* A cookie with "SameSite=strict" prevents the browser from sending this cookie along with cross-site requests. This helps to prevent a kind of security attack called cross-site request forgery (CSRF or XSRF).
+* A cookie with "SameSite=strict" prevents the browser from sending this cookie along with cross-site requests. This helps to prevent a kind of security attack called [cross-site request forgery (CSRF or XSRF)](https://github.com/pillarjs/understanding-csrf).
 
 ### Protect the information in cookie
 
