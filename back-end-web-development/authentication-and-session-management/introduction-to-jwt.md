@@ -151,7 +151,7 @@ There are two other choices for storing JWT tokens but they are not recommended:
 - You can use browser's [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - You can use browser's [session storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
 
-There are security concerns of storing the JWT token in browser's local storage or session storage. For example, here are [some issues for local storage](https://www.owasp.org/index.php/HTML5_Security_Cheat_Sheet#Local_Storage). 
+There are security concerns of storing the JWT token in browser's local storage or session storage. For example, here are [some issues for local storage](https://www.owasp.org/index.php/HTML5_Security_Cheat_Sheet#Local_Storage). JavaScript has access to the browser storage. If a hacker injects some malicious script in to a website you are viewing, the script can load the tokens from your browser's storage and send them to the hacker. Then hacker can use your tokens!
 
 You can find some [comparison here](https://auth0.com/docs/security/store-tokens) on different choices of storing JWT tokens.
 [This article](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage) also provides more details on why storing JWT tokens in cookies is better than storing them in browsers' storage.
