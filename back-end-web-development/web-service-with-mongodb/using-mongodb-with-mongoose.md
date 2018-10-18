@@ -250,7 +250,7 @@ Here is the [project repo](https://github.com/thoughtworks-jumpstart/express-boo
 Tasks:
 
 - Fork and clone the project
-- Create a new branch `checkout -b with_mongodb`
+- Create a new branch `git checkout -b with_mongodb`
 - Make sure your local MongoDB is up and running
 - Install Mongoose package in your project `npm install mongoose`
 - Create a Mongoose schema/model for `Book`, and implement the API using this model
