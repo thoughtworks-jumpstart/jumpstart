@@ -159,7 +159,7 @@
     * [Cookie vs JWT](back-end-web-development/authentication-and-session-management/cookie-vs-jwt.md)
     * [Authentication with Passport.js](back-end-web-development/authentication-and-session-management/authentication-with-passport.md)
     * [Lab: Passport.js + JWT](back-end-web-development/authentication-and-session-management/token-based-authentication.md)
-    * [Storing credentials in cookies](back-end-web-development/authentication-and-session-management/storing-credentials-in-cookies.md)
+    * [Storing JWT token in cookie](back-end-web-development/authentication-and-session-management/storing-credentials-in-cookies.md)
   * [Production Quality Web Service](back-end-web-development/production-quality-web-service.md)
   * [Web Service Security](back-end-web-development/web-service-security.md)
   * [Introduction to Relational Database](back-end-web-development/introduction_to_relational_database.md)
