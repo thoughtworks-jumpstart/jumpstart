@@ -33,7 +33,7 @@ In a session cookie, there is a field that stores a unique session ID, which is 
 
 If the session ID from a session cookie is still valid, the remote user is identified and the request can be granted to access the resource on the server side accordingly. This process is called **authorization**.
 
-## Generating cookie from Express application
+## Generating cookies from Express application
 
 How would the server side generate this `Set-Cookie` header in response? You can find some tutorial [here](https://www.codementor.io/noddy/cookie-management-in-express-js-du107rmna).
 
@@ -41,6 +41,14 @@ There are also some express middleware that help you to manage session cookies.
 
 - [express-session](https://www.npmjs.com/package/express-session). This middleware only stores session ID in the cookie and store the rest of session related data on the server side (in memory, or in some session store).
 - [cookie-session](https://www.npmjs.com/package/cookie-session). This middleware stores all session data in the cookie (so you need to make sure the total size of the cookie is less than 4KB).
+
+## Create/Read/Delete cookies in frontend application
+
+Unless a cookie is marked as [HttpOnly](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies), a JavaScript running in your browser has access to cookies as well.
+
+Here are some [examples](https://www.codexpedia.com/javascript/javascript-create-read-and-delete-cookies/) showing you how to create/read/delete cookies from client side JavaScript. 
+
+If your frontend application is based on React, you can use this [react-cookie](https://www.npmjs.com/package/react-cookie) library to manage cookies from your React component.
 
 ## Security Considerations
 
@@ -66,6 +74,14 @@ If you use cookies to store session information, you need to decide where to sto
 * You can store only session identifier in the cookies and store the rest of session data on server side \(e.g. in a database\)
 
 If you follow the first approach, you need to encrypt some information in the cookie if that's a secret.
+
+### Clear session information when a user logout 
+
+When a user logout from a website, all the information about that session needs to be cleared:
+
+- On the server side, if there are any session information saved in the memory/file/database, that needs to be cleared. This can be done by the request handler for the `/logout` route.
+
+- On the client side, if the session information is tracked in a cookie, the cookie needs to be removed. This can be done with JavaScript. As a developer, you just need to know the name of the session cookie to be removed.
 
 ## Demo: Using cookies for session tracking
 

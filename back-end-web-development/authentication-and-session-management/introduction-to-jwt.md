@@ -183,3 +183,7 @@ Unfortunately, there is no easy way to do that for JWT tokens. There are some so
 For example, you can maintain a blacklist of users on the server side. The server side application needs to check if the user (identified by the JWT token) is in this black list before granting the user to access protected resources.
 
 This solution works, however, if you do this, there is not much benefit of using JWT compared with session cookies.
+
+### Clear session information when user logout
+
+If you use JWT token for session tracking, all the session information is in the JWT token. When a user logout, your client side application needs to remove this token from its memory, or delete the cookie that stores JWT token.
