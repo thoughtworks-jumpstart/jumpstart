@@ -173,9 +173,6 @@ Given that you have a simple express app,
 
 ## Resources
 
-- [https://github.com/thoughtworks-jumpstart/express-jwt-lab](https://github.com/thoughtworks-jumpstart/express-jwt-lab)
-- [https://github.com/thoughtworks-jumpstart/how-jwt-works](https://github.com/thoughtworks-jumpstart/how-jwt-works)
-
 ## Recomended reading
 
 - [Session-less authentication with jwt and passport](https://blog.usejournal.com/sessionless-authentication-withe-jwts-with-node-express-passport-js-69b059e4b22c)
