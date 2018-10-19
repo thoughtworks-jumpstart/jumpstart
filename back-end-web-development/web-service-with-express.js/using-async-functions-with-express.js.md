@@ -57,3 +57,68 @@ If you send a request to [http://localhost:3000/users/gordon](http://localhost:3
 * [Using Async Await in Express](https://medium.com/@Abazhenov/using-async-await-in-express-with-node-8-b8af872c0016)
 * [80/20 guide to express error handling](http://thecodebarbarian.com/80-20-guide-to-express-error-handling)
 
+
+## Lab 7: Refactor Songs API to be Asynchronous with Async and Await
+
+In all the previous labs we have been developing synchronous code in our songs route handlers.
+
+This is not ideal as synchronous code is blocking. eg: when if we connect to a DB or other I/O task like reading a file from disk, synchronous code blocks other requests until it has completed its execution of the task. This will slow down the performance of your server.
+
+In this lab you will need to refactor your code to be asynchronous so that while there is an I/O operation ongoing, Express can still handle other requests.
+
+### Requirements
+To simulate a real DB access using Mongoose we have refactored the code which reads or writes data to the songs array, into functions which return promises that only execute after a delay of 10 milisec. 
+- getSongs()
+- createSong()
+- getSong()
+- updateSong()
+- deleteSong()
+
+Your task is to refactor the 5 route handlers to use async and await together with these functions to access the songs array.
+
+**Note:** 
+- Remember to run your tests to ensure that your API still works correctly after the refactoring
+- You can choose to either use the `wrapAsync` function as shown in example above OR to wrap the code in your route handler with a try/catch like shown below. Both styles are equivalent. 
+
+```javascript
+router.get('/', async (req, res, next) => {
+    try{
+      let songs = await getSongs()
+      //success logic here
+    }
+    catch(error){
+      //error logic here
+    }
+});
+
+```
+
+### Instructions
+- Navigate to the express-songs-api project folder
+
+- Ensure that the work from your previous lab is already commited 
+
+- checkout to branch `13-add-async` to get started
+
+```
+git checkout 13-add-async
+```
+
+
+### Solution
+- After you have completed Lab 7, please commit all your work.
+
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+
+- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+
+- Next checkout to the solution branch and we will now walk through the sample solution
+```
+git checkout 14-add-async-solution
+``` 
+
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `13-add-async` branch 
+
+- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+
+- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
