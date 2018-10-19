@@ -112,3 +112,73 @@ git checkout 2-crud-api-solution
 - The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
 
 - When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
+
+
+## Lab 2: Implement tests with Jest and Supertest 
+
+In this lab we will introduce how to test the Songs CRUD API you implemented in the previous lab. The testing libraries we will be using is Jest and Supertest.
+
+## Benefits of Tests**
+- Tests are faster way to verify that your APIs are working correctly, as compared to Insomnia Rest client 
+- Tests can act as a safety net when you are required to make changes to your API later
+- Most importantly tests document a CONTRACT between your API and the clients accessing it
+
+### Requirements
+Based on the requirements stated in lab one we are required to write tests to ensure that our API are:
+- returning the correct HTTP status code
+- returning the correct response in the body
+- for each of the 5 routes defined
+
+### Instructions
+- Navigate to the express-songs-api project folder
+
+- Ensure that the work from your previous lab is already commited to `master` branch
+
+- checkout to branch `3-testing-lab` to get started
+
+```
+git checkout 3-testing-lab
+```
+- open the file songs.test.js this is the file where you would need to fill in the test logic for each of your route
+
+- We will now do the first test together `POST /songs` in class and you can continue with the remaining 4 routes
+
+```javascript
+const app = require("../app");
+const request = require("supertest");
+
+describe("routes/songs", () => {
+
+  it("POST /songs should return a new song object", () => {
+    requestBody = { name: "test song", artist: "rhianna"};
+    
+    return request(app)
+    .post("/songs")
+    .send(requestBody)
+    
+    .then(response => {
+      expect(response.status).toEqual(201);
+      expect(response.body).toMatchObject(requestBody);
+    });
+  });  
+});
+```
+
+
+### Solution
+- After you have completed Lab 2, please commit all your work to the `3-testing-lab` branch
+
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+
+- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+
+- Next checkout to the solution branch and we will now walk through the sample solution
+```
+git checkout 4-testing-lab-solution
+``` 
+
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: Viwe Folder Diff` and select compare with `3-testing-lab` branch 
+
+- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+
+- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
