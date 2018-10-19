@@ -91,3 +91,49 @@ For more information on error handling, you can refer to the materials below:
 - [Best Practices of NodJS Error Handling](http://goldbergyoni.com/checklist-best-practices-of-node-js-error-handling/)
 
 There are also open-sourced error handler implementations like [this one](https://github.com/ericelliott/express-error-handler)
+
+
+## Lab 5: Integrate a default error handler middleware for your songs routes
+
+So far for our Songs API we have only handled the situation where user sends correct song ids to our routes. In a real life scenario for a robust API we would need to also handle error scenarios.
+
+- GET /songs/:id 
+- PUT /songs/:id 
+- DELETE /songs/:id
+
+
+### Requirements
+Based on our understanding of error handlers, in this lab you will need to create a default error handler for your Songs API routes.
+
+- If user input an invalid id for GET /songs/:id, PUT /songs/:id , DELETE /songs/:id
+- Return HTTP status code 404 
+- Expected response: { message: “Unable to find song with id : xx” } 
+
+You are also required to write tests to prove that the 3 routes can now handle the error condition of an invalid song id. 
+
+### Instructions
+- Navigate to the express-songs-api project folder
+- Ensure that the work from your previous lab is already commited.
+- checkout to branch `9-add-error-handling` to get started
+
+```
+git checkout 9-add-error-handling
+```
+
+### Solution
+- After you have completed Lab 5, please commit all your work
+
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+
+- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+
+- Next checkout to the solution branch and we will now walk through the sample solution
+```
+git checkout 10-add-error-handling-solution
+``` 
+
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `9-add-error-handling` branch 
+
+- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+
+- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
