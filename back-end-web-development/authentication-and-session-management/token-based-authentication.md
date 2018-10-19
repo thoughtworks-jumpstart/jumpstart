@@ -15,6 +15,9 @@ npm install
 ## Steps 
 
 1. install dependencies: `npm install mongoose passport passport-jwt jsonwebtoken`
+
+Note that in this example, we are not using [express-jwt](https://www.npmjs.com/package/express-jwt) to verify JWT tokens. We use an alternative package called [passport-jwt](https://www.npmjs.com/package/passport-jwt).
+
 2. Configure passport jwt strategy
 
    1. `mkdir config`
