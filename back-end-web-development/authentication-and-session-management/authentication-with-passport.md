@@ -62,11 +62,20 @@ router.post("/users/login", userHandler.login);
 
 This leads us to the `login` method in the `handlers/user_handler.js`, in which we call Passport.js to perform the authentication.
 
-Pay attention to how we tell Passport.js to use the `local` authentication strategy and disabled cookie based session \(because we are using JWT to track session in this example\).
-
 ```javascript
   passport.authenticate("local", { session: false }, function(err, user, info) {...}
 ```
+
+Pay attention to the argument to the `authenticate` call:
+
+- `local`, this tells Passport.js to use the `local` authentication strategy 
+- `session: false`, this disables cookie based session \(because we are using JWT to track session in this example\).
+- the third argument is a callback function that is called when `Passport.js` finishes authentication
+  - If the `err` argument is not null, that means there are unexpected errors during authentication
+  - If the `user` argument is equal to `false`, that means the user does not pass authentication
+  - If the `user` argument is a non-null object, that means the user is properly authenticated
+
+Also note that this `authenticate` API actually returns a function, which takes in the same arguments as the express middleware expects. So we immediately called the function with `req`, `res`, and `next` to trigger the authentication with passport.js
 
 ### Session Tracking with JSON Web Token \(JWT\)
 
@@ -80,9 +89,11 @@ You can see the JWT token issued by the application contains three fields:
 * username
 * exp
 
-In subsequent API calls, the caller can include this token in the HTTP request `Authorization` header.
+This `generateJWT` function is used in the `user_handler.js` `login` function. When a user login successfully, a JWT token is returned in the JSON response.
 
-On the server side, for the APIs that can only be accessed after authentication, we need to make use of the `express-jwt` middleware to enforce an valid token is given.
+In subsequent API calls, the caller can include this token in the HTTP request `Authorization` header to indicate the session has been authenticated.
+
+On the server side, for the APIs that can only be accessed after authentication, we need to make use of the `express-jwt` middleware to enforce an valid token is attached in the requests.
 
 For example, in the `routes/api/users.js` file, the following API is protected:
 
