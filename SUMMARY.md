@@ -139,6 +139,7 @@
     * [Parsing request body](back-end-web-development/web-service-with-express.js/parsing-request-body.md)
     * [Parsing path params](back-end-web-development/web-service-with-express.js/parsing-path-params.md)
     * [Parsing query params](back-end-web-development/web-service-with-express.js/parsing-query-params.md)
+    * [Lab: Creating a Songs API](back-end-web-development/web-service-with-express.js/lab-creating-a-songs-api.md)
     * [Using Express Router](back-end-web-development/web-service-with-express.js/using-express-router.md)
     * [Handling errors](back-end-web-development/web-service-with-express.js/handling-errors.md)
     * [Validation with Joi](back-end-web-development/web-service-with-express.js/validation-with-joi.md)
