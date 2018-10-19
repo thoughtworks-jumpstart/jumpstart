@@ -56,18 +56,20 @@ else {
 }
 ```
 
-## Lab Instructions
+## Lab 6: Integrate Joi validation library to validate data
 
-To work on the lab please navigate to your forked copy of the `express-songs-api` project folder and checkout branch `11-add-joi-validation`
+In the previous lab we have validated that the song ids from the client, and return an error 404 if it is an invalid id. 
 
-### Task List
+However there are still errors which could occur from invalid inputs sent from the client in the request body. Two routes currently get data from request body without validating it in this lab you have to fix that.
 
-- Install joi to your project with 
 
-```
-npm install joi
-```
-- Create a joi schema in routes/songs.js
+### Requirements
+- Create a Joi schema in routes/songs.js
+
+- the schema should validate that:
+ - name field is present, and is of type string, and minimum 3 characters long 
+ - artist field is present, and is of type string, and minimum 3 characters long
+
 - Use this schema to validate the data posted in 
   1. POST /songs/
   2. PUT /songs/:id
@@ -76,25 +78,46 @@ npm install joi
 
 ```javascript
 { 
-  message : error message returned joi
+  message : <specific error message returned from joi>
 }
 ```
 
-- Write the test for each route to prove that the route will really return 400 when you POST or PUT invalid data to it
+- Write the test for each route to prove that the route returns 400 when you POST or PUT invalid data to it, and that the error message is the one returned from Joi
 
 - **Note** : the existing HTTP response 404 error messages for invalid id should still work as per normal.
 
 - **Hint** : It is recommended to work on one route at a time, by first writing the test for it and then implementing the changes in the route handler. After that works you can move on to the second route.
 
-- After the lab commit your code to `11-add-joi-validation` and checkout the solution branch
+### Instructions
+- Navigate to the express-songs-api project folder
+- Ensure that the work from your previous lab is already commited.
+- checkout to branch `11-add-joi-validation` to get started
 
-```terminal
-git add --all
-git commit -m "Added joi validation for songs POST and PUT"
-git checkout 12-add-joi-validation-solution
+- Before you begin install joi to your project with: 
+
 ```
+npm install joi
+```
+- read the Joi documentation from the resources section below if you need more information.
 
-- In the class we will go through the sample solution by comparing branch `12-add-joi-validation-solution` to branch `11-add-joi-validation`
+### Solution
+- After you have completed Lab 6, please commit all your work
+
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+
+- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+
+- Next checkout to the solution branch and we will now walk through the sample solution
+```
+git checkout 12-add-joi-validation-solution
+``` 
+
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `11-add-joi-validation` branch 
+
+- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+
+- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
+
 
 ## Resources
 
