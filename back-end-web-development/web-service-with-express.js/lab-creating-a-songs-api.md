@@ -8,10 +8,10 @@ As we proceed through the futher topics, the idea is to introduce to you a new f
 
 By the end of the Express introduction and you would have a functional API complete with tests, error handling and validation.
 
-The repository can be downloaded with:
+Fork the below repo to your github before starting the labs
 
 ```text
-git clone https://github.com/thoughtworks-jumpstart/express-songs-api.git
+https://github.com/thoughtworks-jumpstart/express-songs-api.git
 
 ```
 
