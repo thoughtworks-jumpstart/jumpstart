@@ -57,10 +57,10 @@ require("./config/passport");
 Then, look at the public API for authentication, in `routes/api/users.js` file.
 
 ```javascript
-router.post("/users/login", userMiddleware.login);
+router.post("/users/login", userHandler.login);
 ```
 
-This leads us to the `login` method in the `middlewares/user_middleware.js`, in which we call Passport.js to perform the authentication.
+This leads us to the `login` method in the `handlers/user_handler.js`, in which we call Passport.js to perform the authentication.
 
 Pay attention to how we tell Passport.js to use the `local` authentication strategy and disabled cookie based session \(because we are using JWT to track session in this example\).
 
@@ -90,7 +90,7 @@ For example, in the `routes/api/users.js` file, the following API is protected:
 router.get(
   "/user",
   jwt.required,
-  handleAsyncError(userMiddleware.getCurrentUser)
+  handleAsyncError(userHandler.getCurrentUser)
 );
 ```
 
