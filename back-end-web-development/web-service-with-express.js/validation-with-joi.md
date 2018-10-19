@@ -1,8 +1,8 @@
-# Validation with Joi
+# Introduction
 
-- As a security best practice should not trust what the client sends us, validation of input is the first step before the application logic saves or makes uses of these values.
+- As a security best practice should not trust what the client sends us, validation of input should be the first step before the application logic saves or makes uses of these values.
 
-- We can write the validation code manually using if condition checks however this is error prone to code from scratch 
+- We can write the validation code manually using `if` condition checks however this is error prone to and tedious to code from scratch 
   - e.g.: if( !res.body.name || !res.body.artist)
 
 - In a real world scenario your objects will also have many more attributes than just name/ artist.
@@ -13,8 +13,10 @@
   - the max or minimum length a field should be
   - for more features please visit the Joi library page at [https://github.com/hapijs/joi](https://github.com/hapijs/joi) 
 
+- A schema is a very concise way to describe (in code) what data you expect to recieve from the client   
+
 You can validate your request body against the schema and get:
-  - An result object that contains a value and an error attribute 
+  - a result object that contains a value and an error attribute 
 
   ```javascript 
   {
@@ -25,7 +27,7 @@ You can validate your request body against the schema and get:
   - if the validation passes the `value` attribute contain the object validated and the `error` attribute will be undefined
   - if the validation fails the the `value` attribute is undefined and the `error` attribute will contain a `details` array of errors messages. One for each validation failure that occurred. 
 
-## Example
+## Example Code
 
 ```javascript
 //First define a schema describing your object 
@@ -53,11 +55,11 @@ else {
 }
 ```
 
-## Lab
+## Lab Instructions
 
 To work on the lab please navigate to your forked copy of the `express-songs-api` project folder and checkout branch `11-add-joi-validation`
 
-### Tasks
+### Task List
 
 - Install joi to your project with 
 
