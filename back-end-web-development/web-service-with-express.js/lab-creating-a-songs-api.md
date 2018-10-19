@@ -107,7 +107,7 @@ In this lab we will implement a basic CRUD API in Express for a song list with t
 git checkout 2-crud-api-solution
 ``` 
 
-- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: Viwe Folder Diff` and select compare with `master` branch 
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `master` branch 
 
 - The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
 
@@ -118,7 +118,7 @@ git checkout 2-crud-api-solution
 
 In this lab we will introduce how to test the Songs CRUD API you implemented in the previous lab. The testing libraries we will be using is Jest and Supertest.
 
-## Benefits of Tests**
+## Benefits of Tests
 - Tests are faster way to verify that your APIs are working correctly, as compared to Insomnia Rest client 
 - Tests can act as a safety net when you are required to make changes to your API later
 - Most importantly tests document a CONTRACT between your API and the clients accessing it
@@ -177,7 +177,7 @@ describe("routes/songs", () => {
 git checkout 4-testing-lab-solution
 ``` 
 
-- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: Viwe Folder Diff` and select compare with `3-testing-lab` branch 
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `3-testing-lab` branch 
 
 - The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
 
