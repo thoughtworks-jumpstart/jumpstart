@@ -1,6 +1,6 @@
 # Introduction
 
-- As a security best practice should not trust what the client sends us, validation of input should be the first step before the application logic saves or makes uses of these values.
+- As a security best practice we should not trust what the client sends us, validation of input should be the first step before the application logic saves or makes uses of these values.
 
 - We can write the validation code manually using `if` condition checks however this is error prone to and tedious to code from scratch 
   - e.g.: if( !res.body.name || !res.body.artist)
@@ -18,12 +18,13 @@
 You can validate your request body against the schema and get:
   - a result object that contains a value and an error attribute 
 
-  ```javascript 
+```javascript 
   {
     error:
     value:
   }
-  ```
+```
+
   - if the validation passes the `value` attribute contain the object validated and the `error` attribute will be undefined
   - if the validation fails the the `value` attribute is undefined and the `error` attribute will contain a `details` array of errors messages. One for each validation failure that occurred. 
 
@@ -43,7 +44,7 @@ requestBody = {
 }
 
 //Validate the 
-result = Joi.validate(req.body, schema);
+result = Joi.validate(requestBody, schema);
 
 if(result.error){
   console.log("The data is invalid")
@@ -72,6 +73,7 @@ npm install joi
   2. PUT /songs/:id
 
 - If the data is invalid to return HTTP response 400 Bad Request to the client with this response to the client
+
 ```javascript
 { 
   message : error message returned joi
