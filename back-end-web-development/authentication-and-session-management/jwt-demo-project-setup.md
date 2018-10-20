@@ -6,6 +6,12 @@ Fork and clone the project at [https://github.com/thoughtworks-jumpstart/express
 
 Then run `npm install` in the project root directory.
 
+Create a new branch so that you can try this tutorial from scratch multiple times.
+
+```shell
+git checkout -b code_along
+```
+
 ## Configuration
 
 ### Middlewares
