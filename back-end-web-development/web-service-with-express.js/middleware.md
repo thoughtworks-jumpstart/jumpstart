@@ -110,7 +110,7 @@ The following diagram illustrates the flow of a request passing through app leve
 To get more details about middleware, you can refer to the following materials:
 
 * [Official Express Documentation on Middleware](https://expressjs.com/en/guide/using-middleware.html)
-*[Middleware: THE core of node.js backend apps](https://hackernoon.com/middleware-the-core-of-node-js-apps-ab01fee39200)
+* [Middleware: THE core of node.js backend apps](https://hackernoon.com/middleware-the-core-of-node-js-apps-ab01fee39200)
 * [middleware vs route handler](http://qnimate.com/express-js-middleware-tutorial/)
 * [Setting Up 5 Useful Middlewares For An Express API](https://blog.jscrambler.com/setting-up-5-useful-middlewares-for-an-express-api/)
 
