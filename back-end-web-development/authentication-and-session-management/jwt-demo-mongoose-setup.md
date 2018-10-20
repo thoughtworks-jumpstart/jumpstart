@@ -44,7 +44,8 @@ let mongoServer;
 const setup = async () => {
   mongoServer = new MongodbMemoryServer();
   const mongoUri = await mongoServer.getConnectionString();
-  const opts = {};
+
+  const opts = { useNewUrlParser: true, useCreateIndex: true };
   await mongoose
     .connect(
       mongoUri,
