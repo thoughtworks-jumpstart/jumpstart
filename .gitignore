@@ -2,3 +2,5 @@ node_modules
 _book/
 **/*.pdf
 .DS_Store
+
+.git_commit_msg
