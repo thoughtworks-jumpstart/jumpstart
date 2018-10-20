@@ -59,3 +59,6 @@ Jest uses the following matchesr to identify tests in your project:
 * `./src/**/**tests**/**/_.{js,jsx,mjs}`
 * `./src/\*\*/?(_.)(spec|test).{js,jsx,mjs}`
 
+## Jest plugins
+
+* [jest-extended](https://github.com/jest-community/jest-extended)
