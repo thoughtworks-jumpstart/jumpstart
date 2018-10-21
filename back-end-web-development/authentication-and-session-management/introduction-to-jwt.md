@@ -187,3 +187,7 @@ This solution works, however, if you do this, there is not much benefit of using
 ### Clear session information when user logout
 
 If you use JWT token for session tracking, all the session information is in the JWT token. When a user logout, your client side application needs to remove this token from its memory, or delete the cookie that stores JWT token.
+
+## Resources
+
+- [Securing Single Page Applications (good discussion on JWT)](http://www.fullstackradio.com/98)
