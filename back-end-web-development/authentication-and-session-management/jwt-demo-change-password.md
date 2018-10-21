@@ -171,3 +171,11 @@ If you run the test cases again, all should pass now.
   - Write a test case which submit a new password that is too short (e.g. if the password policy says every password should be at least 8 characters long). In this case, the HTTP response code should be 422 (Unprocessable Entity). Note that you need to implement the password policy on in the route handler in order to make this test case pass.
 
 - Implement another API for a user to update his username. This API should also be protected (i.e. it should only be called after authentication). Implement this new API following the Test Driven Development approach as well.
+
+## Recommended Reading
+
+### Verifying JWT tokens with passport-jwt
+
+There is another NPM package called [passport-jwt](https://www.npmjs.com/package/passport-jwt) which does similar job as `express-jwt`.
+
+You can find how to use this passport-jwt library in [this tutorial](https://medium.com/front-end-hacking/learn-using-jwt-with-passport-authentication-9761539c4314).
