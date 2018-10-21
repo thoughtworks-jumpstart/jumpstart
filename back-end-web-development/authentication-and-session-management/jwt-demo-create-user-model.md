@@ -520,3 +520,11 @@ UserSchema.methods.verifyJWT = function(token) {
   }
 };
 ```
+
+## Exercises
+
+Can you think of more test cases for the model? How to support new constraints on the User model, e.g.
+
+- each user name must be at least 8 characters?
+- a user name must be one word (i.e. no white spaces allowed in between)?
+- the email address is valid (i.e. it must be in name@domain.com format)
