@@ -159,7 +159,7 @@
     * [Cryptography 101](back-end-web-development/authentication-and-session-management/cryptography-primer.md)
     * [Introduction to Cookie](back-end-web-development/authentication-and-session-management/introduction-to-cookie.md)
     * [Introduction to JSON Web Token](back-end-web-development/authentication-and-session-management/introduction-to-jwt.md)
-    * [Cookie vs JWT](back-end-web-development/authentication-and-session-management/cookie-vs-jwt.md)
+    * [Session Cookie vs JWT](back-end-web-development/authentication-and-session-management/cookie-vs-jwt.md)
     * [JWT Demo: Prelude](back-end-web-development/authentication-and-session-management/jwt-demo-prelude.md)
     * [JWT Demo: Project Setup](back-end-web-development/authentication-and-session-management/jwt-demo-project-setup.md)
     * [JWT Demo: Mongoose Setup](back-end-web-development/authentication-and-session-management/jwt-demo-mongoose-setup.md)
