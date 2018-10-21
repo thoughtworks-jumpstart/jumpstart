@@ -105,3 +105,11 @@ Now this test should pass. To be safe, we should also write another test case to
 ```
 
 These two tests should pass without further code changes.
+
+## Exercises
+
+Write more test cases for login API:
+
+- If the user does not specify `username` field in the HTTP POST request, the HTTP response code should be 401 (Unauthroized)
+
+- If the user does not specify `email` field in the HTTP POST request, the HTTP response code should be 401 (Unauthroized)
