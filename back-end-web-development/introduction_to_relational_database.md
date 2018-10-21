@@ -71,67 +71,63 @@ PostgreSQL is a powerful, open source object-relational database system with ove
 
 #### Installation On Mac
 
-```text
-brew install postgresql
+Remove previous versions of PostgreSQL(if installed previously)
 ```
+brew uninstall --force postgresql
 
-The binaries for the postgres database are installed at `/usr/local/bin/` folder.
-
-Then you need to configure PostgreSQL and tell it where to store data.
-
-```text
-initdb /usr/local/var/postgres -E utf8
+rm -rf /usr/local/var/postgres
 ```
+Use this link and follow the 3 steps to install [Postgres.app](https://postgresapp.com/)
 
-`initdb` creates a default database called `postgres` and initialize data storage area at `/usr/local/var/postgres`.
+To connect directly from the command line, type `psql`
+
+##### Install pgAdmin4(GUI client for Postgres) for Mac
+* Click on this link [PGAdmin4](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v3.4/macos/)
+* Download the file `pgadmin4-3-4.dmg`
+
+##### Configure pgAdmin4
+* Ensure your `PostgreSQL` app service is running in the background
+* On the dashboard page, click on `Add new server`
+* Enter `localhost` as name on the `General` tab
+* Click on the `Connection` tab and enter
+  * `localhost` as the `Host name/address`
+  * Leave the rest as default and click `save`
+* Now `pgAdmin4` should be connected to your `postgres db server`
 
 #### Installation On Windows
-
-Note that you need to specify the password associated with the `postgres` user.
-
-```text
-choco install postgresql --params '/Password:<specify your password here>'
-```
-
-The command will install the tool at `C:\Program Files\postgresql\pgsql\bin` folder. All the commands mentioned below \(like `initdb` and `createdb` etc\) can be found in that `bin` folder.
-
-Next, you need to configure PostgreSQL and tell it where to store data.
-
-```text
-initdb -U postgres -A password -E utf8 -W -D <location-of-data-directory>
-```
-
-The command line parameters of the initdb command are described in following:
-
-* -U postgres means that the superuser account of your database is called ‘postgres’.
-* -A password means that password authentication is used.
-* -E utf8 means that the default encoding will be UTF-8.
-* -W means that you will enter the superuser password manually.
-* -D location-of-data-directory specifies the data directory of your PostgreSQL installation.
-
-Then at the prompt, you need to specify the password you used during installation.
+Follow the instructions from this link to install postgres on Windows. This will install `PostgreSQL`, `pgAdmin4` through a packaged installer from Enterprise DB
+[install-postgresql-windows](http://www.postgresqltutorial.com/install-postgresql/)
+Ensure by the end you are able to connect `pgAdmin` to your `postgres db server`
 
 ### Verify your installation
-
+Ensure to close any open session of terminal before verifying
 ```text
 postgres --version
 ```
 
 ### Start/Stop the PostgreSQL Server
 
-#### Start
+* For Mac
+  * Use the Postgres.app icon in your status bar to start and stop your server
 
-```text
-pg_ctl -D <location-of-data-directory> start
-```
+* For Windows
+  * Use the `pgAdmin` tool to manage your server
 
-Once started, the PostgreSQL server listens on port `5432` by default.
 
-#### Stop
+### Using terminal for PostgreSQL
+* For Mac
+  * Use your terminal and type in `psql`
 
-```text
-pg_ctl -D <location-of-data-directory> stop
-```
+* For Windows
+  * Search for a tool called `psql`
+  * It will prompt your for additional inputs to connect to the terminal
+  * All will be default. Just keep clicking enter until the password. This password comes from when you installed the `PostgreSQL` with the installer previously
+
+  * Another way is using through `gitbash`. Ensure to set the environment variable path for the psql/bin folder
+  * `psql -U <username> <database-name>`
+    * if you have installed with all the defaults username will be `postgres`
+    * `psql -U postgres test-db-1`
+    * This will trigger the password authentication which you must provide with the password created earlier
 
 ### Create a Database
 
@@ -139,11 +135,19 @@ pg_ctl -D <location-of-data-directory> stop
 createdb test-db-1
 ```
 
+For windows, you might need to create the database from the tool `pgAdmin`
+
 ### Connect to the Database
 
 ```text
 psql test-db-1
 ```
+ For windows, you will need to connect to the created database using the tool `psql`. Upon clicking you will need to make a few choices
+ * `localhost` is default - hit enter
+ * `database` is the newly created database - type `test-db-1`
+ * `port` is `5432` by default - hit enter
+ * `username` is `postgres` by default - hit enter
+ * `password` - Enter your created password
 
 This would open a shell for you to interact with the database. You can type `help` at the shell to see which commands you can use.
 
@@ -187,7 +191,19 @@ Later, when you don't need this database, you can drop it by
 dropdb test-db-1
 ```
 
-### GUI Client for PostgreSQL
+### Restoring sample DB
+We will be restoring a sample database provided [here](http://www.postgresqltutorial.com/postgresql-sample-database/) so that we have an ample set of data to go through the fundamental of SQL
+
+Download the DVD rental sample database and extract it to get `dvdrental.tar`. On `Mac` you might need to use the `unzip` command to retrieve it in this format
+
+Open your `pgAdmin` tool
+  * Right-click on the server connection and `Create Database`
+  * Name it `dvdrental`
+  * Right-click on `dvdrental` db and choose `restore`
+  * Choose the extracted tar from your file system and click restore
+  * This will restore all the tables created in your `dvdrental` database
+
+### Other GUI Client for PostgreSQL
 
 If you prefer to work with GUI tools, you can try out the following ones:
 
@@ -200,6 +216,9 @@ If you prefer to work with GUI tools, you can try out the following ones:
 Here is a [tutorial](http://www.postgresqltutorial.com/) for learning PostgreSQL. It's written for windows users, but the same commands \(like `psql`\) is available in other platforms too.
 
 You can find another [guide for beginner here](http://postgresguide.com/)
+
+### Exercises
+* [Postgres Exercises](https://pgexercises.com/)
 
 ## Object Relational Mapping \(ORM\) Tool: Sequelize
 
@@ -228,6 +247,3 @@ More Tutorials on Sequelize
 
 * [Reference on PostgreSQL](https://goalkicker.com/PostgreSQLBook/)
 * [SQL Learning Track on Bento.io](https://bento.io/topic/sql)
-
-## Assignment
-
