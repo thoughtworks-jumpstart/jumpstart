@@ -100,3 +100,9 @@ module.exports = {
 ```
 
 This may look a bit different than the route handlers you usually write, that's because I decided to extract the route handlers into a separate file. Putting route handlers into a separate file make it easier to write unit tests for them, because the test cases for the handlers has no dependency on Express framework at all.
+
+## Exercise
+
+Write more test cases for the user sign up API
+
+- If another user tries to sign up with user name `tom`, the HTTP response code should be 422 (Unprocessable Entity) instead of 200 (OK). The JSON body in the HTTP response can also contain an `error` field which indicate the user name already exists.
