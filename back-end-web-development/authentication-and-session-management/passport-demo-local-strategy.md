@@ -112,3 +112,7 @@ Note that there are two express middleware for you to manage session with cookie
 - Update the previous project we used for JWT demo and use passport local strategy for authentication
 
 - Try out the tutorials for session tracking with session cookies (instead of JWT tokens)
+
+## Resources
+
+- [Learn how to handle authentication with Node using Passport.js](https://medium.freecodecamp.org/learn-how-to-handle-authentication-with-node-using-passport-js-4a56ed18e81e)

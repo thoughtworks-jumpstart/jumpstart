@@ -214,16 +214,19 @@ This is a relatively new feature in Mongoose. If you look at some old tutorials 
 For example:
 
 ```javascript
-let uri = 'mongodb://nonexistent.domain:27000';
-mongoose.connect(uri, function(error) {
-  if (error) {
-    // if error is truthy, the initial connection failed.
+let uri = "mongodb://nonexistent.domain:27000";
+mongoose.connect(
+  uri,
+  function(error) {
+    if (error) {
+      // if error is truthy, the initial connection failed.
+    }
+    // run some operation when initial connection is done
   }
-  // run some operation when initial connection is done
-})
+);
 ```
 
- That callback parameter is still supported, but not required with this `operation buffering` feature.
+That callback parameter is still supported, but not required with this `operation buffering` feature.
 
 ### Monitor connection status changes
 
@@ -236,9 +239,9 @@ const mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/jumpstart");
 const conn = mongoose.connection;
 
-conn.on('connected', callback);
-conn.on('disconnected', callback);
-conn.on('error', callback);
+conn.on("connected", callback);
+conn.on("disconnected", callback);
+conn.on("error", callback);
 ```
 
 ## Lab: Adding MongoDB to a CRUD REST API
@@ -260,4 +263,6 @@ Tasks:
 ## Resources
 
 - [M101JS: MongoDB for Node.js Developers](https://university.mongodb.com/courses/M101JS/about)
-- Try this tutorial: [How to Build a URL Shortener with Node.js and MongoDB](https://scalegrid.io/blog/how-to-build-a-url-shortener-with-node-js-and-mongodb/).
+- [How to Build a URL Shortener with Node.js and MongoDB](https://scalegrid.io/blog/how-to-build-a-url-shortener-with-node-js-and-mongodb/).
+- [Build Restful APIs with NodeJs,Express and MongoDB](https://fullstackhour.com/build-restful-apis-with-nodejsexpress-and-mongodb/)
+- [Build and Secure Restful APIs with Nodejs and MongoDB](https://www.udemy.com/build-and-secure-restful-apis-with-nodejs-and-mongodb/)
