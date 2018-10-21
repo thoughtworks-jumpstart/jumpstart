@@ -174,6 +174,7 @@
     * [Passport.js Demo: Local Strategy](back-end-web-development/authentication-and-session-management/passport-demo-local-strategy.md)
     * [Passport.js Demo: JWT Strategy](back-end-web-development/authentication-and-session-management/passport-demo-jwt-strategy.md)
     * [Passport.js Demo: Github Strategy](back-end-web-development/authentication-and-session-management/passport-demo-github-strategy.md)
+    * [Passport.js Demo: Auth0 Strategy](back-end-web-development/authentication-and-session-management/passport-demo-auth0-strategy.md)
   * [Production Quality Web Service](back-end-web-development/production-quality-web-service.md)
   * [Web Service Security](back-end-web-development/web-service-security.md)
   * [Introduction to Relational Database](back-end-web-development/introduction_to_relational_database.md)
