@@ -36,7 +36,7 @@ Later on, when the user visit the same website, the cookie is attached by the br
 
 When the server side receives such a cookie, it get get information inside the cookie and make good use of it.
 
-## Session cookie for authorization 
+## Session cookie for authentication
 
 In a session cookie, there is a field that stores a unique session ID, which is issued by the server side. When a session cookie is received on the server side, the server application can extract the session ID, and check if it's still valid. Typically the server side application maintains all the session information in a database, which is looked up to validate a session ID.
 
