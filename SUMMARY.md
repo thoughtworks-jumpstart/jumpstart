@@ -213,6 +213,7 @@
     * [Debug Web App with Chrome Debugger](debugging/debug-with-chrome-debugger.md)
     * [Debug Jest Test Cases with VS Code](debugging/debug-with-jest.md)
     * [Debug React Application with VS Code](debugging/debug-with-react.md)
+    * [Debug Node Application with VS Code](debugging/debug-with-node.md)
 * [Agile Software Development](agile-101/README.md)
   * [Feedback](agile-101/feedback.md)
   * [Retrospectives](agile-101/retrospectives.md)
