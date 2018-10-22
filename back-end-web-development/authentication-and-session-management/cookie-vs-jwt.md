@@ -2,7 +2,7 @@
 
 Which solution should we use for authorization and session management? Session cookie or JWT?
 
-## Cookie vs JWT for authorization 
+## Cookie vs JWT for authentication
 
 What's the difference the two approaches?
 
