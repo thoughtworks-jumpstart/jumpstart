@@ -88,7 +88,7 @@ According to the specification of HTTP protocol, there are certain characters (s
 
 People created this [base64url encoding](https://github.com/brianloveswords/base64url) scheme for this purpose.
 
-## Use JWT for http request authorization
+## Use JWT for http request authentication
 
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token can be returned to the client side (e.g. the mobile app or browser). The client side saves the token \(e.g in memory, or cookies\) and submit it to server again in subsequent requests.
 
