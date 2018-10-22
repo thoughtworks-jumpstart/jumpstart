@@ -98,5 +98,6 @@ When a user logout from a website, all the information about that session needs 
 
 ## Reference
 
+- [HTTP cookies explained](https://humanwhocodes.com/blog/2009/05/05/http-cookies-explained/)
 - [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 - [Cookies in detail \(long and seemingly hard to read, but very clear explanation of cookies\)](https://tools.ietf.org/html/rfc6265#section-3)
