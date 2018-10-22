@@ -19,7 +19,7 @@ Set-Cookie: name2=value2; Expires=Tue, 2 April 2018 10:18:14 GMT; Path=/; Domain
 ```
 
 When the client receives a cookie in the `Set-Cookie` header, the client stores the cookie together with its attributes.
-In the example above, the browser would set a cookie named `name2` with a value of `value2`, which would expire at the specified time. 
+In the example above, the browser would set a cookie named `name2` with a value of `value2`, which would expire at the specified time.
 
 Subsequently, when the client makes a HTTP request, the client includes the applicable, non-expired cookies in the Cookie header.
 
@@ -31,6 +31,8 @@ Where does the browser save cookies it receives from server side? It depends on 
 
 - session cookie (a.k.a transient cookie). The session cookie is stored in temporary memory and is not retained after the browser is closed. Session cookies are used for session tracking purposes.
 - permanent cookie (a.k.a persistent cookie). The cookie is stored on your hard drive until it expires (persistent cookies are set with expiration dates) or until the user deletes the cookie.
+
+When a cookie is generated, how can a developer control if the cookie should be persisted on the client side computer or not? [That can be done easily by specifying expiring date information in a cookie](https://stackoverflow.com/questions/3869821/how-do-i-create-a-persistent-vs-a-non-persistent-cookie).
 
 Later on, when the user visit the same website, the cookie is attached by the browser automatically in each HTTP request.
 
@@ -55,13 +57,13 @@ There are also some express middleware that help you to manage session cookies.
 
 Unless a cookie is marked as [HttpOnly](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies), a JavaScript running in your browser has access to cookies as well.
 
-Here are some [examples](https://www.codexpedia.com/javascript/javascript-create-read-and-delete-cookies/) showing you how to create/read/delete cookies from client side JavaScript. 
+Here are some [examples](https://www.codexpedia.com/javascript/javascript-create-read-and-delete-cookies/) showing you how to create/read/delete cookies from client side JavaScript.
 
 If your frontend application is based on React, you can use this [react-cookie](https://www.npmjs.com/package/react-cookie) library to manage cookies from your React component.
 
 ## Security Considerations
 
-Anything related to security needs to be taken carefully. This is also true when you deal with session cookies, since those cookies allows the client side application to access protected resources on the server side, extra care is needed to make sure the cookies are used securely. 
+Anything related to security needs to be taken carefully. This is also true when you deal with session cookies, since those cookies allows the client side application to access protected resources on the server side, extra care is needed to make sure the cookies are used securely.
 
 A few important tips are highlighted here. For more information, checkout the resource below:
 
@@ -71,20 +73,20 @@ A few important tips are highlighted here. For more information, checkout the re
 
 If you use cookies, you need to turn on some cookie configuration, e.g. "Secure", "SameSite" and "HttpOnly".
 
-* A cookie with "Secure=true" is only sent to the server with a encrypted request over the HTTPS protocol.
-* A cookie with "HttpOnly=true" is inaccessible to JavaScript in the browser
-* A cookie with "SameSite=strict" prevents the browser from sending this cookie along with cross-site requests. This helps to prevent a kind of security attack called [cross-site request forgery (CSRF or XSRF)](https://github.com/pillarjs/understanding-csrf).
+- A cookie with "Secure=true" is only sent to the server with a encrypted request over the HTTPS protocol.
+- A cookie with "HttpOnly=true" is inaccessible to JavaScript in the browser
+- A cookie with "SameSite=strict" prevents the browser from sending this cookie along with cross-site requests. This helps to prevent a kind of security attack called [cross-site request forgery (CSRF or XSRF)](https://github.com/pillarjs/understanding-csrf).
 
 ### Protect the information in cookie
 
 If you use cookies to store session information, you need to decide where to store the session information:
 
-* You can store all the session related data in cookies.
-* You can store only session identifier in the cookies and store the rest of session data on server side \(e.g. in a database\)
+- You can store all the session related data in cookies.
+- You can store only session identifier in the cookies and store the rest of session data on server side \(e.g. in a database\)
 
 If you follow the first approach, you need to encrypt some information in the cookie if that's a secret.
 
-### Clear session information when a user logout 
+### Clear session information when a user logout
 
 When a user logout from a website, all the information about that session needs to be cleared:
 
