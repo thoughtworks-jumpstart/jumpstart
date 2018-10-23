@@ -557,6 +557,16 @@ UserSchema.methods.verifyJWT = function(token) {
 };
 ```
 
+### More on the `exp` field in the JWT payload
+
+In the example above, the expiration date of the JWT token is set to 60 days later after it's generated. Then the expiration time is saved into the `exp` field of the JWT token.
+
+What is this `exp` field? Why must I use this term?
+
+It represents `Token Expiration`, and you can find [more details here](https://www.npmjs.com/package/jsonwebtoken#token-expiration-exp-claim)
+
+Once this field is set in a token, it's validated later on when we call the `jwt.verify(token, secret)`. So a token that passes the expiration time will fail the verification.
+
 ## Exercises
 
 Can you think of more test cases for the model? How to support new constraints on the User model, e.g.
