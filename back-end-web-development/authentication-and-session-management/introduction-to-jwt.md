@@ -186,7 +186,9 @@ This solution works, however, if you do this, there is not much benefit of using
 
 ### Clear session information when user logout
 
-If you use JWT token for session tracking, all the session information is in the JWT token. When a user logout, your client side application needs to remove this token from its memory, or delete the cookie that stores JWT token.
+If you use JWT token for session tracking, all the session information is in the JWT token. When a user logout, your client side application needs to remove this token from its memory.
+
+If the JWT token is saved in a cookie, the `logout` route handler on the server side needs to delete the cookie that stores JWT token upon user logout. That can be done via the [response.clearCookie()](https://expressjs.com/en/api.html#res.clearCookie) provided by Express framework.
 
 ## Resources
 
