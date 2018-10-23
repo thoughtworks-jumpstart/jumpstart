@@ -88,11 +88,9 @@ If you follow the first approach, you need to encrypt some information in the co
 
 ### Clear session information when a user logout
 
-When a user logout from a website, all the information about that session needs to be cleared:
+When a user logout from a website, all the information about that session needs to be cleared.
 
-- On the server side, if there are any session information saved in the memory/file/database, that needs to be cleared. This can be done by the request handler for the `/logout` route.
-
-- On the client side, if the session information is tracked in a cookie, the cookie needs to be removed. This can be done with JavaScript. As a developer, you just need to know the name of the session cookie to be removed.
+On the server side, if there are any session information saved in the memory/file/database, that needs to be cleared. This can be done by the request handler for the `/logout` route. For example, you can call [response.clearCookie()](https://expressjs.com/en/api.html#res.clearCookie) to delete the session cookie. If the server side session is maintained by the `express-session` middleware, you also need to call the [Session.destroy()](https://www.npmjs.com/package/express-session#sessiondestroycallback) API to clear the session.
 
 ## Demo: Using cookies for session tracking
 
