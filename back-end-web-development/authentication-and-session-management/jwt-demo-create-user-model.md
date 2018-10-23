@@ -22,7 +22,7 @@ const test_mongodb = require("../../test_helper/in_memory_mongodb_setup");
 beforeAll(test_mongodb.setup);
 afterAll(test_mongodb.teardown);
 
-const User = require("./User");
+const User = require("./user");
 
 describe("User model", () => {
   const username = "kevin";
