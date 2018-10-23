@@ -234,8 +234,16 @@ Note:
 
 * The author forgot one step: you need to run `npm init` after you get into the `sequelize_example` directory.
 * You need to keep your PostgreSQL server running when doing this tutorial
+* Understand the models and the relationships created between the models in the tutorials
+* Try to follow the tutorial before looking at the sample code in the provided link below
 
 The sample codes after completing the tutorial can be found at \[[https://github.com/thoughtworks-jumpstart/sequelize\_example](https://github.com/thoughtworks-jumpstart/sequelize_example)\]
+
+Extra:
+
+* If you're done and understood the tutorial, try converting the code from `promises` to `async-await`
+
+Sample code for using async-await [sequelize-async-await](https://github.com/thoughtworks-jumpstart/sequelize_example_async_await)
 
 More Tutorials on Sequelize
 
