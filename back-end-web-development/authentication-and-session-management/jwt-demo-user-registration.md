@@ -63,7 +63,7 @@ const userRouter = require("./routes/user_api");
 app.use("/api/user", userRouter);
 ```
 
-In `routers` folder, create a new file called `user_api.js` with the following content:
+In `routes` folder, create a new file called `user_api.js` with the following content:
 
 ```javascript
 const express = require("express");
