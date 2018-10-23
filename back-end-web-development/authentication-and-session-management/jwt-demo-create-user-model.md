@@ -169,18 +169,7 @@ const UserSchema = new mongoose.Schema({
 });
 ```
 
-Now the test case should pass.
-
-Similarly, we can add another test case to check the emails must be unique.
-
-```javascript
-  it("should not allow two users with the email", async () => {
-    let userWithSameEmail = new User({ username: username2, email: email1 });
-    await expect(userWithSameEmail.save()).rejects.toThrow(ValidationError);
-  });
-```
-
-And we can make this test case pass by adding the `unique` constraint on the `email` field in the schema as well. We also need to add the `mongoose-unique-validator` as a plugin to the schema.
+We also need to add the `mongoose-unique-validator` as a plugin to the schema.
 
 ```javascript
 const uniqueValidator = require("mongoose-unique-validator");
@@ -193,13 +182,60 @@ const UserSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    index: true,
-    unique: true
+    index: true
   }
 });
 
 UserSchema.plugin(uniqueValidator, { message: "should be unique" });
 ```
+
+Now the test case should pass.
+
+Similarly, we can add another test case to check the emails must be unique.
+
+```javascript
+  it("should not allow two users with the email", async () => {
+    let userWithSameEmail = new User({ username: username2, email: email1 });
+    await expect(userWithSameEmail.save()).rejects.toThrow(ValidationError);
+  });
+```
+
+And we can make this test case pass by adding the `unique` constraint on the `email` field in the schema as well.
+
+```javascript
+const UserSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    index: true,
+    unique: true
+  },
+  email: {
+    type: String,
+    index: true,
+    unique: true
+  }
+});
+```
+
+### A different way to write assertion on errors
+
+Before we move on, I would like to show you there is a different way to write the test cases. Instead of expecting the call to throw `ValidationError`, you could also specify the error messages you expect to be thrown with the error. For example:
+
+```javascript
+
+  it("should not allow two users with the same name", async () => {
+    let userWithSameName = new User({ username: username1, email: email2 });
+    await expect(userWithSameName.save()).rejects.toThrow(
+      "name: should be unique"
+    );
+  });
+```
+
+When you try to save a user with duplicated user name, the `mongoose-unique-validator` throws an `ValidationError` with error message `name: should be unique`.
+
+In this case, you could write a test case to expect the call throws `ValidationError`, you could also write the test case to specify the error message.
+
+Both approaches are fine.
 
 ## Test cases for checking some fields are case-insensitive in the User model
 
