@@ -74,38 +74,37 @@ This model looks simple, but it comes with a lot of built-in feature from Mongoo
 To verify this, you can add the following test caess below your first test case:
 
 ```javascript
+it("can be searched by _id", async () => {
+  let searchResult = await User.findById(user._id);
+  expect(searchResult.username).toEqual(username);
+  expect(searchResult.email).toEqual(email);
+});
 
-  it("can be searched by _id", async () => {
-    let searchResult = await User.findById(user._id);
-    expect(searchResult.username).toEqual(username);
-    expect(searchResult.email).toEqual(email);
-  });
+it("can be searched by username", async () => {
+  let searchResult = await User.findOne({ username });
+  expect(searchResult.username).toEqual(username);
+  expect(searchResult.email).toEqual(email);
+});
 
-  it("can be searched by username", async () => {
-    let searchResult = await User.findOne({ username });
-    expect(searchResult.username).toEqual(username);
-    expect(searchResult.email).toEqual(email);
-  });
+it("can be searched by email", async () => {
+  let searchResult = await User.findOne({ email });
+  expect(searchResult.username).toEqual(username);
+  expect(searchResult.email).toEqual(email);
+});
 
-  it("can be searched by email", async () => {
-    let searchResult = await User.findOne({ email });
-    expect(searchResult.username).toEqual(username);
-    expect(searchResult.email).toEqual(email);
-  });
+it("can be updated", async () => {
+  const newEmail = "kevin2@example.com";
+  user.email = newEmail;
+  await user.save();
+  let searchResult = await User.findById(user._id);
+  expect(searchResult.email).toEqual(newEmail);
+});
 
-  it("can be updated", async () => {
-    const newEmail = "kevin2@example.com";
-    user.email = newEmail;
-    await user.save();
-    let searchResult = await User.findById(user._id);
-    expect(searchResult.email).toEqual(newEmail);
-  });
-
-  it("can be deleted", async () => {
-    await user.remove();
-    let searchResult = await User.findById(user._id);
-    expect(searchResult).toBeNull();
-  });
+it("can be deleted", async () => {
+  await user.remove();
+  let searchResult = await User.findById(user._id);
+  expect(searchResult).toBeNull();
+});
 ```
 
 ## Test cases for checking fields with unique values in the User model
@@ -125,7 +124,6 @@ const ValidationError = require("mongoose").ValidationError;
 Then add a new `describe` block with the first test case to check a user with same name cannot be added.
 
 ```javascript
-
 describe("Unique fields in User model", () => {
   const username1 = "kevin";
   const email1 = "kevin@example.com";
@@ -194,10 +192,10 @@ Now the test case should pass.
 Similarly, we can add another test case to check the emails must be unique.
 
 ```javascript
-  it("should not allow two users with the email", async () => {
-    let userWithSameEmail = new User({ username: username2, email: email1 });
-    await expect(userWithSameEmail.save()).rejects.toThrow(ValidationError);
-  });
+it("should not allow two users with the email", async () => {
+  let userWithSameEmail = new User({ username: username2, email: email1 });
+  await expect(userWithSameEmail.save()).rejects.toThrow(ValidationError);
+});
 ```
 
 And we can make this test case pass by adding the `unique` constraint on the `email` field in the schema as well.
@@ -222,13 +220,12 @@ const UserSchema = new mongoose.Schema({
 Before we move on, I would like to show you there is a different way to write the test cases. Instead of expecting the call to throw `ValidationError`, you could also specify the error messages you expect to be thrown with the error. For example:
 
 ```javascript
-
-  it("should not allow two users with the same name", async () => {
-    let userWithSameName = new User({ username: username1, email: email2 });
-    await expect(userWithSameName.save()).rejects.toThrow(
-      "name: should be unique"
-    );
-  });
+it("should not allow two users with the same name", async () => {
+  let userWithSameName = new User({ username: username1, email: email2 });
+  await expect(userWithSameName.save()).rejects.toThrow(
+    "name: should be unique"
+  );
+});
 ```
 
 When you try to save a user with duplicated user name, the `mongoose-unique-validator` throws an `ValidationError` with error message `name: should be unique`.
@@ -242,7 +239,6 @@ Both approaches are fine.
 We expect the values in `username` and `email` should be treated case insensitively. We can write some test cases first:
 
 ```javascript
-
 describe("Some fields in User model are case insensitive", () => {
   const username1 = "joe";
   const email1 = "joe@example.com";
@@ -274,7 +270,6 @@ describe("Some fields in User model are case insensitive", () => {
     );
   });
 });
-
 ```
 
 And we can make these two test case pass by make sure the values are saved in lowercase in the database.
@@ -348,7 +343,7 @@ const UserSchema = new mongoose.Schema({
 
 ## Test cases for setting user password
 
-Now, we also want to save a password for each user. This is a bit tricky, since we should not store a user's password in plain text in database. Instead, we need to store the hashed passwords. To make it secure, we also use some kind of [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)) to make the hash value safer.
+Now, we also want to save a password for each user. This is a bit tricky, since we should not store a user's password in plain text in database. Instead, we need to store the hashed passwords. To make it secure, we also use some kind of [salt](<https://en.wikipedia.org/wiki/Salt_(cryptography)>) to make the hash value safer.
 
 Firstly, let's write the test case:
 
@@ -360,11 +355,11 @@ describe("Setting and validation of password field on User model", () => {
 
   let user = new User({ username, email });
 
-  beforeEach(async () => {
+  beforeAll(async () => {
     await user.save();
   });
 
-  it("should save user passwords into hash and salt fields of User model", async () => {
+  it("should save user passwords into hash and salt fields of User model", () => {
     expect(user.passwordSalt).toBeUndefined();
     expect(user.passwordHash).toBeUndefined();
 
@@ -436,9 +431,9 @@ For the next step, we also need a function to verify passwords. That would be us
 Here is the test case for this case:
 
 ```javascript
-  it("should be able to verify user password afterwards", () => {
-    expect(user.validPassword(password)).toBeTruthy();
-  });
+it("should be able to verify user password afterwards", () => {
+  expect(user.validPassword(password)).toBeTruthy();
+});
 ```
 
 We can make this test case pass by adding the `verifyPassword` in the `user.js`:
