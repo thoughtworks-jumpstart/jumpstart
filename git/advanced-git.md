@@ -86,8 +86,8 @@ Now that you're more comfortable with git, it's time to take it to the next leve
 
 ## Resources
 
-- [Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)
-- [Git from the bottom up (**recommended**)](http://ftp.newartisans.com/pub/git.from.bottom.up.pdf)
+- [**Recommended** Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)
+- [**Recommended** Git from the bottom up (PDF version)](http://ftp.newartisans.com/pub/git.from.bottom.up.pdf)
 - [Git documentation](https://git-scm.com/docs)
 - [Learn Git Branching](https://github.com/pcottle/learnGitBranching)
 - [Trunk based development > Feature branches](https://martinfowler.com/bliki/FeatureBranch.html)
@@ -97,3 +97,4 @@ Now that you're more comfortable with git, it's time to take it to the next leve
 - [Another Git Stash Tutorial](http://www.gitguys.com/topics/temporarily-stashing-your-work/)
 - [Git Flight Rules](https://github.com/k88hudson/git-flight-rules). A guide for programmers about what to do when things go wrong.
 - [Git Katas](https://github.com/praqma-training/git-katas)
+- [Git Flight Rules - commands for different situations](https://github.com/k88hudson/git-flight-rules)
