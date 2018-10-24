@@ -97,4 +97,3 @@ Now that you're more comfortable with git, it's time to take it to the next leve
 - [Another Git Stash Tutorial](http://www.gitguys.com/topics/temporarily-stashing-your-work/)
 - [Git Flight Rules](https://github.com/k88hudson/git-flight-rules). A guide for programmers about what to do when things go wrong.
 - [Git Katas](https://github.com/praqma-training/git-katas)
-- [Git Flight Rules - commands for different situations](https://github.com/k88hudson/git-flight-rules)
