@@ -14,6 +14,12 @@ When you deploy the application on platforms like Heroku, you should read their 
 
 When you run the application locally on your computer, you can put this environment variable in your `.env` file, and specify the MongoDB you can use for your local application instance.
 
+For example, if you have a local MongoDB installed on your computer, you can set the variable as
+
+```env
+MONGODB_URL=mongodb://localhost/jwt_demo
+```
+
 ## Make database connection in app.js
 
 In `app.js`, we need to add the following lines:
@@ -39,13 +45,7 @@ So when the integration test runs, the NODE_ENV is set to `integration`, and the
 
 In other environment, the code above assumes the database connection URL is provided in the environment variable `MONGODB_URL`.
 
-After making this change in `app.js`, you can add the variable in the `.env`.
-
-For example, if you have a local MongoDB installed on your computer, you can set the variable as
-
-```env
-MONGODB_URL=mongodb://localhost/jwt_demo
-```
+After making this change in `app.js`, you can add the `MONGODB_URL` variable in the `.env`.
 
 Then you can run `npm run start` to start the server locally.
 
