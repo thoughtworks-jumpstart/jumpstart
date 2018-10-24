@@ -218,7 +218,7 @@
 * [Agile Software Development](agile-101/README.md)
   * [Feedback](agile-101/feedback.md)
   * [Retrospectives](agile-101/retrospectives.md)
-* [Independent learning week](independent-learning-week.md)
+* [Independent learning](independent-learning-week.md)
 * [Labs and Assignments](labs-and-assignments/README.md)
   * [Assignment Grading Rubric](labs-and-assignments/assignment-grading-rubric.md)
   * [katas](labs-and-assignments/katas.md)
