@@ -170,6 +170,7 @@
     * [JWT Demo: User Change Password API](back-end-web-development/authentication-and-session-management/jwt-demo-change-password.md)
     * [JWT Demo: Storing JWT token in cookie](back-end-web-development/authentication-and-session-management/jwt-demo-credentials-in-cookies.md)
     * [JWT Demo: User Logout](back-end-web-development/authentication-and-session-management/jwt-demo-user-logout.md)
+    * [JWT Demo: one more thing](back-end-web-development/authentication-and-session-management/jwt-demo-db-connection.md)
     * [JWT Demo: Summary](back-end-web-development/authentication-and-session-management/jwt-demo-summary.md)
     * [Authentication with Passport.js](back-end-web-development/authentication-and-session-management/authentication-with-passport.md)
     * [Passport.js Demo: Local Strategy](back-end-web-development/authentication-and-session-management/passport-demo-local-strategy.md)
