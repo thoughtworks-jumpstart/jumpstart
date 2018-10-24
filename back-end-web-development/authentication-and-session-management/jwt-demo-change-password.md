@@ -42,8 +42,8 @@ test("Change password on the current user", async () => {
 
   let response = await request(app)
     .put("/api/user/change_password")
-    .send({ user: updatedUser })
-    .set("Authorization", "Bearer " + jwtToken);
+    .set("Authorization", "Bearer " + jwtToken)
+    .send({ user: updatedUser });
 
   expect(response.statusCode).toBe(status.OK);
 
