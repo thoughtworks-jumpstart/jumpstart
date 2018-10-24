@@ -193,3 +193,4 @@ If the JWT token is saved in a cookie, the `logout` route handler on the server 
 ## Resources
 
 - [Securing Single Page Applications (good discussion on JWT)](http://www.fullstackradio.com/98)
+- [Token Based Authentication for Single Page Apps (SPAs)](https://stormpath.com/blog/token-auth-spa)
