@@ -34,7 +34,7 @@ A relational DB organizes data in tables. A table is made up of rows and columns
 
 However the relationship that can be created among tables enables a relational database to efficiently store huge amount of data, and effectively retrieve selected data
 
-A language called SQL(Structured Query Language) was developed to work with relational databases
+A language called `SQL`(Structured Query Language) was developed to work with relational databases
 
 ## Database Modeling
 
@@ -68,7 +68,11 @@ A primary key is called a `simple key` if it is a single column. It is called a 
 * Primary key could take an arbitrary number. Most RDBMSs support so-called auto-increment (or AutoNumber type) for integer primary key, where (current maximum value + 1) is assigned to the new record. This arbitrary number is fact-less, as it contains no factual information. Unlike factual information such as phone number, `fact-less` number is ideal for primary key, as it does not change.
 * Primary key is usually a single column (e.g., customerID or productCode). But it could also make up of several columns. You should use as few columns as possible.
 
-Example - a table customers contains columns `lastName`, `firstName`, `phoneNumber`,`address`, `city`, `state`, `zipCode`. The candidates for primary key are name=(lastName, firstName), phoneNumber, Address1=(address, city, state), Address1=(address, zipCode). Name may not be unique. Phone number and address may change. Hence, it is better to create a fact-less auto-increment number, say `customerID`, as the primary key.
+An example - a customers tables contains columns
+ * `lastName`, `firstName`, `phoneNumber`,`address`, `city`, `state`, `zipCode`
+ The candidates for primary key are name=(lastName, firstName), phoneNumber, Address1=(address, city, state), Address1=(address, zipCode).
+ * Name may not be unique. Phone number and address may change.
+ * Hence, it is better to create a fact-less auto-increment number, say `customerID`, as the primary key.
 
 ## Creating relationship among tables
 
@@ -86,14 +90,11 @@ Second example, think of a `company` database, a manager manages zero or more em
 
 Third example, think of a `product_sales` database, a customer may place many orders, while an order is placed by one(and only one) customer.
 
-All the examples have something in common which is a relationship called one-to-many
-
-We will illustrate the example of the `class roster` database in the diagram below.
+All the examples have something in common which is a relationship called one-to-many. We will illustrate the example of the `class roster` database in the diagram below.
 
 To support a `one-to-many` relationship, we need to design two tables:
-a table `Classes` to store information about the classes with `classID` as the `primary key`
-
-a table `Teachers` to store information about teachers with `teacherID` as the `primary key`.
+* table `Classes` to store information about the classes with `classID` as the `primary key`
+* table `Teachers` to store information about teachers with `teacherID` as the `primary key`.
 
 We can then create the `one-to-many` relationship by storing the primary key of the table Teacher (i.e., teacherID) (the "one"-end or the parent table) in the table classes (the "many"-end or the child table), as illustrated below.
 
@@ -128,7 +129,7 @@ Some databases limit the number of columns that can be created inside a table. Y
 ![image](../.gitbook/assets/OneToOne.png)
 
 
-### Extra DB Concepts
+## Extra DB Concepts to take note
 
 ### Normalization
 Normalization is a database design technique which organizes tables in a manner that minimizes redundancy and dependency of data. It divides larger tables to smaller tables and links them using relationships
@@ -145,14 +146,13 @@ Here is a good resource for understanding normalization - [Normalization of data
 
 
 ### Integrity Rules for database modelling and design
-* Entity Integrity Rule: The primary key cannot contain NULL. Otherwise, it cannot uniquely identify the row. For composite key made up of several columns, none of the column can contain NULL. Most of the RDBMS check and enforce this rule.
+* `Entity Integrity Rule`: The primary key cannot contain NULL. Otherwise, it cannot uniquely identify the row. For composite key made up of several columns, none of the column can contain NULL. Most of the RDBMS check and enforce this rule.
 
-* Referential Integrity Rule: Each foreign key value must be matched to a primary key value in the table referenced (or parent table). You can insert a row with a foreign key in the child table only if the value exists in the parent table.
-If the value of the key changes in the parent table (e.g., the row updated or deleted), all rows with this foreign key in the child table(s) must be handled accordingly. You could either (a) disallow the changes; (b) cascade the change (or delete the records) in the child tables accordingly; (c) set the key value in the child tables to NULL.
+* `Referential Integrity Rule`: Each foreign key value must be matched to a primary key value in the table referenced (or parent table). You can insert a row with a foreign key in the child table only if the value exists in the parent table. If the value of the key changes in the parent table (e.g., the row updated or deleted), all rows with this foreign key in the child table(s) must be handled accordingly. You could either (a) disallow the changes; (b) cascade the change (or delete the records) in the child tables accordingly; (c) set the key value in the child tables to NULL.
 Most RDBMS can be setup to perform the check and ensure the referential integrity, in the specified manner.
 
 
-### A sample database
+## A sample database
 
 Here is a sample database which models a DVD rental business. It's created by the author of [this postgres tutorial](http://www.postgresqltutorial.com/postgresql-sample-database/).
 
