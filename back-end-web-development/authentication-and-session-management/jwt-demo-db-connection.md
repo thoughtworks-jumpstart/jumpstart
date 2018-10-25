@@ -25,20 +25,19 @@ MONGODB_URL=mongodb://localhost/jwt_demo
 In `app.js`, we need to add the following lines:
 
 ```javascript
-
 const mongoose = require("mongoose");
 
 const isMongooseConnectionProvided = process.env.NODE_ENV === "integration";
 
 if (!isMongooseConnectionProvided) {
-  mongoose.connect(process.env.MONGODB_URI);
+  mongoose.connect(process.env.MONGODB_URL);
 }
 ```
 
-In our integration tests, we have one line in each test file, like 
+In our integration tests, we have one line in each test file, like
 
 ```javascript
-process.env.NODE_ENV = "integration"
+process.env.NODE_ENV = "integration";
 ```
 
 So when the integration test runs, the NODE_ENV is set to `integration`, and the codes in `app.js` will not try to establish its own database connection (because the database connection for integration tests is already handled by that `in_memory_mongodb_setup.js`).
