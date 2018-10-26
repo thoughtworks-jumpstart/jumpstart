@@ -16,7 +16,7 @@ Verify that your name and email are set:
 * `git init` - Initialize folder as a git repository
 * `git add <file>` - Add selected files to staging area
   * `git add .` - Add all files to staging area
-  * `git rm --cached <file>` - Remove selected file from staging area
+  * `git reset <filename or path>` - Unstaging selected file
 * `git status` - Check status of the working directory and staging area
 * `git commit` - Make a commit to git
   * `git commit -m` - Make a commit with a message flag to git
