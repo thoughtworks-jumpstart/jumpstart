@@ -12,7 +12,9 @@ What is a "buildpack"? Check the explanation [here](https://devcenter.heroku.com
 
 ## Configure the environment variables used by your application
 
-If your application needs some environment variables (e.g. the secret keys for calling those APIs), and you cannot put them into the `.env` files (because they are secret and should not be checked into code repository), you should declare those variables in Heroku.
+If you build your React application using create-react-app, you can put some of the environment variables into `.env` file. During build and deployment, these environment variables would be filled into the HTML/JavaScript files that refers to those variables. You can read the [create-react-app documentation](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables) for more details.
+
+However, some environment variables (e.g. the secret keys for calling those APIs) cannot be put into the `.env` files (because they are secret and should not be checked into code repository), you should declare those variables in Heroku.
 
 On Heroku dashbaord, you can set this under "Settings" -> "Config Variables"
 
