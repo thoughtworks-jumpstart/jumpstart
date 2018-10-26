@@ -162,13 +162,13 @@ In this diagram, the funny annotations in the link follows [Crow Foot Notation](
 
 ![image](../.gitbook/assets/dvd-rental-sample-database-diagram.png)
 
-## Common SQL Server
+## Common Relational Databases
 
-* SQL Server
-* Oracle
-* MySQL
-* [PostgreSQL](https://www.postgresql.org/)
-* [SQLite](https://www.sqlite.org/index.html)
+* SQL Server (by Microsoft)
+* Oracle (by Oracle)
+* MySQL (open source)
+* [PostgreSQL](https://www.postgresql.org/) (open source)
+* [SQLite](https://www.sqlite.org/index.html) (open source)
 
 ## SQL
 
