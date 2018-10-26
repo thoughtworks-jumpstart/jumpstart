@@ -185,6 +185,7 @@
     * [Deploy simple static websites to Now](devops/deployment/deploy-simple-static-websites.md)
     * [Deploy React apps to Now](devops/deployment/deploy-react-apps-to-now-or-github-pages.md)
     * [Deploy React apps to Heroku](devops/deployment/heroku-deployment.md)
+    * [Deploy React apps + bacend API](devops/deployment/deploy-frontend-and-backend.md)
     * [Heroku CLI](devops/deployment/heroku-setup.md)
   * [CI & CD](devops/ci-and-cd.md)
     * [CircleCI](devops/deployment/circleci.md)
