@@ -335,6 +335,8 @@ If you prefer to work with GUI tools, you can try out the following ones:
 * [DBeaver](https://dbeaver.io/)
 * [TeamSQL](https://teamsql.io/)
 
+You can also try to install [VSCode Extension for Postgres](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres)
+
 ### Tutorials for PostgreSQL
 
 Here is a [tutorial](http://www.postgresqltutorial.com/) for learning PostgreSQL. It's written for windows users, but the same commands \(like `psql`\) is available in other platforms too.
