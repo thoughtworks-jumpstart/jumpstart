@@ -98,6 +98,33 @@ const app = express();
 app.use(cors(corsOptions));
 ```
 
+### `fetch` API in the frontend project
+
+The frontend application needs to use the **full backend API URL** in the calls to `fetch` API as well.
+
+For example, `fetch` request with full URL (as loaded from environment variable):
+
+```javascript
+fetch(process.env.REACT_APP_BACKEND_API_URL + "/api/users/login", {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    mode: "cors",
+    credentials: "include",
+    body: JSON.stringify({
+      user: {
+        email: email,
+        password: password
+      }
+    })
+```
+
+Note that, besides using full URLs in the request, you also need to enable CORS with the two options for the `fetch`:
+
+```json
+    mode: "cors",
+    credentials: "include",
+```
+
 ## Keep frontend and backend in the same project
 
 Another choice is to keep your frontend and backend in the same project.
@@ -125,6 +152,26 @@ The "server" folder contains a project built with Express and Mongoose.
 Both "client" and "server" have its own "package.json", which describes how to build/run them individually.
 
 There is also a "package.json" file in the root directory of the project, which allows you to build/run/deploy both the fronend and backend in one go.
+
+### `fetch` API in the frontend sub-project
+
+If you look at the codes in frontend application, you can see the `fetch` API is call like the way below:
+
+```javascript
+fetch("/api/users/login", {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      user: {
+        email: email,
+        password: password
+      }
+    })
+```
+
+Note that there is no hostname included in the URL. In this case, the HTTP request is sent back to the same host where the JavaScript is downloaded. 
+
+To make this work, when you run them locally, you need to configure the `webpack-dev-server` as a proxy for the Express application; when you run the application on Heroku, you need to build the frontend React application, and serve it using the same application that hosts the Express application.
 
 ### Running frontend and backend locally
 
@@ -222,48 +269,3 @@ if (isProduction) {
 ```
 
 With this configuration, the application that we deploy to Heorku can serve both the React app, and the APIs built with Express.
-
-## Two ways to make the fetch API calls
-
-If you follow the first approach and treat the two applications separately, then the frontend application needs to use the **full backend API URL** in the calls to `fetch` API. In contrast, if you follow the second approach, the calls to `fetch` API does not need to include the hostname.
-
-For example, `fetch` request with full URL (as loaded from environment variable):
-
-```javascript
-fetch(process.env.REACT_APP_BACKEND_URL + "/api/users/login", {
-    method: "post",
-    headers: { "Content-Type": "application/json" },
-    mode: "cors",
-    credentials: "include",
-    body: JSON.stringify({
-      user: {
-        email: email,
-        password: password
-      }
-    })
-```
-
-Note that, besides using full URLs in the request, you also need to enable CORS with the two options for the `fetch`:
-
-```json
-    mode: "cors",
-    credentials: "include",
-```
-
-In contrast, here is the `fetch` request without host name:
-
-```javascript
-fetch("/api/users/login", {
-    method: "post",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      user: {
-        email: email,
-        password: password
-      }
-    })
-```
-
-When there is no hostname included in the URL, the HTTP request is sent back to the same host where the JavaScript is downloaded. 
-
-To make this work, when you run them locally, you need to configure the `webpack-dev-server` as a proxy for the Express application; when you run the application on Heroku, you need to build the frontend React application, and serve it using the same application that hosts the Express application.
