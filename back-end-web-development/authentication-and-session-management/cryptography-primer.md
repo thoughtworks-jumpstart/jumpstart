@@ -94,3 +94,4 @@ Blockchain is a [distributed ledger](https://medium.com/@vijay.betigiri/blockcha
 ## Resources
 
 - [Khan Academy: Introduction to Cryptography](https://www.khanacademy.org/computing/computer-science/cryptography)
+- [HTTPS: The Illustrated TLS Connection](https://tls.ulfheim.net/)
