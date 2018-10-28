@@ -88,6 +88,7 @@ Now that you're more comfortable with git, it's time to take it to the next leve
 
 - [**Recommended** Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)
 - [**Recommended** Git from the bottom up (PDF version)](http://ftp.newartisans.com/pub/git.from.bottom.up.pdf)
+- [Mastering Git](https://thoughtbot.com/upcase/mastering-git)
 - [Git documentation](https://git-scm.com/docs)
 - [Learn Git Branching](https://github.com/pcottle/learnGitBranching)
 - [Trunk based development > Feature branches](https://martinfowler.com/bliki/FeatureBranch.html)
