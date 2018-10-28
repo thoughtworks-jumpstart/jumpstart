@@ -28,6 +28,7 @@ Refer to the [official documentation](https://reactjs.org/docs/context.html)
 
 * [https://www.youtube.com/watch?v=9Ilq6G-VMyQ](https://www.youtube.com/watch?v=9Ilq6G-VMyQ)
 * [https://medium.com/dailyjs/reacts-️-new-context-api-70c9fe01596b](https://medium.com/dailyjs/reacts-️-new-context-api-70c9fe01596b)
+* [Avoiding unnecessary renders with React context](https://frontarm.com/articles/react-context-performance/)
 
 ## Resources
 
