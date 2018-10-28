@@ -114,6 +114,10 @@ More Exercises
 
 ## Resources
 
+### Tutorials
+
+* [How you can change the world by learning Data Structures and Algorithms](https://adrianmejia.com/blog/2018/04/04/how-you-can-change-the-world-learning-data-structures-algorithms-free-online-course-tutorial/)
+
 ### Books
 
 * [Grokking Algorithms](https://www.safaribooksonline.com/library/view/grokking-algorithms-an/9781617292231/)
