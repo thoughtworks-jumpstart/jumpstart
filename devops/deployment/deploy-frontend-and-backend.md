@@ -131,7 +131,9 @@ Another choice is to keep your frontend and backend in the same project.
 
 The idea is discussed in [this tutorial](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851).
 
-We created a [sample demo application](https://github.com/songguoqiang/react-express-mongodb-starter/tree/react-context) with this idea.
+You can follow [this tutorial](https://medium.com/crowdbotics/deploy-a-mern-stack-app-on-heroku-b0c255744a70) step-by-step to deploy a frontend (in React) and backend (in Express and MongoDB) as one project.
+
+We also created a [sample demo application](https://github.com/songguoqiang/react-express-mongodb-starter/tree/react-context) with this idea.
 
 You can get the sample application via
 
