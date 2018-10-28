@@ -15,3 +15,4 @@ If you would like to find out if some React component is re-rendered unnecessari
 ## Resources
 
 - [A checklist for eliminating common React performance issues](https://logrocket-blog.ghost.io/death-by-a-thousand-cuts-a-checklist-for-eliminating-common-react-performance-issues/)
+- [Profiling React Components with the User Timing API](https://www.telerik.com/blogs/profiling-react-components-with-the-user-timing-api)
