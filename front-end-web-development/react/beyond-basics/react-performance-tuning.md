@@ -11,3 +11,7 @@ In React 16.5.0 release, a new profiler tool is included in the React Dev Tools.
 ## Checkout reasons for update
 
 If you would like to find out if some React component is re-rendered unnecessarily, you can also use this tool called [Why Did You Update](https://github.com/maicki/why-did-you-update)
+
+## Resources
+
+- [A checklist for eliminating common React performance issues](https://logrocket-blog.ghost.io/death-by-a-thousand-cuts-a-checklist-for-eliminating-common-react-performance-issues/)
