@@ -3,6 +3,7 @@
 ## Development Method 1: if you work on master
 
 **How to merge to master**
+
 1. Start from master 
 
 0. Develop a new feature on master
@@ -18,6 +19,7 @@ Note: if switching between different work stash your changes
 ## Development Method 2: if you use local branches
 
 **How to merge to master**
+
 1. Start on master do a git pull --rebase to get latest changes
 
 0. git checkout -b new-branch
