@@ -22,7 +22,7 @@ Disadvantages:
 
 ## Feature Branch
 
-![Feature branch workflow](../.gitbook/assets/feature_branch_workflow.png)
+![Feature branch workflow](../.gitbook/assets/git/feature_branch_workflow.png)
 
 - Developers pull the latest master and branch out to their individual feature branch 
 
