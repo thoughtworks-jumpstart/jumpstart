@@ -28,11 +28,11 @@ Verify that your name and email are set:
 
 ## Working Directory, Staging Area, Local Repository and Remote Repository
 
-![git overview](../.gitbook/assets/git-overview.jpg)
+![git overview](../.gitbook/assets/git/git-overview.jpg)
 
 ## Life cycle of file status
 
-![file status life cycle](../.gitbook/assets/file_status_lifecycle.png)
+![file status life cycle](../.gitbook/assets/git/file_status_lifecycle.png)
 
 ## Exercise: Git Basics
 
