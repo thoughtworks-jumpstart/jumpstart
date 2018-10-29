@@ -33,7 +33,7 @@ How to configure the frontend React application with the corresponding URL for t
 
 You need to use libraries like [dotenv](https://www.npmjs.com/package/dotenv) so that you can specify environment-specific variables.
 
-If you use `create-react-app`, this is already built-in.
+If you build your React application using `create-react-app`, that is already built-in.
 
 Here is what you need to do:
 
