@@ -173,7 +173,7 @@ fetch("/api/users/login", {
 
 Note that there is no hostname included in the URL. In this case, the HTTP request is sent back to the same host where the JavaScript is downloaded. 
 
-To make this work, when you run them locally, you need to configure the `webpack-dev-server` as a proxy for the Express application; when you run the application on Heroku, you need to build the frontend React application, and serve it using the same application that hosts the Express application.
+To make this work, when you run them locally, you need to configure the `webpack-dev-server` as a proxy for the Express application; when you run the application on Heroku, you need to build the frontend React application, and serve it using the same server that hosts the Express application.
 
 ### Running frontend and backend locally
 
