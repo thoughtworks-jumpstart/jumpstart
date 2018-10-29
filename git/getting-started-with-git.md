@@ -30,6 +30,15 @@ Verify that your name and email are set:
 
 ![git overview](../.gitbook/assets/git/git-overview.jpg)
 
+The working directory is a single checkout of one version of the project. These files are pulled out of the compressed git database and placed on disk for you to use or modify. Git keeps tracks of modifications or new files in the working directory. These changes can be viewed with the command `git status` 
+
+After a file is added with `git add` it is transferred to the staging area. The staging area provides a place to stage changes before it is commited to the local repository. The two uses for the staging area is to prepare commits, and it is also used internally by git during merge conflicts. (merge conflicts will be discussed later)
+
+When changes are ready to be committed the `git commit` command will bundle all the changes in the staging area and save it as a commit in the local repository
+
+To share changes with others, you can synchronise from commits from the local repository to the corresponding remote repository with the command `git push`
+
+
 ## Life cycle of file status
 
 ![file status life cycle](../.gitbook/assets/git/file_status_lifecycle.png)
