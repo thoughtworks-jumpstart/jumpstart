@@ -12,6 +12,8 @@
 
 0. git pull --rebase
 
+0. Run all tests. If failing, fix the error, amend the commit and back to Step 4
+
 0. git push
 
 Note: if switching between different work stash your changes
@@ -31,6 +33,8 @@ Note: if switching between different work stash your changes
 0. git add and commit 
 
 0. `git pull --rebase origin master`
+
+0. Run all tests. If failing, fix the error, amend the commit and back to Step 6
 
 0. `git checkout master`
 
