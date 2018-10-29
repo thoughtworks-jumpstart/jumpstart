@@ -16,6 +16,7 @@
     * [Getting Started with Git](git/getting-started-with-git.md)
     * [Working with Github](git/github-cheat-sheet.md)
     * [Collaborating using Git](git/collaborating-using-git.md)
+    * [Git Workflows](git/git-workflows.md)
     * [Merge hell](git/merge-hell.md)
     * [Advanced Git Commands](git/advanced-git.md)
   * [Chrome DevTools](developer-tools/chrome-devtools.md)
