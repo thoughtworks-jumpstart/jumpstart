@@ -2,61 +2,131 @@
 
 Now that you're more comfortable with git, it's time to take it to the next level with more advanced git commands
 
-## Learning checklist
+## Useful Git commands
 
-- Show details of a commit
+## Basic commands
+- Initialise a new git repository
+  - `git init`
 
-  - `git show <commit-sha>`
+- View modifications made in working dir / View staged files
+  - `git status`
 
-- Show git commit history
+- Undo modifications to file
+  - `git checkout <file name>`
 
-  - `git log [--oneline]`
+- Undo all modifications in working dir
+  - `git checkout .`
 
-- View local changes
-
+- View details of local changes
   - `git diff`
 
-- Discard un-committed changes
+- Add change to staging area
+  - `git add`
+  - `git add -p`
 
-  - `git reset --soft`
-  - `git reset --hard`
+- Undo staged change
+  - `git reset <file name>` 
 
-- Save local changes temporarily
+- Commit changes in staging to the local repository
+  - `git commit`
+  - `git commit -m "commit message here"`
 
+## Commands to view commit history and details
+
+- Show details of a commit
+  - `git show <commit-sha>`
+
+- Show git commit history list
+  - `git log`
+
+- Show all branches of commit history title in a graph 
+  - `git log --all --oneline --graph`
+
+- View graphical UI of commit history graph and commit details
+  - `gitk`
+
+## Commands to modify local commits (commits which has not been pushed)
+
+- Make changes to the last commit (eg: add or remove file, edit commit message)
+  - `git add .`
+  - `git commit --amend`
+
+- Make changes to the last commit (eg: add or remove file, Do not edit commit message)  
+  - `git add .`
+  - `git commit --amend --no-edit`
+
+- Undo commits to a certain point in time (changes from commit dumped to working dir)
+  - `git reset <commit SHA to reset to>` 
+
+- Delete commits to a certain point in time (Warning: also deletes any uncommitted changes)
+  - `git reset --hard <commit SHA1 to reset to>` 
+
+## Commands to undo commits which are already pushed to remote
+As we should never modify commits which are already on remote, we can only revert it with a new commit.
+
+Create a new commit which is the exact opposite of specified commit SHA
+  - `git revert <SHA>`
+
+## Commands to save local changes temporarily 
+eg: when you need to pause the feature you are working on, to work on something else urgent
+
+Saves changes from working dir and staging to stash area
   - `git stash`
+
+Saves changes from working dir and staging area and new files, to stash area 
+  - `git stash -u`
+
+Save stash with a description
   - `git stash save my-awesome-stash`
+
+Remove last stashed changes and dump them to the working dir   
   - `git stash pop`
+
+Remove second last stashed and dump to the working dir
+  - `git stash pop stash@{1}`
+
+Dump last stashed to the working dir, but leave stash intact  
+  - `git stash apply`
+
+List all stashed changes
   - `git stash list`
 
-- Working with branches
+## Working with branches
+Best practices: Do a git pull to get the lastest code before creating a branch
 
+Create branch
   - `git branch <branch-name>`
+
+Switch working dir to specified branch
   - `git checkout <branch-name>`
+
+Create branch and switch to branch (2-in-1 command)  
   - `git checkout -b <branch name>`
+
+Delete specified branch  
   - `git branch -d <branch-name>`
 
-- Explain what these terms mean
+Force delete specified branch (to delete branch even if it has changes unmerged to master)
+  - `git branch -D <branch-name>`
 
-  - `repository`
-  - `master` branch
-  - `remote`
-  - `origin` - `commit sha - example: 8a295525f6c75325605bf4073c74e6afe02ad43c`
+## Getting latest changes from remote
+- `git pull` vs. `git pull --rebase`
 
-- How to undo previous commit
+  - `git pull` === `git fetch` + `git merge`
+  - `git pull --rebase` === `git fetch` + `git rebase`
 
-  - `git revert <commit-sha>`
+  - Benefits of `git pull -r` - `git rebase` is that it solves the same problem as `git merge` - Both are designed to integrate changes from one branch into another branch—they just do it in very different ways. 
+  
+  - The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge commits required by git merge. Second rebasing also results in a perfectly linear project history
+  
+  — you can follow the tip of feature all the way to the beginning of the project without any forks.
 
-- How to edit commits
-
-  - Amend commit messages: `git commit --amend`
-  - Amend contents of a commit: `git add <file(s)>` and `git commit --amend --no-edit`
-
-- Customize Git Configuration
+## Customize Git Configuration
 
   - `git config`
   - to see all current configuration: `git config -l`
 
-- Getting help
+## Getting help
 
   - Use search engines
   - `git [subcommand] --help`
@@ -66,23 +136,22 @@ Now that you're more comfortable with git, it's time to take it to the next leve
       - `git commit --help`
   - [Git documentation](https://git-scm.com/doc)
 
-- [Remove Sensitive Data from a Repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 
-- `git pull` vs. `git pull --rebase`
 
-  - `git pull` === `git fetch` + `git merge`
-  - `git pull --rebase` === `git fetch` + `git rebase`
-  - Benefits of `git pull -r` - `git rebase` is that it solves the same problem as `git merge` - Both are designed to integrate changes from one branch into another branch—they just do it in very different ways. - The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge commits required by git merge. Second, as you can see in the above diagram, rebasing also results in a perfectly linear project history—you can follow the tip of feature all the way to the beginning of the project without any forks.
-
+## Further Exploration
 - Removing files from git (i.e. gitignoring files that have been committed)
 
-- Different strategies for working with Git
-  - Branches
-  - Trunk-based development
+- Explain what these terms mean
 
-## Assignment
+  - `repository`
+  - `master` branch
+  - `remote`
+  - `origin` - `commit sha - example: 8a295525f6c75325605bf4073c74e6afe02ad43c`
 
 - [Learn branching](https://learngitbranching.js.org/?demo)
+
+- [Remove Sensitive Data from a Repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
+
 
 ## Resources
 
