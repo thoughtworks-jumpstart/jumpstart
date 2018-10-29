@@ -59,7 +59,16 @@ Now that you're more comfortable with git, it's time to take it to the next leve
   - `git reset <commit SHA to reset to>` 
 
 - Delete commits to a certain point in time (Warning: also deletes any uncommitted changes)
-  - `git reset --hard <commit SHA1 to reset to>` 
+  - `git reset --hard <commit SHA to reset to>` 
+
+- Rewrite commit history wiith rebase interactive 
+  - decide what group of commits you would like to rewrite, pick the SHA just before that 
+  - `git rebase -i <commit SHA>
+  - **pick** the commit if you would like no changes to it
+  - **drop** the commit if you would like to delete it
+  - **edit** the commit if you would like to amend it
+  - **squash** the commit if you would like it to squash to the previous commit
+  - For further details on rebase interactive please visit [Git-Tools-Rewriting-History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)   
 
 ## Commands to undo commits which are already pushed to remote
 As we should never modify commits which are already on remote, we can only revert it with a new commit.
