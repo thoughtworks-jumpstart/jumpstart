@@ -38,7 +38,6 @@ When changes are ready to be committed the `git commit` command will bundle all 
 
 To share changes with others, you can synchronise from commits from the local repository to the corresponding remote repository with the command `git push`
 
-
 ## Life cycle of file status
 
 ![file status life cycle](../.gitbook/assets/git/file_status_lifecycle.png)
@@ -62,9 +61,23 @@ git clone <repo-url>
   * `git reset <path/to/file>` - Remove file from staging
 * `git commit` - Commit the file to git
 
-You need to write **good** commit messages. What is a good commit message then? You can follow the tip below:
+### Writing a proper commit message
+
+- As commit messages will accompany your commits in the git history, in a real project you should key in a message that informs the reader why you did that commit.
+
+- A commit message can contain a title line and a body
+
+**Title-line**
+- The title-line starts with a capital letter, is 50 characters (or less), and has no punctuation at the end.
+
+- It should be in the imperative voice. i.e. ‘Add test for login page’ instead of  ‘Added test for login page’ 
 
 ![image](../.gitbook/assets/git_commit_message.png)
+
+**Body**
+- Add a blank line and key in the details in the body if there are any
+- If using vim :wq  to save and quit  (or just close the VS code commit message window)
+
 
 ### Ignoring files with `.gitignore`
 
