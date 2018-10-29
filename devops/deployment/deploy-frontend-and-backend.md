@@ -186,7 +186,7 @@ cd client
 npm run start
 ```
 
-This will start a [webpack-dev-server](https://survivejs.com/webpack/developing/webpack-dev-server/) which hosts your React application on port 3000.
+This will start a [webpack-dev-server](https://survivejs.com/webpack/developing/webpack-dev-server/) which hosts your React application on port 3000. (This port 3000 should be specified in the `FRONTEND_PORT` variable in your .env file.)
 
 To run the backend application
 
@@ -195,7 +195,7 @@ cd server
 npm run dev
 ```
 
-This will start a Express application, listening on port 3001.
+This will start a Express application, listening on port 3001. (This port 3001 should be specified in the `PORT` variable in your .env file).
 
 You can visit the URL for frontend React application at `http://localhost:3000".
 
