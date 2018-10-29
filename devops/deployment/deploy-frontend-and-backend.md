@@ -252,7 +252,7 @@ In the `package.json` file of the project root directory, you can find two lines
 "heroku-postbuild": "yarn build",
 ```
 
-This tells Heroku to call the "build" script when you deploy the application. The "build" script basically call the "build" command in the "client" project, which is to build the React application.
+This tells Heroku to call the "build" script when you deploy the application. The "build" script basically call the "build" command in the "client" project, which is to build the React application. (If you don't use `yarn`, you can replace `yarn build` with `npm run build`)
 
 When this "build" script is called, the output of building the React app is saved in the "client/build" folder.
 
