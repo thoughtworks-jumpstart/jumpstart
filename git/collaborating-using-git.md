@@ -1,5 +1,39 @@
 # Collaborating using Git
 
+## Development Method 1: if you work on master
+
+**How to merge to master**
+1. Start from master 
+0. Develop a new feature on master
+0. git add and commit
+0. git pull --rebase
+0. git push
+
+Note: if switching between different work stash your changes
+
+## Development Method 2: if you use local branches
+
+**How to merge to master**
+1. Start on master do a git pull --rebase to get latest changes
+0. git checkout -b new-branch
+0. Develop a new feature on local branch
+0. Periodically do `git pull --rebase origin master` this will get the latest changes from remote master and integrated it to your local branch
+0. git add and commit 
+0. `git pull --rebase origin master`
+0. `git checkout master`
+0. `git merge new-branch`
+0. `git push`
+0. `git branch -d new-branch`
+
+## How to fix Merge conflict in VS Code
+
+![Fixing merge conflict in vs code](../.gitbook/assets/git/fix_merge_conflict_vscode.png)
+
+- Click on `Accept current change` to select the remote changes and delete your change 
+- Click on `Accept incomming change` to select your changes and select the changes from remote
+- Click on `Accept both` to select all changes and keep both
+- Use Control + Z to undo if you selected the wrong choice
+
 ## Learning checklist
 
 * Collaborating on git
