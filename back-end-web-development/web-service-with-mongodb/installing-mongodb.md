@@ -44,10 +44,10 @@ You should see the version information printed on your console.
 ## Start your MongoDB server
 
 ```bash
-mongod --dbpath /data/mongodb
+mongod --dbpath /data/db
 ```
 
-The `--dbpath` option specifies the location where MongoDB should store data. It can be any folder you create. `/data/mongodb` is just one example.
+The `--dbpath` option specifies the location where MongoDB should store data. It can be any folder you create. `/data/db` is just one example.
 
 Note that the path to `mongod.exe` and the path to your data folder could be different on your system.
 
