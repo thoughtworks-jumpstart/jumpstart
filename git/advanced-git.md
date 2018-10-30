@@ -45,7 +45,7 @@ Now that you're more comfortable with git, it's time to take it to the next leve
 - View graphical UI of commit history graph and commit details
   - `gitk`
 
-## Commands to modify local commits (commits which has not been pushed)
+## Commands to modify local commits (commits which have not been pushed)
 
 - Make changes to the last commit (eg: add or remove file, edit commit message)
   - `git add .`

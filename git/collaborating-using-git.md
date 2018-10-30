@@ -22,7 +22,7 @@ Note: if switching between different work stash your changes
 
 **How to merge to master**
 
-1. Start on master do a git pull --rebase to get latest changes
+1. Start on master do a git pull --rebase to get latest changes from remote
 
 0. git checkout -b new-branch
 
@@ -30,15 +30,15 @@ Note: if switching between different work stash your changes
 
 0. Periodically do `git pull --rebase origin master` this will get the latest changes from remote master and integrated it to your local branch
 
-0. git add and commit 
+0. git add and commit
 
 0. `git pull --rebase origin master`
-
-0. Run all tests. If failing, fix the error, amend the commit and back to Step 6
 
 0. `git checkout master`
 
 0. `git merge new-branch`
+
+0. Run all tests. If failing, fix the error, and amend the commit
 
 0. `git push`
 
