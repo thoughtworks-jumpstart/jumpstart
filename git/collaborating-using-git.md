@@ -49,7 +49,7 @@ Note: if switching between different work stash your changes
 ![Fixing merge conflict in vs code](../.gitbook/assets/git/fix_merge_conflict_vscode.png)
 
 - Click on `Accept current change` to select the remote changes and delete your change 
-- Click on `Accept incomming change` to select your changes and select the changes from remote
+- Click on `Accept incomming change` to select your changes and delete the changes from remote
 - Click on `Accept both` to select all changes and keep both
 - Use Control + Z to undo if you selected the wrong choice
 
