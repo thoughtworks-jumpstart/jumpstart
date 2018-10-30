@@ -24,8 +24,11 @@ Now that you're more comfortable with git, it's time to take it to the next leve
   - `git add`
   - `git add -p`
 
-- Undo staged change
+- Undo staging changes from specified file
   - `git reset <file name>` 
+
+- Undo all staged changes
+  - `git reset .`
 
 - Commit changes in staging to the local repository
   - `git commit`
