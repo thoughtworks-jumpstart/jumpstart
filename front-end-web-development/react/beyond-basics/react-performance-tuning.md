@@ -16,3 +16,4 @@ If you would like to find out if some React component is re-rendered unnecessari
 
 - [A checklist for eliminating common React performance issues](https://logrocket-blog.ghost.io/death-by-a-thousand-cuts-a-checklist-for-eliminating-common-react-performance-issues/)
 - [Profiling React Components with the User Timing API](https://www.telerik.com/blogs/profiling-react-components-with-the-user-timing-api)
+- [Optimizing React: Virtual DOM explained](https://evilmartians.com/chronicles/optimizing-react-virtual-dom-explained)
