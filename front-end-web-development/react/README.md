@@ -2,7 +2,7 @@
 
 ## What is React?
 
-React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It allows you to create front-end applications through the creation of reusable, decoupled and testable components.
+React is a declarative, efficient, and flexible JavaScript library for building [Single Page Application(SPA)](https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46). It allows you to create front-end applications through the creation of reusable, decoupled and testable components.
 
 ## What can I build with React?
 
