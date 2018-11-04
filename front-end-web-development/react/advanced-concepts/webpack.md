@@ -24,4 +24,5 @@ Besides Webpack, there are many other so called bunlders, you can find some comp
 ## References
 
 - [Webpack: from apprentice to master](https://survivejs.com/webpack/)
+- [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
 
