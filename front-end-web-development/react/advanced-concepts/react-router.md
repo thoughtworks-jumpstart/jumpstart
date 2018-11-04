@@ -207,6 +207,7 @@ Doing this in conjunction with the `create-react-app` buildpack is easy. In the 
 * [All About React Router 4](https://css-tricks.com/react-router-4/)
 * [How to get and parse query string in an URL](https://stackoverflow.com/questions/43216569/how-to-get-query-parameters-in-react-router-v4)
 * [React Router 4: A Practical Introduction](https://auth0.com/blog/react-router-4-practical-tutorial/)
+* [A Simple React Router v4 Tutorial](https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf)
 
 ### References
 
