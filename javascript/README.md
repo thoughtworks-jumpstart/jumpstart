@@ -38,6 +38,7 @@ Here is a good overview of the Javascript landscape as of 2018:
 
 ## References
 
+* [The Complete JavaScript Handbook](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c)
 * [JavaScript concepts with code](https://github.com/vasanthk/js-bits)
 * [ES6 Features](https://github.com/lukehoban/es6features)
 * [ES6 Feature with Examples](http://es6-features.org/)
