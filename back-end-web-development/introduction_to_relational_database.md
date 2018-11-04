@@ -17,7 +17,7 @@
     * Schema Migration
   * Primary Key, Foreign Key
   * View
-  * Index
+  * [Index](https://8thlight.com/blog/kyle-annen/2018/10/09/an-introduction-to-database-indexing.html)
   * SQL Query
     * Selection
     * Join
