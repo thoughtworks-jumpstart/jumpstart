@@ -179,3 +179,4 @@ Force delete specified branch (to delete branch even if it has changes unmerged 
 - [Another Git Stash Tutorial](http://www.gitguys.com/topics/temporarily-stashing-your-work/)
 - [Git Flight Rules](https://github.com/k88hudson/git-flight-rules). A guide for programmers about what to do when things go wrong.
 - [Git Katas](https://github.com/praqma-training/git-katas)
+- [Git in a nutshell](http://aosabook.org/en/git.html)
