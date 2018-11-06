@@ -220,6 +220,7 @@
     * [Debug React Application with VS Code](debugging/debug-with-react.md)
     * [Debug Node Application with VS Code](debugging/debug-with-node.md)
 * [Agile Software Development](agile-101/README.md)
+  * [Writing User Stories](agile-101/writing_user_stories.md)
   * [Feedback](agile-101/feedback.md)
   * [Retrospectives](agile-101/retrospectives.md)
 * [Independent learning](independent-learning-week.md)
