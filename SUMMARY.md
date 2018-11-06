@@ -130,6 +130,7 @@
       * [Mocking Fetch API](testing-and-tdd/react-testing-tools/mocking-fetch.md)
       * [Snapshot Testing](testing-and-tdd/react-testing-tools/snapshot-testing.md)
       * [Enzyme](testing-and-tdd/react-testing-tools/enzyme.md)
+  * [Frontend learning resources](front-end-web-development/frontend-resources.md)
 * [Back-end web development](back-end-web-development/README.md)
   * [Web 101](back-end-web-development/web-101.md)
   * [REST API & CRUD](back-end-web-development/rest-api-and-crud.md)
