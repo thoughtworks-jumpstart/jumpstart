@@ -11,8 +11,8 @@ A good user story is written in
 - simple language
 - speaks to the reason and anticipated benefits of a specific area of the software.
 
-**As a** customer\
-**I want to** be able to view the items in my cart\
+**As a** customer<br/>
+**I want to** be able to view the items in my cart<br/>
 **So that** I know for sure what I’m purchasing.
 
 ### What is a Requirement?
@@ -52,14 +52,14 @@ While the stories that comprise an epic may be completed independently, their bu
 
 Example of an Epic:
 
-**As a** user\
-**I want to** backup my entire hard drive\
+**As a** user<br/>
+**I want to** backup my entire hard drive<br/>
 **So that** I don’t lose my data when unexpected things happen
 
 Example of a User Story:
 
-**As a** power user\
-**I want to** specify files or folders to backup based on file size, date created and date modified.\
+**As a** power user<br/>
+**I want to** specify files or folders to backup based on file size, date created and date modified.<br/>
 **So that** I can easily manage and decide what files to back up
 
 ## Story writing best practices
