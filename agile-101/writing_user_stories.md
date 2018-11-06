@@ -11,8 +11,8 @@ A good user story is written in
 - simple language
 - speaks to the reason and anticipated benefits of a specific area of the software.
 
-**As a** customer
-**I want to** be able to view the items in my cart
+**As a** customer\
+**I want to** be able to view the items in my cart\
 **So that** I know for sure what I’m purchasing.
 
 ### What is a Requirement?
@@ -22,7 +22,7 @@ Traditional requirements describe
 
 Requirements documents go into a lot of detail and take a good amount of time to write. They set the level of quality for functionality, performance, and user experience.
 
-_Some examples of requirements:_
+**Some examples of requirements:**
 
 - Display the name of each item in the shopping cart.
 - Display the quantity of each item in the shopping cart.
@@ -42,7 +42,7 @@ By forcing the user/customer to supply a solid, tangible business benefit as a r
 
 **Epics** are system functionality viewed from a high level
 
-_User stories_ are epics divided out into smaller chunks for development
+**User stories** are epics divided out into smaller chunks for development
 
 **Tasks** are defined in a story stating what the scope of the story
 
@@ -51,23 +51,25 @@ _User stories_ are epics divided out into smaller chunks for development
 While the stories that comprise an epic may be completed independently, their business value isn't realized until the entire epic is complete. This means that it rarely makes sense to deliver an epic until all of the underlying stories are complete.
 
 Example of an Epic:
-**As a** user
-**I want to** backup my entire hard drive
+
+**As a** user\
+**I want to** backup my entire hard drive\
 **So that** I don’t lose my data when unexpected things happen
 
 Example of a User Story:
-**As a** power user
-**I want to** specify files or folders to backup based on file size, date created and date modified.
+
+**As a** power user\
+**I want to** specify files or folders to backup based on file size, date created and date modified.\
 **So that** I can easily manage and decide what files to back up
 
 ## Story writing best practices
 
 - Follow the format
-  - "As a" should always refer to a person
-  - Do not make the "so that" redundant
+  - **"As a"** should always refer to a person
+  - Do not make the **"so that"** redundant
 - Keep it short and concise
-- I.N.V.E.S.T. principle
-- Should not specify implementation detail
+- Use the I.N.V.E.S.T. principle
+- Story should not specify implementation detail
 
 ## Vertical Slicing
 
