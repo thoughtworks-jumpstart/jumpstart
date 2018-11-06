@@ -46,7 +46,7 @@ _User stories_ are epics divided out into smaller chunks for development
 
 **Tasks** are defined in a story stating what the scope of the story
 
-![Different levels of stories](../.gitbook/assets/writing_user_stories/stpry_levels.png)
+![Different levels of stories](../.gitbook/assets/writing_user_stories/story_levels.png)
 
 While the stories that comprise an epic may be completed independently, their business value isn't realized until the entire epic is complete. This means that it rarely makes sense to deliver an epic until all of the underlying stories are complete.
 
