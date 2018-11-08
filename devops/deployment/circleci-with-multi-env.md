@@ -116,7 +116,7 @@ Click on the first job and click on rerun workflow and wait. Refresh the page to
 
 10. Try visiting test app it is not yet deployed. Next go back and click the approve button. Deploy to Test will start after your approval. 
 
-11. Laatly click on Approve for deploy to prod and check that your app is successfuly deployed. 
+11. Lastly click on Approve for deploy to prod and check that your app is successfuly deployed. 
 
 12. After this last stage has passed, you have successfully configured the CI/CD pipeline for your application. Congratulations!
 
