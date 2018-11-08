@@ -11,14 +11,14 @@
 
 The below instructions are for the setup of a CI/CD pipeline with 3 environments
 
-- Automation
-- Test
-- Production
+  - Automation
+  - Test
+  - Production
 
 1. Create 3 Heroku applications. These are to represent the servers of the above 3 environments. You can use the below names so that they are easy to identify. 
-- auto-\<app name\>
-- test-\<app name\>
-- \<app name\>
+  - auto-\<app name\>
+  - test-\<app name\>
+  - \<app name\>
 
 2. If your app uses a mongodb database. Go to the resources tab **for each app** add a free MLab DB plugin. 
 
