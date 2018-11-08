@@ -16,9 +16,9 @@ The below instructions are for the setup of a CI/CD pipeline with 3 environments
   - Production
 
 1. Create 3 Heroku applications. These are to represent the servers of the above 3 environments. You can use the below names so that they are easy to identify. 
-  - auto-\<app name\>
-  - test-\<app name\>
-  - \<app name\>
+  - auto- [app name]
+  - test-[app name]
+  - [app name]
 
 2. If your app uses a mongodb database. Go to the resources tab **for each app** add a free MLab DB plugin. 
 
@@ -26,74 +26,74 @@ The below instructions are for the setup of a CI/CD pipeline with 3 environments
 
 4. Paste the the `config.yml` example below in your `config.yml` file. Commit and push to master.
 
-```yaml
-# .circleci/config.yml
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node:10
-    steps:
-      - checkout
-      - restore_cache: # special step to restore the dependency cache
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: Setup Dependencies
-          command: npm install
-      - save_cache: # special step to save the dependency cache
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
-      - run: # run tests
-          name: Run Test
-          command: npm test
-  deploy-auto:
-    docker:
-      - image: buildpack-deps:trusty
-    steps:
-      - checkout
-      - run:
-          name: Deploy Master to Automation
-          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$AUTO_HEROKU_APP_NAME.git master --force
-  deploy-test:
-    docker:
-      - image: buildpack-deps:trusty
-    steps:
-      - checkout
-      - run:
-          name: Deploy Master to Test
-          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$TEST_HEROKU_APP_NAME.git master --force
-  deploy-prod:
-    docker:
-      - image: buildpack-deps:trusty
-    steps:
-      - checkout
-      - run:
-          name: Deploy Master to Prod
-          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$PROD_HEROKU_APP_NAME.git master --force
-workflows:
+  ```yaml
+  # .circleci/config.yml
   version: 2
-  build-and-deploy:
-    jobs:
-      - build
-      - deploy-auto:
-          requires:
-            - build
-      - hold-deploy-test:
-          type: approval
-          requires:
-            - deploy-auto
-      - deploy-test:
-          requires:
-            - hold-deploy-test
-      - hold-deploy-prod:
-          type: approval
-          requires:
-            - deploy-test
-      - deploy-prod:
-          requires:
-            - hold-deploy-prod
-```
+  jobs:
+    build:
+      docker:
+        - image: circleci/node:10
+      steps:
+        - checkout
+        - restore_cache: # special step to restore the dependency cache
+            key: dependency-cache-{{ checksum "package.json" }}
+        - run:
+            name: Setup Dependencies
+            command: npm install
+        - save_cache: # special step to save the dependency cache
+            key: dependency-cache-{{ checksum "package.json" }}
+            paths:
+              - ./node_modules
+        - run: # run tests
+            name: Run Test
+            command: npm test
+    deploy-auto:
+      docker:
+        - image: buildpack-deps:trusty
+      steps:
+        - checkout
+        - run:
+            name: Deploy Master to Automation
+            command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$AUTO_HEROKU_APP_NAME.git master --force
+    deploy-test:
+      docker:
+        - image: buildpack-deps:trusty
+      steps:
+        - checkout
+        - run:
+            name: Deploy Master to Test
+            command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$TEST_HEROKU_APP_NAME.git master --force
+    deploy-prod:
+      docker:
+        - image: buildpack-deps:trusty
+      steps:
+        - checkout
+        - run:
+            name: Deploy Master to Prod
+            command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$PROD_HEROKU_APP_NAME.git master --force
+  workflows:
+    version: 2
+    build-and-deploy:
+      jobs:
+        - build
+        - deploy-auto:
+            requires:
+              - build
+        - hold-deploy-test:
+            type: approval
+            requires:
+              - deploy-auto
+        - deploy-test:
+            requires:
+              - hold-deploy-test
+        - hold-deploy-prod:
+            type: approval
+            requires:
+              - deploy-test
+        - deploy-prod:
+            requires:
+              - hold-deploy-prod
+  ```
 
 5. On [https://circleci.com/dashboard](https://circleci.com/dashboard), click on 'set up project' on the left bar, and search for your git repo \(you may need to refresh your page\), and click 'Set up project > Click the Build button
 
