@@ -99,9 +99,9 @@ The below instructions are for the setup of a CI/CD pipeline with 3 environments
 
 6. Next go to settings > project > Gear icon > environment variables and add the below environments to circleCI. For the value add the coresponding heroku app name to the variable.
 
-- AUTO_HEROKU_APP_NAME
-- TEST_HEROKU_APP_NAME
-- PROD_HEROKU_APP_NAME
+ - AUTO_HEROKU_APP_NAME
+ - TEST_HEROKU_APP_NAME
+ - PROD_HEROKU_APP_NAME
 
 7. Go to Heroku account, click on your profile image on the top right > Account settings. Scroll down and click Reveal to show the API Key. Next copy the key and head back to circle ci save this key as HEROKU_API_KEY env variable
 
