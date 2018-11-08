@@ -191,6 +191,7 @@
     * [Heroku CLI](devops/deployment/heroku-setup.md)
   * [CI & CD](devops/ci-and-cd.md)
     * [CircleCI](devops/deployment/circleci.md)
+    * [CircleCI with Multiple Environments](devops/deployment/circleci-with-multi-env.md)
     * [TravisCI](devops/deployment/travisci.md)
   * [Infrastructure as Code](devops/infrastructure-as-code.md)
   * [Container Technology](devops/container-technology.md)
