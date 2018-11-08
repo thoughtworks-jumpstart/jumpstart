@@ -108,9 +108,9 @@ The below instructions are for the setup of a CI/CD pipeline with 3 environments
 8. Next click on Jobs menu on circle ci
 Click on the first job and click on rerun workflow and wait. Refresh the page to check that it has completed deploy.
 
-- blue = running
-- green = success
-- red = failure
+ - blue = running
+ - green = success
+ - red = failure
 
 9. The pipeline should show Build and Automation successful and you can now visit the automation server's page in the browser to check that it is deploped successfully.
 
