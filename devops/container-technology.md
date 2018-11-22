@@ -291,6 +291,11 @@ Then you can follow this tutorial to learn the [basics of kubernetes](https://ku
 
 Here is another good one: [Running the Node.js Bookshelf on Kubernetes Engine](https://cloud.google.com/nodejs/docs/tutorials/bookshelf-on-kubernetes-engine)
 
+## Online Courses
+
+* [Play with Docker](https://training.play-with-docker.com/)
+* [Learn Docker Online](https://learndocker.online/)
+
 ## Resources
 
 * [SystemAdmin Cast: Introduction to Docker](https://sysadmincasts.com/episodes/31-introduction-to-docker)
