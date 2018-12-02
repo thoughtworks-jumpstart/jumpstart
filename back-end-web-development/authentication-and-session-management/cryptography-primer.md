@@ -97,5 +97,6 @@ Blockchain is a [distributed ledger](https://medium.com/@vijay.betigiri/blockcha
 - [How asymmetric encryption works](https://www.youtube.com/watch?v=E5FEqGYLL0o)
 - [HTTPS: The Illustrated TLS Connection](https://tls.ulfheim.net/)
 - [An Intensive Introduction to Cryptography](https://intensecrypto.org/public/)
+- [Practical Cryptography for Developers](https://cryptobook.nakov.com/)
 - [Harvard CS127](https://www.boazbarak.org/cs127/)
 - [Blockchain Technology Overview](https://nvlpubs.nist.gov/nistpubs/ir/2018/NIST.IR.8202.pdf)
