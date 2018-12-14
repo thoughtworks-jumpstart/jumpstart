@@ -77,6 +77,7 @@ Warning: you can be flooded by information if you subscribe to too many news sou
 * There are tons of good [online courses](https://www.class-central.com/) such as [Harvard CS50X](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x) and [Design of Computer Programs](https://www.udacity.com/course/design-of-computer-programs--cs212)
 * You can also check out these [awesome courses](https://github.com/prakhar1989/awesome-courses)
 * You can also [teach yourself CS](https://teachyourselfcs.com/) but I would recommend you to find some friends and do it together.
+* Here is another learning path for [core programming skills](https://github.com/ossu/computer-science#core-cs)
 
 ### If you like reading books
 
