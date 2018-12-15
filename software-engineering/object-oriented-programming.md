@@ -488,6 +488,8 @@ This is a useful feature in Javascript to write more reusable functions.
 #### Resources
 
 * [The Forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
+* [Goodbye, Object Oriented Programming](https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53) Watch out for the pitfalls with OOP.
+
 * [MDN docs on OOP in Javascript](https://developer.mozilla.org/ms/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 * [OOP In JavaScript: What You NEED to Know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 * [Introduction to object-oriented JavaScript](https://webplatform.github.io/docs/concepts/programming/javascript/OOJ/)
