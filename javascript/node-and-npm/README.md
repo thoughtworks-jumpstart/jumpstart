@@ -131,7 +131,7 @@ In the `dependencies` section of `package.json`, you will see the list of librar
 
 Those characters are used to define what happens when there are newer releases of the libraries.
 
-#### In Semantic Versioning 3 numbers are used to describe the version of a package
+#### In Semantic Versioning, three numbers are used to describe the version of a package
 
 **Major version**
   - this number is increased when a new breaking change is added
