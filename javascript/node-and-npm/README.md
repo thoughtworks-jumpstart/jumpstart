@@ -131,26 +131,26 @@ In the `dependencies` section of `package.json`, you will see the list of librar
 
 Those characters are used to define what happens when there are newer releases of the libraries.
 
-In Semantic Versioning 3 numbers are used to describe the version of a package
+#### In Semantic Versioning 3 numbers are used to describe the version of a package
 
-`Major version`
+**Major version**
   - this number is increased when a new breaking change is added
 
-`Minor version`
+**Minor version**
   - this number is increased when a new non breaking change is added 
 
-`Patch version`
+**Patch version**
   - this number is increased when a new bug fix is added
 
 **Note**: Breaking change means there is a change in the API of the package, so projects developed with the old version may not work with the new version of the package.
 
-Special Characters
+#### Special Characters
 
-`^` (caret character) 
+**^ (caret character)** 
 - this this means pull the latest package which has the same Major ver as stated, but may have newer Minor and Patch versions
 - eg: "^5.4.0" in the package.json may install version "5.6.0"
 
-`~` (tilde character)
+**~ (tilde character)**
 - this means pull the latest package which has the same Major AND Minor ver as stated, but may have newer Patch version
 - eg: "~5.4.0" in the package.json may install version "5.4.7"
 
