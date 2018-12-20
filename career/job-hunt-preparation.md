@@ -1,5 +1,9 @@
 # Job Hunt preparation
 
+## Update your resume
+
+To start with, you need to update your resume with your latest and relevant skillset. There are many tips for writing a good resume, here is [a good article](https://medium.freecodecamp.org/how-to-write-a-great-resume-for-software-engineers-75d514dd8322)
+
 ## Practical tips for the job hunt:
 
 We collected some feedback from the first batch of jumpstart trainees on what advice they'd give their juniors on the job hunt, their suggestions can be summed up in **3Ps**:
