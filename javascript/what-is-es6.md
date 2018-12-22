@@ -22,6 +22,7 @@ Some of the features introduced in ES6 include:
 * [https://github.com/DrkSephy/es6-cheatsheet](https://github.com/DrkSephy/es6-cheatsheet)
 * [https://kangax.github.io/compat-table/es6/](https://kangax.github.io/compat-table/es6/)
 * [https://bytearcher.com/articles/how-to-check-if-node-implements-es6-language-feature/](https://bytearcher.com/articles/how-to-check-if-node-implements-es6-language-feature/)
+* [The latest version of ECMAScript Standard](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
 ## Assignments
 
