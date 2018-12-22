@@ -95,6 +95,7 @@ For now, to keep it simple, we should still stay with the CommonJS module system
 
 * [JS Modules](http://jsmodules.io/)
 * [ES6 Modules: The Syntax](http://2ality.com/2014/09/es6-modules-final.html)
+* [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 * [ES6 module system](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
 * [ES6 `import` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 * [Bridging CommonJS and ES6 module system](https://medium.com/web-on-the-edge/es-modules-in-node-today-32cff914e4b)
