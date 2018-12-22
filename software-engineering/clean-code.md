@@ -84,6 +84,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
 * Refactoring Techniques
   * [Martin Fowler's refactoring techniques catalogue](https://www.refactoring.com/catalog/index.html)
   * [List of refactoring techniques](https://sourcemaking.com/refactoring)
+  * [Refactoring Large Functions](https://robert.muth.org/refactoring-large-functions.html)
 * SOLID Principles
   * [SOLID explained in a funny way](http://www.daedtech.com/visualization-mnemonics-for-software-principles/)
   * [SOLID OO Design in Javascript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
