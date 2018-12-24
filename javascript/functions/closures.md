@@ -47,4 +47,4 @@ One of the use case is to implement the `private variable`. In the example above
 * [Understanding Javascript: Closures](https://hackernoon.com/understanding-javascript-closures-4188edf5ea1b)
 * [MDN docs on closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 * [A Beginner’s Guide to Closures in JavaScript](https://blog.bitsrc.io/a-beginners-guide-to-closures-in-javascript-97d372284dda)
-
+* [I never understood JavaScript closures until someone explained it to me like this](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
