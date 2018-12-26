@@ -30,19 +30,25 @@ The [tutorial on Mozilla Developer Network](https://developer.mozilla.org/en-US/
 
 If you are keen to pick up a book, here is a good one:
 
-* [Learn Enough Javascript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)
+* [Learn Enough Javascript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)(the first 5 chapters)
 
 From time to time, you may need to refer to the core concepts/APIs in Javascript. Here are some good references for you:
 
 * [Dev Docs](http://devdocs.io/javascript/)
 
+And remember to do exercises on [codewars](https://codewars.com) or [exercism](https://exercism.io/)
+
 ## HTML/CSS
 
 Follow this tutorial to pick up the basics on HTML and CSS:
 
-* [FreeCodeCamp - HTML/CSS](https://www.freecodecamp.org/challenges/say-hello-to-html-elements)
+* [HTML & CSS is hard](https://internetingishard.com/html-and-css/)
 
-The website is a bit hard to navigate. You need to scroll the text on the left hand side to the bottom. Then you can see buttons like "Run Test", "Save your progress", etc.
+If you finish the tutorial above and still need more, you can try the following **optional** learning materials:
+
+* [Learn Enough HTML to Be Dangerous](https://www.learnenough.com/html-tutorial)
+* [Learn Enough CSS & Layout to Be Dangerous](https://www.learnenough.com/css-and-layout-tutorial)
+* [MDN: Getting started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
 
 ## Text Editors
 
@@ -51,3 +57,12 @@ During the course, we will set up [VS Code](https://code.visualstudio.com/) as o
 * [https://repl.it/](https://repl.it/) \(for javascript\)
 * [https://codepen.io](https://codepen.io) \(for HTML, CSS, Javascript\)
 
+## Other Online Materials
+
+**This part is optional.**
+
+If you have more free time before joining JumpStart, you can watch some of the online courses on web development and computer science. 
+
+* [The Complete Web Developer in 2019: Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
+* [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
+* [CS50: Introduction to Computer Science](https://www.youtube.com/user/cs50tv)
