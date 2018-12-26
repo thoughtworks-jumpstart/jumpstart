@@ -50,6 +50,7 @@ Warning: you can be flooded by information if you subscribe to too many news sou
 * [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap) and the author [explains frontend roadmap](https://medium.com/tech-tajawal/modern-frontend-developer-in-2018-4c2072fa2b9c) and [backend roadmap](https://medium.com/tech-tajawal/modern-backend-developer-in-2018-6b3f7b5f8b9)
 * [React Developer Roadmap](https://github.com/adam-golab/react-developer-roadmap)
 * [Vue Developer Roadmap](https://flaviocopes.com/vue-developer-roadmap/)
+* [2018 Developer Skills Report](https://research.hac*errank.com/developer-skills/2018/)
 
 ### Build solid fundamentals by doing more practices
 

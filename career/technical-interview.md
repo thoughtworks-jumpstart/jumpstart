@@ -86,4 +86,34 @@
 - Did you have any conflict with your previous team mates? If so, how did you resolve that?
 - Was there a situation when you and your colleagues had different solution on the same problem? How did you arrive at one solution?
 
-## Tips for handling technical interview
+## Resources
+
+### Interview Questions
+
+- [50+ Data Structure and Algorithms Interview Questions for Programmers](https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0)
+- [Frontend Developer Interview Questions](https://h5bp.github.io/Front-end-Developer-Interview-Questions/)
+- [30 seconds of interviews](https://30secondsofinterviews.org/)
+- [CS Knowledge Map](https://github.com/InterviewMap/CS-Interview-Knowledge-Map/blob/master/README-EN.md)
+- [Interactive Coding Challenges (in Python)](https://github.com/donnemartin/interactive-coding-challenges)
+
+### Learning Materials
+
+- [Frontend Interview Handbook](https://github.com/yangshun/front-end-interview-handbook)
+- [Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook)
+- [Frontend Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
+- [Common Algorithms Implemented in JavaScript](https://github.com/trekhleb/javascript-algorithms)
+
+### Interview Preparation Courses/Websites
+
+- [Coderust 3.0: Faster Coding Interview Preparation](https://www.educative.io/collection/5642554087309312/5679846214598656)
+- [Hired in Tech](https://www.hiredintech.com/)
+- [Interview Cake](https://www.interviewcake.com/)
+- [Interview Bit](https://www.interviewbit.com/)
+- [Pramp](https://www.pramp.com/#/)
+
+### Tips for preparing technical interview
+
+- [Reddit Discussion: How to Prepare for Tech Interviews](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
+
+- [How to Build and Leverage Your Network to Land Your First Technical Interview](https://www.fullstackinterviewing.com/2018/03/20/how-to-build-and-leverage-your-network-to-land-your-first-technical-interview.html)
