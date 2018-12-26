@@ -57,9 +57,7 @@ During the course, we will set up [VS Code](https://code.visualstudio.com/) as o
 * [https://repl.it/](https://repl.it/) \(for javascript\)
 * [https://codepen.io](https://codepen.io) \(for HTML, CSS, Javascript\)
 
-## Other Online Materials
-
-**This part is optional.**
+## (Optional) Other Online Materials
 
 If you have more free time before joining JumpStart, you can watch some of the online courses on web development and computer science. 
 
