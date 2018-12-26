@@ -117,3 +117,4 @@
 - [I spent 3 months applying to jobs after a coding bootcamp. Here’s what I learned](https://medium.freecodecamp.org/5-key-learnings-from-the-post-bootcamp-job-search-9a07468d2331)
 - [Reddit Discussion: How to Prepare for Tech Interviews](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 - [How to Build and Leverage Your Network to Land Your First Technical Interview](https://www.fullstackinterviewing.com/2018/03/20/how-to-build-and-leverage-your-network-to-land-your-first-technical-interview.html)
+- [5 Mistakes You're Making In Your Technical Interviews & How To Avoid Them](https://dev.to/emmawedekind/5-mistakes-youre-making-in-your-technical-interviews--how-to-avoid-them-465e)
