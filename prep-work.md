@@ -63,4 +63,4 @@ If you have more free time before joining JumpStart, you can watch some of the o
 
 * [The Complete Web Developer in 2019: Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
 * [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
-* [CS50: Introduction to Computer Science](https://www.youtube.com/user/cs50tv)
+* CS50: Introduction to Computer Science: [Youtube channel](https://www.youtube.com/user/cs50tv) and [online material](http://cs50.tv/)
