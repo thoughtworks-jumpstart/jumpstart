@@ -36,7 +36,7 @@ From time to time, you may need to refer to the core concepts/APIs in Javascript
 
 * [Dev Docs](http://devdocs.io/javascript/)
 
-And remember to do exercises on [codewars](https://codewars.com) or [exercism](https://exercism.io/)
+And remember to do exercises on [codewars](https://codewars.com) or [exercism](https://exercism.io/). Here are some [good exercises to learn JavaScript API](https://github.com/myjinxin2015/Katas-list-of-Training-JS-series)
 
 ## HTML/CSS
 
