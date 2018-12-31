@@ -8,8 +8,6 @@ Some recommended languages:
 
 * Python
 * Java
-* Ruby
-* PHP
 
 ### Learning checklist \(also presentation outline\)
 
@@ -53,7 +51,7 @@ This week, there will be no hand-holding, no answers from us. Have fun!
 
 ## Resources
 
-### Python \(3, not 2\)
+### Python 3
 
 * [Python 101](http://www.learnpython.org/en/Welcome)
 * Installing Python [Mac](http://docs.python-guide.org/en/latest/starting/install3/osx/) and [Windows](https://docs.python.org/3/using/windows.html)
