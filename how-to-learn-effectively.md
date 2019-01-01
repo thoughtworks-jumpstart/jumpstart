@@ -75,6 +75,7 @@ One of the most important things we impart at JumpStart is effective learning. W
 
 * [How to Learn Programming Skills](https://www.codingblocks.net/podcast/how-to-learn-programming-skills/)
 * [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
+* [How to memorize fact with active recall techniques](https://www.youtube.com/watch?v=ukLnPbIffxE)
 * [Stop saying coding is easy](https://www.hanselman.com/blog/StopSayingLearningToCodeIsEasy.aspx)
 * [Teach yourself programming in 10 years](http://norvig.com/21-days.html)
 * [What I learned about learning](https://medium.com/@davified/what-i-learned-in-2017-about-learning-d185f1f38772)
