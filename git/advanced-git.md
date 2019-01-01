@@ -64,7 +64,7 @@ Now that you're more comfortable with git, it's time to take it to the next leve
 - Delete commits to a certain point in time (Warning: also deletes any uncommitted changes)
   - `git reset --hard <commit SHA to reset to>` 
 
-- Rewrite commit history wiith rebase interactive 
+- Rewrite commit history with rebase interactive 
   - decide what group of commits you would like to rewrite, pick the SHA just before that 
   - `git rebase -i <commit SHA>
   - **pick** the commit if you would like no changes to it
@@ -122,12 +122,13 @@ Force delete specified branch (to delete branch even if it has changes unmerged 
   - `git branch -D <branch-name>`
 
 ## Getting latest changes from remote
+
 - `git pull` vs. `git pull --rebase`
 
   - `git pull` === `git fetch` + `git merge`
   - `git pull --rebase` === `git fetch` + `git rebase`
 
-  - Benefits of `git pull -r` - `git rebase` is that it solves the same problem as `git merge` - Both are designed to integrate changes from one branch into another branch—they just do it in very different ways. 
+  - Benefits of `git pull -r` (which uses `git rebase`) is that it solves the same problem as `git merge` - Both are designed to integrate changes from one branch into another branch—they just do it in very different ways. Here is an [article comparing git merge vs rebase](https://medium.freecodecamp.org/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f)
   
   - The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge commits required by git merge. Second rebasing also results in a perfectly linear project history
   
