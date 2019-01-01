@@ -92,6 +92,7 @@
 
 - [50+ Data Structure and Algorithms Interview Questions for Programmers](https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0)
 - [Frontend Developer Interview Questions](https://h5bp.github.io/Front-end-Developer-Interview-Questions/)
+- [Awesome list of lists of interview questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
 - [30 seconds of interviews](https://30secondsofinterviews.org/)
 - [CS Knowledge Map](https://github.com/InterviewMap/CS-Interview-Knowledge-Map/blob/master/README-EN.md)
 - [Interactive Coding Challenges (in Python)](https://github.com/donnemartin/interactive-coding-challenges)
