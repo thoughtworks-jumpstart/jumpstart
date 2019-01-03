@@ -135,4 +135,5 @@ This data structure can be used in [version control systems like Git](http://eri
 
 * [Hands-on Data Structures and Algorithms](https://www.packtpub.com/web-development/hands-data-structures-and-algorithms-javascript)
 * [A Common-Sense Guide to Data Structures and Algorithms](https://www.amazon.com/dp/1680502441/ref=sspa_dk_detail_1?psc=1&pd_rd_i=1680502441&pd_rd_wg=2c2iL&pd_rd_r=TX5YB31VZ0MQFYYNM5EX&pd_rd_w=gpv4H)
+* [Open Data Structures](http://opendatastructures.org/)
 
