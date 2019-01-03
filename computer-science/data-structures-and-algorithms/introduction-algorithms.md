@@ -127,6 +127,7 @@ More Exercises
 * [Real-World Algorithms: A Beginner's Guide \(MIT Press\)](https://www.amazon.com/Real-World-Algorithms-Beginners-Guide-Press/dp/0262035707/ref=pd_sim_14_5?_encoding=UTF8&pd_rd_i=0262035707&pd_rd_r=0HDQ0MZRR3JNBDSP2BXD&pd_rd_w=dAcRb&pd_rd_wg=vqrpV&psc=1&refRID=0HDQ0MZRR3JNBDSP2BXD)
 * [The algorithm design manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
 * [Algorithms, by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/)
+* [Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne](https://algs4.cs.princeton.edu/home/)
 
 ### Courses
 
