@@ -27,6 +27,10 @@ It is easy to get stuck in the 'getting started' phase \(it doesn't help that th
 
 Warning: you can be flooded by information if you subscribe to too many news sources.
 
+### Don't be overwhelmed by the things you don't know about. It's OK.
+
+There are lots of new development in technology field, everyday. Even experienced developers acknowledge [there are things they don't know](https://overreacted.io/things-i-dont-know-as-of-2018/). Give yourself more time to learn and grow.
+
 ### Learn from Guru
 
 * [Awesome Talks](https://awesometalks.party/)
