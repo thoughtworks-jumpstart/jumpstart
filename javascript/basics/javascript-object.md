@@ -98,6 +98,7 @@ function createMonster(name, power) {
 
 ## Resources
 
+* [The Chronicles of JavaScript Objects](https://blog.bitsrc.io/the-chronicles-of-javascript-objects-2d6b9205cd66)
 * [Object Explorer](https://sdras.github.io/object-explorer/)
 * [Understanding the `this` keyword](https://hackernoon.com/understanding-javascript-the-this-keyword-4de325d77f68)
 * [MDN Object docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
