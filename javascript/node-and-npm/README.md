@@ -197,4 +197,4 @@ console.log(cow);
 
 * [The definitive Node.js handbook](https://medium.freecodecamp.org/the-definitive-node-js-handbook-6912378afc6e)
 * [Everything You Wanted To Know About package-lock.json](https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8)
-
+* [Introduction to NodeJS](https://github.com/azat-co/fullstack-javascript/blob/master/chapter6/chapter6.md)
