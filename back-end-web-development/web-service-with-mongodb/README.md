@@ -38,3 +38,6 @@ More information can be found on their [documentation website](https://docs.mong
 
 And here is [a good comparison between MongoDB and relational DB \(e.g. PostgresSQL\)](https://www.mongodb.com/compare/mongodb-postgresql)
 
+## Resources
+
+* [Introduction to MongoDB](https://github.com/azat-co/fullstack-javascript/blob/master/chapter7/chapter7.md)
