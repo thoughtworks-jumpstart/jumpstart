@@ -15,3 +15,6 @@ The following topics would be covered:
 * Production quality web service
 * Web service security
 
+## Resources
+
+* [Book: Practical NodeJS](https://github.com/azat-co/practicalnode)
