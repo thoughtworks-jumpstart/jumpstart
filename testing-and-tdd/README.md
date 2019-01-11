@@ -42,4 +42,5 @@
 * [TDD By Example - \(read the preface at least!\)](https://www.eecs.yorku.ca/course_archive/2003-04/W/3311/sectionM/case_studies/money/KentBeck_TDD_byexample.pdf)
 * [Using TDD to Influence Design](https://www.thoughtworks.com/insights/blog/using-tdd-influence-design)
 * [Writing Testable Code](https://testing.googleblog.com/2008/08/by-miko-hevery-so-you-decided-to.html?m=1)
+* [Node.js & JavaScript Testing Best Practices](https://medium.com/@me_37286/yoni-goldberg-javascript-nodejs-testing-best-practices-2b98924c9347)
 
