@@ -58,7 +58,7 @@ However, don't use snapshot tests to validate the behavior of the components. If
 
 The rule of thumb is, use snapshot testing for regression tests only. You should write a lot of unit test to verify the behavior of the React components.
 
-## Exercise for SnapShot Testing
+## Lab
 
 Add a snapshot tests for some components you wrote before, e.g. the ones in [React Todo List](https://github.com/thoughtworks-jumpstart/react-todo-list)
 
