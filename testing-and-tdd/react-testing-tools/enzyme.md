@@ -178,6 +178,7 @@ Rules of thumb by [Geoffroy Warin](https://github.com/airbnb/enzyme/issues/465):
 * If you want to test component lifecycle and children behavior, use mount
 * If you want to test children rendering with less overhead than mount and you are not interested in lifecycle methods, use render
 
+However, there are also developers that are [strongly against shallow rendering](https://blog.kentcdodds.com/why-i-never-use-shallow-rendering-c08851a68bb7)
 ## Resources
 
 ### Recommended reading
