@@ -6,11 +6,27 @@ Mocking is a technique to isolate test subjects by replacing dependencies with o
 
 ## What is a dependency?
 
+### Library Dependency
+
 Every system/module has its dependencies: it could be another module written by you, or it could be a module loaded from some 3rd party libraries.
 
 Every time when you use `import` or `require` in your JavaScript code, you introduce a new `dependency` to the current JavaScript module.
 
+### Service Dependency
+
+If you write some frontend JavaScript codes that depends on another back-end API/web-service, you also introduce some dependency here.
+
 ## Why do we need mocking?
+
+### Don't use mocking by default
+
+**Mocking is a testing technique you should NOT use by default**, because there are costs associated with mocks:
+
+- You have less confidence that your code works with the real dependency that is mocked in your tests.
+- This techniques violates the principals for [black box testing](http://softwaretestingfundamentals.com/black-box-testing/). The dependencies of the module under test is an implementation detail that your test is not supposed to know.
+- Stetting up mocks requires additional codes that makes your tests more cluttered.
+
+So, only use mocks in a few scenarios where the mocking objects brings in more value than costs. A few cases are discussed below.
 
 ### Use Case: Mocking dependencies to simulate various test scenarios
 
