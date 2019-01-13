@@ -49,6 +49,7 @@ Bookmark the link below, you need to refer to it frequently.
 * CSS Property Reference
   * [CSS Reference](https://tympanus.net/codrops/css_reference/)
   * [A Visual Guide to CSS](https://cssreference.io/)
+* [Useful talks on CSS](https://github.com/AllThingsSmitty/must-watch-css)
 
 ## Labs
 

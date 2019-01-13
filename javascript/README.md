@@ -51,6 +51,7 @@ Here is a good overview of the Javascript landscape as of 2018:
 * [Awesome Javascript learning resources](https://github.com/micromata/awesome-javascript-learning)
 * [Modern JS Cheat Sheet](https://mbeaudru.github.io/modern-js-cheatsheet/)
 * [JavaScript Garden](http://bonsaiden.github.io/JavaScript-Garden/)
+* [A useful list of must-watch talks about JavaScript](https://github.com/AllThingsSmitty/must-watch-javascript)
 
 ## Assignments
 
