@@ -10,6 +10,8 @@ Besides this tutorial, the following tutorials are also highly recommended:
 ## Resources
 
 - [React Cheat Sheet](http://www.developer-cheatsheets.com/react)
+- [JavaScript fundamentals before learning React](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/)
+- [All the fundamental React.js concepts, jammed into this single Medium article](https://medium.freecodecamp.org/all-the-fundamental-react-js-concepts-jammed-into-this-single-medium-article-c83f9b53eac2)
 
 ## Labs
   * Apply concepts regarding `props`, `state`, `event listeners`, `event handlers`, `binding this`
