@@ -379,5 +379,6 @@ More Tutorials on Sequelize
 
 ## Resources
 
+* [Installing PostgreSQL on Mac](https://www.robinwieruch.de/postgres-sql-macos-setup/)
 * [Reference on PostgreSQL](https://goalkicker.com/PostgreSQLBook/)
 * [SQL Learning Track on Bento.io](https://bento.io/topic/sql)
