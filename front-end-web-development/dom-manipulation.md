@@ -18,7 +18,7 @@
 
 ## What is the DOM
 
-The Document Object Model \(DOM\) is a programming interface for HTML \(and XML\) documents. It represents the web page as a javascript object \(`document`\) so that javascript programs can **change the document structure, style, and content**.
+The Document Object Model \(DOM\) is an in-memory representation of HTML documents. It represents the web page as a javascript object \(`document`\) so that javascript programs can traverse and modify the document structure, style, and content.
 
 Imagine an HTML page with the following structure:
 
