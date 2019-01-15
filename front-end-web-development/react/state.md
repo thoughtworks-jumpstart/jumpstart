@@ -86,6 +86,8 @@ One variation of this approach is, instead of calling `setState` directly in `co
 
 The only way to change state is by calling `this.setState()`.
 
+Never modify `this.state` object directly. We will talk about this in details below.
+
 ### setState API
 
 The full signature of the `setState()` API is
@@ -226,11 +228,11 @@ Why? Because React is not aware that the state is updated if you update the `sta
 
 In contrast, when you call `setState`, React is aware of the state update and re-render the component correctly.
 
-### Don't mutate existing state directly (even if you call setState later on)
+### Don't mutate existing state object directly (even if you call setState later on)
 
-Why? If you mutating existing state (instead of creating new ones), the UI may not be re-rendered as expected. One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/)
+Why? If you mutating existing state (instead of creating new objects), it does not work well with PureComponent. One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/). In the example, a parent component passes some of its state as props to a child component (which happens to be a PureComponent). If you modify the `state.items` of the parent component directly instead of creating a new `items` object, the child component could not detect the change in its `items` prop and does not re-render.
 
-Hence is generally a good practice to avoid mutating existing state.
+Hence is generally a good practice to **avoid mutating existing state object**.
 
 If you need to update any field/value in the state, you should create a new copy of the value and call `setState`.
 How can you create new values from the current one? For simple cases, you can make good use of the built-in JavaScript functions like [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) and [Array's spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
@@ -252,7 +254,7 @@ To find out whether a piece of data should reside in `state` or in `props`, simp
 
 ## Resources
 
-* [https://reactjs.org/docs/faq-state.html](https://reactjs.org/docs/faq-state.html)
+* [State FAQ](https://reactjs.org/docs/faq-state.html)
 * [setState() API](https://reactjs.org/docs/react-component.html#setstate)
 * [Best practices for component state in React](http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html)
 * [using props to set initial state is not always an anti-pattern](https://zhenyong.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html)
