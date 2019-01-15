@@ -9,6 +9,10 @@ If you are new to CSS, you can read the article blow to get an overview:
 
 * [Modern CSS Explained For Dinosaurs](https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525)
 
+## How to Learn CSS
+
+You don’t need to commit to memorizing every CSS Property and Value, as there are good places to look them up. There are some fundamental things, however, which will make CSS much easier for you to use. [This article](https://www.smashingmagazine.com/2019/01/how-to-learn-css/) aims to guide you along your path of learning CSS.
+
 ## CSS Tutorial
 
 We will briefly cover the most important topics in this material, however, if you have more time to go-through a tutorial that covers the topics thoroughly, I can recommend the two below:
