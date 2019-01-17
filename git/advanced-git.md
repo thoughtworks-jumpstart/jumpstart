@@ -181,3 +181,5 @@ Force delete specified branch (to delete branch even if it has changes unmerged 
 - [Git Flight Rules](https://github.com/k88hudson/git-flight-rules). A guide for programmers about what to do when things go wrong.
 - [Git Katas](https://github.com/praqma-training/git-katas)
 - [Git in a nutshell](http://aosabook.org/en/git.html)
+- [Git for computer scientists](http://eagain.net/articles/git-for-computer-scientists/)
+- [Git for age 4 and up](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
