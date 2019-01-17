@@ -119,6 +119,7 @@ git log
 ## Resources
 
 * [Learn Just Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial)
+* [Version Control with Git](http://swcarpentry.github.io/git-novice/)
 * [Git - the simple guide](http://rogerdudler.github.io/git-guide/)
 * [Git Cheat Sheet](https://gist.github.com/akras14/3d242d80af8388ebca60)
 * [Another git Cheat Sheet](https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/)

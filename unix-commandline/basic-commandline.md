@@ -74,6 +74,7 @@ The **command line** is a program that enables us to send commands to the comput
 
 * [explainshell.com](https://explainshell.com/)
 * [Learn enough command line to be dangerous](https://www.learnenough.com/command-line-tutorial)
+* [Introduction to Unix Shell](http://swcarpentry.github.io/shell-novice/)
 * [Bash cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet)
 * [The art of command line](https://github.com/jlevy/the-art-of-command-line)
 * [Terminals are sexy](https://terminalsare.sexy/)
