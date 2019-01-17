@@ -173,21 +173,32 @@ class Welcome extends React.Component {
 
 With this approach, you can derive new state from the current state. Note that `currentState` is a reference to the component state at the time the change is being applied. It should not be directly mutated. Instead, changes should be represented by building a new object based on the input from `curentState` and props of the component.
 
-### The output of the updater is shallowly merged with state
+### A new state object is created after setState is executed
 
-The object returned from the `updater` argument is merged with the current `state` object.
+Each time when the `setState` function is executed, React clones the current state object into a new object, then it updates the cloned object with the value provided in the parameter.
+
+Highlights:
+
+* A new state object is created (i.e. `this.state` points to a different object after `setState` is executed)
+* The previous state object remains unchanged. It's the newly cloned state object that is updated with new values.
+
+This basically means a state object is immutable once it's created (unless you modify the state object directly).
+
+### The output of the updater is merged with the new state object
+
+The object returned from the `updater` argument is merged with the newly created `state` object.
 
 Conceptually, this is what React does in the previous example
 
 ```javascript
 
-Object.assign(
-  state, {name: "new world"}
+this.state = Object.assign(
+  this.state, {name: "new world"}
 );
 
 ```
 
-This means, in the `state` object, only the `name` property is overwritten with the new value. If the `state` object cotnains any other properties, those are remain unchanged.
+This means, in the newly created `state` object, only the `name` property is overwritten with the new value provided in the `setState` API. If the `state` object contains any other properties, those are remain unchanged.
 
 ### `setSate()` API is asynchronous
 
@@ -228,19 +239,22 @@ Why? Because React is not aware that the state is updated if you update the `sta
 
 In contrast, when you call `setState`, React is aware of the state update and re-render the component correctly.
 
-### Don't mutate existing state object directly (even if you call setState later on)
+### Don't mutate existing state object directly (i.e. you should keep state objects immutable)
 
 Why? If you mutating existing state (instead of creating new objects), it does not work well with PureComponent. One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/). In the example, a parent component passes some of its state as props to a child component (which happens to be a PureComponent). If you modify the `state.items` of the parent component directly instead of creating a new `items` object, the child component could not detect the change in its `items` prop and does not re-render.
 
 Hence is generally a good practice to **avoid mutating existing state object**.
 
 If you need to update any field/value in the state, you should create a new copy of the value and call `setState`.
+
 How can you create new values from the current one? For simple cases, you can make good use of the built-in JavaScript functions like [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) and [Array's spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
 
 For more complicated object updates, use the following libraries:
 
 * [immer](https://github.com/mweststrate/immer)
 * [microstate](https://github.com/microstates/microstates.js/)
+
+You can find more detailed discussion on different approaches in this blog: [Handling State in React: Four Immutable Approaches to Consider](https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5)
 
 ## What is the difference between state and props?
 
@@ -259,4 +273,3 @@ To find out whether a piece of data should reside in `state` or in `props`, simp
 * [Best practices for component state in React](http://brewhouse.io/blog/2015/03/24/best-practices-for-component-state-in-reactjs.html)
 * [using props to set initial state is not always an anti-pattern](https://zhenyong.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html)
 * [Why immutability is important](https://reactjs.org/tutorial/tutorial.html#why-immutability-is-important)
-
