@@ -28,6 +28,12 @@ For now, we will focus on how to maintain local state inside a component.
 * State should be considered private to the component. When we violate this principle of **encapsulation** \(e.g. another component \(e.g. Navbar\) knows about another component's state \(e.g. Article\), we will end up with tightly coupled code that is hard to \(i\) understand, \(ii\) change, \(iii\) extend. **Don't do it.**
 * State is reserved only for interactivity, that is, data that changes over time.
 
+## Regarding the `useState` React hook
+
+The following material in this section assumes you create local state in a class that extends React.Component.
+
+You might be aware that there is an experimental feature at the moment called [React Hooks](https://reactjs.org/docs/hooks-intro.html) and one of the hooks, [useState](https://reactjs.org/docs/hooks-state.html), makes state management a lot easier. We will discuss React Hooks in a separate section.
+
 ## How to initialize state of a component?
 
 ### Initialize component state in its constructor
@@ -86,7 +92,9 @@ One variation of this approach is, instead of calling `setState` directly in `co
 
 The only way to change state is by calling `this.setState()`.
 
-Never modify `this.state` object directly. We will talk about this in details below.
+Warning: never modify `this.state` object directly. We will talk about this in details below.
+
+Where can you call `setState()`? Typically in some event handlers. You can also call it in some React lifecycle methods such as `componentDidUpdate`.
 
 ### setState API
 
@@ -235,13 +243,28 @@ For example, the following code won't work (except in constructor):
 this.state.value = "new value";
 ```
 
-Why? Because React is not aware that the state is updated if you update the `state` object directly. Hence React won't re-render the component after you update the `state` object by yourself.
+Why? 
+
+First reason: because React is not aware that the state is updated if you update the `state` object directly. Hence React won't re-render the component after you update the `state` object by yourself.
 
 In contrast, when you call `setState`, React is aware of the state update and re-render the component correctly.
 
-### Don't mutate existing state object directly (i.e. you should keep state objects immutable)
+### Don't mutate existing state object
 
-Why? If you mutate a state object directly (instead of creating new objects), it does not work well with PureComponent. One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/). In the example, a parent component passes some of its state as props to a child component (which happens to be a PureComponent). If you modify the `state.items` of the parent component directly instead of creating a new `items` object, the child component could not detect the change in its `items` prop and does not re-render.
+You might ask: "can I update the state object myself and then call the setState API?", like the following case:
+
+```javascript
+
+let items = this.state.items;
+items.push(aNewItem);
+
+this.setState({items: items});
+
+```
+
+This does not work well either, when you pass the state object as props to another PureComponent or when you use the state with a React Context, which detect prop changes with `==` or `===`. With the codes above, the changes in `items` cannot be detected because the `items` object is the same object after the state update. 
+
+One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/). In the example, a parent component passes some of its state as props to a child component (which happens to be a PureComponent). If you modify the `state.items` of the parent component directly instead of creating a new `items` object, the child component could not detect the change in its `items` prop and does not re-render.
 
 Hence is generally a good practice to **avoid mutating existing state object**. If you need to update any field/value in the state, you should create a new copy of the value and call `setState`.
 
@@ -256,14 +279,18 @@ You can find more detailed discussion on different approaches in this blog: [Han
 
 Here is another [highly recommended article](https://daveceddia.com/react-redux-immutability-guide/) to help you understand:
 
-* What is Immutability?
+* What is immutability?
 * What’s a “Side Effect”?
-* Why Immutability Is Important In React
-* How Referential Equality Works in JS
-* Does const Enforce Immutability?
-* Easy State Updates with Immer 
+* Why immutability is important in React
+* How referential equality works in JS
+* Does const enforce immutability?
+* Easy state updates with immer.js
 
-You can ignore the part on Redux if you haven't learnt about it.
+You can ignore the parts on Redux if you haven't learnt about it.
+
+### Don't call setState in some React lifecycle methods like `render`
+
+There are some React lifecyle methods where you should not call `setState`. You can find more discussion in [this article](https://itnext.io/react-setstate-usage-and-gotchas-ac10b4e03d60)
 
 ## What is the difference between state and props?
 
