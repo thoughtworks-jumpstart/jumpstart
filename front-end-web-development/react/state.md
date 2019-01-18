@@ -241,11 +241,9 @@ In contrast, when you call `setState`, React is aware of the state update and re
 
 ### Don't mutate existing state object directly (i.e. you should keep state objects immutable)
 
-Why? If you mutating existing state (instead of creating new objects), it does not work well with PureComponent. One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/). In the example, a parent component passes some of its state as props to a child component (which happens to be a PureComponent). If you modify the `state.items` of the parent component directly instead of creating a new `items` object, the child component could not detect the change in its `items` prop and does not re-render.
+Why? If you mutate a state object directly (instead of creating new objects), it does not work well with PureComponent. One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/). In the example, a parent component passes some of its state as props to a child component (which happens to be a PureComponent). If you modify the `state.items` of the parent component directly instead of creating a new `items` object, the child component could not detect the change in its `items` prop and does not re-render.
 
-Hence is generally a good practice to **avoid mutating existing state object**.
-
-If you need to update any field/value in the state, you should create a new copy of the value and call `setState`.
+Hence is generally a good practice to **avoid mutating existing state object**. If you need to update any field/value in the state, you should create a new copy of the value and call `setState`.
 
 How can you create new values from the current one? For simple cases, you can make good use of the built-in JavaScript functions like [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) and [Array's spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
 
@@ -255,6 +253,17 @@ For more complicated object updates, use the following libraries:
 * [microstate](https://github.com/microstates/microstates.js/)
 
 You can find more detailed discussion on different approaches in this blog: [Handling State in React: Four Immutable Approaches to Consider](https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5)
+
+Here is another [highly recommended article](https://daveceddia.com/react-redux-immutability-guide/) to help you understand:
+
+* What is Immutability?
+* What’s a “Side Effect”?
+* Why Immutability Is Important In React
+* How Referential Equality Works in JS
+* Does const Enforce Immutability?
+* Easy State Updates with Immer 
+
+You can ignore the part on Redux if you haven't learnt about it.
 
 ## What is the difference between state and props?
 
