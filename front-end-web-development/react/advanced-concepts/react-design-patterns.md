@@ -2,9 +2,17 @@
 
 In this section we are going to cover a few design patterns that people found useful when implementing their React components.
 
-The patterns below may look different, but they all follow one common principle behind their implementation details, which is **Separation of Concerns**.
+The patterns below may look different, but they all follow one common principle behind their implementation details, which is [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). Following this principle, each React component should just focus on one thing and we can compose them to achieve our final goal. 
 
-## Presentational and Container components
+For example, there could be a React component that retrieves data from a web API and stores the data in its local state. And there could be another component that knows how to display those data. We can compose these two components into one that does both data retrieval and display. As you will see below, there are three different ways to compose the two components:
+
+- Container/Presenter pattern
+- Higher Order Component (HOC) pattern
+- Render Props pattern
+
+These topics are a bit abstract, and the best way to understand them is look at a sample use case. [This article](http://lucasmreis.github.io/blog/simple-react-patterns/) provides an excellent introduction on these three patterns. Read it before you read the (more abstract) description below. (BTW, the sample codes for the "Provider Pattern" in the article does not work anymore because React has changed its Context API since the article was written. However, the idea is still valid and you can achieve that with the latest React Context API as well.)
+
+## Container/Presenter pattern
 
 ### What is this?
 
@@ -28,7 +36,7 @@ Here are a few more good articles to help you understand the concept:
 
 A higher-order component \(HOC\) is an advanced technique in React for reusing component logic. Higher-order components are not part of the React API. They are a pattern that emerges from React’s compositional nature.
 
-A higher-order component is **a function that takes a component and returns a new component.** Whereas a component transforms props into UI, a higher-order component transforms a component into another component.
+A higher-order component is **a function that takes in a React component as input or returns a new React component as output.** Whereas a regular React component transforms props into React element, a higher-order React component transforms one React component into another React component.
 
 Note that a HOC doesn’t modify the input component, nor does it use inheritance to copy its behavior. Rather, a HOC composes the original component by wrapping it in a container component. A HOC is a pure function with zero side-effects.
 
@@ -36,7 +44,7 @@ The wrapped component receives props from the higher order component, which rece
 
 ### Example: withLoadingSpinner
 
-One use case of HOC is to add new functionality without modifying existing component. This follows the **Open Close Principal**.
+One use case of HOC is to add new functionality without modifying existing component. This follows the **Open Close Principle**.
 
 Imagine you want to display a list of items, but you have to fetch the items asynchronously first. Now you will need a loading indicator to show your pending request. After the request resolves, you show the list of items.
 
