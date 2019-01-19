@@ -64,7 +64,7 @@ class MyComponent extends Component {
 }
 ```
 
-The drawback of this approach is a new event handler function is created each time when the `render()` function is called. Again, there are some performance conern with this approach.
+The drawback of this approach is a new event handler function is created each time when the `render()` function is called. Again, there are some performance concern with this approach, when [the new event handler function is passed as props to a PureComponent](https://medium.freecodecamp.org/why-arrow-functions-and-bind-in-reacts-render-are-problematic-f1c08b060e36)
 
 ## Actually, there is yet another way
 
