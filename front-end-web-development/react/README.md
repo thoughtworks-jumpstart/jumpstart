@@ -53,3 +53,4 @@ To start with, you can follow this [official React Getting Started Guide](https:
 ## Resources
 
 * [A huge collection of useful websites related to React](https://github.com/markerikson/react-redux-links)
+* [Another awesome react collection](https://github.com/enaqx/awesome-react)
