@@ -20,6 +20,7 @@ Some introduction to the topic
 ### Recommended reading
 
 * [Unix Philosophy](https://www.reddit.com/r/programming/comments/77r0qu/i_just_stumbled_upon_the_basics_of_the_unix/)
+* [101 Bash Commands and Tips for Beginners to Experts](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je)
 * [Bash handbook](https://github.com/denysdovhan/bash-handbook)
 * [Bash guide](https://github.com/Idnan/bash-guide)
 * [https://explainshell.com](https://explainshell.com)
