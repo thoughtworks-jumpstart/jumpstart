@@ -44,7 +44,12 @@ When working with React, you will undoubtedly face new and scary jargon. An impo
 * Build on what you have learnt about Javascript \(functions, classes, ES6 syntax, static methods, modules, etc.\). Make sure you know those [Javascript fundamental](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/).
 * Build applications with React.
 
+To start with, you can follow this [official React Getting Started Guide](https://reactjs.org/docs/hello-world.html) \(Recommendation: Work through tutorial up through till 'Thinking in React'\)
+
+## Online Editors
+
+* [React sandbox](https://codesandbox.io/s/) and [Stack Blitz](https://stackblitz.com/) are useful for trying out React snippets online.
+
 ## Resources
 
-* [Official React Getting Started Guide](https://reactjs.org/docs/hello-world.html) \(Recommendation: Work through tutorial up through till 'Thinking in React'\)
-* [React sandbox](https://codesandbox.io/s/) and [Stack Blitz](https://stackblitz.com/) are useful for trying out React snippets.
+* [A huge collection of useful websites related to React](https://github.com/markerikson/react-redux-links)
