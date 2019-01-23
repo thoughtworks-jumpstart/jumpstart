@@ -43,6 +43,12 @@ Now [watch the video](https://www.youtube.com/watch?v=kCR3JAR7CHE&list=PLV5CVI1e
 
 If you like to see some examples of using react-testing-library, you can find it [here](https://github.com/kentcdodds/react-testing-library-course). The test cases can be found under "src/__tests__" folder.
 
+### Tips
+
+#### How to search an DOM element in the DOM?
+
+Besides using [the APIs provided by the dom-testing-library like `getByText`, `getByTitle` etc](https://testing-library.com/docs/api-queries), you can also use the standard [querySelector API](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector). This `querySelector` API allows you to select DOM elements with their class, ID, attribute values, etc.
+
 ### Tutorials
 
 The github page of the project also includes a few useful links with examples:
