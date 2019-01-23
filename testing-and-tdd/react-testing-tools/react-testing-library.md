@@ -16,6 +16,14 @@ For example, suppose you have a React component that is implemented as a Class s
 
 Here is a blog article with [further discussion on this topic](https://blog.kentcdodds.com/react-hooks-whats-going-to-happen-to-my-tests-df4c2b4d67b7)
 
+## How to install the library in your project
+
+```shell
+
+npm install --save-dev react-testing-library jest-dom
+
+```
+
 ## How to use it?
 
 In order to test some behavior of a React component, you typically need to follow the steps below:
@@ -26,7 +34,7 @@ In order to test some behavior of a React component, you typically need to follo
 - Interact with the element by simulating some DOM event (e.g click a button)
 - Verify the DOM tree is updated according to the DOM event (i.e. verifying the event handlers are executed properly to handle the DOM event)
 
- With these steps in mind, [read the documentation](https://github.com/kentcdodds/react-testing-library) of this react-testing-library and answer the questions:
+ With these steps in mind, [read the documentation](https://testing-library.com/docs/react-testing-library/intro) of this react-testing-library and answer the questions:
 
  - How to render a React component with the library? Which function should you use?
  - How to search an HTML element? What can you search with?
@@ -36,7 +44,7 @@ In order to test some behavior of a React component, you typically need to follo
 
 Here are some of the links you can keep as a reference:
 
-- [API for DOM testing library](https://github.com/kentcdodds/dom-testing-library)
+- [API for dom-testing-library](https://testing-library.com/docs/api-queries)
 - [Custom matchers to assert expectation on DOM elements](https://github.com/gnapse/jest-dom)
 
 Now [watch the video](https://www.youtube.com/watch?v=kCR3JAR7CHE&list=PLV5CVI1eNcJgCrPH_e6d57KRUTiDZgs0u) that the author demonstrate how to use this library.
@@ -44,6 +52,24 @@ Now [watch the video](https://www.youtube.com/watch?v=kCR3JAR7CHE&list=PLV5CVI1e
 If you like to see some examples of using react-testing-library, you can find it [here](https://github.com/kentcdodds/react-testing-library-course). The test cases can be found under "src/__tests__" folder.
 
 ### Tips
+
+#### How to configure react-testing-library in a central place?
+
+Typically you need the following two lines in every test case that uses react-testing-library:
+
+```javascript
+
+// add some helpful assertions
+import 'jest-dom/extend-expect'
+
+// this is basically: afterEach(cleanup)
+import 'react-testing-library/cleanup-after-each'
+
+```
+
+So it makes sense to put the setup logic in a central place to avoid duplication.
+
+If you create your React project with `create-react-app`, you needs to put these two lines in `src/setupTests.js`. Otherwise, refer to the [documentation](https://testing-library.com/docs/react-testing-library/setup#global-config) on how to do this.
 
 #### How to search an DOM element in the DOM?
 
