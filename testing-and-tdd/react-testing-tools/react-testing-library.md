@@ -34,7 +34,7 @@ In order to test some behavior of a React component, you typically need to follo
 - Interact with the element by simulating some DOM event (e.g click a button)
 - Verify the DOM tree is updated according to the DOM event (i.e. verifying the event handlers are executed properly to handle the DOM event)
 
- With these steps in mind, [read the documentation](https://testing-library.com/docs/react-testing-library/intro) of this react-testing-library and answer the questions:
+With these steps in mind, [read the documentation](https://testing-library.com/docs/react-testing-library/intro) of this react-testing-library and answer the questions:
 
  - How to render a React component with the library? Which function should you use?
  - How to search an HTML element? What can you search with?
