@@ -128,6 +128,7 @@
       * [react-testing-library](testing-and-tdd/react-testing-tools/react-testing-library.md)
       * [Testing asynchronous functions](testing-and-tdd/react-testing-tools/test-async-function-with-jest.md)
       * [Mocking Fetch API](testing-and-tdd/react-testing-tools/mocking-fetch.md)
+      * [Mocking React Components](testing-and-tdd/react-testing-tools/mocking-react-components.md)
       * [Snapshot Testing](testing-and-tdd/react-testing-tools/snapshot-testing.md)
       * [Enzyme](testing-and-tdd/react-testing-tools/enzyme.md)
   * [Frontend learning resources](front-end-web-development/frontend-resources.md)
