@@ -36,6 +36,11 @@ Here is a good overview of the Javascript landscape as of 2018:
 * [Eloquent Javascript](http://eloquentjavascript.net/)
 * [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 
+## Online Courses
+
+* [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/)
+* [JavaScript: Understanding the Weird Parts](https://www.udemy.com/understand-javascript/)
+
 ## References
 
 * [The Complete JavaScript Handbook](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c)
