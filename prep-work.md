@@ -28,6 +28,10 @@ If you are totally new to Javascript, here is an online course for beginners.
 
 The [tutorial on Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) is pretty good too.
 
+If you prefer to learn by watching videos, you can take this course (paid course, but it's usually under promotion for less than 20 dollars):
+
+* [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/)
+
 If you are keen to pick up a book, here is a good one:
 
 * [Learn Enough Javascript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)(the first 5 chapters)
