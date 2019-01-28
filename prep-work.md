@@ -19,6 +19,7 @@ If you are interested in improving your typing speed, try a few tutorials here:
 * [http://zty.pe/](http://zty.pe/)
 * [http://play.typeracer.com/](http://play.typeracer.com/)
 * [https://typing.io/](https://typing.io/)
+* [TypingClub](https://www.typingclub.com/)
 
 ## Javascript
 
