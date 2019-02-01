@@ -228,6 +228,12 @@ Quick challenge: write a function to reverse a string with recursion approach.
 
 You can find some [help](https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea), or [a few more examples](https://medium.freecodecamp.org/recursion-in-javascript-1608032c7a1f) on problems you can solve with recursion.
 
+## References
+
+* [First Class Function](https://en.wikipedia.org/wiki/First-class_function)
+* [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
+* [Functional programming jargons explained](https://functional.works-hub.com/learn/Functional-Programming-Jargon)
+
 ## Recommended Reading
 
 * [What is functional programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
@@ -238,17 +244,16 @@ You can find some [help](https://codeburst.io/learn-and-understand-recursion-in-
 * [Functional Programming with Javascript](https://stephen-young.me.uk/2013/01/20/functional-programming-with-javascript.html)
 * [Video: Functional Programming in Javascript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 * [Practical Functional Programming](https://www.youtube.com/watch?v=I_uIXgSmkDo&index=7&t=0s&list=WL)
+
+## Books
+
 * [Functional Light Javascript](https://github.com/getify/Functional-Light-JS)
 * [Professor Frisby's Mostly Adequate Guide to Functional Programming](https://drboolean.gitbooks.io/mostly-adequate-guide/content/)
-
-## References
-
-* [First Class Function](https://en.wikipedia.org/wiki/First-class_function)
-* [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
-* [Functional programming jargons explained](https://functional.works-hub.com/learn/Functional-Programming-Jargon)
+* [Structure and Interpretation of Computer Programs](https://sarabander.github.io/sicp/)
+* [How to Design Programs](https://www.htdp.org/)
+* [Learn You a Haskell for Great Good!](http://learnyouahaskell.com)
 
 ## Assignment
 
 * [Higher order functions](https://github.com/thoughtworks-jumpstart/higher-order-functions-exercises)
 * [More exercises on Functional Javascript](https://github.com/timoxley/functional-javascript-workshop)
-
