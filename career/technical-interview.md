@@ -104,6 +104,8 @@
 - [Frontend Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks)
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [Common Algorithms Implemented in JavaScript](https://github.com/trekhleb/javascript-algorithms)
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university)
+- [Crack the Coding Interview](http://www.crackingthecodinginterview.com/)
 
 ### Interview Preparation Courses/Websites
 
