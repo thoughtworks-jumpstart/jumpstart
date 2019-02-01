@@ -21,7 +21,7 @@ It is easy to get stuck in the 'getting started' phase \(it doesn't help that th
 * [Hacker News](https://news.ycombinator.com/) is an excellent source of technology news.
 * [Reddit Programming](https://www.reddit.com/r/programming/) is good too.
 * Subscribe to good developer blogs with [Feedly](https://feedly.com/) or Twitter
-* There are lots of [podcasts](https://simpleprogrammer.com/ultimate-list-developer-podcasts/) you can follow.
+* There are lots of podcasts[[1]](https://simpleprogrammer.com/ultimate-list-developer-podcasts/)[[2]](https://github.com/rShetty/awesome-podcasts) you can follow.
 * There are also good mailing lists like [javascript weekly](https://javascriptweekly.com/) and [react status](https://react.statuscode.com/)
 * Don't forget about [ThoughtWorks Radar](https://www.thoughtworks.com/radar)
 
