@@ -42,10 +42,6 @@ To share changes with others, you can synchronise from commits from the local re
 
 ![file status life cycle](../.gitbook/assets/git/file_status_lifecycle.png)
 
-## Exercise: Git Basics
-
-[https://github.com/thoughtworks-jumpstart/git-basics](https://github.com/thoughtworks-jumpstart/git-basics)
-
 ## Using Git
 
 ### Cloning an existing git repo to our local machine
@@ -112,9 +108,11 @@ git log
 * `git remote set-url origin <repo-url>`
 * `git push -u origin master`
 
-## Take-home assignments
+## Lab: Git Basics
 
-* Learn Git and Version Control: [https://www.katacoda.com/courses/git](https://www.katacoda.com/courses/git)
+* [Git Basics](https://github.com/thoughtworks-jumpstart/git-basics)
+* [Git Immersion](http://gitimmersion.com/)
+* [Learn Git and Version Control](https://www.katacoda.com/courses/git)
 
 ## Resources
 
@@ -122,7 +120,6 @@ git log
 * [Become a Git Guru](https://www.atlassian.com/git/tutorials)
 * [UDACITY: How to use git and github](https://eu.udacity.com/course/how-to-use-git-and-github--ud775)
 * [Version Control with Git](http://swcarpentry.github.io/git-novice/)
-* [Git Immersion](http://gitimmersion.com/)
 * [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
 * [Git Parable](http://tom.preston-werner.com/2009/05/19/the-git-parable.html)
 * [Git - the simple guide](http://rogerdudler.github.io/git-guide/)
@@ -132,6 +129,5 @@ git log
 * [Most commonly used git tips and tricks](https://github.com/git-tips/tips)
 * [Git documentation](https://git-scm.com/docs)
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
-* [Git katas](https://github.com/praqma-training/git-katas/blob/master/Overview.md)
 * [Visualizing Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/)
 

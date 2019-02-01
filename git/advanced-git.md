@@ -165,6 +165,9 @@ Force delete specified branch (to delete branch even if it has changes unmerged 
 
 - [Remove Sensitive Data from a Repository](https://help.github.com/articles/removing-sensitive-data-from-a-repository/)
 
+## Lab
+
+- [Git katas repository](https://github.com/praqma-training/git-katas/blob/master/Overview.md).
 
 ## Resources
 
