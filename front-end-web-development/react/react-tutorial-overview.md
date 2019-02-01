@@ -4,8 +4,10 @@ We will cover the basic concepts of React in the following sessions.
 
 Besides this tutorial, the following tutorials are also highly recommended:
 
-- [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
+- [Official React Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
 - [The Road to Learn React](https://roadtoreact.com/)
+- [A comprehensive introduction to React by the Director of Education at V School](https://scrimba.com/g/glearnreact)
+- [Learn React App](https://github.com/tyroprogrammer/learn-react-app)
 
 ## Resources
 

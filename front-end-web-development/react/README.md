@@ -46,6 +46,13 @@ When working with React, you will undoubtedly face new and scary jargon. An impo
 
 To start with, you can follow this [official React Getting Started Guide](https://reactjs.org/docs/hello-world.html) \(Recommendation: Work through tutorial up through till 'Thinking in React'\)
 
+## Online Courses
+
+* [The React Course](https://thereactcourse.com/) by [Flavio Copes](https://flaviocopes.com/react/)
+* [Pure React](https://daveceddia.com/pure-react/) by [Dave Ceddia](https://daveceddia.com/)
+* [Full Stack React](https://www.fullstackreact.com/) by [Tyler McGinnis](https://tylermcginnis.com/)
+* [Mastering React](https://codewithmosh.com/p/mastering-react) by [Mosh Hamedani](https://codewithmosh.com/)
+
 ## Online Editors
 
 * [React sandbox](https://codesandbox.io/s/) and [Stack Blitz](https://stackblitz.com/) are useful for trying out React snippets online.
