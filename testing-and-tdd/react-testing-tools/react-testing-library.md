@@ -75,6 +75,14 @@ If you create your React project with `create-react-app`, you needs to put these
 
 Besides using [the APIs provided by the dom-testing-library like `getByText`, `getByTitle` etc](https://testing-library.com/docs/api-queries), you can also use the standard [querySelector API](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector). This `querySelector` API allows you to select DOM elements with their class, ID, attribute values, etc.
 
+#### How to check the class names associated with one element?
+
+Often you need to write test cases to check if an HTML element has the correct CSS classes.
+
+That's easy.
+
+Once you obtain an element from the DOM tree, you can check its CSS class names by using the `className` attribute, e.g. `element.className`.
+
 ### Tutorials
 
 Testing React Workshop @ Paypal Sep 2018 by Kent C. Dodds
