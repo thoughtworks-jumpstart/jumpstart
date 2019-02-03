@@ -237,6 +237,7 @@ You can find some [help](https://codeburst.io/learn-and-understand-recursion-in-
 ## Recommended Reading
 
 * [What is functional programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
+* [Functional Programming Fundamentals](https://www.matthewgerstman.com/functional-programming-fundamentals/)
 * [List processing with map, filter and reduce](https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce)
 * [Video: Functional programming in ES6](https://www.youtube.com/watch?v=HvMemAgOw6I)
 * [Immutable Javascript using ES6 & Beyond](https://wecodetheweb.com/2016/02/12/immutable-javascript-using-es6-and-beyond/)
