@@ -47,13 +47,23 @@ Here are some of the links you can keep as a reference:
 - [API for dom-testing-library](https://testing-library.com/docs/api-queries)
 - [Custom matchers to assert expectation on DOM elements](https://github.com/gnapse/jest-dom)
 
-Now [watch the video](https://www.youtube.com/watch?v=kCR3JAR7CHE&list=PLV5CVI1eNcJgCrPH_e6d57KRUTiDZgs0u) that the author demonstrate how to use this library.
+## Tutorial
 
-If you like to see some examples of using react-testing-library, you can find it [here](https://github.com/kentcdodds/react-testing-library-course). The test cases can be found under "src/__tests__" folder.
+Now follow [this tutorial](https://medium.com/flatiron-labs/creating-readable-tests-using-react-testing-library-2bd03c49c284) to implement a React component following TDD approach with react-testing-library.
 
-### Tips
+### More tutorials
 
-#### How to configure react-testing-library in a central place?
+Testing React Workshop @ Paypal Sep 2018 by Kent C. Dodds
+
+- [Video Part 1](https://www.youtube.com/watch?v=w6KCDFssHFA) 
+- [Video Part 2](https://www.youtube.com/watch?v=OP2c0gs369U)
+- [Code examples](https://github.com/kentcdodds/react-testing-library-course/tree/workshop-2018-09)
+- [The author demonstrates how to use this library](https://www.youtube.com/watch?v=kCR3JAR7CHE&list=PLV5CVI1eNcJgCrPH_e6d57KRUTiDZgs0u). If you like to see some examples of using react-testing-library, you can find it [here](https://github.com/kentcdodds/react-testing-library-course). The test cases can be found under "src/__tests__" folder.
+- [A collection of tutorials](https://testing-library.com/docs/learning)
+
+## Tips
+
+### How to configure react-testing-library in a central place?
 
 Typically you need the following two lines in every test case that uses react-testing-library:
 
@@ -71,26 +81,17 @@ So it makes sense to put the setup logic in a central place to avoid duplication
 
 If you create your React project with `create-react-app`, you needs to put these two lines in `src/setupTests.js`. Otherwise, refer to the [documentation](https://testing-library.com/docs/react-testing-library/setup#global-config) on how to do this.
 
-#### How to search an DOM element in the DOM?
+### How to search an DOM element in the DOM?
 
 Besides using [the APIs provided by the dom-testing-library like `getByText`, `getByTitle` etc](https://testing-library.com/docs/api-queries), you can also use the standard [querySelector API](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector). This `querySelector` API allows you to select DOM elements with their class, ID, attribute values, etc.
 
-#### How to check the class names associated with one element?
+### How to check the class names associated with one element?
 
 Often you need to write test cases to check if an HTML element has the correct CSS classes.
 
 That's easy.
 
 Once you obtain an element from the DOM tree, you can check its CSS class names by using the `className` attribute, e.g. `element.className`.
-
-### Tutorials
-
-Testing React Workshop @ Paypal Sep 2018 by Kent C. Dodds
-
-- [Video Part 1](https://www.youtube.com/watch?v=w6KCDFssHFA) 
-- [Video Part 2](https://www.youtube.com/watch?v=OP2c0gs369U)
-- [Code examples](https://github.com/kentcdodds/react-testing-library-course/tree/workshop-2018-09)
-- [A collection of tutorials](https://testing-library.com/docs/learning)
 
 ## Comparing with Enzyme
 
