@@ -96,6 +96,8 @@ Testing React Workshop @ Paypal Sep 2018 by Kent C. Dodds
 
 Enzyme is another popular library for testing React components. However, it exposes some API that encourages you to depend on implementation details. Here is a blog article shows you [why you should avoid using those APIs such as `shallow` rendering](https://blog.kentcdodds.com/why-i-never-use-shallow-rendering-c08851a68bb7). If you have to use Enzyme in your project, be aware of those bad practices!!!
 
+Here is [a tutorial](https://medium.com/flatiron-labs/refactoring-an-enzyme-component-test-to-use-react-testing-library-f5c36da6716f) that shows how to migrate some tests from Enzyme to React-Testing-Library.
+
 ## Lab
 
 ### Lab 1
