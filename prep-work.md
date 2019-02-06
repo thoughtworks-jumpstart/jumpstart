@@ -55,6 +55,10 @@ If you finish the tutorial above and still need more, you can try the following 
 * [Learn Enough CSS & Layout to Be Dangerous](https://www.learnenough.com/css-and-layout-tutorial)
 * [MDN: Getting started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
 
+Don't try to memorize the CSS properties. You can always find them in a reference:
+
+* [CSS reference](https://cssreference.io/)
+
 ## Text Editors
 
 During the course, we will set up [VS Code](https://code.visualstudio.com/) as our editor. If you're having trouble setting it up on your own, you can use the following online code editors:
