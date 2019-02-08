@@ -24,11 +24,19 @@ Open a new shell terminal/Git Bash window, and type `code -v`. If your shell com
 
 ![add vs code to path](../.gitbook/assets/add_vscode_to_path.png)
 
-After that, if you are in Mac terminal or Git Bash and you would like to view all the files in the current working directory with VS Code, you just need to type command 
+After that, if you are in Mac terminal or Git Bash and you would like to view all the files in the current working directory with VS Code, you just need to type the following command 
 
-`code .`
+```shell
+code .
+```
 
-#### VS Code extensions
+### Enable function keys by default in MacBook Pro with touch bar
+
+If you are using a MacBookPro with touch bar (instead of function keys), you should configure the touch bar to display function keys by default when you open VS Code.
+
+Following the [steps in this article](https://johnpapa.net/fntouchbar/) to enable the configuration.
+
+### VS Code extensions
 
 We have found the following VS Code extensions to be useful in improving our productivity. If you come across any other useful VS Code extensions, do share it with the class!
 
