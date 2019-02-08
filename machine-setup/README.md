@@ -13,24 +13,36 @@ We'll be using **Visual Studio Code** as our text editor of choice. You can down
 
 ### Opening VS Code from your terminal / Git Bash
 
-Open a new shell terminal/Git Bash window, and type `code -v`. If your shell complains that code command is not found, do the following: 1. Open VS Code 2. Open command palette \(Windows: `Ctrl + Alt + P`, Mac: `Cmd + Shift + P`\) 3. Type in: 'Shell' 4. Select 'Shell Command: Install 'code' command in PATH ![](../.gitbook/assets/add_vscode_to_path.png)
+Open a new shell terminal/Git Bash window, and type `code -v`. If your shell complains that code command is not found, do the following: 
+
+1. Start VS Code 
+2. Press F1 key. This will open a command palette window.
+3. Type in the prompt: 'Shell' 
+4. Select 'Shell Command: Install 'code' command in PATH 
+
+![add vs code to path](../.gitbook/assets/add_vscode_to_path.png)
 
 #### VS Code extensions
 
 We have found the following VS Code extensions to be useful in improving our productivity. If you come across any other useful VS Code extensions, do share it with the class!
 
-Open up VS Code, and open the command palette \(Mac: `Cmd`+`Shift`+`p`; Windows: `Ctrl`+`Shift`+`P` or `F1`. Enter 'Install extensions'. Search for and install the following extensions one by one
+1. Start VS Code, 
+2. Open the command palette \(Mac: `Cmd`+`Shift`+`P`; Windows: `Ctrl`+`Shift`+`P` or just press `F1`. 
+3. Enter 'Install extensions'. 
+4. Search for and install the following extensions one by one
 
 * Javascript
-  * ESLint
-  * Prettier
-    * Use the one made by Esben Petersen
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). This extension helps to check problems in your JavaScript codes.
+  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). This extension helps to format your JavaScript codes.
 * HTML
-  * Auto Rename Tag
-  * Live Server
-* working with files/directories
-  * advanced-new-file
-  * Path Intellisense
+  * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag). This extension makes it easy to rename HTML element tags.
+  * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag). This extension automatically insert the other half of HTML tags.
+  * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). This extension runs a HTTP server on your machine to view your HTML files.
+  * [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview). This extension embed a Chrome browser inside your code editor so that you can edit your HTML/JavaScript/CSS file and view the changes without leaving VS Code.
+* Other Utilities
+  * [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file). This extension makes it easier to create new files in your project directory.
+  * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense). This extension helps to autocomplete file path.
+  * [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). This is a powerful extension to work with git.
 
 ### Slack
 
