@@ -27,7 +27,7 @@ How do you know which zone you are in?
 
 Besides avoiding panic zone, another way to make your learning experience more enjoyable is to learn one thing at a time. If you try to pick up 3 new skills in one go, you might get lost or feel like in a panic zone.
 
-## Learn 20% of the skills to solve 80% of the problems
+## Learn 20% of the most important concepts in a new domain to solve 80% of the problems
 
 You don't need to be an expert in some domain before you can solve problems. Actually, as some cool guy found out, you can learn the basics pretty quickly [in just 20 hours](https://first20hours.com/).
 
@@ -63,7 +63,7 @@ If you truly want to master a skill, you need to do [deliberate practice](https:
 
 ![coding kata](.gitbook/assets/kata.jpg)
 
-For programmers, a good format of practice is called [coding katas](http://codekata.com/) where you keep practicing basic moves so they become your [muscle memory](https://en.wikipedia.org/wiki/Muscle_memory). For those who can type your keyboard without looking at it, you know what I mean. Using coding katas, you can get familiar with language syntax and common APIs so that you are more productive when you solve real problems.
+For programmers, a good format of practice is called [coding kata](http://codekata.com/) where you keep practicing basic moves so they become your [muscle memory](https://en.wikipedia.org/wiki/Muscle_memory). For those who can type your keyboard without looking at it, you know what I mean. Using coding katas, you can get familiar with language syntax and common APIs so that you are more productive when you solve real problems.
 
 Another form of deliberate practice is called improvement kata, which helps you to focus on one area for improvement and design activities to achieve your goal.
 
@@ -107,7 +107,7 @@ There is also a famous book named [How to Read a Book](https://www.amazon.com/Ho
   - what the return value is
 - pause when confused
 
-## Don't be afad of making mistakes. Embrace failures.
+## Don't be afraid of making mistakes. Embrace failures.
 
 There are two types of failures. There are the failures that are good for us that we can learn from. But there are failures that aren’t good for us. This second type of failure doesn’t produce any learning: it keeps us from learning in the first place, or it shuts down our learning in mid-experience.
 
