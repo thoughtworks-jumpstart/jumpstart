@@ -13,13 +13,13 @@ One of the most important things we impart at JumpStart is effective learning. W
 
 ## Stay in your learning zone
 
-Keep learning new skills. Staying in your learning zone. Expending your comfortable zone. Be aware when you are in panic zone (and avoid it!)
+Keep learning new skills. Staying in your learning zone. Expending your comfort zone. Be aware when you are in panic zone (and avoid it!)
 
 ![learning zone](.gitbook/assets/learning_zone.png)
 
 How do you know which zone you are in?
 
-- If there is nothing new for you. Then you are in your comfortable zone.
+- If there is nothing new for you. Then you are in your comfort zone.
 - If there is something you haven't heard about before, and you can relate it to something you already know, then you are in your learning zone.
 - If there is something new, and you cannot relate it to anything you already know, as a result, you cannot understand this new concept at all. In this case, you are in your panic zone.
 
@@ -31,7 +31,7 @@ Besides avoiding panic zone, another way to make your learning experience more e
 
 You don't need to be an expert in some domain before you can solve problems. Actually, as some cool guy found out, you can learn the basics pretty quickly [in just 20 hours](https://first20hours.com/).
 
-After that, you build your comfortable zone and you can keep expanding it.
+After that, you build your comfort zone and you can keep expanding it.
 
 ## You need to use the knowledge you learnt
 
