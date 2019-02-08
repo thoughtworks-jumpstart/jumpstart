@@ -9,15 +9,17 @@ If you don't know how to open a CMD or PowerShell with admin privilege, checkout
 
 ## Chocolatey \(package manager\)
 
+`Chololatey` is a package manager on windows that helps to install other software packages.
+
 Following the instructions at the page below. Note that you need to run the installation commands on a PowerShell \(or CMD window\) with administrator privilege.
 
 [https://chocolatey.org/install](https://chocolatey.org/install)
 
-## Git Bash
+## Git for Windows
 
-This will install 2 things `git` \(a source code management tool\) and `bash` \(a unix command line tool\)
+After that, we need to install 2 things `git` \(a source code management tool\) and `bash` \(a unix command line tool\).
 
-[https://gitforwindows.org/](https://gitforwindows.org/)
+For this purpose, we need to install [Git for windows](https://gitforwindows.org/). It provides git installation on windows, and an emulation of [bash shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 
 ### Configuring Git
 
@@ -57,16 +59,22 @@ For more details, see [https://chocolatey.org/packages/nodejs](https://chocolate
 
 Alternatively, you can also download nodejs and npm from [https://nodejs.org/en/](https://nodejs.org/en/)
 
+### (Optional) Node Version Manager
+
+The instructions above will install the latest version of node on your computer. If you need to use an older version of node for some reason (e.g. you are working on a project with older version of node), then you can use this tool called [nvm-windows](https://github.com/coreybutler/nvm-windows) to install specific version of node on your computer.
+
+Read the instructions of the tool to learn how to use it.
+
 ## VS Code Configurations
 
 ### Integrate VS Code with Bash Terminal
 
-You can open a terminal within VS Code by typing `ctrl + ~`, and that's very handy sometimes. You can set this up by doing the following:
+By default VS Code runs the `cmd` command on windows when you try to open a terminal window. Since the Git for windows comes with a bash shell (called `Git Bash`), you can configure your VS Code to launch a `bash` terminal window instead:
 
-* Open command palette \(Hit `F1`\)
+* Open command palette \(Press `F1`\)
 * Type 'Select default shell' and click on the suggestion that says 'Terminal: Select default shell'
 * Select Git Bash
-* Open terminal in VS Code \(Hit Ctrl + \`\)
+* Open terminal in VS Code \(Press Ctrl + \`\)
 * If it says 'bash', you're done! If it says otherwise, click on the trash bin icon and repeat the previous step
 
 ### Configure VS Code to use LF as end-of-line character

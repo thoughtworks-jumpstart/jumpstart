@@ -118,6 +118,20 @@ To finish up your installation, run this command to allow for global installatio
 sudo chown -R $USER /usr/local/lib
 ```
 
+### (Optional) Node Version Manager
+
+The instructions above will install the latest version of node on your computer. If you need to use an older version of node for some reason (e.g. you are working on a project with older version of node), then you can use this tool called [nvm](https://github.com/creationix/nvm) to install specific version of node on your computer.
+
+Read the instructions of the tool to learn how to use it.
+
+## VS Code Configurations
+
+### Enable function keys by default in MacBook Pro with touch bar
+
+If you are using a MacBookPro with touch bar (instead of function keys), you should configure the touch bar to display function keys by default when you open VS Code.
+
+Following the [steps in this article](https://johnpapa.net/fntouchbar/) to enable the configuration.
+
 ## Chrome Browser
 
 We will need the developer tools come with Google Chrome browser.

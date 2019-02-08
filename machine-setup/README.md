@@ -11,11 +11,9 @@ Note: During this session, if you see any errors saying the program is already i
 
 We'll be using **Visual Studio Code** as our text editor of choice. You can download it from here: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-### Opening VS Code from your terminal / Git Bash
+### Opening VS Code from your terminal
 
 We often need to open VS Code to view all files in a directory. To do that, you need to add VS Code program to the `PATH` environment variable of your account.
-
-Open a new shell terminal/Git Bash window, and type `code -v`. If your shell complains that code command is not found, do the following: 
 
 1. Start VS Code 
 2. Press F1 key. This will open a command palette window.
@@ -24,17 +22,11 @@ Open a new shell terminal/Git Bash window, and type `code -v`. If your shell com
 
 ![add vs code to path](../.gitbook/assets/add_vscode_to_path.png)
 
-After that, if you are in Mac terminal or Git Bash and you would like to view all the files in the current working directory with VS Code, you just need to type the following command 
+After that, if you are in Mac terminal or Windows cmd prompt and you would like to view all the files in the current working directory with VS Code, you just need to type the following command
 
 ```shell
 code .
 ```
-
-### Enable function keys by default in MacBook Pro with touch bar
-
-If you are using a MacBookPro with touch bar (instead of function keys), you should configure the touch bar to display function keys by default when you open VS Code.
-
-Following the [steps in this article](https://johnpapa.net/fntouchbar/) to enable the configuration.
 
 ### VS Code extensions
 
