@@ -13,6 +13,8 @@ We'll be using **Visual Studio Code** as our text editor of choice. You can down
 
 ### Opening VS Code from your terminal / Git Bash
 
+We often need to open VS Code to view all files in a directory. To do that, you need to add VS Code program to the `PATH` environment variable of your account.
+
 Open a new shell terminal/Git Bash window, and type `code -v`. If your shell complains that code command is not found, do the following: 
 
 1. Start VS Code 
@@ -21,6 +23,10 @@ Open a new shell terminal/Git Bash window, and type `code -v`. If your shell com
 4. Select 'Shell Command: Install 'code' command in PATH 
 
 ![add vs code to path](../.gitbook/assets/add_vscode_to_path.png)
+
+After that, if you are in Mac terminal or Git Bash and you would like to view all the files in the current working directory with VS Code, you just need to type command 
+
+`code .`
 
 #### VS Code extensions
 
