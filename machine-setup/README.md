@@ -18,7 +18,7 @@ We often need to open VS Code to view all files in a directory. To do that, you 
 1. Start VS Code 
 2. Press F1 key. This will open a command palette window.
 3. Type in the prompt: 'Shell' 
-4. Select 'Shell Command: Install 'code' command in PATH 
+4. Select 'Shell Command: Install 'code' command in PATH. If you don't see this option in the command list, that means your VS Code is already added to the PATH environment variable, and you can go ahead to verify it.
 
 ![add vs code to path](../.gitbook/assets/add_vscode_to_path.png)
 
