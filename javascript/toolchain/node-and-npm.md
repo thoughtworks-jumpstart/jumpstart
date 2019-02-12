@@ -44,11 +44,6 @@ You can also try to install it via the [Node Version Manager](https://github.com
 
 Tip: To test that you've got Node.js correctly installed on your computer, open a new terminal and type `node --help` and you should see the usage documentation.
 
-## The command-line tools for NodeJS
-
-* node
-* npm
-
 ## Executing JavaScript with `node`
 
 ```bash
