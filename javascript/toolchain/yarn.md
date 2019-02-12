@@ -2,11 +2,13 @@
 
 Besides `npm`, there is another widely used node package manager called [`yarn`](https://yarnpkg.com/en/).
 
-Both of them are roughly equal in functionality \(because `npm` is good at playing catch-up\), but `yarn` is better in the following ways:
+Both of them are roughly equal in functionality. Initially, people choose `yarn` because it was better in the following ways:
 
 * Speed. Yarn caches every package it downloads so it never needs to download it again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.
 * Security. Yarn uses checksums to verify the integrity of every installed package before its code is executed.
 * Version locking. Using a detailed, but concise, lockfile format, and a deterministic algorithm for installs, Yarn is able to guarantee that an install that worked on one system will work exactly the same way on any other system. No more 'works on my machine' problems!
+
+Recently, `npm` has already caught up and there is no clear advantage of using `yarn` anymore. However, we still cover it here for your awareness.
 
 ## Learning checklist
 
