@@ -56,7 +56,13 @@ node app.js
 
 [https://docs.npmjs.com/getting-started/what-is-npm](https://docs.npmjs.com/getting-started/what-is-npm)
 
-### What do we use it for?
+### NPM registry
+
+[NPM registry](https://www.npmjs.com/) is the place where JavaScript libraries can be published and downloaded.
+
+* [How to manage a node module with npm](https://github.com/workshopper/how-to-npm)
+
+### What can we do with the `npm` tool 
 
 * Packaging our node modules into libraries and share them with others
 * Reuse libraries built by other people
@@ -166,11 +172,6 @@ Note:
 * don't modify `package-lock.json` file manually, run `npm update` to update the dependencies
 * commit `package-lock.json` file into your code repository so that everyone in your team use the same version of libraries as specified in the `package-lock.json` file \(when they run `npm install` command\)
 
-### NPM registry
-
-[NPM registry](https://www.npmjs.com/) is the place where JavaScript libraries can be published and downloaded.
-
-* [How to manage a node module with npm](https://github.com/workshopper/how-to-npm)
 
 ## Lab
 
