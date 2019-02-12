@@ -118,7 +118,7 @@ feedPet(); // ReferenceError: animalToFeed is not defined
   * no need for [IIFE \(immediately invoked function expression\)](https://stackoverflow.com/questions/8228281/what-is-the-function-construct-in-javascript) to limit the scope of variables
   * avoid silent undefined values \(which `var` allows because of variable hoisting\). 
 
-### Digging deeper into why `let` and `const` &gt; `var`
+### Digging deeper
 
 `let` and `const` fixes 4 problems which we encounter when using `var`:
 
