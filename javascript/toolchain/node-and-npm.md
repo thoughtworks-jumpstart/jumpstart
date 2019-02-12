@@ -172,14 +172,21 @@ Note:
 * don't modify `package-lock.json` file manually, run `npm update` to update the dependencies
 * commit `package-lock.json` file into your code repository so that everyone in your team use the same version of libraries as specified in the `package-lock.json` file \(when they run `npm install` command\)
 
-
 ## Lab
 
-Let's try the npm package that we installed!
+* Initialize a new project 
+
+```shell
+npm init
+```
+
+* Install a node package called [cows](https://www.npmjs.com/package/cows)
+
+```shell
+npm install cows
+```
 
 * create a file \(`main.js`\) and paste the code snippets below
-* Open the terminal in VS Code: `Ctrl` + \`
-* Run this file: `node main.js`
 
 ```javascript
 const cows = require("cows");
@@ -188,6 +195,9 @@ cow = cows()[0]; // try different array indexes (e.g. 1, 2, 3)
 
 console.log(cow);
 ```
+
+* Open the terminal in VS Code: `Ctrl` + \`
+* Run this file: `node main.js`
 
 ## Resources
 
