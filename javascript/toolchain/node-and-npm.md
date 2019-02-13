@@ -60,6 +60,8 @@ node app.js
 
 [NPM registry](https://www.npmjs.com/) is the place where JavaScript libraries can be published and downloaded.
 
+Anyone can package their JavaScript applications into libraries and publish them on npm registry. The following tutorial shows you how to do it.
+
 * [How to manage a node module with npm](https://github.com/workshopper/how-to-npm)
 
 ### What can we do with the `npm` tool 
