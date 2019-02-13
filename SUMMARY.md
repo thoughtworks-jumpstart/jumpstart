@@ -110,6 +110,7 @@
       * [Forms](front-end-web-development/react/forms.md)
       * [Lab 1: List all restaurants from restaurant service](front-end-web-development/react/menu-app-labs/lab1.md)
       * [Lab 2: Filter restaurants by cuisine](front-end-web-development/react/menu-app-labs/lab2.md)
+      * [Lab 3: Add a dropdown to sort restaurants by name or price](front-end-web-development/react/menu-app-labs/lab3.md)
     * [Beyond Basics](front-end-web-development/react/beyond-basics/README.md)
       * [Ideas and principles behind React](front-end-web-development/react/beyond-basics/react-core-ideas.md)
       * [Props Type Checking](front-end-web-development/react/advanced-concepts/type-checking.md)
