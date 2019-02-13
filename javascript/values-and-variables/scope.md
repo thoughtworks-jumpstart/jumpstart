@@ -25,6 +25,11 @@ Scope look-up stops once it finds the first match. The same identifier name can 
 
 What we've described here is known as **lexical scoping**. Lexical scope means that scope is defined by author-time decisions of where functions are declared. The **lexing** phase of compilation is essentially able to know where and how all identifiers are declared, and thus predict how they will be looked-up during execution. Hence the name - lexical scope.
 
+Another example is illustrated in the picture below:
+
+![lexical scope](../../.gitbook/assets/lexical-scope.jpg)
+(image source: https://www.java-success.com/q1-q5-javascript-interview-qa-on-variable-scopes-context/)
+
 ## `this` does not follow the lexical scope rule (except in arrow functions)
 
 Unfortunately, when you try to deduce the meaning of `this` in JavaScript, you cannot follow this lexical scope rule except when this appear in arrow functions. 
