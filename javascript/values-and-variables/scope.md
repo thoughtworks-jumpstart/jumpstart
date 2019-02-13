@@ -28,6 +28,7 @@ What we've described here is known as **lexical scoping**. Lexical scope means t
 Another example is illustrated in the picture below:
 
 ![lexical scope](../../.gitbook/assets/lexical-scope.jpg)
+
 (image source: https://www.java-success.com/q1-q5-javascript-interview-qa-on-variable-scopes-context/)
 
 ## `this` does not follow the lexical scope rule (except in arrow functions)
