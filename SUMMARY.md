@@ -109,6 +109,7 @@
       * [Importing CSS, other components and data](front-end-web-development/react/importing-css-other-components-and-data.md)
       * [Forms](front-end-web-development/react/forms.md)
       * [Lab 1: List all restaurants from restaurant service](front-end-web-development/react/menu-app-labs/lab1.md)
+      * [Lab 2: Filter restaurants by cuisine](front-end-web-development/react/menu-app-labs/lab2.md)
     * [Beyond Basics](front-end-web-development/react/beyond-basics/README.md)
       * [Ideas and principles behind React](front-end-web-development/react/beyond-basics/react-core-ideas.md)
       * [Props Type Checking](front-end-web-development/react/advanced-concepts/type-checking.md)
