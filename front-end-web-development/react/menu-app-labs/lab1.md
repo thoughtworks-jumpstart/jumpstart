@@ -22,7 +22,7 @@ git branch
 ## Expected Output
 This screenshot is a sample of the expected output after the page has loaded
 
-![expected output](../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab1-output.png)
+![expected output](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab1-output.png)
 
 
 ## Hints
