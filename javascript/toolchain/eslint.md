@@ -111,6 +111,7 @@ There is a VS Code configuration to automatically format the file upon save.
 
 ```json
 "editor.formatOnSave": true
+"editor.formatOnPaste": true
 "prettier.eslintIntegration": true
 ```
 
