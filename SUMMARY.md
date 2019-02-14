@@ -108,7 +108,6 @@
       * [Passing parameters to event handlers](front-end-web-development/react/passing-parameters-to-event-handlers.md)
     * [Your first React application](front-end-web-development/react/your-first-react-application.md)
       * [Importing CSS, other components and data](front-end-web-development/react/importing-css-other-components-and-data.md)
-      * [Forms](front-end-web-development/react/forms.md)
       * [Lab 1: List all restaurants from restaurant service](front-end-web-development/react/menu-app-labs/lab1.md)
       * [Lab 2: Filter restaurants by cuisine](front-end-web-development/react/menu-app-labs/lab2.md)
       * [Lab 3: Add a dropdown to sort restaurants by name or price](front-end-web-development/react/menu-app-labs/lab3.md)

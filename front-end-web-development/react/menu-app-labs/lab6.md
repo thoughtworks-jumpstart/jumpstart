@@ -34,13 +34,13 @@ This screenshot is a sample of the expected output
 
 ![Create new restaurant form](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-2.png)
 
-![Select options in the cuisine field](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-3.png)
+![Options in the cuisine select field](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-3.png)
 
 ![Restaurant table now contains the newly created restaurant](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-4.png)
 
 ## Hints
 
-- Use the [bootstrap form group](https://getbootstrap.com/docs/4.1/components/forms/#overview) style for the form
+- Use the [bootstrap form-group](https://getbootstrap.com/docs/4.1/components/forms/#overview) style for the form
 
 ## Discussion
 
