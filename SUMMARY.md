@@ -113,6 +113,7 @@
       * [Lab 2: Filter restaurants by cuisine](front-end-web-development/react/menu-app-labs/lab2.md)
       * [Lab 3: Add a dropdown to sort restaurants by name or price](front-end-web-development/react/menu-app-labs/lab3.md)
       * [Lab 4: Add a navbar and link to pages Admin and Orders](front-end-web-development/react/menu-app-labs/lab4.md)
+      * [Lab 5: Add a table to list restaurants in the Admin page](front-end-web-development/react/menu-app-labs/lab5.md)
     * [Beyond Basics](front-end-web-development/react/beyond-basics/README.md)
       * [Ideas and principles behind React](front-end-web-development/react/beyond-basics/react-core-ideas.md)
       * [Props Type Checking](front-end-web-development/react/advanced-concepts/type-checking.md)
