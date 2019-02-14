@@ -39,9 +39,7 @@ Install the 'Debugger for Chrome' VS Code extension \(if you do not not already 
 
 0. The footer status bar at VSCode will turn from blue to red to inform you that your debugger is currently running. 
 
-0. Next Go to your project and set a breakpoint in one of your route handlers. Example:
-
-![](../.gitbook/assets/react_breakpoint.png)
+0. Next Go to your project and set a breakpoint in one of your route handlers.
 
 0. Start up insomnia and trigger a request to the route handler which you have set the breakpoint in. The debugger in VS code will stop the request at the line where you have set the breakpoint.
 
