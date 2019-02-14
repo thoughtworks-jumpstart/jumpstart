@@ -115,6 +115,7 @@
       * [Lab 5: Add a table to list and delete restaurants in the Admin page](front-end-web-development/react/menu-app-labs/lab5.md)
       * [Forms](front-end-web-development/react/forms.md)
       * [Lab 6: Add feature to create a new restaurant in the Admin page](front-end-web-development/react/menu-app-labs/lab6.md)
+      * [Lab 7: Add feature to edit existing restaurants in the Admin page](front-end-web-development/react/menu-app-labs/lab7.md)
     * [Beyond Basics](front-end-web-development/react/beyond-basics/README.md)
       * [Ideas and principles behind React](front-end-web-development/react/beyond-basics/react-core-ideas.md)
       * [Props Type Checking](front-end-web-development/react/advanced-concepts/type-checking.md)
