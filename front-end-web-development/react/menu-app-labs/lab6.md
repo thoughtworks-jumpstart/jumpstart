@@ -4,7 +4,7 @@ In this lab you are required to create a `Create New` button in the Admin page
 
 0. When the Admin clicks on this button the page will navigate to a form to add a new restaurant
 1. After form is filled, and the `Save` button is clicked, the page will navigate back to the restaurant table
-2. The new restaurant should now be in the list
+1. The new restaurant should now be in the list
 
 ## Feature details
 
@@ -16,15 +16,20 @@ git checkout lab6
 git branch
 ```
 
+- Create an `Create New` button and place it on the top right hand side below the NavBar
+- Link the `Create New` button to the Restaurant form page with the route `restaurants/new`
+- Create route in App.js for `restaurants/new` and render the RestaurantForm
 - Create a RestaurantForm react component
-
   - in src/components/RestaurantForm/RestaurantForm.jsx
   - this component will contain all the form fields required for a new restaurant
-    - use a Select field for Cuisine attribute
-    - use Text fields for all other attributes
+  - Place the heading `Restaurant Form` in this component
+- Ensure that the button navigates to the form when you click on it
+- Add the form fields to the RestaurantForm
+  - use a Select field for Cuisine attribute
+  - use Text fields for all other attributes
   - and will have `Save` button at the bottom
-  - in the form handler you can call `saveRestaurant()` from RestaurantService to save the new restaurant
-  - Note: you are not required to do form validation at this stage. Assume that all input will be valid data.
+- in the form handler you can call `saveRestaurant()` from RestaurantService to save the new restaurant
+- Note: you are not required to do form validation at this stage. Assume that all input will be valid data.
 
 ## Expected Output
 

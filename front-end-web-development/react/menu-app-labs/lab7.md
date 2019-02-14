@@ -19,7 +19,7 @@ git branch
 ### Step 1: Link the Edit button to the RestaurantForm
 
 - Create an `Edit` button and place it before the `Delete` button in the restaurants table
-- Link the `Edit` button to the Restaurant form page to the route `restaurants/:id`
+- Link the `Edit` button to the Restaurant form page with the route `restaurants/:id`
 - Create route in App.js for `restaurants/:id` and render the RestaurantForm
 - Ensure that when you click on the Edit button it is linked to the Form page
 
