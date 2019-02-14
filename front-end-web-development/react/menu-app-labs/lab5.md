@@ -1,4 +1,4 @@
-# Lab 5: Add a table to list restaurants in the Admin page
+# Lab 5: Add a table to list and delete restaurants in the Admin page
 
 In this lab you are required to create a table in the Admin page listing all restaurants
 
