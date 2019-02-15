@@ -32,10 +32,10 @@ const htmlFragment = `
 
 ```javascript
 const people = ['tom', 'bob', 'joe']
-const htmlFragment = `
-    ${people.map( person => `
-        <li>this is ${person}</li>
-    `)}
-`
-```
 
+const htmlFragment = `${people.map( 
+          person => `
+            <li>this is ${person}</li>
+          `
+          )}`
+```
