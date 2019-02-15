@@ -40,7 +40,7 @@ git branch
     - in src/components/common/Input/Input.jsx
     - this component will render a text input or number input
   - Create a SelectInput component
-    - in src/components/common/Input/Input.jsx
+    - in src/components/common/SelectInput/SelectInput.jsx
     - this component will render a select input
 
 ## Step 5:
