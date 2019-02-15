@@ -60,7 +60,7 @@ The **command line** is a program that enables us to send commands to the comput
   * Ctrl + D - exit terminal
   * up / down - scroll through previous commands
 * Distinguish between absolute and relative paths
-* RTFM \(Read the friendly manual\)
+* RTFM \(Read the friendly manual\). Note: man pages are only available on Mac and Linux. For windows, you can use TLDR (mentioned below)
   * `man <command>`, or
   * `<command> --help`/`<command> -h`
   * to exit the `man` page, hit `q`
