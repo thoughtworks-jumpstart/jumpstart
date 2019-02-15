@@ -1,6 +1,6 @@
 # Spread operators
 
-## spread operator - `...`
+## spread operator with arrays
 
 The spread operator `...` allows us to spread the contents of any iterable \(e.g. arrays and objects\). It can be conveniently used for joining arrays or inserting elements into arrays
 
@@ -21,6 +21,27 @@ for (p of gentlePets) {
 ```
 
 Here are [more examples](https://davidwalsh.name/spread-operator) of using spread operator.
+
+## spread operator with objects
+
+You can also use spread operator on objects. In the example below, the spread operator is used to get all the fields of one object, before they are merged into a new object.
+
+```javascript
+
+const defaultConfiguration = {
+  displayTab: true,
+  displayMenu: true,
+  displaySideBar: true
+}
+
+const myEditorConfiguration = {
+  ...defaultConfiguration,
+  displaySideBar: false
+}
+
+console.log(myEditorConfiguration);
+
+```
 
 ## Resources:
 
