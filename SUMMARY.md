@@ -34,6 +34,7 @@
     * [Javascript object](javascript/basics/javascript-object.md)
     * [JavaScript array](javascript/basics/javascript-array.md)
     * [Javascript loop](javascript/basics/javascript-loop.md)
+    * [Javascript errors](javascript/basics/javascript-error.md)
   * [JavaScript in Depth](javascript/in-depth/README.md)
     * [What is ES6?](javascript/what-is-es6.md)
     * [Variable and Scope](javascript/values-and-variables/README.md)
