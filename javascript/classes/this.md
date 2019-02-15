@@ -139,5 +139,6 @@ More examples of using bind/apply/call is given in the next section.
 ## Resources
 
 - [Understanding this](http://javascript.info/object-methods)
+- [this All Makes Sense Now!](https://maximdenisov.gitbooks.io/you-don-t-know-js/content/this_&_object_prototypes/this_all_makes_sense_now.html)
 - [What is 'this' in Javascript](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
 - [Understand JavaScript’s “this” With Clarity, and Master It](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/) 
