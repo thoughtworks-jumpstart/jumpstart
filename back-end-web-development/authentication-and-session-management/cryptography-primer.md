@@ -101,3 +101,4 @@ Blockchain is a [distributed ledger](https://medium.com/@vijay.betigiri/blockcha
 - [Crypto101](https://www.crypto101.io)
 - [Harvard CS127](https://www.boazbarak.org/cs127/)
 - [Blockchain Technology Overview](https://nvlpubs.nist.gov/nistpubs/ir/2018/NIST.IR.8202.pdf)
+- [Public Key Infrastructure for busy people](https://rehn.me/posts/pki-for-busy-people.html)
