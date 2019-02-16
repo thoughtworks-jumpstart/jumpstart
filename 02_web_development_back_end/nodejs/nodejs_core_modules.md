@@ -118,3 +118,4 @@ function replyWithIndexHtml(filepath, err, request, response) {
 ## Resources
 
 - [A node.js guide for frontend developers](https://blog.bloomca.me/2018/06/21/nodejs-guide-for-frontend-developers.html)
+- [Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
