@@ -17,6 +17,8 @@ Some of the features introduced in ES6 include:
 * rest and spread operator
 * ES6 module system
 
+Here is [the complete list of featured added since 2015](https://medium.freecodecamp.org/es5-to-esnext-heres-every-feature-added-to-javascript-since-2015-d0c255e13c6e)
+
 ## Resources
 
 * [https://github.com/DrkSephy/es6-cheatsheet](https://github.com/DrkSephy/es6-cheatsheet)
