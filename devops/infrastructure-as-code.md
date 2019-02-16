@@ -6,6 +6,10 @@ Source: Infrastructure as Code \(Kief Morris\)
 
 "Infrastructure as code" is the idea of creating/managing infrastructure declaratively using code. Writing it in code has many benefits, which we will describe below. Like many powerful ideas in software development, it consists of a set of principles, practices and tools.
 
+Here are some good reading materials to help you understand this concept:
+
+- [Infrastructure as Code, Part One](https://crate.io/a/infrastructure-as-code-part-one/)
+
 ## Why Infrastructure as Code?
 
 Challenges with Dynamic Infrastructure
