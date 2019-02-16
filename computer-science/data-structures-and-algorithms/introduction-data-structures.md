@@ -132,6 +132,7 @@ This data structure can be used in [version control systems like Git](http://eri
 * [EggHead: Data Structures and Algorithms in JavaScript](https://egghead.io/courses/data-structures-and-algorithms-in-javascript)
 * [Computer science in JavaScript: Linked list](https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/)
 * [Another Tutorial for Beginners](https://adrianmejia.com/categories/programming/data-structures-and-algorithms-dsa/)
+* [Data Structures for Coding Interviews](https://www.interviewcake.com/article/java/data-structures-coding-interview)
 
 ### Books
 
