@@ -35,6 +35,10 @@ try {
 }
 ```
 
+## Recommended Readings
+
+- [Will it finally: a try/catch quiz](https://frontarm.com/james-k-nelson/will-finally-run-quiz/)
+
 ## Reference
 
 - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
