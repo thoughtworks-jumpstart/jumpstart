@@ -27,7 +27,7 @@ Let's start by looking at the basic concepts.
 
 ![event loop](../../.gitbook/assets/event-loop.svg)
 
-* **Call Stack**: Everytime a function is executed, a stack of frames \(i.e. other function calls\) is added, and as the frames finish execution, they are removed from the stack
+* **Call Stack**: Every time when a function is executed, a new execution context is added to a stack. When one execution context finishes execution, it is removed from the stack.
   * What’s a stack? A stack is an array-like data structure but it can only add items to the back and only remove the last item. In short, it's Last In First Out \(LIFO\), like a stack of plates
 * **Heap**: This is part of computer memory allocated to store Javascript objects.
 * **Event Table**: The event table contains a key-value mapping between **events** and the corresponding **event handler** \(which is a **callback function**\).  Every time an event is emitted \(e.g. click\), it is checked against the event table. If the event is in the table, the event handler is added to the message queue. If there is no listener, the event is lost.
