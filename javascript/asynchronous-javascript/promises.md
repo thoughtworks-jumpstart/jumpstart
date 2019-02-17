@@ -140,7 +140,9 @@ Note that this Promise constructor calls the executor function right away \(befo
 
 Now let's see how one can handle the outcome of a promise.
 
-Once an instance of Promise is created, it can be observed and you can register your interests on the outcome via the `then` API.
+#### Register your action plan with `then` and `catch` function
+
+Once you get hold of an instance of Promise, you can register your interests on the outcome via the `then` function available on the promise object.
 
 ```javascript
 const onFulfilled = ({restaurant, flower}) => {...}
@@ -160,7 +162,7 @@ Although the `then` function can take in the `onRejected` event handler, sometim
 dinnerPromise.then(onFulfilled).catch(onRejected);
 ```
 
-### API calls on a Promise can be chained
+#### Calls on Promise API can be chained
 
 You may notice that in the code example above the calls on the promise instance are chained. We call `catch` function on the object returned from the `then` function. Why can we do it this way?
 
@@ -169,11 +171,11 @@ That's because all methods supported by this promise object returns another prom
 - If it finds a proper handler for the `fulfill` or `reject` event, it return a new promise which eventually resolves to the return value of the handler.
 - If it does not find a proper handler for the `fulfill` or `reject` event \(e.g. when a promise is rejected and a call to `then` function does not supply `onRejected` callback\), the method would return the original promise.
 
-### Treating a Promise as a gift box
+#### Treating a Promise as a gift box
 
-OK, this sounds pretty abstract, even after you have seen the codes itself. I have another mental model for you.
+OK, this sounds pretty abstract. I have another mental model for you.
 
-If you receive Promise object, you can think a promise as a gift box. It's wrapped nicely, and you don't know what's inside. All you can see is there are two LED lights on the surface:
+If you receive Promise object, you can think of a promise as a gift box. It's wrapped nicely, and you don't know what's inside. All you can see is there are two LED lights on the surface:
 
 - A green LED light
 - A red LED light
@@ -195,17 +197,19 @@ What the picture above shows are:
 - When you call a `then` or `catch` method on a Promise, the function returns a new instance of Promise object (i.e. a new gift box is created).
 - On the newly created gift box, there are also two LED lights, a green one and a red one.
 
-The green LED light of the second gift box would flash under one of the two conditions:
+The green LED light of the second gift box would flash under one of the three conditions:
 
-1. If the green LED light of the first gift box flashes, and the `onFulfilled` handler run to completion with no problem, or
-2. If the red LED light of the first gift box flashes, and the `onRejected` handler run to completion with no problem.
+1. If the green LED light of the first gift box flashes, and there is no `onFulfilled` handler in the second gift box, or
+2. If the green LED light of the first gift box flashes, and the `onFulfilled` handler run to completion with no problem, or
+3. If the red LED light of the first gift box flashes, and the `onRejected` handler run to completion with no problem.
 
 You might wonder why the successful running of the `onRejected` handler lead to the green LED light of the second gift box to flash. Remember, the purpose of the `onRejected` handler is to handle the error and bring the system back to normal state. After the erratic behavior is detected and corrected by the `onRejected` handler, the error is fixed and the green LED light of the second box should flash.
 
-The red LED light of the new box would flash under one of the two conditions:
+The red LED light of the new box would flash under one of the three conditions:
 
 1. If the green LED light of the first gift box flashes, and the `onFulfilled` handler throws error during execution, or
-2. If the red LED light of the first gift box flashes, and the `onRejected` handler throws error during execution.
+2. If the red LED light of the first gift box flashes, and there is no `onRejected` handler in the second gift box, or
+3. If the red LED light of the first gift box flashes, and the `onRejected` handler throws error during execution.
 
 Could the `onFulfilled` and `onRejected` handle throw error? Yes!
 
