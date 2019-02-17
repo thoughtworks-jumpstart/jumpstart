@@ -10,7 +10,11 @@ In its most basic terms, a promise is an object that defines a method called `th
 
 Before we discuss Promise in more details, I would like you to see how it's used.
 
-In the example below, there are three asynchronous tasks, and each task depends on the previous task (i.e. the output of one task becomes the input of the next task.)
+In the example below, we implement some logic to handle user logins to a server side application. In this login process, there are three asynchronous tasks, and each task depends on the previous task (i.e. the output of one task becomes the input of the next task.)
+
+- A user login with user name and password.
+- We search the database to get more information about this user.
+- We update the user's profile information and save it back to the database.
 
 ![asynchronous tasks in a chain](../../.gitbook/assets/async-task.png)
 
