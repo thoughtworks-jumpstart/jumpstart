@@ -343,14 +343,16 @@ Many operations in Javascript are asynchronous - for example: fetching data via 
 
 In this example, we will use the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) provided by the browsers to fetch some data from a web service. The web service returns real time car park status information in Singapore.
 
-Firstly visit [https://carparks-sg.herokuapp.com/api](https://carparks-sg.herokuapp.com/api) on your browser to see what the HTTP request should return.
+The API we are going to call [display random pictures of dogs](https://dog.ceo/dog-api/)
 
-Then look at this piece of code below, what do you think the value of `result` will be? Is it the list of available car park slots?
+Firstly visit [https://dog.ceo/api/breeds/image/random](https://dog.ceo/api/breeds/image/random) on your browser to see what the HTTP request should return.
+
+Then look at this piece of code below, what do you think the value of `result` will be? Is it a JSON string containing the dog image URL?
 
 Run this in the Chrome Developer console. Did the console output match your expectation?
 
 ```javascript
-const result = fetch("https://carparks-sg.herokuapp.com/api");
+const result = fetch("https://dog.ceo/api/breeds/image/random");
 console.log(result);
 ```
 
@@ -363,7 +365,7 @@ How can we retrieve data out of this [Response object](https://developer.mozilla
 Let's try to call the `.json` method on the response object.
 
 ```javascript
-fetch("https://carparks-sg.herokuapp.com/api").then(response =>
+fetch("https://dog.ceo/api/breeds/image/random").then(response =>
   console.log(response.json())
 );
 ```
@@ -373,7 +375,7 @@ Hmm...if you look at the console log, the value returned from the `json()` metho
 OK, now we know that we need to chain the promise call together, like the codes below:
 
 ```javascript
-fetch("https://carparks-sg.herokuapp.com/api")
+fetch("https://dog.ceo/api/breeds/image/random")
   .then(response => response.json())
   .then(json => console.log(JSON.stringify(json)));
 ```
