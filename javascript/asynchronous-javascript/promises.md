@@ -226,7 +226,7 @@ Now you have a new gift box, you can pass it on to your friend, and similarly, t
 
 ![gift box chaining](../../.gitbook/assets/promise-gift-box-chaining-2.png)
 
-### Promise Chaining Example
+#### Promise Chaining Example
 
 Let's look at another Promise chaining example using ES6 Promise API.
 
@@ -272,7 +272,7 @@ In this synchronous version, you call multiple functions and each function use t
 
 The asynchronous version using the Promises achieves the same effect, except that they are using callbacks and not blocking.
 
-### Throwing errors from onFulfilled or onRejected handlers
+#### Throwing errors from onFulfilled or onRejected handlers
 
 If you ever call `throw error` yourself in the onFulfilled or onRejected handlers, or those handlers call some other function that throws errors, the call to `then` or `catch` would return a new promise that is rejected with the error received by the handler.
 
@@ -297,7 +297,7 @@ The first call to `then` function above would return a promise that is rejected 
 
 Note that this error is not thrown out of the `getUserSkills` function at all. It's handled by generating a console log. Then the error handler didn't return anything, so the caller of `getUserSkills` would get a Promise that's resolved to `undefined`.
 
-### onFulfilled or onRejected handlers are always executed asynchronously
+#### onFulfilled or onRejected handlers are always executed asynchronously
 
 When an the Promise implementation needs to invoke a onFulfilled or onRejected handler, it will always execute the handler in the next tick, i.e. it will do something like
 
@@ -308,6 +308,32 @@ setTimeout(handler, 0);
 That means those handlers supplied to `then` or `catch` call \(in the example above\) would NOT be called in the same call stack as then `then` or `catch` function.
 
 Why? Because The ECMA 2015 spec declares that promises must not fire their resolution/rejection function on the same turn of the event loop that they are created on. This is very important because it eliminates the possibility of execution order varying and resulting in indeterminate outcomes.
+
+In the example above, when `getUserSkills` function is executed (and the `then`/`catch` functions are executed), the `then`/`catch` function basically just register the event handlers in the event table, and return immediately. Later on, when an event handler needs to be executed (because the corresponding Promise is resolved/rejected), it will be put into the Event Queue and wait for its turn to run. When an event handler is executed by the JavaScript engine, it's already in a different call stack (i.e. different from the call stack where `getUserSkills` function runs).
+
+Why do you need to understand this?
+
+With this knowledge, you can understand why you cannot use a `try...catch` block inside the `getUserSkills` function to handle the error thrown from the `onFulfilled` or `onRejected` handlers.
+
+e.g. the codes below does not work, because when the error is thrown from the event handler, the `getUserSkills` function has already finishes its execution and is removed from the call stack.
+
+```javascript
+function getUserSkills(userId) {
+  try {
+    return users
+      .get(userId)
+      .then(user => {
+        throw new Error("Cannot find meta data for user", JSON.stringify(user));
+      })
+      .then(userMetaData => {
+        console.log(`Got metadata for user ${JSON.stringify(userMetaData)}`);
+        return userMetaData.skills;
+      });
+  } catch (error) {
+    console.log("Cannot find meta data for user..", error);
+  }
+}
+```
 
 ## A Use Case Study
 
