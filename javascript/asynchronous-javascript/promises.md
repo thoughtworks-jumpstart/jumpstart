@@ -335,6 +335,13 @@ function getUserSkills(userId) {
 }
 ```
 
+### Helper functions in Promise API
+
+There are some handy utility functions on Promise API. You should check them out:
+
+- [Promise.resolve()](http://javascript.info/promise-api#promise-resolve)
+- [Promise.all()](http://javascript.info/promise-api#promise-all)
+
 ## A Use Case Study
 
 Now, let's try some code with Promise API.
