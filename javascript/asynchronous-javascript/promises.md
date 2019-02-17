@@ -116,17 +116,25 @@ const dinnerPromise = new Promise(function(fulfill, reject) {
 });
 ```
 
-Note that this Promise constructor takes in one callback function \(called **executor**\). The executor function basically does some **asynchronous task**, and invoke either `fulfill` or `reject` based on the result of that asynchronous task.
+#### How is the promise resolved/rejected?
 
-What is this `fulfill` and `reject` parameter? Those two are callbacks supplied by the Promise constructor implementation. When one of those callbacks is called, the promise is changed from `pending` state to either `fulfilled` state, or `rejected` state.
+Note that this Promise constructor takes in one callback function \(called **executor**\), which takes in two arguments: `fulfill` and `reject`.
 
-Since these two callbacks are supplied by the Promise library, you don't need to implement these two functions, your job is to call them at a proper time!
+The executor function basically does some **asynchronous task**, and invoke either `fulfill` or `reject` based on the success/failure of that asynchronous task. When one of those callbacks is called, the promise is changed from `pending` state to either `fulfilled` state, or `rejected` state. If there are any error thrown from the executor function, the promise is also rejected automatically.
+
+#### What is this `fulfill` and `reject` parameter? 
+
+Those two parameters are callbacks supplied by the Promise library. If you are interested, you can have a look at the source codes of Promise constructor to see how it creates the `fulfill`/`reject` callback and supplies it to the `executor` function.
+
+Since these two callbacks are supplied by the Promise library, you don't need to implement these two functions, your job is to implement the `executor` function and call `fulfill`/`reject` at a proper time!
+
+#### Passing additional information when Promise is resolved/rejected
 
 Note that we can pass some parameters to the `fulfill` callback. Those parameters would be available to those who subscribe to the success resolution event of the promise. We can also pass the error to the `reject` callback, which is then available to those who subscribe to the error notification of the promise.
 
-Note that this Promise constructor calls the executor function right away \(before the Promise constructor function returns\). So typically you should not call any blocking API inside the executor function implementation. Otherwise, the Promise constructor call would be blocked.
+#### The executor function should not take long to finish
 
-At last, if there are any error thrown from the executor function, the promise is also rejected automatically.
+Note that this Promise constructor calls the executor function right away \(before the Promise constructor function returns\). So typically you should not call any blocking API inside the executor function implementation. Otherwise, the Promise constructor call would be blocked.
 
 ### Observe the outcome of Promise
 
