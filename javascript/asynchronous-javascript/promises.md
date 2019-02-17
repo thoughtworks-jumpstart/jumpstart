@@ -91,7 +91,7 @@ It also worths highlighting that there are two parties/roles in this story:
 - One party that creates a promise and finally decides when to resolve the promise, and if the promise should be fulfilled or rejected.
 - The other party that receives the promise can register their action plans and wait to be notified on the outcome. The recipient/observer of a promise have no influence on whether the promise is fulfilled or rejected, nor can they decide when the promise would be resolved.
 
-Let's write some codes using the promise API in ES6 to represent the example above.
+Let's write some codes using the promise API in ES6 to represent the example above. The sample codes below can be found in this [repository](https://github.com/thoughtworks-jumpstart/asynchronous-javascript-by-example)
 
 We will first learn:
 
