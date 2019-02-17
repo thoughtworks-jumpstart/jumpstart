@@ -17,9 +17,9 @@ console.log(data);
 
 Writing code in this kind of **synchronous** style is very common \(you have already written some code like this in the past!\), but if your code needs to be executed by Javascript engine, it's generally a bad behavior and we should avoid it. Most of the time, the tasks in the event queue should be finished quickly, and if a task needs to take sometime \(e.g. reading a file from hard disk\), the task should be executed **asynchronously**.
 
-What does it mean by running a task asynchronously? Let's look at one example:
+What does it mean by running a task asynchronously? What's the benefit of running tasks in this way? Let's look at one example:
 
-> Analogy: Ordering food at a restaurant. You go to your favorite fast food restaurant and you get in line. Once it’s your turn, your server takes your order. Your server delegate the order to the kitchen and gives you a waiting number, so that they can call you back when your burger is ready. This is an extremely efficient model because the server can quickly process many orders. Compare this with another approach, whereas the server takes your order, wait for it to be prepared while other customers wait in line, and finally move to the next person in line once your burger is ready. Most of the time, the server is just waiting and doing nothing, while he/she could have served the next person in line.
+> Analogy: Ordering food at a restaurant. You go to your favorite fast food restaurant and you get in line. Once it’s your turn, your waiter takes your order. Your waiter delegates the order to the kitchen and gives you a waiting number, so that they can serve you later when your burger is ready. This is an extremely efficient model because the waiter can quickly process many orders from different customers. Compare this with another approach, whereas the waiter takes your order, wait for it to be prepared while other customers wait in line, and finally move to the next person in line once your burger is ready. Most of the time, the waiter is just waiting and doing nothing, while he/she could have served the next person in line.
 
 This asynchronous execution process can be illustrated with the picture below:
 
