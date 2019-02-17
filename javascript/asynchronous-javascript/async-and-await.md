@@ -88,7 +88,7 @@ async function getUserSkills(userId) {
 
 In this case, if the promise returned by `users.get(userId)` or `users.getMetaDataFor(user)` is rejected, `await` will translate that into normal Error that you can `catch` hand handle.
 
-### Understanding `await` using the Gift Box model
+## Understanding `await` using the Gift Box model
 
 The gift box model we introduced in the last section can also help us to understand the effect of `await` on a Promise object.
 
