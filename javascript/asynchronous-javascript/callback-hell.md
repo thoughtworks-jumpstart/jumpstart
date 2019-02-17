@@ -18,7 +18,7 @@ fs.readFile('/foo.txt', function(err, data) {
 
 If we write code in this style, then the event loop thread would not be blocked until the data is ready. This is the secret why a single thread can handle so many different tasks concurrently.
 
-## Handle Errors with Callbacks
+## Handle errors with callbacks
 
 You probably noticed the event handler also takes in another argument called `err`, what is this thing?
 
@@ -92,13 +92,13 @@ fs.readdir(source, function (err, files) {
 
 Needless to say, this kind of codes are hard to read and maintain. What can we do about it?
 
-### Refactoring Codes to Avoid Nested Structure
+### Refactoring codes to avoid nested structure
 
 One of the choices is to refactor your code to extract the callbacks into separate functions so that you can avoid defining functions within other functions. That helps to keep your code indentation levels low.
 
 Some examples can be found on [this website](http://callbackhell.com/)
 
-### Use Other Javascript features \(Promises, Async/Await\)
+### Use other Javascript features \(Promises, Async/Await\)
 
 Because of the problems introduced by callbacks, Javascript has introduced other syntax to help you write asynchronous codes. We will cover two of them in the next sections:
 
