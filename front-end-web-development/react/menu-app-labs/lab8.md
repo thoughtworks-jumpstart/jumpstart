@@ -31,14 +31,14 @@ We will be using `joi-browser` in this lab as React is a frontend framework and 
 - checkout to the lab 8 branch
 
 ```
-git checkout lab8
-git branch
+  git checkout lab8
+  git branch
 ```
 
 ### Step 1: Install Joi-browser
 
 ```
-npm install joi-browser
+  npm install joi-browser
 ```
 
 ### Step 2: Create the Schema

@@ -12,8 +12,8 @@ In this lab you are required to create an `Edit` button which allows the Admin t
 - checkout to the lab 7 branch
 
 ```
-git checkout lab7
-git branch
+  git checkout lab7
+  git branch
 ```
 
 ### Step 1: Link the Edit button to the RestaurantForm

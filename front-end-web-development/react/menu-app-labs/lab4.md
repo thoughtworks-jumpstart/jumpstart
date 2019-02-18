@@ -7,9 +7,14 @@ This lab is to apply your knowledge of react router in a typical use case.
 - checkout to the lab 4 branch
 
 ```
-git checkout lab4
-git branch
+  git checkout lab4
+  git branch
 ``` 
+
+- You are required to install the react dependancy required for routing
+```
+  npm install react-router-dom
+```
 
 - In this lab you are required to create a NavBar linking to 3 pages:
   - Home page
@@ -47,8 +52,12 @@ These screenshots are a sample of the expected output
 - Use the [bootstrap navbar](https://getbootstrap.com/docs/4.1/components/navbar/#nav) style  
 - To get the icon for the FoodApp brand, install fontawesome 
 ```
-npm install @fortawesome/fontawesome-free"
+  npm install @fortawesome/fontawesome-free"
 ```  
 
 ## Discussion
 - After the lab we will discuss the sample answer and how to test the feature with react-testing-library
+- To simulate browsing history in the test we will need to install another library
+```
+  npm install history
+```

@@ -31,7 +31,18 @@ This screenshot is a sample of the expected output after the page has loaded
 
 - The style is for the Restaurant component is a [bootstrap card](https://getbootstrap.com/docs/4.1/components/card/)
 - you can access the restaurant data from RestaurantService `getRestaurants()`
+- You can optionally install node-sass for using scss stylesheets
+```
+  npm install node-sass
+```
 
 ## Discussion
 
 - After the lab we will discuss the sample answer and how to test the feature with react-testing-library
+- To test React components in our project, we need to install test libraries:
+```
+  npm install react-testing-library
+  npm install jest-dom
+```
+- Note: It is not required to install jest as `create-react-app` already installs jest by default. And installing a different version on top of that can affect app stability
+

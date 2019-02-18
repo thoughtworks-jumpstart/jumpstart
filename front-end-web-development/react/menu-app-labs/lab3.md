@@ -6,8 +6,8 @@
 - Navigate to the menu-app project directory on your computer
 - checkout to the lab 3 branch
 ```
-git checkout lab3
-git branch
+  git checkout lab3
+  git branch
 ``` 
 
 - Create a SortBySelect component

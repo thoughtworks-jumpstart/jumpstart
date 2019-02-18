@@ -8,8 +8,8 @@ In this lab you are required to create a table in the Admin page listing all res
 - checkout to the lab 5 branch
 
 ```
-git checkout lab5
-git branch
+  git checkout lab5
+  git branch
 ```
 
 - Create a RestaurantTable react component

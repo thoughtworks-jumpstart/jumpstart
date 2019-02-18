@@ -12,8 +12,8 @@ In this lab you are required to create a `Create New` button in the Admin page
 - checkout to the lab 6 branch
 
 ```
-git checkout lab6
-git branch
+  git checkout lab6
+  git branch
 ```
 
 ## Step 1:
@@ -73,10 +73,13 @@ This screenshot is a sample of the expected output
 - checkout to the lab 6 demo branch
 
 ```
-git checkout lab6-demo
-git branch
+  git checkout lab6-demo
+  git branch
 ```
-- We will first install this dependancy `simple-react-timefield library`
+- We will first install the library 
+```
+npm install simple-react-timefield
+```
 - Next we will create a new component `TimeInput` which will use this library to create an input that only allows the user to input a valid time
 - In the last part we will use the TimeInput in the RestaurantForm
 

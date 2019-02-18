@@ -6,8 +6,8 @@
 - Navigate to the menu-app project directory on your computer
 - checkout to the lab 2 branch
 ```
-git checkout lab2
-git branch
+  git checkout lab2
+  git branch
 ``` 
 
 - Create a FilterBar component
