@@ -66,5 +66,17 @@ This screenshot is a sample of the expected output
 
 ## Discussion
 
-- After the lab we will discuss the sample answer and how to test the feature with react-testing-library
-- How to make use of third party library `simple-react-timefield library` to improve the handling of time input (to not allow entering of invalid time) by creating a TimeInput
+- Lastly we will discuss the sample answer and how to test the feature with react-testing-library
+
+# Demo
+- After the lab we will have a code-along of how to make use of a third party library `simple-react-timefield library` to improve the handling of time input (to not allow entering of invalid time) 
+- checkout to the lab 6 demo branch
+
+```
+git checkout lab6-demo
+git branch
+```
+- We will first install this dependancy `simple-react-timefield library`
+- Next we will create a new component `TimeInput` which will use this library to create an input that only allows the user to input a valid time
+- In the last part we will use the TimeInput in the RestaurantForm
+
