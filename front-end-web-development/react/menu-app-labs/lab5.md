@@ -4,7 +4,7 @@ In this lab you are required to create a table in the Admin page listing all res
 
 ## Feature details
 
-- Navigate to the menu-app project directory on your computer
+- Navigate to the food-app project directory on your computer
 - checkout to the lab 5 branch
 
 ```
@@ -24,29 +24,32 @@ In this lab you are required to create a table in the Admin page listing all res
 
 This screenshot is a sample of the expected output
 
-![Restaurant table in the admin page](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab5-output-1.png)
+![Restaurant table in the admin page](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab5-output-1.png)
 
 ## Hints
 
 - Use the [bootstrap table](https://getbootstrap.com/docs/4.1/content/tables/#examples) style
 
 ## Solution
+
 - After you have completed Lab 5, please commit all your work to the `lab5` branch
 
-- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution
 
 - [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
 
 - Next checkout to the solution branch and we will now walk through the sample solution
+
 ```text
 git checkout lab6
-``` 
+```
 
-- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab5` branch 
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab5` branch
 
 - The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
 
 - When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
 
 ## Testing
+
 - Next we will discuss how to test the feature with react-testing-library

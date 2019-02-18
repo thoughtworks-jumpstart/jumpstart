@@ -36,7 +36,7 @@ git branch
 
 This screenshot is a sample of the expected output after the page has loaded
 
-![Restaurants listing](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab1-output.png)
+![Restaurants listing](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab1-output.png)
 
 ## Hints
 

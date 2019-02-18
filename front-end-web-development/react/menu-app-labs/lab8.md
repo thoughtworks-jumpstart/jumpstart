@@ -27,7 +27,7 @@ We will be using `joi-browser` in this lab as React is a frontend framework and 
 
 ## Feature details
 
-- Navigate to the menu-app project directory on your computer
+- Navigate to the food-app project directory on your computer
 - checkout to the lab 8 branch
 
 ```
@@ -83,9 +83,9 @@ Create the Joi schema for the below restaurant attributes
 
 This screenshot is a sample of the expected output
 
-![Save button is disabled if there are no inputs or if there are any error inputs](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab8-output-1.png)
+![Save button is disabled if there are no inputs or if there are any error inputs](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab8-output-1.png)
 
-![Error message on text field if there is an invalid input](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab8-output-2.png)
+![Error message on text field if there is an invalid input](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab8-output-2.png)
 
 ## Hints
 
@@ -93,22 +93,25 @@ This screenshot is a sample of the expected output
 - The style for the alert message can be found at [bootstrap alerts](https://getbootstrap.com/docs/4.1/components/alerts/)
 
 ## Solution
+
 - After you have completed Lab 8, please commit all your work to the `lab8` branch
 
-- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution
 
 - [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
 
 - Next checkout to the solution branch and we will now walk through the sample solution
+
 ```text
 git checkout master
-``` 
+```
 
-- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab8` branch 
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab8` branch
 
 - The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
 
 - When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
 
 ## Testing
+
 - Next we will discuss how to test the feature with react-testing-library

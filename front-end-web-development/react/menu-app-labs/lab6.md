@@ -8,7 +8,7 @@ In this lab you are required to create a `Create New` button in the Admin page
 
 ## Feature details
 
-- Navigate to the menu-app project directory on your computer
+- Navigate to the food-app project directory on your computer
 - checkout to the lab 6 branch
 
 ```
@@ -17,11 +17,13 @@ In this lab you are required to create a `Create New` button in the Admin page
 ```
 
 ## Step 1:
+
 - Create an `Create New` button and place it on the top right hand side below the NavBar
 - Link the `Create New` button to the Restaurant form page with the route `restaurants/new`
 - Create route in App.js for `restaurants/new` and render the RestaurantForm
 
 ## Step 2:
+
 - Create a RestaurantForm react component
   - in src/components/RestaurantForm/RestaurantForm.jsx
   - this component will contain all the form fields required for a new restaurant
@@ -29,12 +31,14 @@ In this lab you are required to create a `Create New` button in the Admin page
 - Ensure that the button navigates to the form when you click on it
 
 ## Step 3:
+
 - Add the form fields to the RestaurantForm
   - use a Select field for Cuisine attribute
   - use Text fields for all other attributes
   - and will have `Save` button at the bottom
 
 ## Step 4:
+
 - In order to avoid too complex a `render()` in RestaurantForm we need to extract the form fields to different components
   - Create a Input react component
     - in src/components/common/Input/Input.jsx
@@ -44,6 +48,7 @@ In this lab you are required to create a `Create New` button in the Admin page
     - this component will render a select input
 
 ## Step 5:
+
 - Create a form submit handler and link it to the `Save` button
 - in the form handler you can call `saveRestaurant()` from RestaurantService to save the new restaurant
 - Note: you are not required to do form validation at this stage. Assume that all input will be valid data.
@@ -52,51 +57,57 @@ In this lab you are required to create a `Create New` button in the Admin page
 
 This screenshot is a sample of the expected output
 
-![Create New restaurant button on the Admin page](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-1.png)
+![Create New restaurant button on the Admin page](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab6-output-1.png)
 
-![Create new restaurant form](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-2.png)
+![Create new restaurant form](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab6-output-2.png)
 
-![Options in the cuisine select field](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-3.png)
+![Options in the cuisine select field](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab6-output-3.png)
 
-![Restaurant table now contains the newly created restaurant](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab6-output-4.png)
+![Restaurant table now contains the newly created restaurant](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab6-output-4.png)
 
 ## Hints
 
 - Use the [bootstrap form-group](https://getbootstrap.com/docs/4.1/components/forms/#overview) style for the form
 
 ## Solution
+
 - After you have completed Lab 6, please commit all your work to the `lab6` branch
 
-- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution
 
 - [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
 
 - Next checkout to the solution branch and we will now walk through the sample solution
+
 ```text
 git checkout lab6-demo
-``` 
+```
 
-- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab6` branch 
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab6` branch
 
 - The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
 
 - When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
 
 ## Testing
+
 - Next we will discuss how to test the feature with react-testing-library
 
 # Demo
-- After the lab we will have a code-along of how to make use of a third party library `simple-react-timefield library` to improve the handling of time input (to not allow entering of invalid time) 
+
+- After the lab we will have a code-along of how to make use of a third party library `simple-react-timefield library` to improve the handling of time input (to not allow entering of invalid time)
 - checkout to the lab 6 demo branch
 
 ```
   git checkout lab6-demo
   git branch
 ```
-- We will first install the library 
+
+- We will first install the library
+
 ```
 npm install simple-react-timefield
 ```
+
 - Next we will create a new component `TimeInput` which will use this library to create an input that only allows the user to input a valid time
 - In the last part we will use the TimeInput in the RestaurantForm
-

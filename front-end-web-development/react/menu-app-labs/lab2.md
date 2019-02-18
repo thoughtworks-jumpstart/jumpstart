@@ -3,7 +3,7 @@
 ## Feature details
 - In this lab you are required to build a FilterBar that can modify the displayed restaurants when the user selects a cuisine
 
-- Navigate to the menu-app project directory on your computer
+- Navigate to the food-app project directory on your computer
 - checkout to the lab 2 branch
 ```
   git checkout lab2
@@ -29,9 +29,9 @@
 ## Expected Output
 This screenshot is a sample of the expected output
 
-![FilterBar upon page load](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab2-output-1.png)
+![FilterBar upon page load](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab2-output-1.png)
 
-![Restaurant listing after the Japanese category is selected](../../../.gitbook/assets/front-end-web-development/react/menu-app-labs/lab2-output-2.png)
+![Restaurant listing after the Japanese category is selected](../../../.gitbook/assets/front-end-web-development/react/food-app-labs/lab2-output-2.png)
 
 
 ## Hints
