@@ -1,13 +1,24 @@
 # Lab 1: List all restaurants from restaurant service
 
+## Fork Lab Repository (One time only)
+0. Ensure you are logged in to your github webpage 
+0. Navigate to the lab directory at [https://github.com/thoughtworks-jumpstart/food-app.git](https://github.com/thoughtworks-jumpstart/food-app.git)
+0. Click on the Fork button on the top right, and wait for the repo to be copied to your github account
+0. After it has completed, click on "Clone or Download" button and copy the URL 
+0. On the terminal on your computer clone the repository 
+```
+  git clone https://github.com/enter-your-account-here/food-app.git
+```
+
 ## Feature details
 
 - In this lab you are required to render a list of 10 restaurants upon page load
 
-- Navigate to the menu-app project directory on your computer
+- Navigate to the food-app project directory on your computer
 - checkout to the lab 1 branch
 
 ```
+cd food-app
 git checkout lab1
 git branch
 ```
@@ -36,13 +47,31 @@ This screenshot is a sample of the expected output after the page has loaded
   npm install node-sass
 ```
 
-## Discussion
+## Solution
+- After you have completed Lab 1, please commit all your work to the `lab1` branch
 
-- After the lab we will discuss the sample answer and how to test the feature with react-testing-library
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+
+- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+
+- Next checkout to the solution branch and we will now walk through the sample solution
+```text
+git checkout lab2
+``` 
+
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab1` branch 
+
+- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+
+- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
+
+## Testing
+
+- Next we will discuss how to test the feature with react-testing-library
 - To test React components in our project, we need to install test libraries:
 ```
   npm install react-testing-library
   npm install jest-dom
 ```
-- Note: It is not required to install jest as `create-react-app` already installs jest by default. And installing a different version on top of that can affect app stability
+- Note: It is not required to install jest as `create-react-app` already installs jest by default. And installing a different version on top of that can affect starting the app
 

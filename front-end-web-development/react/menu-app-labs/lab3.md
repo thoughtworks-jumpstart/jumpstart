@@ -37,5 +37,23 @@ These screenshots are a sample of the expected output
 - Use the HTML [Select tag](https://www.w3schools.com/tags/tag_select.asp) to create the dropdown 
 - You can use the style `btn btn-primary` for the select component 
 
-## Discussion
-- After the lab we will discuss the sample answer and how to test the feature with react-testing-library
+## Solution
+- After you have completed Lab 3, please commit all your work to the `lab3` branch
+
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+
+- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+
+- Next checkout to the solution branch and we will now walk through the sample solution
+```text
+git checkout lab4
+``` 
+
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab3` branch 
+
+- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+
+- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
+
+## Testing
+- Next we will discuss how to test the feature with react-testing-library

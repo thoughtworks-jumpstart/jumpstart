@@ -55,8 +55,26 @@ These screenshots are a sample of the expected output
   npm install @fortawesome/fontawesome-free"
 ```  
 
-## Discussion
-- After the lab we will discuss the sample answer and how to test the feature with react-testing-library
+## Solution
+- After you have completed Lab 4, please commit all your work to the `lab4` branch
+
+- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+
+- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+
+- Next checkout to the solution branch and we will now walk through the sample solution
+```text
+git checkout lab5
+``` 
+
+- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `lab4` branch 
+
+- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+
+- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
+
+## Testing
+- Next we will discuss how to test the feature with react-testing-library
 - To simulate browsing history in the test we will need to install another library
 ```
   npm install history
