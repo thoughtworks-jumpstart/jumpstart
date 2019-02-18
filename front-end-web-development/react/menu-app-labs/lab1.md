@@ -29,7 +29,7 @@ This screenshot is a sample of the expected output after the page has loaded
 
 ## Hints
 
-- The style is for the Restaurant component is a [bootstrap card](https://getbootstrap.com/docs/4.0/components/card/)
+- The style is for the Restaurant component is a [bootstrap card](https://getbootstrap.com/docs/4.1/components/card/)
 - you can access the restaurant data from RestaurantService `getRestaurants()`
 
 ## Discussion

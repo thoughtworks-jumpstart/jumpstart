@@ -28,7 +28,7 @@ This screenshot is a sample of the expected output
 
 ## Hints
 
-- Use the [bootstrap table](https://getbootstrap.com/docs/4.0/content/tables/#examples) style
+- Use the [bootstrap table](https://getbootstrap.com/docs/4.1/content/tables/#examples) style
 
 ## Discussion
 
