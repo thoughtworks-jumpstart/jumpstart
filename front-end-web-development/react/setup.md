@@ -15,22 +15,9 @@
 
 ## VS Code Extensions
 
-* [JS JSX Snippets \(skyran.js-jsx-snippets\)](https://github.com/skyran1278/js-jsx-snippets) - awesome autocomplete shortcuts
+* [ES7 React/Redux/React-Native/JS snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) - awesome autocomplete shortcuts for react and javascript
 
-## Configuring VS Code to use Emmet in JSX
 
-When we write JSX, we will be using HTML tags \(e.g. div, h1, form, input, etc.\). Autocomplete is not enabled for HTML tags because we're working in javascript files. To enable autocomplete, do the following:
-
-* In any VS Code Window, open User Settings \(mac: `⌘` + `,`, windows: `ctrl` + `,`\)
-* In the pane on the right, include the following line as a key value pair in the main object:
-
-  ```text
-  {
-  // ...
-  "emmet.includeLanguages": { "javascript": "javascriptreact" },
-  // ...
-  }
-  ```
 
 ## Chrome Browser extensions
 
