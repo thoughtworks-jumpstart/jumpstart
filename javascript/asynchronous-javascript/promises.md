@@ -577,4 +577,6 @@ readFilePromise("path/to/file", "utf8")
 
 Here is a useful workshop that illustrates the basics of promises. Follow the instructions step by step to get some hands-on exercises on Promise.
 
+Note: in the second step of the workshop, it requires you to install a library `es6-promise` and require it in your code. That's not necessary anymore because the latest Node version already have built in support for Promise.
+
 - [Promise it won't hurt](https://github.com/stevekane/promise-it-wont-hurt)
