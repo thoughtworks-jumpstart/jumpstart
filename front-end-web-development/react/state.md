@@ -114,28 +114,18 @@ Let's try the example below.
 To update `this.state.name`, we call `this.setState()`. Update your code and try clicking on your `<Welcome/>` component on your browser. You should see the name is changed when you click it.
 
 ```javascript
-class Welcome extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "world"
-    };
-
-    // This binding is necessary to make `this` refer to the component in the callback
-    this.handleClick = this.handleClick.bind(this);
-  }
+class Welcome extends Component {
+  state = {
+    name: "world"
+  };
 
   render() {
-    return (
-      <h1 onClick={this.handleClick}>
-        Hello, {this.state.name}
-      </h1>
-    );
+    return <h1 onClick={this.handleClick}>Hello, {this.state.name}</h1>;
   }
 
-  handleClick() {
-    this.setState({ name: "bruce willis" })
-  }
+  handleClick = () => {
+    this.setState({ name: "bruce willis" });
+  };
 }
 ```
 
@@ -154,16 +144,11 @@ Another way to call the `setState` API is to supply the `updater` argument as fu
 We can update the example above with this new approach:
 
 ```javascript
-class Welcome extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+class Welcome extends Component {
+  
+  state = {
       name: "world"
-    };
-
-    // This binding is necessary to make `this` refer to the component in the callback
-    this.handleClick = this.handleClick.bind(this);
-  }
+  };
 
   render() {
     return (
@@ -173,7 +158,7 @@ class Welcome extends React.Component {
     );
   }
 
-  handleClick() {
+  handleClick = () => {
     this.setState((currentState, props) => ({ name: "new " + currentState.name }))
   }
 }
