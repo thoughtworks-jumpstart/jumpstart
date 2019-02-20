@@ -145,7 +145,7 @@ We can update the example above with this new approach:
 
 ```javascript
 class Welcome extends Component {
-  
+
   state = {
       name: "world"
   };
@@ -247,7 +247,7 @@ this.setState({items: items});
 
 ```
 
-This does not work well either, when you pass the state object as props to another PureComponent or when you use the state with a React Context, which detect prop changes with `==` or `===`. With the codes above, the changes in `items` cannot be detected because the `items` object is the same object after the state update. 
+With the codes above, the changes in `items` cannot be detected by React because the `items` object is the same object before and after the state update. 
 
 One example is given in [this article](https://daveceddia.com/why-not-modify-react-state-directly/). In the example, a parent component passes some of its state as props to a child component (which happens to be a PureComponent). If you modify the `state.items` of the parent component directly instead of creating a new `items` object, the child component could not detect the change in its `items` prop and does not re-render.
 
