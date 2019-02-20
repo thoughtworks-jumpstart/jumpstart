@@ -208,7 +208,7 @@ this.state = Object.assign(
 
 This means, in the newly created `state` object, only the `name` property is overwritten with the new value provided in the `setState` API. If the `state` object contains any other properties, those are remain unchanged.
 
-### `setSate()` API is asynchronous
+### `setState()` API is asynchronous
 
 The API call **schedules** an update to a component’s state object. When state changes, the component responds by re-rendering. 
 
