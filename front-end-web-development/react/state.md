@@ -32,7 +32,7 @@ For now, we will focus on how to maintain local state inside a component.
 
 The following material in this section assumes you create local state in a class that extends React.Component.
 
-You might be aware that there is an experimental feature at the moment called [React Hooks](https://reactjs.org/docs/hooks-intro.html) and one of the hooks, [useState](https://reactjs.org/docs/hooks-state.html), makes state management a lot easier. We will discuss React Hooks in a separate section.
+You might be aware that there is an new feature introduced to React 16.8 called [React Hooks](https://reactjs.org/docs/hooks-intro.html) and one of the hooks, [useState](https://reactjs.org/docs/hooks-state.html), makes state management easier. We will discuss React Hooks in a later section and understand the foundation first.
 
 ## How to initialize state of a component?
 
