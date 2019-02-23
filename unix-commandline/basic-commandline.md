@@ -72,6 +72,7 @@ The **command line** is a program that enables us to send commands to the comput
 
 ## Resources
 
+* [The Unix File System Commands](https://flaviocopes.com/unix-filesystem/)
 * [explainshell.com](https://explainshell.com/)
 * [Learn enough command line to be dangerous](https://www.learnenough.com/command-line-tutorial)
 * [Introduction to Unix Shell](http://swcarpentry.github.io/shell-novice/)
