@@ -70,8 +70,7 @@ git checkout lab2
 - Next we will discuss how to test the feature with react-testing-library
 - To test React components in our project, we need to install test libraries:
 ```
-  npm install react-testing-library
-  npm install jest-dom
+  npm install react-testing-library jest-dom --save-dev
 ```
 - Note: It is not required to install jest as `create-react-app` already installs jest by default. And installing a different version on top of that can affect starting the app
 
