@@ -16,7 +16,7 @@ There is also a [video](http://lucasmreis.github.io/blog/simple-react-patterns-t
 
 ## Regarding React Hooks
 
-In the next planned React 16.x release, there is an experimental feature called [React Hooks](https://reactjs.org/docs/hooks-intro.html). With React hooks, the component that retrieves data from web API can be implemented as a hook and re-used by any other component that needs those data. That (sort of) makes the patterns discussed in this section obsolete.  However, you still need to be aware of these patterns when you deal with legacy codes that were written before the days of React Hooks. And in some cases, the High Order Component pattern and Render Props pattern are still easier to use than React Hooks. So you will continue to see them around.
+In React 16.8.0 released in Feb 2019, a new feature called [React Hooks](https://reactjs.org/docs/hooks-intro.html) was added. With React hooks, the component that retrieves data from web API can be implemented as a hook and re-used by any other component that needs those data. That (sort of) makes the patterns discussed in this section obsolete.  However, you still need to be aware of these patterns when you deal with legacy codes that were written before the days of React Hooks. And in some cases, the High Order Component pattern and Render Props pattern are still easier to use than React Hooks. So you will continue to see them around.
 
 ## Container/Presenter pattern
 
