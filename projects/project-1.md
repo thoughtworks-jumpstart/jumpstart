@@ -38,6 +38,20 @@ We recommend you to practice the following skills on this project:
 * Deployment
   * [x] Deployment of application to cloud provider of choice \(e.g. GitHub Pages, Heroku\)
 
+## Useful JavaScript Utilities
+
+* [date-fns](https://date-fns.org/)
+* [momentjs](https://momentjs.com/)
+* [lodash](https://lodash.com/)
+
+## Useful React Components
+
+* [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
+* [awesome react components](https://github.com/brillout/awesome-react-components)
+* [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd)
+* [react-select](https://react-select.com/home)
+* [react-map-gl](https://github.com/uber/react-map-gl)
+
 ## Project Ideas List/ Inspiration
 
 * [Every time you build a to-do list app, a puppy dies](https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d)
@@ -56,6 +70,13 @@ We recommend you to practice the following skills on this project:
 * [Popular Pens on CodePens](https://codepen.io/2018/popular/pens/)
 * [Projects by General Assembly Students](https://gallery.generalassemb.ly/)
 * [Projects by FullStack Academy Students](https://www.fullstackacademy.com/student-gallery)
+* Build an application that you can talk to!
+  * [react-speech-recognition](https://www.npmjs.com/package/react-speech-recognition)
+  * [react-say](https://www.npmjs.com/package/react-say)
+  * [compromise](http://compromise.cool/)
+  * [wit.ai](https://wit.ai/)
+  * [rasa](https://rasa.com/)
+  * [ladybird](https://lyrebird.ai/)
 
 ## Sample Projects
 
