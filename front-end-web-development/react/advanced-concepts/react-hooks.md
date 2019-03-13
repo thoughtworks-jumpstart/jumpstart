@@ -23,12 +23,14 @@ The blog posts discuses how to convert 5 types of React component classes and it
 
 In class we will mount each of the components to App, to check that it has the same behaviour, next we will view the code side by side and discuss the changes made  
 
-## Scenario 1 : Class without state or lifecycle methods
-## Scenario 2 : Class with state
-## Scenario 3 : Class with multiple state properties
-## Scenario 4 : Class with state and componentDidMount and componentWillUnmount
-## Scenario 5 : Class with state, componentDidMount and componentDidUpdate
+- Scenario 1 : Class without state or lifecycle methods
+- Scenario 2 : Class with state
+- Scenario 3 : Class with multiple state properties
+- Scenario 4 : Class with state and componentDidMount and componentWillUnmount
+- Scenario 5 : Class with state, componentDidMount and componentDidUpdate
 
+
+## Additional reading to understand the purpose of Hooks
 
 Next we will go to another blog [Why react hooks and how did we get here](https://medium.freecodecamp.org/why-react-hooks-and-how-did-we-even-get-here-aa5ed5dc96af) to understand 
 - The benefits of using Hooks as opposed to classes in your new components. 
