@@ -47,11 +47,8 @@ Here are some of the links you can keep as a reference:
 - [API for dom-testing-library](https://testing-library.com/docs/api-queries)
 - [Custom matchers to assert expectation on DOM elements](https://github.com/gnapse/jest-dom)
 
-## Tutorial
 
-Now follow [this tutorial](https://medium.com/flatiron-labs/creating-readable-tests-using-react-testing-library-2bd03c49c284) to implement a React component following TDD approach with react-testing-library.
-
-### More tutorials
+### Tutorials
 
 Testing React Workshop @ Paypal Sep 2018 by Kent C. Dodds
 
