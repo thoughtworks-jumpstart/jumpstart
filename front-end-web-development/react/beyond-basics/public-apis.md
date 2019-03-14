@@ -61,3 +61,5 @@ Fork this repository [https://github.com/thoughtworks-jumpstart/react-fetch-demo
 The `master` branch contains the final solution for your reference after the lab.
 
 You should checkout to the `lab` branch do an `npm install` before starting this lab
+
+Please read the repo Read Me for the full lab instructions
