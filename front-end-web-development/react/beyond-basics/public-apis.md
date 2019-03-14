@@ -41,3 +41,23 @@ If you need to sign up to get an API key, remember to follow these rules when us
 3. For local development, keep your API keys in an `.env.local` file in your code
 4. Add the `.env.local` file to `.gitignore` to prevent it from being accidentally committed
 5. For build/deployment on the web servers, add the API key as a config or environment variable on the server where your app is built and deployed (e.g. heroku, netlify, etc). 
+
+
+## Lab
+This lab is a code along to demonstrate how to search for images with the Unsplash API and rendering them with react
+
+### Learning Objectives
+- To learn how to use fetch and axios to get data from an external API
+- How to read API documentation 
+- How to store an API key and access the key in React 
+- How to pass the key to fetch and axios
+- How to extract fetching code to a service
+- How to test react components which call an external API by mocking
+
+### Instructions
+
+Fork this repository [https://github.com/thoughtworks-jumpstart/react-fetch-demo2](https://github.com/thoughtworks-jumpstart/react-fetch-demo2) to your github account and clone it to your computer
+
+The `master` branch contains the final solution for your reference after the lab.
+
+You should checkout to the `lab` branch do an `npm install` before starting this lab
