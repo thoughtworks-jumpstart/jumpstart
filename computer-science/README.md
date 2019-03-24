@@ -13,6 +13,7 @@ This section covers topics in computer science which you will find useful in you
 ## Resources
 
 - [The Imposter's Handbook](https://bigmachine.io/products/the-imposters-handbook/)
+- [Learn Computer Science in 5 Months](https://github.com/llSourcell/Learn_Computer_Science_in_5_Months#readme)
 - [Teach yourself CS](https://teachyourselfcs.com/)
 - [Open Source Society University](https://github.com/ossu/computer-science)
 - [The Open Source Computer Science Degree](https://github.com/ForrestKnight/open-source-cs)
