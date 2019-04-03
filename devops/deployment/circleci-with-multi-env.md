@@ -15,12 +15,12 @@ The below instructions are for the setup of a CI/CD pipeline with 3 environments
   - Test
   - Production
 
-1. Create 3 Heroku applications. These are to represent the servers of the above 3 environments. You can use the below names so that they are easy to identify. 
+1. Create 3 Heroku applications. (6 Heroku apps if you have a seperate repo for frontend and backend) These are to represent the servers of the above 3 environments. You can use the below names so that they are easy to identify. 
   - auto- [app name]
   - test-[app name]
   - [app name]
 
-2. If your app uses a mongodb database. Go to the resources tab **for each app** add a free MLab DB plugin. 
+2. If your app uses a mongodb database. Go to the resources tab **for each app** add a free MLab DB plugin. Otherwise if you are using postgres add a free heroku postgres DB plugin.  
 
 3. Create a directory named `.circleci` in your project and a file named `config.yml` in it. \(i.e. you should create this file in your project directory: `.circleci/config.yml`\)
 
