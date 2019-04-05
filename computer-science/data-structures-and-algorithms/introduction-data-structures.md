@@ -38,7 +38,7 @@ The key thing to remember is that each data structure has it own advantages and 
 
 > A Set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite Set.
 
-![stack](../../.gitbook/assets/set.svg)
+![set](../../.gitbook/assets/set.svg)
 
 ### Stack
 
