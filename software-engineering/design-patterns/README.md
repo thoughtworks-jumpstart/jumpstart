@@ -44,6 +44,7 @@ Fundamentally, the goal of object-oriented design patterns are aimed at creating
 * [Design Patterns in ES6](http://loredanacirstea.github.io/es6-design-patterns/)
 * [Design Patterns with Examples in JavaScript](http://www.dofactory.com/javascript/design-patterns)
 * [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+* [Design patterns in modern JavaScript development](https://levelup.gitconnected.com/design-patterns-in-modern-javascript-development-ec84d8be06ca)
 * [Design Patterns Game](https://designpatternsgame.com/)
 
 ## Assignment
