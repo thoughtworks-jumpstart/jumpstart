@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Prep Work](prep-work.md)
 * [Machine setup](machine-setup/README.md)
+  * [Linux](machine-setup/linux.md)
   * [Mac](machine-setup/mac.md)
   * [Windows](machine-setup/windows.md)
 * [How to learn effectively](how-to-learn-effectively.md)
