@@ -60,3 +60,25 @@ Official Node.js [binary distributions](https://github.com/nodesource/distributi
 For Fedora based distributions, refer to installation instructions [here](https://github.com/nodesource/distributions/blob/master/README.md#rpminstall).
 
 For Debian based distributions, refer to installation instructions [here](https://github.com/nodesource/distributions/blob/master/README.md#debinstall).
+
+### Node Version Manager
+
+When developing sofware for various projects, it is not uncommon to deal with multiple versions of Node.js. The best way to manage these versions is to use a Node Version Manager.
+
+We recommed using `n`. You can read their [documentation](https://github.com/tj/n) and install it by running the following command:
+
+```
+npm install -g n
+```
+
+## Browsers
+
+Chrome and Firefox are two recommended browsers that you should install for web development.
+
+### Chrome
+
+To install Chrome browser, follow the instructions [here](https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en).
+
+### Firefox
+
+To install Firefox, follow the instructions [here](https://support.mozilla.org/en-US/kb/install-firefox-linux).
