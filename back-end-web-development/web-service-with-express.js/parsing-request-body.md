@@ -2,7 +2,7 @@
 
 Let's take a look at one useful middleware: [express.json](https://expressjs.com/en/api.html#express.json).
 
-When you send HTTP PUT or POST requests, there are usually some data attached in the request body. If the request is a result of clicking "submit" button from a web form, the data is usually encoded in [x-www-form-urlencoded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) format. Otherwise, if the request is initiated by the Javascript codes from your frontend application, then the data is usually in JSON format.
+When you send HTTP PUT or POST requests, there are usually some data attached in the request body. If the request is a result of clicking "submit" button from a web form, the data is usually encoded in [x-www-form-urlencoded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) format. Otherwise, if the request is initiated by the JavaScript codes from your frontend application, then the data is usually in JSON format.
 
 Since it's a common requirements to parse the data in request body, express comes with this reusable JSON middleware. Basically, what this library does is to parse the data according to the format mentioned in HTTP request header, then save the parsed data in `req.body` field.
 

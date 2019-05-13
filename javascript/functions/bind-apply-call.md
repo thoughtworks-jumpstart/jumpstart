@@ -69,7 +69,7 @@ greet.call(dino, 'howdy', '!!!!!!');  // see the (small) difference between appl
 * [MDN Docs on `.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 * [MDN Docs on `.apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 * [MDN Docs on `.call()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
-* [Javascript: call(), apply() and bind()](https://medium.com/@omergoldberg/javascript-call-apply-and-bind-e5c27301f7bb)
+* [JavaScript: call(), apply() and bind()](https://medium.com/@omergoldberg/javascript-call-apply-and-bind-e5c27301f7bb)
 * [Learn & Solve : call(), apply() and bind() methods](https://tech.io/playgrounds/9799/learn-solve-call-apply-and-bind-methods-in-javascript)
 
 ## Assignment

@@ -6,9 +6,9 @@ The javascript module system is essentially in helping us build javascript progr
 
 ES6 uses a different syntax for exporting and importing modules, as compared to the CommonJS system \(Node uses two core modules for managing module dependencies: `module` and `require`\)
 
-|  | CommonJS | ES6 Module |
-| :--- | :--- | :--- |
-| exporting modules \(in `./someFile.js`\) | `module.exports = myFunction` | `export default myFunction` |
+|                                             | CommonJS                                 | ES6 Module                             |
+| :------------------------------------------ | :--------------------------------------- | :------------------------------------- |
+| exporting modules \(in `./someFile.js`\)    | `module.exports = myFunction`            | `export default myFunction`            |
 | importing modules \(in `./anotherFile.js`\) | `var myFunction = require('./someFile')` | `import myFunction from "./someFile";` |
 
 ## ES6 Module Syntax
@@ -62,7 +62,7 @@ ES6 offers flexible ways of [exporting](https://developer.mozilla.org/en-US/docs
 
 ## ES6 Module Support in Browsers Environment
 
-Traditionally browsers don't support Javascript modules at all. Although you write your Javascript codes in modules in your development environment, you typically bundle all the javascript code into one file like `bundle.js` when you serve them in production environment. \(The bundling task is usually done using some tools called `bundlers` like Webpack\).
+Traditionally browsers don't support JavaScript modules at all. Although you write your JavaScript codes in modules in your development environment, you typically bundle all the javascript code into one file like `bundle.js` when you serve them in production environment. \(The bundling task is usually done using some tools called `bundlers` like Webpack\).
 
 After browsers start supporting ES6 modules, it's possible to add a new attribute `type=module` to your `<script>` tag, to denote the script to be loaded is an ES6 module. More examples can be found in [this article](https://www.contentful.com/blog/2017/04/04/es6-modules-support-lands-in-browsers-is-it-time-to-rethink-bundling/)
 
@@ -87,7 +87,7 @@ For the last choice using 'babel-node', you need to do the following:
 
 See example: [https://github.com/thoughtworks-jumpstart/basic-es6-template/](https://github.com/thoughtworks-jumpstart/basic-es6-template/)
 
-However, the documentation for [babel-node](https://babeljs.io/docs/en/babel-node) says it's "not meant for production use". 
+However, the documentation for [babel-node](https://babeljs.io/docs/en/babel-node) says it's "not meant for production use".
 
 For now, to keep it simple, we should still stay with the CommonJS module system when we develop applications running on NodeJS.
 

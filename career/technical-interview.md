@@ -30,7 +30,7 @@
 
 - What are the new features in ES6?
 - What’s the difference let and var?
-- How to understand ‘this’ in Javascript?
+- How to understand ‘this’ in JavaScript?
 - How to use arrow functions?
 - What is the promise? How to handle exceptions from promise?
 - What’s async/await? Compare it to Promise.
@@ -40,12 +40,12 @@
 * Have you heard about latest React feature (e.g. React hooks)
 * What’s the difference between React and other frameworks like Veu/Angular?
 * What are the basic concepts in React?
-  * Component. What’s a component? 
+  * Component. What’s a component?
   * When do you write component as a function and when do you write it as a class? What’s the difference?
   * Props
   * State
   * What is JSX?
-* How to manage state in React? 
+* How to manage state in React?
   * Local State
   * Context
   * Redux

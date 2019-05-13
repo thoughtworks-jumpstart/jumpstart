@@ -181,10 +181,10 @@ greeting_div.classList.contains("my-new-class");
 
 ### How to add html elements
 
-The recipe for add a new element to the DOM is as follows: 
+The recipe for add a new element to the DOM is as follows:
 
-1. create a new element and save it to a variable 
-2. modify any properties of the element 
+1. create a new element and save it to a variable
+2. modify any properties of the element
 3. attach the element to an existing element on the page
 
 Example:
@@ -325,7 +325,7 @@ linkElement.addEventListener("click", function(event) {
 
 The usage of `event.stopPropagation` is related to a concept called [Event Bubbling and Capture](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture). You can also find some discussion on the concept [here](http://javascript.info/bubbling-and-capturing)
 
-## How to make sure some Javascript codes are only executed after the HTML document is fully loaded
+## How to make sure some JavaScript codes are only executed after the HTML document is fully loaded
 
 HTML and javascript are both loaded sequentially. If your javascript runs to completion before the HTML elements are fully loaded, all of your event listeners and event handlers will not be hooked up. There are 2 ways to make sure this doesn't happen:
 

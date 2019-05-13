@@ -1,4 +1,4 @@
-# More on Javascript Arrays
+# More on JavaScript Arrays
 
 ## Examples
 

@@ -36,7 +36,7 @@ There is a [comprehensive documentation](https://eslint.org/docs/user-guide/conf
 
 ### ESLint + Prettier
 
-Specifically, we recommend to configure ESLint to follow the rules defined by [Prettier](https://prettier.io/), a popular Javascript code formatter.
+Specifically, we recommend to configure ESLint to follow the rules defined by [Prettier](https://prettier.io/), a popular JavaScript code formatter.
 
 To integrate the two tools, run the following command in your project root folder:
 
@@ -107,7 +107,7 @@ Since we configure ESLint to follow the rules defined by Prettier, ESLint would 
 
 For those kind of issues, we can quickly format the code with [Prettier plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-There is a VS Code configuration to automatically format the file upon save. 
+There is a VS Code configuration to automatically format the file upon save.
 
 ```json
 "editor.formatOnSave": true

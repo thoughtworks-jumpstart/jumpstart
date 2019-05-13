@@ -2,7 +2,7 @@
 
 ## Callbacks as Event Handlers
 
-In the previous section on Javascript Event Loop, you see how the event handlers can be used to process events when they are ready \(e.g. when a user clicks a button on browser page, or the operating system notifies Javascript engine that a file is ready to be read\).
+In the previous section on JavaScript Event Loop, you see how the event handlers can be used to process events when they are ready \(e.g. when a user clicks a button on browser page, or the operating system notifies JavaScript engine that a file is ready to be read\).
 
 One typical way to implement event handlers is through **Callbacks**.
 
@@ -98,9 +98,9 @@ One of the choices is to refactor your code to extract the callbacks into separa
 
 Some examples can be found on [this website](http://callbackhell.com/)
 
-### Use other Javascript features \(Promises, Async/Await\)
+### Use other JavaScript features \(Promises, Async/Await\)
 
-Because of the problems introduced by callbacks, Javascript has introduced other syntax to help you write asynchronous codes. We will cover two of them in the next sections:
+Because of the problems introduced by callbacks, JavaScript has introduced other syntax to help you write asynchronous codes. We will cover two of them in the next sections:
 
 * promise
 * async/await

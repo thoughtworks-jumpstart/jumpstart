@@ -44,6 +44,6 @@ Part 3:
 
 ## Assignment
 
-* [Javascript basics](https://github.com/davified/javascript-basics)
-* [Javascript classes](https://github.com/davified/javascript-classes)
+* [JavaScript basics](https://github.com/davified/javascript-basics)
+* [JavaScript classes](https://github.com/davified/javascript-classes)
 

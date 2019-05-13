@@ -4,14 +4,14 @@
 
 * JSX is a syntax extension to JavaScript. It allows us to write HTML-like syntax that compiled to React elements \(i.e. real javascript objects\)
 
-Create a new React app with `create-react-app` and try out the following examples. 
+Create a new React app with `create-react-app` and try out the following examples.
 
 ### First React App: Hello World!
 
 Firstly, let's print Hello World on the page!
 
-* edit `App.js` with the example given below 
-* starting the React app with `npm run start` or `yarn start`, 
+* edit `App.js` with the example given below
+* starting the React app with `npm run start` or `yarn start`,
 * see what's rendered on [http://localhost:3000](http://localhost:3000)
 
 ```javascript
@@ -19,14 +19,14 @@ Firstly, let's print Hello World on the page!
 
 class App extends Component {
   render() {
-    return <h1>Hello World!</h1>; // HTML-like syntax 
+    return <h1>Hello World!</h1>; // HTML-like syntax
   }
 }
 ```
 
 This looks simple but there are lots of the things going on behind the sense:
 
-In public/index.html, the line below defines the root of a DOM tree that React manipulate according to what you declare in index.js. 
+In public/index.html, the line below defines the root of a DOM tree that React manipulate according to what you declare in index.js.
 
 ```html
   <div id="root"></div>
@@ -42,7 +42,7 @@ What is this `App`? It's the React component you define in App.js
 
 ### Your First React Component
 
-We can extract the reusable JSX snippets into their own React component. 
+We can extract the reusable JSX snippets into their own React component.
 
 Edit `App.js` with the example below:
 
@@ -107,12 +107,12 @@ class App extends Component {
 Here are the JSX syntax rules that you should be aware of
 
 ```jsx
-// Rule #1: All Javascript syntax rules about variables, functions, classes, etc. apply
+// Rule #1: All JavaScript syntax rules about variables, functions, classes, etc. apply
 // Rule #2: You can write "HTML-like" syntax
-const ComponentOne = <div>Hello World</div>  
+const ComponentOne = <div>Hello World</div>
 
 // Rule #3: To add a HTML class, we use the `className` attribute
-const ComponentTwo = <div className="red" id="some-awesome-id">Children Text</div>; 
+const ComponentTwo = <div className="red" id="some-awesome-id">Children Text</div>;
 
 // Rule #4: To write javascript expressions inside HTML-like tags, use braces `{}`
 const ComponentThree = <MyCounter count={3 + 5} startingPoint={someFunction()}/>;

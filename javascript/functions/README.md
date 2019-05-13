@@ -1,1 +1,1 @@
-# More on Javascript Functions
+# More on JavaScript Functions

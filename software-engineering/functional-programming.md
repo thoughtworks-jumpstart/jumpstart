@@ -16,7 +16,7 @@
     * `.map()`
     * `.filter()`
     * `.reduce()`
-* recursion 
+* recursion
 
 ## What is functional programming \(FP\)?
 
@@ -26,9 +26,9 @@ Functional programming is a:
 * programming ‎style
 * ‎mindset
 
-## Functions are First-Class Objects in Javascript
+## Functions are First-Class Objects in JavaScript
 
-In languages that support functional programming \(like Javascript, Ruby, Scala, etc\), functions are first-class objects, that means:
+In languages that support functional programming \(like JavaScript, Ruby, Scala, etc\), functions are first-class objects, that means:
 
 * They can be saved as variables
 * They can be passed to other functions as arguments
@@ -121,7 +121,7 @@ Note how we specify **what** data we need, without worrying about **how** that d
 
 ## Key principles in functional programming
 
-* Declarative &gt; Imperative 
+* Declarative &gt; Imperative
   * Specify what you need, instead of how to get it \(step by step\)
 * Pure &gt; Side Effects
   * Calling the same function with same input, you always get back the same result
@@ -132,19 +132,19 @@ Note how we specify **what** data we need, without worrying about **how** that d
 * Immutability/Stateless &gt; State Mutation
   * Objects with mutable state are harder to analyze when they don't behave well
   * Prefer [Immutable Objects](https://facebook.github.io/immutable-js/)
-* Recursion &gt; Loops/Iteration 
+* Recursion &gt; Loops/Iteration
   * for/while loops are more imperative style
-  * Warning: watch out for [stack overflow problem](https://en.wikipedia.org/wiki/Stack_overflow) because there is a [max limit on stack size in Javascript engines](http://2ality.com/2014/04/call-stack-size.html). When stack overflow happens, either you need to rewrite your function as [tail-recursive](http://2ality.com/2015/06/tail-call-optimization.html) or fall back to iteration.
+  * Warning: watch out for [stack overflow problem](https://en.wikipedia.org/wiki/Stack_overflow) because there is a [max limit on stack size in JavaScript engines](http://2ality.com/2014/04/call-stack-size.html). When stack overflow happens, either you need to rewrite your function as [tail-recursive](http://2ality.com/2015/06/tail-call-optimization.html) or fall back to iteration.
 * Treat functions as first class objects \(i.e. functions are just like everyone else - numbers, strings, objects, booleans\). They may be stored in arrays, passed around as function parameters and assigned to variables\)
   * Higher order functions \(i.e. functions that return/take in functions\)
 
 ## FP vs OOP
 
-| Object Oriented | Functional |
-| :--- | :--- |
+| Object Oriented                                              | Functional                                                                                           |
+| :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | You have a lot of classes and each offers only a few methods | You only have a few well known data structures \(e.g. list, map\) and they support tons of functions |
-| Classes/Objects are the first class citizen | Functions are the first class citizen |
-| You build programs by composing objects | You build programs by composing functions |
+| Classes/Objects are the first class citizen                  | Functions are the first class citizen                                                                |
+| You build programs by composing objects                      | You build programs by composing functions                                                            |
 
 ## Benefits of FP
 
@@ -154,16 +154,16 @@ Note how we specify **what** data we need, without worrying about **how** that d
 * scalability / concurrency
 * \(can be\) less verbose
 
-## Useful Libraries for functional programming in Javascript
+## Useful Libraries for functional programming in JavaScript
 
 * [immutable.js](https://facebook.github.io/immutable-js/)
   * [introduction to immutable.js](https://auth0.com/blog/intro-to-immutable-js/)
 * [lodash.js](https://lodash.com/)
 * [ramda.js](http://ramdajs.com/)
 
-## Native Javascript API for Functional Programming
+## Native JavaScript API for Functional Programming
 
-The Javascript core API offers some of the functions that are very useful too:
+The JavaScript core API offers some of the functions that are very useful too:
 
 * [every](http://devdocs.io/javascript/global_objects/array/every)
 * [some](http://devdocs.io/javascript/global_objects/array/some)
@@ -240,15 +240,15 @@ You can find some [help](https://codeburst.io/learn-and-understand-recursion-in-
 * [Functional Programming Fundamentals](https://www.matthewgerstman.com/functional-programming-fundamentals/)
 * [List processing with map, filter and reduce](https://scotch.io/tutorials/list-processing-with-map-filter-and-reduce)
 * [Video: Functional programming in ES6](https://www.youtube.com/watch?v=HvMemAgOw6I)
-* [Immutable Javascript using ES6 & Beyond](https://wecodetheweb.com/2016/02/12/immutable-javascript-using-es6-and-beyond/)
+* [Immutable JavaScript using ES6 & Beyond](https://wecodetheweb.com/2016/02/12/immutable-javascript-using-es6-and-beyond/)
 * [Don't be afraid of functional programming](https://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/)
-* [Functional Programming with Javascript](https://stephen-young.me.uk/2013/01/20/functional-programming-with-javascript.html)
-* [Video: Functional Programming in Javascript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
+* [Functional Programming with JavaScript](https://stephen-young.me.uk/2013/01/20/functional-programming-with-javascript.html)
+* [Video: Functional Programming in JavaScript](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 * [Practical Functional Programming](https://www.youtube.com/watch?v=I_uIXgSmkDo&index=7&t=0s&list=WL)
 
 ## Books
 
-* [Functional Light Javascript](https://github.com/getify/Functional-Light-JS)
+* [Functional Light JavaScript](https://github.com/getify/Functional-Light-JS)
 * [Professor Frisby's Mostly Adequate Guide to Functional Programming](https://drboolean.gitbooks.io/mostly-adequate-guide/content/)
 * [Structure and Interpretation of Computer Programs](https://sarabander.github.io/sicp/)
 * [How to Design Programs](https://www.htdp.org/)
@@ -257,4 +257,4 @@ You can find some [help](https://codeburst.io/learn-and-understand-recursion-in-
 ## Assignment
 
 * [Higher order functions](https://github.com/thoughtworks-jumpstart/higher-order-functions-exercises)
-* [More exercises on Functional Javascript](https://github.com/timoxley/functional-javascript-workshop)
+* [More exercises on Functional JavaScript](https://github.com/timoxley/functional-javascript-workshop)

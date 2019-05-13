@@ -1,4 +1,4 @@
-# Javascript Array
+# JavaScript Array
 
 An array is a data structure that allows us to store a collection of values in a single variable.
 

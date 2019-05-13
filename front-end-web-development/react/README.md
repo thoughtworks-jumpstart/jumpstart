@@ -9,7 +9,7 @@ React is a declarative, efficient, and flexible JavaScript library for building 
 To get some ideas of what you can build with React, check out:
 
 * [https://react.rocks/](https://react.rocks/)
-* [http://builtwithreact.io/](http://builtwithreact.io/)  
+* [http://builtwithreact.io/](http://builtwithreact.io/)
 * [http://facebook.github.io/react-native/showcase.html](http://facebook.github.io/react-native/showcase.html) \(React Native also uses the same syntax and patterns as React for building mobile applications\)
 * [https://facebook.github.io/react-vr/](https://facebook.github.io/react-vr/) \(React VR also uses the same syntax and patterns as React for building VR applications!\)
 
@@ -41,7 +41,7 @@ Benefits with React approach in this demo:
 When working with React, you will undoubtedly face new and scary jargon. An important way to learn and be effective with React is to:
 
 * Understand its building blocks \(e.g. JSX, components, `props`, `state`, etc\)
-* Build on what you have learnt about Javascript \(functions, classes, ES6 syntax, static methods, modules, etc.\). Make sure you know those [Javascript fundamental](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/).
+* Build on what you have learnt about JavaScript \(functions, classes, ES6 syntax, static methods, modules, etc.\). Make sure you know those [JavaScript fundamental](https://www.robinwieruch.de/javascript-fundamentals-react-requirements/).
 * Build applications with React.
 
 To start with, you can follow this [official React Getting Started Guide](https://reactjs.org/docs/hello-world.html) \(Recommendation: Work through tutorial up through till 'Thinking in React'\)

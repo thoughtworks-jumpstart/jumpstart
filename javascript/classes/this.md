@@ -69,7 +69,7 @@ This rule applies when:
 In this case, `this` is resolved by following the same lexical scoping rule that we use to resolve other variables.
 
 - Arrow functions do not have their own `this` value. The value of `this` inside an arrow function is always inherited from the value of `this` in its enclosing scope.
-- This is known as **lexical scoping**, which just means that it uses the 'author-time' value of `this`, rather than a dynamically determined value of `this` during 'invoke-time' \(or runtime\). 
+- This is known as **lexical scoping**, which just means that it uses the 'author-time' value of `this`, rather than a dynamically determined value of `this` during 'invoke-time' \(or runtime\).
 - This particular way of treating `this` makes arrow functions an elegant solution to problems relating to `this` becoming undefined at runtime.
 
 ```javascript
@@ -120,7 +120,7 @@ var helper = {
 
 More discussion can be found in [arrow-functions, `this` follows lexical scope rules](https://hackernoon.com/javascript-es6-arrow-functions-and-lexical-this-f2a3e2a5e8c4).
 
-### Rule #5: `this` can be bound to an object explicitly with `bind` / `call` / `apply` functions 
+### Rule #5: `this` can be bound to an object explicitly with `bind` / `call` / `apply` functions
 
 JavaScript offers some API \(e.g. [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind), [apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply), [call](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) \) for binding `this` to a specific object of your choice.
 
@@ -128,11 +128,11 @@ What does these functions do?
 
 For call/apply, it's easy to understand. Basically they allow you to specify the value of `this` to a function when you call it.
 
-For bind, it's a bit tricky because it returns another function whose `this` is bound to a given object. It sounds tricky but we can understand it by taking some analogy: 
+For bind, it's a bit tricky because it returns another function whose `this` is bound to a given object. It sounds tricky but we can understand it by taking some analogy:
 
 > If I have a pen and I give that pen to you, and you pass that pen to your friend. Later, your friend would not know who is the owner of the pen (assuming you don't tell him and you are not around when he has this question). This issue can be avoided if I label my pen with my name. Then whoever holds the pen later knows that I am the owner.
 
-The `bind` function does the same job as labeling the pen with my name. The function returned by `bind` has its `this` value bound to the object you specified in the `bind` call. 
+The `bind` function does the same job as labeling the pen with my name. The function returned by `bind` has its `this` value bound to the object you specified in the `bind` call.
 
 More examples of using bind/apply/call is given in the next section.
 
@@ -140,5 +140,5 @@ More examples of using bind/apply/call is given in the next section.
 
 - [Understanding this](http://javascript.info/object-methods)
 - [this All Makes Sense Now!](https://maximdenisov.gitbooks.io/you-don-t-know-js/content/this_&_object_prototypes/this_all_makes_sense_now.html)
-- [What is 'this' in Javascript](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
-- [Understand JavaScript’s “this” With Clarity, and Master It](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/) 
+- [What is 'this' in JavaScript](https://blog.bitsrc.io/what-is-this-in-javascript-3b03480514a7)
+- [Understand JavaScript’s “this” With Clarity, and Master It](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)

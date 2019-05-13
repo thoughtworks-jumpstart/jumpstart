@@ -23,7 +23,7 @@
   * `SomeClass.prototype.someFunc` is the ES5 way of defining instance methods. You should refactor this using the class and instance methods syntax
 * Prerequisite knowledge
   * HTML, CSS
-  * ES5 and ES6 Javascript
+  * ES5 and ES6 JavaScript
   * Web Components
 * Benefits
   * A project that you can show off to your potential employers

@@ -1,6 +1,6 @@
 # Deploy simple static websites
 
-If you only need a place to host your React application \(or any application with static assets only like HTML/CSS/Javascript\), you can consider the following options:
+If you only need a place to host your React application \(or any application with static assets only like HTML/CSS/JavaScript\), you can consider the following options:
 
 * [github pages](https://pages.github.com/)
 * [netlify](https://www.netlify.com/)

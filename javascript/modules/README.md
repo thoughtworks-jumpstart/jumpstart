@@ -4,7 +4,7 @@ When you have a lot of codes, you need to split them into separate files called 
 
 ## What is a Module?
 
-Simply put, a Javascript module is a file which contains some javascript codes that can be reused.
+Simply put, a JavaScript module is a file which contains some javascript codes that can be reused.
 
 To make those code reusable, the module needs to declare what to be **exported** from the module, and on the other hand, the codes that depend the module need to declare what to be **imported** from the module.
 

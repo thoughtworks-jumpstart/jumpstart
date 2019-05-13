@@ -17,7 +17,7 @@ To flesh it out further, you should:
 1. **Update your portfolio page and LinkedIn profile, and make it a good one.** Many employers and recruitment folks will have their first impression of you via your portfolio page and LinkedIn profile. Make sure it's a good one with short/one-glance view of your projects \(use screenshots/gifs if possible!\) and skills \(programming languages, frameworks, agile methodologies, etc\)
 2. **Go to** [**meetups and events**](https://webuild.sg/) **that interest you.** I've met folks who have gotten jobs through these platforms. Plus there's free food and awesome talks!
 3. **Build your own side projects.** This will help build up your portfolio, and it will speak volumes for you when employers are assessing candidates. Had a brainwave while sitting on the toilet bowl? Write it down! See a problem which you think can be solved by software? Put on your agile development hat, wireframe it and build it in a weekend! I find that two things help: set deadlines for yourself, and do not overthink it. Build MVP first and then iterate from there. It's better to have several interesting projects in the pipeline, even if they are half-complete, rather than one mega perfect project that never got started.
-4. **Get good at technical interviews.** Based on feedback from the first batch of jumpstart, they typically encounter these types of technical interviews: 
+4. **Get good at technical interviews.** Based on feedback from the first batch of jumpstart, they typically encounter these types of technical interviews:
 
    1. coding katas \(like in codewars\)
    2. build an app \(e.g. in React, or Express, or a totally new framework\)
@@ -27,9 +27,9 @@ To flesh it out further, you should:
    Note: Generally, they are not looking for complete or perfect textbook answers. They are assessing your thought process, how you approach a problem, and how you figure out things which you may not know. These articles provide some interview tips:
 
    * [How to Impress in a Junior Developer Job Interview](https://medium.com/@CodementorIO/how-to-impress-in-a-junior-developer-job-interview-2d2fb325a66c#.2mskcv53j)
-   * [Q&A on frequently asked interview questions on Javascript](https://github.com/ggomaeng/awesome-js)
+   * [Q&A on frequently asked interview questions on JavaScript](https://github.com/ggomaeng/awesome-js)
    * [Cracking the Coding Interview](https://robot.bolink.org/ebooks/Cracking%20the%20Coding%20Interview%20-%20150%20Programming%20Interview%20Questions%20and%20Solutions%204e%20Small.pdf) \(see pages 28-44\)
-   * [Javascript interview prep](https://github.com/ajzawawi/js-interview-prep)
+   * [JavaScript interview prep](https://github.com/ajzawawi/js-interview-prep)
 
 5. **Practice TDD.** This will help you get comfortable and help you shine in technical interviews. How? Go to your programming challenge webpage of choice \(Codewars, HackerRank, Codility\), copy and paste the challenge in your code editor, and write your own tests. It is a fun and rewarding experience. It's like doing crossword or sudoku puzzles, but for programmers. If you run out of tests to do, you can even practice TDD on [regular mathematical puzzles](https://projecteuler.net/) \(e.g. write a function that lists fibonacci numbers up to 1,000,000\).
 

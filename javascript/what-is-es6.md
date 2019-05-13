@@ -1,10 +1,10 @@
 # What is ES6?
 
-ECMAScript 6, also known as ECMAScript 2015 or ES6, is the version of the ECMAScript standard defined in year 2015. ES6 is a significant update to the Javascript language, and the first update to the language since ES5 was standardized in 2009.
+ECMAScript 6, also known as ECMAScript 2015 or ES6, is the version of the ECMAScript standard defined in year 2015. ES6 is a significant update to the JavaScript language, and the first update to the language since ES5 was standardized in 2009.
 
-ES6 features offer solutions to many of the pains and quirks of working with Javascript prior to ES6, and makes Javascript a much nicer language to work with.
+ES6 features offer solutions to many of the pains and quirks of working with JavaScript prior to ES6, and makes JavaScript a much nicer language to work with.
 
-Are you confused by the terms like "ES6", "ECMAScript 2015"? Are they the same thing as "Javascript"? Read on [article](https://medium.freecodecamp.org/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5) to find more details.
+Are you confused by the terms like "ES6", "ECMAScript 2015"? Are they the same thing as "JavaScript"? Read on [article](https://medium.freecodecamp.org/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5) to find more details.
 
 Some of the features introduced in ES6 include:
 

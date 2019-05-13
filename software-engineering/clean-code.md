@@ -16,7 +16,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
   * one level of abstraction per function
   * don't use comments to explain what the code is doing
   * functions should do one thing
-  * avoid [deep nesting / multiple levels of indentation](http://wiki.c2.com/?ArrowAntiPattern) 
+  * avoid [deep nesting / multiple levels of indentation](http://wiki.c2.com/?ArrowAntiPattern)
   * consistent formatting / linting
   * error handling \(fail loudly and quickly\)
   * don't modify arguments of a function
@@ -25,7 +25,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
   * Pass the tests
   * Reveal intention \(i.e. make your code readable\)
   * No duplication
-  * Fewest elements    
+  * Fewest elements
 * Design Guidelines
   * [SOLID Principle](https://github.com/ryanmcdermott/clean-code-javascript/#solid)
   * [Separation of Concerns](http://aspiringcraftsman.com/2008/01/03/art-of-separation-of-concerns/)
@@ -36,7 +36,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
   * Tell, don't ask \(a.k.a [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter)\)
 * Rule of Thumb
   * Don't Repeat Yourself \(DRY\)
-  * Keep it stupid, simple \(KISS\) 
+  * Keep it stupid, simple \(KISS\)
     * [YAGNI](https://martinfowler.com/bliki/Yagni.html) \(You are not going to need it\)
     * [Do the simplest thing that could possibly work](http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork)
     * Avoid [Accidental Complexity](http://wiki.c2.com/?AccidentalComplexity)
@@ -72,7 +72,7 @@ The idea of writing clean code is to ensure that the software is: readable, main
 * **Don't change system behavior \(e.g. fixing bugs, adding new features, etc\) during refactoring**
 * **Make small changes, step by step**. If you need to do a big refactor it is better to do multiple small changes
 * **Commit frequently**. You can make a commit after each small change, when all the tests are still passing.
-* **Make good use of IDE support on refactoring**. For VS Code, there are some good plugins like [Javascript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster), [glean](https://marketplace.visualstudio.com/items?itemName=wix.glean) and [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround) which helps you to automate some of the code changes.
+* **Make good use of IDE support on refactoring**. For VS Code, there are some good plugins like [JavaScript Booster](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster), [glean](https://marketplace.visualstudio.com/items?itemName=wix.glean) and [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround) which helps you to automate some of the code changes.
 * **Track the issues in a todo list**. If you notice some issues and you cannot work on it right away, you need to track it in the issue system.
 * **Add unit tests along the way**. If you only have Golden Master Test and no Unit Tests, you should start adding Unit Tests while you do refactoring.
 
@@ -87,9 +87,9 @@ The idea of writing clean code is to ensure that the software is: readable, main
   * [Refactoring Large Functions](https://robert.muth.org/refactoring-large-functions.html)
 * SOLID Principles
   * [SOLID explained in a funny way](http://www.daedtech.com/visualization-mnemonics-for-software-principles/)
-  * [SOLID OO Design in Javascript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
+  * [SOLID OO Design in JavaScript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 * [Kent Beck's 4 rules of simple design](https://martinfowler.com/bliki/BeckDesignRules.html)
-* [Clean code in Javascript](https://github.com/ryanmcdermott/clean-code-javascript/)
+* [Clean code in JavaScript](https://github.com/ryanmcdermott/clean-code-javascript/)
 * [How to write unmaintainable codes](https://github.com/Droogans/unmaintainable-code)
 * [Clean Code Cheat Sheet](https://www.planetgeek.ch/2014/11/18/clean-code-cheat-sheet-v-2-4/)
 * [Object calisthenics](http://aimforsimplicity.com/post/objectcalisthenicsgameoflifekata/)

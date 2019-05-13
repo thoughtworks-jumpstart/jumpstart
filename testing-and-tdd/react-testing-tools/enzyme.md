@@ -96,7 +96,7 @@ Currently, enzyme supports 5 types of selectors. For the details, check [the doc
   });
 ```
 
-* Testing with the component instance 
+* Testing with the component instance
 
 There is a `.instance` method which allows you to get the component instance within the wrapper. How is that useful? When should you use it?
 
@@ -185,7 +185,7 @@ However, there are also developers that are [strongly against shallow rendering]
 
 * [Enzyme docs: Getting started](http://airbnb.io/enzyme/)
 * [Enzyme docs: API](http://airbnb.io/enzyme/docs/api/index.html) \(Enzyme's docs are really great. Be sure to bookmark this page!\)
-* [Enzyme: Javascript Testing Utilities for React](https://medium.com/airbnb-engineering/enzyme-javascript-testing-utilities-for-react-a417e5e5090f)
+* [Enzyme: JavaScript Testing Utilities for React](https://medium.com/airbnb-engineering/enzyme-javascript-testing-utilities-for-react-a417e5e5090f)
 * [Testing React Component with Jest and Enzyme](https://hackernoon.com/testing-react-components-with-jest-and-enzyme-41d592c174f)
 
 ## Assignment

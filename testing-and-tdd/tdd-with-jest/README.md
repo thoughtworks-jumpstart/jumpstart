@@ -4,7 +4,7 @@ Code along template: [https://github.com/thoughtworks-jumpstart/jest-starter-tem
 
 ## Testing libraries
 
-Here are the commonly used Javascript test runner libraries: `jest`, `jasmine`, `mocha`. They are very similar in their functionality and API design, so if you master one, chances are - learning the others won't be difficult.
+Here are the commonly used JavaScript test runner libraries: `jest`, `jasmine`, `mocha`. They are very similar in their functionality and API design, so if you master one, chances are - learning the others won't be difficult.
 
 In this chapter, we will learn `jest` because:
 

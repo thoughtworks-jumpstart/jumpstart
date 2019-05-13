@@ -96,7 +96,7 @@ There is also a famous book named [How to Read a Book](https://www.amazon.com/Ho
 ## How to read the docs of a library
 
 - use it like a dictionary. know the structure. know where to find things
-- find the API docs \(e.g. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) is great for Javascript\)
+- find the API docs \(e.g. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) is great for JavaScript\)
 - figure out what you want to do \(e.g. split a string into an array\)
 - zoom in to the right place in the docs \(e.g. [.split\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)\) \(google is always helpful\)
 - Understand the method
@@ -125,7 +125,7 @@ There are two types of failures. There are the failures that are good for us tha
 - [Myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
 - [The genius fallacy](http://jxyzabc.blogspot.sg/2017/09/the-genius-fallacy.html)
 - [Jargon.js](http://jargon.js.org/)
-- [Javascript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about Javascript - rather it's about how to navigate the road to expertise/mastery\)
+- [JavaScript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about JavaScript - rather it's about how to navigate the road to expertise/mastery\)
 
 ## Assignment
 

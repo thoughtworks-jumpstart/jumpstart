@@ -17,11 +17,11 @@ OOP promotes **greater flexibility and maintainability** in programming, and is 
 ## Learning Checklist
 
 * Building Blocks
-  * Class 
+  * Class
     * Constructor
     * Field/Property
     * Method
-  * Object/Instance 
+  * Object/Instance
 * OO Concepts
   * Abstraction
   * Encapsulation
@@ -39,7 +39,7 @@ OOP promotes **greater flexibility and maintainability** in programming, and is 
 
 What is a Class?
 
-* A named concept that represent a group of things with same characteristics 
+* A named concept that represent a group of things with same characteristics
 
 What is a Field/Property
 
@@ -97,7 +97,7 @@ class Seat {
   constructor(seatNumber) {
     this.seatNumber = seatNumber;
     this.status = SEAT_AVAILABLE;
-    this.capacity = 1; 
+    this.capacity = 1;
   }
 
   getStatus() {
@@ -146,20 +146,20 @@ class Ticket {
 Creating a simple model of a more complex thing, which represents its most important aspects in a way that is easy to work with for our program's purposes.
 
 * derive generalised concept from concrete examples
-* ignore/drop irrelevant details 
-* give it a name 
+* ignore/drop irrelevant details
+* give it a name
 
 #### Encapsulation
 
 * data and the operation using/manipulating those data are usually put into the same class
-* some of the implementation details are declared as 'private' and hidden from public interface. \(Some language like Java makes it very easy to declare private fields, but Javascript does not have straightforward support on this.\)
+* some of the implementation details are declared as 'private' and hidden from public interface. \(Some language like Java makes it very easy to declare private fields, but JavaScript does not have straightforward support on this.\)
 * the functionality offered by an instance is only accessed through the public interface.
 
 #### Inheritance
 
-* A class may inherit the fields and methods of its super-class/parent-class. 
-* An instance of child class is also an instance of the parent class. This is called `is-a` relationship. 
-* Inheritance is **transitive**, so a class may inherit from another class which inherits from another class, and so on, up to a base class \(typically Object, possibly implicit/absent\). 
+* A class may inherit the fields and methods of its super-class/parent-class.
+* An instance of child class is also an instance of the parent class. This is called `is-a` relationship.
+* Inheritance is **transitive**, so a class may inherit from another class which inherits from another class, and so on, up to a base class \(typically Object, possibly implicit/absent\).
 * Subclasses may **override** some methods and/or fields to alter the default behavior.
 
 **Class-based Inheritance vs Prototype-based Inheritance**
@@ -169,7 +169,7 @@ Creating a simple model of a more complex thing, which represents its most impor
 
 Some languages \(like Java, C\#\) adopts Class-based Inheritance.
 
-Javascript actually follows Prototype-based Inheritance, although the class syntax gives us an illusion of class-based inheritance. This is an advanced topic we can cover later.
+JavaScript actually follows Prototype-based Inheritance, although the class syntax gives us an illusion of class-based inheritance. This is an advanced topic we can cover later.
 
 #### Polymorphism
 
@@ -207,8 +207,8 @@ var cat = new Cat();
 var lion = new Lion();
 var animals = [dog, cat, lion];
 
-// this for-loop shows how messy things can get when we don't design 
-// our classes with polymorphism in mind. 
+// this for-loop shows how messy things can get when we don't design
+// our classes with polymorphism in mind.
 for (let i = 0; i < animals.length; i++) {
   var currentAnimal = animals[i];
   if (currentAnimal.constructor === Dog) {
@@ -287,10 +287,10 @@ class Trainer {
   }
 }
 // There are several problems with this implementation:
-// 1. Duplication. 
+// 1. Duplication.
 // We had to rewrite the logic for woof(), meow() and roar().
 
-// 2. Incorrect modelling. 
+// 2. Incorrect modelling.
 // Trainer should not know how to meow/woof/roar
 // What if the method was eat()? Trainer now needs to eat raw meat like a lion! Yikes!
 ```
@@ -414,7 +414,7 @@ References
 
 * [SOLID Principle](https://github.com/ryanmcdermott/clean-code-javascript/#solid)
 * [SOLID explained in a funny way](http://www.daedtech.com/visualization-mnemonics-for-software-principles/)
-* [SOLID OO Design in Javascript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
+* [SOLID OO Design in JavaScript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 
 #### Design Patterns
 
@@ -454,7 +454,7 @@ class FileLogger {
   }
 
   log(msg) {
-    this.stream(`[${new Date().toString()}] ${msg}\n`); 
+    this.stream(`[${new Date().toString()}] ${msg}\n`);
   }
 
   close() {
@@ -479,20 +479,20 @@ fileLogger.close();
 
 Reference: [https://medium.com/front-end-hacking/javascript-and-duck-typing-7d0f908e2238](https://medium.com/front-end-hacking/javascript-and-duck-typing-7d0f908e2238)
 
-Note that this is possible in Javascript because Javascript is a `dynamically typed language`, which means the type information is not hard coded in the source code, and it can change at runtime.
+Note that this is possible in JavaScript because JavaScript is a `dynamically typed language`, which means the type information is not hard coded in the source code, and it can change at runtime.
 
 In our example, the type of `target` object that the `logger` function accepts can change at run time, as long as it supports the `log` method.
 
-This is a useful feature in Javascript to write more reusable functions.
+This is a useful feature in JavaScript to write more reusable functions.
 
 #### Resources
 
 * [The Forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
 * [Goodbye, Object Oriented Programming](https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53) Watch out for the pitfalls with OOP.
-* [MDN docs on OOP in Javascript](https://developer.mozilla.org/ms/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+* [MDN docs on OOP in JavaScript](https://developer.mozilla.org/ms/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 * [OOP In JavaScript: What You NEED to Know](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 * [Introduction to object-oriented JavaScript](https://webplatform.github.io/docs/concepts/programming/javascript/OOJ/)
-* [How to create private variables in Javascript](https://marcusnoble.co.uk/2018-02-04-private-variables-in-javascript/)
+* [How to create private variables in JavaScript](https://marcusnoble.co.uk/2018-02-04-private-variables-in-javascript/)
 * [99 Bottles of OOP](https://www.sandimetz.com/99bottles)
 * [Practical Object-Oriented Design (POODR)](https://www.sandimetz.com/products)
 

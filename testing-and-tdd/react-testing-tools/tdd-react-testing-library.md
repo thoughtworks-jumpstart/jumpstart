@@ -99,7 +99,7 @@ For styling:
 
 - How to arrange the code in your test case: [Unit Testing and the Arrange, Act and Assert (AAA) Pattern](https://medium.com/@pjbgf/title-testing-code-ocd-and-the-aaa-pattern-df453975ab80)
 
-- An interesting article explaining how to extract the truthy/falsey value in JS  [Javascript “Bang, Bang. I shot you down” - Use of double bangs (!!) in Javascript.](https://medium.com/@pddivine/javascript-bang-bang-i-shot-you-down-use-of-double-bangs-in-javascript-7c9d94446054)
+- An interesting article explaining how to extract the truthy/falsey value in JS  [JavaScript “Bang, Bang. I shot you down” - Use of double bangs (!!) in JavaScript.](https://medium.com/@pddivine/javascript-bang-bang-i-shot-you-down-use-of-double-bangs-in-javascript-7c9d94446054)
 
 - This is [another excellent tutorial](https://learntdd.in/react/) you should checkout.
 

@@ -2,7 +2,7 @@
 
 * Components let you \(i\) split the UI into **independent, reusable pieces**, \(ii\) think about each piece in isolation, \(iii\) test each component in isolation.
 * Conceptually, components are like JavaScript functions. They accept arbitrary inputs \(called **“props”** - more on this later\) and return React elements describing what should appear on the screen.
-* React gives us **two ways** to create components: functional components and class components. 
+* React gives us **two ways** to create components: functional components and class components.
   * Functional components ~ stateless/dumb/presentational components
   * Class components ~ stateful/smart components
 
@@ -33,7 +33,7 @@ A common variation of the example is to apply object-destructuring on the `props
   }
 ```
 
-Note that usually the variable names in Javascript start with lower case letter. However, in JSX syntax, the name of components **must** start with upper case letter (`Welcome` instead of `welcome`).
+Note that usually the variable names in JavaScript start with lower case letter. However, in JSX syntax, the name of components **must** start with upper case letter (`Welcome` instead of `welcome`).
 
 **Note: If you define a function that takes in more than one argument, React won't treat it as a React component!!!**
 

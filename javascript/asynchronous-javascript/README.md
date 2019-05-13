@@ -10,11 +10,11 @@ const result2 = makeUseOf(result1);
 const result3 = check(result2)
 ```
 
-There is nothing wrong here, except that it may block other tasks on a Javascript engine. Why? Because a Javascript engine only has one thread to run all the applications concurrently. This means that two scripts cannot run at the same time; they have to run one after another. When one piece of `synchronous` task is running, all the rest tasks are blocked.
+There is nothing wrong here, except that it may block other tasks on a JavaScript engine. Why? Because a JavaScript engine only has one thread to run all the applications concurrently. This means that two scripts cannot run at the same time; they have to run one after another. When one piece of `synchronous` task is running, all the rest tasks are blocked.
 
-That's why codes running on Javascript engine is usually written in `asynchronous` style, meaning all time-consuming tasks are executed in separate processes/threads, so that the Javascript engine can quickly juggle between multiple applications, giving an illusion that every application is making progress.
+That's why codes running on JavaScript engine is usually written in `asynchronous` style, meaning all time-consuming tasks are executed in separate processes/threads, so that the JavaScript engine can quickly juggle between multiple applications, giving an illusion that every application is making progress.
 
-It might be a bit difficult to understand what I am talking about now. No worries, let's start by understanding how Javascript engine executes concurrent tasks.
+It might be a bit difficult to understand what I am talking about now. No worries, let's start by understanding how JavaScript engine executes concurrent tasks.
 
 ## Examples
 

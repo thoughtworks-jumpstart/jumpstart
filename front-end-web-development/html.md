@@ -147,7 +147,7 @@ code .
 
         <p> Choose skills: </p>
         <input type="checkbox" id="js" name="skills" value="javascript">
-        <label for="js">Javascript </label>
+        <label for="js">JavaScript </label>
 
         <input type="checkbox" id="css" name="skills" value="css">
         <label for="css">CSS </label>
@@ -193,7 +193,7 @@ code .
         <button>Submit</button>
       </form>
     ```
-    
+
 * Accessibility \(a11y\)
   * To enhance the accessibility of our HTML page, we should use the correct HTML elements for their correct purpose as much as possible.
   * HTML5 gives us **semantic tags** that have built-in keyboard accessibility — they can be tabbed between, and activated using Return/Enter.

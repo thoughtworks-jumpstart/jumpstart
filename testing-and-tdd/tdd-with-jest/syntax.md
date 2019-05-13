@@ -1,6 +1,6 @@
 # Syntax
 
-### Understanding some Javascript syntax
+### Understanding some JavaScript syntax
 
 * `require()` and `module.exports`
 

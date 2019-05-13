@@ -15,9 +15,9 @@ We'll be using **Visual Studio Code** as our text editor of choice. You can down
 
 We often need to open VS Code to view all files in a directory. To do that, you need to add VS Code program to the `PATH` environment variable of your account.
 
-1. Start VS Code 
+1. Start VS Code
 2. Press F1 key. This will open a command palette window.
-3. Type in the prompt: 'Shell' 
+3. Type in the prompt: 'Shell'
 4. Select 'Shell Command: Install 'code' command in PATH. If you don't see this option in the command list, that means your VS Code is already added to the PATH environment variable, and you can go ahead to verify it.
 
 ![add vs code to path](../.gitbook/assets/add_vscode_to_path.png)
@@ -32,12 +32,12 @@ code .
 
 We have found the following VS Code extensions to be useful in improving our productivity. If you come across any other useful VS Code extensions, do share it with the class!
 
-1. Start VS Code, 
-2. Open the command palette \(Mac: `Cmd`+`Shift`+`P`; Windows: `Ctrl`+`Shift`+`P` or just press `F1`. 
-3. Enter 'Install extensions'. 
+1. Start VS Code,
+2. Open the command palette \(Mac: `Cmd`+`Shift`+`P`; Windows: `Ctrl`+`Shift`+`P` or just press `F1`.
+3. Enter 'Install extensions'.
 4. Search for and install the following extensions one by one
 
-* Javascript
+* JavaScript
   * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). This extension helps to check problems in your JavaScript codes.
   * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). This extension helps to format your JavaScript codes.
 * HTML

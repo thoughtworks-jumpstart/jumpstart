@@ -7,7 +7,7 @@ Since your time during the course is precious, we would not spend much time on t
 Task List
 
 * Improve your typing speed
-* Get familiar with syntax and core API of Javascript
+* Get familiar with syntax and core API of JavaScript
 * Get familiar with basic elements of HTML and CSS
 
 ## Typing Tutor
@@ -21,11 +21,11 @@ If you are interested in improving your typing speed, try a few tutorials here:
 * [https://typing.io/](https://typing.io/)
 * [TypingClub](https://www.typingclub.com/)
 
-## Javascript
+## JavaScript
 
-If you are totally new to Javascript, here is an online course for beginners.
+If you are totally new to JavaScript, here is an online course for beginners.
 
-* [Codecademy - Javascript](https://www.codecademy.com/learn/introduction-to-javascript)
+* [Codecademy - JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
 
 The [tutorial on Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) is pretty good too.
 
@@ -35,9 +35,9 @@ If you prefer to learn by watching videos, you can take this course (paid course
 
 If you are keen to pick up a book, here is a good one:
 
-* [Learn Enough Javascript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)(the first 5 chapters)
+* [Learn Enough JavaScript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)(the first 5 chapters)
 
-From time to time, you may need to refer to the core concepts/APIs in Javascript. Here are some good references for you:
+From time to time, you may need to refer to the core concepts/APIs in JavaScript. Here are some good references for you:
 
 * [Dev Docs](http://devdocs.io/javascript/)
 
@@ -64,11 +64,11 @@ Don't try to memorize the CSS properties. You can always find them in a referenc
 During the course, we will set up [VS Code](https://code.visualstudio.com/) as our editor. If you're having trouble setting it up on your own, you can use the following online code editors:
 
 * [https://repl.it/](https://repl.it/) \(for javascript\)
-* [https://codepen.io](https://codepen.io) \(for HTML, CSS, Javascript\)
+* [https://codepen.io](https://codepen.io) \(for HTML, CSS, JavaScript\)
 
 ## (Optional) Other Online Materials
 
-If you have more free time before joining JumpStart, you can watch some of the online courses on web development and computer science. 
+If you have more free time before joining JumpStart, you can watch some of the online courses on web development and computer science.
 
 * [The Complete Web Developer in 2019: Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/)
 * [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/)

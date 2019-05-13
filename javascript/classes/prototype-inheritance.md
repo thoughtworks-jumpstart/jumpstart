@@ -2,7 +2,7 @@
 
 In ES6, we can define classes and extend one from another. Then a child class can reuse the logic defined in its parent class.
 
-However, this is just `syntax sugar` to make Javascript more look like other object oriented programming languages. Under the hood, the inheritance is actually based on a concept called `prototype`.
+However, this is just `syntax sugar` to make JavaScript more look like other object oriented programming languages. Under the hood, the inheritance is actually based on a concept called `prototype`.
 
 The picture below explains how does the `prototype-chain` works.
 

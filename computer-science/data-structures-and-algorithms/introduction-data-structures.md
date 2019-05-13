@@ -116,10 +116,10 @@ This data structure can be used in [version control systems like Git](http://eri
 
 ### Sample Implementations
 
-* [Data Structures with Javascript](https://www.codeproject.com/Articles/669131/Data-Structures-with-JavaScript)
-* [Data Structures in Javascript](http://blog.benoitvallon.com/data-structures-in-javascript/data-structures-in-javascript/)
+* [Data Structures with JavaScript](https://www.codeproject.com/Articles/669131/Data-Structures-with-JavaScript)
+* [Data Structures in JavaScript](http://blog.benoitvallon.com/data-structures-in-javascript/data-structures-in-javascript/)
 * [datastructure-js](https://github.com/eyas-ranjous/datastructures-js)
-* [Data Structures and Algorithms in Javascript](https://github.com/trekhleb/javascript-algorithms)
+* [Data Structures and Algorithms in JavaScript](https://github.com/trekhleb/javascript-algorithms)
 * [LAGO](https://github.com/yangshun/lago)
 
 ### Tutorials
@@ -127,7 +127,7 @@ This data structure can be used in [version control systems like Git](http://eri
 * [Learning Data Structures on TutorialPoint](https://www.tutorialspoint.com/data_structures_algorithms/index.htm)
 * [10 Common Data Structures Explained](https://medium.freecodecamp.org/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b)
 * [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/)
-* [Learning Data Structures in Javascript from Scratch](https://www.udemy.com/learning-data-structures-in-javascript-from-scratch/)
+* [Learning Data Structures in JavaScript from Scratch](https://www.udemy.com/learning-data-structures-in-javascript-from-scratch/)
 * [Break Away: Programming And Coding Interviews](https://www.udemy.com/break-away-coding-interviews-1/?couponCode=PROGRAMM.R)
 * [EggHead: Data Structures and Algorithms in JavaScript](https://egghead.io/courses/data-structures-and-algorithms-in-javascript)
 * [Computer science in JavaScript: Linked list](https://humanwhocodes.com/blog/2019/01/computer-science-in-javascript-linked-list/)

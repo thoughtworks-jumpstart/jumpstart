@@ -13,7 +13,7 @@
 
 ## What is a class?
 
-Classes are blueprints for instantiating \(i.e. creating\) Javascript objects. 
+Classes are blueprints for instantiating \(i.e. creating\) JavaScript objects.
 
 Note that this is only one of the ways to create objects in JavaScript. Another way is to use [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 

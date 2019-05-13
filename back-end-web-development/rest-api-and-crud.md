@@ -18,7 +18,7 @@ In this section, we are going to talk about one of the popular conventions in bu
   * What if PUT/DELETE is not supported?
   * Limitations of GET API
   * What about actions that don't fit into the world of CRUD operations?
-  * Be aware of caching 
+  * Be aware of caching
 * Security and REST API
   * Cross Origin Resource Sharing \(CORS\)
   * Hide exception details in production
@@ -164,7 +164,7 @@ PUT http://api.example.com/customers/12345
 
 The original REST API proposal mentions we can use all HTTP verbs including GET/POST/PUT/DELETE to specify the intended operation on a resource. However, in reality, sometimes you cannot use PUT/DELETE:
 
-* Some of the API client \(e.g. browsers\) only support GET/POST 
+* Some of the API client \(e.g. browsers\) only support GET/POST
 * Some of the corporate firewalls block HTTP connection with PUT and DELETE methods
 
 In those situations, you might be forced to only support GET/POST methods for your REST API. One of the solutions is to use a request header called `X-HTTP-Method-Override` to specify the real HTTP method associated with a request.
@@ -213,9 +213,9 @@ The result of HTTP GET methods might be cached by the browsers \(and the interme
 
 #### Cross-Origin Resource Sharing \(CORS\)
 
-By default, the Javascript running on a website can only make connections to the same server where the website was downloaded. This is called [Same Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+By default, the JavaScript running on a website can only make connections to the same server where the website was downloaded. This is called [Same Origin Policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
 
-This is a security feature to prevent malicious Javascript code to submit user data \(loaded from the website\) to another server controlled by hackers.
+This is a security feature to prevent malicious JavaScript code to submit user data \(loaded from the website\) to another server controlled by hackers.
 
 However, sometimes this policy is a bit too restrictive and we do have genuine reasons to consume an public API that is hosted on different servers.
 
@@ -224,7 +224,7 @@ CORS is designed to address these needs.
 You can find more information in the links below:
 
 * [MDN doc on CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-* [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) 
+* [Using CORS](https://www.html5rocks.com/en/tutorials/cors/)
 * [Understanding CORS](https://medium.com/@baphemot/understanding-cors-18ad6b478e2b)
 * [Do You Really Know CORS?](http://performantcode.com/web/do-you-really-know-cors)
 

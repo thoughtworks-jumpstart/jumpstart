@@ -8,7 +8,7 @@ The Open Web Application Security Project \(OWASP\) is a non-profit organization
 
 For those who are new to security issues, they may find it hard to interpret those issues. Luckily there is a project called [Damn Vulnerable NodeJS Application](https://appsecco.com/books/dvna-developers-security-guide/intro.html) which demonstrates some of the security issues. It actually demonstrates the top 10 issues identified in year 2013, which is a bit different from the list in 2017. Nevertheless, it's still a good tool to learn about those security issues. \(Note: to play with this node application, you need to install [docker](https://www.docker.com/) on your computer.\)
 
-Another website to learn OWASP Top 10 vulnerabilities is called [OWASP Juice Shop](https://github.com/bkimminich/juice-shop), which is an intentionally insecure webapp for security trainings written entirely in Javascript which encompasses the entire OWASP Top Ten and other severe security flaws.
+Another website to learn OWASP Top 10 vulnerabilities is called [OWASP Juice Shop](https://github.com/bkimminich/juice-shop), which is an intentionally insecure webapp for security trainings written entirely in JavaScript which encompasses the entire OWASP Top Ten and other severe security flaws.
 
 Out of those top 10 vulnerabilities, XSS and CSRF are very famous and worth more discussion.
 
@@ -40,7 +40,7 @@ Here are a few quick tips for developers:
 
 - Make sure you always validate and escape the data submitted by the user, and do some sanitization on the user input data when you need to display them \(i.e. display the user input data as pure text, instead of loading that as javascript code\). For this purpose, you can use libraries like [xss-filter](https://github.com/yahoo/xss-filters)
 - Use tools like [helmet](https://helmetjs.github.io/docs/xss-filter/) to set `X-XSS-Protection` header in HTTP response, so that the browser can do some basic detection on XSS attack.
-- Another trick is to use [Http-Only Cookie](https://www.owasp.org/index.php/HttpOnly) so that session cookies cannot be accessed from Javascript.
+- Another trick is to use [Http-Only Cookie](https://www.owasp.org/index.php/HttpOnly) so that session cookies cannot be accessed from JavaScript.
 - If you need to store some information into the storage space in browser, use `session storage` instead of `local storage` if you don't need that information after the browser tab is closed.
 
 As a user, you can protect yourself by using some browser side security features. Chrome and Safari has a built-in feature called [XSS Auditor](https://www.virtuesecurity.com/blog/understanding-xss-auditor/) that tires to mitigate XSS attacks although it can’t catch all possible XSS variants.
@@ -84,7 +84,7 @@ You can also make use tools that automatically scan your code for potential secu
 
 ## Make sure your NPM dependencies are secure
 
-When you develop Javascript based applications, you would have a lot of dependencies on 3rd party modules. How can you be confident that those dependencies do not have known vulnerabilities? Remember, using components with known vulnerabilities" is a part of the OWASP Top 10 and insecure libraries can pose a huge risk for your web app.
+When you develop JavaScript based applications, you would have a lot of dependencies on 3rd party modules. How can you be confident that those dependencies do not have known vulnerabilities? Remember, using components with known vulnerabilities" is a part of the OWASP Top 10 and insecure libraries can pose a huge risk for your web app.
 
 What are the vulnerabilities are we talking about? You can get some examples [here](https://snyk.io/vuln?packageManager=npm)
 
@@ -133,6 +133,6 @@ Follow the guide to learn the TOP10 OWASP vulnerabilities
 - [9 Security Practice to Keep Express from Getting Pwned](https://nodesource.com/blog/nine-security-tips-to-keep-express-from-getting-pwned/)
 - [Secure Express App with various HTTP headers](https://github.com/helmetjs/helmet)
 - [Writing Secure Express.js Apps](https://blog.liftsecurity.io/2012/12/07/writing-secure-express-js-apps)
-- [Building Secure Javascript Apps](https://nemethgergely.com/building-secure-javascript-applications/)
+- [Building Secure JavaScript Apps](https://nemethgergely.com/building-secure-javascript-applications/)
 - [Simple Steps to Secure Your Express Node Application](http://scottksmith.com/blog/2014/09/04/simple-steps-to-secure-your-express-node-application/)
 - [Awesome Node.js Security resources](https://github.com/lirantal/awesome-nodejs-security)

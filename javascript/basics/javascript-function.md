@@ -1,4 +1,4 @@
-# Javascript Functions
+# JavaScript Functions
 
 Functions allow us to keep our code DRY \(Don't Repeat Yourself\) by allowing us to group repeated logic into reusable and readable pieces of code.
 

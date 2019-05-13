@@ -2,11 +2,11 @@
 
 You have to be careful about the meaning of `this` in JSX callbacks.
 
-Remember, in a normal JavaScript function, the value of `this` is resolved at run time (i.e. "Dynamic Scoping") \(see the chapter on `this` at Javascript -&gt; Functions -&gt; `this` and arrow functions\).
+Remember, in a normal JavaScript function, the value of `this` is resolved at run time (i.e. "Dynamic Scoping") \(see the chapter on `this` at JavaScript -&gt; Functions -&gt; `this` and arrow functions\).
 
 In such cases, if you forget to bind the value of `this` when passing the `handleClick` function to `onClick` property, `this` will be undefined when the function is actually called.
 
-This is not React-specific behavior; it is a part of how functions work in JavaScript. 
+This is not React-specific behavior; it is a part of how functions work in JavaScript.
 
 Generally, you must bind `this` to the event handler functions in the constructor if: 1. you are passing functions/methods around \(instead of invoking them\) \(e.g. `onClick={this.handleClick}`\), **and** 2. your function/method uses `this` in its implementation.
 

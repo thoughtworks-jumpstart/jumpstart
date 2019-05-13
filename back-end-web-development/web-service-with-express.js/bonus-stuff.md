@@ -17,7 +17,7 @@ Here's are the steps for using it to create an express app
 * Generate express app!: `express --git -e`
   * Here's some explanation of the options
     * `--git`: this tells the `express` command line app to create a `.gitignore` file
-    * `-e`: this tells `express` to add add ejs template engine support \(ejs stands for Embedded Javascript and it's a views templating engine\)
+    * `-e`: this tells `express` to add add ejs template engine support \(ejs stands for Embedded JavaScript and it's a views templating engine\)
 * Install depdencies: `npm install`
 * Start application: `nodemon bin/www`
 
@@ -51,7 +51,7 @@ For example, [Kraken](http://krakenjs.com/) is a secure and scalable layer that 
 
 ## Alternatives to Express
 
-Express is not the only web application framework built on top of NodeJS. 
+Express is not the only web application framework built on top of NodeJS.
 
 Other popular ones include:
 - [Koa](https://koajs.com/)

@@ -122,7 +122,7 @@ Note that this Promise constructor takes in one callback function \(called **exe
 
 The executor function basically does some **asynchronous task**, and invoke either `fulfill` or `reject` based on the success/failure of that asynchronous task. When one of those callbacks is called, the promise is changed from `pending` state to either `fulfilled` state, or `rejected` state. If there are any error thrown from the executor function, the promise is also rejected automatically.
 
-#### What is this `fulfill` and `reject` parameter? 
+#### What is this `fulfill` and `reject` parameter?
 
 Those two parameters are callbacks supplied by the Promise library. If you are interested, you can have a look at the source codes of Promise constructor to see how it creates the `fulfill`/`reject` callback and supplies it to the `executor` function.
 
@@ -346,7 +346,7 @@ There are some handy utility functions on Promise API. You should check them out
 
 Now, let's try some code with Promise API.
 
-Many operations in Javascript are asynchronous - for example: fetching data via HTTP, reading from a file, event handlers, etc.
+Many operations in JavaScript are asynchronous - for example: fetching data via HTTP, reading from a file, event handlers, etc.
 
 In this example, we will use the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) provided by the browsers to fetch some data from a web service. The web service returns real time car park status information in Singapore.
 
@@ -416,7 +416,7 @@ If there are any errors thrown from the database lookup, or the `getMedataDataFo
 
 ### Mistake: Handle Rejected Promises with try..catch
 
-You probably get use to handle errors in Javascript using try..catch syntax, and you would like to handle errors from promises using that syntax too. Unfortunately, that won't work.
+You probably get use to handle errors in JavaScript using try..catch syntax, and you would like to handle errors from promises using that syntax too. Unfortunately, that won't work.
 
 For example:
 
@@ -569,9 +569,9 @@ readFilePromise("path/to/file", "utf8")
 - [JavaScript Promises with Node.js](https://itnext.io/javascript-promises-with-node-js-e8ca827e0ea3)
 - [Promise Fun](https://github.com/sindresorhus/promise-fun)
 - [Promise Tips](https://dev.to/kepta/promising-promise-tips--c8f)
-- [Javascript Promises for Dummies](https://scotch.io/tutorials/javascript-promises-for-dummies)
+- [JavaScript Promises for Dummies](https://scotch.io/tutorials/javascript-promises-for-dummies)
 - [Write your own promise library from scratch](http://thecodebarbarian.com/write-your-own-node-js-promise-library-from-scratch.html)
-- [Master the Javascript Interview: What's a Promise](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
+- [Master the JavaScript Interview: What's a Promise](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
 ## Lab
 

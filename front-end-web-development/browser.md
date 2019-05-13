@@ -15,8 +15,8 @@ Because of the pain, people created various libraries and tools.
 
 For example:
 
-- [jQuery](https://jquery.com/), which provides built-in functions to hide the different behaviors across browsers and give us a consistent API. 
+- [jQuery](https://jquery.com/), which provides built-in functions to hide the different behaviors across browsers and give us a consistent API.
 - [Polyfill](https://addyosmani.com/blog/writing-polyfills/), a term coined by Remy Sharp to describe JavaScript shims that replicate the standard API found in native features of new browsers for those without such features. But if you are lazy, you don't need to write polyfills by yourself, and rely on services like [polyfill.io](https://polyfill.io/)
 - Browser feature detection with [Modernizr](https://modernizr.com/docs/#what-is-modernizr)
 
-Nowadays, the major browsers are more compliant with web standards, however, you still need to refer to websites like [Can I Use](https://caniuse.com/) to check if a given Javascript/CSS/Browser API is supported in all major browsers.
+Nowadays, the major browsers are more compliant with web standards, however, you still need to refer to websites like [Can I Use](https://caniuse.com/) to check if a given JavaScript/CSS/Browser API is supported in all major browsers.
