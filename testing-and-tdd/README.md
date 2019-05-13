@@ -39,6 +39,7 @@
 
 ## Resources
 
+* [TDD Changed My Life](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
 * [TDD By Example - \(read the preface at least!\)](https://www.eecs.yorku.ca/course_archive/2003-04/W/3311/sectionM/case_studies/money/KentBeck_TDD_byexample.pdf)
 * [Using TDD to Influence Design](https://www.thoughtworks.com/insights/blog/using-tdd-influence-design)
 * [Writing Testable Code](https://testing.googleblog.com/2008/08/by-miko-hevery-so-you-decided-to.html?m=1)
