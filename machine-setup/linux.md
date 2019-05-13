@@ -1,5 +1,13 @@
 # Linux
 
+## Distribution
+
+Run the following command to check which Linux distribution you are using
+
+```
+lsb_release -a
+```
+
 ## Package manager
 
 Depending on your Linux distribution you will use a different package manager.
