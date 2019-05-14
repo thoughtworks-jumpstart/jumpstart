@@ -117,6 +117,7 @@ git log
 ## Resources
 
 * [Learn Just Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial)
+* [Git Pocket Guide](https://www.oreilly.com/library/view/git-pocket-guide/9781449327507/)
 * [Become a Git Guru](https://www.atlassian.com/git/tutorials)
 * [UDACITY: How to use git and github](https://eu.udacity.com/course/how-to-use-git-and-github--ud775)
 * [Version Control with Git](http://swcarpentry.github.io/git-novice/)
