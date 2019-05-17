@@ -108,7 +108,7 @@ This may sound boring now, but basically all interactive webpages that you've vi
 
 ```javascript
 let greeting_div = document.getElementById("greeting");
-console.log(greeting);
+console.log(greeting_div);
 ```
 
 Note: to refer to the current document object, you can use the global variable `document`.
