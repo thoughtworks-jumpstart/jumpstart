@@ -313,7 +313,7 @@ Example:
 ```markup
 <!-- in your html file -->
 
-<a href="www.google.com">google</a>
+<a href="http://www.google.com">google</a>
 ```
 
 ```javascript
