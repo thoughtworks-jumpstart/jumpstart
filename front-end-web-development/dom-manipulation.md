@@ -107,8 +107,8 @@ This may sound boring now, but basically all interactive webpages that you've vi
 ```
 
 ```javascript
-let greeting_div = document.getElementById("greeting");
-console.log(greeting_div);
+let greetingDiv = document.getElementById("greeting");
+console.log(greetingDiv);
 ```
 
 Note: to refer to the current document object, you can use the global variable `document`.
@@ -116,16 +116,16 @@ Note: to refer to the current document object, you can use the global variable `
 Other element selectors:
 
 ```javascript
-// by css query selector syntax
-document.querySelector("li.my-specific-class");
-document.querySelector("li#my-specific-id");
-
 // by class name
 // (Note: methods which say getElements... (instead of getElement...) return an array)
 document.getElementsByClassName("some-class");
 
 // by HTML tag name (this returns an array)
 document.getElementsByTagName("h1");
+
+// by css query selector syntax
+document.querySelector("li.my-specific-class");
+document.querySelector("li#my-specific-id");
 
 // selecting more than 1 element (this returns an array of all html elements meeting the criteria)
 document.querySelectorAll("li");
@@ -137,7 +137,7 @@ document.querySelectorAll("li.my-specific-class");
 You can change the content of the HTML element
 
 ```javascript
-greeting_div.textContent = "Howdy world!";
+greetingDiv.textContent = "Howdy world!";
 ```
 
 ### How to change the style of one HTML element
@@ -145,10 +145,10 @@ greeting_div.textContent = "Howdy world!";
 You can change the style too!
 
 ```javascript
-greeting_div.style.backgroundColor = "gold";
-greeting_div.style.fontFamily = "Helvetica Neue";
-greeting_div.style.fontSize = "3em";
-greeting_div.style.color = "white";
+greetingDiv.style.backgroundColor = "gold";
+greetingDiv.style.fontFamily = "Helvetica Neue";
+greetingDiv.style.fontSize = "3em";
+greetingDiv.style.color = "white";
 ```
 
 \(Warning: `.style` is not supported in every browser. This example is for the purpose of illustrating what you can do. A better way to change the style would be via the `.classList` attribute\)
@@ -161,16 +161,16 @@ We can access/update a html element's css class via the `.classList` attribute
 
 ```javascript
 //list classes
-greeting_div.classList;
+greetingDiv.classList;
 
 //add a class
-greeting_div.classList.add("my-new-class");
+greetingDiv.classList.add("my-new-class");
 
 //remove a class
-greeting_div.classList.remove("my-new-class");
+greetingDiv.classList.remove("my-new-class");
 
-//check if greeting_div has a class (returns true or false)
-greeting_div.classList.contains("my-new-class");
+//check if greetingDiv has a class (returns true or false)
+greetingDiv.classList.contains("my-new-class");
 ```
 
 ```css
@@ -232,14 +232,14 @@ We can hook up custom javascript code \(e.g. the lines of code that we've just w
 We do this by adding an event listener to a DOM element \(by calling `.addEventListener('the-event-we-want', callbackFunction)`\) and specifying what we want to happen in a callback function
 
 ```javascript
-let greeting_div = document.querySelector("div");
-greeting_div.addEventListener("click", function() {
-  greeting_div.textContent = "bye bye";
+let greetingDiv = document.querySelector("div");
+greetingDiv.addEventListener("click", function() {
+  greetingDiv.textContent = "bye bye";
 
-  greeting_div.style.backgroundColor = "gold";
-  greeting_div.style.fontFamily = "Helvetica Neue";
-  greeting_div.style.fontSize = "3em";
-  greeting_div.style.color = "white";
+  greetingDiv.style.backgroundColor = "gold";
+  greetingDiv.style.fontFamily = "Helvetica Neue";
+  greetingDiv.style.fontSize = "3em";
+  greetingDiv.style.color = "white";
 });
 ```
 
