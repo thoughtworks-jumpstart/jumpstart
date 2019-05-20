@@ -257,7 +257,7 @@ Now we can do the [page-styler​ exercise](https://github.com/thoughtworks-jump
 The event object contains several attributes which can be useful. For example:
 
 - `event.screenX` and `event.screenY` tells us the coordinates of the mouse when the event happened.
-- `event.charCode` - when listening for `keypress` event, we have an `event.charCode` attribute which tells us which key was pressed \(e.g. Enter, Space, 'a', 's', 'd', up, down, left, right, etc\).
+- `event.key` - when listening for `keyup` or `keydown` event, we have an `event.key` attribute which tells us which key was pressed \(e.g. Enter, Space, 'a', 's', 'd', up, down, left, right, etc\).
 - `event.target` - is an object which represents the HTML element on which the event was triggered.
 
 Example 1: using `event`'s properties \(e.g. `screenX` and `screenY`\) \(Note that `event` has been shortened to `e`\)
@@ -288,14 +288,14 @@ Example 2: how to \(i\) listen for keypress, \(ii\) execute conditional logic us
 // in your javascript file
 let inputDiv = document.getElementById("some-input");
 
-inputDiv.addEventListener("keypress", function(event) {
-  if (event.charCode === 13) {
-    event.preventDefault();
-    console.log("Enter key pressed");
-    console.log(event.target.value); // this is the value of the input box
-  } else {
-    console.log("other key pressed");
-  }
+inputDiv.addEventListener('keydown', (event) => {
+  console.log(`Key "${event.key}" pressed  [event: keydown]`);
+  console.log(event.target.value);
+});
+
+inputDiv.addEventListener('keyup', (event) => {
+  console.log(`Key "${event.key}" released  [event: keyup]`);
+  console.log(event.target.value);
 });
 ```
 
