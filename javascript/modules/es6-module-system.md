@@ -72,7 +72,7 @@ Some browsers don't support ES6 module yet. You can find the latest status [here
 
 Node.JS is built on top of CommonJS since day one and CommonJS is still the default module system used by Node.JS. Most of the modules written for Node.JS environment still use the CommonJS `module.exports` and `require` syntax instead of ES6 modules.
 
-The support on ES6 modules is currently [an experimental feature](https://nodejs.org/api/esm.html). However, in order to use ES6 modules in your codes, you have to change your file extension to `.mjs` so that Node is aware the module is written using ES6 modules. Some descriptions of the current status can be found [here](https://github.com/nodejs/node-eps/blob/master/002-es-modules.md)
+The support on ES6 modules is currently [an experimental feature](https://nodejs.org/api/esm.html). However, in order to use ES6 modules in your codes, you have to change your file extension to `.mjs` so that Node is aware the module is written using ES6 modules. Some descriptions of the current status can be found [here](http://2ality.com/2019/04/nodejs-esm-impl.html)
 
 To run JavaScript applications on NodeJS platform, you have three choices:
 
