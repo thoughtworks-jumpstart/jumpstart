@@ -159,6 +159,15 @@ We can access/update a html element's css class via the `.classList` attribute
 
 \(See [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) for a list of available methods\)
 
+```css
+.my-new-class {
+  background-color: gold;
+  font-family: "Helvetica Neue";
+  font-size: 30px;
+  color: white;
+}
+```
+
 ```javascript
 //list classes
 greetingDiv.classList;
@@ -171,12 +180,6 @@ greetingDiv.classList.remove("my-new-class");
 
 //check if greetingDiv has a class (returns true or false)
 greetingDiv.classList.contains("my-new-class");
-```
-
-```css
-.my-new-class {
-  text-align: center;
-}
 ```
 
 ### How to add html elements
