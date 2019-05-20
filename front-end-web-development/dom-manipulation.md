@@ -147,7 +147,7 @@ You can change the style too!
 ```javascript
 greetingDiv.style.backgroundColor = "gold";
 greetingDiv.style.fontFamily = "Helvetica Neue";
-greetingDiv.style.fontSize = "3em";
+greetingDiv.style.fontSize = "30px";
 greetingDiv.style.color = "white";
 ```
 
@@ -314,7 +314,6 @@ Example:
 ```
 
 ```javascript
-
 // in your javascript file
 let linkElement = document.querySelector("a");
 linkElement.addEventListener("click", function(event) {
