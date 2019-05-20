@@ -298,6 +298,7 @@ Here is another good one: [Running the Node.js Bookshelf on Kubernetes Engine](h
 
 ## Resources
 
+* [The Missing Introduction To Containerization](https://medium.com/faun/the-missing-introduction-to-containerization-de1fbb73efc5)
 * [SystemAdmin Cast: Introduction to Docker](https://sysadmincasts.com/episodes/31-introduction-to-docker)
 * [Intro to docker](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5)
 * [Docker and Kubernetes](https://hackernoon.com/the-best-architecture-with-docker-and-kubernetes-myth-or-reality-77b4f8f3804d)
