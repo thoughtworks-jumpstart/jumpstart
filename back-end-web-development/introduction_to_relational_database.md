@@ -383,3 +383,4 @@ More Tutorials on Sequelize
 * [Reference on PostgreSQL](https://goalkicker.com/PostgreSQLBook/)
 * [SQL Learning Track on Bento.io](https://bento.io/topic/sql)
 * [Introduction to SQL](http://swcarpentry.github.io/sql-novice-survey/)
+* [Foundation of Databases](http://webdam.inria.fr/Alice/)
