@@ -89,6 +89,7 @@ We recommend you to practice the following skills on this project:
   * [Where to Mail](https://github.com/timmoti/postbox-hunter)
 * [Build a web-based code editor](http://krasimirtsonev.com/blog/article/build-your-own-interactive-javascript-playground)
 * [A website to track your running habit](https://github.com/newzealot/runninglog)
+* [A website to collect vote](https://www.menti.com/)
 * Build games
   * [Flatris](https://github.com/skidding/flatris)
   * [React Snake](https://github.com/taming-the-state-in-react/react-snake)
