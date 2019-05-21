@@ -18,6 +18,8 @@
 
 ## What is the DOM
 
+![Example DOM Tree](../.gitbook/assets/front-end-web-development/dom-manipulation/DOM-tree.png)
+
 The Document Object Model \(DOM\) is an in-memory representation of HTML documents. It represents the web page as a javascript object \(`document`\) so that javascript programs can traverse and modify the document structure, style, and content.
 
 Imagine an HTML page with the following structure:
@@ -288,12 +290,12 @@ Example 2: how to \(i\) listen for keypress, \(ii\) execute conditional logic us
 // in your javascript file
 let inputDiv = document.getElementById("some-input");
 
-inputDiv.addEventListener('keydown', (event) => {
+inputDiv.addEventListener("keydown", event => {
   console.log(`Key "${event.key}" pressed  [event: keydown]`);
   console.log(event.target.value);
 });
 
-inputDiv.addEventListener('keyup', (event) => {
+inputDiv.addEventListener("keyup", event => {
   console.log(`Key "${event.key}" released  [event: keyup]`);
   console.log(event.target.value);
 });
