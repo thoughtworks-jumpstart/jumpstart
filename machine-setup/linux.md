@@ -79,6 +79,14 @@ We recommed using `n`. You can read their [documentation](https://github.com/tj/
 npm install -g n
 ```
 
+## Shell
+
+Most Linux distributions use bash as its default shell. There are other shells that you can optionally use instead of bash. For example, there is Z shell and C shell among many others.
+
+Many programmers like to use Z shell along with Oh My Zsh (a configuration tool for Z shell).
+
+If you would like to install Oh My Zsh, follow the instructions [here](https://thoughtworks-jumpstart.gitbook.io/jumpstart/machine-setup/mac#install-oh-my-zsh).
+
 ## Browsers
 
 Chrome and Firefox are two recommended browsers that you should install for web development.
