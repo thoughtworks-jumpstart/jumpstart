@@ -125,3 +125,4 @@ You can experiment with CSS rules easily with Chrome Devtools. More materials on
 ## Recommended Readings
 
 * [30 CSS selectors you must memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+* [The CSS Handbook: a handy guide to CSS for developers](https://medium.freecodecamp.org/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11)
