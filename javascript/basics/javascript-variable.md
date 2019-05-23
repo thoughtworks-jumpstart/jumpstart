@@ -26,7 +26,7 @@
   * `let` e.g. `let age = 45`
   * `var` e.g. `var isSaturday = false`
 * A variable \(or constant\) contains a value, \(e.g. "hello" or 42\).
-* You use variables to store, retrieve, and manipulate values that appear in your code. 
+* You use variables to store, retrieve, and manipulate values that appear in your code.
 * Variables can refer to other variables
 
   ```javascript
@@ -36,6 +36,58 @@
   const x = 15;
   const y = x + 20; // y is ???
   ```
+
+### Differences between `var` and `let`
+
+One difference between `var` and `let` is in its scoping. While `var` is function scoped, `let` is block scoped.
+
+An example of block scoping can be seen in this example:
+
+```js
+if (true) {
+  var name = "Luke"; // not block scoped
+}
+
+console.log(name);
+```
+
+```js
+if (true) {
+  let name = "Luke"; // block scoped
+}
+
+console.log(name);
+```
+
+
+
+Another distinction is that variables declared with `let` are not hoisted. To understand what we mean by this, let's look at an example:
+
+```js
+console.log(name);
+var name = 'James';
+```
+
+The code above yields `undefined` as its result. This is because the variable `name` is first hoisted to the top of the file. This is equivalent to writing the code like this:
+
+```js
+var name; // hoisted variable
+console.log(name);
+name = 'James';
+```
+
+Now consider the same example with `let`.
+
+```js
+console.log(name);
+let name = 'James';
+```
+
+The code above yields a `ReferenceError` because `name` is not defined.
+
+This is because `let` variables are not hoisted and since they were not defined, they yield a reference error as expected.
+
+In general, we prefer using `const` and if we have to we should use `let` instead of `var`.
 
 ### Naming rules and conventions
 
@@ -52,7 +104,7 @@
 
 * Use `camelCase` for names instead of `snake_case` or `kebab-case`
 
-## Primitive Types and Objects 
+## Primitive Types and Objects
 
 In JavaScript, there are 6 types of [primitive types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values):
 
