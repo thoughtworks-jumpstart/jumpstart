@@ -28,6 +28,22 @@ if (food === "pizza") {
 }
 ```
 
+## Switch case statements
+
+```js
+switch (fruit.toLowerCase()) {
+  case 'oranges':
+    console.log('Oranges are $0.59 a kilo.');
+    break;
+  case 'mangoes':
+  case 'papayas':
+    console.log('Mangoes and papayas are $2.79 a kilo.');
+    break;
+  default:
+    console.log('Sorry, we do not sell ' + fruit.toLowerCase() + '.');
+}
+```
+
 ## Comparison operators
 
 * `===` and `!==` \(vs. `==` and `=`\)
