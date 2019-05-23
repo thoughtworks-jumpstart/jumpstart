@@ -61,6 +61,24 @@ switch (fruit.toLowerCase()) {
 
 You can also use `!!` to convert a variable into a boolean type. For example, `!!'foo'` will return `true`.
 
+Let's look at an example:
+
+```js
+const names = ['Alice', 'Bob']
+const isFound = names.find(name => name === 'Charlie')
+console.log(isFound) // returns undefined
+```
+
+In the code above, if a name is found then `isFound` will contain the name, otherwise it will be `undefined`.
+
+```js
+const names = ['Alice', 'Bob']
+const isFound = !!names.find(name => name === 'Charlie')
+console.log(isFound) // returns false
+```
+
+A better way is to use type coercion to return a boolean value like in the code above.
+
 ## Ternary conditional statements
 
 The dictionary definition of tern is a "set of three". A ternary condition follows the following syntax `condition ? doSomethingIfTrue() : doSomethingIfFalse()`
