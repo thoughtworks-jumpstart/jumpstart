@@ -53,13 +53,19 @@ Joining arrays to form strings
 ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'].join('') // returns 'hello world'
 ```
 
-Creating arrays from strings
+Creating arrays from strings using `String.split()`
 
 ```javascript
 // syntax: someString.split(someDelimiter)
 
 'hello world'.split(' ') // returns ['hello', 'world']
 'hello world'.split('') // returns ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+```
+
+You can also create arrays from strings using `Array.from()`
+
+```js
+Array.from('hello world') // returns ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
 ```
 
 ## Resources
