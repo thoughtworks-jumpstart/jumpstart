@@ -48,7 +48,7 @@ if (true) {
   var name = "Luke"; // not block scoped
 }
 
-console.log(name);
+console.log(name); // returns undefined
 ```
 
 ```js
@@ -56,7 +56,7 @@ if (true) {
   let name = "Luke"; // block scoped
 }
 
-console.log(name);
+console.log(name); // returns ReferenceError
 ```
 
 
