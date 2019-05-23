@@ -55,20 +55,16 @@ switch (fruit.toLowerCase()) {
 * And: `&&`
 * Or: `||`
 * Not: `!`
-  * `! true`     // returns false
-  * `! false`    // returns true
-  * `! 1===1`    // returns false
+  * `!true`     // returns false
+  * `!false`    // returns true
+  * `!(1===1)`  // returns false
 
-## ternary conditional statements
+You can also use `!!` to convert a variable into a boolean type. For example, `!!'foo'` will return `true`.
 
-Dictionary definition of tern: "a set of three"
+## Ternary conditional statements
 
-```javascript
-// Syntax:
+The dictionary definition of tern is a "set of three". A ternary condition follows the following syntax `condition ? doSomethingIfTrue() : doSomethingIfFalse()`
 
-condition ? functionToExecuteIfConditionIsTrue() : functionToExecuteIfConditionIsFalse();
-
-// Example:
+```js
 skyColor === "grey" ? bringRaincoat() : bringPicnicMat();
 ```
-
