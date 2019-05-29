@@ -289,7 +289,6 @@ In the solutions repo, you can find examples on how to
 ### Recommended reading
 
 * [A great explanation on how to use mocks in jest](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
-* [Understanding Jest Mocks](https://medium.com/@rickhanlonii/understanding-jest-mocks-f0046c68e53c)
 * [But really, what is a JavaScript mock?](https://blog.kentcdodds.com/but-really-what-is-a-javascript-mock-10d060966f7d)
 
 ### Other JavaScript libraries for mocking
