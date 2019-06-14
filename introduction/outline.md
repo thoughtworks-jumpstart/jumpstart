@@ -73,7 +73,7 @@
 - Team project
 - Guest speakers from the tech industry
 
-# Week 12
+## Week 12
 
 - Introduction to data structures and algorithms
 - Preparation for technical interviews
