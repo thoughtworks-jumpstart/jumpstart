@@ -6,18 +6,14 @@ Welcome! We're happy to have you here. The next 3 months will be a tremendous pe
 
 ## About ThoughtWorks
 
-We are a community of passionate individuals whose purpose is to revolutionize software design, creation and delivery, while advocating for positive social change. Read more about us [here](https://www.thoughtworks.com/)!
+We are a community of passionate individuals whose purpose is to revolutionize software design, creation and delivery, while advocating for positive social change. Read more about us [here](https://www.thoughtworks.com/).
 
-## How to use gitbook to view the content locally
+## About JumpStart
 
-* Set up instructions
-  * Clone repository
-  * Install gitbook cli: `npm install -g gitbook-cli`
-  * Install dependencies listed in `./book.json`: `gitbook install`
-  * To see gitbook locally, run `gitbook serve`
-* Table of contents \(the left toolbar\) can be found in `SUMMARY.md`
+JumpStart is a 12 week program geared towards individuals who want to develop software development skills using agile and modern software delivery practices to jumpstart their careers in tech.
 
-## Copyright of This Material
+The program is supported by [TechSkills Accelerator (TeSA)](https://www.skillsfuture.sg/tesa) and [Tech Immersion and Placement Program (TIPP)](https://www.imda.gov.sg/imtalent/programmes/tipp) and driven by Infocomm Media Development Authority (IMDA).
 
-Copyright \(c\) 2018 ThoughtWorks; for individual use for training purposes and not to be distributed or sublicensed without further authorisation by ThoughtWorks.
+## License
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
