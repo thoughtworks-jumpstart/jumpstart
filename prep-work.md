@@ -59,7 +59,7 @@ During the course, we will set up [VS Code](https://code.visualstudio.com/) as o
 
 If you work as a software developer, you will spend a lot of your time with a keyboard. We recommend using a tool like [keybr](https://www.keybr.com/) to improve your typing speed.
 
-## Other online materials (Optional)
+## Other online materials (optional)
 
 If you have more free time before joining JumpStart, you can watch some of the online courses on web development and computer science.
 
