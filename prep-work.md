@@ -57,14 +57,7 @@ During the course, we will set up [VS Code](https://code.visualstudio.com/) as o
 
 ## Typing
 
-If you work as a software developer, you will spend a lot of your time with a keyboard. One of the secrets for a productive developer is to type fast, really fast.
-
-If you are interested in improving your typing speed, try a few tutorials here:
-
-* [http://zty.pe/](http://zty.pe/)
-* [http://play.typeracer.com/](http://play.typeracer.com/)
-* [https://typing.io/](https://typing.io/)
-* [TypingClub](https://www.typingclub.com/)
+If you work as a software developer, you will spend a lot of your time with a keyboard. We recommend using a tool like [keybr](https://www.keybr.com/) to improve your typing speed.
 
 ## Other online materials (Optional)
 
