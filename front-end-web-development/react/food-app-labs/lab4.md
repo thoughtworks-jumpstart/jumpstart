@@ -83,9 +83,9 @@ git checkout lab5
 
 ## Testing
 
-- Next we will discuss how to test the feature with react-testing-library
+- Next we will discuss how to test the feature with react testing library
 - To simulate browsing history in the test we will need to install another library
 
 ```
-  npm install history
+  npm install history --save-dev
 ```

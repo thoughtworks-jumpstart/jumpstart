@@ -114,4 +114,4 @@ git checkout master
 
 ## Testing
 
-- Next we will discuss how to test the feature with react-testing-library
+- Next we will discuss how to test the feature with react testing library

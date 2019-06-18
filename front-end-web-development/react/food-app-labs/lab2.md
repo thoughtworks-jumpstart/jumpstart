@@ -58,4 +58,4 @@ git checkout lab3
 - When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
 
 ## Testing
-- Next we will discuss how to test the feature with react-testing-library
+- Next we will discuss how to test the feature with react testing library
