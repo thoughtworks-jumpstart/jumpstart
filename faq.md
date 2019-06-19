@@ -22,6 +22,10 @@ If you are not familiar with any programming language, we suggest you learn Java
 
 Have a look at the [prep work](prep-work.md) for suggested learning resources for HTML, CSS, and JavaScript.
 
+## What is the course outline?
+
+You can view the course outline [here](outline.md).
+
 ## Where will the JumpStart program be taught?
 
 The program is taught in Singapore at the ThoughtWorks office. We are located at 18 Cross Street, China Square Central #11-08, Singapore 048423.
