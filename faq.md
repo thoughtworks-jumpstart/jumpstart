@@ -36,4 +36,4 @@ We typically hold three batches each year - one in January, another in May, and 
 
 ## Other questions
 
-Didn't get your question answered? Drop us an email at jumpstart@thoughtworks.com and we'd be more than happy to help.
+Didn't get your question answered? Drop us an [email](mailto:jumpstart@thoughtworks.com) and we'd be more than happy to help.
