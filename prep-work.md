@@ -21,9 +21,9 @@ If you're completely new to HTML and CSS, we recommend you watch these two video
 
 ## JavaScript
 
-If you are completely new to JavaScript, here is an online course for beginners.
+If you are completely new to JavaScript, we recommend that you complete the course on [Codecademy](https://www.codecademy.com/learn/introduction-to-javascript)
 
-We recommend that you also work on solving coding exercises on [Codewars](https://codewars.com).
+We also recommend that you work on solving coding exercises on [Codewars](https://codewars.com).
 
 ## Typing
 
