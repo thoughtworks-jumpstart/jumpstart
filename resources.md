@@ -27,6 +27,7 @@
 - [Codecademy - JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
 - [A re-introduction to JavaScript by MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) is pretty good too.
 - [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/)
+- [The Modern JavaScript Tutorial](https://javascript.info/)
 
 ## General
 
