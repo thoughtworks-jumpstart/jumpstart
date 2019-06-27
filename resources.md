@@ -16,3 +16,11 @@
 - [Learn JavaScript](https://learnjavascript.online/)
 - [JavaScript Tutorial](https://www.sololearn.com/Course/JavaScript/)
 - [JavaScript30](https://www.javascript30.com/)
+
+## General
+
+- [Scrimba](https://scrimba.com/)
+
+## Books
+
+- [Books by Green Tea Press](https://greenteapress.com/wp/)
