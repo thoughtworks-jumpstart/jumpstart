@@ -258,3 +258,4 @@
   * [Technical Interview](career/technical-interview.md)
   * [Advices for Junior Developers](career/advices-for-junior-dev.md)
   * [After getting started](career/after-getting-started.md)
+* [Resources](/resources.md)
