@@ -8,6 +8,13 @@
 - [Grid Garden](https://cssgridgarden.com/)
 - [Flexbox Froggy](https://flexboxfroggy.com/)
 - [Learn Flexbox](https://learnflexbox.org/)
+- [HTML Crash Course For Absolute Beginners by Brad Traversy](https://www.youtube.com/watch?v=UB1O30fR-EE)
+- [CSS Crash Course For Absolute Beginners by Brad Traversy](https://www.youtube.com/watch?v=yfoY53QXEnI)
+- [HTML & CSS is hard](https://internetingishard.com/html-and-css/)
+- [Learn Enough HTML to Be Dangerous](https://www.learnenough.com/html-tutorial)
+- [Learn Enough CSS & Layout to Be Dangerous](https://www.learnenough.com/css-and-layout-tutorial)
+- [MDN: Getting started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
+- [CSS reference](https://cssreference.io/)
 
 ## JavaScript
 
@@ -15,11 +22,15 @@
 - [Try JavaScript](https://www.javascript.com/try)
 - [Learn JavaScript](https://learnjavascript.online/)
 - [JavaScript Tutorial](https://www.sololearn.com/Course/JavaScript/)
+- [Learn Enough JavaScript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)
 - [JavaScript30](https://www.javascript30.com/)
 
 ## General
 
 - [Scrimba](https://scrimba.com/)
+- [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+- [180 websites in 180 days](https://jenniferdewalt.com/)
+- [Dev Docs](http://devdocs.io)
 
 ## Books
 
