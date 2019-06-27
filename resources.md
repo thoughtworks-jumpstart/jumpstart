@@ -24,6 +24,9 @@
 - [JavaScript Tutorial](https://www.sololearn.com/Course/JavaScript/)
 - [Learn Enough JavaScript to Be Dangerous](https://www.learnenough.com/javascript-tutorial)
 - [JavaScript30](https://www.javascript30.com/)
+- [Codecademy - JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
+- [A re-introduction to JavaScript by MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) is pretty good too.
+- [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/)
 
 ## General
 
