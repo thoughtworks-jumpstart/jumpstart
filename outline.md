@@ -1,4 +1,4 @@
-# Course outline
+# Program outline
 
 ## Week 1
 
@@ -30,7 +30,7 @@
 
 * Build a frontend application in React
 
-## Week 5 -
+## Week 5
 
 * Learn to build a backend API service in Node.js, Express, MongoDB
 
@@ -55,22 +55,22 @@
 
 * Iteration planning
 * Project showcase
-* Retrospective
-* Feedback sessions
-* OOP design modeling
-* Writing Clean code
-* Writing end to end tests
-* Refactoring legacy code
 * Guest speakers from the tech industry
 
 ## Week 10 - Team project
 
 * Team project
+* Retrospective
+* Feedback sessions
+* OOP design modeling
 * Guest speakers from the tech industry
 
 ## Week 11 - Team project
 
 * Team project
+* Writing Clean code
+* Learn to write end to end tests
+* Refactoring legacy code
 * Guest speakers from the tech industry
 
 ## Week 12

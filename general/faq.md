@@ -26,9 +26,9 @@ If you are not familiar with any programming language, we suggest you learn Java
 
 Have a look at the [prep work](../prep-work.md) for suggested learning resources for HTML, CSS, and JavaScript.
 
-## What is the course outline?
+## What is the program outline?
 
-You can view the course outline [here](../outline.md).
+View the [program outline](../outline.md).
 
 ## Where will the JumpStart program be taught?
 

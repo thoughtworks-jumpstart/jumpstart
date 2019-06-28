@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Prep Work](prep-work.md)
-* [Course outline](outline.md)
+* [Program outline](outline.md)
 * [Machine setup](machine-setup/README.md)
   * [Linux](machine-setup/linux.md)
   * [Mac](machine-setup/mac.md)
