@@ -8,7 +8,7 @@ A React feature that allows us to share global state with any descendent \(even 
 
 This is a solution to solve the "props drilling" issue.
 
-In a typical React application, data is passed top-down (parent to child) via props, but this can be cumbersome for certain types of "global" props (e.g. current user in session, UI theme) that are required by many components within an application. 
+In a typical React application, data is passed top-down \(parent to child\) via props, but this can be cumbersome for certain types of "global" props \(e.g. current user in session, UI theme\) that are required by many components within an application.
 
 Before the Context feature was introduced, people were forced to pass those props layer by layer, which is referred as the "props drilling" anti-pattern.
 
@@ -33,3 +33,4 @@ Refer to the [official documentation](https://reactjs.org/docs/context.html)
 ## Resources
 
 * [Awesome React Context](https://github.com/diegohaz/awesome-react-context)
+

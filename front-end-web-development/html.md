@@ -110,7 +110,9 @@ code .
           <input type="submit" value="Submit">
       </form>
     ```
+
   * labels
+
     * Add captions to our forms
     * Labels are important for making our site accessible
       * Someone that is visually impaired or blind and they are accessing our form trying to sign up, their screen reading software are going to look for label tags and it's going to use the labels to know what each part of the form corresponds to
@@ -132,9 +134,11 @@ code .
         <button>Login</button>
       </form>
     ```
+
   * radio button & checkbox
-    * Radio button is usually used when there is only one choice (example: male or female)
-    * Checkbox allows users to check more than one option (example: selecting skills in a job profile page)
+
+    * Radio button is usually used when there is only one choice \(example: male or female\)
+    * Checkbox allows users to check more than one option \(example: selecting skills in a job profile page\)
 
     ```markup
       <form>
@@ -160,6 +164,7 @@ code .
     ```
 
   * select tag
+
     * Creates nice dropdown menu
 
     ```markup
@@ -184,7 +189,8 @@ code .
     ```
 
   * textarea tag
-    * Create inputs that are more than one line (example: input a profile bio)
+
+    * Create inputs that are more than one line \(example: input a profile bio\)
     * We can specify how big the textarea should be by using the `rows` and `cols` attributes
 
     ```markup
@@ -193,7 +199,6 @@ code .
         <button>Submit</button>
       </form>
     ```
-
 * Accessibility \(a11y\)
   * To enhance the accessibility of our HTML page, we should use the correct HTML elements for their correct purpose as much as possible.
   * HTML5 gives us **semantic tags** that have built-in keyboard accessibility — they can be tabbed between, and activated using Return/Enter.
@@ -219,6 +224,7 @@ code .
 * [A Visual Guide to HTML tags](https://htmlreference.io/)
 
 ## Class Labs
+
 * [HTML Lab](https://github.com/thoughtworks-jumpstart/learn-html)
 
 ## Assignment

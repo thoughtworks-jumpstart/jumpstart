@@ -1,4 +1,4 @@
-# Passport Demo: Auth0 Strategy
+# Passport.js Demo: Auth0 Strategy
 
 So far we have been issuing JWT tokens by ourselves. We actually can offload that duty to another service provider called [Auth0](https://auth0.com/).
 

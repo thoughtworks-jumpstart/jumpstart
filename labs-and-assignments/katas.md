@@ -1,4 +1,4 @@
-# Programming Katas
+# katas
 
 ## training on JavaScript core APIs
 
@@ -15,11 +15,11 @@
 
 ## intermediate level
 
-* [] [https://www.codewars.com/kata/sum-of-a-sequence/javascript](https://www.codewars.com/kata/sum-of-a-sequence/javascript)
-* [] [https://www.codewars.com/kata/get-the-middle-character/javascript](https://www.codewars.com/kata/get-the-middle-character/javascript)
+* \[\] [https://www.codewars.com/kata/sum-of-a-sequence/javascript](https://www.codewars.com/kata/sum-of-a-sequence/javascript)
+* \[\] [https://www.codewars.com/kata/get-the-middle-character/javascript](https://www.codewars.com/kata/get-the-middle-character/javascript)
 * [x] [https://www.codewars.com/kata/split-the-bill/javascript](https://www.codewars.com/kata/split-the-bill/javascript)
-* [] [https://www.codewars.com/kata/most-frequent-elements/javascript](https://www.codewars.com/kata/most-frequent-elements/javascript)
-* [] [https://www.codewars.com/kata/title-case](https://www.codewars.com/kata/title-case)
+* \[\] [https://www.codewars.com/kata/most-frequent-elements/javascript](https://www.codewars.com/kata/most-frequent-elements/javascript)
+* \[\] [https://www.codewars.com/kata/title-case](https://www.codewars.com/kata/title-case)
 * [ ] [https://www.codewars.com/kata/sort-my-animals/javascript](https://www.codewars.com/kata/sort-my-animals/javascript)
 * [ ] [https://www.codewars.com/kata/find-the-unique-number/javascript](https://www.codewars.com/kata/find-the-unique-number/javascript)
 * [ ] [https://www.codewars.com/kata/sum-of-prime-indexed-elements/javascript](https://www.codewars.com/kata/sum-of-prime-indexed-elements/javascript)

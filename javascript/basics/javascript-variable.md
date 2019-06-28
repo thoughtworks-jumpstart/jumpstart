@@ -1,4 +1,4 @@
-# Values and variables
+# Variables
 
 ## Types of Values
 
@@ -43,7 +43,7 @@ One difference between `var` and `let` is in its scoping. While `var` is functio
 
 An example of block scoping can be seen in this example:
 
-```js
+```javascript
 if (true) {
   var name = "Luke"; // not block scoped
 }
@@ -51,7 +51,7 @@ if (true) {
 console.log(name); // returns undefined
 ```
 
-```js
+```javascript
 if (true) {
   let name = "Luke"; // block scoped
 }
@@ -59,18 +59,16 @@ if (true) {
 console.log(name); // returns ReferenceError
 ```
 
-
-
 Another distinction is that variables declared with `let` are not hoisted. To understand what we mean by this, let's look at an example:
 
-```js
+```javascript
 console.log(name);
 var name = 'James';
 ```
 
 The code above yields `undefined` as its result. This is because the variable `name` is first hoisted to the top of the file. This is equivalent to writing the code like this:
 
-```js
+```javascript
 var name; // hoisted variable
 console.log(name);
 name = 'James';
@@ -78,7 +76,7 @@ name = 'James';
 
 Now consider the same example with `let`.
 
-```js
+```javascript
 console.log(name);
 let name = 'James';
 ```
@@ -113,7 +111,7 @@ In JavaScript, there are 6 types of [primitive types](https://developer.mozilla.
 * undefined
 * String
 * Number
-* Symbol (this is introduced in ES6)
+* Symbol \(this is introduced in ES6\)
 
 Using values of primitive types, you can construct **Objects**.
 
@@ -165,7 +163,7 @@ console.log(42);
 
 ## Lab
 
-If you are totally new to JavaScript, you can try the following simple library (just the first exercise):
+If you are totally new to JavaScript, you can try the following simple library \(just the first exercise\):
 
 [https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
 

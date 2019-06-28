@@ -8,16 +8,16 @@ Now we understand how to write functions to handle requests. But the Express Fra
 
 The following diagram shows how the middlewares work together:
 
-![middleware explained](https://manuel-rauber.com/content/images/2016/03/Middleware-1.png) 
+![middleware explained](https://manuel-rauber.com/content/images/2016/03/Middleware-1.png)
 
 \(image source: [https://manuel-rauber.com](https://manuel-rauber.com)\)
 
 ## Why do we need middlewares?
 
-Middlewares allow us to put logic with cross-cutting concerns (i.e. the logic that can be shared by multiple route handlers) into a common place and avoid duplicating the same logic in each route handler.
+Middlewares allow us to put logic with cross-cutting concerns \(i.e. the logic that can be shared by multiple route handlers\) into a common place and avoid duplicating the same logic in each route handler.
 
-Examples of cross cutting concerns include: 
-`
+Examples of cross cutting concerns include: \`
+
 * parsing requests
 * logging request details
 * authenticating the client sending the request
@@ -92,7 +92,6 @@ app.use(myLogger)
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
-
 ```
 
 You can also declare multiple middlewares for the same API endpoint, and the order of execution is same as order of their declaration.
@@ -103,7 +102,7 @@ In Express you can attach middleware at the app level so that it affects all rou
 
 The following diagram illustrates the flow of a request passing through app level and router level middleware:
 
-![middleware levels](https://s3.amazonaws.com/acadgildsite/wordpress_images/android/An+EnterPrise+Application_work_overflow/006.png) 
+![middleware levels](https://s3.amazonaws.com/acadgildsite/wordpress_images/android/An+EnterPrise+Application_work_overflow/006.png)
 
 \(image source: [https://acadgild.com](https://acadgild.com)\)
 
@@ -134,3 +133,4 @@ Why do we need middleware? They are often used to handle `cross-cutting concerns
 ## Recommended Reading
 
 * [What is a middleware?](https://medium.com/@jamischarles/what-is-middleware-a-simple-explanation-bb22d6b41d01)
+

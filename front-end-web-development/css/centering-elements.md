@@ -27,3 +27,4 @@ CSS:
 ```
 
 For more recipes on vertical centering, refer to [this tutorial](http://vanseodesign.com/css/vertical-centering/)
+

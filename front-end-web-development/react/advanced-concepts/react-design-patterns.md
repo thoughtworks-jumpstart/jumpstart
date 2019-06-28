@@ -2,21 +2,21 @@
 
 In this section we are going to cover a few design patterns that people found useful when implementing their React components.
 
-The patterns below may look different, but they all follow one common principle behind their implementation details, which is [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). Following this principle, each React component should just focus on one thing and we can compose them to achieve our final goal. 
+The patterns below may look different, but they all follow one common principle behind their implementation details, which is [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). Following this principle, each React component should just focus on one thing and we can compose them to achieve our final goal.
 
 For example, there could be a React component that retrieves data from a web API and stores the data in its local state. And there could be another component that knows how to display those data. We can compose these two components into one that does both data retrieval and display. As you will see below, there are three different ways to compose the two components:
 
-- Container/Presenter pattern
-- Higher Order Component (HOC) pattern
-- Render Props pattern
+* Container/Presenter pattern
+* Higher Order Component \(HOC\) pattern
+* Render Props pattern
 
-These topics are a bit abstract, and the best way to understand them is look at a sample use case. [This article](http://lucasmreis.github.io/blog/simple-react-patterns/) provides an excellent introduction on these three patterns. Read it before you read the (more abstract) description below. (BTW, the sample codes for the "Provider Pattern" in the article does not work anymore because React has changed its Context API since the article was written. However, the idea is still valid and you can achieve that with the latest React Context API as well.)
+These topics are a bit abstract, and the best way to understand them is look at a sample use case. [This article](http://lucasmreis.github.io/blog/simple-react-patterns/) provides an excellent introduction on these three patterns. Read it before you read the \(more abstract\) description below. \(BTW, the sample codes for the "Provider Pattern" in the article does not work anymore because React has changed its Context API since the article was written. However, the idea is still valid and you can achieve that with the latest React Context API as well.\)
 
 There is also a [video](http://lucasmreis.github.io/blog/simple-react-patterns-talk/) made by the same author.
 
 ## Regarding React Hooks
 
-In React 16.8.0 released in Feb 2019, a new feature called [React Hooks](https://reactjs.org/docs/hooks-intro.html) was added. With React hooks, the component that retrieves data from web API can be implemented as a hook and re-used by any other component that needs those data. That (sort of) makes the patterns discussed in this section obsolete.  However, you still need to be aware of these patterns when you deal with legacy codes that were written before the days of React Hooks. And in some cases, the High Order Component pattern and Render Props pattern are still easier to use than React Hooks. So you will continue to see them around.
+In React 16.8.0 released in Feb 2019, a new feature called [React Hooks](https://reactjs.org/docs/hooks-intro.html) was added. With React hooks, the component that retrieves data from web API can be implemented as a hook and re-used by any other component that needs those data. That \(sort of\) makes the patterns discussed in this section obsolete. However, you still need to be aware of these patterns when you deal with legacy codes that were written before the days of React Hooks. And in some cases, the High Order Component pattern and Render Props pattern are still easier to use than React Hooks. So you will continue to see them around.
 
 ## Container/Presenter pattern
 

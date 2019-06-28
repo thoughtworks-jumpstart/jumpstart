@@ -140,11 +140,11 @@ Note how we specify **what** data we need, without worrying about **how** that d
 
 ## FP vs OOP
 
-| Object Oriented                                              | Functional                                                                                           |
-| :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| Object Oriented | Functional |
+| :--- | :--- |
 | You have a lot of classes and each offers only a few methods | You only have a few well known data structures \(e.g. list, map\) and they support tons of functions |
-| Classes/Objects are the first class citizen                  | Functions are the first class citizen                                                                |
-| You build programs by composing objects                      | You build programs by composing functions                                                            |
+| Classes/Objects are the first class citizen | Functions are the first class citizen |
+| You build programs by composing objects | You build programs by composing functions |
 
 ## Benefits of FP
 
@@ -259,3 +259,4 @@ You can find some [help](https://codeburst.io/learn-and-understand-recursion-in-
 
 * [Higher order functions](https://github.com/thoughtworks-jumpstart/higher-order-functions-exercises)
 * [More exercises on Functional JavaScript](https://github.com/timoxley/functional-javascript-workshop)
+

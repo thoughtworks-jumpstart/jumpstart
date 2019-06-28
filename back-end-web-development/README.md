@@ -18,3 +18,4 @@ The following topics would be covered:
 ## Resources
 
 * [Book: Practical NodeJS](https://github.com/azat-co/practicalnode)
+

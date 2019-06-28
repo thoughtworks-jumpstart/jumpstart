@@ -54,7 +54,9 @@ For example, [Kraken](http://krakenjs.com/) is a secure and scalable layer that 
 Express is not the only web application framework built on top of NodeJS.
 
 Other popular ones include:
-- [Koa](https://koajs.com/)
-- [HAPI](https://hapijs.com/)
-- [Restify](http://restify.com/)
-- [Loopback](https://loopback.io/)
+
+* [Koa](https://koajs.com/)
+* [HAPI](https://hapijs.com/)
+* [Restify](http://restify.com/)
+* [Loopback](https://loopback.io/)
+

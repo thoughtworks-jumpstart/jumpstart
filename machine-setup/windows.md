@@ -4,8 +4,8 @@
 
 If you don't know how to open a CMD or PowerShell with admin privilege, checkout the tutorials here:
 
-- [CMD with Admin Privilege](https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/)
-- [PowerShell with Admin Privilege](https://www.thewindowsclub.com/how-to-open-an-elevated-powershell-prompt-in-windows-10)
+* [CMD with Admin Privilege](https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/)
+* [PowerShell with Admin Privilege](https://www.thewindowsclub.com/how-to-open-an-elevated-powershell-prompt-in-windows-10)
 
 ## Chocolatey \(package manager\)
 
@@ -19,7 +19,7 @@ Following the instructions at the page below. Note that you need to run the inst
 
 After that, we need to install 2 things `git` \(a source code management tool\) and `bash` \(a unix command line tool\).
 
-For this purpose, we need to install [Git for windows](https://gitforwindows.org/). It provides git installation on windows, and an emulation of [bash shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+For this purpose, we need to install [Git for windows](https://gitforwindows.org/). It provides git installation on windows, and an emulation of \[bash shell\]\([https://en.wikipedia.org/wiki/Bash\_\(Unix\_shell](https://en.wikipedia.org/wiki/Bash_%28Unix_shell)\)\)
 
 ### Configuring Git
 
@@ -59,9 +59,9 @@ For more details, see [https://chocolatey.org/packages/nodejs](https://chocolate
 
 Alternatively, you can also download nodejs and npm from [https://nodejs.org/en/](https://nodejs.org/en/)
 
-### (Optional) Node Version Manager
+### \(Optional\) Node Version Manager
 
-The instructions above will install the latest version of node on your computer. If you need to use an older version of node for some reason (e.g. you are working on a project with older version of node), then you can use this tool called [nvm-windows](https://github.com/coreybutler/nvm-windows) to install specific version of node on your computer.
+The instructions above will install the latest version of node on your computer. If you need to use an older version of node for some reason \(e.g. you are working on a project with older version of node\), then you can use this tool called [nvm-windows](https://github.com/coreybutler/nvm-windows) to install specific version of node on your computer.
 
 Read the instructions of the tool to learn how to use it.
 
@@ -69,7 +69,7 @@ Read the instructions of the tool to learn how to use it.
 
 ### Integrate VS Code with Bash Terminal
 
-By default VS Code runs the `cmd` command on windows when you try to open a terminal window. Since the Git for windows comes with a bash shell (called `Git Bash`), you can configure your VS Code to launch a `bash` terminal window instead:
+By default VS Code runs the `cmd` command on windows when you try to open a terminal window. Since the Git for windows comes with a bash shell \(called `Git Bash`\), you can configure your VS Code to launch a `bash` terminal window instead:
 
 * Open command palette \(Press `F1`\)
 * Type 'Select default shell' and click on the suggestion that says 'Terminal: Select default shell'
@@ -108,3 +108,4 @@ node -v
 npm -v
 code -v
 ```
+

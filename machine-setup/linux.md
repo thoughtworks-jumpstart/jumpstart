@@ -4,7 +4,7 @@
 
 Run the following command to check which Linux distribution you are using
 
-```
+```text
 lsb_release -a
 ```
 
@@ -12,9 +12,9 @@ lsb_release -a
 
 Depending on your Linux distribution you will use a different package manager.
 
-For Fedora based distributions (e.g. RHEL, CentOS) you will use `dnf`.
+For Fedora based distributions \(e.g. RHEL, CentOS\) you will use `dnf`.
 
-For Debian based distributions (e.g. Ubuntu) you will use `apt`.
+For Debian based distributions \(e.g. Ubuntu\) you will use `apt`.
 
 NB: `dnf` is the next-generation version of `yum`. To install `dnf` run `yum install dnf`.
 
@@ -24,33 +24,33 @@ NB: `dnf` is the next-generation version of `yum`. To install `dnf` run `yum ins
 
 For Fedora based distributions
 
-```
+```text
 sudo dnf install git-all
 ```
 
 For Debian based distributions
 
-```
+```text
 sudo apt install git-all
 ```
 
 ### Configure Git
 
-To attach your full name to every commit you make simply add this line (of course, change it to your own name):
+To attach your full name to every commit you make simply add this line \(of course, change it to your own name\):
 
-```
+```text
 git config --global user.name "Jane Doe"
 ```
 
-You can keep your email addresses private by using `<username>@users.noreply.github.com`. Just replace `<username>` with your actual GitHub username (e.g. `janedoe@users.noreply.github.com`)
+You can keep your email addresses private by using `<username>@users.noreply.github.com`. Just replace `<username>` with your actual GitHub username \(e.g. `janedoe@users.noreply.github.com`\)
 
-```
+```text
 git config --global user.email "<username>@users.noreply.github.com"
 ```
 
 Add the following recommended configurations:
 
-```
+```text
 git config --global push.default simple
 git config --global credential.helper cache
 git config --global core.autocrlf input
@@ -75,7 +75,7 @@ When developing sofware for various projects, it is not uncommon to deal with mu
 
 We recommed using `n`. You can read their [documentation](https://github.com/tj/n) and install it by running the following command:
 
-```
+```text
 npm install -g n
 ```
 
@@ -83,7 +83,7 @@ npm install -g n
 
 Most Linux distributions use bash as its default shell. There are other shells that you can optionally use instead of bash. For example, there is Z shell and C shell among many others.
 
-Many programmers like to use Z shell along with Oh My Zsh (a configuration tool for Z shell).
+Many programmers like to use Z shell along with Oh My Zsh \(a configuration tool for Z shell\).
 
 If you would like to install Oh My Zsh, follow the instructions [here](https://thoughtworks-jumpstart.gitbook.io/jumpstart/machine-setup/mac#install-oh-my-zsh).
 
@@ -98,3 +98,4 @@ To install Chrome browser, follow the instructions [here](https://support.google
 ### Firefox
 
 To install Firefox, follow the instructions [here](https://support.mozilla.org/en-US/kb/install-firefox-linux).
+

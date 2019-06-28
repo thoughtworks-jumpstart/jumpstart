@@ -44,7 +44,7 @@ To integrate the two tools, run the following command in your project root folde
 npm install --save-dev prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
-And then add `plugin:prettier/recommend` to your `.eslintrc.json` file in `extends` field (a sample configuration file is shown below)
+And then add `plugin:prettier/recommend` to your `.eslintrc.json` file in `extends` field \(a sample configuration file is shown below\)
 
 ### ESLint + Jest
 
@@ -109,7 +109,7 @@ For those kind of issues, we can quickly format the code with [Prettier plugin f
 
 There is a VS Code configuration to automatically format the file upon save.
 
-```json
+```javascript
 "editor.formatOnSave": true
 "editor.formatOnPaste": true
 "prettier.eslintIntegration": true

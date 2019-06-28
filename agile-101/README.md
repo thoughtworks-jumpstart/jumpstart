@@ -1,4 +1,4 @@
-# Agile 101
+# Agile Software Development
 
 ![Agile at a glance](../.gitbook/assets/agile_summary.png)
 

@@ -37,7 +37,7 @@ The selector with the highest points will win and its styles will override those
 
 You can visualise the formula to calculate specificity using the picture below:
 
-![](../.gitbook/assets/specificity_score.png)
+![](../../.gitbook/assets/specificity_score.png)
 
 ## Overriding specificity scores with `!important`
 

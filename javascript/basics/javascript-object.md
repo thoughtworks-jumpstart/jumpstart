@@ -108,3 +108,4 @@ function createMonster(name, power) {
 
 * [https://github.com/thoughtworks-jumpstart/js-basics-2](https://github.com/thoughtworks-jumpstart/js-basics-2)
 * [https://github.com/thoughtworks-jumpstart/javascript-basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
+

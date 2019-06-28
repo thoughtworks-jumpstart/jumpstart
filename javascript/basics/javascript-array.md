@@ -1,4 +1,4 @@
-# JavaScript Array
+# Arrays
 
 An array is a data structure that allows us to store a collection of values in a single variable.
 
@@ -64,7 +64,7 @@ Creating arrays from strings using `String.split()`
 
 You can also create arrays from strings using `Array.from()`
 
-```js
+```javascript
 Array.from('hello world') // returns ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
 ```
 
@@ -78,3 +78,4 @@ Array.from('hello world') // returns ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r
 
 * [https://github.com/thoughtworks-jumpstart/js-basics-3](https://github.com/thoughtworks-jumpstart/js-basics-3)
 * [https://github.com/thoughtworks-jumpstart/javascript-basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
+

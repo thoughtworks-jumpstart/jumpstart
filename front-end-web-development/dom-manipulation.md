@@ -2,15 +2,15 @@
 
 ## Learning objectives
 
-- What is the DOM?
-- Why do we need it?
-- How do we use it?
-  - How to select elements from the DOM using selectors
-  - How to manipulate elements using `.textContent` and `.classList`
-  - How to add event listeners
-  - how to trigger and respond to events
-    - `event.preventDefault()`
-  - Recipes for creating/adding/removing HTML elements using javascript
+* What is the DOM?
+* Why do we need it?
+* How do we use it?
+  * How to select elements from the DOM using selectors
+  * How to manipulate elements using `.textContent` and `.classList`
+  * How to add event listeners
+  * how to trigger and respond to events
+    * `event.preventDefault()`
+  * Recipes for creating/adding/removing HTML elements using javascript
 
 ## Code along template
 
@@ -18,7 +18,7 @@
 
 ## What is the DOM
 
-![Example DOM Tree](../.gitbook/assets/front-end-web-development/dom-manipulation/DOM-tree.png)
+![Example DOM Tree](../.gitbook/assets/dom-tree.png)
 
 The Document Object Model \(DOM\) is an in-memory representation of HTML documents. It represents the web page as a javascript object \(`document`\) so that javascript programs can traverse and modify the document structure, style, and content.
 
@@ -77,8 +77,8 @@ We can also try to visualize the DOM tree of a given HTML document using [this t
 
 As you can see, there are different types of nodes in a DOM tree:
 
-- Element Nodes
-- Text Nodes
+* Element Nodes
+* Text Nodes
 
 ## DOM manipulation with JavaScript
 
@@ -86,17 +86,17 @@ In this session, we are going to learn how to manipulate a DOM object using the 
 
 To start with, let's have a glance with the APIs we need to be familiar with:
 
-- [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
-  - [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-  - [querySelectorForAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
-- [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
-  - [parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
-  - [childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
-- [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
-  - [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
-  - [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
-  - [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
-  - [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+* [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+  * [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+  * [querySelectorForAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+* [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+  * [parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
+  * [childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
+* [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+  * [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
+  * [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+  * [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+  * [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 
 Some of the APIs may return multiple nodes as [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList). It's an [array-like object](http://2ality.com/2013/05/quirk-array-like-objects.html) that you can iterate through and get the nodes one-by-one.
 
@@ -210,21 +210,21 @@ document.body.appendChild(img);
 
 To remove an element from the DOM tree, you can call one of the two APIs:
 
-- [remove](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
-- [removeChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
+* [remove](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
+* [removeChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
 
 ## Handle Events
 
-When users interact with a website (such as moving the mouse around, clicking on a link, etc), some events are generated and can be handled with JavaScripts.
+When users interact with a website \(such as moving the mouse around, clicking on a link, etc\), some events are generated and can be handled with JavaScripts.
 
 Here is a list of commonly used events:
 
-- `click`
-- `dblclick`
-- `mouseover`
-- `mouseout`
-- `focus` and `blur` \(try this on a input box or a button\)
-- `keypress`
+* `click`
+* `dblclick`
+* `mouseover`
+* `mouseout`
+* `focus` and `blur` \(try this on a input box or a button\)
+* `keypress`
 
 MDN has a nice list of [all DOM events](https://developer.mozilla.org/en-US/docs/Web/Events) that we can listen for.
 
@@ -258,9 +258,9 @@ Now we can do the [page-styler​ exercise](https://github.com/thoughtworks-jump
 
 The event object contains several attributes which can be useful. For example:
 
-- `event.screenX` and `event.screenY` tells us the coordinates of the mouse when the event happened.
-- `event.key` - when listening for `keyup` or `keydown` event, we have an `event.key` attribute which tells us which key was pressed \(e.g. Enter, Space, 'a', 's', 'd', up, down, left, right, etc\).
-- `event.target` - is an object which represents the HTML element on which the event was triggered.
+* `event.screenX` and `event.screenY` tells us the coordinates of the mouse when the event happened.
+* `event.key` - when listening for `keyup` or `keydown` event, we have an `event.key` attribute which tells us which key was pressed \(e.g. Enter, Space, 'a', 's', 'd', up, down, left, right, etc\).
+* `event.target` - is an object which represents the HTML element on which the event was triggered.
 
 Example 1: using `event`'s properties \(e.g. `screenX` and `screenY`\) \(Note that `event` has been shortened to `e`\)
 
@@ -305,8 +305,8 @@ inputDiv.addEventListener("keyup", event => {
 
 On the `event` object, there are some useful methods as well. You will encounter the following two sometimes.
 
-- [event.preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
-- [event.stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
+* [event.preventDefault](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+* [event.stopPropagation](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 
 `event.preventDefault()` is a useful method to prevent the default action of the event. For example, when you click on a link, the default action opens a new page. When you submit a form, the default action refreshes the page. That can be irritating, and `event.preventDefault()` allows you to stop that so that you can define how you want to handle the event.
 
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 ```
 
-2. Place your javascript code at the bottom of your html body
+1. Place your javascript code at the bottom of your html body
 
 ```markup
 <html>
@@ -357,9 +357,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Labs
 
-- [https://github.com/thoughtworks-jumpstart/page-styler](https://github.com/thoughtworks-jumpstart/page-styler)
-- [https://github.com/thoughtworks-jumpstart/displayer](https://github.com/thoughtworks-jumpstart/displayer)
-- [https://github.com/thoughtworks-jumpstart/dice](https://github.com/thoughtworks-jumpstart/dice)
+* [https://github.com/thoughtworks-jumpstart/page-styler](https://github.com/thoughtworks-jumpstart/page-styler)
+* [https://github.com/thoughtworks-jumpstart/displayer](https://github.com/thoughtworks-jumpstart/displayer)
+* [https://github.com/thoughtworks-jumpstart/dice](https://github.com/thoughtworks-jumpstart/dice)
 
 ## Assignment
 
@@ -369,19 +369,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Tutorials on DOM
 
-- [JavaScript Info: DOM](http://javascript.info/document)
-- [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-- [MDN: Manipulating DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-- [Document Object Model](https://flaviocopes.com/dom/)
-- [DOM manipulation tutorial](https://www.digitalocean.com/community/tutorials/how-to-make-changes-to-the-dom)
-- [You might not need jQuery](http://youmightnotneedjquery.com/)
+* [JavaScript Info: DOM](http://javascript.info/document)
+* [MDN: Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+* [MDN: Manipulating DOM](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+* [Document Object Model](https://flaviocopes.com/dom/)
+* [DOM manipulation tutorial](https://www.digitalocean.com/community/tutorials/how-to-make-changes-to-the-dom)
+* [You might not need jQuery](http://youmightnotneedjquery.com/)
 
 ### Tutorials on Events
 
-- [JavaScript Info: Events](http://javascript.info/events)
-- [MDN: Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
-- [Eloquent JavaScript: Handling Events](https://eloquentjavascript.net/15_event.html)
+* [JavaScript Info: Events](http://javascript.info/events)
+* [MDN: Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+* [Eloquent JavaScript: Handling Events](https://eloquentjavascript.net/15_event.html)
 
 ### References
 
-- [MDN docs on DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+* [MDN docs on DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+

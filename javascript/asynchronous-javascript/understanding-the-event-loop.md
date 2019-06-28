@@ -63,3 +63,4 @@ More discussion on the event-loop can be found in the links below
 * [JavaScript Event Loop Explained](https://medium.com/front-end-hacking/javascript-event-loop-explained-4cd26af121d4)
 * [What is JavaScript Event Loop Anyway](http://latentflip.com/loupe/). Try out the live demo to get better understanding!
 * [JavaScript Engines: How Do They Even Work?](https://www.valentinog.com/blog/engines/)
+

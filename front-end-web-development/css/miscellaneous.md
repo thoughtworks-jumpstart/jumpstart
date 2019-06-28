@@ -31,4 +31,5 @@ You can use the `background-image: url("https://some.website.com/some_picture.jp
 
 ## Feature query
 
-Use `@supports` to check if the current browser supports certain feature or not (and fallback gracefully if some feature is not supported)
+Use `@supports` to check if the current browser supports certain feature or not \(and fallback gracefully if some feature is not supported\)
+

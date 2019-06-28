@@ -1,4 +1,4 @@
-# User Login
+# JWT Demo: User Login API
 
 Now we are ready to implement the API for user login.
 
@@ -38,7 +38,7 @@ describe("User authentication", () => {
 });
 ```
 
-In this test case, we try to login as user `tom`, which is a fixture created in the test database (in the `beforeAll` calls.)
+In this test case, we try to login as user `tom`, which is a fixture created in the test database \(in the `beforeAll` calls.\)
 
 In the test case, besides expecting the response to be "OK", we also expect the response JSON contains the JWT token.
 
@@ -110,6 +110,6 @@ These two tests should pass without further code changes.
 
 Write more test cases for login API:
 
-- If the user does not specify `username` field in the HTTP POST request, the HTTP response code should be 401 (Unauthroized)
+* If the user does not specify `username` field in the HTTP POST request, the HTTP response code should be 401 \(Unauthroized\)
+* If the user does not specify `email` field in the HTTP POST request, the HTTP response code should be 401 \(Unauthroized\)
 
-- If the user does not specify `email` field in the HTTP POST request, the HTTP response code should be 401 (Unauthroized)

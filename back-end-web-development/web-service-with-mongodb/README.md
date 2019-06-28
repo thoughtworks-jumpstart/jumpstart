@@ -41,3 +41,4 @@ And here is [a good comparison between MongoDB and relational DB \(e.g. Postgres
 ## Resources
 
 * [Introduction to MongoDB](https://github.com/azat-co/fullstack-javascript/blob/master/chapter7/chapter7.md)
+

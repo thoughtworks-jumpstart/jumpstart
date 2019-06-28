@@ -178,7 +178,7 @@ docker run -p 80:80/tcp -p 80:80/udp ...
 
 ### ENV
 
-The ENV instruction sets the environment variable  to the value . This value will be in the environment for all subsequent instructions in the build stage and can be referred in the subsequent instructions. The environment variables set using ENV will also persist when a container is run from the resulting image.
+The ENV instruction sets the environment variable to the value . This value will be in the environment for all subsequent instructions in the build stage and can be referred in the subsequent instructions. The environment variables set using ENV will also persist when a container is run from the resulting image.
 
 There are two forms:
 
@@ -187,7 +187,7 @@ ENV <key> <value>
 ENV <key1>=<value1> <key2>=<value2>...
 ```
 
-The first form, ENV  , will set a single variable to a value. The entire string after the first space will be treated as the  - including whitespace characters.
+The first form, ENV , will set a single variable to a value. The entire string after the first space will be treated as the - including whitespace characters.
 
 The second form allows for multiple variables to be set at one time. Notice that the second form uses the equals sign \(=\) in the syntax, while the first form does not.
 
@@ -199,7 +199,7 @@ RUN <key>=<value> <command>
 
 ### ADD
 
-The `ADD` instruction copies new files, directories or remote file URLs from  and adds them to the filesystem of the image at the path .
+The `ADD` instruction copies new files, directories or remote file URLs from and adds them to the filesystem of the image at the path .
 
 ADD has two forms:
 
@@ -208,7 +208,7 @@ ADD has two forms:
 
 Multiple `<src>` resources may be specified but if they are files or directories, their paths are interpreted as relative to the source of the context of the build.
 
-The  is an absolute path, or a path relative to WORKDIR, into which the source will be copied inside the destination container.
+The is an absolute path, or a path relative to WORKDIR, into which the source will be copied inside the destination container.
 
 e.g.
 

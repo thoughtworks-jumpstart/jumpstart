@@ -1,4 +1,4 @@
-# Deploy React Apps to Now or GitHub Pages
+# Deploy React apps to Now
 
 If you build a React app using `create-react-app`, you can deploy it to a few places
 
@@ -14,13 +14,13 @@ If you are building a web application using create-react-app, you need to `build
 
 There are two ways.
 
-### Build the application by yourself 
+### Build the application by yourself
 
-In your project root directory (created by create-react-app):
+In your project root directory \(created by create-react-app\):
 
 Run the following commands:
 
-```shell
+```text
 npm run build
 cd build
 now

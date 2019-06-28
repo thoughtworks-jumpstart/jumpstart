@@ -1,4 +1,4 @@
-# Change Password
+# JWT Demo: User Change Password API
 
 Now we have the API for users to sign up and login. We can add another API for users to change their passwords. We should only allow users to do that after login, and JWT token is required to validate that the user is already authenticated.
 
@@ -61,7 +61,7 @@ To check this JWT token on the server side, we need to use an express-middleware
 
 Install this package if you haven't done it.
 
-```shell
+```text
 npm install express-jwt
 ```
 
@@ -96,9 +96,9 @@ module.exports = {
 
 We need to let `express-jwt` know:
 
-- The secret used to sign the JWT token
-- Where to save the extracted JWT payload if the token is valid. If you set this `userProperty` value to `user`, the middleware would save the JWT payload into the `req.user` field, which is available for the route handlers to consume.
-- How to get the JWT token from request. You need to provide a callback function here.
+* The secret used to sign the JWT token
+* Where to save the extracted JWT payload if the token is valid. If you set this `userProperty` value to `user`, the middleware would save the JWT payload into the `req.user` field, which is available for the route handlers to consume.
+* How to get the JWT token from request. You need to provide a callback function here.
 
 This call to `jwt` function returns a middleware function that can be used to validate JWT tokens that are attached in the `Authorization` header of requests.
 
@@ -147,8 +147,8 @@ module.exports = {
 
 Note:
 
-- the `req.user` field is set by the `express-jwt` middleware after successful JWT validation.
-- the 'userid' field is part of the JWT payload.
+* the `req.user` field is set by the `express-jwt` middleware after successful JWT validation.
+* the 'userid' field is part of the JWT payload.
 
 In the `src/model/user.js`, we put the following fields in to the JWT token
 
@@ -160,14 +160,14 @@ In the `src/model/user.js`, we put the following fields in to the JWT token
     }
 ```
 
-This `userid` can be used to search users. (We could use the `username` field too.)
+This `userid` can be used to search users. \(We could use the `username` field too.\)
 
 If you run the test cases again, all should pass now.
 
 ## Exercises
 
-- Currently we only have one test case for changing password, which is the happy case. There are many error scenarios we should test as well:
-  - Write a test case where the change password API is called without login. The HTTP response code should be 401 (Unauthorized) instead of 200 (OK).
-  - Write a test case which submit a new password that is too short (e.g. if the password policy says every password should be at least 8 characters long). In this case, the HTTP response code should be 422 (Unprocessable Entity). Note that you need to implement the password policy on in the route handler in order to make this test case pass.
+* Currently we only have one test case for changing password, which is the happy case. There are many error scenarios we should test as well:
+  * Write a test case where the change password API is called without login. The HTTP response code should be 401 \(Unauthorized\) instead of 200 \(OK\).
+  * Write a test case which submit a new password that is too short \(e.g. if the password policy says every password should be at least 8 characters long\). In this case, the HTTP response code should be 422 \(Unprocessable Entity\). Note that you need to implement the password policy on in the route handler in order to make this test case pass.
+* Implement another API for a user to update his username. This API should also be protected \(i.e. it should only be called after authentication\). Implement this new API following the Test Driven Development approach as well.
 
-- Implement another API for a user to update his username. This API should also be protected (i.e. it should only be called after authentication). Implement this new API following the Test Driven Development approach as well.

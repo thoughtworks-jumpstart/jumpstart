@@ -2,7 +2,7 @@
 
 ## What is React?
 
-React is a declarative, efficient, and flexible JavaScript library for building [Single Page Application(SPA)](https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46). It allows you to create front-end applications through the creation of reusable, decoupled and testable components.
+React is a declarative, efficient, and flexible JavaScript library for building [Single Page Application\(SPA\)](https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46). It allows you to create front-end applications through the creation of reusable, decoupled and testable components.
 
 ## What can I build with React?
 
@@ -21,7 +21,7 @@ Demo: Simple page \([without React](https://codepen.io/davified/pen/KQodXj) vs [
 
 Problems with direct DOM manipulation with JavaScript:
 
-1. **Imperative**. We have to specify line by line what the HTML should look like, and our javascript code is tightly coupled to the HTML layout (e.g. i need to get the second paragraph to do xyz)
+1. **Imperative**. We have to specify line by line what the HTML should look like, and our javascript code is tightly coupled to the HTML layout \(e.g. i need to get the second paragraph to do xyz\)
 2. The tight coupling leads to unexpected breaking changes. If somebody adds a paragraph to the top of the html page, our javascript code with break
 3. Imperative style is awkward and verbose. we have to reach inside the DOM, get the node, change the node in javascript, and then stick it back in the DOM.
 4. Not unit-testable
@@ -29,12 +29,12 @@ Problems with direct DOM manipulation with JavaScript:
 
 Benefits with React approach in this demo:
 
-1. **Declarative**. We declare (using JSX) what the HTML should look like and React makes it so!
+1. **Declarative**. We declare \(using JSX\) what the HTML should look like and React makes it so!
 2. Only 1 line of HTML!
 3. Ability to use javascript logic makes code less verbose
 4. Easy to unit-test
 5. Easy to modularize
-6. Easy to read ==> Easy to scale and maintain
+6. Easy to read ==&gt; Easy to scale and maintain
 
 ## How to learn React?
 
@@ -62,3 +62,4 @@ To start with, you can follow this [official React Getting Started Guide](https:
 
 * [A huge collection of useful websites related to React](https://github.com/markerikson/react-redux-links)
 * [Another awesome react collection](https://github.com/enaqx/awesome-react)
+

@@ -11,13 +11,11 @@
     * 'my-awesome-app' folder will be created under 'your-workspace-folder'.
   * `cd my-awesome-app`
   * `npm run start` or `yarn start`.
-    * This command will start a [webpack dev server](https://survivejs.com/webpack/developing/webpack-dev-server/) that serves your application. You can visit your React application at http://localhost:3000
+    * This command will start a [webpack dev server](https://survivejs.com/webpack/developing/webpack-dev-server/) that serves your application. You can visit your React application at [http://localhost:3000](http://localhost:3000)
 
 ## VS Code Extensions
 
 * [ES7 React/Redux/React-Native/JS snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) - awesome autocomplete shortcuts for react and javascript
-
-
 
 ## Chrome Browser extensions
 

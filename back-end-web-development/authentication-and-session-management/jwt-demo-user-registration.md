@@ -1,4 +1,4 @@
-# User Signup
+# JWT Demo: User Signup API
 
 With the User model in place, we can start to implement the REST APIs for user signup and login. Let's start with the API for user sign up.
 
@@ -42,14 +42,13 @@ describe("New user signup", () => {
 
 When you run this test case, you would notice that it fail with the following error:
 
-```txt
+```text
   Expected: 200
   Received: 404
 
       20 |     let userJson = response.body.user;
       21 |
     > 22 |     expect(response.statusCode).toBe(200);
-
 ```
 
 You got HTTP 404 in the response. That's because we haven't added the route handler for this `/api/user/signup` yet.
@@ -105,4 +104,5 @@ This may look a bit different than the route handlers you usually write, that's 
 
 Write more test cases for the user sign up API
 
-- If another user tries to sign up with user name `tom`, the HTTP response code should be 422 (Unprocessable Entity) instead of 200 (OK). The JSON body in the HTTP response can also contain an `error` field which indicate the user name already exists.
+* If another user tries to sign up with user name `tom`, the HTTP response code should be 422 \(Unprocessable Entity\) instead of 200 \(OK\). The JSON body in the HTTP response can also contain an `error` field which indicate the user name already exists.
+

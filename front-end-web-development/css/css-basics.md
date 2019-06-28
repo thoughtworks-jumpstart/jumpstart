@@ -120,9 +120,10 @@ There are many many many other CSS properties. Don't try to memorize them all. A
 
 ## How to use Chrome Devtools to edit CSS
 
-You can experiment with CSS rules easily with Chrome Devtools. More materials on Chrome Devtools can be found under the [developer tools section](../developer-tools/chrome-devtools.md)
+You can experiment with CSS rules easily with Chrome Devtools. More materials on Chrome Devtools can be found under the [developer tools section](https://github.com/thoughtworks-jumpstart/jumpstart/tree/a7be9ab744c2541dafe5d4f145b795123b65bcd9/front-end-web-development/developer-tools/chrome-devtools.md)
 
 ## Recommended Readings
 
 * [30 CSS selectors you must memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 * [The CSS Handbook: a handy guide to CSS for developers](https://medium.freecodecamp.org/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11)
+

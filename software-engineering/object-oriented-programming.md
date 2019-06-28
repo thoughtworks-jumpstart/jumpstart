@@ -494,7 +494,7 @@ This is a useful feature in JavaScript to write more reusable functions.
 * [Introduction to object-oriented JavaScript](https://webplatform.github.io/docs/concepts/programming/javascript/OOJ/)
 * [How to create private variables in JavaScript](https://marcusnoble.co.uk/2018-02-04-private-variables-in-javascript/)
 * [99 Bottles of OOP](https://www.sandimetz.com/99bottles)
-* [Practical Object-Oriented Design (POODR)](https://www.sandimetz.com/products)
+* [Practical Object-Oriented Design \(POODR\)](https://www.sandimetz.com/products)
 
 #### Assignment
 

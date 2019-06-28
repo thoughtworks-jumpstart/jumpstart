@@ -40,5 +40,6 @@ router.get("/", async function(req, res, next) {
 
 ## Recommended Reading
 
-- [The Evolution of Async JavaScript: From Callbacks, to Promises, to Async/Await](https://tylermcginnis.com/async-javascript-from-callbacks-to-promises-to-async-await/)
-- [Async JavaScript, a Pocket Reference](https://medium.com/@ajmeyghani/async-javascript-a-pocket-reference-2bb16ac40d21)
+* [The Evolution of Async JavaScript: From Callbacks, to Promises, to Async/Await](https://tylermcginnis.com/async-javascript-from-callbacks-to-promises-to-async-await/)
+* [Async JavaScript, a Pocket Reference](https://medium.com/@ajmeyghani/async-javascript-a-pocket-reference-2bb16ac40d21)
+

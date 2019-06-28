@@ -1,4 +1,4 @@
-# JavaScript Functions
+# Functions
 
 Functions allow us to keep our code DRY \(Don't Repeat Yourself\) by allowing us to group repeated logic into reusable and readable pieces of code.
 
@@ -145,5 +145,6 @@ logger(sum); // outputs the body of the 'sum' function to the console
 
 ## Lab
 
-- [https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
-- [https://github.com/thoughtworks-jumpstart/javascript-basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
+* [https://github.com/thoughtworks-jumpstart/js-basics-1](https://github.com/thoughtworks-jumpstart/js-basics-1)
+* [https://github.com/thoughtworks-jumpstart/javascript-basics](https://github.com/thoughtworks-jumpstart/javascript-basics)
+

@@ -8,7 +8,7 @@ Source: Infrastructure as Code \(Kief Morris\)
 
 Here are some good reading materials to help you understand this concept:
 
-- [Infrastructure as Code, Part One](https://crate.io/a/infrastructure-as-code-part-one/)
+* [Infrastructure as Code, Part One](https://crate.io/a/infrastructure-as-code-part-one/)
 
 ## Why Infrastructure as Code?
 

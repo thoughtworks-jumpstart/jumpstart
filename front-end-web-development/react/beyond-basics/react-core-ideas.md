@@ -1,6 +1,6 @@
-# React Tips
+# Ideas and principles behind React
 
-## Core Principles of React 
+## Core Principles of React
 
 * **DRY \(Don't Repeat Yourself\)**. If you spot duplicate code, extract the duplicated bits into a component that can be reused
 * **Single Responsibility Principle \(SRP\)**. If a component is doing more than 1 thing and if it's getting large, it should be decomposed into multiple smaller components

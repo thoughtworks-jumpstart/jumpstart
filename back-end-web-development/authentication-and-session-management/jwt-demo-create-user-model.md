@@ -1,4 +1,4 @@
-# Create a User model
+# JWT Demo: User Model
 
 Before we create some REST API to sign up and login to the application, we need to create a user model first.
 
@@ -40,7 +40,7 @@ Note that we are using a instance of MongoDB in memory, so the models we create 
 
 Now run the test with `npm run test:watch`, you will see the test case fails with the following error on console:
 
-```txt
+```text
 User model › encountered a declaration exception
 
     TypeError: User is not a constructor
@@ -144,7 +144,7 @@ describe("Unique fields in User model", () => {
 
 In the test case, we expect a `ValidationError` to be thrown when we try to save the second user with the same name. However, you would see this test case fails on the console, with the following error:
 
-```txt
+```text
 Expected received Promise to reject, instead it resolved to value
       {"__v": 0, "_id": "5bcb070ce1584e43cfd498f2", "email": "gordon@example.com", "username": "kevin"}
 ```
@@ -343,7 +343,7 @@ const UserSchema = new mongoose.Schema({
 
 ## Test cases for setting user password
 
-Now, we also want to save a password for each user. This is a bit tricky, since we should not store a user's password in plain text in database. Instead, we need to store the hashed passwords. To make it secure, we also use some kind of [salt](<https://en.wikipedia.org/wiki/Salt_(cryptography)>) to make the hash value safer.
+Now, we also want to save a password for each user. This is a bit tricky, since we should not store a user's password in plain text in database. Instead, we need to store the hashed passwords. To make it secure, we also use some kind of \[salt\]\([https://en.wikipedia.org/wiki/Salt\_\(cryptography\)](https://en.wikipedia.org/wiki/Salt_%28cryptography%29)\) to make the hash value safer.
 
 Firstly, let's write the test case:
 
@@ -402,8 +402,7 @@ function hashPassword(password, salt) {
 }
 ```
 
-We should also update the UserSchema by saving these two new fields `passwordHash` and `passwordSalt`
-in the schema:
+We should also update the UserSchema by saving these two new fields `passwordHash` and `passwordSalt` in the schema:
 
 ```javascript
 const UserSchema = new mongoose.Schema({
@@ -477,7 +476,7 @@ To make this test pass, there are quite a few steps.
 
 Firstly, we need to install the `jsonwebtoken` package so that we can sign and verify JWT tokens.
 
-```shell
+```text
 npm install jsonwebtoken
 ```
 
@@ -487,7 +486,7 @@ Then we also need a secret to sign JWT tokens. This secret needs to be configure
 
 Create this `.env` file if it does not exist yet, and put one line into it:
 
-```env
+```text
 JWT_SIGNING_SECRET=asfas2qwr
 ```
 
@@ -566,6 +565,7 @@ Once this field is set in a token, it's validated later on when we call the `jwt
 
 Can you think of more test cases for the model? How to support new constraints on the User model, e.g.
 
-- each user name must be at least 8 characters?
-- a user name must be one word (i.e. no white spaces allowed in between)?
-- the email address is valid (i.e. it must be in name@domain.com format)
+* each user name must be at least 8 characters?
+* a user name must be one word \(i.e. no white spaces allowed in between\)?
+* the email address is valid \(i.e. it must be in name@domain.com format\)
+

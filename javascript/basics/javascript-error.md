@@ -1,4 +1,4 @@
-# How to throw and catch errors in JavaScript
+# Errors
 
 ## Reporting abnormal scenarios by throwing errors
 
@@ -7,7 +7,6 @@ If your program encounter a situation that it cannot handle, you can throw error
 In the example below, an error is thrown when the given divider is zero.
 
 ```javascript
-
 function divide(dividend, divisor) {
   if (divisor === 0) {
     throw new Error("The divisor cannot be zero");
@@ -21,7 +20,6 @@ function divide(dividend, divisor) {
 When you call a function that may throw errors, and if you have a proper way to handle those errors, then you can choose to catch some of them.
 
 ```javascript
-
 try {
   loadConfiguratoniFile(filePath);
 } catch (error) {
@@ -37,8 +35,9 @@ try {
 
 ## Recommended Readings
 
-- [Will it finally: a try/catch quiz](https://frontarm.com/james-k-nelson/will-finally-run-quiz/)
+* [Will it finally: a try/catch quiz](https://frontarm.com/james-k-nelson/will-finally-run-quiz/)
 
 ## Reference
 
-- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+* [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+

@@ -1,4 +1,4 @@
-# Project Setup
+# JWT Demo: Project Setup
 
 ## Steps
 
@@ -8,7 +8,7 @@ Then run `npm install` in the project root directory.
 
 Create a new branch so that you can try this tutorial from scratch multiple times.
 
-```shell
+```text
 git checkout -b code_along
 ```
 
@@ -18,12 +18,12 @@ git checkout -b code_along
 
 The following middlewares are used. Read their home page to understand what they do.
 
-- [bodyParser](https://www.npmjs.com/package/body-parser)
-- [cors](https://www.npmjs.com/package/cors)
-- [errorhandler](https://www.npmjs.com/package/errorhandler)
-- [http-status](https://www.npmjs.com/package/http-status)
-- [morgan](https://www.npmjs.com/package/morgan)
-- [winston](https://www.npmjs.com/package/winston)
+* [bodyParser](https://www.npmjs.com/package/body-parser)
+* [cors](https://www.npmjs.com/package/cors)
+* [errorhandler](https://www.npmjs.com/package/errorhandler)
+* [http-status](https://www.npmjs.com/package/http-status)
+* [morgan](https://www.npmjs.com/package/morgan)
+* [winston](https://www.npmjs.com/package/winston)
 
 ### Environment Variables
 
@@ -39,9 +39,10 @@ This project is configured to format your codes with [ESLint](https://eslint.org
 
 If you are using VS Code, you need to install the following plugins:
 
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [VSCode ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [VSCode ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ### VSCode Debugger
 
 This project comes with pre-configured VSCode debugger. You can debug your Express application, or the tests written in Jest.
+

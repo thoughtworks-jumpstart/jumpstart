@@ -1,4 +1,4 @@
-# Parsing path params (Part 1)
+# Parsing path params \(Part 1\)
 
 ## You can capture parameters in your route path
 
@@ -19,3 +19,4 @@ node route_parameter_example_1.js
 ```
 
 If you visit the URL [http://localhost:3000/users/34/books/8989](http://localhost:3000/users/34/books/8989), you can see the parameters are captured in the `req.params` object.
+
