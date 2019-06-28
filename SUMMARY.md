@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [FAQ](faq.md)
 * [Prep Work](prep-work.md)
 * [Course outline](outline.md)
 * [Machine setup](machine-setup/README.md)
@@ -261,6 +260,7 @@
 
 ## General
 
+* [About](general/about.md)
 * [FAQ](general/faq.md)
 
 ## Frontend Application Development
