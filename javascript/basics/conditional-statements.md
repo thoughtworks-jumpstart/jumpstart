@@ -30,7 +30,7 @@ if (food === "pizza") {
 
 ## Switch case statements
 
-```js
+```javascript
 switch (fruit.toLowerCase()) {
   case 'oranges':
     console.log('Oranges are $0.59 a kilo.');
@@ -63,7 +63,7 @@ You can also use `!!` to convert a variable into a boolean type. For example, `!
 
 Let's look at an example:
 
-```js
+```javascript
 const names = ['Alice', 'Bob']
 const isFound = names.find(name => name === 'Charlie')
 console.log(isFound) // returns undefined
@@ -71,7 +71,7 @@ console.log(isFound) // returns undefined
 
 In the code above, if a name is found then `isFound` will contain the name, otherwise it will be `undefined`.
 
-```js
+```javascript
 const names = ['Alice', 'Bob']
 const isFound = !!names.find(name => name === 'Charlie')
 console.log(isFound) // returns false
@@ -83,6 +83,7 @@ A better way is to use type coercion to return a boolean value like in the code 
 
 The dictionary definition of tern is a "set of three". A ternary condition follows the following syntax `condition ? doSomethingIfTrue() : doSomethingIfFalse()`
 
-```js
+```javascript
 skyColor === "grey" ? bringRaincoat() : bringPicnicMat();
 ```
+

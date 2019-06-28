@@ -47,14 +47,14 @@ function (err, req, res, next) {
 
 Within an error handler, you typically need to do one of two things:
 
-- call `res.send()` to generate a response, or
-- call `next(err)` to pass the execution to the next error handler
+* call `res.send()` to generate a response, or
+* call `next(err)` to pass the execution to the next error handler
 
 These error handlers are actually just middlewares. They can be registered to an `app` instance using the same `app.use(path, middleware_function)` call.
 
 There can be multiple error handling middlewares for each request path and when error happens, they will be executed in the same order as their registration order using `app.use()` API.
 
-As a best practice, we should always declare a default error handler for all requests, to ensure that handle all unforeseeable error scenarios. You define error-handling middleware last, after other app.use() and routes calls.
+As a best practice, we should always declare a default error handler for all requests, to ensure that handle all unforeseeable error scenarios. You define error-handling middleware last, after other app.use\(\) and routes calls.
 
 For example:
 
@@ -86,54 +86,52 @@ If you visit [http://localhost:3000](http://localhost:3000), you should see the 
 
 For more information on error handling, you can refer to the materials below:
 
-- [Official Express Documentation on Error Handling](https://expressjs.com/en/guide/error-handling.html)
-- [Robust Node Applications Error Handling](https://strongloop.com/strongblog/robust-node-applications-error-handling/)
-- [Best Practices of NodJS Error Handling](http://goldbergyoni.com/checklist-best-practices-of-node-js-error-handling/)
+* [Official Express Documentation on Error Handling](https://expressjs.com/en/guide/error-handling.html)
+* [Robust Node Applications Error Handling](https://strongloop.com/strongblog/robust-node-applications-error-handling/)
+* [Best Practices of NodJS Error Handling](http://goldbergyoni.com/checklist-best-practices-of-node-js-error-handling/)
 
 There are also open-sourced error handler implementations like [this one](https://github.com/ericelliott/express-error-handler)
-
 
 ## Lab 5: Integrate a default error handler middleware for your songs routes
 
 So far for our Songs API we have only handled the situation where user sends correct song ids to our routes. In a real life scenario for a robust API we would need to also handle error scenarios.
 
-- GET /songs/:id 
-- PUT /songs/:id 
-- DELETE /songs/:id
-
+* GET /songs/:id 
+* PUT /songs/:id 
+* DELETE /songs/:id
 
 ### Requirements
+
 Based on our understanding of error handlers, in this lab you will need to create a default error handler for your Songs API routes.
 
-- If user input an invalid id for GET /songs/:id, PUT /songs/:id , DELETE /songs/:id
-- Return HTTP status code 404 
-- Expected response: { message: “Unable to find song with id : xx” } 
+* If user input an invalid id for GET /songs/:id, PUT /songs/:id , DELETE /songs/:id
+* Return HTTP status code 404 
+* Expected response: { message: “Unable to find song with id : xx” } 
 
-You are also required to write tests to prove that the 3 routes can now handle the error condition of an invalid song id. 
+You are also required to write tests to prove that the 3 routes can now handle the error condition of an invalid song id.
 
 ### Instructions
-- Navigate to the express-songs-api project folder
-- Ensure that the work from your previous lab is already commited.
-- checkout to branch `9-add-error-handling` to get started
 
-```
+* Navigate to the express-songs-api project folder
+* Ensure that the work from your previous lab is already commited.
+* checkout to branch `9-add-error-handling` to get started
+
+```text
 git checkout 9-add-error-handling
 ```
 
 ### Solution
-- After you have completed Lab 5, please commit all your work
 
-- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+* After you have completed Lab 5, please commit all your work
+* You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution
+* [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+* Next checkout to the solution branch and we will now walk through the sample solution
 
-- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+  ```text
+  git checkout 10-add-error-handling-solution
+  ```
 
-- Next checkout to the solution branch and we will now walk through the sample solution
-```
-git checkout 10-add-error-handling-solution
-``` 
+* To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `9-add-error-handling` branch
+* The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+* When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
 
-- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `9-add-error-handling` branch 
-
-- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
-
-- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.

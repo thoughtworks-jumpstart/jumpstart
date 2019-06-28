@@ -1,4 +1,4 @@
-# Project \#1
+# Build a website with React
 
 ## Requirements
 
@@ -101,3 +101,4 @@ We recommend you to practice the following skills on this project:
 ## Resources
 
 * [A long list of public APIs](https://github.com/toddmotto/public-apis)
+

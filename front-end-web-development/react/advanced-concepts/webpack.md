@@ -12,10 +12,10 @@ The `create-react-app` comes with pre-configured Webpack so usually you don't ne
 
 If you would like to configure a React project with Webpack from scratch, you can checkout the tutorials below:
 
-- [How to Create a React app from scratch using Webpack 4](https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75)
-- [React + Webpack 4 + Babel 7 Setup Tutorial](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
-- [Learn Webpack for React](https://esausilva.com/2018/01/13/learn-webpack-for-react/)
-- [Working with Babel 7 and Webpack](https://www.thebasement.be/working-with-babel-7-and-webpack/)
+* [How to Create a React app from scratch using Webpack 4](https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-562b1d231e75)
+* [React + Webpack 4 + Babel 7 Setup Tutorial](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
+* [Learn Webpack for React](https://esausilva.com/2018/01/13/learn-webpack-for-react/)
+* [Working with Babel 7 and Webpack](https://www.thebasement.be/working-with-babel-7-and-webpack/)
 
 ## Other Bundling Tools
 
@@ -23,6 +23,6 @@ Besides Webpack, there are many other so called bunlders, you can find some comp
 
 ## References
 
-- [Webpack: from apprentice to master](https://survivejs.com/webpack/)
-- [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
+* [Webpack: from apprentice to master](https://survivejs.com/webpack/)
+* [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
 

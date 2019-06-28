@@ -1,8 +1,8 @@
-# Storing JWT token in cookies
+# JWT Demo: Storing JWT token in cookie
 
-In the current implementation, the server side returns the JWT token in the HTTP response body. The client side needs to save the JWT tokens somewhere and submit it in subsequent requests (typically the JWT tokens can be sent in the HTTP header).
+In the current implementation, the server side returns the JWT token in the HTTP response body. The client side needs to save the JWT tokens somewhere and submit it in subsequent requests \(typically the JWT tokens can be sent in the HTTP header\).
 
-Another possible way of maintaining JWT tokens is to save it in cookies. In this approach, the JWT tokens can be attached in the requests automatically (by browser). It relief the frontend application from the burden of maintaining JWT tokens.
+Another possible way of maintaining JWT tokens is to save it in cookies. In this approach, the JWT tokens can be attached in the requests automatically \(by browser\). It relief the frontend application from the burden of maintaining JWT tokens.
 
 Let's modify our current solution to try this new approach.
 
@@ -39,7 +39,7 @@ In the test case for changing password, we save the JWT token after login, and u
 
 If the JWT token is sent from server in cookies, the cookies should be automatically sent back to the server that issues the cookie.
 
-Howe can we make sure the `supertest` library to handle cookies correctly (i.e. save the cookies in previous responses and send them in the subsequent requests?).
+Howe can we make sure the `supertest` library to handle cookies correctly \(i.e. save the cookies in previous responses and send them in the subsequent requests?\).
 
 The trick is to use one `agent` across multiple requests. We use the term `agent` because of the underlying library [superagent](https://github.com/visionmedia/superagent) used by `supertest`. Each `agent` simulate a browser session.
 
@@ -84,7 +84,7 @@ Now this test would fail because the server side still issues JWT in HTTP respon
 
 In order for the server side to save JWT tokens in cookies, we need to install a new NPM package first.
 
-```shell
+```text
 npm install cookie-parser
 ```
 
@@ -131,12 +131,9 @@ return res.json({
 
 Note that we need to set the options on the cookie to make it secure:
 
-- Use `httpOnly` option so that the cookies cannot be accessed by JavaScript (and by right no JavaScript on the client side needs to read/write tokens in this cookie)
-
-- Use `sameSite` option so that the cookie is only sent in the request if the user visit the website that issues the cookie (this is to prevent the CSRF(Cross Site Request Forgery) attack).
-
-- Use `secure` option so that the cookie is only returned when the website is visited using HTTPS, so that the cookie is encrypted during the transmission and no mean-in-the-middle can steal the token. We cannot enable it now since we currently still visit our website locally using `http://localhost:3000`.
-  If you want to run your local node server under HTTPS, you can follow the [instructions here](https://medium.freecodecamp.org/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec)
+* Use `httpOnly` option so that the cookies cannot be accessed by JavaScript \(and by right no JavaScript on the client side needs to read/write tokens in this cookie\)
+* Use `sameSite` option so that the cookie is only sent in the request if the user visit the website that issues the cookie \(this is to prevent the CSRF\(Cross Site Request Forgery\) attack\).
+* Use `secure` option so that the cookie is only returned when the website is visited using HTTPS, so that the cookie is encrypted during the transmission and no mean-in-the-middle can steal the token. We cannot enable it now since we currently still visit our website locally using `http://localhost:3000`. If you want to run your local node server under HTTPS, you can follow the [instructions here](https://medium.freecodecamp.org/how-to-get-https-working-on-your-local-development-environment-in-5-minutes-7af615770eec)
 
 ## Get JWT token from cookie instead of HTTP request header
 
@@ -176,6 +173,7 @@ fetch(${URL}/signInOrAnyAuthenticatedRoute, {
 
 ## Resources
 
-- [How to send a cookie in an express app](https://expressjs.com/en/4x/api.html#res.cookie)
-- [How to extract jwt from cookies](https://github.com/themikenicholson/passport-jwt)
-- [Tell fetch to include credentials in cookies \(search for: credentials: ‘include’\)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch%20)
+* [How to send a cookie in an express app](https://expressjs.com/en/4x/api.html#res.cookie)
+* [How to extract jwt from cookies](https://github.com/themikenicholson/passport-jwt)
+* [Tell fetch to include credentials in cookies \(search for: credentials: ‘include’\)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch%20)
+

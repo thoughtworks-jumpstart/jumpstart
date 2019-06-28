@@ -1,8 +1,8 @@
-# Testing Express with MongoDB
+# Testing REST API with MongoDB
 
 To write API tests for an Express app that uses MongoDB as the database, we are going to use a library called [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server). It spins up an in-memory instance of MongoDB, which is faster than running a separate MongoDB instance.
 
-The library helps to give us a clean/empty database for each test case, so that the test cases do not interfere with each other (e.g. if a test case fail and leave some garbage data in its copy of database, that failure will not affect other test cases because each test case starts with a clean database). 
+The library helps to give us a clean/empty database for each test case, so that the test cases do not interfere with each other \(e.g. if a test case fail and leave some garbage data in its copy of database, that failure will not affect other test cases because each test case starts with a clean database\).
 
 Here is an example on using it with Jest: [https://github.com/nodkz/mongodb-memory-server\#simple-jest-test-example](https://github.com/nodkz/mongodb-memory-server#simple-jest-test-example)
 
@@ -83,6 +83,7 @@ Each test should be independent of the others - importantly, the order in which 
 
 ## Another strategy for doing integration testing with database
 
-In the example above, we make use of the `mongodb-memory-server` to automatically give us a fresh database in each test case. 
+In the example above, we make use of the `mongodb-memory-server` to automatically give us a fresh database in each test case.
 
 Without that library, another possible solution is to explicitly delete all data in the test database after each test finishes running. That's a bit tedious but still works. Here is a [sample project](https://github.com/thoughtworks-jumpstart/express-blog-api-mongoose-and-tests) showing this approach. Checkout the test cases in `tests/integration-tests` to see the sample tests.
+

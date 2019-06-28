@@ -1,4 +1,4 @@
-# Add database connection
+# JWT Demo: one more thing
 
 There is one last-piece we need to add into the `app.js` file.
 
@@ -8,7 +8,7 @@ Which database should our application use in production environment?
 
 ## Specifying the database connection URL in environment
 
-Since the database connection URL could change in different deployment environment (QA/Staging/Production), we shouldn't hard-code the database connection URL in our code. Instead, we should define that connection URL in an environment variable like "MONGODB_URI".
+Since the database connection URL could change in different deployment environment \(QA/Staging/Production\), we shouldn't hard-code the database connection URL in our code. Instead, we should define that connection URL in an environment variable like "MONGODB\_URI".
 
 When you deploy the application on platforms like Heroku, you should read their documentation and figure out how to specify this environment variable.
 
@@ -16,7 +16,7 @@ When you run the application locally on your computer, you can put this environm
 
 For example, if you have a local MongoDB installed on your computer, you can set the variable as
 
-```env
+```text
 MONGODB_URL=mongodb://localhost/jwt_demo
 ```
 
@@ -40,7 +40,7 @@ In our integration tests, we have one line in each test file, like
 process.env.NODE_ENV = "integration";
 ```
 
-So when the integration test runs, the NODE_ENV is set to `integration`, and the codes in `app.js` will not try to establish its own database connection (because the database connection for integration tests is already handled by that `in_memory_mongodb_setup.js`).
+So when the integration test runs, the NODE\_ENV is set to `integration`, and the codes in `app.js` will not try to establish its own database connection \(because the database connection for integration tests is already handled by that `in_memory_mongodb_setup.js`\).
 
 In other environment, the code above assumes the database connection URL is provided in the environment variable `MONGODB_URL`.
 
@@ -49,3 +49,4 @@ After making this change in `app.js`, you can add the `MONGODB_URL` variable in 
 Then you can run `npm run start` to start the server locally.
 
 And you can test the APIs work by using tools like Insomia.
+

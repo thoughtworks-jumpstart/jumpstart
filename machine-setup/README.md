@@ -24,7 +24,7 @@ We often need to open VS Code to view all files in a directory. To do that, you 
 
 After that, if you are in Mac terminal or Windows cmd prompt and you would like to view all the files in the current working directory with VS Code, you just need to type the following command
 
-```shell
+```text
 code .
 ```
 
@@ -36,19 +36,18 @@ We have found the following VS Code extensions to be useful in improving our pro
 2. Open the command palette \(Mac: `Cmd`+`Shift`+`P`; Windows: `Ctrl`+`Shift`+`P` or just press `F1`.
 3. Enter 'Install extensions'.
 4. Search for and install the following extensions one by one
-
-* JavaScript
-  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). This extension helps to check problems in your JavaScript codes.
-  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). This extension helps to format your JavaScript codes.
-* HTML
-  * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag). This extension makes it easy to rename HTML element tags.
-  * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag). This extension automatically insert the other half of HTML tags.
-  * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). This extension runs a HTTP server on your machine to view your HTML files.
-  * [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview). This extension embed a Chrome browser inside your code editor so that you can edit your HTML/JavaScript/CSS file and view the changes without leaving VS Code.
-* Other Utilities
-  * [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file). This extension makes it easier to create new files in your project directory.
-  * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense). This extension helps to autocomplete file path.
-  * [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). This is a powerful extension to work with git.
+5. JavaScript
+   * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). This extension helps to check problems in your JavaScript codes.
+   * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). This extension helps to format your JavaScript codes.
+6. HTML
+   * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag). This extension makes it easy to rename HTML element tags.
+   * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag). This extension automatically insert the other half of HTML tags.
+   * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). This extension runs a HTTP server on your machine to view your HTML files.
+   * [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview). This extension embed a Chrome browser inside your code editor so that you can edit your HTML/JavaScript/CSS file and view the changes without leaving VS Code.
+7. Other Utilities
+   * [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file). This extension makes it easier to create new files in your project directory.
+   * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense). This extension helps to autocomplete file path.
+   * [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). This is a powerful extension to work with git.
 
 ### Slack
 

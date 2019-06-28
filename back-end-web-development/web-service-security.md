@@ -26,11 +26,11 @@ Now, what happens when the administrator views your latest orders? Basically, th
 
 This is just one way to launch XSS attack. There are many variants. You can find more examples and details from the references:
 
-- [XSS Tutorial](https://hackertarget.com/xss-tutorial/)
-- [Veracode: XSS](https://www.veracode.com/security/xss)
-- [OWASP: Cross-site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29)
-- [Cross-site scripting for dummies](https://hackernoon.com/cross-site-scripting-for-dummies-be30f76fad09)
-- [XSS Explained](https://www.securesolutions.no/xss-explained/)
+* [XSS Tutorial](https://hackertarget.com/xss-tutorial/)
+* [Veracode: XSS](https://www.veracode.com/security/xss)
+* [OWASP: Cross-site Scripting](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29)
+* [Cross-site scripting for dummies](https://hackernoon.com/cross-site-scripting-for-dummies-be30f76fad09)
+* [XSS Explained](https://www.securesolutions.no/xss-explained/)
 
 How can we prevent from this kind of attack?
 
@@ -38,10 +38,10 @@ OWASP provided a [XSS \(Cross Site Scripting\) Prevention Cheat Sheet](https://w
 
 Here are a few quick tips for developers:
 
-- Make sure you always validate and escape the data submitted by the user, and do some sanitization on the user input data when you need to display them \(i.e. display the user input data as pure text, instead of loading that as javascript code\). For this purpose, you can use libraries like [xss-filter](https://github.com/yahoo/xss-filters)
-- Use tools like [helmet](https://helmetjs.github.io/docs/xss-filter/) to set `X-XSS-Protection` header in HTTP response, so that the browser can do some basic detection on XSS attack.
-- Another trick is to use [Http-Only Cookie](https://www.owasp.org/index.php/HttpOnly) so that session cookies cannot be accessed from JavaScript.
-- If you need to store some information into the storage space in browser, use `session storage` instead of `local storage` if you don't need that information after the browser tab is closed.
+* Make sure you always validate and escape the data submitted by the user, and do some sanitization on the user input data when you need to display them \(i.e. display the user input data as pure text, instead of loading that as javascript code\). For this purpose, you can use libraries like [xss-filter](https://github.com/yahoo/xss-filters)
+* Use tools like [helmet](https://helmetjs.github.io/docs/xss-filter/) to set `X-XSS-Protection` header in HTTP response, so that the browser can do some basic detection on XSS attack.
+* Another trick is to use [Http-Only Cookie](https://www.owasp.org/index.php/HttpOnly) so that session cookies cannot be accessed from JavaScript.
+* If you need to store some information into the storage space in browser, use `session storage` instead of `local storage` if you don't need that information after the browser tab is closed.
 
 As a user, you can protect yourself by using some browser side security features. Chrome and Safari has a built-in feature called [XSS Auditor](https://www.virtuesecurity.com/blog/understanding-xss-auditor/) that tires to mitigate XSS attacks although it can’t catch all possible XSS variants.
 
@@ -63,10 +63,10 @@ As an end user, you can protect yourself against this attack using Firefox exten
 
 To get more details on CSRF attack, here are a few more articles:
 
-- [Understanding CSRF](https://github.com/pillarjs/understanding-csrf)
-- [Understanding the CSRF Vulnerability \(A Beginner Guide\)](http://www.hackingarticles.in/understanding-csrf-vulnerability-beginner-guide/)
-- [CSRF DEMYSTIFIED](http://www.gnucitizen.org/blog/csrf-demystified/)
-- [Wikipedia entry on CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
+* [Understanding CSRF](https://github.com/pillarjs/understanding-csrf)
+* [Understanding the CSRF Vulnerability \(A Beginner Guide\)](http://www.hackingarticles.in/understanding-csrf-vulnerability-beginner-guide/)
+* [CSRF DEMYSTIFIED](http://www.gnucitizen.org/blog/csrf-demystified/)
+* [Wikipedia entry on CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
 
 ## Follow Secure Coding Practices
 
@@ -74,13 +74,13 @@ As a developer, you need to be aware of the common security concerns and follow 
 
 Here are some of the guidelines:
 
-- [Mozilla Secure Coding Guidelines](https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines)
-- [OWASP Secure Coding Cheat Sheet](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
-- [JavaScript Web Application Secure Coding Practices](https://checkmarx.gitbooks.io/js-scp/)
+* [Mozilla Secure Coding Guidelines](https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines)
+* [OWASP Secure Coding Cheat Sheet](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
+* [JavaScript Web Application Secure Coding Practices](https://checkmarx.gitbooks.io/js-scp/)
 
 You can also make use tools that automatically scan your code for potential security issues:
 
-- [ESLint Plugin To Detect Possible Security Issues in Codes](https://www.npmjs.com/package/eslint-plugin-security)
+* [ESLint Plugin To Detect Possible Security Issues in Codes](https://www.npmjs.com/package/eslint-plugin-security)
 
 ## Make sure your NPM dependencies are secure
 
@@ -90,17 +90,17 @@ What are the vulnerabilities are we talking about? You can get some examples [he
 
 The tools below can scan the libraries you use and detect those with vulnerabilities
 
-- [Snyk](https://snyk.io/)
-- [Node Security Platform \(a.k.a NSP\)](https://nodesecurity.io/)
-- [Retire.js](https://retirejs.github.io/retire.js/)
+* [Snyk](https://snyk.io/)
+* [Node Security Platform \(a.k.a NSP\)](https://nodesecurity.io/)
+* [Retire.js](https://retirejs.github.io/retire.js/)
 
 You should regularly review your dependencies. Avoid the unnecessary ones and make the rest up-to-date. To ensure your dependencies are up-to-date, you can use tools like [greenkeeper](https://greenkeeper.io/)
 
 Here are a few articles to give you more tips on how to manage the risks from 3rd party libraries:
 
-- [Controlling the Node.js security risk of npm dependencies](https://blog.risingstack.com/controlling-node-js-security-risk-npm-dependencies/) is a good article talking about the process to reduce the security risks from 3rd party dependencies.
-- [Quick Introduction on GreenKeeper/Snyk/NSP/Retire.js](https://developers.redhat.com/blog/2017/04/12/using-snyk-nsp-and-retire-js-to-identify-and-fix-vulnerable-dependencies-in-your-node-js-applications/)
-- [Eliminating Known Vulnerabilities With Snyk](https://www.smashingmagazine.com/2016/01/eliminating-known-security-vulnerabilities-with-snyk/)
+* [Controlling the Node.js security risk of npm dependencies](https://blog.risingstack.com/controlling-node-js-security-risk-npm-dependencies/) is a good article talking about the process to reduce the security risks from 3rd party dependencies.
+* [Quick Introduction on GreenKeeper/Snyk/NSP/Retire.js](https://developers.redhat.com/blog/2017/04/12/using-snyk-nsp-and-retire-js-to-identify-and-fix-vulnerable-dependencies-in-your-node-js-applications/)
+* [Eliminating Known Vulnerabilities With Snyk](https://www.smashingmagazine.com/2016/01/eliminating-known-security-vulnerabilities-with-snyk/)
 
 ## Labs
 
@@ -116,23 +116,24 @@ Follow this tutorial to learn about how to use csurf: [https://www.twilio.com/bl
 
 Follow the guide to learn the TOP10 OWASP vulnerabilities
 
-- [OWASP NodeGoat](https://github.com/OWASP/NodeGoat)
-- [OWASP Juice Shop](https://github.com/bkimminich/juice-shop)
-- [Damn Vulnerable NodeJS Application](https://appsecco.com/books/dvna-developers-security-guide/intro.html)
+* [OWASP NodeGoat](https://github.com/OWASP/NodeGoat)
+* [OWASP Juice Shop](https://github.com/bkimminich/juice-shop)
+* [Damn Vulnerable NodeJS Application](https://appsecco.com/books/dvna-developers-security-guide/intro.html)
 
 ## Resources
 
 ### More Labs
 
-- [HacksExplaining](https://www.hacksplaining.com/lessons)
+* [HacksExplaining](https://www.hacksplaining.com/lessons)
 
 ### Recommended Readings
 
-- [Node JS Security Tips](https://blog.risingstack.com/node-js-security-tips/)
-- [Express Security Best Practices](https://expressjs.com/en/advanced/best-practice-security.html)
-- [9 Security Practice to Keep Express from Getting Pwned](https://nodesource.com/blog/nine-security-tips-to-keep-express-from-getting-pwned/)
-- [Secure Express App with various HTTP headers](https://github.com/helmetjs/helmet)
-- [Writing Secure Express.js Apps](https://blog.liftsecurity.io/2012/12/07/writing-secure-express-js-apps)
-- [Building Secure JavaScript Apps](https://nemethgergely.com/building-secure-javascript-applications/)
-- [Simple Steps to Secure Your Express Node Application](http://scottksmith.com/blog/2014/09/04/simple-steps-to-secure-your-express-node-application/)
-- [Awesome Node.js Security resources](https://github.com/lirantal/awesome-nodejs-security)
+* [Node JS Security Tips](https://blog.risingstack.com/node-js-security-tips/)
+* [Express Security Best Practices](https://expressjs.com/en/advanced/best-practice-security.html)
+* [9 Security Practice to Keep Express from Getting Pwned](https://nodesource.com/blog/nine-security-tips-to-keep-express-from-getting-pwned/)
+* [Secure Express App with various HTTP headers](https://github.com/helmetjs/helmet)
+* [Writing Secure Express.js Apps](https://blog.liftsecurity.io/2012/12/07/writing-secure-express-js-apps)
+* [Building Secure JavaScript Apps](https://nemethgergely.com/building-secure-javascript-applications/)
+* [Simple Steps to Secure Your Express Node Application](http://scottksmith.com/blog/2014/09/04/simple-steps-to-secure-your-express-node-application/)
+* [Awesome Node.js Security resources](https://github.com/lirantal/awesome-nodejs-security)
+

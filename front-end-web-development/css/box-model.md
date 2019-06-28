@@ -2,7 +2,7 @@
 
 The box model defines how wide and tall a HTML element will be. For example, to determine the **horizontal** space an element occupies, you add up the content + padding-left + padding-right + border-left + border-right + margin-left + margin-right:
 
-![css box model](../.gitbook/assets/css_box_model.png)
+![css box model](../../.gitbook/assets/css_box_model.png)
 
 ```css
 /* index.html */

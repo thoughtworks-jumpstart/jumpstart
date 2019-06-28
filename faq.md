@@ -28,7 +28,7 @@ You can view the course outline [here](outline.md).
 
 ## Where will the JumpStart program be taught?
 
-The program is taught in Singapore at the ThoughtWorks office. We are located at 18 Cross Street, China Square Central #11-08, Singapore 048423.
+The program is taught in Singapore at the ThoughtWorks office. We are located at 18 Cross Street, China Square Central \#11-08, Singapore 048423.
 
 ## When will the next batch of JumpStart commence?
 
@@ -37,3 +37,4 @@ We typically hold three batches each year - one in January, another in May, and 
 ## Other questions
 
 Didn't get your question answered? Drop us an [email](mailto:jumpstart@thoughtworks.com) and we'd be more than happy to help.
+

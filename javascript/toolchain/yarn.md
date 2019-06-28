@@ -1,4 +1,4 @@
-# Yarn
+# yarn
 
 Besides `npm`, there is another widely used node package manager called [`yarn`](https://yarnpkg.com/en/).
 

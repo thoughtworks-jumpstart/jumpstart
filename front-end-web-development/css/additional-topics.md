@@ -19,3 +19,4 @@ The website of [Stripe](https://stripe.com/) is very well designed. Their fronte
 
 * [How Stripe Designs Beautiful Websites](https://www.leejamesrobinson.com/blog/how-stripe-designs-beautiful-websites/)
 * [Connect: behind the front-end experience](https://stripe.com/blog/connect-front-end-experience)
+

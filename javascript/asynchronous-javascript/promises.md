@@ -10,15 +10,15 @@ In its most basic terms, a promise is an object that defines a method called `th
 
 Before we discuss Promise in more details, I would like you to see how it's used.
 
-In the example below, we implement some logic to handle user logins to a server side application. In this login process, there are three asynchronous tasks, and each task depends on the previous task (i.e. the output of one task becomes the input of the next task.)
+In the example below, we implement some logic to handle user logins to a server side application. In this login process, there are three asynchronous tasks, and each task depends on the previous task \(i.e. the output of one task becomes the input of the next task.\)
 
-- A user login with user name and password.
-- We search the database to get more information about this user.
-- We update the user's profile information and save it back to the database.
+* A user login with user name and password.
+* We search the database to get more information about this user.
+* We update the user's profile information and save it back to the database.
 
 ![asynchronous tasks in a chain](../../.gitbook/assets/async-task.png)
 
-If these tasks were synchronous tasks (i.e. if they do not involve any asynchronous operations), we could have written the codes like below:
+If these tasks were synchronous tasks \(i.e. if they do not involve any asynchronous operations\), we could have written the codes like below:
 
 ```javascript
 let user = User.login("user", "pass");
@@ -27,7 +27,7 @@ let result = results[0].save({ key: value });
 // make use of the result
 ```
 
-However, suppose the 3 tasks (login/find/save) are all asynchronous tasks, you cannot get the results right away after start executing a task. You have to provide some callbacks to process the results becomes ready.
+However, suppose the 3 tasks \(login/find/save\) are all asynchronous tasks, you cannot get the results right away after start executing a task. You have to provide some callbacks to process the results becomes ready.
 
 The nested callbacks easily leads to the callback-hell approach:
 
@@ -72,13 +72,13 @@ Before Friday, this promise is in **pending** state, and on Friday, it will be *
 
 At that time, there are two possible outcomes:
 
-- I book a nice restaurant and have dinner with my wife. In that case, the promise is **fulfilled**.
-- I got an urgent meeting on Friday evening, so I have to call my wife and tell her I couldn't have dinner with her. In this case, the promise becomes **rejected**.
+* I book a nice restaurant and have dinner with my wife. In that case, the promise is **fulfilled**.
+* I got an urgent meeting on Friday evening, so I have to call my wife and tell her I couldn't have dinner with her. In this case, the promise becomes **rejected**.
 
 Knowing that I don't always keep my promise \(based on my previous records\), my wife has the following plans:
 
-- If the promise is **fulfilled**, she will buy me a gift in return.
-- If the promise is **rejected**, she will let me sleep on the couch.
+* If the promise is **fulfilled**, she will buy me a gift in return.
+* If the promise is **rejected**, she will let me sleep on the couch.
 
 And she will observe the outcome of the promise and take actions accordingly.
 
@@ -88,15 +88,15 @@ Another important property about this promise is, after this Friday, once it's r
 
 It also worths highlighting that there are two parties/roles in this story:
 
-- One party that creates a promise and finally decides when to resolve the promise, and if the promise should be fulfilled or rejected.
-- The other party that receives the promise can register their action plans and wait to be notified on the outcome. The recipient/observer of a promise have no influence on whether the promise is fulfilled or rejected, nor can they decide when the promise would be resolved.
+* One party that creates a promise and finally decides when to resolve the promise, and if the promise should be fulfilled or rejected.
+* The other party that receives the promise can register their action plans and wait to be notified on the outcome. The recipient/observer of a promise have no influence on whether the promise is fulfilled or rejected, nor can they decide when the promise would be resolved.
 
 Let's write some codes using the promise API in ES6 to represent the example above. The sample codes below can be found in this [repository](https://github.com/thoughtworks-jumpstart/asynchronous-javascript-by-example)
 
 We will first learn:
 
-- How to create a new Promise
-- How to notify the observers of the Promise when it's resolved (either fulfilled or rejected)
+* How to create a new Promise
+* How to notify the observers of the Promise when it's resolved \(either fulfilled or rejected\)
 
 ### Creating a new Promise
 
@@ -153,8 +153,8 @@ dinnerPromise.then(onFulfilled, onRejected);
 
 The `then` function takes two arguments:
 
-- The first argument is called `onFulfilled`, which is a callback function to handle the case when the promise is resolved. Note that the `onFulfilled` function receives the same list of arguments as received by the `fulfill` function in executor function.
-- The second argument is called `onRejected`, which is a callback function to handle the case when the promise is rejected. The main purpose of this callback function is to handle the error scenario and bring the system back to normal state. Note that the `onRejected` function receives the same list of arguments as received by the `reject` function in executor function.
+* The first argument is called `onFulfilled`, which is a callback function to handle the case when the promise is resolved. Note that the `onFulfilled` function receives the same list of arguments as received by the `fulfill` function in executor function.
+* The second argument is called `onRejected`, which is a callback function to handle the case when the promise is rejected. The main purpose of this callback function is to handle the error scenario and bring the system back to normal state. Note that the `onRejected` function receives the same list of arguments as received by the `reject` function in executor function.
 
 Although the `then` function can take in the `onRejected` event handler, sometimes people prefer to call `then` function with one argument only. In that case, the reject event needs to be caught by a call to `catch` function. e.g.
 
@@ -168,8 +168,8 @@ You may notice that in the code example above the calls on the promise instance 
 
 That's because all methods supported by this promise object returns another promise as return value. Specifically, those methods \(e.g. `then` and `catch`\) all behave in this way:
 
-- If it finds a proper handler for the `fulfill` or `reject` event, it return a new promise which eventually resolves to the return value of the handler.
-- If it does not find a proper handler for the `fulfill` or `reject` event \(e.g. when a promise is rejected and a call to `then` function does not supply `onRejected` callback\), the method would return the original promise.
+* If it finds a proper handler for the `fulfill` or `reject` event, it return a new promise which eventually resolves to the return value of the handler.
+* If it does not find a proper handler for the `fulfill` or `reject` event \(e.g. when a promise is rejected and a call to `then` function does not supply `onRejected` callback\), the method would return the original promise.
 
 #### Treating a Promise as a gift box
 
@@ -177,8 +177,8 @@ OK, this sounds pretty abstract. I have another mental model for you.
 
 If you receive Promise object, you can think of a promise as a gift box. It's wrapped nicely, and you don't know what's inside. All you can see is there are two LED lights on the surface:
 
-- A green LED light
-- A red LED light
+* A green LED light
+* A red LED light
 
 ![promise as a gift box](../../.gitbook/assets/promise-gift-box.png)
 
@@ -194,8 +194,8 @@ When you call `.then` or `.catch` on the promise, you actually create another gi
 
 What the picture above shows are:
 
-- When you call a `then` or `catch` method on a Promise, the function returns a new instance of Promise object (i.e. a new gift box is created).
-- On the newly created gift box, there are also two LED lights, a green one and a red one.
+* When you call a `then` or `catch` method on a Promise, the function returns a new instance of Promise object \(i.e. a new gift box is created\).
+* On the newly created gift box, there are also two LED lights, a green one and a red one.
 
 The green LED light of the second gift box would flash under one of the three conditions:
 
@@ -215,8 +215,8 @@ Could the `onFulfilled` and `onRejected` handle throw error? Yes!
 
 I can give you two examples here:
 
-- The `onFulfilled` handler may return another promise object, which is eventually rejected. In that case, this is considered as error situation.
-- The `onRejected` handler may encounter an error that it does not know how to handle, so it just throws it again and wishes another error handler can catch and handle it.
+* The `onFulfilled` handler may return another promise object, which is eventually rejected. In that case, this is considered as error situation.
+* The `onRejected` handler may encounter an error that it does not know how to handle, so it just throws it again and wishes another error handler can catch and handle it.
 
 In either case, the red LED light of the second box would flash.
 
@@ -309,7 +309,7 @@ That means those handlers supplied to `then` or `catch` call \(in the example ab
 
 Why? Because The ECMA 2015 spec declares that promises must not fire their resolution/rejection function on the same turn of the event loop that they are created on. This is very important because it eliminates the possibility of execution order varying and resulting in indeterminate outcomes.
 
-In the example above, when `getUserSkills` function is executed (and the `then`/`catch` functions are executed), the `then`/`catch` function basically just register the event handlers in the event table, and return immediately. Later on, when an event handler needs to be executed (because the corresponding Promise is resolved/rejected), it will be put into the Event Queue and wait for its turn to run. When an event handler is executed by the JavaScript engine, it's already in a different call stack (i.e. different from the call stack where `getUserSkills` function runs).
+In the example above, when `getUserSkills` function is executed \(and the `then`/`catch` functions are executed\), the `then`/`catch` function basically just register the event handlers in the event table, and return immediately. Later on, when an event handler needs to be executed \(because the corresponding Promise is resolved/rejected\), it will be put into the Event Queue and wait for its turn to run. When an event handler is executed by the JavaScript engine, it's already in a different call stack \(i.e. different from the call stack where `getUserSkills` function runs\).
 
 Why do you need to understand this?
 
@@ -339,8 +339,8 @@ function getUserSkills(userId) {
 
 There are some handy utility functions on Promise API. You should check them out:
 
-- [Promise.resolve()](http://javascript.info/promise-api#promise-resolve)
-- [Promise.all()](http://javascript.info/promise-api#promise-all)
+* [Promise.resolve\(\)](http://javascript.info/promise-api#promise-resolve)
+* [Promise.all\(\)](http://javascript.info/promise-api#promise-all)
 
 ## A Use Case Study
 
@@ -365,9 +365,9 @@ console.log(result);
 
 In the above example, you should find that `fetch` returns a `Promise`, i.e. `result` is a `Promise` object.
 
-If you read the documentation of the [fetch() API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), you can find that the returned value from the fetch API is "A Promise that resolves to a Response object.".
+If you read the documentation of the [fetch\(\) API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), you can find that the returned value from the fetch API is "A Promise that resolves to a Response object.".
 
-How can we retrieve data out of this [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response)? Again, based on the documentation of the Response, you can call the [response.json()](https://developer.mozilla.org/en-US/docs/Web/API/Body/json) method to retrieve data sent in the response, assuming the data is in JSON format.
+How can we retrieve data out of this [Response object](https://developer.mozilla.org/en-US/docs/Web/API/Response)? Again, based on the documentation of the Response, you can call the [response.json\(\)](https://developer.mozilla.org/en-US/docs/Web/API/Body/json) method to retrieve data sent in the response, assuming the data is in JSON format.
 
 Let's try to call the `.json` method on the response object.
 
@@ -377,7 +377,7 @@ fetch("https://dog.ceo/api/breeds/image/random").then(response =>
 );
 ```
 
-Hmm...if you look at the console log, the value returned from the `json()` method is still a Promise. If you read the [response.json() documentastion](https://developer.mozilla.org/en-US/docs/Web/API/Body/json) again, it says it returns "A promise that resolves with the result of parsing the body text as JSON."
+Hmm...if you look at the console log, the value returned from the `json()` method is still a Promise. If you read the [response.json\(\) documentastion](https://developer.mozilla.org/en-US/docs/Web/API/Body/json) again, it says it returns "A promise that resolves with the result of parsing the body text as JSON."
 
 OK, now we know that we need to chain the promise call together, like the codes below:
 
@@ -554,32 +554,33 @@ readFilePromise("path/to/file", "utf8")
   });
 ```
 
-- util.promisify docs: [https://nodejs.org/api/util.html\#util_util_promisify_original](https://nodejs.org/api/util.html#util_util_promisify_original)
-- More information on how util.promisify works: [http://2ality.com/2017/05/util-promisify.html](http://2ality.com/2017/05/util-promisify.html)
+* util.promisify docs: [https://nodejs.org/api/util.html\#util\_util\_promisify\_original](https://nodejs.org/api/util.html#util_util_promisify_original)
+* More information on how util.promisify works: [http://2ality.com/2017/05/util-promisify.html](http://2ality.com/2017/05/util-promisify.html)
 
 ## Resources
 
-- [Promise Basics](http://javascript.info/promise-basics)
-- [Async JavaScript Cheatsheet](https://github.com/frontarm/async-javascript-cheatsheet)
-- [Promise Chaining](http://javascript.info/promise-chaining)
-- [Promise API](http://javascript.info/promise-api)
-- [Three ways of understanding promises](http://2ality.com/2016/10/understanding-promises.html)
-- [Promises in ES6 \(youtube video\)](https://www.youtube.com/watch?v=2d7s3spWAzo)
-- [Escape from the Callback Mountain](https://github.com/justsml/escape-from-callback-mountain)
-- [JavaScript Promises with Node.js](https://itnext.io/javascript-promises-with-node-js-e8ca827e0ea3)
-- [Promise Fun](https://github.com/sindresorhus/promise-fun)
-- [Promise Tips](https://dev.to/kepta/promising-promise-tips--c8f)
-- [JavaScript Promises for Dummies](https://scotch.io/tutorials/javascript-promises-for-dummies)
-- [Write your own promise library from scratch](http://thecodebarbarian.com/write-your-own-node-js-promise-library-from-scratch.html)
-- [Master the JavaScript Interview: What's a Promise](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
+* [Promise Basics](http://javascript.info/promise-basics)
+* [Async JavaScript Cheatsheet](https://github.com/frontarm/async-javascript-cheatsheet)
+* [Promise Chaining](http://javascript.info/promise-chaining)
+* [Promise API](http://javascript.info/promise-api)
+* [Three ways of understanding promises](http://2ality.com/2016/10/understanding-promises.html)
+* [Promises in ES6 \(youtube video\)](https://www.youtube.com/watch?v=2d7s3spWAzo)
+* [Escape from the Callback Mountain](https://github.com/justsml/escape-from-callback-mountain)
+* [JavaScript Promises with Node.js](https://itnext.io/javascript-promises-with-node-js-e8ca827e0ea3)
+* [Promise Fun](https://github.com/sindresorhus/promise-fun)
+* [Promise Tips](https://dev.to/kepta/promising-promise-tips--c8f)
+* [JavaScript Promises for Dummies](https://scotch.io/tutorials/javascript-promises-for-dummies)
+* [Write your own promise library from scratch](http://thecodebarbarian.com/write-your-own-node-js-promise-library-from-scratch.html)
+* [Master the JavaScript Interview: What's a Promise](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
 ## Lab
 
 Here is a useful workshop that illustrates the basics of promises. Follow the instructions step by step to get some hands-on exercises on Promise.
 
-- [Promise it won't hurt](https://github.com/stevekane/promise-it-wont-hurt)
+* [Promise it won't hurt](https://github.com/stevekane/promise-it-wont-hurt)
 
 Note:
 
-- In the second step of the workshop, it requires you to install a library `es6-promise` and require it in your code. That's not necessary anymore because the latest Node version already have built in support for Promise.
-- In the step on "Fetch JSON", the URL mentioned in the instruction should have been "http://localhost:1337"
+* In the second step of the workshop, it requires you to install a library `es6-promise` and require it in your code. That's not necessary anymore because the latest Node version already have built in support for Promise.
+* In the step on "Fetch JSON", the URL mentioned in the instruction should have been "[http://localhost:1337](http://localhost:1337)"
+

@@ -1,4 +1,4 @@
-# Independent learning week
+# Independent learning
 
 One of the most important things that you can learn from JumpStart is learning how to learn. In our lifetime as developers, we have no choice but to learn new languages, new frameworks \(it's what makes our job so exciting!\)
 

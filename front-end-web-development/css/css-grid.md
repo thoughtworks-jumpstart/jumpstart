@@ -127,5 +127,5 @@ There's a lot more to CSS Grid. We have only covered the bare essentials to get 
 3. Focus on the layout. The key purpose of this exercise is for you to practice **css grid**. So don't be too caught up with the exact content specific styling \(e.g. font, font-size, color hex code, margin widths\). 
 4. Push code to repo and create github pages
 
-![screenshot](../.gitbook/assets/css_grid_lab.png)
+![screenshot](https://github.com/thoughtworks-jumpstart/jumpstart/tree/5844d8a01099fddee59062fc253fdfeecc83002d/front-end-web-development/.gitbook/assets/css_grid_lab.png)
 

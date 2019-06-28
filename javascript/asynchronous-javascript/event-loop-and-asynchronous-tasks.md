@@ -55,3 +55,4 @@ Now we understand the importance of asynchronous tasks, how can we write code to
 * [What you should know to really understand the Node.js Event Loop](https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c)
 * [The NodeJS event loop](https://flaviocopes.com/node-event-loop/)
 * [Understanding Execution Context and Execution Stack in JavaScript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)
+

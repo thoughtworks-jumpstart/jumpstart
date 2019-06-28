@@ -1,11 +1,11 @@
-# Advanced: Authentication with Passport.js
+# Authentication with Passport.js
 
 When you build an API in real use cases, some of the APIs should only be accessed after user login to your system.
 
 In previous sections, we have implemented the authentication and authorization logic by ourselves. That works in simple scenarios, but the work becomes more tedious when we need to support more scenarios:
 
-- How to support login with Facebook account?
-- How to support JWT tokens issued by a 3rd party provider like [Auth0](https://auth0.com/)
+* How to support login with Facebook account?
+* How to support JWT tokens issued by a 3rd party provider like [Auth0](https://auth0.com/)
 
 In this section, we will learn how to protect your APIs using a middleware called [passport](http://www.passportjs.org/)
 
@@ -19,6 +19,7 @@ Passport recognizes that each application has unique authentication requirements
 
 We will show you a few commonly used strategy here:
 
-- Local Strategy: authentication with username and password
-- Facebook/Github Strategy: authentication with Facebook/Github account
-- JWT Strategy: validate JWT tokens in HTTP requests 
+* Local Strategy: authentication with username and password
+* Facebook/Github Strategy: authentication with Facebook/Github account
+* JWT Strategy: validate JWT tokens in HTTP requests 
+

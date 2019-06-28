@@ -51,11 +51,11 @@ Install zsh-autosuggestions for better productivity when using command line
 **Steps**
 
 1. Clone this repository into `~/.oh-my-zsh/plugins`
-  * In iTerm2 terminal, run `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions`
+   * In iTerm2 terminal, run `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions`
 2. Add the plugin to the list of plugins for Oh My Zsh to load.
-  * In iTerm2 terminal, running command `code ~/.zshrc`. This will open the .zshrc file in VS Code editor.
-  * Find the line that configures plugin for zsh and insert the `zsh-autosuggestions` to the plugin list. For example, after this step, the plugin list could become `plugins=(zsh-autosuggestion)`
-  * Save your changes and close the editor.
+   * In iTerm2 terminal, running command `code ~/.zshrc`. This will open the .zshrc file in VS Code editor.
+   * Find the line that configures plugin for zsh and insert the `zsh-autosuggestions` to the plugin list. For example, after this step, the plugin list could become `plugins=(zsh-autosuggestion)`
+   * Save your changes and close the editor.
 3. Go back to the iTerm2 terminal and  run `source ~/.zshrc`
 
 ## Git
@@ -118,9 +118,9 @@ To finish up your installation, run this command to allow for global installatio
 sudo chown -R $USER /usr/local/lib
 ```
 
-### (Optional) Node Version Manager
+### \(Optional\) Node Version Manager
 
-The instructions above will install the latest version of node on your computer. If you need to use an older version of node for some reason (e.g. you are working on a project with older version of node), then you can use this tool called [nvm](https://github.com/creationix/nvm) to install specific version of node on your computer.
+The instructions above will install the latest version of node on your computer. If you need to use an older version of node for some reason \(e.g. you are working on a project with older version of node\), then you can use this tool called [nvm](https://github.com/creationix/nvm) to install specific version of node on your computer.
 
 Read the instructions of the tool to learn how to use it.
 
@@ -128,7 +128,7 @@ Read the instructions of the tool to learn how to use it.
 
 ### Enable function keys by default in MacBook Pro with touch bar
 
-If you are using a MacBookPro with touch bar (instead of function keys), you should configure the touch bar to display function keys by default when you open VS Code.
+If you are using a MacBookPro with touch bar \(instead of function keys\), you should configure the touch bar to display function keys by default when you open VS Code.
 
 Following the [steps in this article](https://johnpapa.net/fntouchbar/) to enable the configuration.
 

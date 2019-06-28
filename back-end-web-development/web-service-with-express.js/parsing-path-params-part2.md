@@ -1,4 +1,4 @@
-# Parsing path params (Part 2)
+# Parsing path params \(Part 2\)
 
 ## You can define handlers when route parameters are captured.
 
@@ -29,56 +29,54 @@ This is illustrated in example `route_parameter_example_2.js`
 node route_parameter_example_2.js
 ```
 
-## Lab 3: Integrate app.param() middleware to find song from id
+## Lab 3: Integrate app.param\(\) middleware to find song from id
 
-In this lab based on our understanding of how app.param() works, you would need to make use of app.param() in the Songs API. 
+In this lab based on our understanding of how app.param\(\) works, you would need to make use of app.param\(\) in the Songs API.
 
 ### Requirements
+
 If you look at the 5 routes currently 3 of the routes are have an `:id` path param:
 
 1. GET /songs/:id
 2. PUT /songs/:id
 3. DELETE /songs/:id
 
-You can identify a common logic that is used in all 3 routes. 
+You can identify a common logic that is used in all 3 routes.
 
 After getting the :id param they all search though the songs array for the matching song object.
 
 **Your task is to:**
-- implement an app.param() handler that grabs the :id from the path of an incomming request
-- extract the search logic and place it in this handler
-- save the song found into req.song 
-- refactor the 3 routes to use req.song instead
-- run all the tests to ensure that you have not broken anything 
 
+* implement an app.param\(\) handler that grabs the :id from the path of an incomming request
+* extract the search logic and place it in this handler
+* save the song found into req.song 
+* refactor the 3 routes to use req.song instead
+* run all the tests to ensure that you have not broken anything 
 
 ### Instructions
-- Navigate to the express-songs-api project folder
 
-- Ensure that the work from your previous lab is already commited to `3-testing-lab` branch
+* Navigate to the express-songs-api project folder
+* Ensure that the work from your previous lab is already commited to `3-testing-lab` branch
+* checkout to branch `5-extract-id-from-params` to get started
 
-- checkout to branch `5-extract-id-from-params` to get started
-
-```
+```text
 git checkout 5-extract-id-from-params
 ```
-- open the file app.js this is the file where you would need to create the app.param() handler
 
+* open the file app.js this is the file where you would need to create the app.param\(\) handler
 
 ### Solution
-- After you have completed Lab 3, please commit all your work to the `5-extract-id-from-params` branch
 
-- You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution 
+* After you have completed Lab 3, please commit all your work to the `5-extract-id-from-params` branch
+* You may optionally install the plugin **Git History Diff** for viewing the difference between git branches. This will allow you to easily compare your work with the sample solution
+* [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+* Next checkout to the solution branch and we will now walk through the sample solution
 
-- [https://marketplace.visualstudio.com/items?itemName=huizhou.githd](https://marketplace.visualstudio.com/items?itemName=huizhou.githd)
+  ```text
+  git checkout 6-extract-id-from-params-solution
+  ```
 
-- Next checkout to the solution branch and we will now walk through the sample solution
-```text
-git checkout 6-extract-id-from-params-solution
-``` 
+* To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `5-extract-id-from-params` branch
+* The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
+* When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.
 
-- To view the difference between your work and the sample solution go to the VS Code file explorer, right click your folder and select `GitHD: View Folder Diff` and select compare with `5-extract-id-from-params` branch 
-
-- The diff sidebar will popup and you can click on the files to view the difference between your work and the sample solution.
-
-- When viewing the diff you can temporarily toggle the sidebar with `cmd + B` to hide it.

@@ -1,4 +1,4 @@
-# Deploy simple static websites
+# Deploy simple static websites to Now
 
 If you only need a place to host your React application \(or any application with static assets only like HTML/CSS/JavaScript\), you can consider the following options:
 

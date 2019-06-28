@@ -7,21 +7,20 @@ One of the most important things we impart at JumpStart is effective learning. W
 > "Education comes from within; you get it by struggle and effort and thought." \(Napoleon Hill\)
 >
 > "Education comes from the Latin word _educare_, which literally means 'led out,' in the sense of being drawn forth. I find that little tidbit really interesting, because we don’t generally think of education in that sense—of drawing forth something from the learner. Instead, it’s far more common to see education treated as something that’s done to the learner—as something that’s poured in, not drawn out. This model is especially popular in corporate training, with a technique that’s known as sheep dip training."
->
 
 **You**. The most important ingredient in the learning process is you. You have to want to learn. Somebody can give me essential guide to becoming an origami master, but if I don't want it, then it doesn't matter what was given to me
 
 ## Stay in your learning zone
 
-Keep learning new skills. Staying in your learning zone. Expending your comfort zone. Be aware when you are in panic zone (and avoid it!)
+Keep learning new skills. Staying in your learning zone. Expending your comfort zone. Be aware when you are in panic zone \(and avoid it!\)
 
 ![learning zone](.gitbook/assets/learning_zone.png)
 
 How do you know which zone you are in?
 
-- If there is nothing new for you. Then you are in your comfort zone.
-- If there is something you haven't heard about before, and you can relate it to something you already know, then you are in your learning zone.
-- If there is something new, and you cannot relate it to anything you already know, as a result, you cannot understand this new concept at all. In this case, you are in your panic zone.
+* If there is nothing new for you. Then you are in your comfort zone.
+* If there is something you haven't heard about before, and you can relate it to something you already know, then you are in your learning zone.
+* If there is something new, and you cannot relate it to anything you already know, as a result, you cannot understand this new concept at all. In this case, you are in your panic zone.
 
 ## Learn one thing at a time
 
@@ -41,9 +40,9 @@ You probably had this experience before: you just finished reading a book, but a
 
 In order to retain the new knowledge you just learnt, you need to use it:
 
-- Write a blog about it
-- Teach the knowledge to another person. This is referred as [Feynman Technique](https://fs.blog/2012/04/feynman-technique/).
-- Solve problems with the new knowledge
+* Write a blog about it
+* Teach the knowledge to another person. This is referred as [Feynman Technique](https://fs.blog/2012/04/feynman-technique/).
+* Solve problems with the new knowledge
 
 When you try to use the knowledge, you [actively recall it](https://en.wikipedia.org/wiki/Active_recall). That tells your brain this piece of information is important and your brain will save it in [long term memory](https://en.wikipedia.org/wiki/Long-term_memory) so that you don't forget it.
 
@@ -85,27 +84,27 @@ Really? Do I need to learn how to read a book? You might ask.
 
 Yes, there are some tricks to read books more effectively. One of them is called **SQ3R**
 
-- **Survey**: Scan the table of contents and chapter summaries for an overview.
-- **Question**: Note any questions you have.
-- **Read**: Read in its entirety.
-- **Recite**: Summarize, take notes, and put in your own words.
-- **Review**: Reread, expand notes, and discuss with colleagues.
+* **Survey**: Scan the table of contents and chapter summaries for an overview.
+* **Question**: Note any questions you have.
+* **Read**: Read in its entirety.
+* **Recite**: Summarize, take notes, and put in your own words.
+* **Review**: Reread, expand notes, and discuss with colleagues.
 
 There is also a famous book named [How to Read a Book](https://www.amazon.com/How-Read-Book-Classic-Intelligent/dp/0671212095)
 
 ## How to read the docs of a library
 
-- use it like a dictionary. know the structure. know where to find things
-- find the API docs \(e.g. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) is great for JavaScript\)
-- figure out what you want to do \(e.g. split a string into an array\)
-- zoom in to the right place in the docs \(e.g. [.split\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)\) \(google is always helpful\)
-- Understand the method
-  - what it does
-  - what parameters it takes in
-    - what should the parameters look like \(e.g. string, number, array, object, etc.?\)
-    - which parameters are required / optional?
-  - what the return value is
-- pause when confused
+* use it like a dictionary. know the structure. know where to find things
+* find the API docs \(e.g. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) is great for JavaScript\)
+* figure out what you want to do \(e.g. split a string into an array\)
+* zoom in to the right place in the docs \(e.g. [.split\(\)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)\) \(google is always helpful\)
+* Understand the method
+  * what it does
+  * what parameters it takes in
+    * what should the parameters look like \(e.g. string, number, array, object, etc.?\)
+    * which parameters are required / optional?
+  * what the return value is
+* pause when confused
 
 ## Don't be afraid of making mistakes. Embrace failures.
 
@@ -113,21 +112,22 @@ There are two types of failures. There are the failures that are good for us tha
 
 ## Resources
 
-- [How to learn how to learn](https://flaviocopes.com/how-to-learn/)
-- [How to Learn Programming Skills](https://www.codingblocks.net/podcast/how-to-learn-programming-skills/)
-- [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
-- [How to memorize fact with active recall techniques](https://www.youtube.com/watch?v=ukLnPbIffxE)
-- [Stop saying coding is easy](https://www.hanselman.com/blog/StopSayingLearningToCodeIsEasy.aspx)
-- [Teach yourself programming in 10 years](http://norvig.com/21-days.html)
-- [What I learned about learning](https://medium.com/@davified/what-i-learned-in-2017-about-learning-d185f1f38772)
-- [Carol Dweck - Growth Mindset](https://www.youtube.com/watch?v=hiiEeMN7vbQ)
-- [How to teach yourself hard things](https://jvns.ca/blog/2018/09/01/learning-skills-you-can-practice/)
-- [Myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
-- [The genius fallacy](http://jxyzabc.blogspot.sg/2017/09/the-genius-fallacy.html)
-- [Jargon.js](http://jargon.js.org/)
-- [JavaScript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about JavaScript - rather it's about how to navigate the road to expertise/mastery\)
+* [How to learn how to learn](https://flaviocopes.com/how-to-learn/)
+* [How to Learn Programming Skills](https://www.codingblocks.net/podcast/how-to-learn-programming-skills/)
+* [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
+* [How to memorize fact with active recall techniques](https://www.youtube.com/watch?v=ukLnPbIffxE)
+* [Stop saying coding is easy](https://www.hanselman.com/blog/StopSayingLearningToCodeIsEasy.aspx)
+* [Teach yourself programming in 10 years](http://norvig.com/21-days.html)
+* [What I learned about learning](https://medium.com/@davified/what-i-learned-in-2017-about-learning-d185f1f38772)
+* [Carol Dweck - Growth Mindset](https://www.youtube.com/watch?v=hiiEeMN7vbQ)
+* [How to teach yourself hard things](https://jvns.ca/blog/2018/09/01/learning-skills-you-can-practice/)
+* [Myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
+* [The genius fallacy](http://jxyzabc.blogspot.sg/2017/09/the-genius-fallacy.html)
+* [Jargon.js](http://jargon.js.org/)
+* [JavaScript Masterclass](https://www.youtube.com/watch?v=v0TFmdO4ZP0) \(this talk is not about JavaScript - rather it's about how to navigate the road to expertise/mastery\)
 
 ## Assignment
 
-- [Follow this example, track what you learned everyday](https://github.com/jbranchaud/til)
-- [Take the challenge to write code for 100 days](https://www.100daysofcode.com/)
+* [Follow this example, track what you learned everyday](https://github.com/jbranchaud/til)
+* [Take the challenge to write code for 100 days](https://www.100daysofcode.com/)
+

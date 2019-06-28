@@ -2,7 +2,6 @@
 
 **C** ascading **S** tyle **S** heets \(CSS\) power the colors, fonts, layout and animations that you see in your browser. In the next few pages, we'll learn how to get good at it.
 
-
 ## An overview of CSS history
 
 If you are new to CSS, you can read the article blow to get an overview:
@@ -18,7 +17,7 @@ You don’t need to commit to memorizing every CSS Property and Value, as there 
 We will briefly cover the most important topics in this material, however, if you have more time to go-through a tutorial that covers the topics thoroughly, I can recommend the two below:
 
 * [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
-* [HTML & CSS is Hard (and It Shouldn't Be)](https://internetingishard.com/html-and-css/)
+* [HTML & CSS is Hard \(and It Shouldn't Be\)](https://internetingishard.com/html-and-css/)
 
 ## CSS Reference
 
@@ -68,3 +67,4 @@ Bookmark the link below, you need to refer to it frequently.
 * [A set of simple html and css exercises](https://github.com/ashleygwilliams/introHTMLCSS)
 * [Step by step creation of a website](https://openclassrooms.com/courses/build-your-website-with-html5-and-css3/practical-exercise-step-by-step-creation-of-a-website)
 * Play with [the CSS rules to simulate instagram filters](https://github.com/picturepan2/instagram.css)
+

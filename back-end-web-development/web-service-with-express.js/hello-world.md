@@ -43,10 +43,10 @@ app.METHOD(PATH, ROUTE_HANDLER);
 
 Where:
 
-- app is an instance of the express module
-- METHOD is an HTTP request method \(GET, POST, PUT or DELETE\)
-- PATH is a path on the server \(e.g. '/', '/books', '/books/:id'\).
-- ROUTE_HANDLER is a callback function executed when the route is matched. A route handler function usually has a signature like the one below:
+* app is an instance of the express module
+* METHOD is an HTTP request method \(GET, POST, PUT or DELETE\)
+* PATH is a path on the server \(e.g. '/', '/books', '/books/:id'\).
+* ROUTE\_HANDLER is a callback function executed when the route is matched. A route handler function usually has a signature like the one below:
 
 ```javascript
 function xxxHandler(request, response) {
@@ -55,7 +55,7 @@ function xxxHandler(request, response) {
 }
 ```
 
-Sometimes, you may define multiple route handlers for the same route. In that case, the route handlers can take one more argument called  `next`. A route handler can call `next()` within the body of the function to hand off control to the next callback defined for the same route.
+Sometimes, you may define multiple route handlers for the same route. In that case, the route handlers can take one more argument called `next`. A route handler can call `next()` within the body of the function to hand off control to the next callback defined for the same route.
 
 ```javascript
 function xxxHandler(request, response, next) {
@@ -70,3 +70,4 @@ To see the a multi route handler example, run the following command:
 ```text
 nodemon express_basic_example_2.js
 ```
+

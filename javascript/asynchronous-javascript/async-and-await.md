@@ -51,7 +51,7 @@ In the example above, you may think the async function return a string \(which i
 
 An `async` function returns an instance of a Promise that resolves to the return value as you put in the `return` statement of the function.
 
-That means, if you call an `async` function, then you need to either call `.then()` on the returned result (because it's a promise), or you need to use `await` to extract the value from the promise object.
+That means, if you call an `async` function, then you need to either call `.then()` on the returned result \(because it's a promise\), or you need to use `await` to extract the value from the promise object.
 
 For example,
 

@@ -1,4 +1,4 @@
-# Babel
+# babel
 
 ## What is Babel
 
@@ -8,12 +8,12 @@
 
 Use cases
 
-- Transpile ES6 syntax into ES5 syntax
-- Transpile JSX syntax (the one used by React) into pure JavaScript
+* Transpile ES6 syntax into ES5 syntax
+* Transpile JSX syntax \(the one used by React\) into pure JavaScript
 
 ## How to use Babel
 
-Babel supports a [plugin based architecture](https://babeljs.io/docs/en/plugins) to make the transpiling process configurable. 
+Babel supports a [plugin based architecture](https://babeljs.io/docs/en/plugins) to make the transpiling process configurable.
 
 You need to configure in your project root directory, using `babel.config.js` or `.babelrc` file. More details can be found in their [official documentation](https://babeljs.io/docs/en/configuration)
 
@@ -23,4 +23,5 @@ If you don't want to configure the set of babel plugins by yourself, you can als
 
 ## Resources
 
-- [Why Babel matters](https://codemix.com/blog/why-babel-matters/)
+* [Why Babel matters](https://codemix.com/blog/why-babel-matters/)
+

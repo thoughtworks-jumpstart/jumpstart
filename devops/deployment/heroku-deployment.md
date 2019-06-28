@@ -1,4 +1,4 @@
-# Deploy a create-react-app to Heroku
+# Deploy React apps to Heroku
 
 ## Create a new application on Heroku website
 
@@ -6,7 +6,7 @@ On [your application dashboard](https://dashboard.heroku.com/apps), click the "N
 
 ## Configure the buildpack for the application
 
-Under the "Settings" -> "Buildpacks", add a buildpack for create-react-app with the following URL "https://github.com/mars/create-react-app-buildpack.git".
+Under the "Settings" -&gt; "Buildpacks", add a buildpack for create-react-app with the following URL "[https://github.com/mars/create-react-app-buildpack.git](https://github.com/mars/create-react-app-buildpack.git)".
 
 What is a "buildpack"? Check the explanation [here](https://devcenter.heroku.com/articles/buildpacks)
 
@@ -14,25 +14,26 @@ What is a "buildpack"? Check the explanation [here](https://devcenter.heroku.com
 
 If you build your React application using create-react-app, you can put some of the environment variables into `.env` file. During build and deployment, these environment variables would be filled into the HTML/JavaScript files that refers to those variables. You can read the [create-react-app documentation](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables) for more details.
 
-However, some environment variables (e.g. the secret keys for calling those APIs) cannot be put into the `.env` files (because they are secret and should not be checked into code repository), you should declare those variables in Heroku.
+However, some environment variables \(e.g. the secret keys for calling those APIs\) cannot be put into the `.env` files \(because they are secret and should not be checked into code repository\), you should declare those variables in Heroku.
 
-On Heroku dashbaord, you can set this under "Settings" -> "Config Variables"
+On Heroku dashbaord, you can set this under "Settings" -&gt; "Config Variables"
 
 More documentation can be found [here](https://devcenter.heroku.com/articles/config-vars)
 
 ## Connect your Heroku app to the Github repository
 
-  * Click on Deploy tab → Deployment method → select GitHub
-  * Search for the repo of the application that you’re deploying → click Connect
+* Click on Deploy tab → Deployment method → select GitHub
+* Search for the repo of the application that you’re deploying → click Connect
 
-    ![heroku\_connect\_github](../../.gitbook/assets/heroku_connect_github.png)
-* Further below, click on 'Enable Automatic Deploy'
+  ![heroku\_connect\_github](../../.gitbook/assets/heroku_connect_github.png)
+
+  * Further below, click on 'Enable Automatic Deploy'
 
   ![heroku\_no\_ci](../../.gitbook/assets/heroku_no_ci.png)
 
 ## Trigger a manual depoly
 
-(Only for the first time deploying this app) click on “Deploy branch” at the end of the page
+\(Only for the first time deploying this app\) click on “Deploy branch” at the end of the page
 
 That's all! You can now visit the URL: [https://randomly-generated-app-name.herokuapp.com/](https://randomly-generated-name.herokuapp.com/).
 

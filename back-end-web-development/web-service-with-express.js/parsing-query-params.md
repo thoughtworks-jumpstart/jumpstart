@@ -1,9 +1,8 @@
 # Parsing query params
 
-In HTTP, a query string is the part of a uniform resource locator (URL) which assigns values to specified optional parameters. 
+In HTTP, a query string is the part of a uniform resource locator \(URL\) which assigns values to specified optional parameters.
 
 ## Filtering in Express when there are multiple query parameters
-
 
 To see this in action, take a look at `query_parameter_example.js`
 
@@ -11,23 +10,23 @@ To see this in action, take a look at `query_parameter_example.js`
 node query_parameter_example.js
 ```
 
-You can use Insomnia to send requests with different query parameters to the example and check out how it can be used to filter and return a subset of the fruit and vegetable data. 
+You can use Insomnia to send requests with different query parameters to the example and check out how it can be used to filter and return a subset of the fruit and vegetable data.
 
-### Filter by the type (eg: FRUIT or VEGETABLE)
+### Filter by the type \(eg: FRUIT or VEGETABLE\)
 
-```
+```text
 http://localhost:3000/food?type=VEGETABLE
 ```
 
 ### Filter by the color
 
-```
+```text
 http://localhost:3000/food?color=red
 ```
 
 ### Filter by both type and color
 
-```
+```text
 http://localhost:3000/food?type=VEGETABLE&color=red
 ```
 

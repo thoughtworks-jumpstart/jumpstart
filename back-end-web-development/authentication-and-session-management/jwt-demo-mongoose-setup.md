@@ -1,10 +1,10 @@
-# Mongoose Configuration
+# JWT Demo: Mongoose Setup
 
 Now let's add dependency on mongoose library and some helper file to make it easy to write test cases with MongoDB.
 
 ## Install NPM package
 
-```shell
+```text
 npm install mongoose
 
 npm install mongoose-unique-validator
@@ -67,3 +67,4 @@ module.exports = {
   teardown
 };
 ```
+

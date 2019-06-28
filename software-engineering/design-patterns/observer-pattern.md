@@ -2,7 +2,7 @@
 
 The observer pattern defines a one-to-many dependency between objects so that when the **subject \(a.k.a. publisher / observerable\) object** changes state, all its **observers \(a.k.a. subscribers\)** are notified and updated automatically.
 
-![](../.gitbook/assets/observer_pattern_diagram.png)
+![](../../.gitbook/assets/observer_pattern_diagram.png)
 
 ## OO design principles
 

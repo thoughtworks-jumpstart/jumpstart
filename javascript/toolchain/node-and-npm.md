@@ -1,4 +1,4 @@
-# Overview on NodeJS and npm
+# node and npm
 
 ## What's NodeJS
 
@@ -64,7 +64,7 @@ Anyone can package their JavaScript applications into libraries and publish them
 
 * [How to manage a node module with npm](https://github.com/workshopper/how-to-npm)
 
-### What can we do with the `npm` tool 
+### What can we do with the `npm` tool
 
 * Packaging our node modules into libraries and share them with others
 * Reuse libraries built by other people
@@ -137,25 +137,30 @@ Those characters are used to define what happens when there are newer releases o
 #### In Semantic Versioning, three numbers are used to describe the version of a package
 
 **Major version**
-  - this number is increased when a new breaking change is added
+
+* this number is increased when a new breaking change is added
 
 **Minor version**
-  - this number is increased when a new non breaking change is added 
+
+* this number is increased when a new non breaking change is added 
 
 **Patch version**
-  - this number is increased when a new bug fix is added
+
+* this number is increased when a new bug fix is added
 
 **Note**: Breaking change means there is a change in the API of the package, so projects developed with the old version may not work with the new version of the package.
 
 #### Special Characters
 
-**^ (caret character)** 
-- this this means pull the latest package which has the same Major ver as stated, but may have newer Minor and Patch versions
-- eg: "^5.4.0" in the package.json may install version "5.6.0"
+**^ \(caret character\)**
 
-**~ (tilde character)**
-- this means pull the latest package which has the same Major AND Minor ver as stated, but may have newer Patch version
-- eg: "~5.4.0" in the package.json may install version "5.4.7"
+* this this means pull the latest package which has the same Major ver as stated, but may have newer Minor and Patch versions
+* eg: "^5.4.0" in the package.json may install version "5.6.0"
+
+**~ \(tilde character\)**
+
+* this means pull the latest package which has the same Major AND Minor ver as stated, but may have newer Patch version
+* eg: "~5.4.0" in the package.json may install version "5.4.7"
 
 More details can be found in this article : [Semantic Versioning](https://docs.npmjs.com/getting-started/semantic-versioning)
 
@@ -178,13 +183,13 @@ Note:
 
 * Initialize a new project 
 
-```shell
+```text
 npm init
 ```
 
 * Install a node package called [cows](https://www.npmjs.com/package/cows)
 
-```shell
+```text
 npm install cows
 ```
 
@@ -207,3 +212,4 @@ console.log(cow);
 * [The definitive Node.js handbook](https://medium.freecodecamp.org/the-definitive-node-js-handbook-6912378afc6e)
 * [Everything You Wanted To Know About package-lock.json](https://medium.com/@Quigley_Ja/everything-you-wanted-to-know-about-package-lock-json-b81911aa8ab8)
 * [Introduction to NodeJS](https://github.com/azat-co/fullstack-javascript/blob/master/chapter6/chapter6.md)
+

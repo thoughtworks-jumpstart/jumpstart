@@ -1,13 +1,14 @@
-# Build a static html website
+# Build a static website with HTML/CSS/JavaScript
 
 ## Required Skills
 
-- DOM manipulation with JavaScript
-- HTML
-- CSS
+* DOM manipulation with JavaScript
+* HTML
+* CSS
 
 ## Project Ideas
 
-- Build your own project portfolio page
-- [Build a todo list with DOM manipulation](https://github.com/thoughtworks-jumpstart/dom-todo-list)
-- [Sample Challenges on Frontend Mentor](https://www.frontendmentor.io/challenges)
+* Build your own project portfolio page
+* [Build a todo list with DOM manipulation](https://github.com/thoughtworks-jumpstart/dom-todo-list)
+* [Sample Challenges on Frontend Mentor](https://www.frontendmentor.io/challenges)
+

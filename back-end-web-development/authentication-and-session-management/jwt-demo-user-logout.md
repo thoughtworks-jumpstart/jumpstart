@@ -1,4 +1,4 @@
-# User Logout
+# JWT Demo: User Logout
 
 When a user decides to logout and terminates the current session, we need to do proper clean up.
 
@@ -58,7 +58,7 @@ test("Logout should clear the cookie storing JWT token", async () => {
 });
 ```
 
-In this test case, we expect the call to logout API should cause the cookie storing the JWT token to be removed. Then if we try to change the user's password, we would get back the HTTP 401 (Unauthorized) status code in HTTP response.
+In this test case, we expect the call to logout API should cause the cookie storing the JWT token to be removed. Then if we try to change the user's password, we would get back the HTTP 401 \(Unauthorized\) status code in HTTP response.
 
 If you run this tests now, it would fail because we haven't implemented the logout API yet.
 
@@ -89,3 +89,4 @@ module.exports = {
 Here we clear the cookie with name `jwt` using the API provided by Express framework : `response.clearCookie('jwt')`.
 
 Now the test case should pass.
+

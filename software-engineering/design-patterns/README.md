@@ -1,4 +1,4 @@
-# OO Design Patterns
+# Design Patterns
 
 In software engineering, a software design pattern is a **general, reusable solution to a common problems within a given context in software design**.
 
