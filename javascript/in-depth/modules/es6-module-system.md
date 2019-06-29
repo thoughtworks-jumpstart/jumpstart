@@ -94,6 +94,7 @@ For now, to keep it simple, we should still stay with the CommonJS module system
 ## Resources
 
 * [JS Modules](http://jsmodules.io/)
+* [JavaScript modules, a brief history](https://objectpartners.com/2019/05/24/javascript-modules-a-brief-history/)
 * [ES6 Modules: The Syntax](http://2ality.com/2014/09/es6-modules-final.html)
 * [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 * [ES6 module system](https://ponyfoo.com/articles/es6-modules-in-depth#the-es6-module-system)
