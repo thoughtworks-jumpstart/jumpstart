@@ -14,6 +14,26 @@ We require you to be familiar with some basic concepts of HTML, CSS, and at leas
 
 JavaScript.
 
+## How do I apply to the JumpStart program?
+
+You can send in your resume by applying through our website https://www.thoughtworks.com/jumpstart
+
+## What is the admissions process like?
+
+The admissions process is outlined here:
+
+- Send in your resume
+- Complete an online coding assessment
+- Receive an offer to join the program
+- Sign the enrollment agreement
+- Make payment for the program
+
+\* We may request to chat with you over the phone before accepting you into the program
+
+## What are the training hours for the JumpStart program?
+
+JumpStart is a full-time program that runs from Monday to Friday between 9.30am and 5.30pm.
+
 ## How can I prepare for the program?
 
 We recommend you learn the basics of HTML and CSS.
@@ -25,6 +45,10 @@ Have a look at the [prep work](prep-work.md) for suggested learning resources fo
 ## What is the course outline?
 
 You can view the course outline [here](outline.md).
+
+## How many hours per week should I expect to put in after class?
+
+While this depends on each individual, it is not uncommon for trainees to put in an additional 5 to 10 hours per week outside of class. This might be to complete assignments or revise on what was covered in the class.
 
 ## Where will the JumpStart program be taught?
 
